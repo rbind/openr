@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Rosr on Open R</title>
+    <link>/tags/rosr/</link>
+    <description>Recent content in Rosr on Open R</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 31 Jan 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/rosr/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>rosr News: a Shiny GUI and RStudio addin for choosing and creating sub-projects</title>
+      <link>/blog/2019/01/31/2019-01-31-rosr-shiny/</link>
+      <pubDate>Thu, 31 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/2019/01/31/2019-01-31-rosr-shiny/</guid>
+      <description>&lt;p&gt;&amp;lsquo;rosr&amp;rsquo; is an R package for creating reproducible academic project with integrated various academic elements, including data, bibliography, codes, images, manuscripts, dissertations, slides and so on. These elements are well connected so that they can be easily synchronized and updated. Users don&amp;rsquo;t have to repeat copying and pasting their results and figures from time to time. It will be easy for the scientific researchers to use, even if they are R beginners, or even non-R-users.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>rosr: Create academic R markdown projects for open science and reproducible research</title>
+      <link>/blog/2019/01/28/2019-01-28-rosr-new/</link>
+      <pubDate>Mon, 28 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/2019/01/28/2019-01-28-rosr-new/</guid>
+      <description>&lt;p&gt;Weeks ago, I gave a short training course at one of the top institutes in the world. The course was called &amp;lsquo;&lt;em&gt;R, Open Science and Reproducible Research&lt;/em&gt;&amp;rsquo;, abbreviated as &lt;em&gt;ROSS&lt;/em&gt;. It was given to the academic researchers who were interested in R and reproducible research. The R markdown family, including &amp;lsquo;rticles&amp;rsquo;, &amp;lsquo;bookdown&amp;rsquo;, &amp;lsquo;xaringan&amp;rsquo; etc., were introduced. The audience were excited in the course. They felt, however, confused after the course by using these packages on their own work. It is not easy to connect their own work with the R Markdown ecosystem.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

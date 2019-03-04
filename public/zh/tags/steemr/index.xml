@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Steemr on Open R</title>
+    <link>/zh/tags/steemr/</link>
+    <description>Recent content in Steemr on Open R</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Mon, 06 Nov 2017 09:44:42 +0000</lastBuildDate>
+    
+	<atom:link href="/zh/tags/steemr/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Build a mirror/backup site for your own steem posts in 30 minutes - 30 分钟搭建自己的 steem 镜像备份网站</title>
+      <link>/zh/blog/2017/11/06/2017-11-06-build-a-mirror/</link>
+      <pubDate>Mon, 06 Nov 2017 09:44:42 +0000</pubDate>
+      
+      <guid>/zh/blog/2017/11/06/2017-11-06-build-a-mirror/</guid>
+      <description>&lt;p&gt;Yesterday, I built two mirror sites for my steem posts (&lt;a href=&#34;https://dapeng.netlify.com/&#34;&gt;mirror 1&lt;/a&gt;，&lt;a href=&#34;https://steemit.netlify.com/&#34;&gt;mirror 2&lt;/a&gt;) as backups, which are synced automatically everyday, thanks to steemsql and steemdata. The mirror sites are very useful:&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

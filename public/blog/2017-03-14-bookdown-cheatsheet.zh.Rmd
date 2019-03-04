@@ -1,0 +1,219 @@
+---
+title: "R bookdown 语法标记速查"
+author: "赵鹏"
+date: '2017-03-14'
+slug: bookdown-cheatsheet
+summary: "常备手边."
+tags:
+- R
+- bookdown
+- markdown
+- post
+categories: []
+banner: img/banners/logo-openr.png
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## 快速开始
+
+### R bookdown 是什么
+
+- 一个用来写书写文章的软件。
+- 比Word更美观，比LaTeX更易用，比Markdown格式更丰富。
+- 可以方便地插入目录、图表、交叉引用、脚注、索引。
+- 可以方便地插入公式、参考文献、R代码。
+- 可以生成漂亮的pdf、word和网页文件。
+- 撰写可重复性报告的不二之选。
+
+<!--more-->
+
+### 安装
+
+1. [下载R](https://cran.r-project.org/bin/windows/base/)并安装。
+2. [下载RStudio](https://www.rstudio.com/products/rstudio/download/)并安装。
+3. [下载CTEX](http://www.ctex.org/CTeXDownload)并安装。建议安装完整版。
+4. [下载Pandoc](http://pandoc.org/installing.html)并安装。
+5. 运行RStudio。在左上面板的代码窗口输入并运行以下代码（安装bookdown扩展包）：
+ 
+```{r, eval=FALSE}
+install.packages("bookdown")
+install.packages('servr')
+```
+
+好了，安装完毕。
+
+### 从模板开始
+
+1. 下载模板文档（到下载页面点击`Clone or download` - `Download ZIP`）：
+
+- 如果你要写英文文档，那么下载[通用模板](https://github.com/rstudio/bookdown-demo); 
+- 如果你要写中文文档，那么下载[中文模板](https://github.com/yihui/bookdown-chinese)。
+
+2. 将模板文档解压缩到任意文件夹。
+
+3. 在解压缩后得到的文件里找到扩展名为.Rproj的文件。双击，默认会用RSudio打开。
+
+4. 在RStudio右上面板点击`Build`标签，再点击`build book`。好了，模板书出现在名为`_book`的子文件夹里。
+
+5. 在RStudio右下面板里会看到该文件夹里的文件，其中有一些扩展名为.Rmd的文件。逐个点击打开，把其中的内容修改成你自己的内容。除了index.Rm外，不需要的.Rmd文件可以删掉。
+
+6. 重复第4步，就得到了你自己的书。
+
+7. 对照一下.Rmd的文件内容和生成的文档，体会两者之间是如何对应的。
+
+## 基本标记
+
+标记                            输出
+------------------------------- -----
+`*斜体*`                        *斜体*
+`**粗体**`                      **粗体**
+`CO~2~`                         CO~2~下标
+`R^2^`                          R^2^上标
+`$E = mc^2$`                    $E = mc^2$ 行内公式（双美元符号为行间公式）
+`[大鹏志](http://dapengde.com)` [大鹏志](http://dapengde.com)超级链接
+`<dapengde@live.com>`           <dapengde@live.com> 邮件链接
+`![](http图片链接)`             插入图片
+`> 引用文字`                    引用
+\`代码\`                        `代码`
+`# 第一章`                      章节标题
+`1. 首先，...`                  带编号的列表
+`- 首先`                        不带编号的列表
+`^[脚注]`                       脚注
+
+## 章节划分、编号和交叉引用
+
+```
+# (PART) Part I {-} 
+# (APPENDIX) Appendix {-} 
+# References {-}
+# chapter {#ID}
+## section {#ID}
+# chapter {#ID .unnumbered}
+
+\@ref(ID)
+```
+
+## 图表
+
+第一种插图：嵌入的R代码作图：
+
+    `r ''````{r, fig.cap='caption', out.width='80%', fig.align='center', echo=FALSE}
+    plot(1:10)
+    ```
+
+`\@ref(fig:fig1)`
+
+第二种插图：将现成的图片文件插进来：
+
+    `r ''````{r img1, fig.cap='caption', out.width='80%', fig.align='center', echo=FALSE}
+    knitr::include_graphics("images/img1.png")
+    ```
+`\@ref(fig:img1)`
+
+第三种插图：用markdown基础语法：
+
+```
+![caption](images/img1.png)
+```
+
+第一种表格：直接用markdown语法画表格。输入：
+
+```
+第一列标题  第二列标题
+----------- ----------
+第一行1     第一行2
+第二行1     第二行2
+```
+
+输出：
+
+第一列标题  第二列标题
+----------- ----------
+第一行1     第一行2
+第二行1     第二行2
+
+
+第二种表格：用R函数展示表格：
+
+    `r ''````{r tab1, tidy=FALSE, echo=FALSE}
+    knitr::kable(
+      head(iris, 20), caption = 'Here is a nice table!',
+      booktabs = TRUE
+    )
+    ```
+
+`\@ref(tab:tab1)`
+
+## 参考文献
+
+参考文献信息需要保存在.bib文件里。
+
+引用文献条目：`[@R-bookdown]`
+
+参考文献列表：`# References {-}`
+
+生成R包参考文献库：
+
+```{r, eval=FALSE}
+knitr::write_bib(c("knitr", "stringr"), "", width = 60)
+```
+
+## 定义、定理、示例等环境 
+
+```
+环境全称：theorems	lemma	definition	corollary	proposition	example
+引用简称：thm	      lem  	def        	cor     	prp	        ex
+``` 
+
+    `r ''````{环境全称, label='', name=""}
+    内容
+    ```
+
+`\@ref(引用简称:label)`
+
+## 输出word文档
+
+在_output.yml里添加一行：
+
+```
+bookdown::word_document2: default 
+```
+注意，`default`这个词是不能少的。
+
+## 公式编号和引用
+
+word文档里的公式的编号和交叉引用，可以使用行内公式，公式前用圆括号里加公式标签。例如，输入：
+
+```
+(@eq-mc) $E = mc^2$
+
+I like Eq. (@eq-mc) so much that I am falling love with her.
+```
+
+得到：
+
+(@eq-mc) $E = mc^2$
+
+I like Eq. (@eq-mc) so much that I am falling love with her.
+
+pdf文档里的公式编号和交叉引用，建议使用公式环境。例如，输入：
+
+```
+\begin{equation} 
+E = mc^2
+  (\#eq:mc2)
+\end{equation} 
+
+I like Eq. \@ref(eq:mc2) so much that I am falling love with her.
+```
+
+##更进一步
+
+bookdown的详细介绍见[使用手册](https://bookdown.org/yihui/bookdown/)。我的使用体验写成了三篇帖子：
+
+- [用bookdown写书](http://dapengde.com/archives/19122)
+- [用bookdown写学术论文](http://dapengde.com/archives/19190)
+- [用bookdown写文学作品](http://dapengde.com/archives/19150)

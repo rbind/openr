@@ -1,0 +1,31 @@
+---
+title: '培训通知：R 语言、开放科学和可重复性研究'
+author: "赵鹏"
+date: '2018-12-01'
+slug: r-course-announcement
+summary: "欢迎莅临指导。"
+tags:
+  - post
+  - R
+  - teaching
+  - drposter
+categories: []
+banner: img/banners/logo-openr.png
+---
+
+
+本周我们系开了三天座谈会，好几位同事和同学对 R 语言感兴趣。经过一番简单准备，下周一和周二，我将在马普化学所举办一期培训班，题为“R 语言，开放科学和可重复性研究”。
+
+<!--more-->
+
+下面是我用 drposter 包制作的小广告：
+
+```{r, echo = FALSE}
+knitr::include_url("http://www.pzhao.org/poster/r-intro-mpic")
+```
+
+啊哦，还没学会怎么插入 iframe 时让海报适应高度……
+
+那么直接[点击链接](http://www.pzhao.org/poster/r-intro-mpic)看海报吧，效果好。
+
+yihui 说得对，css 是个好东西，值得一学，而且比 LaTeX 容易。

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>吉他 on Open R</title>
+    <link>/zh/tags/%E5%90%89%E4%BB%96/</link>
+    <description>Recent content in 吉他 on Open R</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Thu, 06 Apr 2017 09:15:36 +0000</lastBuildDate>
+    
+	<atom:link href="/zh/tags/%E5%90%89%E4%BB%96/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>用 R bookdown 写吉他谱</title>
+      <link>/archives/19291/</link>
+      <pubDate>Thu, 06 Apr 2017 09:15:36 +0000</pubDate>
+      
+      <guid>/archives/19291/</guid>
+      <description>&lt;p&gt;前情提要：&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://pzhao.org/archives/19122&#34;&gt;用 R 语言的 bookdown 写书&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://pzhao.org/archives/19150&#34;&gt;用 R 语言的 bookdown 写诗集&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://pzhao.org/archives/19190&#34;&gt;用 R 语言的 bookdown 写学术论文&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://pzhao.org/archives/19141&#34;&gt;R 语言 bookdown 快速入门和语法速查&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;本篇说说如何用 R 语言的 bookdown 写吉他谱。别拦着我，让我陷进bookdown的怀抱里爽死吧。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

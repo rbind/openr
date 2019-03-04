@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Pinyin on Open R</title>
+    <link>/tags/pinyin/</link>
+    <description>Recent content in Pinyin on Open R</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 15 Oct 2018 14:34:03 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/pinyin/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>[R pinyin: New Features] User customized dictionaries</title>
+      <link>/blog/2018/10/15/2018-10-15-pinyin-user-defined/</link>
+      <pubDate>Mon, 15 Oct 2018 14:34:03 +0000</pubDate>
+      
+      <guid>/blog/2018/10/15/2018-10-15-pinyin-user-defined/</guid>
+      <description>&lt;p&gt;The pinyin package intended to convert Chinese characters into pinyin. However, more demands were called by users. That was why the features of converting to four-corner codes and five-stroke codes (version 98) were added. After my previous update, the utopian moderator @justyy kindly &lt;a href=&#34;https://steemit.com/utopian-io/@justyy/re-dapeng-pinyin-wubi-20181012t201139924z&#34;&gt;suggested&lt;/a&gt; adding the Five-Stroke-86 as well. I totally agree, and I think there could be more.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>[R: New Features on pinyin] Convert Chinese Characters into Sijiao and Wubi codes</title>
+      <link>/blog/2018/10/12/2018-10-12-pinyin-wubi/</link>
+      <pubDate>Fri, 12 Oct 2018 13:31:42 +0000</pubDate>
+      
+      <guid>/blog/2018/10/12/2018-10-12-pinyin-wubi/</guid>
+      <description>&lt;h4 id=&#34;what-features-did-i-add&#34;&gt;What features did I add?&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Four times faster for converting.&lt;/li&gt;
+&lt;li&gt;At the beginning of the year 2018 I received an issue report by &lt;a href=&#34;https://github.com/pzhaonet/pinyin/issues/3#issue-295041288&#34;&gt;psychelzh&lt;/a&gt; about a polyphone error. Now a new pinyin library has been added, which more or less solved the polyphone problem.&lt;/li&gt;
+&lt;li&gt;Convert Chinese characters into Sijiao codes (literally &lt;a href=&#34;https://en.wikipedia.org/wiki/Four-Corner_Method&#34;&gt;four corner code&lt;/a&gt;).&lt;/li&gt;
+&lt;li&gt;and Wubi codes (literally &lt;a href=&#34;https://en.wikipedia.org/wiki/Wubi_method&#34;&gt;five-stroke&lt;/a&gt;).&lt;/li&gt;
+&lt;li&gt;Some minor bugs were fixed.&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    
+    <item>
+      <title>[Task Request] Heteronym problem</title>
+      <link>/blog/2018/04/12/2018-04-12-heteronym-problem/</link>
+      <pubDate>Thu, 12 Apr 2018 08:56:48 +0000</pubDate>
+      
+      <guid>/blog/2018/04/12/2018-04-12-heteronym-problem/</guid>
+      <description>&lt;p&gt;Heteronym is a common lingual phenomenon in the most languages.  Wikepedia:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;A heteronym (also known as a heterophone) is a word that has a different pronunciation and meaning as another word but the same spelling.&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Mindr on Open R</title>
+    <link>/tags/mindr/</link>
+    <description>Recent content in Mindr on Open R</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 26 Jan 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/mindr/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>mindr v.1.2.0 released: universal function and directory tree</title>
+      <link>/blog/2019/01/26/2019-01-26-mindr-features-mm-tree/</link>
+      <pubDate>Sat, 26 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/2019/01/26/2019-01-26-mindr-features-mm-tree/</guid>
+      <description>&lt;p&gt;The new version 1.2.0 mainly brings four exciting features.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>[R: New Features on mindr] New strategy of writing R comments. Conversion between .R scripts and .mm mind maps</title>
+      <link>/blog/2018/11/17/2018-11-17-mindr-r-mm/</link>
+      <pubDate>Sat, 17 Nov 2018 09:50:27 +0000</pubDate>
+      
+      <guid>/blog/2018/11/17/2018-11-17-mindr-r-mm/</guid>
+      <description>&lt;p&gt;Commit: &lt;a href=&#34;https://github.com/pzhaonet/mindr/commit/e82538b89421c314d1612affd2b24a62d4274165&#34;&gt;convertion between .Rmd, .R. and .mm&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;The new version 1.1.8 mainly brings two exciting features.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>[R: New Features on mindr] Supports the new format  of  FreeMind. Displays mind maps directly. Supports bookdown projects.</title>
+      <link>/blog/2018/10/11/2018-10-11-mindr-bookdown/</link>
+      <pubDate>Thu, 11 Oct 2018 08:29:24 +0000</pubDate>
+      
+      <guid>/blog/2018/10/11/2018-10-11-mindr-bookdown/</guid>
+      <description>&lt;p&gt;In the recent months, I have received many kind feedbacks and helpful suggestions from mindr users. I did not improve or enhance mindr until the latest week. Now the new version 1.1.5 brings more exciting features.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>[Task Request] Starting layout of the mindmaps</title>
+      <link>/blog/2018/04/18/2018-04-18-task-request-starting-layout-of-the-mindmaps/</link>
+      <pubDate>Wed, 18 Apr 2018 16:00:39 +0000</pubDate>
+      
+      <guid>/blog/2018/04/18/2018-04-18-task-request-starting-layout-of-the-mindmaps/</guid>
+      <description>&lt;p&gt;As an R package, mindr is used to convert markdown files into mindmaps, and vice versa. It can also convert &lt;a href=&#34;https://steemit.com/utopian-io/@dapeng/new-features-mindr-supports-tibble-dataframes&#34;&gt;tibble dataframes&lt;/a&gt; into mindmaps. A brief introduction can be found in one of my previous posts: &lt;a href=&#34;https://steemit.com/utopian-io/@dapeng/mindr-an-r-package-that-creates-a-markdown-post-out-of-a-mind-map&#34;&gt;mindr: an R package that creates a markdown post out of a mind map&lt;/a&gt;. Thanks to the support from utopian.io!&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>R package mindr: convert markdown files to mind maps, and vice versa</title>
+      <link>/blog/2017/05/19/2017-05-19-mindr/</link>
+      <pubDate>Fri, 19 May 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/2017/05/19/2017-05-19-mindr/</guid>
+      <description>This is a preliminary version of the introduction to mindr. Please go to my Github repo mindr for the latest updates.
+HUGOMORE42 Quick startInstallationdevtools::install_github(&amp;quot;pzhaonet/mindr&amp;quot;)Convert (a) markdown file(s) into a mindmapCreate a folder named mm in the working directory (getwd()), and drop some markdown or rmarkdown files into mm/. Run:
+mindr::md2mm()then you will get a mm.mm file. Open it with any mind-map (brainstorm) software, and you will get a mind map.</description>
+    </item>
+    
+  </channel>
+</rss>

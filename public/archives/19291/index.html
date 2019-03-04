@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+  <head>
+  <meta charset="utf-8">
+  <meta name="robots" content="all,follow">
+  <meta name="googlebot" content="index,follow,snippet,archive">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>用 R bookdown 写吉他谱</title>
+  <meta name="author" content="" />
+
+  
+  <meta name="keywords" content="devows, hugo, go">	
+  
+
+  
+  <meta name="description" content="Site template made by devcows using hugo">	
+  
+
+  <meta name="generator" content="Hugo 0.54.0" />
+
+  <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
+
+  
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  
+  <link href="/css/animate.css" rel="stylesheet">
+
+  
+  
+    <link href="/css/style.blue.css" rel="stylesheet" id="theme-stylesheet">
+  
+
+
+  
+  <link href="/css/custom.css" rel="stylesheet">
+
+  
+  
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  
+
+  
+  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon" href="/img/apple-touch-icon.png" />
+  
+
+  <link href="/css/owl.carousel.css" rel="stylesheet">
+  <link href="/css/owl.theme.css" rel="stylesheet">
+
+  <link rel="alternate" href="/index.xml" type="application/rss+xml" title="Open R">
+
+  
+  <meta property="og:title" content="用 R bookdown 写吉他谱" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="/archives/19291/" />
+  <meta property="og:image" content="img/banners/logo-openr.png" />
+
+</head>
+
+
+  <body>
+
+    <div id="all">
+
+        <header>
+
+          <div class="navbar-affixed-top" data-spy="affix" data-offset-top="200">
+
+    <div class="navbar navbar-default yamm" role="navigation" id="navbar">
+
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand home" href="/">
+                    <img src="/img/banners/logo-openr.png" alt="用 R bookdown 写吉他谱 logo" class="hidden-xs hidden-sm">
+                    <img src="/img/logo-small.png" alt="用 R bookdown 写吉他谱 logo" class="visible-xs visible-sm">
+                    <span class="sr-only">用 R bookdown 写吉他谱 - 跳到主页</span>
+                </a>
+                <div class="navbar-buttons">
+                    <button type="button" class="navbar-toggle btn-template-main" data-toggle="collapse" data-target="#navigation">
+                      <span class="sr-only">切换导航</span>
+                        <i class="fa fa-align-justify"></i>
+                    </button>
+                </div>
+            </div>
+            
+
+            <div class="navbar-collapse collapse" id="navigation">
+                <ul class="nav navbar-nav navbar-right">
+                  
+                  <li class="dropdown">
+                    
+                    <a href="/zh/">主页</a>
+                    
+                  </li>
+                  
+                  <li class="dropdown">
+                    
+                    <a href="/zh/blog/">博客</a>
+                    
+                  </li>
+                  
+                  <li class="dropdown">
+                    
+                    <a href="/zh/faq/">常见问题</a>
+                    
+                  </li>
+                  
+                  <li class="dropdown">
+                    
+                    <a href="/zh/contact/">联系我们</a>
+                    
+                  </li>
+                  
+                  <li class="dropdown">
+                    
+                    <a href="/">EN</a>
+                    
+                  </li>
+                  
+                </ul>
+            </div>
+            
+
+            <div class="collapse clearfix" id="search">
+
+                <form class="navbar-form" role="search">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search">
+                        <span class="input-group-btn">
+
+                    <button type="submit" class="btn btn-template-main"><i class="fa fa-search"></i></button>
+
+                </span>
+                    </div>
+                </form>
+
+            </div>
+            
+
+        </div>
+    </div>
+    
+
+</div>
+
+
+
+
+        </header>
+
+        <div id="heading-breadcrumbs">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>用 R bookdown 写吉他谱</h1>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+        <div id="content">
+            <div class="container">
+
+                <div class="row">
+
+                    
+
+                    <div class="col-md-9" id="blog-post">
+
+                        <p class="text-muted text-uppercase mb-small text-right">由 <a href="#">大鹏</a> | April 6, 2017</p>
+
+                        <div id="post-content">
+                          <p>前情提要：</p>
+
+<ul>
+<li><a href="http://pzhao.org/archives/19122">用 R 语言的 bookdown 写书</a></li>
+<li><a href="http://pzhao.org/archives/19150">用 R 语言的 bookdown 写诗集</a></li>
+<li><a href="http://pzhao.org/archives/19190">用 R 语言的 bookdown 写学术论文</a></li>
+<li><a href="http://pzhao.org/archives/19141">R 语言 bookdown 快速入门和语法速查</a></li>
+</ul>
+
+<p>本篇说说如何用 R 语言的 bookdown 写吉他谱。别拦着我，让我陷进bookdown的怀抱里爽死吧。</p>
+
+<p>中国的民谣吉他伴奏谱常见的一般是六线谱，格式是这样的：</p>
+
+<p><img src="http://pzhao.org/wp-content/uploads/2017/04/chengdu1-.jpg" alt="enter image description here" /></p>
+
+<ul>
+<li>第一行是和弦谱，包括和弦名称和左手按琴弦的指法图；</li>
+<li>第二行是六线谱，右手拨弦的方式（当然也夹杂左手按和弦外音的变化）；</li>
+<li>第三行是歌曲旋律的简谱；</li>
+<li>第四行是歌词。</li>
+</ul>
+
+<p>前两行的和弦谱和六线谱在录入时需要专业软件，太麻烦；歌曲旋律一般是跟着原唱学，基本用不着；歌词最容易录入。由于和弦谱最为重要，任何乐器伴奏都用得着，为了省事儿，上图可以只保留和弦名称和歌词，简化为文字谱：</p>
+
+<pre><code>  C    Em     F     G    C    Em
+让我掉下眼泪的不只昨夜的酒，让我依依不舍的不……
+</code></pre>
+
+<p>文字谱的好处是用不着任何专业软件，录入很方便。但是，这比较坑菜鸟。想不起来<code>Em</code>和弦的指法该怎么办？<code>Em</code>还好办，看见个<code>G#7sus4</code>，我崩溃了，自认水平不行，乖乖翻和弦字典去。如果标注了指法图——</p>
+
+<p><img src="http://pzhao.org/wp-content/uploads/2017/04/chengdu2.png" alt="enter image description here" /></p>
+
+<p>还是更方便一些，吉他和钢琴都可以用。我觉得等我老得掉光牙齿的时候，估计连C和弦的指法都忘光了，给孙子连个《成都》都唱不成，这时候指法图就有用了。</p>
+
+<p>以前我玩过<a href="http://pzhao.org/archives/18230">LaTeX输入指法图</a>的游戏。由于对LaTeX心怀恐惧，这个游戏没敢多玩。现在有了R语言的bookdown来取代LaTeX，自然想把这个游戏拿回来找找年轻的感觉。</p>
+
+<p>这个主意早就有了，原以为会很麻烦（恐惧心理），一直没行动。昨天在送大娃和接二娃之间空出半个小时，鼓捣了一下，居然鼓捣出来了上面那个样子。其实很简单：用 bookdown 的壳，LaTeX的核。上面那句歌词，录入的文字是这样的：</p>
+
+<pre><code>让\CM 我掉下\Em 眼泪的　不\F 只昨夜的\GM 酒　让\CM 我依依\Em 不舍的　不……
+</code></pre>
+
+<p>我打算以后陆陆续续把喜欢的歌弄成一本书（<a href="https://bookdown.org/baydap/bdguitar/bdguitar.pdf">pdf</a>），样子是：</p>
+
+<p><img src="http://pzhao.org/wp-content/uploads/2017/04/img-guitar.png" alt="enter image description here" /></p>
+
+<p>并且把bookdown录入吉他谱的源代码在<a href="https://github.com/dapengde/bookdown-guitar">GitHub开了个bookdown-guitar的项目</a>。毕竟，中文的对齐不太完美，看看有没有高手来帮帮我。</p>
+
+<p>其实跟LaTeX里一样。那我在LaTeX里用就行了，干嘛来bookdown里用？</p>
+
+<p>因为这样的话，就可以在同一本书里同时呈现R代码、作图、分析结果和吉他谱啊。</p>
+
+<p>啊？把他们弄在一起有什么用？</p>
+
+<p>呃……这是个好问题……容我清清脑子想一想……听说数学领域很多理论在提出时都没啥用，后来都用上了，除了数论……</p>
+
+<p><a href="http://dapengde.com/archives/19291">原文链接</a></p>
+                        </div>
+                        
+                        
+                        <div id="comments">
+                            <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "pzhao" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+                        </div>
+                        
+
+                    </div>
+                    
+
+                    
+
+                    
+
+                    <div class="col-md-3">
+
+                        
+
+                        
+
+<div class="panel panel-default sidebar-menu">
+
+    <div class="panel-heading">
+      <h3 class="panel-title">搜索</h3>
+    </div>
+
+    <div class="panel-body">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" role="search">
+            <div class="input-group">
+                <input type="search" name="q" class="form-control" placeholder="搜索">
+                <input type="hidden" name="sitesearch" value="/">
+                <span class="input-group-btn">
+                    <button type="submit" class="btn btn-template-main"><i class="fa fa-search"></i></button>
+                </span>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+
+
+
+
+
+<div class="panel panel-default sidebar-menu">
+
+    <div class="panel-heading">
+      <h3 class="panel-title">分类</h3>
+    </div>
+
+    <div class="panel-body">
+        <ul class="nav nav-pills nav-stacked">
+            
+            <li><a href="/categories/%e6%9c%aa%e5%88%86%e7%b1%bb">未分类 (7)</a>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+<div class="panel sidebar-menu">
+    <div class="panel-heading">
+      <h3 class="panel-title">标签</h3>
+    </div>
+
+    <div class="panel-body">
+        <ul class="tag-cloud">
+            
+            <li><a href="/tags/advr"><i class="fa fa-tags"></i> advr</a>
+            </li>
+            
+            <li><a href="/tags/beginr"><i class="fa fa-tags"></i> beginr</a>
+            </li>
+            
+            <li><a href="/tags/blog"><i class="fa fa-tags"></i> blog</a>
+            </li>
+            
+            <li><a href="/tags/blogdown"><i class="fa fa-tags"></i> blogdown</a>
+            </li>
+            
+            <li><a href="/tags/bookdown"><i class="fa fa-tags"></i> bookdown</a>
+            </li>
+            
+            <li><a href="/tags/bookdownplus"><i class="fa fa-tags"></i> bookdownplus</a>
+            </li>
+            
+            <li><a href="/tags/css"><i class="fa fa-tags"></i> css</a>
+            </li>
+            
+            <li><a href="/tags/drposter"><i class="fa fa-tags"></i> drposter</a>
+            </li>
+            
+            <li><a href="/tags/git"><i class="fa fa-tags"></i> git</a>
+            </li>
+            
+            <li><a href="/tags/hugo"><i class="fa fa-tags"></i> hugo</a>
+            </li>
+            
+            <li><a href="/tags/latex"><i class="fa fa-tags"></i> latex</a>
+            </li>
+            
+            <li><a href="/tags/linux"><i class="fa fa-tags"></i> linux</a>
+            </li>
+            
+            <li><a href="/tags/markdown"><i class="fa fa-tags"></i> markdown</a>
+            </li>
+            
+            <li><a href="/tags/mindr"><i class="fa fa-tags"></i> mindr</a>
+            </li>
+            
+            <li><a href="/tags/news"><i class="fa fa-tags"></i> news</a>
+            </li>
+            
+            <li><a href="/tags/pagedown"><i class="fa fa-tags"></i> pagedown</a>
+            </li>
+            
+            <li><a href="/tags/pinyin"><i class="fa fa-tags"></i> pinyin</a>
+            </li>
+            
+            <li><a href="/tags/post"><i class="fa fa-tags"></i> post</a>
+            </li>
+            
+            <li><a href="/tags/postr"><i class="fa fa-tags"></i> postr</a>
+            </li>
+            
+            <li><a href="/tags/r"><i class="fa fa-tags"></i> r</a>
+            </li>
+            
+            <li><a href="/tags/rmd"><i class="fa fa-tags"></i> rmd</a>
+            </li>
+            
+            <li><a href="/tags/rosr"><i class="fa fa-tags"></i> rosr</a>
+            </li>
+            
+            <li><a href="/tags/steemr"><i class="fa fa-tags"></i> steemr</a>
+            </li>
+            
+            <li><a href="/tags/teaching"><i class="fa fa-tags"></i> teaching</a>
+            </li>
+            
+            <li><a href="/tags/utopian-io"><i class="fa fa-tags"></i> utopian-io</a>
+            </li>
+            
+            <li><a href="/tags/word"><i class="fa fa-tags"></i> word</a>
+            </li>
+            
+            <li><a href="/tags/xaringan"><i class="fa fa-tags"></i> xaringan</a>
+            </li>
+            
+            <li><a href="/tags/%e5%90%89%e4%bb%96"><i class="fa fa-tags"></i> 吉他</a>
+            </li>
+            
+            <li><a href="/tags/%e5%ad%a6-r"><i class="fa fa-tags"></i> 学-r</a>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+
+
+
+
+
+                        
+
+                    </div>
+                    
+
+                    
+
+                </div>
+                
+
+            </div>
+            
+        </div>
+        
+
+        <footer id="footer">
+    <div class="container">
+
+        
+        <div class="col-md-4 col-sm-6">
+            <h4>关于我们</h4>
+
+            我们就是我们。
+
+            <hr class="hidden-md hidden-lg hidden-sm">
+
+        </div>
+        
+        
+
+        <div class="col-md-4 col-sm-6">
+
+             
+            <h4>最新博客</h4>
+
+            <div class="blog-entries">
+                
+                <div class="item same-height-row clearfix">
+                    <div class="image same-height-always">
+                        <a href="/zh/blog/2019/02/01/2019-02-01-txt-review-mode/">
+                          
+                            <img src="/img/banners/logo-openr.png" class="img-responsive" alt="纯文本编辑器的审阅模式">
+                          
+                        </a>
+                    </div>
+                    <div class="name same-height-always">
+                        <h5><a href="/zh/blog/2019/02/01/2019-02-01-txt-review-mode/">纯文本编辑器的审阅模式</a></h5>
+                    </div>
+                </div>
+                
+                <div class="item same-height-row clearfix">
+                    <div class="image same-height-always">
+                        <a href="/zh/blog/2019/02/01/2019-02-01-literature-management/">
+                          
+                            <img src="/img/banners/logo-openr.png" class="img-responsive" alt="纯文本：文献管理的终极之道">
+                          
+                        </a>
+                    </div>
+                    <div class="name same-height-always">
+                        <h5><a href="/zh/blog/2019/02/01/2019-02-01-literature-management/">纯文本：文献管理的终极之道</a></h5>
+                    </div>
+                </div>
+                
+                <div class="item same-height-row clearfix">
+                    <div class="image same-height-always">
+                        <a href="/zh/blog/2019/01/28/2019-01-28-rstudio-ppt/">
+                          
+                            <img src="/img/banners/logo-openr.png" class="img-responsive" alt="往 ppt 里插入 500 张图片的小伎俩">
+                          
+                        </a>
+                    </div>
+                    <div class="name same-height-always">
+                        <h5><a href="/zh/blog/2019/01/28/2019-01-28-rstudio-ppt/">往 ppt 里插入 500 张图片的小伎俩</a></h5>
+                    </div>
+                </div>
+                
+            </div>
+
+            <hr class="hidden-md hidden-lg">
+             
+
+        </div>
+        
+
+        
+        <div class="col-md-4 col-sm-6">
+
+          <h4>联系</h4>
+
+            <strong>OpenR Team</strong>
+      </p>
+      
+
+
+            <a href="/contact" class="btn btn-small btn-template-main">跳到联系页面</a>
+
+            <hr class="hidden-md hidden-lg hidden-sm">
+
+        </div>
+        
+        
+
+    </div>
+    
+</footer>
+
+
+
+
+
+
+
+<div id="copyright">
+    <div class="container">
+        <div class="col-md-12">
+            
+            <p class="pull-left">Copyright (c) 2019, OpenR Team; all rights reserved.</p>
+            
+            <p class="pull-right">
+              模板来自 <a href="http://bootstrapious.com/free-templates">Bootstrapious</a>.
+              
+
+              移植到 Hugo 来自 <a href="https://github.com/devcows/hugo-universal-theme">DevCows</a>
+            </p>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+    </div>
+    
+
+    
+<script src="//code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0/jquery.counterup.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-parallax/1.1.3/jquery-parallax.js"></script>
+
+<script src="//maps.googleapis.com/maps/api/js?key=AIzaSyCFhtWLJcE30xOAjcbSFi-0fnoVmQZPb1Y&v=3.exp"></script>
+
+<script src="/js/hpneo.gmaps.js"></script>
+<script src="/js/gmaps.init.js"></script>
+<script src="/js/front.js"></script>
+
+
+<script src="/js/owl.carousel.min.js"></script>
+
+
+  </body>
+</html>

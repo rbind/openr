@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Word on Open R</title>
+    <link>/zh/tags/word/</link>
+    <description>Recent content in Word on Open R</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Tue, 20 Jun 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/zh/tags/word/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>LaTeX 公式转换成 Word 公式</title>
+      <link>/zh/blog/2017/06/20/2017-06-20-latex-equations-to-word/</link>
+      <pubDate>Tue, 20 Jun 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/zh/blog/2017/06/20/2017-06-20-latex-equations-to-word/</guid>
+      <description>最近写了篇论文，投往一家学术期刊。投稿时，Word 格式和 \(\LaTeX\) 格式可以任选，我选了 Word，是因为合作作者用 Word。可是，文稿里的公式是我输入的，而那些公式在我的博士论文里是用 \(\LaTeX\) 写的。为了图省事，我就用了 Word 的插件Aurora，这样，只需把公式的 \(\LaTeX\) 代码往 Word 文档的 Aurora 域里拷贝粘贴，bingo！公式就渲染好了，比 Word 的自带公式漂亮一些。
+HUGOMORE42 这篇论文很顺利，很快被接收了。到了最后一步的时候，编辑部要我把文档里的公式修改成可编辑的格式。——本来就是可编辑的呀。嗯，大概是编辑部不使用Aurora，那么他们的 Word 打开我的文档里看到的公式自然就是没法编辑的了。我懒得解释，最后决定把公式全部转换成 Word 公式。
+\(\LaTeX\) 公式转成 Word 公式并不难，只需三步：\(\LaTeX\) –&amp;gt; MathML –&amp;gt; 修改 –&amp;gt; Word.
+\(\LaTeX\) 公式转成 MathML公式。这可以在 blogdown 里操作，只需把 \(\LaTeX\) 公式代码扔进一个帖子里，运行建站函数，在生成的网页里获取公式的 MathML 代码即可（在公式上点右键 - Show Math As - MathML Code）。没有 blodown 的，用texmath 在线转换也可以。
+修改 MathML 代码。将上一步得到的 MathML 代码拷贝粘贴到文本编辑器，然后在开头添上一行：
+&amp;lt;?xml version=&amp;quot;1.0&amp;quot;?&amp;gt;将修改的 MathML 代码全部选中，拷贝粘贴到 Word 里，就自动变成公式了。当然，上面第一步也可以用别的软件来完成，下图是个示例。</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,866 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>/zh/blog/2019/02/01/2019-02-01-txt-review-mode/</loc>
+    <lastmod>2019-02-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/zh/blog/2019/02/01/2019-02-01-literature-management/</loc>
+    <lastmod>2019-02-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/zh/blog/2019/01/28/2019-01-28-rstudio-ppt/</loc>
+    <lastmod>2019-01-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/zh/blog/2019/01/26/2019-01-26-rmd-new/</loc>
+    <lastmod>2019-01-26T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/blog/2019/01/26/2019-01-26-rmd-new/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="/zh/blog/2019/01/26/2019-01-26-rmd-new/"
+                />
+  </url>
+  
+  <url>
+    <loc>/zh/blog/2019/01/26/2019-01-26-rosr-new/</loc>
+    <lastmod>2019-01-26T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/zh/blog/2019/01/21/2019-01-21-pagedown/</loc>
+    <lastmod>2019-01-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/zh/blog/2019/01/07/2019-01-07-mindr-mm/</loc>
+    <lastmod>2019-01-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/zh/blog/2018/12/20/2018-12-20-pinyin-v.1.1.5/</loc>
+    <lastmod>2018-12-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/zh/blog/2018/12/04/2018-12-04-r-course-slides/</loc>
+    <lastmod>2018-12-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/zh/blog/2018/12/01/2018-12-01-r-course-announcement/</loc>
+    <lastmod>2018-12-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/zh/blog/2018/11/23/2018-11-23-xaringan-themes/</loc>
+    <lastmod>2018-11-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/zh/blog/2018/11/23/2018-11-23-xaringan-animate-single/</loc>
+    <lastmod>2018-11-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/zh/blog/2018/11/21/2018-11-21-mindr-slides/</loc>
+    <lastmod>2018-11-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/zh/blog/2018/11/16/2018-11-16-r-with-markdown2/</loc>
+    <lastmod>2018-11-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/zh/blog/2018/10/27/2018-10-27-r-with-markdown/</loc>
+    <lastmod>2018-10-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/zh/blog/2018/10/26/2018-10-26-ggplot2-problems/</loc>
+    <lastmod>2018-10-26T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/zh/blog/2018/10/24/2018-10-24-calling-for-help/</loc>
+    <lastmod>2018-10-24T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/zh/blog/2018/10/20/2018-10-20-mindr-one-year/</loc>
+    <lastmod>2018-10-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/zh/blog/2018/10/19/2018-10-19-pinyin-one-year/</loc>
+    <lastmod>2018-10-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/zh/blog/2018/10/18/2018-10-18-bookdownplus-one-year/</loc>
+    <lastmod>2018-10-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/zh/blog/2018/09/26/2018-09-26-shadowed-images/</loc>
+    <lastmod>2018-09-26T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/zh/blog/2018/09/23/2018-09-23-bookdownplus-gallery/</loc>
+    <lastmod>2018-09-23T16:34:39+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/zh/blog/2018/09/07/2018-09-07_bookdown-contest/</loc>
+    <lastmod>2018-09-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/zh/blog/2018/06/14/2018-06-14-advr/</loc>
+    <lastmod>2018-06-14T13:26:33+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/zh/blog/2018/06/08/2018-06-08_gource/</loc>
+    <lastmod>2018-06-08T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/blog/2018/06/08/2018-06-08_gource/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="/zh/blog/2018/06/08/2018-06-08_gource/"
+                />
+  </url>
+  
+  <url>
+    <loc>/zh/blog/2018/05/27/2018-05-27_xuer-girls/</loc>
+    <lastmod>2018-05-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/zh/blog/2018/05/26/2018-05-26_xuer-faq/</loc>
+    <lastmod>2018-05-26T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/zh/blog/2018/05/18/2018-05-18_xuer-sale/</loc>
+    <lastmod>2018-05-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/zh/blog/2018/02/04/2018-02-04_sync/</loc>
+    <lastmod>2018-02-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/zh/blog/2018/01/18/2018-01-18_writelines/</loc>
+    <lastmod>2018-01-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/zh/blog/2018/01/17/2018-01-17-latex-and-me-4/</loc>
+    <lastmod>2018-01-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/zh/blog/2017/12/23/2017-12-23-latex-and-me-3/</loc>
+    <lastmod>2017-12-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/zh/blog/2017/11/26/2017-11-26-bookdownplus_update/</loc>
+    <lastmod>2017-11-26T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/zh/blog/2017/11/25/2017-11-25-migrated-to-hugo/</loc>
+    <lastmod>2017-11-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/zh/blog/2017/11/22/2017-11-22-latex-and-me-2/</loc>
+    <lastmod>2017-11-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/zh/blog/2017/11/21/2017-11-21-latex-and-me-1/</loc>
+    <lastmod>2017-11-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/zh/blog/2017/11/06/2017-11-06-build-a-mirror/</loc>
+    <lastmod>2017-11-06T09:44:42+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/zh/blog/2017/09/22/2017-09-22-bookdown_tips/</loc>
+    <lastmod>2017-09-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/zh/blog/2017/09/22/2017-09-22-backticks_in_rmd/</loc>
+    <lastmod>2017-09-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/archives/19522/</loc>
+    <lastmod>2017-09-18T12:43:59+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/archives/19401/</loc>
+    <lastmod>2017-06-27T09:19:57+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/zh/blog/2017/06/27/2017-06-27-bookdownplus_magic/</loc>
+    <lastmod>2017-06-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/archives/19377/</loc>
+    <lastmod>2017-06-23T18:29:38+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/zh/blog/2017/06/23/2017-06-23-beginr_released/</loc>
+    <lastmod>2017-06-23T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/blog/2017/06/23/2017-06-23-beginr_released/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="/zh/blog/2017/06/23/2017-06-23-beginr_released/"
+                />
+  </url>
+  
+  <url>
+    <loc>/zh/blog/2017/06/22/2017-06-22-bookdownplus_released/</loc>
+    <lastmod>2017-06-22T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/blog/2017/06/22/2017-06-22-bookdownplus_released/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="/zh/blog/2017/06/22/2017-06-22-bookdownplus_released/"
+                />
+  </url>
+  
+  <url>
+    <loc>/zh/blog/2017/06/20/2017-06-20-latex-equations-to-word/</loc>
+    <lastmod>2017-06-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/zh/blog/2017/06/19/2017-06-19-publish-r-packages/</loc>
+    <lastmod>2017-06-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/zh/blog/2017/06/14/2017-06-14-preface-zhu/</loc>
+    <lastmod>2017-06-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/zh/blog/2017/05/26/2017-05-26-pinyin/</loc>
+    <lastmod>2017-05-26T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/zh/blog/2017/05/23/2017-05-23-equations/</loc>
+    <lastmod>2017-05-23T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/blog/2017/05/23/2017-05-23-equations/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="/zh/blog/2017/05/23/2017-05-23-equations/"
+                />
+  </url>
+  
+  <url>
+    <loc>/zh/blog/2017/05/19/2017-05-19-mindr/</loc>
+    <lastmod>2017-05-19T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/blog/2017/05/19/2017-05-19-mindr/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="/zh/blog/2017/05/19/2017-05-19-mindr/"
+                />
+  </url>
+  
+  <url>
+    <loc>/zh/blog/2017/05/18/2017-05-18-real-academic-site/</loc>
+    <lastmod>2017-05-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/zh/blog/2017/05/16/2017-05-17-rmickey/</loc>
+    <lastmod>2017-05-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/zh/blog/2017/05/16/2017-05-16-postr/</loc>
+    <lastmod>2017-05-16T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/blog/2017/05/16/2017-05-16-postr/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="/zh/blog/2017/05/16/2017-05-16-postr/"
+                />
+  </url>
+  
+  <url>
+    <loc>/zh/blog/2017/05/09/2017-05-09-bookdown-plus/</loc>
+    <lastmod>2017-05-09T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/blog/2017/05/09/2017-05-09-bookdown-plus/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="/zh/blog/2017/05/09/2017-05-09-bookdown-plus/"
+                />
+  </url>
+  
+  <url>
+    <loc>/zh/blog/2017/04/19/2017-04-18-hugo-icon/</loc>
+    <lastmod>2017-04-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/zh/blog/2017/04/18/2017-04-16-hugo-rss/</loc>
+    <lastmod>2017-04-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/zh/blog/2017/04/17/2017-04-16-slash/</loc>
+    <lastmod>2017-04-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/zh/blog/2017/04/16/2017-04-16-hugo-multilingual/</loc>
+    <lastmod>2017-04-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/zh/blog/2017/04/16/2017-04-15-word-never-markdown/</loc>
+    <lastmod>2017-04-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/zh/blog/2017/04/15/2017-04-15-hogo-academic-summary/</loc>
+    <lastmod>2017-04-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/zh/blog/2017/04/14/2017-04-14-hogo-disques-problem/</loc>
+    <lastmod>2017-04-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/archives/19309/</loc>
+    <lastmod>2017-04-13T12:49:17+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/archives/19304/</loc>
+    <lastmod>2017-04-11T14:10:56+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/zh/blog/2017/04/11/2017-04-11_r-blogdown/</loc>
+    <lastmod>2017-04-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/archives/19291/</loc>
+    <lastmod>2017-04-06T09:15:36+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/zh/blog/2017/03/24/2017-03-24-r-bookdown/</loc>
+    <lastmod>2017-03-24T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/archives/19150/</loc>
+    <lastmod>2017-03-15T14:21:56+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/archives/19141/</loc>
+    <lastmod>2017-03-15T07:29:47+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/archives/19122/</loc>
+    <lastmod>2017-03-14T14:36:57+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/zh/blog/2017/03/14/2017-03-14-bookdown-cheatsheet/</loc>
+    <lastmod>2017-03-14T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/blog/2017/03/14/2017-03-14-bookdown-cheatsheet/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="/zh/blog/2017/03/14/2017-03-14-bookdown-cheatsheet/"
+                />
+  </url>
+  
+  <url>
+    <loc>/zh/blog/2017/03/13/2017-03-13-irresistible-bookdown/</loc>
+    <lastmod>2017-03-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/zh/tags/advr/</loc>
+    <lastmod>2018-06-14T13:26:33+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/zh/tags/beginr/</loc>
+    <lastmod>2017-06-23T18:29:38+00:00</lastmod>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/tags/beginr/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="/zh/tags/beginr/"
+                />
+  </url>
+  
+  <url>
+    <loc>/zh/tags/blog/</loc>
+    <lastmod>2017-11-25T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/zh/tags/blogdown/</loc>
+    <lastmod>2018-09-26T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/tags/blogdown/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="/zh/tags/blogdown/"
+                />
+  </url>
+  
+  <url>
+    <loc>/zh/blog/</loc>
+    <lastmod>2019-02-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/blog/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="/zh/blog/"
+                />
+  </url>
+  
+  <url>
+    <loc>/zh/tags/bookdown/</loc>
+    <lastmod>2018-10-19T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/tags/bookdown/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="/zh/tags/bookdown/"
+                />
+  </url>
+  
+  <url>
+    <loc>/zh/tags/bookdownplus/</loc>
+    <lastmod>2018-10-18T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/tags/bookdownplus/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="/zh/tags/bookdownplus/"
+                />
+  </url>
+  
+  <url>
+    <loc>/zh/categories/</loc>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="/zh/categories/"
+                />
+  </url>
+  
+  <url>
+    <loc>/zh/tags/css/</loc>
+    <lastmod>2018-09-26T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/zh/tags/drposter/</loc>
+    <lastmod>2018-12-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/zh/tags/git/</loc>
+    <lastmod>2019-02-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/zh/tags/hugo/</loc>
+    <lastmod>2017-04-11T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/zh/tags/latex/</loc>
+    <lastmod>2019-02-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/zh/tags/linux/</loc>
+    <lastmod>2018-02-04T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/zh/tags/markdown/</loc>
+    <lastmod>2019-01-28T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/tags/markdown/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="/zh/tags/markdown/"
+                />
+  </url>
+  
+  <url>
+    <loc>/zh/tags/mindr/</loc>
+    <lastmod>2019-01-07T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/tags/mindr/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="/zh/tags/mindr/"
+                />
+  </url>
+  
+  <url>
+    <loc>/zh/tags/news/</loc>
+    <lastmod>2018-05-18T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/zh/</loc>
+    <lastmod>2019-02-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="/zh/"
+                />
+  </url>
+  
+  <url>
+    <loc>/zh/tags/pagedown/</loc>
+    <lastmod>2019-01-21T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/zh/tags/pinyin/</loc>
+    <lastmod>2018-12-20T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/tags/pinyin/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="/zh/tags/pinyin/"
+                />
+  </url>
+  
+  <url>
+    <loc>/zh/tags/post/</loc>
+    <lastmod>2019-02-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/tags/post/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="/zh/tags/post/"
+                />
+  </url>
+  
+  <url>
+    <loc>/zh/tags/postr/</loc>
+    <lastmod>2017-05-16T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/tags/postr/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="/zh/tags/postr/"
+                />
+  </url>
+  
+  <url>
+    <loc>/zh/tags/r/</loc>
+    <lastmod>2019-02-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/tags/r/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="/zh/tags/r/"
+                />
+  </url>
+  
+  <url>
+    <loc>/zh/tags/rmd/</loc>
+    <lastmod>2019-01-26T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/tags/rmd/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="/zh/tags/rmd/"
+                />
+  </url>
+  
+  <url>
+    <loc>/zh/tags/rosr/</loc>
+    <lastmod>2019-01-26T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/tags/rosr/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="/zh/tags/rosr/"
+                />
+  </url>
+  
+  <url>
+    <loc>/zh/tags/steemr/</loc>
+    <lastmod>2017-11-06T09:44:42+00:00</lastmod>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/tags/steemr/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="/zh/tags/steemr/"
+                />
+  </url>
+  
+  <url>
+    <loc>/zh/tags/</loc>
+    <lastmod>2018-06-14T13:26:33+00:00</lastmod>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="/zh/tags/"
+                />
+  </url>
+  
+  <url>
+    <loc>/zh/tags/teaching/</loc>
+    <lastmod>2018-12-04T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/zh/tags/utopian-io/</loc>
+    <lastmod>2018-09-23T16:34:39+00:00</lastmod>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/tags/utopian-io/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="/zh/tags/utopian-io/"
+                />
+  </url>
+  
+  <url>
+    <loc>/zh/tags/word/</loc>
+    <lastmod>2017-06-20T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/zh/tags/xaringan/</loc>
+    <lastmod>2018-11-23T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/zh/tags/%E5%90%89%E4%BB%96/</loc>
+    <lastmod>2017-04-06T09:15:36+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/zh/tags/%E5%AD%A6-r/</loc>
+    <lastmod>2018-05-27T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/zh/faq/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/faq/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="/zh/faq/"
+                />
+  </url>
+  
+  <url>
+    <loc>/zh/categories/%E6%9C%AA%E5%88%86%E7%B1%BB/</loc>
+    <lastmod>2017-06-23T18:29:38+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/zh/contact/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/contact/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="/zh/contact/"
+                />
+  </url>
+  
+</urlset>

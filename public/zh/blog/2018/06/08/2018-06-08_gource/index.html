@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+  <head>
+  <meta charset="utf-8">
+  <meta name="robots" content="all,follow">
+  <meta name="googlebot" content="index,follow,snippet,archive">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>当 github 的项目做了可视化，我感觉像是上帝在创世纪</title>
+  <meta name="author" content="" />
+
+  
+  <meta name="keywords" content="devows, hugo, go">	
+  
+
+  
+  <meta name="description" content="Site template made by devcows using hugo">	
+  
+
+  <meta name="generator" content="Hugo 0.54.0" />
+
+  <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
+
+  
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  
+  <link href="/css/animate.css" rel="stylesheet">
+
+  
+  
+    <link href="/css/style.blue.css" rel="stylesheet" id="theme-stylesheet">
+  
+
+
+  
+  <link href="/css/custom.css" rel="stylesheet">
+
+  
+  
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  
+
+  
+  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon" href="/img/apple-touch-icon.png" />
+  
+
+  <link href="/css/owl.carousel.css" rel="stylesheet">
+  <link href="/css/owl.theme.css" rel="stylesheet">
+
+  <link rel="alternate" href="/index.xml" type="application/rss+xml" title="Open R">
+
+  
+  <meta property="og:title" content="当 github 的项目做了可视化，我感觉像是上帝在创世纪" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="/zh/blog/2018/06/08/2018-06-08_gource//" />
+  <meta property="og:image" content="img/banners/logo-openr.png" />
+
+</head>
+
+
+  <body>
+
+    <div id="all">
+
+        <header>
+
+          <div class="navbar-affixed-top" data-spy="affix" data-offset-top="200">
+
+    <div class="navbar navbar-default yamm" role="navigation" id="navbar">
+
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand home" href="/">
+                    <img src="/img/banners/logo-openr.png" alt="当 github 的项目做了可视化，我感觉像是上帝在创世纪 logo" class="hidden-xs hidden-sm">
+                    <img src="/img/logo-small.png" alt="当 github 的项目做了可视化，我感觉像是上帝在创世纪 logo" class="visible-xs visible-sm">
+                    <span class="sr-only">当 github 的项目做了可视化，我感觉像是上帝在创世纪 - 跳到主页</span>
+                </a>
+                <div class="navbar-buttons">
+                    <button type="button" class="navbar-toggle btn-template-main" data-toggle="collapse" data-target="#navigation">
+                      <span class="sr-only">切换导航</span>
+                        <i class="fa fa-align-justify"></i>
+                    </button>
+                </div>
+            </div>
+            
+
+            <div class="navbar-collapse collapse" id="navigation">
+                <ul class="nav navbar-nav navbar-right">
+                  
+                  <li class="dropdown">
+                    
+                    <a href="/zh/">主页</a>
+                    
+                  </li>
+                  
+                  <li class="dropdown">
+                    
+                    <a href="/zh/blog/">博客</a>
+                    
+                  </li>
+                  
+                  <li class="dropdown">
+                    
+                    <a href="/zh/faq/">常见问题</a>
+                    
+                  </li>
+                  
+                  <li class="dropdown">
+                    
+                    <a href="/zh/contact/">联系我们</a>
+                    
+                  </li>
+                  
+                  <li class="dropdown">
+                    
+                    <a href="/">EN</a>
+                    
+                  </li>
+                  
+                </ul>
+            </div>
+            
+
+            <div class="collapse clearfix" id="search">
+
+                <form class="navbar-form" role="search">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search">
+                        <span class="input-group-btn">
+
+                    <button type="submit" class="btn btn-template-main"><i class="fa fa-search"></i></button>
+
+                </span>
+                    </div>
+                </form>
+
+            </div>
+            
+
+        </div>
+    </div>
+    
+
+</div>
+
+
+
+
+        </header>
+
+        <div id="heading-breadcrumbs">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>当 github 的项目做了可视化，我感觉像是上帝在创世纪</h1>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+        <div id="content">
+            <div class="container">
+
+                <div class="row">
+
+                    
+
+                    <div class="col-md-9" id="blog-post">
+
+                        <p class="text-muted text-uppercase mb-small text-right">由 <a href="#">大鹏</a> | June 8, 2018</p>
+
+                        <div id="post-content">
+                          <p>用 blogdown 制作和维护本博客已经一年有余。昨天，我把本网站的发展过程做了一个 5 分钟的视频，从开始到现在。</p>
+
+<p><img src="https://github.com/pzhaonet/keller/raw/master/figdapeng/i2018-06-08_gource.jpg" alt="" /></p>
+
+<p>视频里，先是飞出来一个小人儿，一发功，biu biu biu，就激发出几个星系。小人儿在星系间穿梭，所到之处，如漫天烟花绽放。在抬手一挥间，一个个星球诞生，一个个星球毁灭。最后，整个宇宙稳定下来，成为 pzhao.org 现在的静稳态。</p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/bc8zowzUr1g" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+<p>Youtube 视频</p>
+
+<p>那个小人儿就是我。创世的感觉，有没有？</p>
+
+<p>简单解释一下：</p>
+
+<ul>
+<li>视频里，每个圆球代表本网站在 gihub 的项目里的一个文件；</li>
+<li>小人儿用手电筒照亮一个圆球，代表生成或修改这个文件。</li>
+<li>顶部显示的是实际时间。</li>
+</ul>
+
+<p>回顾这一年使用 blogdown 做博客的历程，出现过三次爆炸：</p>
+
+<ol>
+<li>第一次当然是开头，创世纪嘛，产生了很多新文件。</li>
+<li>第二次是 2017 年 11 月，content 文件夹大爆炸。这是我把 wordpress 的旧博客全部搬家过来的大事记。</li>
+<li>第三次是 2018 年 4 月，我把 public 文件夹给毁灭了，从此再也不在本地编译了，写完 .md 文件就直接同步，全权交给 netlify 处理。</li>
+</ol>
+
+<p>视频很酷，制作起来是不是很麻烦？</p>
+
+<p>不费吹灰之力。</p>
+
+<p>这个可视化视频是用 <a href="http://gource.io/">gource</a> 制作的。只要在本地安装这个软件，然后 cmd 进入本地 github repo 的文件夹，运行 <code>gource</code>就行了。想录制成视频，只需设定合适的参数，然后用 ffmpeg 转换一下即可。</p>
+
+<p>爽极了。</p>
+
+<p>比这个更爽的，是团队合作 github 项目的可视化。</p>
+
+<p>我在 steemit 社交平台混了有一段时间了。前不久，召集一群义士合编了一本书，叫《<a href="https://bookdown.org/baydap/steemh">Steem 指南</a>》。我们在 github 上写，用的是 bookdown 框架。</p>
+
+<p>从 2 月初项目开始到 4 月底，《Steem 指南》的故事，浓缩在这个 1 分钟的视频里。</p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ogaCo1nUdQw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+<p>Youtube 视频</p>
+
+<p>视频里，我们就像一群园丁，来来往往忙碌，照看着一株株幼苗。花草们从一两株慢慢变得繁茂，杂草被及时除去，最后，成了一个小花园：</p>
+
+<ul>
+<li>最大的蓝色苗圃，那是图片文件夹里的图片文件；</li>
+<li>红色为主的一团彩色，那是根目录的书稿 .Rmd 文件；</li>
+<li>偏远的两个小花盆，一红一绿，那是测试文件和 .tex 配置文件。</li>
+</ul>
+
+<p>这是我们的故事。</p>
+
+<p>我看了之后，是为我们这个团队感到骄傲和感动的。</p>
+                        </div>
+                        
+                        
+                        <div id="comments">
+                            <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "pzhao" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+                        </div>
+                        
+
+                    </div>
+                    
+
+                    
+
+                    
+
+                    <div class="col-md-3">
+
+                        
+
+                        
+
+<div class="panel panel-default sidebar-menu">
+
+    <div class="panel-heading">
+      <h3 class="panel-title">搜索</h3>
+    </div>
+
+    <div class="panel-body">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" role="search">
+            <div class="input-group">
+                <input type="search" name="q" class="form-control" placeholder="搜索">
+                <input type="hidden" name="sitesearch" value="/">
+                <span class="input-group-btn">
+                    <button type="submit" class="btn btn-template-main"><i class="fa fa-search"></i></button>
+                </span>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+
+
+
+
+
+<div class="panel panel-default sidebar-menu">
+
+    <div class="panel-heading">
+      <h3 class="panel-title">分类</h3>
+    </div>
+
+    <div class="panel-body">
+        <ul class="nav nav-pills nav-stacked">
+            
+            <li><a href="/categories/%e6%9c%aa%e5%88%86%e7%b1%bb">未分类 (7)</a>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+<div class="panel sidebar-menu">
+    <div class="panel-heading">
+      <h3 class="panel-title">标签</h3>
+    </div>
+
+    <div class="panel-body">
+        <ul class="tag-cloud">
+            
+            <li><a href="/tags/advr"><i class="fa fa-tags"></i> advr</a>
+            </li>
+            
+            <li><a href="/tags/beginr"><i class="fa fa-tags"></i> beginr</a>
+            </li>
+            
+            <li><a href="/tags/blog"><i class="fa fa-tags"></i> blog</a>
+            </li>
+            
+            <li><a href="/tags/blogdown"><i class="fa fa-tags"></i> blogdown</a>
+            </li>
+            
+            <li><a href="/tags/bookdown"><i class="fa fa-tags"></i> bookdown</a>
+            </li>
+            
+            <li><a href="/tags/bookdownplus"><i class="fa fa-tags"></i> bookdownplus</a>
+            </li>
+            
+            <li><a href="/tags/css"><i class="fa fa-tags"></i> css</a>
+            </li>
+            
+            <li><a href="/tags/drposter"><i class="fa fa-tags"></i> drposter</a>
+            </li>
+            
+            <li><a href="/tags/git"><i class="fa fa-tags"></i> git</a>
+            </li>
+            
+            <li><a href="/tags/hugo"><i class="fa fa-tags"></i> hugo</a>
+            </li>
+            
+            <li><a href="/tags/latex"><i class="fa fa-tags"></i> latex</a>
+            </li>
+            
+            <li><a href="/tags/linux"><i class="fa fa-tags"></i> linux</a>
+            </li>
+            
+            <li><a href="/tags/markdown"><i class="fa fa-tags"></i> markdown</a>
+            </li>
+            
+            <li><a href="/tags/mindr"><i class="fa fa-tags"></i> mindr</a>
+            </li>
+            
+            <li><a href="/tags/news"><i class="fa fa-tags"></i> news</a>
+            </li>
+            
+            <li><a href="/tags/pagedown"><i class="fa fa-tags"></i> pagedown</a>
+            </li>
+            
+            <li><a href="/tags/pinyin"><i class="fa fa-tags"></i> pinyin</a>
+            </li>
+            
+            <li><a href="/tags/post"><i class="fa fa-tags"></i> post</a>
+            </li>
+            
+            <li><a href="/tags/postr"><i class="fa fa-tags"></i> postr</a>
+            </li>
+            
+            <li><a href="/tags/r"><i class="fa fa-tags"></i> r</a>
+            </li>
+            
+            <li><a href="/tags/rmd"><i class="fa fa-tags"></i> rmd</a>
+            </li>
+            
+            <li><a href="/tags/rosr"><i class="fa fa-tags"></i> rosr</a>
+            </li>
+            
+            <li><a href="/tags/steemr"><i class="fa fa-tags"></i> steemr</a>
+            </li>
+            
+            <li><a href="/tags/teaching"><i class="fa fa-tags"></i> teaching</a>
+            </li>
+            
+            <li><a href="/tags/utopian-io"><i class="fa fa-tags"></i> utopian-io</a>
+            </li>
+            
+            <li><a href="/tags/word"><i class="fa fa-tags"></i> word</a>
+            </li>
+            
+            <li><a href="/tags/xaringan"><i class="fa fa-tags"></i> xaringan</a>
+            </li>
+            
+            <li><a href="/tags/%e5%90%89%e4%bb%96"><i class="fa fa-tags"></i> 吉他</a>
+            </li>
+            
+            <li><a href="/tags/%e5%ad%a6-r"><i class="fa fa-tags"></i> 学-r</a>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+
+
+
+
+
+                        
+
+                    </div>
+                    
+
+                    
+
+                </div>
+                
+
+            </div>
+            
+        </div>
+        
+
+        <footer id="footer">
+    <div class="container">
+
+        
+        <div class="col-md-4 col-sm-6">
+            <h4>关于我们</h4>
+
+            我们就是我们。
+
+            <hr class="hidden-md hidden-lg hidden-sm">
+
+        </div>
+        
+        
+
+        <div class="col-md-4 col-sm-6">
+
+             
+            <h4>最新博客</h4>
+
+            <div class="blog-entries">
+                
+                <div class="item same-height-row clearfix">
+                    <div class="image same-height-always">
+                        <a href="/zh/blog/2019/02/01/2019-02-01-txt-review-mode/">
+                          
+                            <img src="/img/banners/logo-openr.png" class="img-responsive" alt="纯文本编辑器的审阅模式">
+                          
+                        </a>
+                    </div>
+                    <div class="name same-height-always">
+                        <h5><a href="/zh/blog/2019/02/01/2019-02-01-txt-review-mode/">纯文本编辑器的审阅模式</a></h5>
+                    </div>
+                </div>
+                
+                <div class="item same-height-row clearfix">
+                    <div class="image same-height-always">
+                        <a href="/zh/blog/2019/02/01/2019-02-01-literature-management/">
+                          
+                            <img src="/img/banners/logo-openr.png" class="img-responsive" alt="纯文本：文献管理的终极之道">
+                          
+                        </a>
+                    </div>
+                    <div class="name same-height-always">
+                        <h5><a href="/zh/blog/2019/02/01/2019-02-01-literature-management/">纯文本：文献管理的终极之道</a></h5>
+                    </div>
+                </div>
+                
+                <div class="item same-height-row clearfix">
+                    <div class="image same-height-always">
+                        <a href="/zh/blog/2019/01/28/2019-01-28-rstudio-ppt/">
+                          
+                            <img src="/img/banners/logo-openr.png" class="img-responsive" alt="往 ppt 里插入 500 张图片的小伎俩">
+                          
+                        </a>
+                    </div>
+                    <div class="name same-height-always">
+                        <h5><a href="/zh/blog/2019/01/28/2019-01-28-rstudio-ppt/">往 ppt 里插入 500 张图片的小伎俩</a></h5>
+                    </div>
+                </div>
+                
+            </div>
+
+            <hr class="hidden-md hidden-lg">
+             
+
+        </div>
+        
+
+        
+        <div class="col-md-4 col-sm-6">
+
+          <h4>联系</h4>
+
+            <strong>OpenR Team</strong>
+      </p>
+      
+
+
+            <a href="/contact" class="btn btn-small btn-template-main">跳到联系页面</a>
+
+            <hr class="hidden-md hidden-lg hidden-sm">
+
+        </div>
+        
+        
+
+    </div>
+    
+</footer>
+
+
+
+
+
+
+
+<div id="copyright">
+    <div class="container">
+        <div class="col-md-12">
+            
+            <p class="pull-left">Copyright (c) 2019, OpenR Team; all rights reserved.</p>
+            
+            <p class="pull-right">
+              模板来自 <a href="http://bootstrapious.com/free-templates">Bootstrapious</a>.
+              
+
+              移植到 Hugo 来自 <a href="https://github.com/devcows/hugo-universal-theme">DevCows</a>
+            </p>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+    </div>
+    
+
+    
+<script src="//code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0/jquery.counterup.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-parallax/1.1.3/jquery-parallax.js"></script>
+
+<script src="//maps.googleapis.com/maps/api/js?key=AIzaSyCFhtWLJcE30xOAjcbSFi-0fnoVmQZPb1Y&v=3.exp"></script>
+
+<script src="/js/hpneo.gmaps.js"></script>
+<script src="/js/gmaps.init.js"></script>
+<script src="/js/front.js"></script>
+
+
+<script src="/js/owl.carousel.min.js"></script>
+
+
+  </body>
+</html>

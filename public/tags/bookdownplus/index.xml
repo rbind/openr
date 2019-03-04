@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Bookdownplus on Open R</title>
+    <link>/tags/bookdownplus/</link>
+    <description>Recent content in Bookdownplus on Open R</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 06 Sep 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/bookdownplus/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>A template for Copernicus academic journals</title>
+      <link>/blog/2018/09/06/2018-09-06_bookdown-copernicus/</link>
+      <pubDate>Thu, 06 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/2018/09/06/2018-09-06_bookdown-copernicus/</guid>
+      <description>&lt;p&gt;This is a submission to the &lt;a href=&#34;https://blog.rstudio.com/2018/07/27/first-bookdown-contest/&#34;&gt;1st bookdown contest&lt;/a&gt;.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Write academic papers of Copernicus journals with R markdown syntax.&lt;/li&gt;
+&lt;li&gt;Support ~ 40 Copernicus journals.&lt;/li&gt;
+&lt;li&gt;Support both the two-columned pdf version and the discussion version.&lt;/li&gt;
+&lt;li&gt;Create multiple file formats, including .pdf, single .html, gitbook, .md, .epub, docx.&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    
+    <item>
+      <title>A template for MDPI academic journals</title>
+      <link>/blog/2018/09/05/2018-09-05_bookdown-mdpi/</link>
+      <pubDate>Wed, 05 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/2018/09/05/2018-09-05_bookdown-mdpi/</guid>
+      <description>&lt;p&gt;This is a submission to the &lt;a href=&#34;https://blog.rstudio.com/2018/07/27/first-bookdown-contest/&#34;&gt;1st bookdown contest&lt;/a&gt;.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Write academic papers in the layout of MDPI journals with R markdown syntax.&lt;/li&gt;
+&lt;li&gt;Support ~ 200 MDPI journals.&lt;/li&gt;
+&lt;li&gt;Create multiple file formats, including .pdf, single .html, gitbook, .md, .epub, docx.&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    
+    <item>
+      <title>R package bookdownplus 1.0.2 released on CRAN</title>
+      <link>/blog/2017/06/22/2017-06-22-bookdownplus_released/</link>
+      <pubDate>Thu, 22 Jun 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/2017/06/22/2017-06-22-bookdownplus_released/</guid>
+      <description>I’m glad to announce that ‘bookdownplus 1.0.2’ (Zhao 2017) is now on CRAN. This post is a brief documentation of ‘bookdownplus 1.0.2’. However, I have been updating ‘bookdownplus’ frequently and the new version is more powerful and even easier. Please go to the GitHub site of bookdownplus.
+HUGOMORE42 IntroductionThe R package bookdownplus is an extension of bookdown (Xie 2016). It is a collection ofmultiple templates on the basis of LaTeX, which are tailored so that I can work happily under the umbrella of bookdown.</description>
+    </item>
+    
+    <item>
+      <title>bookdownplus: an R package for writing Articles, Mails, Guitar Chords, Chemical Molecular Formulae and Equations with R bookdown</title>
+      <link>/blog/2017/05/09/2017-05-09-bookdown-plus/</link>
+      <pubDate>Tue, 09 May 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/2017/05/09/2017-05-09-bookdown-plus/</guid>
+      <description>This is a preliminary version of the introduction to bookdownplus. Please go to my Github repo bookdownplus for the latest updates. Full documentation can be found in the book R bookdownplus Textbook.
+HUGOMORE42 IntroductionR bookdownplus is an extension of R bookdown (Xie 2016). It is a collection ofmultiple templates on the basis of LaTeX, which are tailored so that I can work happily under the umbrella of bookdown.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Linux on Open R</title>
+    <link>/zh/tags/linux/</link>
+    <description>Recent content in Linux on Open R</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sun, 04 Feb 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/zh/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>如何妥当地复制或同步文件</title>
+      <link>/zh/blog/2018/02/04/2018-02-04_sync/</link>
+      <pubDate>Sun, 04 Feb 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/zh/blog/2018/02/04/2018-02-04_sync/</guid>
+      <description>事情的起因是这样的：有人在群里问了个技术问题：从 Ubuntu 操作系统的电脑里，往另一台电脑里拷贝或同步一批文件，该如何操作？
+虽然问题是针对 Ubuntu，但我们的解决方案对 Windows 和 Mac 用户也是大有用处的。
+HUGOMORE42 最方便的是网盘。
+首选 Dropbox， 人送外号“丢丢盒”，是全人类网盘里的带头大哥，跨平台免费。只需在两台电脑上都安装 Dropbox，设置好同步文件夹，那么，往里丢就是了。电脑 A 里的指定文件夹的任何改动，都会实时同步到电脑 B。
+Dropbox 提供免费的 2.5G 空间。邀请朋友可以最多得到大约 20G 的奖励。为了不骚扰朋友，我通过邀请自己的小号而达到了扩容的目的。20+G，足够，这些年来用起来毫无压力。
+Dropbox 最让我称道的地方是历史版本功能。我经常在编辑文档时手贱，按下了 ctrl+s 并且关闭了文档又后悔。去 Dropbox 的网页上找旧版本文件就行了，这个功能救了我无数次。
+带头大哥这么好，可惜，他在大陆被墙了。
+一个替代方案是 Google Drive，免费 15 G 空间。这货最近改名叫 Backup and Sync 了，新名字令人发指。功能上不如 Dropbox，配合用一下也不错。
+可惜，Google Drive 好像也被墙了。
+那就腾讯微云或百度网盘（这个名字同样令人发指）吧，我不常用，不评价。好歹是个网盘吧。
+如果文件少，而且是一次性的，那就 email 也行。
+但是新的问题来了：如果用网盘或 email，那么文件势必经过中央服务器。如果是隐私文件，你不想在腾讯服务器上留一份吧？
+嗯，有时候留一份也无妨，加密就行了，例如使用加密邮箱 protonmail。
+如果文件多，邮箱不方便呢？
+那么可以用点对点的同步工具，例如 resilio sync。
+resilio sync 也是免费跨平台软件。手机、电脑等各个设备上安装一下，设置好各自的同步文件夹，那么只要设备连上网，就自动同步了，不经过中央服务器。
+但是新的问题来了： resilio sync 不是开源的；他们说没经过中央服务器，你信么？
+不信的话，可以用替代方案：syncthing。这是我此次微信聊天的最大收获。感谢提供这条方案的朋友。
+syncthing 也是 P2P 同步工具，而且是开源的。这意味着，全世界的程序员都可以去检查它到底有没有往某个中央服务器传文件。如果发现有，就会被无情揭露，然后被搞死。目前它还活着，说明是安全的，真正的去中心化。</description>
+    </item>
+    
+    <item>
+      <title>Windows 的又一个坑：R writeLines() 函数的换行符</title>
+      <link>/zh/blog/2018/01/18/2018-01-18_writelines/</link>
+      <pubDate>Thu, 18 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/zh/blog/2018/01/18/2018-01-18_writelines/</guid>
+      <description>昨天，又被 Windows 坑到了。
+事情的背景是，我的工作环境是 Windows 操作系统。由于一些众所周知的原因，有些事情在 Linux 下做起来比较顺当。于是，我就用 virtualbox 装了个虚拟的 Ubuntu。由于不熟，只用到其中很小一部分功能，所以，凡是能在 Windows 下做的事情，我绝不去 Ubuntu。
+HUGOMORE42 昨天，我要写一批 bash 批处理文件，打算在 Ubuntu 里运行。这批 .sh 文件结构格式相同，只是内容略有不同。于是，我就动了点小心思，用 R 语言批量写好了文件内容，最后用 writeLines() 函数生成了这批 .sh 文件。
+前面我提到了，这些操作都是在 windows 下完成了。保险起见，我特地指定了 writeLines(useBytes = TRUE)，来保证这批 .sh 文件的编码 UTF-8，心想这下应该没问题了吧。
+但是，在 Ubuntu 里执行 这批 .sh 文件，居然出错！说什么文件找不到……
+为了简化问题，我把从这批运行失败的 .sh 文件里面随便拎出一个，里面删得只剩两条指令：
+cd ~ls然后另存为 test.sh 文件，用来测试。运行 test.sh，结果：
+这么两条命令，居然还有错？
+我记得在 Ubuntu 下直接写的 .sh 文件没这个问题啊。
+那好，我就在 ubuntu 的文本编辑器里写了一个一模一样的文件，取名 test2.sh，内容也是只有这两条指令。然后运行，居然好了！
+肉眼去看，两个文件都完全相同！我对比了一下两个文件的编码，都是 UTF-8。
+这是遇见孙悟空和六耳猕猴了？
+我祭出两面照妖镜：一个是 Totalcommander 的文本比较工具，一个是 notepad++ 的文本比较插件。比较的结果是，两个文件完全相同！</description>
+    </item>
+    
+  </channel>
+</rss>
