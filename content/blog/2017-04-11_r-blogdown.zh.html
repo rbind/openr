@@ -1,0 +1,109 @@
+---
+title: 'R blogdown 搭建个人博客或科研网站'
+author: 赵鹏
+date: '2017-04-11'
+slug: r-blogdown
+categories: []
+tags: ["R", "blogdown", "Hugo", "post"]
+summary: "我正在撰写新书《学R —— 零基础学习R语言》，新书预计今年下半年出版。本文是其中一个章节。"
+banner: img/banners/logo-openr.png
+
+---
+
+
+
+<p>本文收录在《学 R 》一书的附录中。</p>
+<p>互联网时代有个自己的网站，就好像真实世界里有了自己的房子（服务器）和固定地址（域名）；自我介绍时附上自己的网站，就像生活里邀请朋友来访或者职场上递上名片，都甚为方便。然而，建立一个网站并不容易，涉及诸多领域的知识和技能，门槛比较高。好在，我们有万能的R语言，搭建网站只需几分钟，而并不需要多少网络知识。你甚至不用懂 R 语言是什么，照我下面说的做就行，包教包会，学不会免费再教。</p>
+<!--more-->
+<p>这里，我提供两个示范，演示如何使用 R 语言的 blogdown 扩展包<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a>，用来搭建一个<a href="http://dapengde.com/blogdown_demo_default/">个人博客</a>和一个<a href="http://dapengde.com/blogdown_demo_academic/">科研小组网站</a>。截至本文成稿之日，blogdown 含苞待放，尚未正式发布，但是已经能够正常安装使用了。我们来尝尝鲜，提前一睹她的芳容。</p>
+<div id="r-blogdown-" class="section level2">
+<h2>R blogdown 简介和安装</h2>
+<p><strong>R blogdown 是什么</strong></p>
+<ul>
+<li>R语言的一个扩展包，用来制作网站的工具。</li>
+<li>可以用非常简洁的方式快速搭建静态网页构成的网站。</li>
+<li>虽然名字里有“博客”（blog）字样，但并不仅限于博客。非常适合搭建一个科研小组的展示窗口。</li>
+<li>基于 markdown 扩展语法，可以在网页中方便地插入图表、脚注、数学公式、R 代码等元素。</li>
+<li>非常容易将 bookdown 生成的论文转化成网页展示。</li>
+<li>非常易于维护，迁移，备份。</li>
+</ul>
+<p>本书的官方网站就是用 R blogdown 搭建的。网站里给大家提供的 R 示例代码、试读章节、勘误表等，都是直接从书稿中拷贝粘贴到文本文件里，然后运行一下 blogdown 的指令，网站就自动更新了。</p>
+<p><strong>安装</strong></p>
+<p>blogdown 的背景平台是 R 语言，用户界面首选 RStudio ，产生的网站框架是 Hugo ，掰手指头数一数，要安装4样东西，略显繁琐，但并不难，一劳永逸。安装方式如下：</p>
+<ul>
+<li>R。去R的服务器<a href="https://cran.r-project.org/">CRAN</a>，点击Download R for Windows（其他操作系统的用户请自便），在打开的新网页最上方点击<code>base</code>，就找到下载链接了。下载完毕后安装，一路“下一步”的傻瓜式安装即可。</li>
+<li>RStudio。去<a href="https://www.rstudio.com/">官网</a>下载安装文件运行即可。</li>
+<li>blogdown。运行RStudio，在左上面板的代码窗口输入并运行以下代码：</li>
+</ul>
+<pre class="r"><code>if(!require(devtools)) install.packages(&#39;devtools&#39;)
+devtools::install_github(&#39;rstudio/blogdown&#39;)</code></pre>
+<p>解释一下：由于 blogdown 目前只发布到了 GitHub 服务器上，尚未发布到CRAN，所以上面第一条代码先安装开发工具 <code>devtools</code> 包，第二行用这个包的<code>install_github()</code> 函数从 GitHub 安装。</p>
+<ul>
+<li>Hugo 框架。在 RStudio 左上面板的代码窗口输入并运行以下代码：</li>
+</ul>
+<pre class="r"><code>blogdown::install_hugo()</code></pre>
+<p>安装完毕。</p>
+</div>
+<div id="r-blogdown--1" class="section level2">
+<h2>用 R blogdown 搭建个人博客</h2>
+<p><strong>创建示例网站</strong></p>
+<p>我在自己博客建立了个子站，作为 R blogdown <a href="http://dapengde.com/blogdown_demo_default/">个人博客的示例</a>。下面我们看看这个博客是如何创建的。</p>
+<p>首先，在你的电脑里新建一个文件夹，准备存放网站文件，假定是<code>c:\blogdown_default</code>，那么创建网站只需在RStudio里运行两行代码：</p>
+<pre class="r"><code>setwd(&#39;c:\\blogdown_default&#39;)
+blogdown::new_site()</code></pre>
+<p>示例网站搭建完毕。对，就这么简单！</p>
+<p>去<code>c:\blogdown_default</code>看看吧，出现了好多新文件夹。别的不用管也不用动，只注意<code>content\</code> 和<code>public\</code> 这两个就行了。打开 <code>public\index.html</code>，这就是网站的主页。随便点开上面的几个链接试试看。</p>
+<p><strong>发布到网上</strong></p>
+<p>上面搭建的网站，目前只存在于本地电脑里，下面我们发布到网上。</p>
+<p>如果你像我一样，已经有了自己租用的服务器，上面有了WordPress博客，那最简单，在服务器的<code>public_html\</code>文件夹下面创建一个新文件夹，例如叫做<code>test</code>，那么只需将刚刚在本地新建的博客或科研网站的 <code>public</code>文件夹里所有文件上传到服务器的<code>test</code> 文件夹即可。访问<code>你的域名/test</code>，就可以看到新网站了！</p>
+<p>如果你没有自己的服务器，那么最简单的是在 <a href="https://www.netlify.com/">netlify</a> 免费注册个账号，然后按提示将你本地的 <code>public\</code> 文件夹拖进去，会自动布署，等几分钟，就可以访问了。你可以免费申请个子域名，也可以买个自己的域名绑定上去。我已经申请了一个，打算作为<a href="http://zhao.netlify.com/">自己的科研主页</a>。这是从blogdown 创建的科研网站示例（创建方法见下文）修改而来的，而且还没改完，里面的英文内容都是示例里别人的工作。</p>
+<p>那么，如何将自动生成的网站更新成自己的，并添加新内容呢？</p>
+<p><strong>网站更新</strong></p>
+<p>前文提醒你注意，新建的网站文件夹里有个<code>content\</code>文件夹。这里就是更新网站内容的地方。你只需用记事本或RStudio，打开其中的<code>.md</code>或 <code>.Rmd</code> 文件，修改成自己的内容后保存，然后运行建站函数：</p>
+<pre class="r"><code>blogdown::build_site()</code></pre>
+<p>这样，<code>public\</code> 就自动更新了，再发布到网上即可。</p>
+<p><code>.md</code>或 <code>.Rmd</code> 文件使用 markdown语法，见我以前写的帖子：</p>
+<ul>
+<li><a href="http://dapengde.com/archives/17033">九分钟学会 Markdown</a></li>
+<li><a href="http://dapengde.com/archives/17712">精品网络应用：Markdown篇</a></li>
+<li><a href="http://dapengde.com/archives/19141">R bookdown 快速入门和语法速查</a></li>
+</ul>
+<p>如果要发表新帖子，那么有两种方式最简单：</p>
+<ul>
+<li>方法一：将原有的<code>.md</code>或 <code>.Rmd</code>拷贝粘贴，改一下标题和内容即可；</li>
+<li>方法二：在RSudio代码窗口点击 Addins- New Post， 按提示填写即可。</li>
+</ul>
+<p>写完保存，运行建站函数，上传。完毕。</p>
+<p><strong>自动同步</strong></p>
+<p>也许你嫌每次更新上传太麻烦。我们当然可以选择自动同步。</p>
+<p>如果网站搭建在Netlify，那么只需做三件事：</p>
+<ol style="list-style-type: decimal">
+<li>下载并安装 GitHub 客户端，申请个免费账号，并创建一个项目，例如叫做myweb，将前面我们举例的<code>c:\blogdown_default</code> 文件夹设为项目的文件夹，并同步到云端。</li>
+<li>在你的Netlify设置里，设为自动跟你的GitHub里的myweb项目同步，同步内容是 <code>public</code>文件夹。</li>
+<li>以后每次更新并运行完建站函数后，在GitHub客户端同步一下即可。</li>
+</ol>
+</div>
+<div id="r-blogdown--2" class="section level2">
+<h2>用 R blogdown 搭建科研网站</h2>
+<p>上文说到，我申请了一个Netlify免费账号，并且创建了<a href="http://zhao.netlify.com/">自己的科研主页</a>，是从blogdown 创建的科研网站示例修改而来的。这个示例的本来面貌可以来我博客上看：<a href="http://dapengde.com/blogdown_demo_academic/">科研网站的示例</a>。这个科研网站的构架比个人博客复杂，有简介、新闻、发表论文、科研项目等基本模块，还可以根据需要新增，非常适合作为科研小组的展示窗口。</p>
+<p>这个网站的搭建也很简单，跟个人博客类似。在你的电脑里新建文件夹，比如 <code>c:\blogdown_academic</code>，在RStudio里运行两行代码：</p>
+<pre class="r"><code>setwd(&#39;c:\\blogdown_default&#39;)
+blogdown::new_site(theme=&#39;gcushen/hugo-academic&#39;)</code></pre>
+<p>去<code>c:\blogdown_academic</code> 看看吧，科研网站搭建完毕！</p>
+<p>但是，如果你这时双击打开<code>c:\blogdown_academic\public\index.html</code> 的话，会发现界面并不好看（css未载入），并且点击页面的那些链接也无效。别急，我们再做个小改动就行了。</p>
+<p>用记事本将<code>c:\blogdown_academic\config.toml</code> 打开，删掉第一行，然后添加下面两行并保存文件。</p>
+<pre><code>baseurl = &quot;/&quot;
+relativeurls = true</code></pre>
+<p>然后在RStudio运行建站函数<code>build_site()</code>：</p>
+<pre class="r"><code>blogdown::build_site()</code></pre>
+<p>好了，现在可以打开<code>c:\blogdown_academic\public\index.html</code> 正常浏览了！</p>
+<p>解释一下：config.toml 文件里的默认设置不支持本地浏览，而且发布到网上时需要布署。这里改成相对路径<code>relativeurls = true</code>，就可以直接在本地打开 index.html 浏览了。</p>
+<p>其他的发布、更新、同步，跟前文讲述的一致，这里不再赘述。需要特别指出的是，<strong>科研网站</strong>示例的首页，个人信息需要在前面提到的<code>config.toml</code>里的<code>[params]</code> 修改。</p>
+<p>这里的科研网站示例，使用的是Hugo-academic主题。Hugo还有很多其他主题可以使用。我们相信，只要深入研究一下，一定可以搭建让人更合心意的网站。同时，blogdown也在进一步完善中，让我们期待她的盛装绽放吧！</p>
+</div>
+<div class="footnotes">
+<hr />
+<ol>
+<li id="fn1"><p>Yihui Xie. blogdown: Create Blogs and Websites with R Markdown. R package version 0.0.24.<a href="#fnref1" class="footnote-back">↩</a></p></li>
+</ol>
+</div>

@@ -1,0 +1,146 @@
+---
+title: 'R bookdown 的小技巧'
+author: "赵鹏"
+date: '2017-09-22'
+slug: bookdown-tips
+summary: "收集整理 R 语言 bookdown 扩展包的一些使用技巧。"
+tags:
+  - R
+  - bookdown
+  - bookdownplus
+  - post
+  - markdown
+bibliography: [zhaor.bib]
+categories: []
+banner: img/banners/logo-openr.png
+---
+
+本帖用来收集整理 R 语言 bookdown 扩展包的一些使用技巧。有些是在网上搜来的，有些是我在别处讨论得来的，有些是我尚未发布的，都写在这里备用。
+
+<!--more-->
+
+## 输出 Markdown 文件
+
+使用 bookdown 编译 Rmd 文件，可以得到的输出格式五花八门。对此，[bookdown 的官方文档](https://bookdown.org/yihui/bookdown/output-formats.html) 有详细介绍，包括 github， pdf，epub，word，html 单个文档等，偏偏没有提 markdown 格式。
+
+其实，markdown 文件是有的，在编译过程里作为过渡文档存在，编译结束后自动删除。编译顺利的时候，在文件夹里“刷”地闪一下就消失了。我以前的做法是“快手”，在它消失之前迅速用 notepad++ 打开，就存下来了。这显然不是办法，凑合着过日子而已。
+
+一般来说，如果仅仅是使用 rmarkdown，只需在 yaml 设置里声明一下：
+
+```
+output:
+  md_document:
+    variant: markdown_github
+```
+
+然后 knit 一下，就可以得到 markdown 文件了。想当然地，我把这段代码加到了 bookdown 的yaml 里，却得到警告，说 bookdown 不支持。
+
+这事儿被我搁置了很久，最后我终于在 bookdown 的项目主页找到了[答案](https://github.com/rstudio/bookdown/issues/317#issuecomment-275262486)：参数 `clean = FALSE` 。
+
+`bookdown::render_book('index.Rmd', clean = FALSE)`
+
+我很喜欢 markdown 格式。我用 bookdown 写论文，Rmd 的正文里插了不少诸如 `r '\x60r pi\x60'` 这样的调用。跟合作作者讨论时，看 Rmd 文件吧不直观，看 html 吧不方便修改，md 大概是最好的格式。
+
+bookdown 的编译，我习惯按快捷键 ctrl+alt+b，或者点击右上方面板的 Build 按钮编译的，输出格式取决于 yaml。这样就得不到 md 文件。要想得到 md 文件，看来以后得改成命令行编译了。
+
+我的 [bookdownplus 最新版本 v1.3.1](https://github.com/pzhaonet/bookdownplus) ，把 `clean` 参数默认设置为 FALSE，并且在编译后把用不着的 .lol 文件删除。这样，新用户第一次用bookdown 时，就又多得到一种漂亮的输出结果。
+
+## pdf 的参考文献引用格式
+
+bookdown 里引用参考文献，在 bookdown 的官方文档里有说明。例如标识为'zhao2017' 的 bib 条目，引用的方式和输出结果为：
+
+- `@zhao2017`，得到 `Zhao (2017)`， 相当于 LaTeX 里的 `\citet{zhao2017}`。
+- `[@zhao2017]` ，得到 `(Zhao, 2017)`， 相当于 LaTeX 里的 `\citep{zhao2017}`。
+
+但是，如果有多篇参考文献连续引用（我经常需要），就出问题了。我想得到的是 `(Xie, 2016; Zhao, 2017)`，但无论输入 `[@zhao2017][@xie2016]`, 或是`[@zhao2017 @xie2016]`，或是`(@zhao2017; @xie2016)`，都不管用。
+
+管用的方法是使用 LaTeX 方式：
+
+- `\citep{zhao2017,xie2016}`，得到`(Xie, 2016; Zhao, 2017)`。
+
+更新：经 Yihui 提示，应当用 `[@zhao2017; @xie2016]`.
+
+## 往 pdf 里插入网络图片
+
+假定往文档里插入下面这张网络图片：
+
+`url <- 'https://bookdown.org/yihui/bookdown/images/cover.jpg'`
+
+一般有两种方法：
+
+- `knitr::include_graphics(url)`
+- `![](https://bookdown.org/yihui/bookdown/images/cover.jpg)`
+
+得到的网页输出格式里没有任何问题，但是 pdf 却不行。
+
+这是因为，生成 pdf 的 LaTeX 不支持插入网络图片。LaTeX 界的解决办法是，先用 `wget` 把网络图片下载到本地，再插入到tex 文档里。那么，我在 bookdown 里也如法炮制：
+
+    download.file(url,'cover.jpg', mode = 'wb')
+    knitr::include_graphics('cover.jpg')
+
+这事儿其实已经解决了，但是不够完美。如果用 bookdown 同时输出网页格式和 pdf，那么网页格式的文档里插入的图片是本地图片；如果发布到 bookdown.org，那么插入的图片来自 bookdown.org。两者都不是该图片的原始地址。有点资源浪费。
+
+完美的解决方式来自[ Yihui 的回答](https://stackoverflow.com/questions/46331896/how-can-i-insert-an-image-from-internet-to-the-pdf-file-produced-by-r-bookdown-i)，在 Rmd 里这么写：
+
+```
+if (!file.exists(cover_file <- 'cover.jpg'))
+  download.file(url, cover_file, mode = 'wb')
+knitr::include_graphics(if (identical(knitr:::pandoc_to(), 'html')) url else cover_file)
+```
+
+这段代码自动判断，如果输出网页文档，就插入原始图片链接，否则就下载到本地再插入。
+
+
+## 主控文档和子文档
+
+Word 有个很好的功能，叫做“主控文档”：如果文件太大，那么各章可以分别写在一个 word 文档（子文档）里，然后插入到另一个文档里合并。LaTeX 里也有同样的功能，用 include 指令就行了。
+
+bookdown 当然也可以。官方文档对此有[说明](https://bookdown.org/yihui/bookdown/usage.html)，只需在'_bookdown.yml'里声明即可：
+
+```
+rmd_files: ["chapter1.Rmd", "chapter2.Rmd", "chapter3.Rmd"]
+
+```
+
+如果希望在不同格式的输出文件里包含不同的章节，比如网页格式的书里包含 1 到 3 章，而 pdf 的只包含第 1 和第 3 章，那么：
+
+```
+rmd_files:
+  html: ["chapter1.Rmd", "chapter2.Rmd", "chapter3.Rmd"]
+  latex: ["chapter1.Rmd", "chapter3.Rmd"]
+```
+
+但是，这种方法只适合并列关系的章节，如果是总分关系的呢？比如，我想在 chapter1 里某段插入 'mytext.md' 这个文本，在 chapter2 里再插入一次，该怎么办？
+
+[这样办](https://disqus.com/home/discussion/yihui/r_markdown_notebook_jupyter_ipython_notebook/#comment-3426121547)：
+
+```{r, eval=FALSE}
+cat(readLines("mytext.md"), sep = "\n") # 结合代码段选项 results="asis", echo=FALSE
+```
+
+如果深入一步，考虑上一节“往 pdf 里插入网络图片”的方法，就可以玩出更多花样，例如书的网页格式里插入 mytext.md，而 pdf 里不插。
+
+如果再跟上面的 yaml 声明相结合，各个文本文件就成了乐高积木块，随心所欲组合了。
+
+## bookdown.org 的多账号管理
+
+在 bookdown.org 发布书稿，点击RStudio 左上面板的发布符号，会引导你用 google 账号登录。第一次登录会让你设置在 bookdown.org 的用户名，这个要重视，想个你喜欢的名字，以后就没法改了。
+
+用同一账号发布书稿，一点问题都没有。但是当我用多个账号发布书稿，遇见了一些小麻烦。
+
+首先，我用 `bookdown::publish_book()` 的 `account` 参数指定一个新账号，得到了错误信息:
+
+```
+Error: Unknown account name 'newaccount' (you can use the setAccountInfo function to add a new account)
+```
+
+一查 setAccountInfo，不是 bookdown 包的函数，而是 rsconnect 包的函数：`rsconnect::setAccountInfo()`。然后就不知道怎么办了。
+
+其实，添加账号应该点击 Rstudio 左上面板的发布按钮- Manage Account - Connect - RStudio
+ Connect - 输入 bookdown.org，然后往下照提示走就行了。
+ 
+ 添加账号后，照理说用 `bookdown::publish_book()` 的 `account`指定一下账号，就应该能发布了吧？不，还是失败了，说 `name` 参数有问题。其实没问题。
+ 
+怎么办？我发现必须从 Mange Account 里删掉旧 bookdown 的账号，就可以用新的账号成功发布了。
+
+上面说了这么多，其实就是一句话：用不同账号往 bookdown.org 发布书稿，只需在 Manage Account 里添加并保留唯一一个账号即可。

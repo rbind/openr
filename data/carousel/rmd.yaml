@@ -1,0 +1,10 @@
+weight: 1
+title: "The 'rmd' Package"
+description: >
+  <ul class="list-style-none">
+    <li>Install the R markdown family.</li>
+    <li>Explore new markdown tools.</li>
+    <li>一键安装 R markdown 全家桶。</li>
+    <li>探索 R markdown 工具。</li>
+  </ul>
+image: "img/banners/logo-rmd.png"

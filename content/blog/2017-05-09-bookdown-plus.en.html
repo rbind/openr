@@ -1,0 +1,135 @@
+---
+title: 'bookdownplus: an R package for writing Articles, Mails, Guitar Chords, Chemical Molecular Formulae and Equations with R bookdown'
+author: "赵鹏"
+date: '2017-05-09'
+slug: bookdownplus
+summary: "`R bookdownplus` extends the features of `bookdown`, and simplifies the procedure. Users only have to choose a template, clarify the book title and author name, and then focus on writing the text. No need to struggle in YAML and LaTeX. "
+tags:
+- R
+- bookdown
+- post
+- bookdownplus
+- markdown
+categories: []
+banner: img/banners/logo-bookdownplus.png
+---
+
+
+
+<p>This is a preliminary version of the introduction to bookdownplus. Please go to my Github repo <a href="https://github.com/pzhaonet/bookdownplus">bookdownplus</a> for the latest updates. Full documentation can be found in the book <a href="https://bookdown.org/baydap/bookdown-plus">R bookdownplus Textbook</a>.</p>
+<!--more-->
+<div id="introduction" class="section level1">
+<h1>Introduction</h1>
+<p><code>R bookdownplus</code> is an extension of <code>R bookdown</code> (Xie 2016). It is a collection of
+multiple templates on the basis of LaTeX, which are tailored so that I can work happily under the umbrella of <code>bookdown</code>. <code>R bookdownplus</code> helps you write academic journal articles, guitar books, chemical equations, mails, calendars, and diaries.</p>
+</div>
+<div id="features" class="section level1">
+<h1>Features</h1>
+<p><code>R bookdownplus</code> extends the features of <code>bookdown</code>, and simplifies the procedure. Users only have to choose a template, clarify the book title and author name, and then focus on writing the text. No need to struggle in YAML and LaTeX.</p>
+<p>With <code>R bookdownplus</code> users can</p>
+<ul>
+<li>record guitar chords,</li>
+<li>write a mail in an elegant layout,</li>
+<li>write a laboratory journal, or a personal diary,</li>
+<li>draw a monthly or weekly or conference calendar,</li>
+<li>and, of course, write academic articles in your favourite way,</li>
+<li>with chemical molecular formulae and equations,</li>
+<li>even in Chinese,</li>
+<li>and more wonders will come soon.</li>
+</ul>
+<p>Full documentation can be found in the book <a href="https://bookdown.org/baydap/bookdown-plus">R bookdownplus Textbook</a>. The webpage looks so-so, while the <a href="https://bookdown.org/baydap/bookdown-plus/bookdown-plus.pdf">pdf file</a> might give you a little surprise.</p>
+</div>
+<div id="quick-start" class="section level1">
+<h1>Quick start</h1>
+<p>Although this section might not be the latest version, the general idea won’t change. Please see <a href="https://bookdown.org/baydap/bookdown">R bookdownplus Textbook</a> to keep up with the update.</p>
+<div id="preparation" class="section level2">
+<h2>Preparation</h2>
+<p>Before starting, you have to install R, RStudio, bookdown package, and
+other software and packages (i.e. Pandoc, LaTeX, rmarkdown, rticle,
+knitr, etc.) which bookdown depends on. See the official <a href="https://bookdown.org/yihui/bookdown/">manual</a> of
+bookdown for details. Additionall, if you want to produce a poster, phython must be installed before using, and the path of phython might have to be added to the environmental variables for Windows users.</p>
+<p>Installation:</p>
+<pre><code>devtools::install_github(&quot;pzhaonet/bookdownplus&quot;)</code></pre>
+<p>Run the following codes, and you will get some files (e.g. <code>index.Rmd</code> and <code>body.Rmd</code>) and folders in your working directory.</p>
+<pre><code>getwd() # this is your working directory. run setwd() to change it.
+bookdownplus::bookdownplus()</code></pre>
+<p>Now press <code>ctrl+shift+b</code> to compile it. Your will get a book file named <code>index.pdf</code> in <code>_book/</code>folder.</p>
+<p>Write your own text in <code>index.Rmd</code> and <code>body.Rmd</code>, and build your own lovely book.</p>
+<p>Have fun!</p>
+<p>Still being developed. Feel free to give your feedback to me!</p>
+</div>
+<div id="showcase" class="section level2">
+<h2>Showcase</h2>
+<ul>
+<li>article</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/pzhaonet/bookdown-plus/master/showcase/bookdown+article.jpg" /></p>
+<ul>
+<li>article_mdpi1</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/pzhaonet/bookdown-plus/master/showcase/bookdown+article_mdpi.jpg" /></p>
+<ul>
+<li>article_zh</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/pzhaonet/bookdown-plus/master/showcase/bookdown+article_zh.jpg" /></p>
+<ul>
+<li>calendar</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/pzhaonet/bookdown-plus/master/showcase/bookdown+calendar.jpg" /></p>
+<ul>
+<li>chemistry</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/pzhaonet/bookdown-plus/master/showcase/bookdown+chemistry.jpg" /></p>
+<ul>
+<li>guitar</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/pzhaonet/bookdown-plus/master/showcase/bookdown+guitar.jpg" /></p>
+<ul>
+<li>journal</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/pzhaonet/bookdown-plus/master/showcase/bookdown+journal.jpg" /></p>
+<ul>
+<li>mail</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/pzhaonet/bookdown-plus/master/showcase/bookdown+mail.jpg" /></p>
+<p><img src="https://raw.githubusercontent.com/pzhaonet/bookdown-plus/master/showcase/bookdown+mail2.png" /></p>
+<ul>
+<li>poem</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/pzhaonet/bookdown-plus/master/showcase/bookdown+poem.jpg" /></p>
+<ul>
+<li>thesis_classic</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/pzhaonet/bookdown-plus/master/showcase/bookdown+thesis_classic.jpg" /></p>
+<ul>
+<li>thesis_ubt</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/pzhaonet/bookdown-plus/master/showcase/bookdown+thesis_ubt.jpg" /></p>
+<ul>
+<li>thesis_zju</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/pzhaonet/bookdown-plus/master/showcase/bookdown+thesis_zju.jpg" /></p>
+<ul>
+<li>yihui_demo</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/pzhaonet/bookdown-plus/master/showcase/bookdown+yihui_demo.jpg" /></p>
+<ul>
+<li>yihui_mini</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/pzhaonet/bookdown-plus/master/showcase/bookdown+yihui_mini.jpg" /></p>
+<ul>
+<li>yihui_zh</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/pzhaonet/bookdown-plus/master/showcase/bookdown+yihui_zh.jpg" /></p>
+<ul>
+<li>poster</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/pzhaonet/bookdown-plus/master/showcase/bookdown+poster_ocean.jpg" /></p>
+<p><img src="https://raw.githubusercontent.com/pzhaonet/bookdown-plus/master/showcase/bookdown+poster_eco.jpg" /></p>
+</div>
+</div>
+<div id="license" class="section level1">
+<h1>License</h1>
+<p>Copyright 2017 <a href="http://pzhao.org">Peng Zhao</a>.</p>
+<p>Released under the <a href="https://github.com/pzhaonet/bookdown-plus/blob/master/LICENSE.md">MIT</a> license.</p>
+</div>

@@ -1,0 +1,57 @@
+---
+title: 'R package postr: created posters with R markdown'
+author: "赵鹏"
+date: '2017-05-16'
+slug: postr
+summary: "My first self-developed R package."
+tags:
+- R
+- postr
+- markdown
+- post
+categories: []
+banner: img/banners/logo-openr.png
+---
+
+
+
+<p>This is a preliminary version of the introduction to postr. Please go to my Github repo <a href="https://github.com/pzhaonet/postr">postr</a> for the latest updates.</p>
+<!--more-->
+<p>This package is modified from <a href="https://github.com/exporl/kuleuven-templates">kuleuven-template</a>, where you can see the requirements before using this package. Here I picked out the instruction for Windows users as follows.</p>
+<ul>
+<li>Install a LaTeX distribution, e.g. <a href="http://miktex.org/download">MiKTeX</a>. For Chinese users <a href="http://www.ctex.org/CTeXDownload">CTeX</a> is highly recommended.</li>
+<li>Install <a href="http://www.xm1math.net/texmaker/download.html">Texmaker</a></li>
+<li>Install <a href="https://cran.r-project.org/bin/windows/base/">R</a></li>
+<li>Install <a href="https://www.rstudio.com/">RStudio</a></li>
+<li>Install <a href="https://www.python.org/downloads/windows/">Python 2</a></li>
+<li>Install <a href="https://pypi.python.org/pypi/pandocfilters">Python filter support for Pandoc</a>:
+on a Windows command prompt, type <code>pip install pandocfilters</code></li>
+<li>Install <a href="http://www.sumatrapdfreader.org/download-free-pdf-viewer.html">SumatraPDF</a> for auto-refresh of PDF previews</li>
+</ul>
+<p>Afterwards, add the Python directory to the system PATH variable.</p>
+<div id="quick-start" class="section level2">
+<h2>Quick start</h2>
+<p>Run the following codes, and you will get some files (e.g. <code>poster.Rmd</code>) and folders in your working directory.</p>
+<pre><code>devtools::install_github(&quot;pzhaonet/postr&quot;)
+getwd() # this is your working directory. run setwd() to change it.
+postr::postr()</code></pre>
+<p>Now open <code>poster.Rmd</code> in RStudio, and press <code>ctrl+shift+k</code> to compile it. You will get a file named <code>poster.pdf</code> in your working directory. Open it with any pdf viewer (SumatraPDF, Adebe Reader, whatever).</p>
+<p>If the bibliography section is not displayed in the poster, knitr <code>poster.Rmd</code> once more.</p>
+<p>A lot of annoying files and folders produced? You can remove them by running (Caution! You won’t find them in your recycle bin!):</p>
+<pre><code>postr::postr_del()</code></pre>
+<p>Have fun!</p>
+<p>Still being developed. Feel free to give your feedback to me!</p>
+</div>
+<div id="showcase" class="section level2">
+<h2>Showcase</h2>
+<p><img src="https://raw.githubusercontent.com/pzhaonet/bookdown-plus/master/showcase/bookdown+poster_ocean.jpg" /></p>
+<p><img src="https://raw.githubusercontent.com/pzhaonet/bookdown-plus/master/showcase/bookdown+poster_eco.jpg" /></p>
+<p><img src="https://raw.githubusercontent.com/pzhaonet/bookdown-plus/master/showcase/bookdown+poster_rose.jpg" /></p>
+<p><img src="https://raw.githubusercontent.com/pzhaonet/bookdown-plus/master/showcase/bookdown+poster_night.jpg" /></p>
+<p><img src="https://raw.githubusercontent.com/pzhaonet/bookdown-plus/master/showcase/bookdown+poster_ice.jpg" /></p>
+</div>
+<div id="license" class="section level1">
+<h1>License</h1>
+<p>Copyright 2017 <a href="http://pzhao.org">Peng Zhao</a>.</p>
+<p>Released under the <a href="https://github.com/pzhaonet/bookdown-plus/blob/master/LICENSE.md">MIT</a> license.</p>
+</div>

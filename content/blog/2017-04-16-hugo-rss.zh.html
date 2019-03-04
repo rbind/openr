@@ -1,0 +1,42 @@
+---
+title: Hugo 网站的RSS
+author: 赵鹏
+date: '2017-04-18'
+slug: hugo-rss
+categories: []
+tags: ["R", "blogdown", "post"]
+summary: "Hugo 网站的小细节真是需要一点点来，好在都不难搞定。"
+banner: img/banners/logo-openr.png
+---
+
+
+
+<p>R blogdown 搭建的 Hugo 网站，小细节很多，可以一点一点完善，好在都不难搞定。今天添加了个RSS订阅按钮。</p>
+<!--more-->
+<p>自从 Google Reader 死后，我就觉得 RSS 没有多大趣味，就好像子期死后伯牙摔琴一样。但是，没有 RSS 提醒的话，还真不知道谁的博客更新了，于是就勉强用 feedly 凑合。眼看我的新网站构架基本完成，就在 feedly 里订阅了一下自己的网站，输入 <code>pzhao.org</code>，发现没找到。嗯？研究一下才明白，我的主页完整地址是：</p>
+<pre><code>http://pzhao.org/zh/</code></pre>
+<p>这个路径对应的本地文件夹下面，不仅有个<code>index.html</code>，还有个<code>index.xml</code>，后者就是 RSS 订阅的文件。所以，在feedly添加：</p>
+<pre><code>http://pzhao.org/zh/index.xml</code></pre>
+<p>就把我的新网站添进去了。这是订阅全站。如果只想订阅其中的博客，或新发表的学术文章，或新做的报告，那么：</p>
+<pre><code>http://pzhao.org/zh/post/index.xml
+http://pzhao.org/zh/publication/index.xml
+http://pzhao.org/zh/talk/index.xml</code></pre>
+<p>这个RSS链接，我该放到主页的什么位置，来方便网友订阅呢？我决定放到我的头像下面的社交按钮里。</p>
+<p><img src="/img/social.png" /><!-- --></p>
+<p>头像下的社交按钮是在<code>config.toml</code>里设置的，只需添加个<code>[[params.social]]</code>就可以了，图标去<a href="https://fortawesome.github.io/Font-Awesome/icons/">fa</a>或<a href="https://jpswalsh.github.io/academicons/">ai</a>两个包的主页找便是。
+实在缺乏社交，只好把自己卡拉OK的录音和腾讯视频加进去凑数，代码如下：</p>
+<pre><code>  [[params.social]]
+    icon = &quot;rss&quot;
+    icon_pack = &quot;fa&quot;
+    link = &quot;http://www.pzhao.org/zh/index.xml&quot;
+
+  [[params.social]]
+    icon = &quot;music&quot;
+    icon_pack = &quot;fa&quot;
+    link = &quot;http://kg.qq.com/node/personal?uid=649d9d85212c3489&quot;
+
+  [[params.social]]
+    icon = &quot;video-camera&quot;
+    icon_pack = &quot;fa&quot;
+    link = &quot;http://v.qq.com/vplus/0f8190586a3f2f22a25e9827b38c171e&quot;
+</code></pre>

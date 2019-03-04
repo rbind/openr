@@ -1,0 +1,44 @@
+---
+title: 'mindr 幻灯片演示'
+author: "赵鹏"
+date: '2018-11-21'
+slug: mindr-slides
+summary: "听说可以把 xaringan 做的幻灯片放到 blogdown 的博客上。"
+tags:
+  - post
+  - markdown
+  - R
+  - mindr
+  - xaringan
+categories: []
+banner: img/banners/logo-mindr.png
+
+---
+
+
+
+<p>xaringan 做的幻灯片发布到网上的好处有很多，例如凡有网处皆可访问，例如每页幻灯片都有个固定网址方便引用等等。</p>
+<p>发布到网上的方法有很多种，借此机会发布一下 mindr 包简介幻灯片，并简单做个笔记：</p>
+<!--more-->
+<iframe src="http://www.pzhao.org/slides/mindr" width="672" height="400px">
+</iframe>
+<div id="github-" class="section level2">
+<h2>Github 法</h2>
+<p>将 xaringan 制作的一个幻灯片的文件夹（简称幻灯片文件夹）作为一个 repo 发布到 GitHub，然后在该 repo 的settings 里开启 page 功能，就可以用 your_id.github.io/your_repo 来访问幻灯片了。</p>
+<p>示例：<a href="https://pzhaonet.github.io/mindr-slides" class="uri">https://pzhaonet.github.io/mindr-slides</a></p>
+<p>参考：<a href="https://github.com/yihui/xaringan/wiki/Deploy-Slides-Online" class="uri">https://github.com/yihui/xaringan/wiki/Deploy-Slides-Online</a></p>
+</div>
+<div id="hugo-netlify-" class="section level2">
+<h2>Hugo + netlify 法</h2>
+<p>如果你有个 Hugo 静态网站并由洋雷锋 netlify 托管（例如本站），那就可以将幻灯片文件夹直接放到 Hugo 网站的 static 文件夹里即可。netlify 自动部署后，访问 your_domain/your_xaringan 就行了。</p>
+<p>示例：<a href="http://www.pzhao.org/slides/mindr" class="uri">http://www.pzhao.org/slides/mindr</a></p>
+</div>
+<div id="dropbox-updog-" class="section level2">
+<h2>Dropbox + Updog 法</h2>
+<p>这个我只是听说，没有亲手操作过。</p>
+<p>参考：<a href="https://community.rstudio.com/t/posting-xaringan-presentation-on-blogdown/8212/7" class="uri">https://community.rstudio.com/t/posting-xaringan-presentation-on-blogdown/8212/7</a></p>
+<p>用上面这些方法中的任意一个完成后，可以将幻灯片嵌入博客帖子里，如本文开头所示，方法是在 blogdown 的帖子里加入：</p>
+<pre class="r"><code>knitr::include_url(&#39;hyperlink_to_your_slides&#39;)</code></pre>
+<p>参考：<a href="https://timmastny.rbind.io/blog/embed-slides-knitr-blogdown/" class="uri">https://timmastny.rbind.io/blog/embed-slides-knitr-blogdown/</a></p>
+<p>有种预感：三国群雄割据的局面快结束了，魏晋的风流时代即将来临……</p>
+</div>

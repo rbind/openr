@@ -1,0 +1,184 @@
+---
+title: 'R package bookdownplus 1.0.2 released on CRAN'
+author: "赵鹏"
+date: '2017-06-22'
+slug: bookdownplus-released
+summary: "bookdownplus is an extension of bookdown. More enhancements. Less operation."
+tags:
+- R
+- bookdown
+- bookdownplus
+- post
+- markdown
+bibliography: [zhaor.bib]
+categories: []
+banner: img/banners/logo-bookdownplus.png
+---
+
+
+
+<p>I’m glad to announce that ‘bookdownplus 1.0.2’ <span class="citation">(Zhao 2017)</span> is now on <a href="https://cran.r-project.org/web/packages/bookdownplus/">CRAN</a>. This post is a brief documentation of ‘bookdownplus 1.0.2’. However, I have been updating ‘bookdownplus’ frequently and the new version is more powerful and even easier. Please go to the <a href="http://github.com/pzhaonet/bookdownplus">GitHub site of bookdownplus</a>.</p>
+<!--more-->
+<p><img src="http://cranlogs.r-pkg.org/badges/grand-total/bookdownplus" /></p>
+<p><img src="/blog/2017-06-22-bookdownplus_released.en_files/figure-html/unnamed-chunk-1-1.png" width="672" /></p>
+<div id="introduction" class="section level1">
+<h1>Introduction</h1>
+<p>The R package <code>bookdownplus</code> is an extension of <code>bookdown</code> <span class="citation">(Xie 2016)</span>. It is a collection of
+multiple templates on the basis of LaTeX, which are tailored so that I can work happily under the umbrella of <code>bookdown</code>. <code>bookdownplus</code> helps you write academic journal articles, guitar books, chemical equations, mails, calendars, and diaries.</p>
+</div>
+<div id="features" class="section level1">
+<h1>Features</h1>
+<p><code>bookdownplus</code> extends the features of <code>bookdown</code>, and simplifies the procedure. Users only have to choose a template, clarify the book title and author name, and then focus on writing the text. No need to struggle in YAML and LaTeX.</p>
+<p>With <code>bookdownplus</code> users can</p>
+<ul>
+<li>record guitar chords,</li>
+<li>write a mail in an elegant layout,</li>
+<li>write a laboratory journal, or a personal diary,</li>
+<li>draw a monthly or weekly or conference calendar,</li>
+<li>and, of course, write academic articles in your favourite way,</li>
+<li>with chemical molecular formulae and equations,</li>
+<li>even in Chinese,</li>
+<li>and more wonders will come soon.</li>
+</ul>
+<p>Full documentation can be found in the book <a href="https://bookdown.org/baydap/bookdownplus">R bookdownplus Textbook</a>. The webpage looks so-so, while the <a href="https://bookdown.org/baydap/bookdownplus/bookdownplus.pdf">pdf file</a> might give you a little surprise.</p>
+</div>
+<div id="quick-start" class="section level1">
+<h1>Quick start</h1>
+<p>Although this section might not be the latest version, the general idea won’t change. Please see <a href="https://bookdown.org/baydap/bookdownplus">R bookdownplus Textbook</a> to keep up with the update.</p>
+<div id="preparation" class="section level2">
+<h2>Preparation</h2>
+<p>Before starting, you have to install R, RStudio, bookdown package, and
+other software and packages (i.e. Pandoc, LaTeX, rmarkdown, rticle,
+knitr, etc.) which bookdown depends on. See the official <a href="https://bookdown.org/yihui/bookdown/">manual</a> of
+bookdown for details. Additionally, if you want to produce a poster, phython must be installed before using, and the path of phython might have to be added to the environmental variables for Windows users.</p>
+</div>
+<div id="installation" class="section level2">
+<h2>Installation</h2>
+<pre><code>install.package(&quot;bookdownplus&quot;)
+# or
+devtools::install_github(&quot;pzhaonet/bookdownplus&quot;)</code></pre>
+</div>
+<div id="generate-demo-files" class="section level2">
+<h2>Generate demo files</h2>
+<p>Run the following codes, and you will get some files (e.g. <code>index.Rmd</code>, <code>body.Rmd</code>, <code>bookdownplus.Rproj</code>) and folders in your working directory.</p>
+<pre><code>getwd() # this is your working directory. run setwd() to change it.
+bookdownplus::bookdownplus()</code></pre>
+</div>
+<div id="build-a-demo-book" class="section level2">
+<h2>Build a demo book</h2>
+<p>Now open <code>bookdownplus.Rproj</code> with RStudio, and press <code>ctrl+shift+b</code> to compile it. Your will get a book file named <code>*.pdf</code> in <code>_book/</code>folder.</p>
+</div>
+<div id="write-your-own" class="section level2">
+<h2>Write your own</h2>
+<p>Write your own text in <code>index.Rmd</code> and <code>body.Rmd</code>, and build your own lovely book.</p>
+</div>
+<div id="more-outputs" class="section level2">
+<h2>More outputs</h2>
+<p>By default, the book is in a pdf file. From ‘bookdownplus’ 1.0.3, users can get more output formats, including ‘word’, ‘html’ and ‘epub’. Run:</p>
+<pre><code>bookdownplus::bookdownplus(template = &#39;article&#39;, more_output = c(&#39;html&#39;, &#39;word&#39;, &#39;epub&#39;))</code></pre>
+</div>
+<div id="recommendations" class="section level2">
+<h2>Recommendations</h2>
+<p>I have been developing some other packages, which bring more features into ‘bookdown’, such as:</p>
+<ul>
+<li><p><a href="https://github.com/pzhaonet/mindr">mindr</a> (Zhao 2017), which can extract the outline of your book and turn it into a mind map, and</p></li>
+<li><p><a href="https://github.com/pzhaonet/pinyin">pinyin</a> (Zhao 2017), which can automatically generate <a href="https://bookdown.org/yihui/bookdown/cross-references.html">‘{#ID}’</a> of the chapter headers even if there are Chinese characters in them.</p></li>
+</ul>
+<p>Both of them have been released on CRAN and can be installed via <code>install.packages('mindr')</code> and <code>install.packages('pinyin')</code>.</p>
+<p>Enjoy your bookdowning!</p>
+</div>
+<div id="showcase" class="section level2">
+<h2>Showcase</h2>
+<ul>
+<li>article</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/pzhaonet/bookdown-plus/master/showcase/bookdown+article.jpg" /></p>
+<ul>
+<li>article_mdpi1</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/pzhaonet/bookdown-plus/master/showcase/bookdown+article_mdpi.jpg" /></p>
+<ul>
+<li>article_zh</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/pzhaonet/bookdown-plus/master/showcase/bookdown+article_zh.jpg" /></p>
+<ul>
+<li>calendar</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/pzhaonet/bookdown-plus/master/showcase/bookdown+calendar.jpg" /></p>
+<ul>
+<li>chemistry</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/pzhaonet/bookdown-plus/master/showcase/bookdown+chemistry.jpg" /></p>
+<ul>
+<li>guitar</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/pzhaonet/bookdown-plus/master/showcase/bookdown+guitar.jpg" /></p>
+<ul>
+<li>journal</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/pzhaonet/bookdown-plus/master/showcase/bookdown+journal.jpg" /></p>
+<ul>
+<li>mail</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/pzhaonet/bookdown-plus/master/showcase/bookdown+mail.jpg" /></p>
+<p><img src="https://raw.githubusercontent.com/pzhaonet/bookdown-plus/master/showcase/bookdown+mail2.png" /></p>
+<ul>
+<li>poem</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/pzhaonet/bookdown-plus/master/showcase/bookdown+poem.jpg" /></p>
+<ul>
+<li>thesis_classic</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/pzhaonet/bookdown-plus/master/showcase/bookdown+thesis_classic.jpg" /></p>
+<ul>
+<li>thesis_ubt</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/pzhaonet/bookdown-plus/master/showcase/bookdown+thesis_ubt.jpg" /></p>
+<ul>
+<li>thesis_zju</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/pzhaonet/bookdown-plus/master/showcase/bookdown+thesis_zju.jpg" /></p>
+<ul>
+<li>yihui_demo</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/pzhaonet/bookdown-plus/master/showcase/bookdown+yihui_demo.jpg" /></p>
+<ul>
+<li>yihui_mini</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/pzhaonet/bookdown-plus/master/showcase/bookdown+yihui_mini.jpg" /></p>
+<ul>
+<li>yihui_zh</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/pzhaonet/bookdown-plus/master/showcase/bookdown+yihui_zh.jpg" /></p>
+<ul>
+<li>poster</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/pzhaonet/bookdown-plus/master/showcase/bookdown+poster_ocean.jpg" /></p>
+<p><img src="https://raw.githubusercontent.com/pzhaonet/bookdown-plus/master/showcase/bookdown+poster_eco.jpg" /></p>
+</div>
+<div id="updates" class="section level2">
+<h2>Updates</h2>
+<ul>
+<li>2017-06-23. <strong>1.0.3.</strong>
+<ul>
+<li>Fixed a bug of thesis_classic.</li>
+<li>Switched off warnings when creating folders.</li>
+<li>Options to export epub, html, and word documents.</li>
+</ul></li>
+<li>2017-06-21. <a href="https://cran.r-project.org/web/packages/bookdownplus/index.html">Released on CRAN</a>!</li>
+<li>2017-06-21. <strong>1.0.2.</strong> Resubmitted to CRAN!</li>
+<li>2017-06-21. <strong>1.0.2.</strong> Resubmitted to CRAN!</li>
+<li>2017-06-21. <strong>1.0.1.</strong> Submitted to CRAN!</li>
+<li>2017-06-14. <strong>0.0.1.</strong> A bug fixed.</li>
+<li>2017-05-15. <strong>0.0.0.</strong> A very preliminary version.</li>
+</ul>
+<div id="refs" class="references">
+<div id="ref-R-bookdown">
+<p>Xie, Yihui. 2016. <em>Bookdown: Authoring Books and Technical Documents with R Markdown</em>. Boca Raton, Florida: Chapman; Hall/CRC. <a href="https://github.com/rstudio/bookdown">https://github.com/rstudio/bookdown</a>.</p>
+</div>
+<div id="ref-R-bookdownplus">
+<p>Zhao, Peng. 2017. <em>Bookdownplus: Generate Varied Books and Documents with R ’Bookdown’ Package</em>. <a href="https://CRAN.R-project.org/package=bookdownplus">https://CRAN.R-project.org/package=bookdownplus</a>.</p>
+</div>
+</div>
+</div>
+</div>

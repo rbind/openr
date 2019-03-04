@@ -1,0 +1,155 @@
+---
+title: 'R package beginr released on CRAN'
+author: "赵鹏"
+date: '2017-06-23'
+slug: beginr-released
+summary: "beginr is a collection of useful functions for R beginners. It might be helpful to R experts as well."
+tags:
+  - R
+  - beginr
+  - post
+banner: img/banners/logo-beginr.png
+bibliography: ["zhaor.bib"]
+categories: []
+output: #md_document
+  md_document:
+    variant: markdown_github
+---
+
+I’m glad to announce that 'beginr' [@R-beginr] is now on [CRAN](https://CRAN.R-project.org/package=beginr). This post is a brief documentation of 'beginr 0.1.0'. Subsequent updates can be found on the [GitHub site of beginr](http://github.com/pzhaonet/beginr).
+
+<!--more-->
+
+![](http://cranlogs.r-pkg.org/badges/grand-total/beginr)
+
+
+# Introduction 
+
+'beginr' is a collection of useful functions for R beginners, including hints for the arguments of the 'plot()' function, self-defined functions for error bars, user-customized pair plots and hist plots, enhanced linear regression figures, etc.. This package could be helpful to R experts as well.
+
+# Installation
+
+```{r, eval=FALSE}
+# stable version on CRAN
+install.package("beginr")
+# or development version on GitHub
+devtools::install_github("pzhaonet/beginr")
+```
+
+# Quick Start
+
+## Functions as Memos
+
+If you often forget the options for `pch`, `lty`, `type`, and `col` when you `plot()`, you can run `plotpch()`, `plotlty()`, `plottype()`, `plotcolors()`, and `plotcolorbar()`. No need to search the internet any more.
+
+```{r}
+beginr::plotpch()
+beginr::plotlty()
+beginr::plottype()
+beginr::plotcolors()
+beginr::plotcolorbar()
+```
+
+## Functions for Easy Plotting
+
+Linear regression is often used in scientific work, but it is annoying to display the results. In R you have to run `lm()`, `plot()`, `abline()`, `text()` and so on and so forth. Now with 'beginr' you only have to run `plotlm()`.
+
+```{r}
+x <- 1:10
+y <- 1:10 + rnorm(10)
+beginr::plotlm(x, y)
+```
+
+If you want to display the distribution of a data-set, use `plothist()`, which gives you a histogram with markers of the median, mean, quantiles, standard deviation, sample number and the skewness.
+
+```{r}
+x <- rnorm(10000)
+beginr::plothist(x)
+```
+
+I like `pairs()`, and 'beginr' gives more powerful features to `plotpairs()` and `plotpairs2()`.
+
+```{r}
+df <- data.frame(a = 1:10, b = 1:10 + rnorm(10), c = 1:10 + rnorm(10))
+beginr::plotpairs(df)
+beginr::plotpairs2(df)
+```
+
+I often have to plot one independent variable (x) and multiple dependent variables  (y~1~, y~2~, ..., y~n~) in one 2-D coordinate system, or one dependent variable (y) against multiple independent variables (x~1~, x~2~, ..., x~n~) with their error bars. Use `dfplot()` or `dfplot2()` in 'beginr'.
+
+```{r}
+x <- seq(0, 2 * pi, length.out = 100)
+y <- data.frame(sin(x), cos(x))
+yerror <- data.frame(abs(rnorm(100, sd = 0.3)), abs(rnorm(100, sd = 0.1)))
+beginr::dfplot(x, y, yerror = yerror)
+beginr::dfplot2(y, x, xerror = yerror)
+```
+
+If you would like to add errorbars only, then use `errorbar()`.
+
+```{r}
+x <- seq(0, 2 * pi, length.out = 100)
+y <- sin(x)
+plot(x, y, type = "l")
+beginr::errorbar(x, y, yupper = 0.1, ylower = 0.1)
+```
+
+## Functions for Data Frames
+
+`lmdf()` performs the linear regression between every two columns in a data frame.
+
+```{r}
+df <- data.frame(a = 1:10, b = 1:10 + rnorm(10), c = 1:10 + rnorm(10))
+beginr::lmdf(df)
+```
+
+There are two functions as improvements of `tapply()` for factor calculation.
+
+```{r, eval=FALSE}
+beginr::tapplydf()
+beginr::tapplydfv()
+```
+
+## Functions for Reading and Writing files
+
+`readdir()` reads multiple files into a list.
+
+```{r, eval=FALSE}
+beginr::readdir()
+```
+
+`writefile()` avoids overwriting the files which already exist.
+
+```{r, eval=FALSE}
+beginr::writefile()
+```
+
+`list2ascii()` saves a list as a text file.
+
+```{r, eval=FALSE}
+alist <- list(a = 1:10, b = letters)
+beginr::list2ascii(alist)
+```
+
+## Functions for Packages
+
+`bib()` creates bibliographic entries as texts or a file ('.bib').
+
+```{r, warning=FALSE}
+beginr::bib(pkg = c("mindr", "bookdownplus", "pinyin", "beginr"))
+```
+
+`plotpkg()` displays a figure showing the downloads of packages.
+
+```{r, fig.asp=0.3}
+beginr::plotpkg("beginr", from = "2017-06-23")
+```
+
+`rpkg()` creates a new R package in an easy way.
+
+```{r, eval=FALSE}
+beginr::rpkg()
+```
+
+
+# References

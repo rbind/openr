@@ -1,0 +1,99 @@
+---
+title: 'R bookdown 的小技巧'
+author: "赵鹏"
+date: '2017-09-22'
+slug: bookdown-tips
+summary: "收集整理 R 语言 bookdown 扩展包的一些使用技巧。"
+tags:
+  - R
+  - bookdown
+  - bookdownplus
+  - post
+  - markdown
+bibliography: [zhaor.bib]
+categories: []
+banner: img/banners/logo-openr.png
+---
+
+
+
+<p>本帖用来收集整理 R 语言 bookdown 扩展包的一些使用技巧。有些是在网上搜来的，有些是我在别处讨论得来的，有些是我尚未发布的，都写在这里备用。</p>
+<!--more-->
+<div id="markdown-" class="section level2">
+<h2>输出 Markdown 文件</h2>
+<p>使用 bookdown 编译 Rmd 文件，可以得到的输出格式五花八门。对此，<a href="https://bookdown.org/yihui/bookdown/output-formats.html">bookdown 的官方文档</a> 有详细介绍，包括 github， pdf，epub，word，html 单个文档等，偏偏没有提 markdown 格式。</p>
+<p>其实，markdown 文件是有的，在编译过程里作为过渡文档存在，编译结束后自动删除。编译顺利的时候，在文件夹里“刷”地闪一下就消失了。我以前的做法是“快手”，在它消失之前迅速用 notepad++ 打开，就存下来了。这显然不是办法，凑合着过日子而已。</p>
+<p>一般来说，如果仅仅是使用 rmarkdown，只需在 yaml 设置里声明一下：</p>
+<pre><code>output:
+  md_document:
+    variant: markdown_github</code></pre>
+<p>然后 knit 一下，就可以得到 markdown 文件了。想当然地，我把这段代码加到了 bookdown 的yaml 里，却得到警告，说 bookdown 不支持。</p>
+<p>这事儿被我搁置了很久，最后我终于在 bookdown 的项目主页找到了<a href="https://github.com/rstudio/bookdown/issues/317#issuecomment-275262486">答案</a>：参数 <code>clean = FALSE</code> 。</p>
+<p><code>bookdown::render_book('index.Rmd', clean = FALSE)</code></p>
+<p>我很喜欢 markdown 格式。我用 bookdown 写论文，Rmd 的正文里插了不少诸如 <code>r pi</code> 这样的调用。跟合作作者讨论时，看 Rmd 文件吧不直观，看 html 吧不方便修改，md 大概是最好的格式。</p>
+<p>bookdown 的编译，我习惯按快捷键 ctrl+alt+b，或者点击右上方面板的 Build 按钮编译的，输出格式取决于 yaml。这样就得不到 md 文件。要想得到 md 文件，看来以后得改成命令行编译了。</p>
+<p>我的 <a href="https://github.com/pzhaonet/bookdownplus">bookdownplus 最新版本 v1.3.1</a> ，把 <code>clean</code> 参数默认设置为 FALSE，并且在编译后把用不着的 .lol 文件删除。这样，新用户第一次用bookdown 时，就又多得到一种漂亮的输出结果。</p>
+</div>
+<div id="pdf-" class="section level2">
+<h2>pdf 的参考文献引用格式</h2>
+<p>bookdown 里引用参考文献，在 bookdown 的官方文档里有说明。例如标识为’zhao2017’ 的 bib 条目，引用的方式和输出结果为：</p>
+<ul>
+<li><code>@zhao2017</code>，得到 <code>Zhao (2017)</code>， 相当于 LaTeX 里的 <code>\citet{zhao2017}</code>。</li>
+<li><code>[@zhao2017]</code> ，得到 <code>(Zhao, 2017)</code>， 相当于 LaTeX 里的 <code>\citep{zhao2017}</code>。</li>
+</ul>
+<p>但是，如果有多篇参考文献连续引用（我经常需要），就出问题了。我想得到的是 <code>(Xie, 2016; Zhao, 2017)</code>，但无论输入 <code>[@zhao2017][@xie2016]</code>, 或是<code>[@zhao2017 @xie2016]</code>，或是<code>(@zhao2017; @xie2016)</code>，都不管用。</p>
+<p>管用的方法是使用 LaTeX 方式：</p>
+<ul>
+<li><code>\citep{zhao2017,xie2016}</code>，得到<code>(Xie, 2016; Zhao, 2017)</code>。</li>
+</ul>
+<p>更新：经 Yihui 提示，应当用 <code>[@zhao2017; @xie2016]</code>.</p>
+</div>
+<div id="pdf--1" class="section level2">
+<h2>往 pdf 里插入网络图片</h2>
+<p>假定往文档里插入下面这张网络图片：</p>
+<p><code>url &lt;- 'https://bookdown.org/yihui/bookdown/images/cover.jpg'</code></p>
+<p>一般有两种方法：</p>
+<ul>
+<li><code>knitr::include_graphics(url)</code></li>
+<li><code>![](https://bookdown.org/yihui/bookdown/images/cover.jpg)</code></li>
+</ul>
+<p>得到的网页输出格式里没有任何问题，但是 pdf 却不行。</p>
+<p>这是因为，生成 pdf 的 LaTeX 不支持插入网络图片。LaTeX 界的解决办法是，先用 <code>wget</code> 把网络图片下载到本地，再插入到tex 文档里。那么，我在 bookdown 里也如法炮制：</p>
+<pre><code>download.file(url,&#39;cover.jpg&#39;, mode = &#39;wb&#39;)
+knitr::include_graphics(&#39;cover.jpg&#39;)</code></pre>
+<p>这事儿其实已经解决了，但是不够完美。如果用 bookdown 同时输出网页格式和 pdf，那么网页格式的文档里插入的图片是本地图片；如果发布到 bookdown.org，那么插入的图片来自 bookdown.org。两者都不是该图片的原始地址。有点资源浪费。</p>
+<p>完美的解决方式来自<a href="https://stackoverflow.com/questions/46331896/how-can-i-insert-an-image-from-internet-to-the-pdf-file-produced-by-r-bookdown-i">Yihui 的回答</a>，在 Rmd 里这么写：</p>
+<pre><code>if (!file.exists(cover_file &lt;- &#39;cover.jpg&#39;))
+  download.file(url, cover_file, mode = &#39;wb&#39;)
+knitr::include_graphics(if (identical(knitr:::pandoc_to(), &#39;html&#39;)) url else cover_file)</code></pre>
+<p>这段代码自动判断，如果输出网页文档，就插入原始图片链接，否则就下载到本地再插入。</p>
+</div>
+<div id="section" class="section level2">
+<h2>主控文档和子文档</h2>
+<p>Word 有个很好的功能，叫做“主控文档”：如果文件太大，那么各章可以分别写在一个 word 文档（子文档）里，然后插入到另一个文档里合并。LaTeX 里也有同样的功能，用 include 指令就行了。</p>
+<p>bookdown 当然也可以。官方文档对此有<a href="https://bookdown.org/yihui/bookdown/usage.html">说明</a>，只需在’_bookdown.yml’里声明即可：</p>
+<pre><code>rmd_files: [&quot;chapter1.Rmd&quot;, &quot;chapter2.Rmd&quot;, &quot;chapter3.Rmd&quot;]
+</code></pre>
+<p>如果希望在不同格式的输出文件里包含不同的章节，比如网页格式的书里包含 1 到 3 章，而 pdf 的只包含第 1 和第 3 章，那么：</p>
+<pre><code>rmd_files:
+  html: [&quot;chapter1.Rmd&quot;, &quot;chapter2.Rmd&quot;, &quot;chapter3.Rmd&quot;]
+  latex: [&quot;chapter1.Rmd&quot;, &quot;chapter3.Rmd&quot;]</code></pre>
+<p>但是，这种方法只适合并列关系的章节，如果是总分关系的呢？比如，我想在 chapter1 里某段插入 ‘mytext.md’ 这个文本，在 chapter2 里再插入一次，该怎么办？</p>
+<p><a href="https://disqus.com/home/discussion/yihui/r_markdown_notebook_jupyter_ipython_notebook/#comment-3426121547">这样办</a>：</p>
+<pre class="r"><code>cat(readLines(&quot;mytext.md&quot;), sep = &quot;\n&quot;) # 结合代码段选项 results=&quot;asis&quot;, echo=FALSE</code></pre>
+<p>如果深入一步，考虑上一节“往 pdf 里插入网络图片”的方法，就可以玩出更多花样，例如书的网页格式里插入 mytext.md，而 pdf 里不插。</p>
+<p>如果再跟上面的 yaml 声明相结合，各个文本文件就成了乐高积木块，随心所欲组合了。</p>
+</div>
+<div id="bookdown.org-" class="section level2">
+<h2>bookdown.org 的多账号管理</h2>
+<p>在 bookdown.org 发布书稿，点击RStudio 左上面板的发布符号，会引导你用 google 账号登录。第一次登录会让你设置在 bookdown.org 的用户名，这个要重视，想个你喜欢的名字，以后就没法改了。</p>
+<p>用同一账号发布书稿，一点问题都没有。但是当我用多个账号发布书稿，遇见了一些小麻烦。</p>
+<p>首先，我用 <code>bookdown::publish_book()</code> 的 <code>account</code> 参数指定一个新账号，得到了错误信息:</p>
+<pre><code>Error: Unknown account name &#39;newaccount&#39; (you can use the setAccountInfo function to add a new account)</code></pre>
+<p>一查 setAccountInfo，不是 bookdown 包的函数，而是 rsconnect 包的函数：<code>rsconnect::setAccountInfo()</code>。然后就不知道怎么办了。</p>
+<p>其实，添加账号应该点击 Rstudio 左上面板的发布按钮- Manage Account - Connect - RStudio
+Connect - 输入 bookdown.org，然后往下照提示走就行了。</p>
+<p>添加账号后，照理说用 <code>bookdown::publish_book()</code> 的 <code>account</code>指定一下账号，就应该能发布了吧？不，还是失败了，说 <code>name</code> 参数有问题。其实没问题。</p>
+<p>怎么办？我发现必须从 Mange Account 里删掉旧 bookdown 的账号，就可以用新的账号成功发布了。</p>
+<p>上面说了这么多，其实就是一句话：用不同账号往 bookdown.org 发布书稿，只需在 Manage Account 里添加并保留唯一一个账号即可。</p>
+</div>

@@ -1,0 +1,10 @@
+weight: 5
+title: "The 'beginr' Package"
+description: >
+  <ul class="list-style-none">
+    <li>R for beginners.</li>
+    <li>Fundamental applications of R basic functions.</li>
+    <li>适合 R 初学者。</li>
+    <li>R 基本函数的初级应用。</li>
+  </ul>
+image: "img/banners/logo-beginr.png"

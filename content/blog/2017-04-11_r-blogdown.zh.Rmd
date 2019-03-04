@@ -1,0 +1,149 @@
+---
+title: 'R blogdown 搭建个人博客或科研网站'
+author: 赵鹏
+date: '2017-04-11'
+slug: r-blogdown
+categories: []
+tags: ["R", "blogdown", "Hugo", "post"]
+summary: "我正在撰写新书《学R —— 零基础学习R语言》，新书预计今年下半年出版。本文是其中一个章节。"
+banner: img/banners/logo-openr.png
+
+---
+
+本文收录在《学 R 》一书的附录中。
+
+互联网时代有个自己的网站，就好像真实世界里有了自己的房子（服务器）和固定地址（域名）；自我介绍时附上自己的网站，就像生活里邀请朋友来访或者职场上递上名片，都甚为方便。然而，建立一个网站并不容易，涉及诸多领域的知识和技能，门槛比较高。好在，我们有万能的R语言，搭建网站只需几分钟，而并不需要多少网络知识。你甚至不用懂 R 语言是什么，照我下面说的做就行，包教包会，学不会免费再教。
+
+<!--more-->
+
+这里，我提供两个示范，演示如何使用 R 语言的 blogdown 扩展包^[Yihui Xie. blogdown: Create Blogs and Websites with R Markdown. R package version 0.0.24.]，用来搭建一个[个人博客](http://dapengde.com/blogdown_demo_default/)和一个[科研小组网站](http://dapengde.com/blogdown_demo_academic/)。截至本文成稿之日，blogdown 含苞待放，尚未正式发布，但是已经能够正常安装使用了。我们来尝尝鲜，提前一睹她的芳容。
+
+## R blogdown 简介和安装
+
+**R blogdown 是什么**
+
+- R语言的一个扩展包，用来制作网站的工具。
+- 可以用非常简洁的方式快速搭建静态网页构成的网站。
+- 虽然名字里有“博客”（blog）字样，但并不仅限于博客。非常适合搭建一个科研小组的展示窗口。
+- 基于 markdown 扩展语法，可以在网页中方便地插入图表、脚注、数学公式、R 代码等元素。
+- 非常容易将 bookdown 生成的论文转化成网页展示。
+- 非常易于维护，迁移，备份。
+
+本书的官方网站就是用 R blogdown 搭建的。网站里给大家提供的 R 示例代码、试读章节、勘误表等，都是直接从书稿中拷贝粘贴到文本文件里，然后运行一下 blogdown 的指令，网站就自动更新了。
+
+**安装**
+
+blogdown 的背景平台是 R 语言，用户界面首选 RStudio ，产生的网站框架是 Hugo ，掰手指头数一数，要安装4样东西，略显繁琐，但并不难，一劳永逸。安装方式如下：
+
+- R。去R的服务器[CRAN](https://cran.r-project.org/)，点击Download R for Windows（其他操作系统的用户请自便），在打开的新网页最上方点击`base`，就找到下载链接了。下载完毕后安装，一路"下一步"的傻瓜式安装即可。
+- RStudio。去[官网](https://www.rstudio.com/)下载安装文件运行即可。
+- blogdown。运行RStudio，在左上面板的代码窗口输入并运行以下代码：
+
+```{r, eval=FALSE}
+if(!require(devtools)) install.packages('devtools')
+devtools::install_github('rstudio/blogdown')
+```
+解释一下：由于 blogdown 目前只发布到了 GitHub 服务器上，尚未发布到CRAN，所以上面第一条代码先安装开发工具 `devtools` 包，第二行用这个包的`install_github()` 函数从 GitHub 安装。
+
+- Hugo 框架。在 RStudio 左上面板的代码窗口输入并运行以下代码：
+```{r, eval=FALSE}
+blogdown::install_hugo()
+```
+
+安装完毕。
+
+## 用 R blogdown 搭建个人博客
+
+**创建示例网站**
+
+我在自己博客建立了个子站，作为 R blogdown [个人博客的示例](http://dapengde.com/blogdown_demo_default/)。下面我们看看这个博客是如何创建的。
+
+首先，在你的电脑里新建一个文件夹，准备存放网站文件，假定是`c:\blogdown_default`，那么创建网站只需在RStudio里运行两行代码：
+
+```{r, eval=FALSE}
+setwd('c:\\blogdown_default')
+blogdown::new_site()
+```
+
+示例网站搭建完毕。对，就这么简单！
+
+去`c:\blogdown_default`看看吧，出现了好多新文件夹。别的不用管也不用动，只注意`content\` 和`public\` 这两个就行了。打开 `public\index.html`，这就是网站的主页。随便点开上面的几个链接试试看。
+
+**发布到网上**
+
+上面搭建的网站，目前只存在于本地电脑里，下面我们发布到网上。
+
+如果你像我一样，已经有了自己租用的服务器，上面有了WordPress博客，那最简单，在服务器的`public_html\`文件夹下面创建一个新文件夹，例如叫做`test`，那么只需将刚刚在本地新建的博客或科研网站的 `public`文件夹里所有文件上传到服务器的`test` 文件夹即可。访问`你的域名/test`，就可以看到新网站了！
+
+如果你没有自己的服务器，那么最简单的是在 [netlify](https://www.netlify.com/) 免费注册个账号，然后按提示将你本地的 `public\` 文件夹拖进去，会自动布署，等几分钟，就可以访问了。你可以免费申请个子域名，也可以买个自己的域名绑定上去。我已经申请了一个，打算作为[自己的科研主页](http://zhao.netlify.com/)。这是从blogdown 创建的科研网站示例（创建方法见下文）修改而来的，而且还没改完，里面的英文内容都是示例里别人的工作。
+
+那么，如何将自动生成的网站更新成自己的，并添加新内容呢？
+
+**网站更新**
+
+前文提醒你注意，新建的网站文件夹里有个`content\`文件夹。这里就是更新网站内容的地方。你只需用记事本或RStudio，打开其中的`.md`或 `.Rmd` 文件，修改成自己的内容后保存，然后运行建站函数：
+
+```{r, eval=FALSE}
+blogdown::build_site()
+```
+
+这样，`public\` 就自动更新了，再发布到网上即可。
+
+`.md`或 `.Rmd` 文件使用 markdown语法，见我以前写的帖子：
+
+- [九分钟学会 Markdown](http://dapengde.com/archives/17033)
+- [精品网络应用：Markdown篇](http://dapengde.com/archives/17712)
+- [R bookdown 快速入门和语法速查](http://dapengde.com/archives/19141)
+
+如果要发表新帖子，那么有两种方式最简单：
+
+- 方法一：将原有的`.md`或 `.Rmd`拷贝粘贴，改一下标题和内容即可；
+- 方法二：在RSudio代码窗口点击 Addins- New Post， 按提示填写即可。
+
+写完保存，运行建站函数，上传。完毕。
+
+**自动同步**
+
+也许你嫌每次更新上传太麻烦。我们当然可以选择自动同步。
+
+如果网站搭建在Netlify，那么只需做三件事：
+
+1. 下载并安装 GitHub 客户端，申请个免费账号，并创建一个项目，例如叫做myweb，将前面我们举例的`c:\blogdown_default` 文件夹设为项目的文件夹，并同步到云端。
+2. 在你的Netlify设置里，设为自动跟你的GitHub里的myweb项目同步，同步内容是 `public`文件夹。
+3. 以后每次更新并运行完建站函数后，在GitHub客户端同步一下即可。
+
+## 用 R blogdown 搭建科研网站
+
+上文说到，我申请了一个Netlify免费账号，并且创建了[自己的科研主页](http://zhao.netlify.com/)，是从blogdown 创建的科研网站示例修改而来的。这个示例的本来面貌可以来我博客上看：[科研网站的示例](http://dapengde.com/blogdown_demo_academic/)。这个科研网站的构架比个人博客复杂，有简介、新闻、发表论文、科研项目等基本模块，还可以根据需要新增，非常适合作为科研小组的展示窗口。
+
+这个网站的搭建也很简单，跟个人博客类似。在你的电脑里新建文件夹，比如 `c:\blogdown_academic`，在RStudio里运行两行代码：
+
+```{r, eval=FALSE}
+setwd('c:\\blogdown_default')
+blogdown::new_site(theme='gcushen/hugo-academic')
+```
+
+去`c:\blogdown_academic` 看看吧，科研网站搭建完毕！
+
+但是，如果你这时双击打开`c:\blogdown_academic\public\index.html` 的话，会发现界面并不好看（css未载入），并且点击页面的那些链接也无效。别急，我们再做个小改动就行了。
+
+用记事本将`c:\blogdown_academic\config.toml` 打开，删掉第一行，然后添加下面两行并保存文件。
+
+```
+baseurl = "/"
+relativeurls = true
+```
+
+然后在RStudio运行建站函数`build_site()`：
+
+```{r, eval=FALSE}
+blogdown::build_site()
+```
+
+好了，现在可以打开`c:\blogdown_academic\public\index.html` 正常浏览了！
+
+解释一下：config.toml 文件里的默认设置不支持本地浏览，而且发布到网上时需要布署。这里改成相对路径`relativeurls = true`，就可以直接在本地打开 index.html 浏览了。
+
+其他的发布、更新、同步，跟前文讲述的一致，这里不再赘述。需要特别指出的是，**科研网站**示例的首页，个人信息需要在前面提到的`config.toml`里的`[params]` 修改。
+
+这里的科研网站示例，使用的是Hugo-academic主题。Hugo还有很多其他主题可以使用。我们相信，只要深入研究一下，一定可以搭建让人更合心意的网站。同时，blogdown也在进一步完善中，让我们期待她的盛装绽放吧！

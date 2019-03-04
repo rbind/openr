@@ -1,0 +1,24 @@
+---
+title: Hugo 网站的 Disqus 加载问题
+author: 赵鹏
+date: '2017-04-14'
+slug: hogo-disques-problem
+categories: []
+tags: ["R", "blogdown", "post"]
+summary: "用 R blogdown 打建好站，disqus评论框就一直没成功加载过。这次终于搞定了！可惜被墙，多情却被无情恼......."
+banner: img/banners/logo-openr.png
+---
+
+
+
+<p>今天，复活节假期前夕，同事们都休假了。我虽然在办公室，却无心上班，发了一会儿呆，想想与其痛苦地工作，不如快乐地解决一下<a href="http://pzhao.org">新网站</a>的一个小问题：disqus 评论框的加载。</p>
+<!--more-->
+<p>用 R blogdown 打建好站，disqus评论框就一直没成功加载过。后来听说是<code>config.toml</code>里 <code>disqus shortname</code>指的不是我的disqus ID，而是要<a href="https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-">专门设置</a>一下， 我说“啊,还有这事儿？”于是就设置了一下，但是仍然不能成功加载。这个问题放了几天，今天心血来潮<a href="http://applyr.blogspot.co.at/2017/01/blogging-about-r-from-r-studio.html">一搜</a>，嗯，兴许是路径的问题，于是就把<code>config.toml</code>开头的路径改为</p>
+<pre><code>baseurl = &quot;http://www.pzhao.org&quot;
+# relativeurls = true</code></pre>
+<p>然后运行R语言的建站函数：</p>
+<pre class="r"><code>blogdown::build_site(local=FALSE)</code></pre>
+<p>注意！此处千万不要运行<code>blogdown::serve_site()</code>，不然新生成的文件就又没法加载 Disqus 了。<a href="http://applyr.blogspot.co.at/2017/01/blogging-about-r-from-r-studio.html">网上说</a>是<code>serve_site()</code>忽略了<code>config.toml</code>里的某些设置而造成的。我不懂，总之就是建站函数运行完就直接上传。</p>
+<p>然后GitHub同步，几秒钟后，Netlify上完成了更新，Disqus评论框就乖乖出现了。</p>
+<p>欢迎<a href="http://pzhao.org/zh/post/hogo-disques-problem/">来留言测试</a>。</p>
+<p>啥，你看不见？嗯，听说好像是被墙了。</p>

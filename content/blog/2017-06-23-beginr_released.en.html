@@ -1,0 +1,173 @@
+---
+title: 'R package beginr released on CRAN'
+author: "赵鹏"
+date: '2017-06-23'
+slug: beginr-released
+summary: "beginr is a collection of useful functions for R beginners. It might be helpful to R experts as well."
+tags:
+  - R
+  - beginr
+  - post
+banner: img/banners/logo-beginr.png
+bibliography: ["zhaor.bib"]
+categories: []
+output: #md_document
+  md_document:
+    variant: markdown_github
+---
+
+
+
+<p>I’m glad to announce that ‘beginr’ <span class="citation">(Zhao 2017)</span> is now on <a href="https://CRAN.R-project.org/package=beginr">CRAN</a>. This post is a brief documentation of ‘beginr 0.1.0’. Subsequent updates can be found on the <a href="http://github.com/pzhaonet/beginr">GitHub site of beginr</a>.</p>
+<!--more-->
+<p><img src="http://cranlogs.r-pkg.org/badges/grand-total/beginr" /></p>
+<div id="introduction" class="section level1">
+<h1>Introduction</h1>
+<p>‘beginr’ is a collection of useful functions for R beginners, including hints for the arguments of the ‘plot()’ function, self-defined functions for error bars, user-customized pair plots and hist plots, enhanced linear regression figures, etc.. This package could be helpful to R experts as well.</p>
+</div>
+<div id="installation" class="section level1">
+<h1>Installation</h1>
+<pre class="r"><code># stable version on CRAN
+install.package(&quot;beginr&quot;)
+# or development version on GitHub
+devtools::install_github(&quot;pzhaonet/beginr&quot;)</code></pre>
+</div>
+<div id="quick-start" class="section level1">
+<h1>Quick Start</h1>
+<div id="functions-as-memos" class="section level2">
+<h2>Functions as Memos</h2>
+<p>If you often forget the options for <code>pch</code>, <code>lty</code>, <code>type</code>, and <code>col</code> when you <code>plot()</code>, you can run <code>plotpch()</code>, <code>plotlty()</code>, <code>plottype()</code>, <code>plotcolors()</code>, and <code>plotcolorbar()</code>. No need to search the internet any more.</p>
+<pre class="r"><code>beginr::plotpch()</code></pre>
+<p><img src="/blog/2017-06-23-beginr_released.en_files/figure-html/unnamed-chunk-2-1.png" width="672" /></p>
+<pre class="r"><code>beginr::plotlty()</code></pre>
+<p><img src="/blog/2017-06-23-beginr_released.en_files/figure-html/unnamed-chunk-2-2.png" width="672" /></p>
+<pre class="r"><code>beginr::plottype()</code></pre>
+<p><img src="/blog/2017-06-23-beginr_released.en_files/figure-html/unnamed-chunk-2-3.png" width="672" /></p>
+<pre class="r"><code>beginr::plotcolors()</code></pre>
+<p><img src="/blog/2017-06-23-beginr_released.en_files/figure-html/unnamed-chunk-2-4.png" width="672" /></p>
+<pre class="r"><code>beginr::plotcolorbar()</code></pre>
+<p><img src="/blog/2017-06-23-beginr_released.en_files/figure-html/unnamed-chunk-2-5.png" width="672" /></p>
+</div>
+<div id="functions-for-easy-plotting" class="section level2">
+<h2>Functions for Easy Plotting</h2>
+<p>Linear regression is often used in scientific work, but it is annoying to display the results. In R you have to run <code>lm()</code>, <code>plot()</code>, <code>abline()</code>, <code>text()</code> and so on and so forth. Now with ‘beginr’ you only have to run <code>plotlm()</code>.</p>
+<pre class="r"><code>x &lt;- 1:10
+y &lt;- 1:10 + rnorm(10)
+beginr::plotlm(x, y)</code></pre>
+<p><img src="/blog/2017-06-23-beginr_released.en_files/figure-html/unnamed-chunk-3-1.png" width="672" /></p>
+<pre><code>## [[1]]
+##              Estimate Std. Error    t value     Pr(&gt;|t|)
+## (Intercept) 0.3751444 0.52129189  0.7196436 4.922297e-01
+## x           0.9990926 0.08401379 11.8920065 2.296702e-06
+## 
+## [[2]]
+## [1] 0.9464596</code></pre>
+<p>If you want to display the distribution of a data-set, use <code>plothist()</code>, which gives you a histogram with markers of the median, mean, quantiles, standard deviation, sample number and the skewness.</p>
+<pre class="r"><code>x &lt;- rnorm(10000)
+beginr::plothist(x)</code></pre>
+<p><img src="/blog/2017-06-23-beginr_released.en_files/figure-html/unnamed-chunk-4-1.png" width="672" /></p>
+<p>I like <code>pairs()</code>, and ‘beginr’ gives more powerful features to <code>plotpairs()</code> and <code>plotpairs2()</code>.</p>
+<pre class="r"><code>df &lt;- data.frame(a = 1:10, b = 1:10 + rnorm(10), c = 1:10 + rnorm(10))
+beginr::plotpairs(df)</code></pre>
+<p><img src="/blog/2017-06-23-beginr_released.en_files/figure-html/unnamed-chunk-5-1.png" width="672" /></p>
+<pre class="r"><code>beginr::plotpairs2(df)</code></pre>
+<pre><code>## [1] &quot;p&lt;0.01&quot;</code></pre>
+<pre><code>## [1] &quot;p&lt;0.01&quot;</code></pre>
+<pre><code>## [1] &quot;p&lt;0.01&quot;</code></pre>
+<p><img src="/blog/2017-06-23-beginr_released.en_files/figure-html/unnamed-chunk-5-2.png" width="672" /></p>
+<p>I often have to plot one independent variable (x) and multiple dependent variables (y<sub>1</sub>, y<sub>2</sub>, …, y<sub>n</sub>) in one 2-D coordinate system, or one dependent variable (y) against multiple independent variables (x<sub>1</sub>, x<sub>2</sub>, …, x<sub>n</sub>) with their error bars. Use <code>dfplot()</code> or <code>dfplot2()</code> in ‘beginr’.</p>
+<pre class="r"><code>x &lt;- seq(0, 2 * pi, length.out = 100)
+y &lt;- data.frame(sin(x), cos(x))
+yerror &lt;- data.frame(abs(rnorm(100, sd = 0.3)), abs(rnorm(100, sd = 0.1)))
+beginr::dfplot(x, y, yerror = yerror)</code></pre>
+<p><img src="/blog/2017-06-23-beginr_released.en_files/figure-html/unnamed-chunk-6-1.png" width="672" /></p>
+<pre class="r"><code>beginr::dfplot2(y, x, xerror = yerror)</code></pre>
+<p><img src="/blog/2017-06-23-beginr_released.en_files/figure-html/unnamed-chunk-6-2.png" width="672" /></p>
+<p>If you would like to add errorbars only, then use <code>errorbar()</code>.</p>
+<pre class="r"><code>x &lt;- seq(0, 2 * pi, length.out = 100)
+y &lt;- sin(x)
+plot(x, y, type = &quot;l&quot;)
+beginr::errorbar(x, y, yupper = 0.1, ylower = 0.1)</code></pre>
+<p><img src="/blog/2017-06-23-beginr_released.en_files/figure-html/unnamed-chunk-7-1.png" width="672" /></p>
+</div>
+<div id="functions-for-data-frames" class="section level2">
+<h2>Functions for Data Frames</h2>
+<p><code>lmdf()</code> performs the linear regression between every two columns in a data frame.</p>
+<pre class="r"><code>df &lt;- data.frame(a = 1:10, b = 1:10 + rnorm(10), c = 1:10 + rnorm(10))
+beginr::lmdf(df)</code></pre>
+<pre><code>##   x y r.squared adj.r.squared  intercept     slope Std.Error.intercept
+## 1 a b 0.8940010     0.8807511 -0.7357440 1.0650360           0.8045103
+## 2 a c 0.8152437     0.7921491  1.4262509 0.8380261           0.8751830
+## 3 b a 0.8940010     0.8807511  1.2005850 0.8394092           0.6190921
+## 4 b c 0.6589406     0.6163081  2.6094736 0.6688699           1.0307020
+## 5 c a 0.8152437     0.7921491 -0.3713173 0.9728142           1.0803133
+## 6 c b 0.6589406     0.6163081 -0.8238453 0.9851550           1.6533331
+##   Std.Error.slope t.intercept  t.slope Pr.intercept     Pr.slope
+## 1       0.1296586  -0.9145240 8.214157   0.38717497 3.608818e-05
+## 2       0.1410485   1.6296603 5.941403   0.14182122 3.452904e-04
+## 3       0.1021905   1.9392672 8.214157   0.08844632 3.608818e-05
+## 4       0.1701330   2.5317438 3.931453   0.03515984 4.347796e-03
+## 5       0.1637348  -0.3437126 5.941403   0.73992142 3.452904e-04
+## 6       0.2505830  -0.4982936 3.931453   0.63168567 4.347796e-03</code></pre>
+<p>There are two functions as improvements of <code>tapply()</code> for factor calculation.</p>
+<pre class="r"><code>beginr::tapplydf()
+beginr::tapplydfv()</code></pre>
+</div>
+<div id="functions-for-reading-and-writing-files" class="section level2">
+<h2>Functions for Reading and Writing files</h2>
+<p><code>readdir()</code> reads multiple files into a list.</p>
+<pre class="r"><code>beginr::readdir()</code></pre>
+<p><code>writefile()</code> avoids overwriting the files which already exist.</p>
+<pre class="r"><code>beginr::writefile()</code></pre>
+<p><code>list2ascii()</code> saves a list as a text file.</p>
+<pre class="r"><code>alist &lt;- list(a = 1:10, b = letters)
+beginr::list2ascii(alist)</code></pre>
+</div>
+<div id="functions-for-packages" class="section level2">
+<h2>Functions for Packages</h2>
+<p><code>bib()</code> creates bibliographic entries as texts or a file (‘.bib’).</p>
+<pre class="r"><code>beginr::bib(pkg = c(&quot;mindr&quot;, &quot;bookdownplus&quot;, &quot;pinyin&quot;, &quot;beginr&quot;))</code></pre>
+<pre><code>## @Manual{R-beginr,
+##   title = {beginr: Functions for R Beginners},
+##   author = {Peng Zhao},
+##   year = {2019},
+##   note = {R package version 0.1.5},
+##   url = {https://github.com/pzhaonet/beginr},
+## }
+## @Manual{R-bookdownplus,
+##   title = {bookdownplus: Generate Assorted Books and Documents with R &#39;bookdown&#39; Package},
+##   author = {Peng Zhao},
+##   year = {2019},
+##   note = {R package version 1.5.6},
+##   url = {https://github.com/pzhaonet/bookdownplus},
+## }
+## @Manual{R-mindr,
+##   title = {mindr: Convert Files Between Markdown or Rmarkdown Files and Mindmaps},
+##   author = {Peng Zhao},
+##   year = {2019},
+##   note = {R package version 1.2.1},
+##   url = {https://github.com/pzhaonet/mindr},
+## }
+## @Manual{R-pinyin,
+##   title = {pinyin: Convert Chinese Characters into Pinyin, Sijiao, Wubi or Other
+## Codes},
+##   author = {Peng Zhao},
+##   year = {2018},
+##   note = {R package version 1.1.5},
+##   url = {https://CRAN.R-project.org/package=pinyin},
+## }</code></pre>
+<p><code>plotpkg()</code> displays a figure showing the downloads of packages.</p>
+<pre class="r"><code>beginr::plotpkg(&quot;beginr&quot;, from = &quot;2017-06-23&quot;)</code></pre>
+<p><img src="/blog/2017-06-23-beginr_released.en_files/figure-html/unnamed-chunk-14-1.png" width="672" /></p>
+<p><code>rpkg()</code> creates a new R package in an easy way.</p>
+<pre class="r"><code>beginr::rpkg()</code></pre>
+</div>
+</div>
+<div id="references" class="section level1 unnumbered">
+<h1>References</h1>
+<div id="refs" class="references">
+<div id="ref-R-beginr">
+<p>Zhao, Peng. 2017. <em>Beginr: Functions for R Beginners</em>. <a href="https://github.com/pzhaonet/beginr">https://github.com/pzhaonet/beginr</a>.</p>
+</div>
+</div>
+</div>

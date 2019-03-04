@@ -1,0 +1,10 @@
+weight: 2
+title: "The 'rosr' Package"
+description: >
+  <ul class="list-style-none">
+    <li>Create a all-in-one project for reproducible research.</li>
+    <li>Even for non-R users.</li>
+    <li>创建可重复性研究项目。</li>
+    <li>即使不会用 R 语言，也没关系。</li>
+  </ul>
+image: "img/banners/logo-rosr.png"

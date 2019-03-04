@@ -1,0 +1,231 @@
+---
+title: "R bookdown cheatsheet"
+author: "赵鹏"
+date: '2017-03-14'
+slug: bookdown-cheatsheet
+summary: "A summary of R bookdown usage and syntax."
+tags:
+- R
+- bookdown
+- markdown
+- post
+categories: []
+banner: img/banners/logo-openr.png
+---
+
+
+
+<div id="quick-start" class="section level2">
+<h2>Quick Start</h2>
+<div id="what-is-r-bookdown" class="section level3">
+<h3>What is R bookdown</h3>
+<ul>
+<li>A software for writing books or documents.</li>
+<li>More elegant than MS Word. Much easier than <span class="math inline">\(\LaTeX\)</span>.</li>
+<li>Users can easily insert table of contents, figures and tables with cross-reference, footnotes, and index.</li>
+<li>Users can easily embed equations, citations, R scripts.</li>
+<li>pdf, word and html files can be exported.</li>
+<li>best choice to write reproducible documents.</li>
+</ul>
+<!--more-->
+</div>
+<div id="installation" class="section level3">
+<h3>Installation</h3>
+<ol style="list-style-type: decimal">
+<li><a href="https://cran.r-project.org/bin/windows/base/">Download R</a> and install it.</li>
+<li><a href="https://www.rstudio.com/products/rstudio/download/">Download RStudio</a> and install it.</li>
+<li><a href="http://www.ctex.org/CTeXDownload">Download LaTeX</a> and install it.</li>
+<li><a href="http://pandoc.org/installing.html">Download Pandoc</a> and install it.</li>
+<li>Run RStudio. Type the following codes in the top-left panel:</li>
+</ol>
+<pre class="r"><code>install.packages(&quot;bookdown&quot;)
+install.packages(&#39;servr&#39;)</code></pre>
+</div>
+<div id="templates" class="section level3">
+<h3>Templates</h3>
+<ol style="list-style-type: decimal">
+<li>Download a template (Open the following webpage and click <code>Clone or download</code> - <code>Download ZIP</code>):</li>
+</ol>
+<ul>
+<li>If writing in English, download <a href="https://github.com/rstudio/bookdown-demo">the common template</a>;</li>
+<li>If writing in Chinese, download <a href="https://github.com/yihui/bookdown-chinese">the Chinese template</a>。</li>
+</ul>
+<ol start="2" style="list-style-type: decimal">
+<li><p>Unzip the template to a folder.</p></li>
+<li><p>Find an .Rproj file. Double click it and open it with RSudio.</p></li>
+<li><p>Click the <code>Build</code> label in the top-right panel, and click <code>build book</code>. Done. Find your demo book in <code>_book/</code> folder.</p></li>
+<li><p>In the bottom-right panel you can see some files. Open those .Rmd file, and modify them into your own book. You can remove unnecessary .Rmd files except index.Rmd.</p></li>
+<li><p>Repeat Step 4, and you will get your own book.</p></li>
+<li><p>Compare your .Rmd files with the files in <code>_book/</code>, and you will understand how they are connected.</p></li>
+</ol>
+</div>
+</div>
+<div id="basic-syntax" class="section level2">
+<h2>Basic syntax</h2>
+<table>
+<thead>
+<tr class="header">
+<th align="left">marks</th>
+<th align="right">output</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><code>*Italic*</code></td>
+<td align="right"><em>Italic</em></td>
+</tr>
+<tr class="even">
+<td align="left"><code>**bold**</code></td>
+<td align="right"><strong>bold</strong></td>
+</tr>
+<tr class="odd">
+<td align="left"><code>CO~2~</code></td>
+<td align="right">subscript</td>
+</tr>
+<tr class="even">
+<td align="left"><code>R^2^</code></td>
+<td align="right">superscript</td>
+</tr>
+<tr class="odd">
+<td align="left"><code>$E = mc^2$</code></td>
+<td align="right"><span class="math inline">\(E = mc^2\)</span> inline equation ($$ for displayed)</td>
+</tr>
+<tr class="even">
+<td align="left">`[hyperlink](<a href="http://bookdown.org" class="uri">http://bookdown.org</a></td>
+<td align="right">)` <a href="http://bookdown.org">hyperlink</a></td>
+</tr>
+<tr class="odd">
+<td align="left"><code>&lt;dapengde@live.com&gt;</code></td>
+<td align="right"><a href="mailto:dapengde@live.com" class="email">dapengde@live.com</a> email</td>
+</tr>
+<tr class="even">
+<td align="left"><code>![](hyperlink of figure)</code></td>
+<td align="right">insert a figure</td>
+</tr>
+<tr class="odd">
+<td align="left"><code>&gt; quote</code></td>
+<td align="right">quote</td>
+</tr>
+<tr class="even">
+<td align="left">`code`</td>
+<td align="right"><code>code</code></td>
+</tr>
+<tr class="odd">
+<td align="left"><code># Chapter One</code></td>
+<td align="right">chapter title</td>
+</tr>
+<tr class="even">
+<td align="left"><code>1. First，...</code></td>
+<td align="right">numbered list</td>
+</tr>
+<tr class="odd">
+<td align="left"><code>- First</code></td>
+<td align="right">unnumbered list</td>
+</tr>
+<tr class="even">
+<td align="left"><code>^[footnote]</code></td>
+<td align="right">footnote</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="chapters" class="section level2">
+<h2>Chapters</h2>
+<pre><code># (PART) Part I {-} 
+# (APPENDIX) Appendix {-} 
+# References {-}
+# chapter {#ID}
+## section {#ID}
+# chapter {#ID .unnumbered}
+
+\@ref(ID)</code></pre>
+</div>
+<div id="figures-and-tables" class="section level2">
+<h2>Figures and tables</h2>
+<p>A figure can be inserted with R plotting codes:</p>
+<pre><code>```{r, fig.cap=&#39;caption&#39;, out.width=&#39;80%&#39;, fig.align=&#39;center&#39;, echo=FALSE}
+plot(1:10)
+```</code></pre>
+<p><code>\@ref(fig:fig1)</code></p>
+<p>or with R inserting codes:</p>
+<pre><code>```{r img1, fig.cap=&#39;caption&#39;, out.width=&#39;80%&#39;, fig.align=&#39;center&#39;, echo=FALSE}
+knitr::include_graphics(&quot;images/img1.png&quot;)
+```</code></pre>
+<p><code>\@ref(fig:img1)</code></p>
+<p>or with markdown basic syntax：</p>
+<pre><code>![caption](images/img1.png)</code></pre>
+<p>A table can be inserted with basic markdown syntax:</p>
+<pre><code>col one      col two
+----------- ----------
+row 1.1     row 1.2
+row 2.1     row 2.2</code></pre>
+<p>and you will get:</p>
+<table>
+<thead>
+<tr class="header">
+<th align="left">col one</th>
+<th align="center">col two</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">row 1.1</td>
+<td align="center">row 1.2</td>
+</tr>
+<tr class="even">
+<td align="left">row 2.1</td>
+<td align="center">row 2.2</td>
+</tr>
+</tbody>
+</table>
+<p>or with R codes:</p>
+<pre><code>```{r tab1, tidy=FALSE, echo=FALSE}
+knitr::kable(
+  head(iris, 20), caption = &#39;Here is a nice table!&#39;,
+  booktabs = TRUE
+)
+```</code></pre>
+<p><code>\@ref(tab:tab1)</code></p>
+</div>
+<div id="bibliography" class="section level2">
+<h2>Bibliography</h2>
+<p>Bibliography entries must be saved in .bib.</p>
+<p>Citation: <code>[@R-bookdown]</code></p>
+<p>Bibliography: <code># References {-}</code></p>
+<p>Created a library of R packages for bibliography:</p>
+<pre class="r"><code>knitr::write_bib(c(&quot;knitr&quot;, &quot;stringr&quot;), &quot;&quot;, width = 60)</code></pre>
+</div>
+<div id="theorems-lemma-definitions-etc." class="section level2">
+<h2>Theorems, lemma, definitions, etc.</h2>
+<pre><code>Full name: theorems lemma   definition  corollary   proposition example
+Abbreviations:thm         lem   def         cor         prp         ex</code></pre>
+<pre><code>```{Full name, label=&#39;&#39;, name=&quot;&quot;}
+
+```</code></pre>
+<p><code>\@ref(Abbreviation:label)</code></p>
+</div>
+<div id="export-word-document" class="section level2">
+<h2>Export Word document</h2>
+<p>Insert the following line into _output.yml:</p>
+<pre><code>bookdown::word_document2: default </code></pre>
+</div>
+<div id="equations-numbering" class="section level2">
+<h2>Equations numbering</h2>
+<pre><code>(@eq-mc) $E = mc^2$
+
+I like Eq. (@eq-mc) so much that I am falling love with her.</code></pre>
+<ol class="example" style="list-style-type: decimal">
+<li><span class="math inline">\(E = mc^2\)</span></li>
+</ol>
+<p>I like Eq. (1) so much that I am falling love with her.</p>
+<pre><code>\begin{equation} 
+E = mc^2
+  (\#eq:mc2)
+\end{equation} 
+
+I like Eq. \@ref(eq:mc2) so much that I am falling love with her.</code></pre>
+</div>
+<div id="further" class="section level2">
+<h2>Further</h2>
+<p>See <a href="https://bookdown.org/yihui/bookdown/">bookdown manual</a> for more details.</p>
+</div>

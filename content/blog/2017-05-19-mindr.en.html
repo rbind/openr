@@ -1,0 +1,69 @@
+---
+title: 'R package mindr: convert markdown files to mind maps, and vice versa'
+author: "赵鹏"
+date: '2017-05-19'
+slug: mindr
+summary: "Storm your brain! Enjoy the fun of mindmaps!"
+tags:
+- R
+- mindr
+- markdown
+- post
+categories: []
+banner: img/banners/logo-mindr.png
+---
+
+
+
+<p>This is a preliminary version of the introduction to mindr. Please go to my Github repo <a href="https://github.com/pzhaonet/mindr">mindr</a> for the latest updates.</p>
+<!--more-->
+<p><img src="http://cranlogs.r-pkg.org/badges/grand-total/mindr" /></p>
+<p><img src="/blog/2017-05-19-mindr.en_files/figure-html/unnamed-chunk-1-1.png" width="672" /></p>
+<div id="quick-start" class="section level2">
+<h2>Quick start</h2>
+<div id="installation" class="section level3">
+<h3>Installation</h3>
+<pre><code>devtools::install_github(&quot;pzhaonet/mindr&quot;)</code></pre>
+</div>
+<div id="convert-a-markdown-files-into-a-mindmap" class="section level3">
+<h3>Convert (a) markdown file(s) into a mindmap</h3>
+<p>Create a folder named <code>mm</code> in the working directory (<code>getwd()</code>), and drop some markdown or rmarkdown files into <code>mm/</code>. Run:</p>
+<pre><code>mindr::md2mm()</code></pre>
+<p>then you will get a <code>mm.mm</code> file. Open it with any mind-map (brainstorm) software, and you will get a mind map.</p>
+<p>Plenty of cross-platform and online mindmap software suits are available (see <a href="https://en.wikipedia.org/wiki/List_of_concept-_and_mind-mapping_software">the list</a>), among which <a href="http://freemind.sourceforge.net/wiki/index.php/Download">freemind</a> and <a href="http://www.xmind.net/download/win/">Xmind</a> are highly recommended.</p>
+</div>
+<div id="convcert-a-mind-maps-into-a-markdown-file" class="section level3">
+<h3>Convcert (a) mind map(s) into a markdown file</h3>
+<p>Drop some mindmap files (.mm) into <code>mm/</code>. Run:</p>
+<pre><code>mindr::mm2md()</code></pre>
+<p>then you will get a <code>mm.md</code> markdown file.</p>
+</div>
+<div id="extract-the-outline-from-a-markdown-files" class="section level3">
+<h3>Extract the outline from (a) markdown files</h3>
+<p>Drop some markdown or rmarkdown files into <code>mm/</code>. Run:</p>
+<pre><code>mindr::outline()</code></pre>
+<p>then you will get an <code>outline.md</code> file with headers in it as an outline.</p>
+<p>Have fun!</p>
+<p>Still being developed. Feel free to give your feedback to me!</p>
+</div>
+</div>
+<div id="showcase" class="section level2">
+<h2>Showcase</h2>
+<ul>
+<li>Mindmap of <a href="https://github.com/rstudio/bookdown/tree/master/inst/examples">bookdown manual</a></li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/pzhaonet/mindr/master/showcase/mindr_bookdown.jpeg" /></p>
+<ul>
+<li>Mindmap of <a href="https://github.com/rstudio/blogdown/tree/master/docs">blogdown manual</a></li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/pzhaonet/mindr/master/showcase/mindr_blogdown.jpg" /></p>
+<ul>
+<li>Mindmap of my book <em>Learning R</em></li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/pzhaonet/mindr/master/showcase/mindr_xuer.jpg" /></p>
+</div>
+<div id="license" class="section level1">
+<h1>License</h1>
+<p>Copyright 2017 <a href="http://pzhao.org">Peng Zhao</a>.</p>
+<p>Released under the <a href="https://github.com/pzhaonet/bookdown-plus/blob/master/LICENSE.md">MIT</a> license.</p>
+</div>

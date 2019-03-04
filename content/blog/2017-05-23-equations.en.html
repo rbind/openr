@@ -1,0 +1,326 @@
+---
+title: 'LaTeX equations in micrometeorology'
+author: "赵鹏"
+date: '2017-05-23'
+slug: equations
+summary: "Right click your mouse on an equation in this post - Show Math As - TeX Commands, and I get the LaTeX code of the equation immediately."
+tags:
+- post
+- blogdown
+- markdown
+categories: []
+banner: img/banners/logo-openr.png
+---
+
+
+
+<p>I have collected plenty of equations in my research in recent years. Most of them were typed by my own hands. For convenience, I organized them in an ASCII file named eq.tex as an equation library, side by side with a compiled file named eq.pdf. When I needed an equation, I searched eq.pdf, and looked for the codes in eq.tex, and then copied and posted it to my working document. A little annoying, but much better than retyping.</p>
+<p>Now comes blogdown and Hugo-academic theme. Everything has changed. I pasted all the texts from eq.tex to an .Rmd file and left it in blogdown. which produced this post. Right click your mouse on an equation in this post - Show Math As - TeX Commands, and I get the LaTeX code of the equation immediately.</p>
+<!--more-->
+<p>Farewell, <span class="math inline">\(\LaTeX\)</span>. I guess I would never go back to the old fashioned way of<span class="math inline">\(\TeX\)</span> - pdf couple any more.</p>
+<div id="meteorology" class="section level2">
+<h2>Meteorology</h2>
+<div id="atmpspheric-pressure" class="section level3">
+<h3>Atmpspheric pressure</h3>
+<p><span class="math display">\[\begin{equation}
+P=101.325 \cdot (\frac{293-0.0065z}{293}) ^ {5.26} = 86.838\,\text{kPa}
+\end{equation}\]</span></p>
+<p><span class="math inline">\(z\)</span>: elevation above sea level in m.</p>
+<p><span class="math display">\[\begin{equation}
+-\text{d} p =\rho g \text{d}z
+\end{equation}\]</span></p>
+<p><span class="math display">\[\begin{equation}
+\ln \frac{p_2}{p_1} = - \int_{z_1}^{z_2} \frac{g}{RT}\text{d}z
+\end{equation}\]</span></p>
+</div>
+<div id="psychrometric-constant" class="section level3">
+<h3>Psychrometric constant</h3>
+<p><span class="math display">\[\begin{equation}
+\gamma =\frac{c_p P}{\varepsilon \lambda} = 0.665 \times 10 ^ {-3} P
+\end{equation}\]</span></p>
+<p><span class="math display">\[\begin{equation}
+\lambda = -0.0000614342 T^3 + 0.00158927 T^2 - 2.36418T + 2500.79
+\end{equation}\]</span></p>
+<p><span class="math inline">\(P\)</span>: atmospheric pressure.</p>
+<p><span class="math inline">\(\lambda\)</span>: latent heat of vaporization (2.46 MJ kg<span class="math inline">\(^{-1}\)</span>)</p>
+<p><span class="math inline">\(c_p\)</span>: specific heat of the air (at constant pressure <span class="math inline">\(1.013 \times 10 ^{-3}\)</span> MJ kg<span class="math inline">\(^{-1}\)</span>K<span class="math inline">\(^{-1}\)</span>)</p>
+</div>
+<div id="humidity" class="section level3">
+<h3>Humidity</h3>
+<p><span class="math display">\[\begin{equation}
+    e_{\text s}=6.112\exp\frac {17.62t}{243.12+t}
+\end{equation}\]</span></p>
+<p><span class="math inline">\(e_s\)</span>: saturated vapor pressure over water at <span class="math inline">\(-45\)</span> to 60 <span class="math inline">\(^{\circ}\)</span>C (sonntag1990)</p>
+<p><span class="math display">\[\begin{equation}
+    s_{\text c}=\frac {4284e_{\text s}}{(243.12+t)^2}
+\end{equation}\]</span></p>
+<p><span class="math inline">\(s_c\)</span>: slope of the saturation vapor pressure temperature relationship.</p>
+<p>or</p>
+<p><span class="math display">\[\begin{equation}
+    e_{\text s} = 0.6108\exp\frac {17.27T}{237.3 + T}
+\end{equation}\]</span></p>
+<p>and</p>
+<p><span class="math display">\[\begin{equation}
+    s_{\text c}=\frac {4098 \cdot 0.6108\exp\frac {17.27T}{237.3 + T}}{(237.3 + T)^2}
+\end{equation}\]</span></p>
+</div>
+</div>
+<div id="carbon" class="section level2">
+<h2>Carbon</h2>
+<p><span class="math display">\[\begin{equation}
+    \text {GPP} = \frac{\alpha R_{\mathrm g}\beta }{\alpha R_{\mathrm g}+\beta }
+\end{equation}\]</span></p>
+<p><span class="math display">\[\begin{equation}
+    \frac{\text {GPP}}{\text {LAI}_\text{act}}\ = \frac{\alpha&#39; R_{\mathrm g}\beta&#39; }{\alpha&#39; R_{\mathrm g}+\beta&#39; }
+\end{equation}\]</span></p>
+<p><span class="math display">\[\begin{equation}\label{eGPPLRg}
+    \text{GPP} = \text{LAI}_\text{act}\frac{\alpha&#39; R_{\mathrm g}\beta&#39; }{\alpha&#39; R_{\mathrm g}+\beta&#39; }, 
+\end{equation}\]</span></p>
+<p><span class="math display">\[\begin{equation}\label{eGPPL}
+    \text {GPP} = a_\text {LAI}\text{LAI}_\text {act}.
+\end{equation}\]</span></p>
+<p>Chamber flux calculation:</p>
+<p><span class="math display">\[\begin{equation}
+    F_c = \frac{10 V P_0 (1 - \frac{W_0}{1000})}{RS  (T_0 + 273.15)} \frac{\partial  C&#39;}{\partial t}
+\end{equation}\]</span></p>
+<p>flux in μmol m s, p in kpa, volume in cm, w0 in 0.001, t in °C, t in s, c in ppm.</p>
+<p><span class="math display">\[\begin{equation}
+    C&#39; = C&#39;_x + (C&#39;_0 - C&#39;_x) e ^ {-a(t-t_0)}
+\end{equation}\]</span></p>
+<p><span class="math display">\[\begin{equation}
+\frac{\partial C&#39;}{\partial t} | _{t = t_0} = a(C&#39;_x - C&#39;_0)
+\end{equation}\]</span></p>
+<p><span class="math display">\[\begin{equation}
+    C&#39; = (C&#39;_x + kt) + (C&#39;_0 - C&#39;_x) e ^ {-a(t-t_0)}
+\end{equation}\]</span></p>
+<p><span class="math display">\[\begin{equation}
+    \frac{\partial C&#39;}{\partial t} | _{t = t_0} = a(C&#39;_x - C&#39;_0) + k
+\end{equation}\]</span></p>
+</div>
+<div id="energy" class="section level2">
+<h2>Energy</h2>
+<div id="evaporation-from-water-by-energy-balance" class="section level3">
+<h3>Evaporation from water by energy balance</h3>
+<p><span class="math display">\[\begin{equation}
+E_r = \frac{R_n}{l_v \rho_w} \times 1000 \times 86400
+\end{equation}\]</span></p>
+<p><span class="math display">\[\begin{equation}
+l_v = 2.501 \times 10^6 - 2370T
+\end{equation}\]</span></p>
+<p><span class="math inline">\(E_r\)</span> in mm d<span class="math inline">\(^{-1}\)</span>.</p>
+<p><span class="math inline">\(R_n\)</span>: net radiation (hourly mean - WRCC).</p>
+<p><span class="math inline">\(l_v\)</span>: latent heat of vaporization (J/kg).</p>
+<p><span class="math inline">\(\rho_w\)</span>: mean water density at constant pressure (999.8 kg m<span class="math inline">\(^{-3}\)</span>)</p>
+</div>
+<div id="penman-monteith-equation-for-latent-heat-flux" class="section level3">
+<h3>Penman Monteith equation for latent heat flux</h3>
+<p><span class="math display">\[\begin{equation}
+Q ^\text {PM}_{\text E}=\frac {s_{\text c} \frac{-R_{\text n}-Q_{\text G}}{86400\text{s}} + \frac{\rho_a c_{\text p}  (e_{\text s} - e_{\text a})}{r_{\text a}}}{s_{\text c} + \gamma (1 + \frac{r_{\text s}}{r_{\text a}})}
+\end{equation}\]</span></p>
+<p><span class="math inline">\(Q ^\text {PM}_{\text E}\)</span>: latent heat flux representing ET fraction (day 4.55 MJ m<span class="math inline">\(^{-2}\)</span>d<span class="math inline">\(^{-1}\)</span>, night 4.43 MJ m<span class="math inline">\(^{-2}\)</span>d<span class="math inline">\(^{-1}\)</span>)</p>
+<p><span class="math inline">\(R_n\)</span>: (0.957 MJ m<span class="math inline">\(^{-2}\)</span>d<span class="math inline">\(^{-1}\)</span>)</p>
+<p><span class="math inline">\(G_{hrday}\)</span>: 0.0957 MJ m<span class="math inline">\(^{-2}\)</span>d<span class="math inline">\(^{-1}\)</span></p>
+<p><span class="math inline">\(G_{hrnight}\)</span>: 0.4789 MJ m<span class="math inline">\(^{-2}\)</span>d<span class="math inline">\(^{-1}\)</span></p>
+<p><span class="math inline">\(e_s-e_a\)</span>: vapor pressure deficit of the air (1.9484 kPa - 0.439 kPa = 1.509 kPa)</p>
+<p><span class="math inline">\(\rho_a\)</span>: mean air density at constant pressure (1.040 kg m<span class="math inline">\(^{-3}\)</span>)</p>
+<p><span class="math display">\[\begin{equation}
+\rho_{adry} = \frac{p}{RT} = 1.229 \text { kg m}^{-3}
+\end{equation}\]</span></p>
+<p><span class="math display">\[\begin{equation}
+\rho_{ahumid} = \frac{p_d}{R_d T} + \frac{p_v}{R_v T}= 1.040 \text { kg m}^{-3}
+\end{equation}\]</span></p>
+<p><span class="math display">\[\begin{equation}
+p_v = RH \times p_{sat} = 1.142 \text{kPa}
+\end{equation}\]</span></p>
+<p><span class="math display">\[\begin{equation}
+p_{sat} = 6.1078 \cdot 10 ^{\frac{7.5T-2048.625}{T-35.85}} \cdot 100 = 1.84 \text { kPa}
+\end{equation}\]</span></p>
+<p><span class="math display">\[\begin{equation}
+p_d = p_{abs} - p_v = 85.696 \text{ kPa}
+\end{equation}\]</span></p>
+<p><span class="math inline">\(c_p\)</span>: specific heat of the air (at constant pressure <span class="math inline">\(1.013 \times 10 ^{-3}\)</span> MJ kg<span class="math inline">\(^{-1}\)</span>K<span class="math inline">\(^{-1}\)</span>)</p>
+<p><span class="math inline">\(s_c\)</span>: slope of the saturation vapor pressure remperature relationship (0.117 kPa K<span class="math inline">\(^{-1}\)</span>)</p>
+<p><span class="math inline">\(\gamma\)</span>: psychrometric constant (0.0577 kPa K<span class="math inline">\(^{-1}\)</span>)</p>
+<p><span class="math inline">\(r_s\)</span>: bulk surface resistance (20.83 s m<span class="math inline">\(^{-1}\)</span>)</p>
+<p><span class="math display">\[\begin{equation}
+r_\text s=\frac{r_\text {si}}{\text {LAI}_\text {active}},
+\end{equation}\]</span></p>
+<p><span class="math inline">\(r_\text {si}\)</span>: bulk stomatal resistance well illuminated leaf (100 s m<span class="math inline">\(^{-1}\)</span>)</p>
+<p>LAI<span class="math inline">\(_{active}\)</span>: active sulit leaf area index. It differs widely for crops but 3 – 5 common for most mature crops. Changes through season and normally reaches max before flowering. Depends on plant density and crop variety. Generally 0.5LAI, i.e. only top half of dense clipped grass is active in surface heat and vapor transfer. For clipped grass LAI<span class="math inline">\(=24h\)</span>.</p>
+<p><span class="math inline">\(r_a\)</span>: aerodynamic resistence (155.33 s m<span class="math inline">\(^{-1}\)</span>)</p>
+<p><span class="math display">\[\begin{equation}
+r_{\text a}= \frac{\ln \frac{z-d}{z_{\textrm{om}}} \ln \frac {z-d}{z_{\textrm{oh}}}}{\kappa ^2 u_z} = \frac{124.264}{u_z}=155.33\text { s m}^{-1}
+\end{equation}\]</span></p>
+<p><span class="math inline">\(z_m\)</span>: height of wind measurements (2 m)</p>
+<p><span class="math inline">\(z_h\)</span>: height of humidity measurements (2 m)</p>
+<p><span class="math inline">\(h\)</span>: constant vegetation height (0.4 m)</p>
+<p><span class="math inline">\(d\)</span>: zero plane desplacement height (<span class="math inline">\(\frac{2}{3}h\)</span>, 0.27 m)</p>
+<p><span class="math inline">\(z_{om}\)</span>: roughness length governing momentum transfer (<span class="math inline">\(0.123h\)</span>, 0.0492 m)</p>
+<p><span class="math inline">\(z_{oh}\)</span>: roughness length governing transfer of heat and vapor (<span class="math inline">\(0.1z_{om}\)</span>, 0.00492 m)</p>
+<p><span class="math inline">\(u_z\)</span>: wind speed at 2 m height (mean 0.8 m s<span class="math inline">\(^{-1}\)</span>)</p>
+</div>
+<div id="fao-penman-monteith-equation-for-et-rate-from-reference-surface-et_0" class="section level3">
+<h3>FAO Penman Monteith equation for ET rate from reference surface (ET<span class="math inline">\(_0\)</span>)</h3>
+<p><span class="math display">\[\begin{equation}
+ET_0 = \frac {0.408 s_{\text c} \frac{-R_{\text n}-Q_{\text G}}{86400\text{s}} + \frac{\gamma 900 u_z (e_{\text s} - e_{\text a})}{T+273}}{s_{\text c} + \gamma (1 + 0.34u_z)}
+\end{equation}\]</span></p>
+<p><span class="math inline">\(ET_0\)</span>: reference evapotraspiration (day 1.109 mm day<span class="math inline">\(^{-1}\)</span>, night 1.064 mm day<span class="math inline">\(^{-1}\)</span>)</p>
+<p><span class="math inline">\(ET_0\)</span>: reference evapotraspiration (day 2.72 MJ m<span class="math inline">\(^{-2}\)</span>d<span class="math inline">\(^{-1}\)</span>, night 2.61 MJ m<span class="math inline">\(^{-2}\)</span>d<span class="math inline">\(^{-1}\)</span>)</p>
+<p><span class="math inline">\(R_n\)</span>: net radiation (0.445 MJ m<span class="math inline">\(^{-2}\)</span>d<span class="math inline">\(^{-1}\)</span>)</p>
+<p><span class="math inline">\(G_{hrday}\)</span>: 0.0445 MJ m<span class="math inline">\(^{-2}\)</span>d<span class="math inline">\(^{-1}\)</span></p>
+<p><span class="math inline">\(G_{hrnight}\)</span>: 0.2227 MJ m<span class="math inline">\(^{-2}\)</span>d<span class="math inline">\(^{-1}\)</span></p>
+<p><span class="math inline">\(e_s-e_a\)</span>: vapor pressure deficit of the air (1.9484 kPa - 0.439 kPa = 1.509 kPa)</p>
+<p><span class="math inline">\(T\)</span>: mean daily air temperature at 2 m height (16.2<span class="math inline">\(^\circ\)</span>C)</p>
+</div>
+<div id="equations-in-gafir-documentation" class="section level3">
+<h3>Equations in GaFiR documentation</h3>
+<p><span class="math display" id="eq:eNEE">\[\begin{equation}
+\text{NEE = GPP} + R_\text{eco}
+\tag{1}
+\end{equation}\]</span></p>
+<p><span class="math display">\[\begin{equation}\label{ePM}
+Q ^\text {PM}_{\text E}=\frac {s_{\text c} (-R_{\text n}-Q_{\text G}) + \frac{\rho c_{\text p}  (e_{\text s} - e_{\text a})}{r_{\text a}}}{s_{\text c} + \gamma (1 + \frac{r_{\text s}}{r_{\text a}})},
+\end{equation}\]</span></p>
+<p><span class="math display">\[\begin{equation}\label{era}
+r_{\text a}= \frac{\ln \frac{z-d}{z_{\textrm{om}}} \ln \frac {z-d}{z_{\textrm{oh}}}}{\kappa ^2 u},
+\end{equation}\]</span></p>
+<p><span class="math display">\[\begin{equation}\label{eRl}
+%r^{\text {LAI}}_\text s=\frac{r_\text {si}}{0.5\text {LAI}},
+r_\text s=\frac{r_\text {si}}{\text {LAI}_\text {active}},
+\end{equation}\]</span></p>
+<p><span class="math display">\[\begin{equation}\label{eKP}
+%\frac{r^{\text {KP}}_\text s}{r_\text a} = a \frac{r^*}{r_\text a} + b,
+\frac{r_\text s}{r_\text a} = a \frac{r^*}{r_\text a} + b,
+\end{equation}\]</span></p>
+<p><span class="math display">\[\begin{equation}
+r^*=\frac{(s_\text c + \gamma)\rho c_\text p (e_{\text s} - e_{\text a})}{s_\text c \gamma (-R_{\text n}-Q_{\text G})},
+\end{equation}\]</span></p>
+<p><span class="math display">\[\begin{equation}\label{eRs}
+r_{\text s}= \frac {r_{\text a}s_{\text c} (-R_{\text n}-Q_{\text G}) + \rho c_{\text p}  (e_{\text s} - e_{\text a}) - r_{\text a}Q_{\text E}(s_{\text c} + \gamma)}
+{\gamma Q_{\text E}}.
+\end{equation}\]</span></p>
+<p><span class="math display">\[\begin{equation}\label{ePT}
+E=\alpha_{\text {PT}} \frac {s_{\text c}}{s_{\text c} + \gamma}(-Q_{\text A})
+\end{equation}\]</span></p>
+</div>
+</div>
+<div id="model-evaluation" class="section level2">
+<h2>Model evaluation</h2>
+<p><span class="math display">\[\begin{equation}
+ \text{ME}=\frac{1}{N}\sum_{i=1}^{N}|P_i-O_i|
+ \end{equation}\]</span></p>
+<p><span class="math display">\[\begin{equation}
+ \text{MAE}=\frac{1}{N}\sum_{i=1}^{N}(P_i-O_i)
+ \end{equation}\]</span></p>
+<p><span class="math display">\[\begin{equation} 
+\text{MSE}=\frac{1}{N}\sum_{i=1}^{N}(P_i-O_i)^2
+\end{equation}\]</span></p>
+<p><span class="math display">\[\begin{equation} 
+\text{RMSE}=\sqrt{\frac{1}{N}\sum_{i=1}^{N}(P_i-O_i)^2}
+\end{equation}\]</span></p>
+<p><span class="math display">\[\begin{equation} 
+\text{NRMSE}=100\frac{\text{RMSE}}{O_\text{max} - O_\text{min}}
+\end{equation}\]</span></p>
+<p><span class="math display">\[\begin{equation} 
+\text{PBIAS} =100\frac{\sum_{i=1}^{n}(P_i-O_i)}{\sum_{i=1}^{n}O_i}
+\end{equation}\]</span></p>
+<p><span class="math display">\[\begin{equation} 
+\text{RSR} =\frac{\text{RMSE}}{\sigma_O}
+\end{equation}\]</span></p>
+<p><span class="math display">\[\begin{equation} 
+\text{rSD} =\frac{\sigma_P}{\sigma_O}
+\end{equation}\]</span></p>
+<p><span class="math display">\[\begin{equation} 
+\text{NSE} =1-\frac{\sum_{i=1}^{n}(O_i-P_i)^2}{\sum_{i=1}^{n}(O_i - \overline{O})^2}
+\end{equation}\]</span></p>
+<p><span class="math display">\[\begin{equation} 
+\text{mNSE} =1-\frac{\sum_{i=1}^{n}|O_i-P_i||^j}{\sum_{i=1}^{n}|O_i - \overline{O}|^j}
+\end{equation}\]</span></p>
+<p><span class="math display">\[\begin{equation} 
+\text{rNSE} =1-\frac{\sum_{i=1}^{n}(\frac{O_i-P_i}{\overline{O}})^2}{\sum_{i=1}^{n}(\frac{O_i - \overline{O}}{\overline{O}})^2}
+\end{equation}\]</span></p>
+<p><span class="math display">\[\begin{equation} 
+d =1-\frac{\sum_{i=1}^{n}(P_i-O_i)^2}{\sum_{i=1}^{n}(|P_i-O_i|+|P_i+O_i|)^2}
+\end{equation}\]</span></p>
+<p><span class="math display">\[\begin{equation} 
+md =1 - \frac{\sum_{i=1}^{n}(P_i-O_i)^j}{\sum_{i=1}^{n}(|P_i-O_i|+|P_i+O_i|)^j}
+\end{equation}\]</span></p>
+<p><span class="math display">\[\begin{equation} 
+rd =1-\frac{\sum_{i=1}^{n}(\frac{P_i-O_i}{\overline{O}})^2}{\sum_{i=1}^{n}(\frac{|P_i-O_i|+|P_i+O_i|}{\overline{O}})^2}
+\end{equation}\]</span></p>
+<p><span class="math display">\[\begin{equation} 
+\text{cp} =1-\frac{\sum_{i=2}^{n}(O_i-P_i)^2}{\sum_{i=1}^{n-1}(O_{i+1} - O_i)^2}
+\end{equation}\]</span></p>
+<p><span class="math display">\[\begin{equation} 
+R =\frac{\sum_{i=1}^{n}(O_i-\overline{O})(P_i-\overline{P})}{\sqrt{\sum_{i=1}^{n}(O_i-\overline{O})^2}\sqrt{\sum_{i=1}^{n}(P_i-\overline{P})^2}) }
+\end{equation}\]</span></p>
+<p><span class="math display">\[\begin{equation} 
+R^2 =(\frac{\sum_{i=1}^{n}(O_i-\overline{O})(P_i-\overline{P})}{\sqrt{\sum_{i=1}^{n}(O_i-\overline{O})^2}\sqrt{\sum_{i=1}^{n}(P_i-\overline{P})^2}) })^2
+\end{equation}\]</span></p>
+<p><span class="math display">\[\begin{equation} 
+\text{bR2} =bR^2
+\end{equation}\]</span></p>
+</div>
+<div id="mathematics" class="section level2">
+<h2>Mathematics</h2>
+<p><span class="math display">\[\begin{equation}
+\frac{\text {d} x^\mu}{\text {d} x} = \mu x ^{\mu - 1}\\
+\end{equation}\]</span></p>
+<p><span class="math display">\[\begin{equation}
+\frac{\text {d} e^x}{\text {d} x} = e^x\\
+\end{equation}\]</span></p>
+<p><span class="math display">\[\begin{equation}
+\frac{\text {d} a^x}{\text {d} x} = a^x \ln a \\
+\end{equation}\]</span></p>
+<p><span class="math display">\[\begin{equation}
+\frac{\text {d} \ln x}{\text {d} x} = \frac{1}{x}\\
+\end{equation}\]</span></p>
+<p><span class="math display">\[\begin{equation}
+\frac{\text {d} \log _a x}{\text {d} x} = \frac{1}{x\ln a}\\
+\end{equation}\]</span></p>
+<p><span class="math display">\[\begin{equation}
+\frac{\text {d} \sin x}{\text {d} x} = \cos x\\
+\end{equation}\]</span></p>
+<p><span class="math display">\[\begin{equation}
+\frac{\text {d} \cos x}{\text {d} x} = - \sin x\\
+\end{equation}\]</span></p>
+<p><span class="math display">\[\begin{equation}
+\int k \text {d} x = kx + C
+\end{equation}\]</span></p>
+<p><span class="math display">\[\begin{equation}
+\int x ^ \mu \text {d} x = \frac{x^{\mu + 1}}{\mu + 1} + C\ (\mu \neq -1)
+\end{equation}\]</span></p>
+<p><span class="math display">\[\begin{equation}
+\int \frac{1}{x}\text {d} x = \ln \left | x \right | + C
+\end{equation}\]</span></p>
+<p><span class="math display">\[\begin{equation}
+\int \text {e} ^x \text {d} x = \text {e} ^x + C\\
+\end{equation}\]</span></p>
+<p><span class="math display">\[\begin{equation}
+\int a ^x \text {d} x = \frac{a^x}{\ln a}+ C\\
+\end{equation}\]</span></p>
+<p><span class="math display">\[\begin{equation}
+\int \frac{1}{1+x^2}\text {d} x = \arctan x + C\\
+\end{equation}\]</span></p>
+<p><span class="math display">\[\begin{equation}
+\int \frac{1}{1-x^2}\text {d} x = \arcsin x + C\\
+\end{equation}\]</span></p>
+<p><span class="math display">\[\begin{equation}
+\int \cos x \text {d} x = \sin x + C\\
+\end{equation}\]</span></p>
+<p><span class="math display">\[\begin{equation}
+\int \sin x \text {d} x = -\cos x + C\\
+\end{equation}\]</span></p>
+<p><span class="math display">\[\begin{equation}
+\int \frac{1}{\cos^2 x} \text {d} x = \tan x + C\\
+\end{equation}\]</span></p>
+<p><span class="math display">\[\begin{equation}
+\int \frac{1}{\sin^2 x} \text {d} x = -\cot x + C\\
+\end{equation}\]</span></p>
+<p><span class="math display">\[\begin{equation}
+\int \sec x \tan x \text {d} x = \sec x + C\\
+\end{equation}\]</span></p>
+<p><span class="math display">\[\begin{equation}
+\int \csc x \cot x \text {d} x = -\csc x + C\\
+\end{equation}\]</span></p>
+</div>

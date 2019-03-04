@@ -1,0 +1,58 @@
+---
+title: 'bookdownplus 的两个魔法'
+author: "赵鹏"
+date: '2017-06-27'
+slug: bookdownplus-magic
+summary: "bookdown 虽好，但入手并不容易。怎么样能让人对 bookdown 一见钟情呢？ 用 bookdownplus 的两个魔法，一剑封喉。"
+tags:
+  - R
+  - bookdown
+  - bookdownplus
+  - post
+  - markdown
+bibliography: [zhaor.bib]
+categories: []
+banner: img/banners/logo-bookdownplus.png
+---
+
+
+
+<p>bookdown 是个好东西，只是入手有点难，酒香巷深。</p>
+<p>对于 R 初学者来说，如果身边没有人指导，使用者可能需要花大量精力应付 LaTeX，YAML，Pandoc，而很多初学者可能从来没听说过这些，站在 bookdown 的门口往里张望了一下，说不定就被吓跑了，从而错过了门里的精彩世界。</p>
+<p>bookdownplus 扩展包，可以让新手对 bookdown 快速上手。从此，bookdown 这坛好酒就不必去深巷苦寻，它就放在你手边。</p>
+<!--more-->
+<p>从 v1.2.0 开始，bookdownplus 增加了两个魔法，更是让新手对 bookdown 一见钟情。如果你对 bookdown 感兴趣却苦于入门的烦恼，那么可以试试这两个魔法。</p>
+<div id="section" class="section level2">
+<h2>准备工作</h2>
+<p>首先，安装好必需的软件，包括 R, RStudio, <span class="math inline">\(\LaTeX\)</span>等。详见 <a href="https://bookdown.org/yihui/bookdown/">bookdown 官方手册</a>。然后，安装开发版的bookdownplus：</p>
+<pre class="r"><code>devtools::install_github(&quot;pzhaonet/bookdownplus&quot;)</code></pre>
+<p>再用 <code>setwd()</code> 将R的工作目录设置到一个空文件夹里。</p>
+<p>一切准备就绪后，接下来就是见证奇迹的时刻。</p>
+</div>
+<div id="section-1" class="section level2">
+<h2>第一个魔法</h2>
+<p>在 R 里运行下面的代码，然后去喝个茶：</p>
+<pre class="r"><code>for (i in template()[1:19])
+  bookdownplus(template = i, 
+               more_output = more_output()[1:3])</code></pre>
+<p>回来以后，你会在工作目录里看到很多文件和文件夹。打开那个叫做 <code>_book/</code>的文件夹，Duang！19个示例文档，每个都以 pdf、Word、网页和电子书格式乖乖地等在那里，等你打开了。其中，电子书 epub 格式可以在手机上阅读，也可以在台式机用免费的Calibre软件打开阅读。</p>
+<p>这些示例文档，从学术论文到诗歌乐谱，从中文到英文，展示了 bookdown 能胜任的工作。是不是动心了？</p>
+</div>
+<div id="section-2" class="section level2">
+<h2>第二个魔法</h2>
+<p>运行下面的代码，然后看两眼窗外的风景，bookdownplus 就把事情做完了：</p>
+<pre class="r"><code>for (mf in mail_font()) {
+  for (ms in mail_style()) {
+    for (mt in mail_theme()) {
+      outputname &lt;- paste(&#39;mail&#39;, ms, mf, mt, sep = &#39;_&#39;)
+      bookdownplus(template = &#39;mail&#39;, 
+                   mail_style = ms, 
+                   mail_font = mf, 
+                   mail_theme = mt, 
+                   output_name = outputname)
+    }
+  }
+}</code></pre>
+<p>仍然打开那个叫做 <code>_book/</code>的文件夹，Duang！ 不同字体、不同主题、不同布局的信件示例文档就全部在那里了。</p>
+<p>如果看了这个你还没动心，那么只能说明跟 bookdown 没缘分，趁早放手吧！</p>
+</div>

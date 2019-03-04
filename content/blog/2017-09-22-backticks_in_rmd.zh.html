@@ -1,0 +1,65 @@
+---
+title: '如何在 R markdown 里输出 r pi 并前后加上小撇`'
+author: "赵鹏"
+date: '2017-09-22'
+slug: backticks-in-rmd
+summary: "其实本文的标题应该是：如何在文章里显示 `` `r pi` `` 这样的文字。"
+tags:
+  - R
+  - bookdown
+  - bookdownplus
+  - markdown
+  - post
+bibliography: [zhaor.bib]
+categories: []
+banner: img/banners/logo-openr.png
+---
+
+
+
+<p>其实本文的标题应该是：如何在文章里显示 <code>`r pi`</code> 这样的文字。但是我不知道怎么把这个格式弄到标题里。所以，就这样凑合过吧。</p>
+<p>这个问题的答案，要分几层意思来说。<code>`r pi`</code> 是代码格式（本博客显示为粉底红字），并且包含的`符号同样是代码格式，并且 pi 并没有被编译成 3.1415927。别看它短，这三点每个都是个坑。</p>
+<!--more-->
+<p>这个问题在编写 R markdown 教程时常见。其实，等你明白这个问题的答案后，会发现答案并不难，难的是如何描述这个问题。我费了好大劲，都想不出一个准确描述的办法，并且在那些支持 markdown 的论坛上，我连这个小撇都输不出来，这叫人怎么问？最后我只能这么提问：</p>
+<blockquote>
+<p>请问在输出文档里怎么显示’撇 r pi 撇’并且别让它编译出来 3.1415927？</p>
+</blockquote>
+<div id="section" class="section level3">
+<h3>第 1 层意思，那个小撇 `，它到底叫什么？总不能总叫“小撇”吧？</h3>
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/KB_Germany.svg/550px-KB_Germany.svg.png" /></p>
+<p>我用的是德语键盘，挪，就是上图第一行右起第二个键的上面那个小可爱。</p>
+<p>查<a href="https://en.wikipedia.org/wiki/Grave_accent">维基百科</a>才知道，` 的学名叫 <em>Grave accent</em> ，中文叫“重音符”。在程序猿的世界里，它又被称作 <em>backquote</em> 或 <em>backtick</em>，中文叫反引号。所以，跟这个有关的问题可以这么问：</p>
+<p><a href="https://meta.stackexchange.com/questions/82718/how-do-i-escape-a-backtick-in-markdown">How do I escape a backtick ` in Markdown?</a></p>
+<p>或者</p>
+<p><a href="https://stackoverflow.com/questions/20409172/how-to-display-verbatim-inline-r-code-with-backticks-using-rmarkdown">How to display verbatim/literal inline r code with backticks using Rmarkdown?</a></p>
+</div>
+<div id="section-1" class="section level3">
+<h3>第 2 层意思：怎么把反引号显示出来？</h3>
+<p>如果仅仅输入个反引号 <code>，在同一段里后面没有了还好办，万一又出现一个反引号</code>，就会把他俩自动配对儿，两者之间的文字当成了代码。瞧，就是上句话这个德性。</p>
+<p>为了棒打鸳鸯不让他俩自动配对儿，那就用转义符\。输入\`，就避免反引号自动配对变代码了。</p>
+</div>
+<div id="r-" class="section level3">
+<h3>第 3 层意思，是怎么把 r 语言的输出结果显示到代码环境里。</h3>
+<p>这个就开始有点绕了。</p>
+<p>比如，我想在Rmd 源文件里输入 pi，而输出的文档里显示 <code>3.1415927</code>。注意，光是输出 3.1415927 这容易，输入<code>`r pi`</code> 就行了，但是怎么显示成代码格式（这里是粉底红字）？在 <code>`r pi`</code> 外边加一层反引号是不行的。</p>
+<p>正确的方法是: <code>两个反引号</code> + <code>一个空格</code> + <code>一个反引号</code> + <code>r</code> + <code>pi</code> + <code>一个反引号</code> + <code>一个空格</code> + <code>两个反引号</code>。</p>
+<p><strong>也就是说，<code>两个反引号</code> + <code>一个空格</code> 相当于更外一层的反引号。 R markdown 先看到内层的反引号，进行编译，得到 3.1415927：然后，看到外层的反引号，于是把内层的编译结果表示成代码格式。</strong></p>
+</div>
+<div id="r-pi-r-pi" class="section level3">
+<h3>第 4 层意思，怎么让上面那个 3.1415927 在输出文档里显示源码’r pi’，并且都在代码环境（粉底红色）里，即 <code>r pi</code>？</h3>
+<p>方法有两种。第一种是用<a href="https://yihui.name/knitr/faq/">knitr</a> 的 <code>inline_expr()</code> 函数：<code>`r knitr::inline_expr('pi')`</code></p>
+<p>第二种是用第 3 层意思里说的方法，即 <code>两个反引号</code> + <code>一个空格</code> <code>r</code> + <code>一个空格</code> + <code>pi</code> + <code>一个空格</code> + <code>两个反引号</code>。</p>
+<p>牢记<strong><code>两个反引号</code> + <code>一个空格</code> = <code>更外一层的反引号</code></strong>，就稍微容易理解一点。</p>
+<p>写到这个地方，我已经要晕车了，但是还没完。</p>
+</div>
+<div id="section-2" class="section level3">
+<h3>第 5 层意思，怎么在第 4 层意思的基础上再加两个反引号，并显示成粉底红字，即</h3>
+<p><code>`r pi`</code></p>
+<p>我现在用的方法是：<code></code> <code>`r '\x60r pi\x60'`</code> <code></code></p>
+<p>这个 <code>\x60</code> 就是反引号。相当于把反引号弄到字符串里处理。</p>
+</div>
+<div id="section-3" class="section level3">
+<h3>完了吗？还没完，还有第 6 层意思。</h3>
+<p>反引号就像个俄罗斯套娃；上文你看到的结果都是渲染出来的，而实际书写的源文档，总会比你看见的外面再多一层。</p>
+<p>写到这里，我不行了，容我扶墙出去呼吸两颗新鲜空气。</p>
+</div>

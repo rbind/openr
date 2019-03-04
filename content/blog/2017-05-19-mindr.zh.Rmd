@@ -1,0 +1,78 @@
+---
+title: 'R mindr: 把 Markdown 转成思维导图'
+author: "赵鹏"
+date: '2017-05-19'
+slug: mindr
+summary: "我开发的第 5 个 R 语言扩展包。欢迎测试。"
+tags:
+- R
+- mindr
+- markdown
+- post
+categories: []
+banner: img/banners/logo-mindr.png
+---
+
+
+将 markdown (.md, .Rmd) 文件转换成思维导图的 R 扩展包 [mindr](https://github.com/pzhaonet/mindr) 是我写的第五个 R 包，安装方法如下：
+
+<!--more-->
+
+稳定版：
+
+
+```{r, eval=FALSE}
+install.packages("mindr")
+```
+
+开发版：
+
+```{r, eval=FALSE}
+devtools::install_github("pzhaonet/mindr")
+```
+
+使用方法：
+
+在R的工作目录创建个名叫 `mm/` 的文件夹，丢进去一堆 markdown 文件 (.md, .Rmd)，然后运行：
+
+```{r, eval=FALSE}
+mindr::md2mm()
+```
+
+就得到个 `mm.mm` 的思维导图文件，用免费的思维导图软件 [freemind](http://freemind.sourceforge.net/wiki/index.php/Download) 可以直接打开。界面比较简陋。或者用漂亮的免费软件 [Xmind](http://www.xmind.net/download/win/)，需要选择`导入 freemind 导图`。
+
+mindr包还有另外两个函数：`mm2md()`是反向操作，将思维导图转换成markdown;`outline()`是从markdown文件里提取出各级标题生成大纲。
+
+-------
+
+我的书稿《学R》最初是先用思维导图拟定框架，然后在 Word 里写，后来转到 bookdown 里完成的。今天下午，我在书稿的旧思维导图里照着新稿修改，想把两者统一了。改着改着，觉得不对劲儿呀，R markdown 的哲学是维护一份文档，导出多个格式，我怎么又开始维护两份内容相同只是格式不同的文档了？
+
+这肯定不是什么新问题，肯定有办法直接把 markdown 转成思维导图。于是我搜。我搜搜搜，竟然没搜到！
+
+这就怪了。从常识上判断，我认为这个工具肯定有，说不定藏在某个 R 包里，只是太隐蔽了。
+
+是应该继续搜呢，还是自己动手？有时候真是难以权衡。我掂量了一下轻重，选择了后者。
+
+晚上，写好了。
+
+先拿 [bookdown 书稿](https://github.com/rstudio/bookdown/tree/master/inst/examples)当小白鼠练手，用 freemind 直接打开：
+
+![](https://raw.githubusercontent.com/pzhaonet/mindr/master/showcase/mindr_bookdown.jpeg)
+
+freemind 确实简陋。再拿 [blogdown 书稿](https://github.com/rstudio/blogdown/tree/master/docs) 试试，导入 Xmind 看看：
+
+![](https://raw.githubusercontent.com/pzhaonet/mindr/master/showcase/mindr_blogdown.jpg)
+
+还不错。好了，实验成熟了，放心地用在自己的书稿上，并且挑个最漂亮的款式：
+
+![](https://raw.githubusercontent.com/pzhaonet/mindr/master/showcase/mindr_xuer.jpg)
+
+**更新：2017-06-19，['mindr 1.0.4'](https://cran.r-project.org/web/packages/mindr/index.html) 在 CRAN 正式发布。**
+
+![](http://cranlogs.r-pkg.org/badges/grand-total/mindr)
+
+
+```{r, echo=FALSE, fig.asp=0.3}
+beginr::plotpkg(c("bookdownplus", "mindr", "pinyin", "beginr")[2], 
+                from = c("2017-06-21", "2017-06-19", "2017-06-19", "2017-06-23")[2])
+```

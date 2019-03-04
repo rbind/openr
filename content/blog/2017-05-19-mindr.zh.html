@@ -1,0 +1,43 @@
+---
+title: 'R mindr: 把 Markdown 转成思维导图'
+author: "赵鹏"
+date: '2017-05-19'
+slug: mindr
+summary: "我开发的第 5 个 R 语言扩展包。欢迎测试。"
+tags:
+- R
+- mindr
+- markdown
+- post
+categories: []
+banner: img/banners/logo-mindr.png
+---
+
+
+
+<p>将 markdown (.md, .Rmd) 文件转换成思维导图的 R 扩展包 <a href="https://github.com/pzhaonet/mindr">mindr</a> 是我写的第五个 R 包，安装方法如下：</p>
+<!--more-->
+<p>稳定版：</p>
+<pre class="r"><code>install.packages(&quot;mindr&quot;)</code></pre>
+<p>开发版：</p>
+<pre class="r"><code>devtools::install_github(&quot;pzhaonet/mindr&quot;)</code></pre>
+<p>使用方法：</p>
+<p>在R的工作目录创建个名叫 <code>mm/</code> 的文件夹，丢进去一堆 markdown 文件 (.md, .Rmd)，然后运行：</p>
+<pre class="r"><code>mindr::md2mm()</code></pre>
+<p>就得到个 <code>mm.mm</code> 的思维导图文件，用免费的思维导图软件 <a href="http://freemind.sourceforge.net/wiki/index.php/Download">freemind</a> 可以直接打开。界面比较简陋。或者用漂亮的免费软件 <a href="http://www.xmind.net/download/win/">Xmind</a>，需要选择<code>导入 freemind 导图</code>。</p>
+<p>mindr包还有另外两个函数：<code>mm2md()</code>是反向操作，将思维导图转换成markdown;<code>outline()</code>是从markdown文件里提取出各级标题生成大纲。</p>
+<hr />
+<p>我的书稿《学R》最初是先用思维导图拟定框架，然后在 Word 里写，后来转到 bookdown 里完成的。今天下午，我在书稿的旧思维导图里照着新稿修改，想把两者统一了。改着改着，觉得不对劲儿呀，R markdown 的哲学是维护一份文档，导出多个格式，我怎么又开始维护两份内容相同只是格式不同的文档了？</p>
+<p>这肯定不是什么新问题，肯定有办法直接把 markdown 转成思维导图。于是我搜。我搜搜搜，竟然没搜到！</p>
+<p>这就怪了。从常识上判断，我认为这个工具肯定有，说不定藏在某个 R 包里，只是太隐蔽了。</p>
+<p>是应该继续搜呢，还是自己动手？有时候真是难以权衡。我掂量了一下轻重，选择了后者。</p>
+<p>晚上，写好了。</p>
+<p>先拿 <a href="https://github.com/rstudio/bookdown/tree/master/inst/examples">bookdown 书稿</a>当小白鼠练手，用 freemind 直接打开：</p>
+<p><img src="https://raw.githubusercontent.com/pzhaonet/mindr/master/showcase/mindr_bookdown.jpeg" /></p>
+<p>freemind 确实简陋。再拿 <a href="https://github.com/rstudio/blogdown/tree/master/docs">blogdown 书稿</a> 试试，导入 Xmind 看看：</p>
+<p><img src="https://raw.githubusercontent.com/pzhaonet/mindr/master/showcase/mindr_blogdown.jpg" /></p>
+<p>还不错。好了，实验成熟了，放心地用在自己的书稿上，并且挑个最漂亮的款式：</p>
+<p><img src="https://raw.githubusercontent.com/pzhaonet/mindr/master/showcase/mindr_xuer.jpg" /></p>
+<p><strong>更新：2017-06-19，<a href="https://cran.r-project.org/web/packages/mindr/index.html">‘mindr 1.0.4’</a> 在 CRAN 正式发布。</strong></p>
+<p><img src="http://cranlogs.r-pkg.org/badges/grand-total/mindr" /></p>
+<p><img src="/blog/2017-05-19-mindr.zh_files/figure-html/unnamed-chunk-4-1.png" width="672" /></p>

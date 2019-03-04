@@ -1,0 +1,10 @@
+weight: 6
+title: "The 'pinyin' Package"
+description: >
+  <ul class="list-style-none">
+    <li>Convert Chinese characters into Pinyin, Sijiao or Wubi.</li>
+    <li>Asistance of bookdown.</li>
+    <li>将汉字转为拼音，四角号码，五笔字型编码。</li>
+    <li>bookdown 的中文助手。</li>
+  </ul>
+image: "img/banners/logo-pinyin.png"

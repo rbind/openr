@@ -1,0 +1,10 @@
+weight: 3
+title: "The 'bookdownplus' Package"
+description: >
+  <ul class="list-style-none">
+    <li>Shortcut to bookdown.</li>
+    <li>Write academic manuscript, thesis, books.</li>
+    <li>入手 bookdown 的捷径。</li>
+    <li>书写学术期刊论文，学位论文，书籍。</li>
+  </ul>
+image: "img/banners/logo-bookdownplus.png"

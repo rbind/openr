@@ -1,0 +1,462 @@
+---
+title: '微气象学常用的 LaTeX 公式'
+author: "赵鹏"
+date: '2017-05-23'
+slug: equations
+summary: "现在有了 blogdown ，只需把常用公式扔进本帖里，在本帖的公式上点鼠标右键- Show Math As - TeX Commands，就得到了公式的 LaTeX 代码。直接拷贝就行。世界变得不一样了，我觉得，我再也回不去了。"
+tags:
+- post
+- R
+- blogdown
+- markdown
+- LaTeX
+categories: []
+banner: img/banners/logo-openr.png
+---
+
+这些年，论文发得不多，公式却攒了不少，大部分都是自己亲手敲的 \(\LaTeX\) 代码。我把他们整理在一个 eq.tex 文档里，配合一个编译好的 eq.pdf 文件。每次需要的时候，在 eq.pdf 里找到需要的公式，然后去  eq.tex 找公式代码，拷到目标文档里完事儿。稍微有点小麻烦，但总比重新敲一遍代码要省事、准确。
+
+然而，现在有了 blogdown 和 Hugo-academic 主题，一切都变得不一样了。我把 eq.tex 里的文本全部拷贝粘贴到一个 .Rmd 文件，扔进网站里，就得到了现在这个帖子。鼠标放在公式上点右键- Show Math As - \(\TeX\) Commands，就得到了公式的 \(\LaTeX\) 代码。直接拷贝就行了，再也不用在两个文档里切换以及找来找去。
+
+<!--more-->
+
+我觉得，我再也回不去了。
+
+## Meteorology
+
+### Atmpspheric pressure
+
+\begin{equation}
+P=101.325 \cdot (\frac{293-0.0065z}{293}) ^ {5.26} = 86.838\,\text{kPa}
+\end{equation}
+
+$z$: elevation above sea level in m.
+
+\begin{equation}
+-\text{d} p =\rho g \text{d}z
+\end{equation}
+
+
+\begin{equation}
+\ln \frac{p_2}{p_1} = - \int_{z_1}^{z_2} \frac{g}{RT}\text{d}z
+\end{equation}
+
+
+### Psychrometric constant
+
+\begin{equation}
+\gamma =\frac{c_p P}{\varepsilon \lambda} = 0.665 \times 10 ^ {-3} P
+\end{equation}
+
+\begin{equation}
+\lambda = -0.0000614342 T^3 + 0.00158927 T^2 - 2.36418T + 2500.79
+\end{equation}
+
+$P$: atmospheric pressure.
+
+$\lambda$: latent heat of vaporization (2.46 MJ kg$^{-1}$)
+
+$c_p$: specific heat of the air (at constant pressure $1.013 \times 10 ^{-3}$ MJ kg$^{-1}$K$^{-1}$)
+
+
+### Humidity
+
+\begin{equation}
+​	e_{\text s}=6.112\exp\frac {17.62t}{243.12+t}
+\end{equation}
+
+$e_s$: saturated vapor pressure over water at $-45$ to 60 $^{\circ}$C (sonntag1990)
+
+\begin{equation}
+​	s_{\text c}=\frac {4284e_{\text s}}{(243.12+t)^2}
+\end{equation}
+
+$s_c$: slope of the saturation vapor pressure temperature relationship.
+
+or
+
+\begin{equation}
+​	e_{\text s} = 0.6108\exp\frac {17.27T}{237.3 + T}
+\end{equation}
+
+and
+
+\begin{equation}
+​	s_{\text c}=\frac {4098 \cdot 0.6108\exp\frac {17.27T}{237.3 + T}}{(237.3 + T)^2}
+\end{equation}
+
+
+## Carbon
+
+\begin{equation}
+​	\text {GPP} = \frac{\alpha R_{\mathrm g}\beta }{\alpha R_{\mathrm g}+\beta }
+\end{equation}
+
+\begin{equation}
+​	\frac{\text {GPP}}{\text {LAI}_\text{act}}\ = \frac{\alpha' R_{\mathrm g}\beta' }{\alpha' R_{\mathrm g}+\beta' }
+\end{equation}
+
+\begin{equation}\label{eGPPLRg}
+​	\text{GPP} = \text{LAI}_\text{act}\frac{\alpha' R_{\mathrm g}\beta' }{\alpha' R_{\mathrm g}+\beta' }, 
+\end{equation}
+
+\begin{equation}\label{eGPPL}
+​	\text {GPP} = a_\text {LAI}\text{LAI}_\text {act}.
+\end{equation}
+
+Chamber flux calculation:
+
+\begin{equation}
+​	F_c = \frac{10 V P_0 (1 - \frac{W_0}{1000})}{RS  (T_0 + 273.15)} \frac{\partial  C'}{\partial t}
+\end{equation}
+
+flux in μmol m s, p in kpa, volume in cm, w0 in 0.001, t in °C, t in s, c in ppm. 
+
+\begin{equation}
+​	C' = C'_x + (C'_0 - C'_x) e ^ {-a(t-t_0)}
+\end{equation}
+
+\begin{equation}
+\frac{\partial C'}{\partial t} | _{t = t_0} = a(C'_x - C'_0)
+\end{equation}
+
+
+\begin{equation}
+​	C' = (C'_x + kt) + (C'_0 - C'_x) e ^ {-a(t-t_0)}
+\end{equation}
+
+\begin{equation}
+​	\frac{\partial C'}{\partial t} | _{t = t_0} = a(C'_x - C'_0) + k
+\end{equation}
+
+
+## Energy
+
+### Evaporation from water by energy balance
+
+\begin{equation}
+E_r = \frac{R_n}{l_v \rho_w} \times 1000 \times 86400
+\end{equation}
+
+\begin{equation}
+l_v = 2.501 \times 10^6 - 2370T
+\end{equation}
+
+$E_r$ in mm d$^{-1}$.
+
+$R_n$: net radiation (hourly mean - WRCC).
+
+$l_v$: latent heat of vaporization (J/kg).
+
+$\rho_w$: mean water density at constant pressure (999.8 kg m$^{-3}$)
+
+### Penman Monteith equation for latent heat flux
+
+\begin{equation}
+Q ^\text {PM}_{\text E}=\frac {s_{\text c} \frac{-R_{\text n}-Q_{\text G}}{86400\text{s}} + \frac{\rho_a c_{\text p}  (e_{\text s} - e_{\text a})}{r_{\text a}}}{s_{\text c} + \gamma (1 + \frac{r_{\text s}}{r_{\text a}})}
+\end{equation}
+
+$Q ^\text {PM}_{\text E}$: latent heat flux representing ET fraction (day 4.55 MJ m$^{-2}$d$^{-1}$, night 4.43 MJ m$^{-2}$d$^{-1}$)
+
+$R_n$: (0.957 MJ m$^{-2}$d$^{-1}$)
+
+$G_{hrday}$: 0.0957 MJ m$^{-2}$d$^{-1}$
+
+$G_{hrnight}$: 0.4789 MJ m$^{-2}$d$^{-1}$
+
+$e_s-e_a$: vapor pressure deficit of the air (1.9484 kPa - 0.439 kPa = 1.509 kPa)
+
+$\rho_a$: mean air density at constant pressure (1.040 kg m$^{-3}$)
+
+\begin{equation}
+\rho_{adry} = \frac{p}{RT} = 1.229 \text { kg m}^{-3}
+\end{equation}
+
+\begin{equation}
+\rho_{ahumid} = \frac{p_d}{R_d T} + \frac{p_v}{R_v T}= 1.040 \text { kg m}^{-3}
+\end{equation}
+
+\begin{equation}
+p_v = RH \times p_{sat} = 1.142 \text{kPa}
+\end{equation}
+
+\begin{equation}
+p_{sat} = 6.1078 \cdot 10 ^{\frac{7.5T-2048.625}{T-35.85}} \cdot 100 = 1.84 \text { kPa}
+\end{equation}
+
+\begin{equation}
+p_d = p_{abs} - p_v = 85.696 \text{ kPa}
+\end{equation}
+
+$c_p$: specific heat of the air (at constant pressure $1.013 \times 10 ^{-3}$ MJ kg$^{-1}$K$^{-1}$)
+
+$s_c$: slope of the saturation vapor pressure remperature relationship (0.117 kPa K$^{-1}$)
+
+$\gamma$: psychrometric constant (0.0577 kPa K$^{-1}$)
+
+$r_s$: bulk surface resistance (20.83 s m$^{-1}$)
+
+\begin{equation}
+r_\text s=\frac{r_\text {si}}{\text {LAI}_\text {active}},
+\end{equation}
+
+$r_\text {si}$: bulk stomatal resistance well illuminated leaf (100 s m$^{-1}$)
+
+LAI$_{active}$: active sulit leaf area index. It differs widely for crops but 3 -- 5 common for most mature crops. Changes through season and normally reaches max before flowering. Depends on plant density and crop variety. Generally 0.5LAI, i.e. only top half of dense clipped grass is active in surface heat and vapor transfer. For clipped grass LAI$=24h$.
+
+
+$r_a$: aerodynamic resistence (155.33 s m$^{-1}$)
+
+\begin{equation}
+r_{\text a}= \frac{\ln \frac{z-d}{z_{\textrm{om}}} \ln \frac {z-d}{z_{\textrm{oh}}}}{\kappa ^2 u_z} = \frac{124.264}{u_z}=155.33\text { s m}^{-1}
+\end{equation}
+
+$z_m$: height of wind measurements (2 m)
+
+$z_h$: height of humidity measurements (2 m)
+
+$h$: constant vegetation height (0.4 m)
+
+$d$: zero plane desplacement height ($\frac{2}{3}h$, 0.27 m)
+
+$z_{om}$: roughness length governing momentum transfer ($0.123h$, 0.0492 m)
+
+$z_{oh}$: roughness length governing transfer of heat and vapor ($0.1z_{om}$, 0.00492 m)
+
+$u_z$: wind speed at 2 m height (mean 0.8 m s$^{-1}$)
+
+### FAO Penman Monteith equation for ET rate from reference surface (ET$_0$)
+
+\begin{equation}
+ET_0 = \frac {0.408 s_{\text c} \frac{-R_{\text n}-Q_{\text G}}{86400\text{s}} + \frac{\gamma 900 u_z (e_{\text s} - e_{\text a})}{T+273}}{s_{\text c} + \gamma (1 + 0.34u_z)}
+\end{equation}
+
+$ET_0$: reference evapotraspiration (day 1.109 mm day$^{-1}$, night 1.064 mm day$^{-1}$)
+
+$ET_0$: reference evapotraspiration (day 2.72 MJ m$^{-2}$d$^{-1}$, night 2.61 MJ m$^{-2}$d$^{-1}$)
+
+$R_n$: net radiation (0.445 MJ m$^{-2}$d$^{-1}$)
+
+$G_{hrday}$: 0.0445 MJ m$^{-2}$d$^{-1}$
+
+$G_{hrnight}$: 0.2227 MJ m$^{-2}$d$^{-1}$
+
+$e_s-e_a$: vapor pressure deficit of the air (1.9484 kPa - 0.439 kPa = 1.509 kPa)
+
+$T$: mean daily air temperature at 2 m height (16.2$^\circ$C) 
+
+### Equations in GaFiR documentation
+
+\begin{equation}
+\text{NEE = GPP} + R_\text{eco}
+(\#eq:eNEE)
+\end{equation}
+
+\begin{equation}\label{ePM}
+Q ^\text {PM}_{\text E}=\frac {s_{\text c} (-R_{\text n}-Q_{\text G}) + \frac{\rho c_{\text p}  (e_{\text s} - e_{\text a})}{r_{\text a}}}{s_{\text c} + \gamma (1 + \frac{r_{\text s}}{r_{\text a}})},
+\end{equation}
+
+\begin{equation}\label{era}
+r_{\text a}= \frac{\ln \frac{z-d}{z_{\textrm{om}}} \ln \frac {z-d}{z_{\textrm{oh}}}}{\kappa ^2 u},
+\end{equation}
+
+\begin{equation}\label{eRl}
+%r^{\text {LAI}}_\text s=\frac{r_\text {si}}{0.5\text {LAI}},
+r_\text s=\frac{r_\text {si}}{\text {LAI}_\text {active}},
+\end{equation}
+
+\begin{equation}\label{eKP}
+%\frac{r^{\text {KP}}_\text s}{r_\text a} = a \frac{r^*}{r_\text a} + b,
+\frac{r_\text s}{r_\text a} = a \frac{r^*}{r_\text a} + b,
+\end{equation}
+
+\begin{equation}
+r^*=\frac{(s_\text c + \gamma)\rho c_\text p (e_{\text s} - e_{\text a})}{s_\text c \gamma (-R_{\text n}-Q_{\text G})},
+\end{equation}
+
+\begin{equation}\label{eRs}
+r_{\text s}= \frac {r_{\text a}s_{\text c} (-R_{\text n}-Q_{\text G}) + \rho c_{\text p}  (e_{\text s} - e_{\text a}) - r_{\text a}Q_{\text E}(s_{\text c} + \gamma)}
+{\gamma Q_{\text E}}.
+\end{equation}
+
+\begin{equation}\label{ePT}
+E=\alpha_{\text {PT}} \frac {s_{\text c}}{s_{\text c} + \gamma}(-Q_{\text A})
+\end{equation}
+
+## Eddy-covariance
+
+the net exchange (*F*) of some non-reactive scalar χ is given as the sum of the storage change flux (i.e. the time-rate-of-change in scalar concentration below the measurement height *h*) and the vertical turbulent exchange:
+$$
+F = {\int\limits_{0}^{h}{\frac{\overline{\delta\chi}}{\delta t}dz}} + \overline{w^{\prime}\chi^{\prime}}\left( h \right)
+$$
+
+where *z* refers to the vertical direction, and the vertical turbulent term is expressed as the covariance between the vertical wind speed and the scalar χ. The primes denote deviations from the temporal mean calculated by Reynolds decomposition as
+
+
+$$
+w^{\prime} = w - \overline{w}\ ,\ \chi^{\prime} = \chi - \overline{\chi}
+$$
+
+with *w* and χ representing instantaneous values.
+
+## Model evaluation
+
+\begin{equation}
+ \text{ME}=\frac{1}{N}\sum_{i=1}^{N}|P_i-O_i|
+ \end{equation}
+
+\begin{equation}
+ \text{MAE}=\frac{1}{N}\sum_{i=1}^{N}(P_i-O_i)
+ \end{equation}
+
+\begin{equation} 
+\text{MSE}=\frac{1}{N}\sum_{i=1}^{N}(P_i-O_i)^2
+\end{equation}
+
+\begin{equation} 
+\text{RMSE}=\sqrt{\frac{1}{N}\sum_{i=1}^{N}(P_i-O_i)^2}
+\end{equation}
+
+\begin{equation} 
+\text{NRMSE}=100\frac{\text{RMSE}}{O_\text{max} - O_\text{min}}
+\end{equation}
+
+
+\begin{equation} 
+\text{PBIAS} =100\frac{\sum_{i=1}^{n}(P_i-O_i)}{\sum_{i=1}^{n}O_i}
+\end{equation}
+
+\begin{equation} 
+\text{RSR} =\frac{\text{RMSE}}{\sigma_O}
+\end{equation}
+
+\begin{equation} 
+\text{rSD} =\frac{\sigma_P}{\sigma_O}
+\end{equation}
+
+
+\begin{equation} 
+\text{NSE} =1-\frac{\sum_{i=1}^{n}(O_i-P_i)^2}{\sum_{i=1}^{n}(O_i - \overline{O})^2}
+\end{equation}
+
+\begin{equation} 
+\text{mNSE} =1-\frac{\sum_{i=1}^{n}|O_i-P_i||^j}{\sum_{i=1}^{n}|O_i - \overline{O}|^j}
+\end{equation}
+
+\begin{equation} 
+\text{rNSE} =1-\frac{\sum_{i=1}^{n}(\frac{O_i-P_i}{\overline{O}})^2}{\sum_{i=1}^{n}(\frac{O_i - \overline{O}}{\overline{O}})^2}
+\end{equation}
+
+
+\begin{equation} 
+d =1-\frac{\sum_{i=1}^{n}(P_i-O_i)^2}{\sum_{i=1}^{n}(|P_i-O_i|+|P_i+O_i|)^2}
+\end{equation}
+
+\begin{equation} 
+md =1 - \frac{\sum_{i=1}^{n}(P_i-O_i)^j}{\sum_{i=1}^{n}(|P_i-O_i|+|P_i+O_i|)^j}
+\end{equation}
+
+
+\begin{equation} 
+rd =1-\frac{\sum_{i=1}^{n}(\frac{P_i-O_i}{\overline{O}})^2}{\sum_{i=1}^{n}(\frac{|P_i-O_i|+|P_i+O_i|}{\overline{O}})^2}
+\end{equation}
+
+
+\begin{equation} 
+\text{cp} =1-\frac{\sum_{i=2}^{n}(O_i-P_i)^2}{\sum_{i=1}^{n-1}(O_{i+1} - O_i)^2}
+\end{equation}
+
+\begin{equation} 
+R =\frac{\sum_{i=1}^{n}(O_i-\overline{O})(P_i-\overline{P})}{\sqrt{\sum_{i=1}^{n}(O_i-\overline{O})^2}\sqrt{\sum_{i=1}^{n}(P_i-\overline{P})^2}) }
+\end{equation}
+
+\begin{equation} 
+R^2 =(\frac{\sum_{i=1}^{n}(O_i-\overline{O})(P_i-\overline{P})}{\sqrt{\sum_{i=1}^{n}(O_i-\overline{O})^2}\sqrt{\sum_{i=1}^{n}(P_i-\overline{P})^2}) })^2
+\end{equation}
+
+\begin{equation} 
+\text{bR2} =bR^2
+\end{equation}
+
+
+## Mathematics
+
+\begin{equation}
+\frac{\text {d} x^\mu}{\text {d} x} = \mu x ^{\mu - 1}\\
+\end{equation}
+
+\begin{equation}
+\frac{\text {d} e^x}{\text {d} x} = e^x\\
+\end{equation}
+
+\begin{equation}
+\frac{\text {d} a^x}{\text {d} x} = a^x \ln a \\
+\end{equation}
+
+\begin{equation}
+\frac{\text {d} \ln x}{\text {d} x} = \frac{1}{x}\\
+\end{equation}
+
+\begin{equation}
+\frac{\text {d} \log _a x}{\text {d} x} = \frac{1}{x\ln a}\\
+\end{equation}
+
+\begin{equation}
+\frac{\text {d} \sin x}{\text {d} x} = \cos x\\
+\end{equation}
+
+\begin{equation}
+\frac{\text {d} \cos x}{\text {d} x} = - \sin x\\
+\end{equation}
+
+\begin{equation}
+\int k \text {d} x = kx + C
+\end{equation}
+
+\begin{equation}
+\int x ^ \mu \text {d} x = \frac{x^{\mu + 1}}{\mu + 1} + C\ (\mu \neq -1)
+\end{equation}
+
+\begin{equation}
+\int \frac{1}{x}\text {d} x = \ln \left | x \right | + C
+\end{equation}
+
+\begin{equation}
+\int \text {e} ^x \text {d} x = \text {e} ^x + C\\
+\end{equation}
+
+\begin{equation}
+\int a ^x \text {d} x = \frac{a^x}{\ln a}+ C\\
+\end{equation}
+
+\begin{equation}
+\int \frac{1}{1+x^2}\text {d} x = \arctan x + C\\
+\end{equation}
+
+\begin{equation}
+\int \frac{1}{1-x^2}\text {d} x = \arcsin x + C\\
+\end{equation}
+
+\begin{equation}
+\int \cos x \text {d} x = \sin x + C\\
+\end{equation}
+
+\begin{equation}
+\int \sin x \text {d} x = -\cos x + C\\
+\end{equation}
+
+\begin{equation}
+\int \frac{1}{\cos^2 x} \text {d} x = \tan x + C\\
+\end{equation}
+
+\begin{equation}
+\int \frac{1}{\sin^2 x} \text {d} x = -\cot x + C\\
+\end{equation}
+
+\begin{equation}
+\int \sec x \tan x \text {d} x = \sec x + C\\
+\end{equation}
+
+\begin{equation}
+\int \csc x \cot x \text {d} x = -\csc x + C\\
+\end{equation}

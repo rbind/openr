@@ -1,0 +1,239 @@
+---
+title: "R bookdown 语法标记速查"
+author: "赵鹏"
+date: '2017-03-14'
+slug: bookdown-cheatsheet
+summary: "常备手边."
+tags:
+- R
+- bookdown
+- markdown
+- post
+categories: []
+banner: img/banners/logo-openr.png
+---
+
+
+
+<div id="section" class="section level2">
+<h2>快速开始</h2>
+<div id="r-bookdown-" class="section level3">
+<h3>R bookdown 是什么</h3>
+<ul>
+<li>一个用来写书写文章的软件。</li>
+<li>比Word更美观，比LaTeX更易用，比Markdown格式更丰富。</li>
+<li>可以方便地插入目录、图表、交叉引用、脚注、索引。</li>
+<li>可以方便地插入公式、参考文献、R代码。</li>
+<li>可以生成漂亮的pdf、word和网页文件。</li>
+<li>撰写可重复性报告的不二之选。</li>
+</ul>
+<!--more-->
+</div>
+<div id="section-1" class="section level3">
+<h3>安装</h3>
+<ol style="list-style-type: decimal">
+<li><a href="https://cran.r-project.org/bin/windows/base/">下载R</a>并安装。</li>
+<li><a href="https://www.rstudio.com/products/rstudio/download/">下载RStudio</a>并安装。</li>
+<li><a href="http://www.ctex.org/CTeXDownload">下载CTEX</a>并安装。建议安装完整版。</li>
+<li><a href="http://pandoc.org/installing.html">下载Pandoc</a>并安装。</li>
+<li>运行RStudio。在左上面板的代码窗口输入并运行以下代码（安装bookdown扩展包）：</li>
+</ol>
+<pre class="r"><code>install.packages(&quot;bookdown&quot;)
+install.packages(&#39;servr&#39;)</code></pre>
+<p>好了，安装完毕。</p>
+</div>
+<div id="section-2" class="section level3">
+<h3>从模板开始</h3>
+<ol style="list-style-type: decimal">
+<li>下载模板文档（到下载页面点击<code>Clone or download</code> - <code>Download ZIP</code>）：</li>
+</ol>
+<ul>
+<li>如果你要写英文文档，那么下载<a href="https://github.com/rstudio/bookdown-demo">通用模板</a>;</li>
+<li>如果你要写中文文档，那么下载<a href="https://github.com/yihui/bookdown-chinese">中文模板</a>。</li>
+</ul>
+<ol start="2" style="list-style-type: decimal">
+<li><p>将模板文档解压缩到任意文件夹。</p></li>
+<li><p>在解压缩后得到的文件里找到扩展名为.Rproj的文件。双击，默认会用RSudio打开。</p></li>
+<li><p>在RStudio右上面板点击<code>Build</code>标签，再点击<code>build book</code>。好了，模板书出现在名为<code>_book</code>的子文件夹里。</p></li>
+<li><p>在RStudio右下面板里会看到该文件夹里的文件，其中有一些扩展名为.Rmd的文件。逐个点击打开，把其中的内容修改成你自己的内容。除了index.Rm外，不需要的.Rmd文件可以删掉。</p></li>
+<li><p>重复第4步，就得到了你自己的书。</p></li>
+<li><p>对照一下.Rmd的文件内容和生成的文档，体会两者之间是如何对应的。</p></li>
+</ol>
+</div>
+</div>
+<div id="section-3" class="section level2">
+<h2>基本标记</h2>
+<table>
+<thead>
+<tr class="header">
+<th align="left">标记</th>
+<th align="left">输出</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><code>*斜体*</code></td>
+<td align="left"><em>斜体</em></td>
+</tr>
+<tr class="even">
+<td align="left"><code>**粗体**</code></td>
+<td align="left"><strong>粗体</strong></td>
+</tr>
+<tr class="odd">
+<td align="left"><code>CO~2~</code></td>
+<td align="left">CO<sub>2</sub>下标</td>
+</tr>
+<tr class="even">
+<td align="left"><code>R^2^</code></td>
+<td align="left">R<sup>2</sup>上标</td>
+</tr>
+<tr class="odd">
+<td align="left"><code>$E = mc^2$</code></td>
+<td align="left"><span class="math inline">\(E = mc^2\)</span> 行内公式（双美元符号为行间公式）</td>
+</tr>
+<tr class="even">
+<td align="left"><code>[大鹏志](http://dapengde.com)</code></td>
+<td align="left"><a href="http://dapengde.com">大鹏志</a>超级链接</td>
+</tr>
+<tr class="odd">
+<td align="left"><code>&lt;dapengde@live.com&gt;</code></td>
+<td align="left"><a href="mailto:dapengde@live.com" class="email">dapengde@live.com</a> 邮件链接</td>
+</tr>
+<tr class="even">
+<td align="left"><code>![](http图片链接)</code></td>
+<td align="left">插入图片</td>
+</tr>
+<tr class="odd">
+<td align="left"><code>&gt; 引用文字</code></td>
+<td align="left">引用</td>
+</tr>
+<tr class="even">
+<td align="left">`代码`</td>
+<td align="left"><code>代码</code></td>
+</tr>
+<tr class="odd">
+<td align="left"><code># 第一章</code></td>
+<td align="left">章节标题</td>
+</tr>
+<tr class="even">
+<td align="left"><code>1. 首先，...</code></td>
+<td align="left">带编号的列表</td>
+</tr>
+<tr class="odd">
+<td align="left"><code>- 首先</code></td>
+<td align="left">不带编号的列表</td>
+</tr>
+<tr class="even">
+<td align="left"><code>^[脚注]</code></td>
+<td align="left">脚注</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="section-4" class="section level2">
+<h2>章节划分、编号和交叉引用</h2>
+<pre><code># (PART) Part I {-} 
+# (APPENDIX) Appendix {-} 
+# References {-}
+# chapter {#ID}
+## section {#ID}
+# chapter {#ID .unnumbered}
+
+\@ref(ID)</code></pre>
+</div>
+<div id="section-5" class="section level2">
+<h2>图表</h2>
+<p>第一种插图：嵌入的R代码作图：</p>
+<pre><code>```{r, fig.cap=&#39;caption&#39;, out.width=&#39;80%&#39;, fig.align=&#39;center&#39;, echo=FALSE}
+plot(1:10)
+```</code></pre>
+<p><code>\@ref(fig:fig1)</code></p>
+<p>第二种插图：将现成的图片文件插进来：</p>
+<pre><code>```{r img1, fig.cap=&#39;caption&#39;, out.width=&#39;80%&#39;, fig.align=&#39;center&#39;, echo=FALSE}
+knitr::include_graphics(&quot;images/img1.png&quot;)
+```</code></pre>
+<p><code>\@ref(fig:img1)</code></p>
+<p>第三种插图：用markdown基础语法：</p>
+<pre><code>![caption](images/img1.png)</code></pre>
+<p>第一种表格：直接用markdown语法画表格。输入：</p>
+<pre><code>第一列标题  第二列标题
+----------- ----------
+第一行1     第一行2
+第二行1     第二行2</code></pre>
+<p>输出：</p>
+<table>
+<thead>
+<tr class="header">
+<th align="left">第一列标题</th>
+<th align="left">第二列标题</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">第一行1</td>
+<td align="left">第一行2</td>
+</tr>
+<tr class="even">
+<td align="left">第二行1</td>
+<td align="left">第二行2</td>
+</tr>
+</tbody>
+</table>
+<p>第二种表格：用R函数展示表格：</p>
+<pre><code>```{r tab1, tidy=FALSE, echo=FALSE}
+knitr::kable(
+  head(iris, 20), caption = &#39;Here is a nice table!&#39;,
+  booktabs = TRUE
+)
+```</code></pre>
+<p><code>\@ref(tab:tab1)</code></p>
+</div>
+<div id="section-6" class="section level2">
+<h2>参考文献</h2>
+<p>参考文献信息需要保存在.bib文件里。</p>
+<p>引用文献条目：<code>[@R-bookdown]</code></p>
+<p>参考文献列表：<code># References {-}</code></p>
+<p>生成R包参考文献库：</p>
+<pre class="r"><code>knitr::write_bib(c(&quot;knitr&quot;, &quot;stringr&quot;), &quot;&quot;, width = 60)</code></pre>
+</div>
+<div id="section-7" class="section level2">
+<h2>定义、定理、示例等环境</h2>
+<pre><code>环境全称：theorems   lemma   definition  corollary   proposition example
+引用简称：thm          lem   def         cor         prp         ex</code></pre>
+<pre><code>```{环境全称, label=&#39;&#39;, name=&quot;&quot;}
+内容
+```</code></pre>
+<p><code>\@ref(引用简称:label)</code></p>
+</div>
+<div id="word" class="section level2">
+<h2>输出word文档</h2>
+<p>在_output.yml里添加一行：</p>
+<pre><code>bookdown::word_document2: default </code></pre>
+<p>注意，<code>default</code>这个词是不能少的。</p>
+</div>
+<div id="section-8" class="section level2">
+<h2>公式编号和引用</h2>
+<p>word文档里的公式的编号和交叉引用，可以使用行内公式，公式前用圆括号里加公式标签。例如，输入：</p>
+<pre><code>(@eq-mc) $E = mc^2$
+
+I like Eq. (@eq-mc) so much that I am falling love with her.</code></pre>
+<p>得到：</p>
+<ol class="example" style="list-style-type: decimal">
+<li><span class="math inline">\(E = mc^2\)</span></li>
+</ol>
+<p>I like Eq. (1) so much that I am falling love with her.</p>
+<p>pdf文档里的公式编号和交叉引用，建议使用公式环境。例如，输入：</p>
+<pre><code>\begin{equation} 
+E = mc^2
+  (\#eq:mc2)
+\end{equation} 
+
+I like Eq. \@ref(eq:mc2) so much that I am falling love with her.</code></pre>
+<p>##更进一步</p>
+<p>bookdown的详细介绍见<a href="https://bookdown.org/yihui/bookdown/">使用手册</a>。我的使用体验写成了三篇帖子：</p>
+<ul>
+<li><a href="http://dapengde.com/archives/19122">用bookdown写书</a></li>
+<li><a href="http://dapengde.com/archives/19190">用bookdown写学术论文</a></li>
+<li><a href="http://dapengde.com/archives/19150">用bookdown写文学作品</a></li>
+</ul>
+</div>

@@ -1,0 +1,60 @@
+---
+title: 'Windows 的又一个坑：R writeLines() 函数的换行符'
+author: "赵鹏"
+date: '2018-01-18'
+slug: r-writelines-line-break
+summary: "这是遇见孙悟空和六耳猕猴了？"
+tags:
+  - R
+  - linux
+  - post
+bibliography: [zhaor.bib]
+categories: []
+banner: img/banners/logo-openr.png
+---
+
+
+
+<p>昨天，又被 Windows 坑到了。</p>
+<p>事情的背景是，我的工作环境是 Windows 操作系统。由于一些众所周知的原因，有些事情在 Linux 下做起来比较顺当。于是，我就用 virtualbox 装了个虚拟的 Ubuntu。由于不熟，只用到其中很小一部分功能，所以，凡是能在 Windows 下做的事情，我绝不去 Ubuntu。</p>
+<!--more-->
+<p>昨天，我要写一批 bash 批处理文件，打算在 Ubuntu 里运行。这批 .sh 文件结构格式相同，只是内容略有不同。于是，我就动了点小心思，用 R 语言批量写好了文件内容，最后用 <code>writeLines()</code> 函数生成了这批 .sh 文件。</p>
+<p>前面我提到了，这些操作都是在 windows 下完成了。保险起见，我特地指定了 <code>writeLines(useBytes = TRUE)</code>，来保证这批 .sh 文件的编码 UTF-8，心想这下应该没问题了吧。</p>
+<p>但是，在 Ubuntu 里执行 这批 .sh 文件，居然出错！说什么文件找不到……</p>
+<p>为了简化问题，我把从这批运行失败的 .sh 文件里面随便拎出一个，里面删得只剩两条指令：</p>
+<pre><code>cd ~
+ls</code></pre>
+<p>然后另存为 test.sh 文件，用来测试。运行 test.sh，结果：</p>
+<p><img src="https://steemitimages.com/0x0/https://github.com/pzhaonet/keller/raw/master/figtemp/2018-01-17_153445.jpg" /></p>
+<p>这么两条命令，居然还有错？</p>
+<p>我记得在 Ubuntu 下直接写的 .sh 文件没这个问题啊。</p>
+<p>那好，我就在 ubuntu 的文本编辑器里写了一个一模一样的文件，取名 test2.sh，内容也是只有这两条指令。然后运行，居然好了！</p>
+<p>肉眼去看，两个文件都完全相同！我对比了一下两个文件的编码，都是 UTF-8。</p>
+<p>这是遇见孙悟空和六耳猕猴了？</p>
+<p><img src="https://steemitimages.com/0x0/https://github.com/pzhaonet/keller/raw/master/figtemp/2018-01-17_153646.jpg" /></p>
+<p>我祭出两面照妖镜：一个是 Totalcommander 的文本比较工具，一个是 notepad++ 的文本比较插件。比较的结果是，两个文件完全相同！</p>
+<p>大惑不解。</p>
+<p>使出浑身解数，都没有进展。万般无奈之下，想起这批 .sh 文件是用 R 的 <code>writeLines()</code>函数写的，那就去看看这个函数的帮助文件吧。</p>
+<p>这一看，不打紧，竟发现一条惊人的线索。</p>
+<p><img src="https://steemitimages.com/0x0/https://github.com/pzhaonet/keller/raw/master/figtemp/2018-01-17-001.jpg" /></p>
+<p>Linux 的换行分隔符是<code>LF</code>， Windows 是 <code>CRLF</code>?</p>
+<p>好像是有这么个印象。于是，我在 notepad++ 里打开了“显示所有符号”。</p>
+<p><img src="https://steemitimages.com/0x0/https://github.com/pzhaonet/keller/raw/master/figtemp/2018-01-17_153657.jpg" /></p>
+<p>真相大白！</p>
+<p>原来，因为我用 windows 下 R 语言的 <code>writeLines()</code>函数写的 .sh 文件，里面的换行符号是 <code>CRLF</code>，在 Linux 里执行时不认可，所以出现了错误。</p>
+<p>F1 才是识别六耳猕猴的如来佛祖！</p>
+<p>不仅是 R 函数。Windows 下普通的文本编辑器里，按回车键得到的换行符都是 <code>CRLF</code>。</p>
+<p>解决办法：同样的 R 代码，在 Linux 运行就可以了，生成的 .sh 文件没有任何问题。</p>
+<p>知识点：</p>
+<ol style="list-style-type: decimal">
+<li>R <code>writeLines()</code> 函数得到的文本文件，换行符取决于操作系统。</li>
+<li>Windows 下普通的文本文件编辑器，按回车键得到的换行符是 <code>CRLF</code>。</li>
+<li>bash 批处理文件.sh 的换行符必须是 <code>LF</code>。如果是 <code>CRLF</code>，则无法执行，显示路径错误。</li>
+</ol>
+<p>谨以此文，纪念又一次被 windows 坑了一下。</p>
+<p>更新：</p>
+<ul>
+<li>yihui 指出，Linux 下编写的 bat 文件是可以在 Windows 下顺利运行的。</li>
+<li>rileyge 指出，Notepad++ 可以将换行符互相转换，方法是“编辑”–“档案格式转换”。</li>
+</ul>
+<p>谢谢他们的帮助。</p>

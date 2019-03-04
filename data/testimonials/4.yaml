@@ -1,4 +1,3 @@
-text: "One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections."
-name: "John McIntyre"
-position: "CEO, TransTech"
-avatar: "img/testimonials/person-4.jpg"
+text: "他的讲解顺序非常有利于新人，通俗而不低俗，简短而又直击要害，第一篇讲安装，第二篇讲计算，第三篇讲读文件，第四篇讲数据，几分种就能读完一篇，我是被他提到的三四个函数震撼到了，分别是 file.choose，read.csv， summary，plot，然后就开始用R来折腾数据。以前读的书，都是长篇累赘的介绍软件功能，从扎马步到六脉神剑，全部介绍一遍，试图让读书的人全部看完，把所有的练习都做完以后再开工开始用他，看着就头疼，根本没在乎读者的感受，大鹏的博客把读文件这个事提前，而且是把最简单，最易用的方式拿出来，其他的方式各人自己想用了再想办法吧，数据那一篇博客里，无需多言，summary和 plot两个函数就那么一放，没用过R的人，谁不两眼放光啊？也许这个就是应试教育和素质教育的差异吧。"
+name: "Oil Tang"
+position: "读者"
