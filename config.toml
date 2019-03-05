@@ -287,3 +287,6 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
     enable = true
     title = "最新博客"
     subtitle = "新闻，动向，教程。更多博客请点击右上角的“博客”。"
+
+[blackfriday]
+smartypants = false
