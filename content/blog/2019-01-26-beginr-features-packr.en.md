@@ -1,13 +1,12 @@
 ---
 title: "[New Features on beginr] Automatically generate a self-contained package"
-author: dapeng
+author: 赵鹏
 date: "2019-01-26"
 slug: beginr-features-packr
 tags: 
-  - utopian-io
-  - post
   - R
   - beginr
+  - news
 banner: img/banners/logo-beginr.png
 ---
 

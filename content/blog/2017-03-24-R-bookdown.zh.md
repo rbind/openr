@@ -3,12 +3,12 @@ title: R bookdown 写学术论文
 author: 赵鹏
 date: '2017-03-24'
 slug: r-bookdown
-categories: []
+categories: xuer
 tags:
   - R
   - markdown
   - bookdown
-  - post
+  - 学R
 summary: "用 bookdown 写英文的科研期刊论文，配置起来是很简单的，只需在bookdown提供的[官方演示文档](https://github.com/rstudio/bookdown-demo)里做简单修改即可。"
 banner: img/banners/logo-openr.png
 ---

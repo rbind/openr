@@ -1,13 +1,11 @@
 ---
 title: '课件：R 语言、开放科学和可重复性研究'
-author: "赵鹏"
+author: 赵鹏
 date: '2018-12-04'
 slug: r-course-slides
 summary: "我觉得这个课件需要花一周来讲。"
 tags:
-  - post
   - R
-  - teaching
   - markdown
   - LaTeX
 categories: []

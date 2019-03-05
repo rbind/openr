@@ -1,11 +1,9 @@
 ---
 title: "[Task Request on beginr] Documentation for each function friendly to R beginners"
-author: dapeng
+author: 赵鹏
 date: "2018-06-15 15:30:21"
 slug: beginr-task-documentation
 tags: 
-  - utopian-io
-  - post
   - R
   - beginr
 banner: img/banners/logo-beginr.png

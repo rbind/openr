@@ -1,14 +1,15 @@
 ---
 title: 独狼死，群狼活：R 语言女子学习小组 & 书友之窗
-author: 大鹏
+author: 赵鹏
 date: '2018-05-27'
 slug: xuer-girls
 categories: []
 summary: "独狼死，群狼活。光靠买本书自己啃，哪怕这本书写得像个段子集，她们仍然有半途而废的风险。除非，除非她们组成一支“女子学习小组”，互相帮忙互相敦促……"
 tags:
-  - post
   - R
-  - 《学 R》
+  - 学R
+categories:
+  - xuer
 banner: img/banners/logo-xuer.png
   
 ---

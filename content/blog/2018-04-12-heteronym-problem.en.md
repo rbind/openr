@@ -1,11 +1,9 @@
 ---
 title: "[Task Request] Heteronym problem"
-author: dapeng
+author: 赵鹏
 date: "2018-04-12 08:56:48"
 slug: heteronym-problem
 tags: 
-  - utopian-io
-  - post
   - R
   - pinyin
 banner: img/banners/logo-pinyin.png

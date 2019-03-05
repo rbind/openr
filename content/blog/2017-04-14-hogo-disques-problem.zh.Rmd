@@ -4,7 +4,7 @@ author: 赵鹏
 date: '2017-04-14'
 slug: hogo-disques-problem
 categories: []
-tags: ["R", "blogdown", "post"]
+tags: ["R", "blogdown"]
 summary: "用 R blogdown 打建好站，disqus评论框就一直没成功加载过。这次终于搞定了！可惜被墙，多情却被无情恼......."
 banner: img/banners/logo-openr.png
 ---

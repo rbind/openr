@@ -1,13 +1,12 @@
 ---
 title: "[New Features on steemr] A Shiny app for the statistics of the Steem CN community!"
-author: dapeng
+author: 赵鹏
 date: "2018-09-06 09:36:42"
 slug: steemr-scner
 tags: 
-  - utopian-io
-  - post
   - steemr
   - R
+  - news
 banner: img/banners/logo-steemr.png
 ---
 

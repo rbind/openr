@@ -1,11 +1,10 @@
 ---
 title: '外行 R 包开发手记：mindr'
-author: "赵鹏"
+author: 赵鹏
 date: '2018-10-20'
 slug: mindr-one-year
 summary: "相反，在用户的要求下，mindr 在成长，越来越酷。"
 tags:
-  - post
   - mindr
   - R
 categories: []

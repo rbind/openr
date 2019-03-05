@@ -1,13 +1,12 @@
 ---
 title: "[New Features on steemr] Now steemr supports SteemSQL queries!"
-author: dapeng
+author: 赵鹏
 date: "2018-06-18 15:06:48"
 slug: steemr-steemsql
 tags: 
-  - utopian-io
-  - post
   - R
   - steemr
+  - news
 banner: img/banners/logo-steemr.png
 ---
 

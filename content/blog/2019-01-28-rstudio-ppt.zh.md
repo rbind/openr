@@ -1,13 +1,13 @@
 ---
 title: '往 ppt 里插入 500 张图片的小伎俩'
-author: "赵鹏"
+author: 赵鹏
 date: '2019-01-28'
 slug: rstudio-ppt
 summary: "别说 500 张，5000 张也不在话下。"
 tags:
-  - post
   - markdown
   - R
+  - tutorial
 categories: []
 banner: img/banners/logo-openr.png
 ---

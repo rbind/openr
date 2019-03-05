@@ -1,13 +1,12 @@
 ---
 title: "rosr News: a Shiny GUI and RStudio addin for choosing and creating sub-projects"
-author: dapeng
+author: 赵鹏
 date: "2019-01-31"
 slug: rosr-shiny
 tags: 
-  - utopian-io
-  - post
   - R
   - rosr
+  - news
 banner: img/banners/logo-rosr.png
 ---
 

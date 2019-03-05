@@ -1,11 +1,9 @@
 ---
 title: "[Task Request] Starting layout of the mindmaps"
-author: dapeng
+author: 赵鹏
 date: "2018-04-18 16:00:39"
 slug: task-request-starting-layout-of-the-mindmaps
 tags: 
-  - utopian-io
-  - post
   - R
   - mindr
 banner: img/banners/logo-mindr.png

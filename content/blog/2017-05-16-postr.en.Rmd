@@ -1,14 +1,12 @@
 ---
 title: 'R package postr: created posters with R markdown'
-author: "赵鹏"
+author: 赵鹏
 date: '2017-05-16'
 slug: postr
 summary: "My first self-developed R package."
 tags:
 - R
-- postr
 - markdown
-- post
 categories: []
 banner: img/banners/logo-openr.png
 ---

@@ -1,13 +1,12 @@
 ---
 title: "[New Features on steemr] Functions for a user friendly UI as an interactive follower report!"
-author: dapeng
+author: 赵鹏
 date: "2018-07-10 19:45:03"
 slug: steemr-sfollow
 tags: 
-  - utopian-io
-  - post
   - steemr
   - R
+  - news
 banner: img/banners/logo-steemr.png
 ---
 

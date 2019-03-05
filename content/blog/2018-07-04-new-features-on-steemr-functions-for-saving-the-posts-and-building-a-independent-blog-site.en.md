@@ -1,13 +1,12 @@
 ---
 title: "[New Features on steemr] Functions for saving the posts and building an independent blog site!"
-author: dapeng
+author: 赵鹏
 date: "2018-07-04 11:58:18"
 slug: new-features-on-steemr-functions-for-saving-the-posts-and-building-a-independent-blog-site
 tags: 
-  - utopian-io
-  - post
   - R
   - steemr
+  - news
 banner: img/banners/logo-steemr.png
 ---
 

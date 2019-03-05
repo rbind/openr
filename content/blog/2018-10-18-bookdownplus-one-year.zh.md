@@ -1,11 +1,10 @@
 ---
 title: '外行 R 包开发手记：bookdownplus'
-author: "赵鹏"
+author: 赵鹏
 date: '2018-10-18'
 slug: bookdownplus-one-year
 summary: "是时候做个了断了。"
 tags:
-  - post
   - bookdown
   - bookdownplus
   - markdown

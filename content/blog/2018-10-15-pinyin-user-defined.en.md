@@ -1,13 +1,12 @@
 ---
 title: "[R pinyin: New Features] User customized dictionaries"
-author: dapeng
+author: 赵鹏
 date: "2018-10-15 14:34:03"
 slug: pinyin-user-defined
 tags: 
-  - utopian-io
-  - post
   - R
   - pinyin
+  - news
 banner: img/banners/logo-pinyin.png
 ---
 

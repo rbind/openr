@@ -9,7 +9,7 @@ tags:
 - bookdown
 - markdown
 - post
-categories: []
+categories: [xuer]
 bibliography: [bib.bib]
 banner: img/banners/logo-openr.png
 ---

@@ -1,12 +1,11 @@
 ---
 title: '9分钟写个R语言包：菜鸟致简速成'
-author: "赵鹏"
+author: 赵鹏
 date: '2017-05-16'
 slug: rmickey
 summary: "写R包，原以为学会怎么写得花个一年半载，学会之后写一个怎么着也得花个把个月，谁料想一旦下了决心，我一口气写了4个包，算起来从学到写，只花了一天多时间。"
 tags:
 - R
-- post
 categories: []
 banner: img/banners/logo-openr.png
 ---

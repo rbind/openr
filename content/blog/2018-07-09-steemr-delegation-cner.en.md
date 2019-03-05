@@ -1,13 +1,12 @@
 ---
 title: "[New Features on steemr] Functions for delegation report and CNer report!"
-author: dapeng
+author: 赵鹏
 date: "2018-07-09 12:26:30"
 slug: steemr-delegation-cner
 tags: 
-  - utopian-io
-  - post
   - R
   - steemr
+  - news
 banner: img/banners/logo-steemr.png
 ---
 

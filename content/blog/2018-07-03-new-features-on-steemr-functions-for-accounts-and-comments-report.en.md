@@ -1,13 +1,12 @@
 ---
 title: "[New Features on steemr] Functions for accounts and comments report!"
-author: dapeng
+author: 赵鹏
 date: "2018-07-03 09:59:42"
 slug: new-features-on-steemr-functions-for-accounts-and-comments-report
 tags: 
-  - utopian-io
-  - post
   - steemr
   - R
+  - news
 banner: img/banners/logo-steemr.png
 ---
 

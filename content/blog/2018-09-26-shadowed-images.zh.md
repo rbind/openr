@@ -1,15 +1,13 @@
 ---
 title: '给 Hugo 网站的插图添加阴影'
-author: "赵鹏"
+author: 赵鹏
 date: '2018-09-26'
 slug: shadowed-images
 summary: "做了个 bookdownplus 的展示网站，想给所有插图添加个阴影。"
 tags:
-  - post
   - bookdownplus
-  - css
-  - blogdown
   - markdown
+  - tutorial
 categories: []
 banner: img/banners/logo-bookdownplus.png
 ---

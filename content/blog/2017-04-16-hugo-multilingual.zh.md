@@ -4,7 +4,7 @@ author: 赵鹏
 date: '2017-04-16'
 slug: hugo-multilingual
 categories: []
-tags: ["R", "blogdown", "post"]
+tags: ["R", "blogdown"]
 summary: "双语界面是科研网站排在第一梯队的需求。我对Hugo的架构并不熟悉，原以为会很麻烦，结果弄一会儿就搞定了，原来这么简单。"
 banner: img/banners/logo-openr.png
 ---

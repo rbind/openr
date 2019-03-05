@@ -7,7 +7,6 @@ categories: []
 tags:
   - R
   - markdown
-  - post
 summary: "Word 转成 Markdown 或 LaTeX 的软件，我找了有年头了，就像永乐帝寻找建文帝，我觉得没戏。"
 banner: img/banners/logo-openr.png
 ---

@@ -1,13 +1,12 @@
 ---
 title: "[R: New Features on pinyin] Convert Chinese Characters into Sijiao and Wubi codes"
-author: dapeng
+author: 赵鹏
 date: "2018-10-12 13:31:42"
 slug: pinyin-wubi
 tags: 
-  - utopian-io
-  - post
   - pinyin
   - R
+  - news
 banner: img/banners/logo-pinyin.png
 ---
 

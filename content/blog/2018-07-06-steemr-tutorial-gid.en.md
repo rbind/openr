@@ -1,11 +1,9 @@
 ---
 title: "[Tutorial for steemr] Installation + Retrieving and Analyzing Steemians' profiles"
-author: dapeng
+author: 赵鹏
 date: "2018-07-06 14:15:00"
 slug: steemr-tutorial-gid
 tags: 
-  - utopian-io
-  - post
   - steemr
   - R
   - tutorial

@@ -1,13 +1,10 @@
 ---
 title: '全面迁站：从 Wordpress 到 Hugo'
-author: "赵鹏"
+author: 赵鹏
 date: '2017-11-25'
 slug: migrated-to-hugo
 summary: "从今天起，我的旧博客 dapengde.com 停止更新。旧博客的全部帖子已经搬到了 pzhao.org."
 tags:
-  - blog
-  - post
-  - blogdown
   - R
   - markdown
 bibliography: [zhaor.bib]

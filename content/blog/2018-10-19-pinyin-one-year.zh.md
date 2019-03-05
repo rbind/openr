@@ -1,11 +1,10 @@
 ---
 title: '外行 R 包开发手记：pinyin'
-author: "赵鹏"
+author: 赵鹏
 date: '2018-10-19'
 slug: pinyin-one-year
 summary: "这样一个爹不疼妈不爱的包，原以为就这样了此残生，没想到突然意外焕发了生机。"
 tags:
-  - post
   - bookdown
   - R
   - pinyin

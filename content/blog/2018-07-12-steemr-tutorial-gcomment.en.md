@@ -1,11 +1,9 @@
 ---
 title: "[Tutorial for steemr] Retrieving and Analyzing the Comment Data"
-author: dapeng
+author: 赵鹏
 date: "2018-07-12 09:44:48"
 slug: steemr-tutorial-gcomment
 tags: 
-  - utopian-io
-  - post
   - tutorial
   - R
   - steemr

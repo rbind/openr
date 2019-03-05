@@ -1,13 +1,12 @@
 ---
 title: "[R: New Features on mindr] Supports the new format  of  FreeMind. Displays mind maps directly. Supports bookdown projects."
-author: dapeng
+author: 赵鹏
 date: "2018-10-11 08:29:24"
 slug: mindr-bookdown
 tags: 
-  - utopian-io
-  - post
   - R
   - mindr
+  - news
 banner: img/banners/logo-mindr.png
 ---
 

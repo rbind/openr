@@ -1,14 +1,11 @@
 ---
 title: "Build a mirror/backup site for your own steem posts in 30 minutes - 30 分钟搭建自己的 steem 镜像备份网站"
-author: dapeng
+author: 赵鹏
 date: "2017-11-06 09:44:42"
 slug: build-a-mirror-backup-site-for-your-own-steem-posts-in-30-minutes-or-30-steem
 tags: 
-  - utopian-io
-  - post
   - steemr
   - R
-  - blogdown
   - markdown
 banner: img/banners/logo-steemr.png
 ---

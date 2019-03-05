@@ -1,12 +1,11 @@
 ---
 title: "纯文本：文献管理的终极之道"
-author: dapeng
+author: 赵鹏
 date: "2019-02-01"
 slug: literature-management
 summary: 草木竹石均可为剑。自此精修，渐进于无剑胜有剑之境。
 banner: img/banners/logo-openr.png
 tags: 
-  - post
   - LaTeX
 ---
 

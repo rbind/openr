@@ -3,8 +3,9 @@ title: 'R blogdown 搭建个人博客或科研网站'
 author: 赵鹏
 date: '2017-04-11'
 slug: r-blogdown
-categories: []
-tags: ["R", "blogdown", "Hugo", "post"]
+categories:
+  - xuer
+tags: ["R", "blogdown"]
 summary: "我正在撰写新书《学R —— 零基础学习R语言》，新书预计今年下半年出版。本文是其中一个章节。"
 banner: img/banners/logo-openr.png
 
@@ -33,14 +34,10 @@ banner: img/banners/logo-openr.png
 <ul>
 <li>R。去R的服务器<a href="https://cran.r-project.org/">CRAN</a>，点击Download R for Windows（其他操作系统的用户请自便），在打开的新网页最上方点击<code>base</code>，就找到下载链接了。下载完毕后安装，一路“下一步”的傻瓜式安装即可。</li>
 <li>RStudio。去<a href="https://www.rstudio.com/">官网</a>下载安装文件运行即可。</li>
-<li>blogdown。运行RStudio，在左上面板的代码窗口输入并运行以下代码：</li>
 </ul>
 <pre class="r"><code>if(!require(devtools)) install.packages(&#39;devtools&#39;)
 devtools::install_github(&#39;rstudio/blogdown&#39;)</code></pre>
 <p>解释一下：由于 blogdown 目前只发布到了 GitHub 服务器上，尚未发布到CRAN，所以上面第一条代码先安装开发工具 <code>devtools</code> 包，第二行用这个包的<code>install_github()</code> 函数从 GitHub 安装。</p>
-<ul>
-<li>Hugo 框架。在 RStudio 左上面板的代码窗口输入并运行以下代码：</li>
-</ul>
 <pre class="r"><code>blogdown::install_hugo()</code></pre>
 <p>安装完毕。</p>
 </div>

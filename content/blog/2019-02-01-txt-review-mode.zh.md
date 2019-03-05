@@ -1,13 +1,11 @@
 ---
 title: "纯文本编辑器的审阅模式"
-author: dapeng
+author: 赵鹏
 date: "2019-02-01"
 slug: txt-review-mode
 summary: "似乎没有完美的解决方案。"
 tags: 
-  - post
   - R
-  - git
   - LaTeX
 banner: img/banners/logo-openr.png
 ---

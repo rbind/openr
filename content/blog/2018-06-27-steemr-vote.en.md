@@ -1,13 +1,12 @@
 ---
 title: "[New Features on steemr] Functions as vote reports!"
-author: dapeng
+author: 赵鹏
 date: "2018-06-27 14:44:03"
 slug: steemr-vote
 tags: 
-  - utopian-io
-  - post
   - R
   - steemr
+  - news
 banner: img/banners/logo-steemr.png
 ---
 

@@ -1,13 +1,12 @@
 ---
 title: "[New Features on steemr] Diagrams in the follower shiny app!"
-author: dapeng
+author: 赵鹏
 date: "2018-08-16 12:57:21"
 slug: steemr-sfollow-diagrams
 tags: 
-  - utopian-io
-  - post
   - R
   - steemr
+  - news
 banner: img/banners/logo-steemr.png
 ---
 

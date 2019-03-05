@@ -1,13 +1,12 @@
 ---
 title: "mindr v.1.2.0 released: universal function and directory tree"
-author: dapeng
+author: 赵鹏
 date: "2019-01-26"
 slug: mindr-features-mm-tree
 tags: 
-  - utopian-io
-  - post
   - R
   - mindr
+  - news
 banner: img/banners/logo-mindr.png
 ---
 

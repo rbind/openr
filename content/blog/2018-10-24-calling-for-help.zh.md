@@ -1,12 +1,12 @@
 ---
 title: '如何在 R 语言相关论坛求助'
-author: "赵鹏"
+author: 赵鹏
 date: '2018-10-24'
 slug: how-to-call-for-help
 summary: "求助！求助！十万火急！求助帖发布之后，是不是急着等人响应？可惜惊叹号没啥用。如果按以下格式发帖，效果会胜过十万个惊叹号。"
 tags:
-  - post
   - R
+  - tutorial
 categories: []
 banner: img/banners/logo-openr.png
 ---

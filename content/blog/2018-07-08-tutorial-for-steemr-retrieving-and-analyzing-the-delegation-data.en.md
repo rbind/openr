@@ -1,11 +1,9 @@
 ---
 title: "[Tutorial for steemr] Retrieving and Analyzing the delegation Data"
-author: dapeng
+author: 赵鹏
 date: "2018-07-08 21:08:06"
 slug: tutorial-for-steemr-retrieving-and-analyzing-the-delegation-data
 tags: 
-  - utopian-io
-  - post
   - steemr
   - R
   - tutorial

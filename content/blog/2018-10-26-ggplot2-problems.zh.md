@@ -1,11 +1,10 @@
 ---
 title: '让人纠结的 ggplot2'
-author: "赵鹏"
+author: 赵鹏
 date: '2018-10-26'
 slug: ggplot2-problems
 summary: "推崇 ggplot2 的人经常说， ggplot2 做出的图，如果用基础作图函数来做的话会非常繁琐。然而反过来也一样：基础函数作出的图， 用 ggplot2 实现起来也会很繁琐。"
 tags:
-  - post
   - R
 categories: []
 banner: img/banners/logo-openr.png

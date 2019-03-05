@@ -1,6 +1,6 @@
 ---
 title: "R bookdown 语法标记速查"
-author: "赵鹏"
+author: 赵鹏
 date: '2017-03-14'
 slug: bookdown-cheatsheet
 summary: "常备手边."
@@ -8,8 +8,9 @@ tags:
 - R
 - bookdown
 - markdown
-- post
-categories: []
+- 学R
+categories:
+  - xuer
 banner: img/banners/logo-openr.png
 ---
 

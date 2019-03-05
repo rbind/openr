@@ -1,11 +1,10 @@
 ---
 title: '用 markdown 的逻辑写 R 脚本注释'
-author: "赵鹏"
+author: 赵鹏
 date: '2018-10-27'
 slug: r-with-markdown
 summary: "代码里的注释很重要，读者是未来的自己。好的注释不仅能把事儿说清楚，还可以写得波澜壮阔，跌宕起伏。"
 tags:
-  - post
   - R
   - markdown
   - mindr

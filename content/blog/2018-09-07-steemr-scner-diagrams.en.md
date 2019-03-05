@@ -1,14 +1,13 @@
 ---
 title: "[New Features on steemr]  Diagrams in the Shiny app for the statistics of the Steem CN community!"
-author: dapeng
+author: 赵鹏
 date: "2018-09-07 05:42:45"
 slug: steemr-scner-diagrams
 tags: 
 tags: 
-  - utopian-io
-  - post
   - R
   - steemr
+  - news
 banner: img/banners/logo-steemr.png
 ---
 

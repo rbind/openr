@@ -1,16 +1,16 @@
 ---
 title: A template for Copernicus academic journals
-author: 大鹏
+author: 赵鹏
 date: '2018-09-06'
 slug: bookdown-copernicus
 categories: []
 summary: "Write academic papers of Copernicus journals with R markdown syntax."
 tags:
-  - post
   - R
   - bookdown
   - bookdownplus
   - markdown
+  - news
 banner: img/banners/logo-bookdownplus.png
 
 ---

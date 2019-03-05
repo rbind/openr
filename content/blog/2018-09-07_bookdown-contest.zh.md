@@ -1,14 +1,14 @@
 ---
 title: R bookdown 用户的狂欢节：首届 bookdown 大奖赛
-author: 大鹏
+author: 赵鹏
 date: '2018-09-07'
 slug: bookdown-contest
 categories: []
 summary: "人少奖多速来。"
 tags:
-  - post
   - R
   - bookdown
+  - news
 banner: img/banners/logo-openr.png
 ---
 

@@ -1,13 +1,12 @@
 ---
 title: "[New Features on steemr] supports AppBase API and plots active hour diagrams!"
-author: dapeng
+author: 赵鹏
 date: "2018-06-20 10:44:24"
 slug: new-features-on-steemr-supports-appbase-api-and-plots-active-hour-diagrams
 tags: 
-  - utopian-io
-  - post
   - steemr
   - R
+  - news
 banner: img/banners/logo-steemr.png
 ---
 
@@ -26,7 +25,6 @@ banner: img/banners/logo-steemr.png
 - Users can use `method = 'appbase_api'` to download Steem data from AppBase API:
 
   ```
-  posts <- post_id('dapeng', method = 'appbase_api')
   ```
 
   

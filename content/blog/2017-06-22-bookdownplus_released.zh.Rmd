@@ -1,6 +1,6 @@
 ---
 title: 'R 包 bookdownplus 正式发布'
-author: "赵鹏"
+author: 赵鹏
 date: '2017-06-22'
 slug: bookdownplus-released
 summary: "bookdownplus 对 bookdown 做了两件事：+功能，-操作。"
@@ -8,7 +8,6 @@ tags:
 - R
 - bookdown
 - bookdownplus
-- post
 - markdown
 bibliography: [zhaor.bib]
 categories: []
@@ -183,7 +182,6 @@ bookdownplus::bookdownplus(template = 'poem')
 
 ![](https://raw.githubusercontent.com/pzhaonet/bookdown-plus/master/showcase/bookdown+yihui_zh.jpg)
 
-- poster
 
 ![](https://raw.githubusercontent.com/pzhaonet/bookdown-plus/master/showcase/bookdown+poster_ocean.jpg)
 

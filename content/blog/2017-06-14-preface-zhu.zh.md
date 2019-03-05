@@ -3,11 +3,10 @@ title: '《学R》序（朱彤）'
 author: 赵鹏
 date: '2017-06-14'
 slug: preface_zhu
-categories: []
+categories: xuer
 tags:
 - R
-- post
-- 《学 R》
+- 学R
 banner: img/banners/logo-xuer.png
 
 summary: "衷心感谢我的导师朱彤教授为本书作序。"
