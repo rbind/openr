@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>News on Open R</title>
-    <link>/zh/tags/news/</link>
+    <link>https://openr.netlify.com/zh/tags/news/</link>
     <description>Recent content in News on Open R</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Fri, 18 May 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/zh/tags/news/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://openr.netlify.com/zh/tags/news/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>我主笔的《学 R：零基础学习 R 语言》一书已面世</title>
-      <link>/zh/blog/2018/05/18/2018-05-18_xuer-sale/</link>
+      <link>https://openr.netlify.com/zh/blog/xuer-sale/</link>
       <pubDate>Fri, 18 May 2018 00:00:00 +0000</pubDate>
       
-      <guid>/zh/blog/2018/05/18/2018-05-18_xuer-sale/</guid>
+      <guid>https://openr.netlify.com/zh/blog/xuer-sale/</guid>
       <description>&lt;p&gt;书终于印好面世了。感谢北大的朱彤教授和 RStudio 公司的谢益辉博士慷慨作序。据我所知，这应该是国内第一本用 R bookdown 包来写作和排版的书。书的主页是 &lt;a href=&#34;http://xuer.pzhao.net&#34;&gt;http://xuer.pzhao.net&lt;/a&gt;。&lt;/p&gt;</description>
     </item>
     

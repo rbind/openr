@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Postr on Open R</title>
-    <link>/zh/tags/postr/</link>
+    <link>https://openr.netlify.com/zh/tags/postr/</link>
     <description>Recent content in Postr on Open R</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Tue, 16 May 2017 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/zh/tags/postr/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://openr.netlify.com/zh/tags/postr/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>postr: 用R Markdown做海报</title>
-      <link>/zh/blog/2017/05/16/2017-05-16-postr/</link>
+      <link>https://openr.netlify.com/zh/blog/postr/</link>
       <pubDate>Tue, 16 May 2017 00:00:00 +0000</pubDate>
       
-      <guid>/zh/blog/2017/05/16/2017-05-16-postr/</guid>
+      <guid>https://openr.netlify.com/zh/blog/postr/</guid>
       <description>用R markdown写海报的扩展包postr安装使用方法（需要先安装好软件环境，详见postr项目主页）：
 HUGOMORE42 devtools::install_github(&amp;quot;pzhaonet/postr&amp;quot;)setwd()postr::postr()益辉的莽撞人项目，悬赏解决“用 R Markdown 做海报”这个技术难题。我私下说，Markdown走的是LaTeX路线，讲究篇章结构和逻辑，而海报追求更多随意性和艺术性，即使学术海报也不例外，所以费劲硬要用Markdown解决，可能吃力不讨好。倒不如Powerpoint来得方便，或者把整个海报在R里当成一个device，用layout画图来实现。话虽这么说，我仍然在留意这件事，因为我在新书学R里提出R语言科研方案的整体拼图，被我几乎全部拼完了，只缺海报这一块。这就好比在朋友圈发照片只发八张，看一眼就浑身不自在。
 前几天，做bookdownplus时找模板，在比利时鲁汶大学的一大堆模板当中，我极其偶然地发现，里面暗暗潜伏着的，竟然有用R Markdown制作海报的秘密，淹没在一大堆文件里，搞不清楚各个文件之间的关系，而且说明文档过于简单，用起来不够方便。于是，我花了些工夫，把海报部分择了出来，稍加修改，增添了几个自己做的颜色主题，纳入了bookdownplus里。我的想法是，用户只需下载我这个文件夹，选择好模板，一运行，就出来个Rmd文件，打开一点knit按钮，Duang！海报就出来了。

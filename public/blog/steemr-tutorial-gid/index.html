@@ -1,0 +1,906 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  <meta charset="utf-8">
+  <meta name="robots" content="all,follow">
+  <meta name="googlebot" content="index,follow,snippet,archive">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>[Tutorial for steemr] Installation &#43; Retrieving and Analyzing Steemians&#39; profiles</title>
+  <meta name="author" content="" />
+
+  
+
+  
+
+  <meta name="generator" content="Hugo 0.54.0" />
+
+  <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
+
+  
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  
+  <link href="/css/animate.css" rel="stylesheet">
+
+  
+  
+    <link href="/css/style.blue.css" rel="stylesheet" id="theme-stylesheet">
+  
+
+
+  
+  <link href="/css/custom.css" rel="stylesheet">
+
+  
+  
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  
+
+  
+  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon" href="/img/apple-touch-icon.png" />
+  
+
+  <link href="/css/owl.carousel.css" rel="stylesheet">
+  <link href="/css/owl.theme.css" rel="stylesheet">
+
+  <link rel="alternate" href="https://openr.netlify.com/index.xml" type="application/rss+xml" title="Open R">
+
+  
+  <meta property="og:title" content="[Tutorial for steemr] Installation &#43; Retrieving and Analyzing Steemians&#39; profiles" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="/blog/steemr-tutorial-gid//" />
+  <meta property="og:image" content="img/logo-small.png" />
+
+</head>
+
+
+  <body>
+
+    <div id="all">
+
+        <header>
+
+          <div class="navbar-affixed-top" data-spy="affix" data-offset-top="200">
+
+    <div class="navbar navbar-default yamm" role="navigation" id="navbar">
+
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand home" href="https://openr.netlify.com">
+                    <img src="https://openr.netlify.comimg/logo-small.png" alt="[Tutorial for steemr] Installation &#43; Retrieving and Analyzing Steemians&#39; profiles logo" class="hidden-xs hidden-sm">
+                    <img src="https://openr.netlify.comimg/logo-small.png" alt="[Tutorial for steemr] Installation &#43; Retrieving and Analyzing Steemians&#39; profiles logo" class="visible-xs visible-sm">
+                    <span class="sr-only">[Tutorial for steemr] Installation &#43; Retrieving and Analyzing Steemians&#39; profiles - go to homepage</span>
+                </a>
+                <div class="navbar-buttons">
+                    <button type="button" class="navbar-toggle btn-template-main" data-toggle="collapse" data-target="#navigation">
+                      <span class="sr-only">Toggle Navigation</span>
+                        <i class="fa fa-align-justify"></i>
+                    </button>
+                </div>
+            </div>
+            
+
+            <div class="navbar-collapse collapse" id="navigation">
+                <ul class="nav navbar-nav navbar-right">
+                  
+                  <li class="dropdown">
+                    
+                    <a href="/">Home</a>
+                    
+                  </li>
+                  
+                  <li class="dropdown">
+                    
+                    <a href="/blog/">Blog</a>
+                    
+                  </li>
+                  
+                  <li class="dropdown">
+                    
+                    <a href="/faq/">FAQ</a>
+                    
+                  </li>
+                  
+                  <li class="dropdown">
+                    
+                    <a href="/contact/">Contact</a>
+                    
+                  </li>
+                  
+                  <li class="dropdown">
+                    
+                    <a href="/zh/">中文</a>
+                    
+                  </li>
+                  
+                </ul>
+            </div>
+            
+
+            <div class="collapse clearfix" id="search">
+
+                <form class="navbar-form" role="search">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search">
+                        <span class="input-group-btn">
+
+                    <button type="submit" class="btn btn-template-main"><i class="fa fa-search"></i></button>
+
+                </span>
+                    </div>
+                </form>
+
+            </div>
+            
+
+        </div>
+    </div>
+    
+
+</div>
+
+
+
+
+        </header>
+
+        <div id="heading-breadcrumbs">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>[Tutorial for steemr] Installation &#43; Retrieving and Analyzing Steemians&#39; profiles</h1>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+        <div id="content">
+            <div class="container">
+
+                <div class="row">
+
+                    
+
+                    <div class="col-md-9" id="blog-post">
+
+                        <p class="text-muted text-uppercase mb-small text-right">By <a href="#">dapeng</a> | July 6, 2018</p>
+
+                        <div id="post-content">
+                          <h3 id="what-will-i-learn">What Will I Learn?</h3>
+
+<ul>
+<li>Setting-up of the environment which steemr requires.</li>
+<li>Using the function <code>gid()</code> to retrieve a Steemian&rsquo;s profile from the block chain or the data servers.</li>
+<li>Using other R functions to enhance and analyze the data retrieved by <code>gid()</code>.</li>
+</ul>
+
+<h3 id="requirements">Requirements</h3>
+
+<ul>
+<li>Windows/mac/Linux OS</li>
+<li>R environment</li>
+<li>R steemr package</li>
+<li>R steemr2 package</li>
+<li>RStudio IDE (recommended)</li>
+</ul>
+
+<h3 id="difficulty">Difficulty</h3>
+
+<ul>
+<li>Intermediate</li>
+</ul>
+
+<h3 id="installation">Installation</h3>
+
+<p><strong><em>R</em></strong></p>
+
+<p>R is a free, open-source, cross-platform programming language, which is very friendly to non-professional programmers. Although R was born for statistical analysis, nowadays it is popular not only in scientific research but also in industry. This tutorial will demonstrate how beginners can easily use R to process Steem data.</p>
+
+<p>The installation of R can be found on the official website of the <a href="https://cran.r-project.org/">Comprehensive R Archive Network (CRAN)</a> or in many textbooks such as <em><a href="https://steemit.com/cn/@dapeng/xuer-sale">Learning R: R for Rookies</a></em>. For the tutorial&rsquo;s integrity, here is a brief description for Windows users. Mac and Linux users can simply follow the official manual by CRAN.</p>
+
+<ol>
+<li>Go to <a href="https://cran.r-project.org/">CRAN</a>. Click the right link in the list of &lsquo;Download and Install R&rsquo; according to your platform. Here we click &lsquo;<a href="https://cran.r-project.org/bin/windows/">Download R for Windows</a>&rsquo;.</li>
+<li>Click &lsquo;<a href="https://cran.r-project.org/bin/windows/base/">base</a>&rsquo;.</li>
+<li>Click &lsquo;<a href="https://cran.r-project.org/bin/windows/base/R-3.5.1-win.exe">Download R 3.5.1 for Windows</a>&rsquo;.</li>
+</ol>
+
+<p>3.5.1 is the newest version number of R. It could be updated in the future.</p>
+
+<p>Now we get a file &lsquo;R-3.5.1-win.exe&rsquo; on the local disk. Double click it and click the &lsquo;Next&hellip;&rsquo; button to complete the installation.</p>
+
+<p><strong><em>RStudio</em></strong></p>
+
+<p>The default R editor is primitive. We highly recommend the users to use a third-party editor, such as the free, cross-platform editor <em>RStudio IDE</em>.</p>
+
+<ol>
+<li>Go to the <a href="https://www.rstudio.com/products/rstudio/download/#download">download webpage of RStudio</a>.</li>
+<li>Click the download link according to your platform. Here we download <a href="https://download1.rstudio.org/RStudio-1.1.453.exe">RStudio 1.1.453 - Windows Vista/7/8/10</a>.</li>
+</ol>
+
+<p>1.1.453 is the newest version number of RStudio. It could be updated in the future as well.</p>
+
+<p>Now we get a file &lsquo;RStudio-1.1.453.exe&rsquo; on the local disk. Double click it and click the &lsquo;Next&hellip;&rsquo; button to complete the installation.</p>
+
+<p><strong><em>&lsquo;steemr&rsquo; and &lsquo;steemr2&rsquo; packages</em></strong></p>
+
+<p>The &lsquo;steemr&rsquo; package is availalbe on <a href="https://cran.r-project.org/package=steemr">CRAN</a>. However, we suggest the development version, which could be installed from github. The &lsquo;steemr2&rsquo; package, forked from kharoof/steemR,  is available only on github.</p>
+
+<p>The &lsquo;devtools&rsquo; must be installed first. Open RStudio, and run the following codes.</p>
+
+<pre><code>install.packages('devtools')
+</code></pre>
+
+<p>With the &lsquo;devtools&rsquo; package, we could install the pacakge from github.</p>
+
+<pre><code>devtools::install_github('pzhaonet/steemr')
+devtools::install_github('pzhaonet/steemr2')
+</code></pre>
+
+<h3 id="basic-usage-of-gid">Basic usage of <code>gid()</code></h3>
+
+<p>Load the &lsquo;steemr&rsquo; and &lsquo;steemr2&rsquo; packages:</p>
+
+<pre><code>require('steemr')
+
+## Loading required package: steemr
+
+require('steemr2')
+
+## Loading required package: steemr2
+</code></pre>
+
+<p>The function name &lsquo;gid&rsquo; means &lsquo;get ID information&rsquo;. It is very easy to get a Steemian&rsquo;s profile. Simply run the code:</p>
+
+<pre><code>gid('dapeng')
+
+##        id             created      rep balance savings  vesting
+## 1: dapeng 2016-10-14 11:03:39 67.00708  39.849       0 5027.933
+##    vesting_delegated vesting_received
+## 1:          4901.351         1514.774
+##                                                                                       profile_links
+## 1: https://cdn.steemitimages.com/DQmconigpzDwQGFdsDhV746bdfACHvZxeuQgSyotym6wgBV/peng_new_100.jpg  
+##               profile_about profile_location
+## 1: 事了拂衣去，深藏身与名。
+</code></pre>
+
+<p>It is a data frame with @dapeng&rsquo;s profile.</p>
+
+<p>As we need this data frame for future use, it can be assigned to a variable:</p>
+
+<pre><code>myid &lt;- gid('dapeng')
+</code></pre>
+
+<p>What information do we have in &lsquo;myid&rsquo;? Let&rsquo;s see the names of the columns:</p>
+
+<pre><code>names(myid)
+
+##  [1] &quot;id&quot;                &quot;created&quot;           &quot;rep&quot;              
+##  [4] &quot;balance&quot;           &quot;savings&quot;           &quot;vesting&quot;          
+##  [7] &quot;vesting_delegated&quot; &quot;vesting_received&quot;  &quot;profile_links&quot;    
+## [10] &quot;profile_about&quot;     &quot;profile_location&quot;
+</code></pre>
+
+<p>The column names are self-explanary. We could extract any column by using the <code>$</code> operator. For example, let&rsquo;s see @dapeng&rsquo;s reputation.</p>
+
+<pre><code>myid$rep
+
+## [1] 67.00708
+</code></pre>
+
+<blockquote>
+<p>Exercise 1: retrieve your own profile. Exercise 2: retrieve your friends&rsquo; profiles.</p>
+</blockquote>
+
+<h3 id="advanced-usage-of-gid">Advanced usage of <code>gid()</code></h3>
+
+<p>Let&rsquo;s go further into <code>gid()</code>.</p>
+
+<p>Two parameters are available for <code>gid()</code>:</p>
+
+<ul>
+<li><code>id</code> specifies the ID of interest, which is mandatory.</li>
+<li><code>mothod</code> specifies the data server to connect, which is optional. By default, <code>gid()</code> uses &lsquo;appbase_api&rsquo;.</li>
+</ul>
+
+<p>We could get the ID data from steemdb.com as well, which provides much more information:</p>
+
+<pre><code>myid_steemdb &lt;- gid(id = 'dapeng', method = 'steemdb.com')
+myid_steemdb
+
+## $`_id`
+## [1] &quot;dapeng&quot;
+## 
+## ...
+## ...
+## ...
+## $following_count
+## [1] &quot;95&quot;
+## 
+## $proxy_witness
+## [1] &quot;0.000&quot;
+## 
+## $total_balance
+## [1] &quot;39.849&quot;
+## 
+## $total_sbd_balance
+## [1] &quot;1,321.780&quot;
+## 
+## $scanned
+## [1] &quot;2018-07-06 11:01&quot;
+## 
+## $`_dirty`
+## [1] &quot;1&quot;
+</code></pre>
+
+<p>It is a long list with sufficient information of the ID. We could use the name() function to see what information we have got:</p>
+
+<pre><code>names(myid_steemdb)
+
+##  [1] &quot;_id&quot;                              
+##  [2] &quot;active&quot;                           
+##  [3] &quot;active_challenged&quot;                
+##  [4] &quot;average_bandwidth&quot;                
+##  [5] &quot;average_market_bandwidth&quot;         
+##  [6] &quot;balance&quot;                          
+##  [7] &quot;can_vote&quot;                         
+##  [8] &quot;comment_count&quot;                    
+##  [9] &quot;created&quot;                          
+## [10] &quot;curation_rewards&quot;                 
+## [11] &quot;delegated_vesting_shares&quot;         
+## [12] &quot;guest_bloggers&quot;                   
+## [13] &quot;id&quot;                               
+## [14] &quot;json_metadata&quot;                    
+## [15] &quot;last_account_recovery&quot;            
+## [16] &quot;last_account_update&quot;              
+## [17] &quot;last_active_proved&quot;               
+## [18] &quot;last_bandwidth_update&quot;            
+## [19] &quot;last_market_bandwidth_update&quot;     
+## [20] &quot;last_owner_proved&quot;                
+## [21] &quot;last_owner_update&quot;                
+## [22] &quot;last_post&quot;                        
+## [23] &quot;last_root_post&quot;                   
+## [24] &quot;last_vote_time&quot;                   
+## [25] &quot;lifetime_bandwidth&quot;               
+## [26] &quot;lifetime_market_bandwidth&quot;        
+## [27] &quot;lifetime_vote_count&quot;              
+## [28] &quot;market_history&quot;                   
+## [29] &quot;memo_key&quot;                         
+## [30] &quot;mined&quot;                            
+## [31] &quot;name&quot;                             
+## [32] &quot;next_vesting_withdrawal&quot;          
+## [33] &quot;other_history&quot;                    
+## [34] &quot;owner&quot;                            
+## [35] &quot;owner_challenged&quot;                 
+## [36] &quot;post_count&quot;                       
+## [37] &quot;post_history&quot;                     
+## [38] &quot;posting&quot;                          
+## [39] &quot;posting_rewards&quot;                  
+## [40] &quot;proxied_vsf_votes&quot;                
+## [41] &quot;proxy&quot;                            
+## [42] &quot;received_vesting_shares&quot;          
+## [43] &quot;recovery_account&quot;                 
+## [44] &quot;reputation&quot;                       
+## [45] &quot;reset_account&quot;                    
+## [46] &quot;reward_sbd_balance&quot;               
+## [47] &quot;reward_steem_balance&quot;             
+## [48] &quot;reward_vesting_balance&quot;           
+## [49] &quot;reward_vesting_steem&quot;             
+## [50] &quot;savings_balance&quot;                  
+## [51] &quot;savings_sbd_balance&quot;              
+## [52] &quot;savings_sbd_last_interest_payment&quot;
+## [53] &quot;savings_sbd_seconds&quot;              
+## [54] &quot;savings_sbd_seconds_last_update&quot;  
+## [55] &quot;savings_withdraw_requests&quot;        
+## [56] &quot;sbd_balance&quot;                      
+## [57] &quot;sbd_last_interest_payment&quot;        
+## [58] &quot;sbd_seconds&quot;                      
+## [59] &quot;sbd_seconds_last_update&quot;          
+## [60] &quot;tags_usage&quot;                       
+## [61] &quot;to_withdraw&quot;                      
+## [62] &quot;transfer_history&quot;                 
+## [63] &quot;vesting_balance&quot;                  
+## [64] &quot;vesting_shares&quot;                   
+## [65] &quot;vesting_withdraw_rate&quot;            
+## [66] &quot;vote_history&quot;                     
+## [67] &quot;voting_power&quot;                     
+## [68] &quot;withdraw_routes&quot;                  
+## [69] &quot;withdrawn&quot;                        
+## [70] &quot;witness_votes&quot;                    
+## [71] &quot;witnesses_voted_for&quot;              
+## [72] &quot;followers&quot;                        
+## [73] &quot;followers_count&quot;                  
+## [74] &quot;followers_mvest&quot;                  
+## [75] &quot;following&quot;                        
+## [76] &quot;following_count&quot;                  
+## [77] &quot;proxy_witness&quot;                    
+## [78] &quot;total_balance&quot;                    
+## [79] &quot;total_sbd_balance&quot;                
+## [80] &quot;scanned&quot;                          
+## [81] &quot;_dirty&quot;
+</code></pre>
+
+<p>If you have a SteemSQL ID and password, you could use the ssql function to build a connection to SteemSQl,</p>
+
+<pre><code>mysql &lt;- ssql(uid = your_steemsql_id, pwd = your_steemsql_password)
+</code></pre>
+
+<p>You have to replace <code>your_steemsql_id</code> and <code>your_steemsql_password</code> with your own.</p>
+
+<p>Then get data from SteemSQL:</p>
+
+<pre><code>myid_steemsql &lt;- gid(id = 'dapeng', method = 'steemsql.com', sql_con = mysql)
+</code></pre>
+
+<blockquote>
+<p>Exercise 3: get your own profile from steemdb.com. Exercise 4: get your friends profiles from steemdb.com.</p>
+</blockquote>
+
+<h3 id="enhancement-of-gid">Enhancement of <code>gid()</code></h3>
+
+<p>We could use other R functions to enhance the query by <code>gid()</code>.</p>
+
+<p>For example, <em><a href="https://steemit.com/dlive/@dapeng/c452e870-54e2-11e8-8cf9-1b93be2e52ab">WinDa Choir</a></em> is a group formed from me and three friends of mine on Steem. The members are:</p>
+
+<pre><code>winda &lt;- c('winniex', 'windowglass', 'davidke20', 'dapeng')
+</code></pre>
+
+<p>Now I need a list of the profiles of the members. The <code>lapply()</code> function could retrieve multiple IDs&rsquo; profiles with one single line.</p>
+
+<pre><code>winda_p &lt;- lapply(winda, gid)
+winda_p
+
+## [[1]]
+##         id             created      rep balance savings  vesting
+## 1: winniex 2017-09-20 05:00:42 61.42898   6.256       0 2104.818
+##    vesting_delegated vesting_received
+## 1:          916.7597         48.25345
+##                                                                                                                                                                      profile_links
+## 1: https://steemitimages.com/DQmdp5K7PsqX6uFyDD3zrqYj6zvy9773XjshybhWbHY6KY2/kitten-163627_960_720.jpg  https://cdn.pixabay.com/photo/2016/12/09/08/09/texture-1893788_960_720.jpg
+##                profile_about profile_location
+## 1: From the very beginning,                  
+## 
+## [[2]]
+##             id             created      rep balance savings  vesting
+## 1: windowglass 2017-10-09 04:16:03 54.51495   0.006       0 1727.516
+##    vesting_delegated vesting_received
+## 1:          701.2447                0
+##                                                                                                                                       profile_links
+## 1: http://img1.ph.126.net/JIGlaEsqKaLZXd25cKoD2w==/1286059168610796619.jpg  http://img1.ph.126.net/5iZjixj-wLawyMNjmL6mug==/6632751118002457471.jpg
+##             profile_about profile_location
+## 1: 不要被我的声音骗了呀……                 
+## 
+## [[3]]
+##           id             created      rep balance savings  vesting
+## 1: davidke20 2017-08-16 01:07:06 58.77397   6.023       0 616.8284
+##    vesting_delegated vesting_received
+## 1:          120.4208                0
+##                                                                                                                                                  profile_links
+## 1: https://i.imgur.com/viuSsXg.jpg  https://steemit-production-imageproxy-thumbnail.s3.amazonaws.com/DQmReeS8DTkceS6RShqfz9FVnuF5Te84mXLohiLMT7xVyQ8_1680x8400
+##                                       profile_about profile_location
+## 1: Mediocre old man with slight interests in crypto     Kuala Lumpur
+## 
+## [[4]]
+##        id             created      rep balance savings  vesting
+## 1: dapeng 2016-10-14 11:03:39 67.00708  39.849       0 5027.933
+##    vesting_delegated vesting_received
+## 1:          4901.351         1514.774
+##                                                                                       profile_links
+## 1: https://cdn.steemitimages.com/DQmconigpzDwQGFdsDhV746bdfACHvZxeuQgSyotym6wgBV/peng_new_100.jpg  
+##               profile_about profile_location
+## 1: 事了拂衣去，深藏身与名。
+</code></pre>
+
+<p>We get a list with the profiles of all the Winda members.</p>
+
+<p>For convienance, the <code>do.call()</code> function can convert the list into a simple data frame like this:</p>
+
+<pre><code>winda_df &lt;- do.call(rbind.data.frame, winda_p)
+winda_df
+
+##             id             created      rep balance savings   vesting
+## 1:     winniex 2017-09-20 05:00:42 61.42898   6.256       0 2104.8184
+## 2: windowglass 2017-10-09 04:16:03 54.51495   0.006       0 1727.5159
+## 3:   davidke20 2017-08-16 01:07:06 58.77397   6.023       0  616.8284
+## 4:      dapeng 2016-10-14 11:03:39 67.00708  39.849       0 5027.9328
+##    vesting_delegated vesting_received
+## 1:          916.7597         48.25345
+## 2:          701.2447          0.00000
+## 3:          120.4208          0.00000
+## 4:         4901.3508       1514.77416
+##                                                                                                                                                                      profile_links
+## 1: https://steemitimages.com/DQmdp5K7PsqX6uFyDD3zrqYj6zvy9773XjshybhWbHY6KY2/kitten-163627_960_720.jpg  https://cdn.pixabay.com/photo/2016/12/09/08/09/texture-1893788_960_720.jpg
+## 2:                                http://img1.ph.126.net/JIGlaEsqKaLZXd25cKoD2w==/1286059168610796619.jpg  http://img1.ph.126.net/5iZjixj-wLawyMNjmL6mug==/6632751118002457471.jpg
+## 3:                     https://i.imgur.com/viuSsXg.jpg  https://steemit-production-imageproxy-thumbnail.s3.amazonaws.com/DQmReeS8DTkceS6RShqfz9FVnuF5Te84mXLohiLMT7xVyQ8_1680x8400
+## 4:                                                                                https://cdn.steemitimages.com/DQmconigpzDwQGFdsDhV746bdfACHvZxeuQgSyotym6wgBV/peng_new_100.jpg  
+##                                       profile_about profile_location
+## 1:                        From the very beginning,                  
+## 2:                           不要被我的声音骗了呀……                 
+## 3: Mediocre old man with slight interests in crypto     Kuala Lumpur
+## 4:                         事了拂衣去，深藏身与名。
+</code></pre>
+
+<p>Now we can save the data frame as a spread sheet, which could be opened with Excel.</p>
+
+<pre><code>write.csv(winda_df, file = 'winda.csv', row.names = FALSE)
+</code></pre>
+
+<blockquote>
+<p>Exercise 5: get the profiles of a group of Steemians in which you are involved.</p>
+</blockquote>
+
+<h3 id="analysis-of-the-id-profiles">Analysis of the ID profiles</h3>
+
+<p>With the data retrieved via <code>gid()</code>, we could produce a summary report of the <em>Winda Choir</em> members:</p>
+
+<pre><code>summary(winda_df)
+
+##       id               created                         rep       
+##  Length:4           Min.   :2016-10-14 11:03:39   Min.   :54.51  
+##  Class :character   1st Qu.:2017-05-31 15:36:14   1st Qu.:57.71  
+##  Mode  :character   Median :2017-09-02 15:03:54   Median :60.10  
+##                     Mean   :2017-06-22 23:21:52   Mean   :60.43  
+##                     3rd Qu.:2017-09-24 22:49:32   3rd Qu.:62.82  
+##                     Max.   :2017-10-09 04:16:03   Max.   :67.01  
+##     balance          savings     vesting       vesting_delegated
+##  Min.   : 0.006   Min.   :0   Min.   : 616.8   Min.   : 120.4   
+##  1st Qu.: 4.519   1st Qu.:0   1st Qu.:1449.8   1st Qu.: 556.0   
+##  Median : 6.139   Median :0   Median :1916.2   Median : 809.0   
+##  Mean   :13.034   Mean   :0   Mean   :2369.3   Mean   :1659.9   
+##  3rd Qu.:14.654   3rd Qu.:0   3rd Qu.:2835.6   3rd Qu.:1912.9   
+##  Max.   :39.849   Max.   :0   Max.   :5027.9   Max.   :4901.4   
+##  vesting_received  profile_links      profile_about     
+##  Min.   :   0.00   Length:4           Length:4          
+##  1st Qu.:   0.00   Class :character   Class :character  
+##  Median :  24.13   Mode  :character   Mode  :character  
+##  Mean   : 390.76                                        
+##  3rd Qu.: 414.88                                        
+##  Max.   :1514.77                                        
+##  profile_location  
+##  Length:4          
+##  Class :character  
+##  Mode  :character  
+##                    
+##                    
+## 
+</code></pre>
+
+<p>From the summary, we could find the statistics of the minimum (Min), median, mean, and maximum (Max) of the registration time, reputation, steem power (vesting), and delegation.</p>
+
+<p>The data frame could be visualized in diagrams as well:</p>
+
+<pre><code>barplot(winda_df$rep, names.arg = winda_df$id, main = 'Reputation of Winda')
+</code></pre>
+
+<p><img src="https://raw.githubusercontent.com/pzhaonet/steemr-book/master/img/fig-gid-1-1.png" style="display: block; margin: auto;" /></p>
+
+<p>We could try another example: the authors of the Steem Handbook.</p>
+
+<p><a href="https://steemit.com/steem/@steemh/steem-handbook-calls-for-support">Steem Handbook</a> is a tutorial to help Steemians to survive on Steem and develop their social communications. It is written by multiple authors from the CN community. The authors of Part I are:</p>
+
+<pre><code>steemh &lt;- c(&quot;dapeng&quot;,&quot;hepeng.chn&quot;,&quot;incrediblesnow&quot;,&quot;ivysrono&quot;,&quot;jaffer&quot;,&quot;lixing&quot;,&quot;maiyude&quot;,&quot;meixia&quot;,&quot;oflyhigh&quot;,&quot;rivalhw&quot;,&quot;skenan&quot;,&quot;tumutanzi&quot;,&quot;vickylin&quot;,&quot;wang-peilin&quot;,&quot;woolfe19861008&quot;,&quot;yellowbird&quot;)
+</code></pre>
+
+<p>Similarly to the example of Winda, we can get the profiles of these authors easily:</p>
+
+<pre><code>steemh_l &lt;- lapply(steemh, gid)
+steemh_df &lt;- do.call(rbind.data.frame, steemh_l)
+summary(steemh_df)
+
+##       id               created                         rep       
+##  Length:16          Min.   :2016-07-25 03:11:30   Min.   :42.20  
+##  Class :character   1st Qu.:2017-04-21 10:03:48   1st Qu.:53.43  
+##  Mode  :character   Median :2017-09-10 08:17:12   Median :57.72  
+##                     Mean   :2017-07-20 18:50:48   Mean   :58.73  
+##                     3rd Qu.:2017-12-26 14:46:03   3rd Qu.:65.03  
+##                     Max.   :2018-03-13 10:48:12   Max.   :75.38  
+##     balance             savings             vesting         
+##  Min.   :   0.0000   Min.   :0.0000000   Min.   :    3.631  
+##  1st Qu.:   0.7468   1st Qu.:0.0000000   1st Qu.:  107.391  
+##  Median :  21.1785   Median :0.0000000   Median :  523.849  
+##  Mean   : 121.8104   Mean   :0.0001875   Mean   : 5542.820  
+##  3rd Qu.:  52.0455   3rd Qu.:0.0000000   3rd Qu.: 6770.373  
+##  Max.   :1118.6010   Max.   :0.0030000   Max.   :31354.894  
+##  vesting_delegated vesting_received profile_links      profile_about     
+##  Min.   :   0.00   Min.   :    0    Length:16          Length:16         
+##  1st Qu.:  19.89   1st Qu.:    0    Class :character   Class :character  
+##  Median : 105.38   Median :    0    Mode  :character   Mode  :character  
+##  Mean   :1133.98   Mean   : 6390                                         
+##  3rd Qu.:1101.05   3rd Qu.:  931                                         
+##  Max.   :6009.93   Max.   :49274                                         
+##  profile_location  
+##  Length:16         
+##  Class :character  
+##  Mode  :character  
+##                    
+##                    
+## 
+</code></pre>
+
+<p>Now we can plot a histogram which displays the distribution of the authors&rsquo; reputations.</p>
+
+<pre><code>beginr::plothist(steemh_df$rep, show_normline = T, show_skewness = FALSE)
+</code></pre>
+
+<p><img src="https://raw.githubusercontent.com/pzhaonet/steemr-book/master/img/fig-gid-2-1.png" style="display: block; margin: auto;" /></p>
+
+<p>The reputation ranges  from 42 to 75, indicating that the authors include both rookies and high-level steemians. The median of the authors&rsquo; repuation is 58. Half of the authors have a reputation between 52 and 56. Yes, most of the authors are from the middle class.</p>
+
+<p>As <code>gid()</code> imports the Steemians&rsquo; profile data into R, the users are free to use many powerful R functions to do whatever they want.</p>
+
+<blockquote>
+<p>Exercise 6: plot a hist diagram for the Steem Power (SP) of the group in which you are involved.</p>
+</blockquote>
+                        </div>
+                        
+                        
+
+                    </div>
+                    
+
+                    
+
+                    
+
+                    <div class="col-md-3">
+
+                        
+
+                        
+
+<div class="panel panel-default sidebar-menu">
+
+    <div class="panel-heading">
+      <h3 class="panel-title">Search</h3>
+    </div>
+
+    <div class="panel-body">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" role="search">
+            <div class="input-group">
+                <input type="search" name="q" class="form-control" placeholder="Search">
+                <input type="hidden" name="sitesearch" value="https://openr.netlify.com">
+                <span class="input-group-btn">
+                    <button type="submit" class="btn btn-template-main"><i class="fa fa-search"></i></button>
+                </span>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="panel sidebar-menu">
+    <div class="panel-heading">
+      <h3 class="panel-title">Tags</h3>
+    </div>
+
+    <div class="panel-body">
+        <ul class="tag-cloud">
+            
+            <li><a href="https://openr.netlify.comtags/beginr"><i class="fa fa-tags"></i> beginr</a>
+            </li>
+            
+            <li><a href="https://openr.netlify.comtags/blogdown"><i class="fa fa-tags"></i> blogdown</a>
+            </li>
+            
+            <li><a href="https://openr.netlify.comtags/bookdown"><i class="fa fa-tags"></i> bookdown</a>
+            </li>
+            
+            <li><a href="https://openr.netlify.comtags/bookdownplus"><i class="fa fa-tags"></i> bookdownplus</a>
+            </li>
+            
+            <li><a href="https://openr.netlify.comtags/markdown"><i class="fa fa-tags"></i> markdown</a>
+            </li>
+            
+            <li><a href="https://openr.netlify.comtags/mindr"><i class="fa fa-tags"></i> mindr</a>
+            </li>
+            
+            <li><a href="https://openr.netlify.comtags/pinyin"><i class="fa fa-tags"></i> pinyin</a>
+            </li>
+            
+            <li><a href="https://openr.netlify.comtags/post"><i class="fa fa-tags"></i> post</a>
+            </li>
+            
+            <li><a href="https://openr.netlify.comtags/postr"><i class="fa fa-tags"></i> postr</a>
+            </li>
+            
+            <li><a href="https://openr.netlify.comtags/r"><i class="fa fa-tags"></i> r</a>
+            </li>
+            
+            <li><a href="https://openr.netlify.comtags/rmd"><i class="fa fa-tags"></i> rmd</a>
+            </li>
+            
+            <li><a href="https://openr.netlify.comtags/rosr"><i class="fa fa-tags"></i> rosr</a>
+            </li>
+            
+            <li><a href="https://openr.netlify.comtags/steemr"><i class="fa fa-tags"></i> steemr</a>
+            </li>
+            
+            <li><a href="https://openr.netlify.comtags/tutorial"><i class="fa fa-tags"></i> tutorial</a>
+            </li>
+            
+            <li><a href="https://openr.netlify.comtags/utopian-io"><i class="fa fa-tags"></i> utopian-io</a>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+
+
+
+
+
+                        
+
+                    </div>
+                    
+
+                    
+
+                </div>
+                
+
+            </div>
+            
+        </div>
+        
+
+        <footer id="footer">
+    <div class="container">
+
+        
+        <div class="col-md-4 col-sm-6">
+            <h4>About us</h4>
+
+            We are one.
+
+            <hr class="hidden-md hidden-lg hidden-sm">
+
+        </div>
+        
+        
+
+        <div class="col-md-4 col-sm-6">
+
+             
+            <h4>Recent posts</h4>
+
+            <div class="blog-entries">
+                
+                <div class="item same-height-row clearfix">
+                    <div class="image same-height-always">
+                        <a href="https://openr.netlify.com/blog/rosr-shiny/">
+                          
+                            <img src="https://openr.netlify.comimg/banners/logo-rosr.png" class="img-responsive" alt="rosr News: a Shiny GUI and RStudio addin for choosing and creating sub-projects">
+                          
+                        </a>
+                    </div>
+                    <div class="name same-height-always">
+                        <h5><a href="https://openr.netlify.com/blog/rosr-shiny/">rosr News: a Shiny GUI and RStudio addin for choosing and creating sub-projects</a></h5>
+                    </div>
+                </div>
+                
+                <div class="item same-height-row clearfix">
+                    <div class="image same-height-always">
+                        <a href="https://openr.netlify.com/blog/rosr/">
+                          
+                            <img src="https://openr.netlify.comimg/banners/logo-rosr.png" class="img-responsive" alt="rosr: Create academic R markdown projects for open science and reproducible research">
+                          
+                        </a>
+                    </div>
+                    <div class="name same-height-always">
+                        <h5><a href="https://openr.netlify.com/blog/rosr/">rosr: Create academic R markdown projects for open science and reproducible research</a></h5>
+                    </div>
+                </div>
+                
+                <div class="item same-height-row clearfix">
+                    <div class="image same-height-always">
+                        <a href="https://openr.netlify.com/blog/beginr-features-packr/">
+                          
+                            <img src="https://openr.netlify.comimg/banners/logo-beginr.png" class="img-responsive" alt="[New Features on beginr] Automatically generate a self-contained package">
+                          
+                        </a>
+                    </div>
+                    <div class="name same-height-always">
+                        <h5><a href="https://openr.netlify.com/blog/beginr-features-packr/">[New Features on beginr] Automatically generate a self-contained package</a></h5>
+                    </div>
+                </div>
+                
+            </div>
+
+            <hr class="hidden-md hidden-lg">
+             
+
+        </div>
+        
+
+        
+        <div class="col-md-4 col-sm-6">
+
+          <h4>Contact</h4>
+
+            <strong>OpenR Team</strong>
+      </p>
+      
+
+
+            <a href="/contact" class="btn btn-small btn-template-main">Go to contact page</a>
+
+            <hr class="hidden-md hidden-lg hidden-sm">
+
+        </div>
+        
+        
+
+    </div>
+    
+</footer>
+
+
+
+
+
+
+
+<div id="copyright">
+    <div class="container">
+        <div class="col-md-12">
+            
+            <p class="pull-left">Copyright (c) 2019, OpenR Team; all rights reserved.</p>
+            
+            <p class="pull-right">
+              Template by <a href="http://bootstrapious.com/free-templates">Bootstrapious</a>.
+              
+
+              Ported to Hugo by <a href="https://github.com/devcows/hugo-universal-theme">DevCows</a>
+            </p>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+    </div>
+    
+
+    
+<script src="//code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0/jquery.counterup.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-parallax/1.1.3/jquery-parallax.js"></script>
+
+<script src="//maps.googleapis.com/maps/api/js?v=3.exp"></script>
+
+<script src="https://openr.netlify.comjs/hpneo.gmaps.js"></script>
+<script src="https://openr.netlify.comjs/gmaps.init.js"></script>
+<script src="https://openr.netlify.comjs/front.js"></script>
+
+
+<script src="https://openr.netlify.comjs/owl.carousel.min.js"></script>
+
+
+  </body>
+</html>

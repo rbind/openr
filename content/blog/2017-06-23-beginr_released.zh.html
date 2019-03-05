@@ -53,12 +53,12 @@ y &lt;- 1:10 + rnorm(10)
 beginr::plotlm(x, y)</code></pre>
 <p><img src="/blog/2017-06-23-beginr_released.zh_files/figure-html/unnamed-chunk-2-1.png" width="672" /></p>
 <pre><code>## [[1]]
-##              Estimate Std. Error  t value     Pr(&gt;|t|)
-## (Intercept) 0.6126174  0.5919209 1.034965 3.309544e-01
-## x           0.8921198  0.0953967 9.351684 1.396839e-05
+##               Estimate Std. Error    t value     Pr(&gt;|t|)
+## (Intercept) 0.07434814  0.8731391 0.08515039 9.342342e-01
+## x           1.01113335  0.1407191 7.18547299 9.377323e-05
 ## 
 ## [[2]]
-## [1] 0.91619</code></pre>
+## [1] 0.8658416</code></pre>
 <p>经常需要了解一组数据的分布, 看看是不是正态分布. beginr 里的 <code>plothist()</code> 函数不仅做出直方图和平滑曲线, 并且标出中值, 中位数, 四分位数, 标准偏差, 样本数, 以及用来判断是否正态分布的 skewness 值.</p>
 <pre class="r"><code>x &lt;- rnorm(10000)
 beginr::plothist(x)</code></pre>
@@ -92,20 +92,20 @@ beginr::errorbar(x, y, yupper = 0.1, ylower = 0.1)</code></pre>
 <p>beginr 提供了一些对数据框计算的函数, 例如计算多列数据两两的相关性和线性拟合结果, 可以用 <code>lmdf()</code> 函数.</p>
 <pre class="r"><code>df &lt;- data.frame(a = 1:10, b = 1:10 + rnorm(10), c = 1:10 + rnorm(10))
 beginr::lmdf(df)</code></pre>
-<pre><code>##   x y r.squared adj.r.squared   intercept     slope Std.Error.intercept
-## 1 a b 0.9334346     0.9251139 -1.95426729 1.2502518           0.7324285
-## 2 a c 0.9044636     0.8925216  0.09400457 0.9761205           0.6959493
-## 3 b a 0.9334346     0.9251139  1.82516043 0.7465973           0.4347698
-## 4 b c 0.8307242     0.8095647  1.90444769 0.7229042           0.7116073
-## 5 c a 0.9044636     0.8925216  0.43834636 0.9265901           0.6609077
-## 6 c b 0.8307242     0.8095647 -1.35529745 1.1491483           1.1384380
-##   Std.Error.slope t.intercept   t.slope Pr.intercept     Pr.slope
-## 1       0.1180415  -2.6682021 10.591625  0.028441421 5.517685e-06
-## 2       0.1121624   0.1350739  8.702743  0.895890167 2.370521e-05
-## 3       0.0704894   4.1979922 10.591625  0.003004746 5.517685e-06
-## 4       0.1153732   2.6762621  6.265792  0.028088259 2.415447e-04
-## 5       0.1064710   0.6632490  8.702743  0.525817304 2.370521e-05
-## 6       0.1834003  -1.1904886  6.265792  0.267978992 2.415447e-04</code></pre>
+<pre><code>##   x y r.squared adj.r.squared intercept     slope Std.Error.intercept
+## 1 a b 0.8979256     0.8851663 0.2399162 0.9736300           0.7201411
+## 2 a c 0.9124749     0.9015342 0.2800716 0.9500399           0.6454806
+## 3 b a 0.8979256     0.8851663 0.3401478 0.9222452           0.6954033
+## 4 b c 0.7736442     0.7453498 0.7418683 0.8513894           1.0299248
+## 5 c a 0.9124749     0.9015342 0.2123908 0.9604595           0.6522948
+## 6 c b 0.7736442     0.7453498 0.5923096 0.9086843           1.0778222
+##   Std.Error.slope t.intercept  t.slope Pr.intercept     Pr.slope
+## 1       0.1160613   0.3331516 8.388933    0.7475831 3.097966e-05
+## 2       0.1040286   0.4338963 9.132487    0.6758274 1.664142e-05
+## 3       0.1099359   0.4891374 8.388933    0.6378724 3.097966e-05
+## 4       0.1628202   0.7203131 5.229015    0.4918393 7.938255e-04
+## 5       0.1051695   0.3256056 9.132487    0.7530759 1.664142e-05
+## 6       0.1737774   0.5495430 5.229015    0.5976348 7.938255e-04</code></pre>
 <p>还有两个函数对<code>tapply()</code>进行了改善, 用来进行因子计算.</p>
 <pre class="r"><code>beginr::tapplydf()
 beginr::tapplydfv()</code></pre>
@@ -144,7 +144,7 @@ beginr::list2ascii(alist)</code></pre>
 ##   author = {Peng Zhao},
 ##   year = {2018},
 ##   note = {R package version 1.1.5},
-##   url = {https://CRAN.R-project.org/package=pinyin},
+##   url = {https://github.com/pzhaonet/pinyin},
 ## }</code></pre>
 <p><code>plotpkg()</code>函数可以做出一张图，来展示指定扩展包在CRAN上被用户下载的次数：</p>
 <pre class="r"><code>beginr::plotpkg(&quot;beginr&quot;, &quot;2017-06-23&quot;)</code></pre>
@@ -157,7 +157,7 @@ beginr::list2ascii(alist)</code></pre>
 ##   title = {beginr: Functions for R Beginners},
 ##   author = {Peng Zhao},
 ##   year = {2019},
-##   note = {R package version 0.1.5},
+##   note = {R package version 0.1.6},
 ##   url = {https://github.com/pzhaonet/beginr},
 ## }</code></pre>
 <div id="section-6" class="section level2 unnumbered">

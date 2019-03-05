@@ -2,273 +2,273 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Open R</title>
-    <link>/zh/tags/</link>
+    <link>https://openr.netlify.com/zh/tags/</link>
     <description>Recent content in Tags on Open R</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Thu, 14 Jun 2018 13:26:33 +0000</lastBuildDate>
     
-	<atom:link href="/zh/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://openr.netlify.com/zh/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Advr</title>
-      <link>/zh/tags/advr/</link>
+      <link>https://openr.netlify.com/zh/tags/advr/</link>
       <pubDate>Thu, 14 Jun 2018 13:26:33 +0000</pubDate>
       
-      <guid>/zh/tags/advr/</guid>
+      <guid>https://openr.netlify.com/zh/tags/advr/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Beginr</title>
-      <link>/zh/tags/beginr/</link>
+      <link>https://openr.netlify.com/zh/tags/beginr/</link>
       <pubDate>Fri, 23 Jun 2017 18:29:38 +0000</pubDate>
       
-      <guid>/zh/tags/beginr/</guid>
+      <guid>https://openr.netlify.com/zh/tags/beginr/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Blog</title>
-      <link>/zh/tags/blog/</link>
+      <link>https://openr.netlify.com/zh/tags/blog/</link>
       <pubDate>Sat, 25 Nov 2017 00:00:00 +0000</pubDate>
       
-      <guid>/zh/tags/blog/</guid>
+      <guid>https://openr.netlify.com/zh/tags/blog/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Blogdown</title>
-      <link>/zh/tags/blogdown/</link>
+      <link>https://openr.netlify.com/zh/tags/blogdown/</link>
       <pubDate>Wed, 26 Sep 2018 00:00:00 +0000</pubDate>
       
-      <guid>/zh/tags/blogdown/</guid>
+      <guid>https://openr.netlify.com/zh/tags/blogdown/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Bookdown</title>
-      <link>/zh/tags/bookdown/</link>
+      <link>https://openr.netlify.com/zh/tags/bookdown/</link>
       <pubDate>Fri, 19 Oct 2018 00:00:00 +0000</pubDate>
       
-      <guid>/zh/tags/bookdown/</guid>
+      <guid>https://openr.netlify.com/zh/tags/bookdown/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Bookdownplus</title>
-      <link>/zh/tags/bookdownplus/</link>
+      <link>https://openr.netlify.com/zh/tags/bookdownplus/</link>
       <pubDate>Thu, 18 Oct 2018 00:00:00 +0000</pubDate>
       
-      <guid>/zh/tags/bookdownplus/</guid>
+      <guid>https://openr.netlify.com/zh/tags/bookdownplus/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Css</title>
-      <link>/zh/tags/css/</link>
+      <link>https://openr.netlify.com/zh/tags/css/</link>
       <pubDate>Wed, 26 Sep 2018 00:00:00 +0000</pubDate>
       
-      <guid>/zh/tags/css/</guid>
+      <guid>https://openr.netlify.com/zh/tags/css/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Drposter</title>
-      <link>/zh/tags/drposter/</link>
+      <link>https://openr.netlify.com/zh/tags/drposter/</link>
       <pubDate>Sat, 01 Dec 2018 00:00:00 +0000</pubDate>
       
-      <guid>/zh/tags/drposter/</guid>
+      <guid>https://openr.netlify.com/zh/tags/drposter/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Git</title>
-      <link>/zh/tags/git/</link>
+      <link>https://openr.netlify.com/zh/tags/git/</link>
       <pubDate>Fri, 01 Feb 2019 00:00:00 +0000</pubDate>
       
-      <guid>/zh/tags/git/</guid>
+      <guid>https://openr.netlify.com/zh/tags/git/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Hugo</title>
-      <link>/zh/tags/hugo/</link>
+      <link>https://openr.netlify.com/zh/tags/hugo/</link>
       <pubDate>Tue, 11 Apr 2017 00:00:00 +0000</pubDate>
       
-      <guid>/zh/tags/hugo/</guid>
+      <guid>https://openr.netlify.com/zh/tags/hugo/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Latex</title>
-      <link>/zh/tags/latex/</link>
+      <link>https://openr.netlify.com/zh/tags/latex/</link>
       <pubDate>Fri, 01 Feb 2019 00:00:00 +0000</pubDate>
       
-      <guid>/zh/tags/latex/</guid>
+      <guid>https://openr.netlify.com/zh/tags/latex/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Linux</title>
-      <link>/zh/tags/linux/</link>
+      <link>https://openr.netlify.com/zh/tags/linux/</link>
       <pubDate>Sun, 04 Feb 2018 00:00:00 +0000</pubDate>
       
-      <guid>/zh/tags/linux/</guid>
+      <guid>https://openr.netlify.com/zh/tags/linux/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Markdown</title>
-      <link>/zh/tags/markdown/</link>
+      <link>https://openr.netlify.com/zh/tags/markdown/</link>
       <pubDate>Mon, 28 Jan 2019 00:00:00 +0000</pubDate>
       
-      <guid>/zh/tags/markdown/</guid>
+      <guid>https://openr.netlify.com/zh/tags/markdown/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Mindr</title>
-      <link>/zh/tags/mindr/</link>
+      <link>https://openr.netlify.com/zh/tags/mindr/</link>
       <pubDate>Mon, 07 Jan 2019 00:00:00 +0000</pubDate>
       
-      <guid>/zh/tags/mindr/</guid>
+      <guid>https://openr.netlify.com/zh/tags/mindr/</guid>
       <description></description>
     </item>
     
     <item>
       <title>News</title>
-      <link>/zh/tags/news/</link>
+      <link>https://openr.netlify.com/zh/tags/news/</link>
       <pubDate>Fri, 18 May 2018 00:00:00 +0000</pubDate>
       
-      <guid>/zh/tags/news/</guid>
+      <guid>https://openr.netlify.com/zh/tags/news/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Pagedown</title>
-      <link>/zh/tags/pagedown/</link>
+      <link>https://openr.netlify.com/zh/tags/pagedown/</link>
       <pubDate>Mon, 21 Jan 2019 00:00:00 +0000</pubDate>
       
-      <guid>/zh/tags/pagedown/</guid>
+      <guid>https://openr.netlify.com/zh/tags/pagedown/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Pinyin</title>
-      <link>/zh/tags/pinyin/</link>
+      <link>https://openr.netlify.com/zh/tags/pinyin/</link>
       <pubDate>Thu, 20 Dec 2018 00:00:00 +0000</pubDate>
       
-      <guid>/zh/tags/pinyin/</guid>
+      <guid>https://openr.netlify.com/zh/tags/pinyin/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Post</title>
-      <link>/zh/tags/post/</link>
+      <link>https://openr.netlify.com/zh/tags/post/</link>
       <pubDate>Fri, 01 Feb 2019 00:00:00 +0000</pubDate>
       
-      <guid>/zh/tags/post/</guid>
+      <guid>https://openr.netlify.com/zh/tags/post/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Postr</title>
-      <link>/zh/tags/postr/</link>
+      <link>https://openr.netlify.com/zh/tags/postr/</link>
       <pubDate>Tue, 16 May 2017 00:00:00 +0000</pubDate>
       
-      <guid>/zh/tags/postr/</guid>
+      <guid>https://openr.netlify.com/zh/tags/postr/</guid>
       <description></description>
     </item>
     
     <item>
       <title>R</title>
-      <link>/zh/tags/r/</link>
+      <link>https://openr.netlify.com/zh/tags/r/</link>
       <pubDate>Fri, 01 Feb 2019 00:00:00 +0000</pubDate>
       
-      <guid>/zh/tags/r/</guid>
+      <guid>https://openr.netlify.com/zh/tags/r/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Rmd</title>
-      <link>/zh/tags/rmd/</link>
+      <link>https://openr.netlify.com/zh/tags/rmd/</link>
       <pubDate>Sat, 26 Jan 2019 00:00:00 +0000</pubDate>
       
-      <guid>/zh/tags/rmd/</guid>
+      <guid>https://openr.netlify.com/zh/tags/rmd/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Rosr</title>
-      <link>/zh/tags/rosr/</link>
+      <link>https://openr.netlify.com/zh/tags/rosr/</link>
       <pubDate>Sat, 26 Jan 2019 00:00:00 +0000</pubDate>
       
-      <guid>/zh/tags/rosr/</guid>
+      <guid>https://openr.netlify.com/zh/tags/rosr/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Steemr</title>
-      <link>/zh/tags/steemr/</link>
+      <link>https://openr.netlify.com/zh/tags/steemr/</link>
       <pubDate>Mon, 06 Nov 2017 09:44:42 +0000</pubDate>
       
-      <guid>/zh/tags/steemr/</guid>
+      <guid>https://openr.netlify.com/zh/tags/steemr/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Teaching</title>
-      <link>/zh/tags/teaching/</link>
+      <link>https://openr.netlify.com/zh/tags/teaching/</link>
       <pubDate>Tue, 04 Dec 2018 00:00:00 +0000</pubDate>
       
-      <guid>/zh/tags/teaching/</guid>
+      <guid>https://openr.netlify.com/zh/tags/teaching/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Utopian Io</title>
-      <link>/zh/tags/utopian-io/</link>
+      <link>https://openr.netlify.com/zh/tags/utopian-io/</link>
       <pubDate>Sun, 23 Sep 2018 16:34:39 +0000</pubDate>
       
-      <guid>/zh/tags/utopian-io/</guid>
+      <guid>https://openr.netlify.com/zh/tags/utopian-io/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Word</title>
-      <link>/zh/tags/word/</link>
+      <link>https://openr.netlify.com/zh/tags/word/</link>
       <pubDate>Tue, 20 Jun 2017 00:00:00 +0000</pubDate>
       
-      <guid>/zh/tags/word/</guid>
+      <guid>https://openr.netlify.com/zh/tags/word/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Xaringan</title>
-      <link>/zh/tags/xaringan/</link>
+      <link>https://openr.netlify.com/zh/tags/xaringan/</link>
       <pubDate>Fri, 23 Nov 2018 00:00:00 +0000</pubDate>
       
-      <guid>/zh/tags/xaringan/</guid>
+      <guid>https://openr.netlify.com/zh/tags/xaringan/</guid>
       <description></description>
     </item>
     
     <item>
       <title>吉他</title>
-      <link>/zh/tags/%E5%90%89%E4%BB%96/</link>
+      <link>https://openr.netlify.com/zh/tags/%E5%90%89%E4%BB%96/</link>
       <pubDate>Thu, 06 Apr 2017 09:15:36 +0000</pubDate>
       
-      <guid>/zh/tags/%E5%90%89%E4%BB%96/</guid>
+      <guid>https://openr.netlify.com/zh/tags/%E5%90%89%E4%BB%96/</guid>
       <description></description>
     </item>
     
     <item>
       <title>学 R</title>
-      <link>/zh/tags/%E5%AD%A6-r/</link>
+      <link>https://openr.netlify.com/zh/tags/%E5%AD%A6-r/</link>
       <pubDate>Sun, 27 May 2018 00:00:00 +0000</pubDate>
       
-      <guid>/zh/tags/%E5%AD%A6-r/</guid>
+      <guid>https://openr.netlify.com/zh/tags/%E5%AD%A6-r/</guid>
       <description></description>
     </item>
     

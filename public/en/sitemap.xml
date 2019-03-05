@@ -3,598 +3,598 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/blog/2019/01/31/2019-01-31-rosr-shiny/</loc>
+    <loc>https://openr.netlify.com/blog/rosr-shiny/</loc>
     <lastmod>2019-01-31T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/blog/2019/01/28/2019-01-28-rosr-new/</loc>
+    <loc>https://openr.netlify.com/blog/rosr/</loc>
     <lastmod>2019-01-28T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/blog/2019/01/26/2019-01-26-beginr-features-packr/</loc>
+    <loc>https://openr.netlify.com/blog/beginr-features-packr/</loc>
     <lastmod>2019-01-26T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/blog/2019/01/26/2019-01-26-mindr-features-mm-tree/</loc>
+    <loc>https://openr.netlify.com/blog/mindr-features-mm-tree/</loc>
     <lastmod>2019-01-26T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/blog/2019/01/26/2019-01-26-rmd-new/</loc>
+    <loc>https://openr.netlify.com/blog/rmd/</loc>
     <lastmod>2019-01-26T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="/zh/blog/2019/01/26/2019-01-26-rmd-new/"
+                href="https://openr.netlify.com/zh/blog/rmd/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/blog/2019/01/26/2019-01-26-rmd-new/"
+                href="https://openr.netlify.com/blog/rmd/"
                 />
   </url>
   
   <url>
-    <loc>/blog/2018/11/17/2018-11-17-mindr-r-mm/</loc>
+    <loc>https://openr.netlify.com/blog/mindr-r-mm/</loc>
     <lastmod>2018-11-17T09:50:27+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/blog/2018/10/15/2018-10-15-pinyin-user-defined/</loc>
+    <loc>https://openr.netlify.com/blog/pinyin-user-defined/</loc>
     <lastmod>2018-10-15T14:34:03+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/blog/2018/10/12/2018-10-12-pinyin-wubi/</loc>
+    <loc>https://openr.netlify.com/blog/pinyin-wubi/</loc>
     <lastmod>2018-10-12T13:31:42+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/blog/2018/10/11/2018-10-11-mindr-bookdown/</loc>
+    <loc>https://openr.netlify.com/blog/mindr-bookdown/</loc>
     <lastmod>2018-10-11T08:29:24+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/blog/2018/09/08/2018-09-08-steemr-sposts/</loc>
+    <loc>https://openr.netlify.com/blog/steemr-sposts/</loc>
     <lastmod>2018-09-08T20:41:57+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/blog/2018/09/07/2018-09-07-steemr-scner-diagrams/</loc>
+    <loc>https://openr.netlify.com/blog/steemr-scner-diagrams/</loc>
     <lastmod>2018-09-07T05:42:45+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/blog/2018/09/06/2018-09-06-steemr-scner/</loc>
+    <loc>https://openr.netlify.com/blog/steemr-scner/</loc>
     <lastmod>2018-09-06T09:36:42+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/blog/2018/09/06/2018-09-06_bookdown-copernicus/</loc>
+    <loc>https://openr.netlify.com/blog/bookdown-copernicus/</loc>
     <lastmod>2018-09-06T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/blog/2018/09/05/2018-09-05_bookdown-mdpi/</loc>
+    <loc>https://openr.netlify.com/blog/bookdown-mdpi/</loc>
     <lastmod>2018-09-05T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/blog/2018/08/16/2018-08-16-steemr-sfollow-diagrams/</loc>
+    <loc>https://openr.netlify.com/blog/steemr-sfollow-diagrams/</loc>
     <lastmod>2018-08-16T12:57:21+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/blog/2018/07/12/2018-07-12-steemr-tutorial-gcomment/</loc>
+    <loc>https://openr.netlify.com/blog/steemr-tutorial-gcomment/</loc>
     <lastmod>2018-07-12T09:44:48+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/blog/2018/07/10/2018-07-10-steemr-sfollow/</loc>
+    <loc>https://openr.netlify.com/blog/steemr-sfollow/</loc>
     <lastmod>2018-07-10T19:45:03+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/blog/2018/07/09/2018-07-09-steemr-delegation-cner/</loc>
+    <loc>https://openr.netlify.com/blog/steemr-delegation-cner/</loc>
     <lastmod>2018-07-09T12:26:30+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/blog/2018/07/08/2018-07-08-tutorial-for-steemr-retrieving-and-analyzing-the-delegation-data/</loc>
+    <loc>https://openr.netlify.com/blog/tutorial-for-steemr-retrieving-and-analyzing-the-delegation-data/</loc>
     <lastmod>2018-07-08T21:08:06+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/blog/2018/07/06/2018-07-06-steemr-tutorial-gid/</loc>
+    <loc>https://openr.netlify.com/blog/steemr-tutorial-gid/</loc>
     <lastmod>2018-07-06T14:15:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/blog/2018/07/04/2018-07-04-new-features-on-steemr-functions-for-saving-the-posts-and-building-a-independent-blog-site/</loc>
+    <loc>https://openr.netlify.com/blog/new-features-on-steemr-functions-for-saving-the-posts-and-building-a-independent-blog-site/</loc>
     <lastmod>2018-07-04T11:58:18+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/blog/2018/07/03/2018-07-03-new-features-on-steemr-functions-for-accounts-and-comments-report/</loc>
+    <loc>https://openr.netlify.com/blog/new-features-on-steemr-functions-for-accounts-and-comments-report/</loc>
     <lastmod>2018-07-03T09:59:42+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/blog/2018/06/27/2018-06-27-steemr-vote/</loc>
+    <loc>https://openr.netlify.com/blog/steemr-vote/</loc>
     <lastmod>2018-06-27T14:44:03+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/blog/2018/06/20/2018-06-20-new-features-on-steemr-supports-appbase-api-and-plots-active-hour-diagrams/</loc>
+    <loc>https://openr.netlify.com/blog/new-features-on-steemr-supports-appbase-api-and-plots-active-hour-diagrams/</loc>
     <lastmod>2018-06-20T10:44:24+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/blog/2018/06/18/2018-06-18-steemr-steemsql/</loc>
+    <loc>https://openr.netlify.com/blog/steemr-steemsql/</loc>
     <lastmod>2018-06-18T15:06:48+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/blog/2018/06/15/2018-06-15-beginr-task-documentation/</loc>
+    <loc>https://openr.netlify.com/blog/beginr-task-documentation/</loc>
     <lastmod>2018-06-15T15:30:21+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/blog/2018/06/12/2018-06-12-new-project-steemr-an-r-package-to-download-play-with-and-visualize-steem-data/</loc>
+    <loc>https://openr.netlify.com/blog/new-project-steemr-an-r-package-to-download-play-with-and-visualize-steem-data/</loc>
     <lastmod>2018-06-12T10:18:51+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/blog/2018/06/08/2018-06-08_gource/</loc>
+    <loc>https://openr.netlify.com/blog/gource/</loc>
     <lastmod>2018-06-08T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="/zh/blog/2018/06/08/2018-06-08_gource/"
+                href="https://openr.netlify.com/zh/blog/gource/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/blog/2018/06/08/2018-06-08_gource/"
+                href="https://openr.netlify.com/blog/gource/"
                 />
   </url>
   
   <url>
-    <loc>/blog/2018/04/18/2018-04-18-task-request-starting-layout-of-the-mindmaps/</loc>
+    <loc>https://openr.netlify.com/blog/task-request-starting-layout-of-the-mindmaps/</loc>
     <lastmod>2018-04-18T16:00:39+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/blog/2018/04/12/2018-04-12-heteronym-problem/</loc>
+    <loc>https://openr.netlify.com/blog/heteronym-problem/</loc>
     <lastmod>2018-04-12T08:56:48+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/blog/2017/06/23/2017-06-23-beginr_released/</loc>
+    <loc>https://openr.netlify.com/blog/beginr-released/</loc>
     <lastmod>2017-06-23T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="/zh/blog/2017/06/23/2017-06-23-beginr_released/"
+                href="https://openr.netlify.com/zh/blog/beginr-released/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/blog/2017/06/23/2017-06-23-beginr_released/"
+                href="https://openr.netlify.com/blog/beginr-released/"
                 />
   </url>
   
   <url>
-    <loc>/blog/2017/06/22/2017-06-22-bookdownplus_released/</loc>
+    <loc>https://openr.netlify.com/blog/bookdownplus-released/</loc>
     <lastmod>2017-06-22T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="/zh/blog/2017/06/22/2017-06-22-bookdownplus_released/"
+                href="https://openr.netlify.com/zh/blog/bookdownplus-released/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/blog/2017/06/22/2017-06-22-bookdownplus_released/"
+                href="https://openr.netlify.com/blog/bookdownplus-released/"
                 />
   </url>
   
   <url>
-    <loc>/blog/2017/05/23/2017-05-23-equations/</loc>
+    <loc>https://openr.netlify.com/blog/equations/</loc>
     <lastmod>2017-05-23T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="/zh/blog/2017/05/23/2017-05-23-equations/"
+                href="https://openr.netlify.com/zh/blog/equations/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/blog/2017/05/23/2017-05-23-equations/"
+                href="https://openr.netlify.com/blog/equations/"
                 />
   </url>
   
   <url>
-    <loc>/blog/2017/05/19/2017-05-19-mindr/</loc>
+    <loc>https://openr.netlify.com/blog/mindr/</loc>
     <lastmod>2017-05-19T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="/zh/blog/2017/05/19/2017-05-19-mindr/"
+                href="https://openr.netlify.com/zh/blog/mindr/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/blog/2017/05/19/2017-05-19-mindr/"
+                href="https://openr.netlify.com/blog/mindr/"
                 />
   </url>
   
   <url>
-    <loc>/blog/2017/05/16/2017-05-16-postr/</loc>
+    <loc>https://openr.netlify.com/blog/postr/</loc>
     <lastmod>2017-05-16T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="/zh/blog/2017/05/16/2017-05-16-postr/"
+                href="https://openr.netlify.com/zh/blog/postr/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/blog/2017/05/16/2017-05-16-postr/"
+                href="https://openr.netlify.com/blog/postr/"
                 />
   </url>
   
   <url>
-    <loc>/blog/2017/05/09/2017-05-09-bookdown-plus/</loc>
+    <loc>https://openr.netlify.com/blog/bookdownplus/</loc>
     <lastmod>2017-05-09T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="/zh/blog/2017/05/09/2017-05-09-bookdown-plus/"
+                href="https://openr.netlify.com/zh/blog/bookdown-plus/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/blog/2017/05/09/2017-05-09-bookdown-plus/"
+                href="https://openr.netlify.com/blog/bookdownplus/"
                 />
   </url>
   
   <url>
-    <loc>/blog/2017/03/14/2017-03-14-bookdown-cheatsheet/</loc>
+    <loc>https://openr.netlify.com/blog/bookdown-cheatsheet/</loc>
     <lastmod>2017-03-14T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="/zh/blog/2017/03/14/2017-03-14-bookdown-cheatsheet/"
+                href="https://openr.netlify.com/zh/blog/bookdown-cheatsheet/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/blog/2017/03/14/2017-03-14-bookdown-cheatsheet/"
+                href="https://openr.netlify.com/blog/bookdown-cheatsheet/"
                 />
   </url>
   
   <url>
-    <loc>/tags/beginr/</loc>
+    <loc>https://openr.netlify.com/tags/beginr/</loc>
     <lastmod>2019-01-26T00:00:00+00:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="/zh/tags/beginr/"
+                href="https://openr.netlify.com/zh/tags/beginr/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/tags/beginr/"
+                href="https://openr.netlify.com/tags/beginr/"
                 />
   </url>
   
   <url>
-    <loc>/tags/blogdown/</loc>
+    <loc>https://openr.netlify.com/tags/blogdown/</loc>
     <lastmod>2017-05-23T00:00:00+00:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="/zh/tags/blogdown/"
+                href="https://openr.netlify.com/zh/tags/blogdown/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/tags/blogdown/"
+                href="https://openr.netlify.com/tags/blogdown/"
                 />
   </url>
   
   <url>
-    <loc>/blog/</loc>
+    <loc>https://openr.netlify.com/blog/</loc>
     <lastmod>2019-01-31T00:00:00+00:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="/zh/blog/"
+                href="https://openr.netlify.com/zh/blog/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/blog/"
+                href="https://openr.netlify.com/blog/"
                 />
   </url>
   
   <url>
-    <loc>/tags/bookdown/</loc>
+    <loc>https://openr.netlify.com/tags/bookdown/</loc>
     <lastmod>2018-09-06T00:00:00+00:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="/zh/tags/bookdown/"
+                href="https://openr.netlify.com/zh/tags/bookdown/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/tags/bookdown/"
+                href="https://openr.netlify.com/tags/bookdown/"
                 />
   </url>
   
   <url>
-    <loc>/tags/bookdownplus/</loc>
+    <loc>https://openr.netlify.com/tags/bookdownplus/</loc>
     <lastmod>2018-09-06T00:00:00+00:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="/zh/tags/bookdownplus/"
+                href="https://openr.netlify.com/zh/tags/bookdownplus/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/tags/bookdownplus/"
+                href="https://openr.netlify.com/tags/bookdownplus/"
                 />
   </url>
   
   <url>
-    <loc>/categories/</loc>
+    <loc>https://openr.netlify.com/categories/</loc>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="/zh/categories/"
+                href="https://openr.netlify.com/zh/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/categories/"
+                href="https://openr.netlify.com/categories/"
                 />
   </url>
   
   <url>
-    <loc>/contact/</loc>
+    <loc>https://openr.netlify.com/contact/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="/zh/contact/"
+                href="https://openr.netlify.com/zh/contact/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/contact/"
+                href="https://openr.netlify.com/contact/"
                 />
   </url>
   
   <url>
-    <loc>/faq/</loc>
+    <loc>https://openr.netlify.com/faq/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="/zh/faq/"
+                href="https://openr.netlify.com/zh/faq/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/faq/"
+                href="https://openr.netlify.com/faq/"
                 />
   </url>
   
   <url>
-    <loc>/tags/markdown/</loc>
+    <loc>https://openr.netlify.com/tags/markdown/</loc>
     <lastmod>2019-01-26T00:00:00+00:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="/zh/tags/markdown/"
+                href="https://openr.netlify.com/zh/tags/markdown/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/tags/markdown/"
+                href="https://openr.netlify.com/tags/markdown/"
                 />
   </url>
   
   <url>
-    <loc>/tags/mindr/</loc>
+    <loc>https://openr.netlify.com/tags/mindr/</loc>
     <lastmod>2019-01-26T00:00:00+00:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="/zh/tags/mindr/"
+                href="https://openr.netlify.com/zh/tags/mindr/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/tags/mindr/"
+                href="https://openr.netlify.com/tags/mindr/"
                 />
   </url>
   
   <url>
-    <loc>/</loc>
+    <loc>https://openr.netlify.com/</loc>
     <lastmod>2019-01-31T00:00:00+00:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="/zh/"
+                href="https://openr.netlify.com/zh/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/"
+                href="https://openr.netlify.com/"
                 />
   </url>
   
   <url>
-    <loc>/tags/pinyin/</loc>
+    <loc>https://openr.netlify.com/tags/pinyin/</loc>
     <lastmod>2018-10-15T14:34:03+00:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="/zh/tags/pinyin/"
+                href="https://openr.netlify.com/zh/tags/pinyin/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/tags/pinyin/"
+                href="https://openr.netlify.com/tags/pinyin/"
                 />
   </url>
   
   <url>
-    <loc>/tags/post/</loc>
+    <loc>https://openr.netlify.com/tags/post/</loc>
     <lastmod>2019-01-31T00:00:00+00:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="/zh/tags/post/"
+                href="https://openr.netlify.com/zh/tags/post/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/tags/post/"
+                href="https://openr.netlify.com/tags/post/"
                 />
   </url>
   
   <url>
-    <loc>/tags/postr/</loc>
+    <loc>https://openr.netlify.com/tags/postr/</loc>
     <lastmod>2017-05-16T00:00:00+00:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="/zh/tags/postr/"
+                href="https://openr.netlify.com/zh/tags/postr/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/tags/postr/"
+                href="https://openr.netlify.com/tags/postr/"
                 />
   </url>
   
   <url>
-    <loc>/tags/r/</loc>
+    <loc>https://openr.netlify.com/tags/r/</loc>
     <lastmod>2019-01-31T00:00:00+00:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="/zh/tags/r/"
+                href="https://openr.netlify.com/zh/tags/r/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/tags/r/"
+                href="https://openr.netlify.com/tags/r/"
                 />
   </url>
   
   <url>
-    <loc>/tags/rmd/</loc>
+    <loc>https://openr.netlify.com/tags/rmd/</loc>
     <lastmod>2019-01-26T00:00:00+00:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="/zh/tags/rmd/"
+                href="https://openr.netlify.com/zh/tags/rmd/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/tags/rmd/"
+                href="https://openr.netlify.com/tags/rmd/"
                 />
   </url>
   
   <url>
-    <loc>/tags/rosr/</loc>
+    <loc>https://openr.netlify.com/tags/rosr/</loc>
     <lastmod>2019-01-31T00:00:00+00:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="/zh/tags/rosr/"
+                href="https://openr.netlify.com/zh/tags/rosr/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/tags/rosr/"
+                href="https://openr.netlify.com/tags/rosr/"
                 />
   </url>
   
   <url>
-    <loc>/tags/steemr/</loc>
+    <loc>https://openr.netlify.com/tags/steemr/</loc>
     <lastmod>2018-09-08T20:41:57+00:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="/zh/tags/steemr/"
+                href="https://openr.netlify.com/zh/tags/steemr/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/tags/steemr/"
+                href="https://openr.netlify.com/tags/steemr/"
                 />
   </url>
   
   <url>
-    <loc>/tags/</loc>
+    <loc>https://openr.netlify.com/tags/</loc>
     <lastmod>2019-01-26T00:00:00+00:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="/zh/tags/"
+                href="https://openr.netlify.com/zh/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/tags/"
+                href="https://openr.netlify.com/tags/"
                 />
   </url>
   
   <url>
-    <loc>/tags/tutorial/</loc>
+    <loc>https://openr.netlify.com/tags/tutorial/</loc>
     <lastmod>2018-07-12T09:44:48+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/utopian-io/</loc>
+    <loc>https://openr.netlify.com/tags/utopian-io/</loc>
     <lastmod>2019-01-31T00:00:00+00:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="/zh/tags/utopian-io/"
+                href="https://openr.netlify.com/zh/tags/utopian-io/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/tags/utopian-io/"
+                href="https://openr.netlify.com/tags/utopian-io/"
                 />
   </url>
   

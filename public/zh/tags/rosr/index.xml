@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Rosr on Open R</title>
-    <link>/zh/tags/rosr/</link>
+    <link>https://openr.netlify.com/zh/tags/rosr/</link>
     <description>Recent content in Rosr on Open R</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Sat, 26 Jan 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/zh/tags/rosr/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://openr.netlify.com/zh/tags/rosr/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>&#39;rosr&#39; 包发布：开放科学与可重复性研究</title>
-      <link>/zh/blog/2019/01/26/2019-01-26-rosr-new/</link>
+      <link>https://openr.netlify.com/zh/blog/rosr/</link>
       <pubDate>Sat, 26 Jan 2019 00:00:00 +0000</pubDate>
       
-      <guid>/zh/blog/2019/01/26/2019-01-26-rosr-new/</guid>
+      <guid>https://openr.netlify.com/zh/blog/rosr/</guid>
       <description>&lt;p&gt;又要从前一段时间讲的那门&lt;a href=&#34;http://www.pzhao.org/zh/post/r-course-slides/&#34;&gt;R 语言，开放科学与可重复性研究&lt;/a&gt;说起了。学生们在课上情绪高涨，认为学 R 的难度跟兴趣一样大，关键是对数据、代码、产品之间的协作关系不好把握。&lt;/p&gt;</description>
     </item>
     

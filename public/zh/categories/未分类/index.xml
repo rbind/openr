@@ -2,48 +2,48 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>未分类 on Open R</title>
-    <link>/zh/categories/%E6%9C%AA%E5%88%86%E7%B1%BB/</link>
+    <link>https://openr.netlify.com/zh/categories/%E6%9C%AA%E5%88%86%E7%B1%BB/</link>
     <description>Recent content in 未分类 on Open R</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Fri, 23 Jun 2017 18:29:38 +0000</lastBuildDate>
     
-	<atom:link href="/zh/categories/%E6%9C%AA%E5%88%86%E7%B1%BB/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://openr.netlify.com/zh/categories/%E6%9C%AA%E5%88%86%E7%B1%BB/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>发布了 4 个 R 语言包：bookdownplus, pinyin, mindr, beginr</title>
-      <link>/archives/19377/</link>
+      <link>https://openr.netlify.com/archives/19377/</link>
       <pubDate>Fri, 23 Jun 2017 18:29:38 +0000</pubDate>
       
-      <guid>/archives/19377/</guid>
+      <guid>https://openr.netlify.com/archives/19377/</guid>
       <description>&lt;p&gt;最近，一口气往 CRAN 提交了四个 R 扩展包，所幸都被发布了，这里简单介绍一下。详细情况请来&lt;a href=&#34;http://pzhao.org&#34;&gt;我的新网站&lt;/a&gt;围观。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>侠气</title>
-      <link>/archives/19309/</link>
+      <link>https://openr.netlify.com/archives/19309/</link>
       <pubDate>Thu, 13 Apr 2017 12:49:17 +0000</pubDate>
       
-      <guid>/archives/19309/</guid>
+      <guid>https://openr.netlify.com/archives/19309/</guid>
       <description>&lt;p&gt;我这个博客，访问量最大的帖子就是《 &lt;a href=&#34;http://pzhao.org/r4dummies&#34;&gt;R 菜鸟入门&lt;/a&gt;》。这是写给 R 语言新手的。四年前发布以来，浏览量累计大约 2 万。也就是说，如果只计算工作时间的话，平均每天每小时都有2个人在浏览这些帖子，如此连续了四年，对于这样一个小站来说，我还是挺得意的。就算是在高校讲课，如果每个班20人，每个学期一个班，我得教500年，才能这么大规模地普及 R 语言。但是500年后R语言早就不存在了。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>用 R blogdown 搭建个人博客或科研网站</title>
-      <link>/archives/19304/</link>
+      <link>https://openr.netlify.com/archives/19304/</link>
       <pubDate>Tue, 11 Apr 2017 14:10:56 +0000</pubDate>
       
-      <guid>/archives/19304/</guid>
+      <guid>https://openr.netlify.com/archives/19304/</guid>
       <description>&lt;p&gt;我正在撰写新书《 R 菜鸟入门》，新书预计今年下半年出版。本文是其中一个章节。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>用 R bookdown 写吉他谱</title>
-      <link>/archives/19291/</link>
+      <link>https://openr.netlify.com/archives/19291/</link>
       <pubDate>Thu, 06 Apr 2017 09:15:36 +0000</pubDate>
       
-      <guid>/archives/19291/</guid>
+      <guid>https://openr.netlify.com/archives/19291/</guid>
       <description>&lt;p&gt;前情提要：&lt;/p&gt;
 
 &lt;ul&gt;
@@ -58,19 +58,19 @@
     
     <item>
       <title>如果用bookdown来写诗集</title>
-      <link>/archives/19150/</link>
+      <link>https://openr.netlify.com/archives/19150/</link>
       <pubDate>Wed, 15 Mar 2017 14:21:56 +0000</pubDate>
       
-      <guid>/archives/19150/</guid>
+      <guid>https://openr.netlify.com/archives/19150/</guid>
       <description>&lt;p&gt;今天，我用R的bookdown做出了第一本电子书：&amp;lt;&lt;a href=&#34;https://bookdown.org/baydap/papasdiary/papasdiary.html&#34;&gt;爸爸三定律&lt;/a&gt;&amp;gt;。内容是从我博客上选的育儿相关帖。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>R bookdown 快速入门和语法速查</title>
-      <link>/archives/19141/</link>
+      <link>https://openr.netlify.com/archives/19141/</link>
       <pubDate>Wed, 15 Mar 2017 07:29:47 +0000</pubDate>
       
-      <guid>/archives/19141/</guid>
+      <guid>https://openr.netlify.com/archives/19141/</guid>
       <description>&lt;div class=&#34;section level2&#34;&gt;
   &lt;h2&gt;
     快速开始&lt;br /&gt;
@@ -106,10 +106,10 @@
     
     <item>
       <title>不可挡的bookdown</title>
-      <link>/archives/19122/</link>
+      <link>https://openr.netlify.com/archives/19122/</link>
       <pubDate>Tue, 14 Mar 2017 14:36:57 +0000</pubDate>
       
-      <guid>/archives/19122/</guid>
+      <guid>https://openr.netlify.com/archives/19122/</guid>
       <description>&lt;p&gt;最近，我打算把博客上关于R语言的帖子整理成一本书，希望弄得帅气一点，整齐一点，将来容易维护一点。涌进脑子的第一个念头是 &lt;span class=&#34;math inline&#34;&gt;(\LaTeX)&lt;/span&gt; ，第二个念头是想吐。&lt;/p&gt;</description>
     </item>
     

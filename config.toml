@@ -1,6 +1,7 @@
-baseURL = "http://openr.netlify.com/"
+baseurl = "https://openr.netlify.com"
 title = "Open R"
 theme = "hugo-universal-theme"
+# canonifyURLs = "true"
 # relativeurls = false
 [languages.en]
   languageCode = "en-us"
@@ -10,7 +11,7 @@ theme = "hugo-universal-theme"
 
   # Site language. Available translations in the theme's `/i18n` directory.
 defaultContentLanguage = "zh"
-defaultContentLanguageInSubdir = true
+# defaultContentLanguageInSubdir = true
 # Enable comments by entering your Disqus shortname
 disqusShortname = "pzhao"
 # Enable Google Analytics by entering your tracking code
@@ -105,12 +106,12 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 
 [params]
     viewMorePostLink = "/blog/"
-    author = "DevCows"
-    defaultKeywords = ["devows", "hugo", "go"]
-    defaultDescription = "Site template made by devcows using hugo"
+#    author = "DevCows"
+#    defaultKeywords = ["devows", "hugo", "go"]
+#    defaultDescription = "Site template made by devcows using hugo"
 
     # Google Maps API key (if not set will default to not passing a key.)
-    googleMapsApiKey = "AIzaSyCFhtWLJcE30xOAjcbSFi-0fnoVmQZPb1Y"
+    # googleMapsApiKey = "AIzaSyCFhtWLJcE30xOAjcbSFi-0fnoVmQZPb1Y"
 
     # Style options: default (light-blue), blue, green, marsala, pink, red, turquoise, violet
     style = "blue"
@@ -136,7 +137,7 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
     # Format dates with Go's time formatting
     date_format = "January 2, 2006"
 
-    logo = "img/logo-openr.png"
+    logo = "img/logo-small.png"
     logo_small = "img/logo-small.png"
     address = """<p><strong>OpenR Team</strong>
       </p>
@@ -146,12 +147,12 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 
 [languages.zh.params]
     viewMorePostLink = "/zh/blog/"
-    author = "DevCows"
-    defaultKeywords = ["devows", "hugo", "go"]
-    defaultDescription = "Site template made by devcows using hugo"
+#    author = "DevCows"
+#    defaultKeywords = ["devows", "hugo", "go"]
+#    defaultDescription = "Site template made by devcows using hugo"
 
     # Google Maps API key (if not set will default to not passing a key.)
-    googleMapsApiKey = "AIzaSyCFhtWLJcE30xOAjcbSFi-0fnoVmQZPb1Y"
+#    googleMapsApiKey = "AIzaSyCFhtWLJcE30xOAjcbSFi-0fnoVmQZPb1Y"
 
     # Style options: default (light-blue), blue, green, marsala, pink, red, turquoise, violet
     style = "blue"
@@ -177,16 +178,16 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
     # Format dates with Go's time formatting
     date_format = "January 2, 2006"
 
-    logo = "img/banners/logo-openr.png"
+    logo = "img/logo.png"
     logo_small = "img/logo-small.png"
     address = """<p><strong>OpenR Team</strong>
       </p>
       """
-    latitude = "-12.043333"
-    longitude = "-77.028333"
+#    latitude = "-12.043333"
+#    longitude = "-77.028333"
 
 [Permalinks]
-    blog = "/blog/:year/:month/:day/:filename/"
+    blog = "/blog/:slug/"
 
 # Enable or disable top bar with social icons
 [params.topbar]

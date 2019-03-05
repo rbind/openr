@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Teaching on Open R</title>
-    <link>/zh/tags/teaching/</link>
+    <link>https://openr.netlify.com/zh/tags/teaching/</link>
     <description>Recent content in Teaching on Open R</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Tue, 04 Dec 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/zh/tags/teaching/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://openr.netlify.com/zh/tags/teaching/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>课件：R 语言、开放科学和可重复性研究</title>
-      <link>/zh/blog/2018/12/04/2018-12-04-r-course-slides/</link>
+      <link>https://openr.netlify.com/zh/blog/r-course-slides/</link>
       <pubDate>Tue, 04 Dec 2018 00:00:00 +0000</pubDate>
       
-      <guid>/zh/blog/2018/12/04/2018-12-04-r-course-slides/</guid>
+      <guid>https://openr.netlify.com/zh/blog/r-course-slides/</guid>
       <description>“R 语言，开放科学和可重复性研究”的课件，xaringan 包制作。这个包做幻灯片果然是可以飞起的。
 HUGOMORE42 一周课程的内容，浓缩在 5 小时讲完了。当然有意外，主要是大家遇见的 LaTeX 的各种问题不一而足。当然有惊喜，mac 用户居然全都顺利过来了。
 此外，原以为 rmarkdown 全家桶是 RStudio 默认安装的，结果发现 rticles 和 bookdown 等是需要手动安装的。我的 RStudio 已经升级好几次了，而那些包每次都在那里，所以……
@@ -25,10 +25,10 @@ HUGOMORE42 一周课程的内容，浓缩在 5 小时讲完了。当然有意�
     
     <item>
       <title>培训通知：R 语言、开放科学和可重复性研究</title>
-      <link>/zh/blog/2018/12/01/2018-12-01-r-course-announcement/</link>
+      <link>https://openr.netlify.com/zh/blog/r-course-announcement/</link>
       <pubDate>Sat, 01 Dec 2018 00:00:00 +0000</pubDate>
       
-      <guid>/zh/blog/2018/12/01/2018-12-01-r-course-announcement/</guid>
+      <guid>https://openr.netlify.com/zh/blog/r-course-announcement/</guid>
       <description>本周我们系开了三天座谈会，好几位同事和同学对 R 语言感兴趣。经过一番简单准备，下周一和周二，我将在马普化学所举办一期培训班，题为“R 语言，开放科学和可重复性研究”。
 HUGOMORE42 下面是我用 drposter 包制作的小广告：
 啊哦，还没学会怎么插入 iframe 时让海报适应高度……

@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Mindr on Open R</title>
-    <link>/zh/tags/mindr/</link>
+    <link>https://openr.netlify.com/zh/tags/mindr/</link>
     <description>Recent content in Mindr on Open R</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Mon, 07 Jan 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/zh/tags/mindr/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://openr.netlify.com/zh/tags/mindr/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>mindr 包的大一统：mm() 函数</title>
-      <link>/zh/blog/2019/01/07/2019-01-07-mindr-mm/</link>
+      <link>https://openr.netlify.com/zh/blog/mindr-mm/</link>
       <pubDate>Mon, 07 Jan 2019 00:00:00 +0000</pubDate>
       
-      <guid>/zh/blog/2019/01/07/2019-01-07-mindr-mm/</guid>
+      <guid>https://openr.netlify.com/zh/blog/mindr-mm/</guid>
       <description>&lt;p&gt;&amp;lt;&lt;a href=&#34;http://www.pzhao.org/zh/post/r-with-markdown2/&#34;&gt;用 markdown 的逻辑写 R 脚本注释(2)&lt;/a&gt;&amp;gt;一文里配了张示意图，展示了 mindr 包的六个主要函数。当时我觉得，四海已定，天下太平。&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;https://github.com/pzhaonet/mindr/raw/master/showcase/mindr_concept_1.1.8.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
@@ -28,10 +28,10 @@
     
     <item>
       <title>mindr 幻灯片演示</title>
-      <link>/zh/blog/2018/11/21/2018-11-21-mindr-slides/</link>
+      <link>https://openr.netlify.com/zh/blog/mindr-slides/</link>
       <pubDate>Wed, 21 Nov 2018 00:00:00 +0000</pubDate>
       
-      <guid>/zh/blog/2018/11/21/2018-11-21-mindr-slides/</guid>
+      <guid>https://openr.netlify.com/zh/blog/mindr-slides/</guid>
       <description>xaringan 做的幻灯片发布到网上的好处有很多，例如凡有网处皆可访问，例如每页幻灯片都有个固定网址方便引用等等。
 发布到网上的方法有很多种，借此机会发布一下 mindr 包简介幻灯片，并简单做个笔记：
 HUGOMORE42 Github 法将 xaringan 制作的一个幻灯片的文件夹（简称幻灯片文件夹）作为一个 repo 发布到 GitHub，然后在该 repo 的settings 里开启 page 功能，就可以用 your_id.github.io/your_repo 来访问幻灯片了。
@@ -49,10 +49,10 @@ knitr::include_url(&amp;#39;hyperlink_to_your_slides&amp;#39;)参考：https://
     
     <item>
       <title>用 markdown 的逻辑写 R 脚本注释（2）</title>
-      <link>/zh/blog/2018/11/16/2018-11-16-r-with-markdown2/</link>
+      <link>https://openr.netlify.com/zh/blog/r-with-markdown2/</link>
       <pubDate>Fri, 16 Nov 2018 00:00:00 +0000</pubDate>
       
-      <guid>/zh/blog/2018/11/16/2018-11-16-r-with-markdown2/</guid>
+      <guid>https://openr.netlify.com/zh/blog/r-with-markdown2/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://www.pzhao.org/zh/post/r-with-markdown/&#34;&gt;上回&lt;/a&gt;我抱怨没有现成的函数直接把 .R 脚本转换成 .Rmd 文档，于是自作聪明写了一个，结果很快 yihui 就留言说，有啊，&lt;code&gt;knitr::spin()&lt;/code&gt; 就可以。我就去研究了一下这个函数，发现比我写的那个要漂亮得多。&lt;/p&gt;
 
 &lt;p&gt;我的心情很复杂。&lt;/p&gt;
@@ -62,10 +62,10 @@ knitr::include_url(&amp;#39;hyperlink_to_your_slides&amp;#39;)参考：https://
     
     <item>
       <title>用 markdown 的逻辑写 R 脚本注释</title>
-      <link>/zh/blog/2018/10/27/2018-10-27-r-with-markdown/</link>
+      <link>https://openr.netlify.com/zh/blog/r-with-markdown/</link>
       <pubDate>Sat, 27 Oct 2018 00:00:00 +0000</pubDate>
       
-      <guid>/zh/blog/2018/10/27/2018-10-27-r-with-markdown/</guid>
+      <guid>https://openr.netlify.com/zh/blog/r-with-markdown/</guid>
       <description>&lt;h2 id=&#34;九阳真经&#34;&gt;九阳真经&lt;/h2&gt;
 
 &lt;p&gt;跟很多业余程序员一样，我意识到给代码写注释的重要性时，已经很晚了。有多晚？差不多就是隔一段时间再打开自己写的旧代码时。我惊讶得下巴都快掉了：这是我亲手写的吗？怎么一点都看不懂？这要是有人打假说我是抄袭，那恐怕连我自己都举双手赞成。&lt;/p&gt;
@@ -81,28 +81,28 @@ knitr::include_url(&amp;#39;hyperlink_to_your_slides&amp;#39;)参考：https://
     
     <item>
       <title>外行 R 包开发手记：mindr</title>
-      <link>/zh/blog/2018/10/20/2018-10-20-mindr-one-year/</link>
+      <link>https://openr.netlify.com/zh/blog/mindr-one-year/</link>
       <pubDate>Sat, 20 Oct 2018 00:00:00 +0000</pubDate>
       
-      <guid>/zh/blog/2018/10/20/2018-10-20-mindr-one-year/</guid>
+      <guid>https://openr.netlify.com/zh/blog/mindr-one-year/</guid>
       <description>&lt;p&gt;在 CRAN 发布的几个包里， 我对 mindr 情有独钟。它像 pinyin 包一样，结构简单清晰。它得到的用户反馈不像 bookdownplus 包那样让我手足无措。相反，在跟用户的互动中，mindr 在成长，越来越酷。开发升级 mindr，是个很愉快的过程。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>发布了 4 个 R 语言包：bookdownplus, pinyin, mindr, beginr</title>
-      <link>/archives/19377/</link>
+      <link>https://openr.netlify.com/archives/19377/</link>
       <pubDate>Fri, 23 Jun 2017 18:29:38 +0000</pubDate>
       
-      <guid>/archives/19377/</guid>
+      <guid>https://openr.netlify.com/archives/19377/</guid>
       <description>&lt;p&gt;最近，一口气往 CRAN 提交了四个 R 扩展包，所幸都被发布了，这里简单介绍一下。详细情况请来&lt;a href=&#34;http://pzhao.org&#34;&gt;我的新网站&lt;/a&gt;围观。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>R包发布记</title>
-      <link>/zh/blog/2017/06/19/2017-06-19-publish-r-packages/</link>
+      <link>https://openr.netlify.com/zh/blog/publish-r-packages/</link>
       <pubDate>Mon, 19 Jun 2017 00:00:00 +0000</pubDate>
       
-      <guid>/zh/blog/2017/06/19/2017-06-19-publish-r-packages/</guid>
+      <guid>https://openr.netlify.com/zh/blog/publish-r-packages/</guid>
       <description>最近，我把mindr，pinyin 和 bookdownplus 三个包都提交到了 CRAN。这三个包都很简单，我就是想体验一下发布R包的流程，免得将来学R那本书出版了被问起来，答不上来就丢人了，另外也算是承接菜鸟致简速成那篇帖子，里面只谈了野包的发布分享，而只有提交到了 CRAN，野包才算转正。
 HUGOMORE42 很快，这三个包都成功转正，可以正常安装了：
 install.packages(&amp;#39;mindr&amp;#39;)install.packages(&amp;#39;pinyin&amp;#39;)install.packages(&amp;#39;bookdownplus&amp;#39;)这里说说发布的过程和我遇到的一些问题。
@@ -120,10 +120,10 @@ install.packages(&amp;#39;mindr&amp;#39;)install.packages(&amp;#39;pinyin&amp;#
     
     <item>
       <title>R mindr: 把 Markdown 转成思维导图</title>
-      <link>/zh/blog/2017/05/19/2017-05-19-mindr/</link>
+      <link>https://openr.netlify.com/zh/blog/mindr/</link>
       <pubDate>Fri, 19 May 2017 00:00:00 +0000</pubDate>
       
-      <guid>/zh/blog/2017/05/19/2017-05-19-mindr/</guid>
+      <guid>https://openr.netlify.com/zh/blog/mindr/</guid>
       <description>将 markdown (.md, .Rmd) 文件转换成思维导图的 R 扩展包 mindr 是我写的第五个 R 包，安装方法如下：
 HUGOMORE42 稳定版：
 install.packages(&amp;quot;mindr&amp;quot;)开发版：

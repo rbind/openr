@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tutorial on Open R</title>
-    <link>/tags/tutorial/</link>
+    <link>https://openr.netlify.com/tags/tutorial/</link>
     <description>Recent content in Tutorial on Open R</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 12 Jul 2018 09:44:48 +0000</lastBuildDate>
     
-	<atom:link href="/tags/tutorial/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://openr.netlify.com/tags/tutorial/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>[Tutorial for steemr] Retrieving and Analyzing the Comment Data</title>
-      <link>/blog/2018/07/12/2018-07-12-steemr-tutorial-gcomment/</link>
+      <link>https://openr.netlify.com/blog/steemr-tutorial-gcomment/</link>
       <pubDate>Thu, 12 Jul 2018 09:44:48 +0000</pubDate>
       
-      <guid>/blog/2018/07/12/2018-07-12-steemr-tutorial-gcomment/</guid>
+      <guid>https://openr.netlify.com/blog/steemr-tutorial-gcomment/</guid>
       <description>&lt;h3 id=&#34;what-will-i-learn&#34;&gt;What Will I Learn?&lt;/h3&gt;
 
 &lt;ul&gt;
@@ -27,10 +27,10 @@
     
     <item>
       <title>[Tutorial for steemr] Retrieving and Analyzing the delegation Data</title>
-      <link>/blog/2018/07/08/2018-07-08-tutorial-for-steemr-retrieving-and-analyzing-the-delegation-data/</link>
+      <link>https://openr.netlify.com/blog/tutorial-for-steemr-retrieving-and-analyzing-the-delegation-data/</link>
       <pubDate>Sun, 08 Jul 2018 21:08:06 +0000</pubDate>
       
-      <guid>/blog/2018/07/08/2018-07-08-tutorial-for-steemr-retrieving-and-analyzing-the-delegation-data/</guid>
+      <guid>https://openr.netlify.com/blog/tutorial-for-steemr-retrieving-and-analyzing-the-delegation-data/</guid>
       <description>&lt;h3 id=&#34;what-will-i-learn&#34;&gt;What Will I Learn?&lt;/h3&gt;
 
 &lt;ul&gt;
@@ -42,10 +42,10 @@
     
     <item>
       <title>[Tutorial for steemr] Installation &#43; Retrieving and Analyzing Steemians&#39; profiles</title>
-      <link>/blog/2018/07/06/2018-07-06-steemr-tutorial-gid/</link>
+      <link>https://openr.netlify.com/blog/steemr-tutorial-gid/</link>
       <pubDate>Fri, 06 Jul 2018 14:15:00 +0000</pubDate>
       
-      <guid>/blog/2018/07/06/2018-07-06-steemr-tutorial-gid/</guid>
+      <guid>https://openr.netlify.com/blog/steemr-tutorial-gid/</guid>
       <description>&lt;h3 id=&#34;what-will-i-learn&#34;&gt;What Will I Learn?&lt;/h3&gt;
 
 &lt;ul&gt;

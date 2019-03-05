@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Beginr on Open R</title>
-    <link>/zh/tags/beginr/</link>
+    <link>https://openr.netlify.com/zh/tags/beginr/</link>
     <description>Recent content in Beginr on Open R</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Fri, 23 Jun 2017 18:29:38 +0000</lastBuildDate>
     
-	<atom:link href="/zh/tags/beginr/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://openr.netlify.com/zh/tags/beginr/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>发布了 4 个 R 语言包：bookdownplus, pinyin, mindr, beginr</title>
-      <link>/archives/19377/</link>
+      <link>https://openr.netlify.com/archives/19377/</link>
       <pubDate>Fri, 23 Jun 2017 18:29:38 +0000</pubDate>
       
-      <guid>/archives/19377/</guid>
+      <guid>https://openr.netlify.com/archives/19377/</guid>
       <description>&lt;p&gt;最近，一口气往 CRAN 提交了四个 R 扩展包，所幸都被发布了，这里简单介绍一下。详细情况请来&lt;a href=&#34;http://pzhao.org&#34;&gt;我的新网站&lt;/a&gt;围观。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>R 初学者包 beginr 在 CRAN 正式发布</title>
-      <link>/zh/blog/2017/06/23/2017-06-23-beginr_released/</link>
+      <link>https://openr.netlify.com/zh/blog/beginr-released/</link>
       <pubDate>Fri, 23 Jun 2017 00:00:00 +0000</pubDate>
       
-      <guid>/zh/blog/2017/06/23/2017-06-23-beginr_released/</guid>
+      <guid>https://openr.netlify.com/zh/blog/beginr-released/</guid>
       <description>又一次高兴地宣布, 我的 R 语言扩展包 ‘beginr’ (Zhao 2017a) 在 CRAN 正式发布了.
 HUGOMORE42 简介beginr是我为 R 语言初学者和自己写的工具包, 是我这些年来收集和自己编写的一些简化操作的函数和备忘录, 可能对中级用户也有帮助. 其实这个包的文档我写得不够详细, 有些函数还没来及整理进去, 之所以匆匆发布, 是想先把 ‘beginr’ 这个名字给占住. 毕竟, 我中意的名字如 ‘learnr’, ’startr’都被别人用过了.
 安装方法：

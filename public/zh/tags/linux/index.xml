@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Linux on Open R</title>
-    <link>/zh/tags/linux/</link>
+    <link>https://openr.netlify.com/zh/tags/linux/</link>
     <description>Recent content in Linux on Open R</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Sun, 04 Feb 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/zh/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://openr.netlify.com/zh/tags/linux/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>如何妥当地复制或同步文件</title>
-      <link>/zh/blog/2018/02/04/2018-02-04_sync/</link>
+      <link>https://openr.netlify.com/zh/blog/sync/</link>
       <pubDate>Sun, 04 Feb 2018 00:00:00 +0000</pubDate>
       
-      <guid>/zh/blog/2018/02/04/2018-02-04_sync/</guid>
+      <guid>https://openr.netlify.com/zh/blog/sync/</guid>
       <description>事情的起因是这样的：有人在群里问了个技术问题：从 Ubuntu 操作系统的电脑里，往另一台电脑里拷贝或同步一批文件，该如何操作？
 虽然问题是针对 Ubuntu，但我们的解决方案对 Windows 和 Mac 用户也是大有用处的。
 HUGOMORE42 最方便的是网盘。
@@ -40,10 +40,10 @@ syncthing 也是 P2P 同步工具，而且是开源的。这意味着，全世�
     
     <item>
       <title>Windows 的又一个坑：R writeLines() 函数的换行符</title>
-      <link>/zh/blog/2018/01/18/2018-01-18_writelines/</link>
+      <link>https://openr.netlify.com/zh/blog/r-writelines-line-break/</link>
       <pubDate>Thu, 18 Jan 2018 00:00:00 +0000</pubDate>
       
-      <guid>/zh/blog/2018/01/18/2018-01-18_writelines/</guid>
+      <guid>https://openr.netlify.com/zh/blog/r-writelines-line-break/</guid>
       <description>昨天，又被 Windows 坑到了。
 事情的背景是，我的工作环境是 Windows 操作系统。由于一些众所周知的原因，有些事情在 Linux 下做起来比较顺当。于是，我就用 virtualbox 装了个虚拟的 Ubuntu。由于不熟，只用到其中很小一部分功能，所以，凡是能在 Windows 下做的事情，我绝不去 Ubuntu。
 HUGOMORE42 昨天，我要写一批 bash 批处理文件，打算在 Ubuntu 里运行。这批 .sh 文件结构格式相同，只是内容略有不同。于是，我就动了点小心思，用 R 语言批量写好了文件内容，最后用 writeLines() 函数生成了这批 .sh 文件。

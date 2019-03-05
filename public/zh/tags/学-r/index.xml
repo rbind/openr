@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>学 R on Open R</title>
-    <link>/zh/tags/%E5%AD%A6-r/</link>
+    <link>https://openr.netlify.com/zh/tags/%E5%AD%A6-r/</link>
     <description>Recent content in 学 R on Open R</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Sun, 27 May 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/zh/tags/%E5%AD%A6-r/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://openr.netlify.com/zh/tags/%E5%AD%A6-r/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>独狼死，群狼活：R 语言女子学习小组 &amp; 书友之窗</title>
-      <link>/zh/blog/2018/05/27/2018-05-27_xuer-girls/</link>
+      <link>https://openr.netlify.com/zh/blog/xuer-girls/</link>
       <pubDate>Sun, 27 May 2018 00:00:00 +0000</pubDate>
       
-      <guid>/zh/blog/2018/05/27/2018-05-27_xuer-girls/</guid>
+      <guid>https://openr.netlify.com/zh/blog/xuer-girls/</guid>
       <description>&lt;p&gt;文科女生 @dancingapple 买了《学 R》这本书，&lt;a href=&#34;http://xuer.dapengde.com/post/dancingapple/&#34;&gt;郑重宣告&lt;/a&gt;开始学习 R 语言。这个圈子里，据我所知，买了这书的还有：&lt;/p&gt;
 
 &lt;p&gt;@tvb, @nostalgic1212, @veronicazhu, @hqy&amp;hellip;&lt;/p&gt;
@@ -28,37 +28,37 @@
     
     <item>
       <title>答《学 R》读者</title>
-      <link>/zh/blog/2018/05/26/2018-05-26_xuer-faq/</link>
+      <link>https://openr.netlify.com/zh/blog/xuer-faq/</link>
       <pubDate>Sat, 26 May 2018 00:00:00 +0000</pubDate>
       
-      <guid>/zh/blog/2018/05/26/2018-05-26_xuer-faq/</guid>
+      <guid>https://openr.netlify.com/zh/blog/xuer-faq/</guid>
       <description>&lt;p&gt;我主笔的《&lt;a href=&#34;http://xuer.pzhao.net/&#34;&gt;学 R&lt;/a&gt;》一书正在热销。有些朋友问了一些问题，我在此一并作答。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>我主笔的《学 R：零基础学习 R 语言》一书已面世</title>
-      <link>/zh/blog/2018/05/18/2018-05-18_xuer-sale/</link>
+      <link>https://openr.netlify.com/zh/blog/xuer-sale/</link>
       <pubDate>Fri, 18 May 2018 00:00:00 +0000</pubDate>
       
-      <guid>/zh/blog/2018/05/18/2018-05-18_xuer-sale/</guid>
+      <guid>https://openr.netlify.com/zh/blog/xuer-sale/</guid>
       <description>&lt;p&gt;书终于印好面世了。感谢北大的朱彤教授和 RStudio 公司的谢益辉博士慷慨作序。据我所知，这应该是国内第一本用 R bookdown 包来写作和排版的书。书的主页是 &lt;a href=&#34;http://xuer.pzhao.net&#34;&gt;http://xuer.pzhao.net&lt;/a&gt;。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>关于书封面设计的讨论</title>
-      <link>/archives/19401/</link>
+      <link>https://openr.netlify.com/archives/19401/</link>
       <pubDate>Tue, 27 Jun 2017 09:19:57 +0000</pubDate>
       
-      <guid>/archives/19401/</guid>
+      <guid>https://openr.netlify.com/archives/19401/</guid>
       <description>&lt;p&gt;昨天发了新书封面设计的三个方案. 我在微信朋友圈也征求大家的意见, 综合我博客上为数不多的投票, 汇总的结果是 白色 : 黑色 : 蓝色方案 为 2:10:8.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>《学R》序（朱彤）</title>
-      <link>/zh/blog/2017/06/14/2017-06-14-preface-zhu/</link>
+      <link>https://openr.netlify.com/zh/blog/preface_zhu/</link>
       <pubDate>Wed, 14 Jun 2017 00:00:00 +0000</pubDate>
       
-      <guid>/zh/blog/2017/06/14/2017-06-14-preface-zhu/</guid>
+      <guid>https://openr.netlify.com/zh/blog/preface_zhu/</guid>
       <description>&lt;p&gt;我读硕士研究生时的导师是朱彤教授。在朱老师科研小组 ZTGroup 学习的三年如沐春风，我从中得到的收获受益终生。正值北京大学环境大楼落成不久，又逢毕业季，作为环境科学与工程学院的院长，朱老师在极其繁忙的工作中抽出时间来为本书欣然作序，实属不易，仅凭“感激”二字岂能表达我们的谢意？&lt;/p&gt;
 
 &lt;p&gt;下面是朱老师为本书写的序言。&lt;/p&gt;</description>
@@ -66,10 +66,10 @@
     
     <item>
       <title>侠气</title>
-      <link>/archives/19309/</link>
+      <link>https://openr.netlify.com/archives/19309/</link>
       <pubDate>Thu, 13 Apr 2017 12:49:17 +0000</pubDate>
       
-      <guid>/archives/19309/</guid>
+      <guid>https://openr.netlify.com/archives/19309/</guid>
       <description>&lt;p&gt;我这个博客，访问量最大的帖子就是《 &lt;a href=&#34;http://pzhao.org/r4dummies&#34;&gt;R 菜鸟入门&lt;/a&gt;》。这是写给 R 语言新手的。四年前发布以来，浏览量累计大约 2 万。也就是说，如果只计算工作时间的话，平均每天每小时都有2个人在浏览这些帖子，如此连续了四年，对于这样一个小站来说，我还是挺得意的。就算是在高校讲课，如果每个班20人，每个学期一个班，我得教500年，才能这么大规模地普及 R 语言。但是500年后R语言早就不存在了。&lt;/p&gt;</description>
     </item>
     

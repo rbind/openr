@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Hugo on Open R</title>
-    <link>/zh/tags/hugo/</link>
+    <link>https://openr.netlify.com/zh/tags/hugo/</link>
     <description>Recent content in Hugo on Open R</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Tue, 11 Apr 2017 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/zh/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://openr.netlify.com/zh/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>R blogdown 搭建个人博客或科研网站</title>
-      <link>/zh/blog/2017/04/11/2017-04-11_r-blogdown/</link>
+      <link>https://openr.netlify.com/zh/blog/r-blogdown/</link>
       <pubDate>Tue, 11 Apr 2017 00:00:00 +0000</pubDate>
       
-      <guid>/zh/blog/2017/04/11/2017-04-11_r-blogdown/</guid>
+      <guid>https://openr.netlify.com/zh/blog/r-blogdown/</guid>
       <description>本文收录在《学 R 》一书的附录中。
 互联网时代有个自己的网站，就好像真实世界里有了自己的房子（服务器）和固定地址（域名）；自我介绍时附上自己的网站，就像生活里邀请朋友来访或者职场上递上名片，都甚为方便。然而，建立一个网站并不容易，涉及诸多领域的知识和技能，门槛比较高。好在，我们有万能的R语言，搭建网站只需几分钟，而并不需要多少网络知识。你甚至不用懂 R 语言是什么，照我下面说的做就行，包教包会，学不会免费再教。
 HUGOMORE42 这里，我提供两个示范，演示如何使用 R 语言的 blogdown 扩展包1，用来搭建一个个人博客和一个科研小组网站。截至本文成稿之日，blogdown 含苞待放，尚未正式发布，但是已经能够正常安装使用了。我们来尝尝鲜，提前一睹她的芳容。

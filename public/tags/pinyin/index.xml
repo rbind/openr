@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Pinyin on Open R</title>
-    <link>/tags/pinyin/</link>
+    <link>https://openr.netlify.com/tags/pinyin/</link>
     <description>Recent content in Pinyin on Open R</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 15 Oct 2018 14:34:03 +0000</lastBuildDate>
     
-	<atom:link href="/tags/pinyin/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://openr.netlify.com/tags/pinyin/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>[R pinyin: New Features] User customized dictionaries</title>
-      <link>/blog/2018/10/15/2018-10-15-pinyin-user-defined/</link>
+      <link>https://openr.netlify.com/blog/pinyin-user-defined/</link>
       <pubDate>Mon, 15 Oct 2018 14:34:03 +0000</pubDate>
       
-      <guid>/blog/2018/10/15/2018-10-15-pinyin-user-defined/</guid>
+      <guid>https://openr.netlify.com/blog/pinyin-user-defined/</guid>
       <description>&lt;p&gt;The pinyin package intended to convert Chinese characters into pinyin. However, more demands were called by users. That was why the features of converting to four-corner codes and five-stroke codes (version 98) were added. After my previous update, the utopian moderator @justyy kindly &lt;a href=&#34;https://steemit.com/utopian-io/@justyy/re-dapeng-pinyin-wubi-20181012t201139924z&#34;&gt;suggested&lt;/a&gt; adding the Five-Stroke-86 as well. I totally agree, and I think there could be more.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>[R: New Features on pinyin] Convert Chinese Characters into Sijiao and Wubi codes</title>
-      <link>/blog/2018/10/12/2018-10-12-pinyin-wubi/</link>
+      <link>https://openr.netlify.com/blog/pinyin-wubi/</link>
       <pubDate>Fri, 12 Oct 2018 13:31:42 +0000</pubDate>
       
-      <guid>/blog/2018/10/12/2018-10-12-pinyin-wubi/</guid>
+      <guid>https://openr.netlify.com/blog/pinyin-wubi/</guid>
       <description>&lt;h4 id=&#34;what-features-did-i-add&#34;&gt;What features did I add?&lt;/h4&gt;
 
 &lt;ul&gt;
@@ -39,10 +39,10 @@
     
     <item>
       <title>[Task Request] Heteronym problem</title>
-      <link>/blog/2018/04/12/2018-04-12-heteronym-problem/</link>
+      <link>https://openr.netlify.com/blog/heteronym-problem/</link>
       <pubDate>Thu, 12 Apr 2018 08:56:48 +0000</pubDate>
       
-      <guid>/blog/2018/04/12/2018-04-12-heteronym-problem/</guid>
+      <guid>https://openr.netlify.com/blog/heteronym-problem/</guid>
       <description>&lt;p&gt;Heteronym is a common lingual phenomenon in the most languages.  Wikepedia:&lt;/p&gt;
 
 &lt;blockquote&gt;

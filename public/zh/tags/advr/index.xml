@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Advr on Open R</title>
-    <link>/zh/tags/advr/</link>
+    <link>https://openr.netlify.com/zh/tags/advr/</link>
     <description>Recent content in Advr on Open R</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Thu, 14 Jun 2018 13:26:33 +0000</lastBuildDate>
     
-	<atom:link href="/zh/tags/advr/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://openr.netlify.com/zh/tags/advr/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>[New Project] advr: an R package for the scientific research on trace gas advection flux density</title>
-      <link>/zh/blog/2018/06/14/2018-06-14-advr/</link>
+      <link>https://openr.netlify.com/zh/blog/advr/</link>
       <pubDate>Thu, 14 Jun 2018 13:26:33 +0000</pubDate>
       
-      <guid>/zh/blog/2018/06/14/2018-06-14-advr/</guid>
+      <guid>https://openr.netlify.com/zh/blog/advr/</guid>
       <description>&lt;p&gt;Carbon dioxide (CO~2~) is one of the key green house gases which play an important role in the global climate change. In academia, the sources and sinks of CO~2~ are estimated with the flux density, e.g. the amount of CO~2~ passing through a unit area in a unit time. Estimates of net ecosystem CO~2~ exchange have been attracting a lot of attention. The research on the advection flux takes care of the contribution of the advection term to the CO~2~ balance.&lt;/p&gt;</description>
     </item>
     

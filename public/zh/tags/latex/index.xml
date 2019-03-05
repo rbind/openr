@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Latex on Open R</title>
-    <link>/zh/tags/latex/</link>
+    <link>https://openr.netlify.com/zh/tags/latex/</link>
     <description>Recent content in Latex on Open R</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Fri, 01 Feb 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/zh/tags/latex/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://openr.netlify.com/zh/tags/latex/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>纯文本编辑器的审阅模式</title>
-      <link>/zh/blog/2019/02/01/2019-02-01-txt-review-mode/</link>
+      <link>https://openr.netlify.com/zh/blog/txt-review-mode/</link>
       <pubDate>Fri, 01 Feb 2019 00:00:00 +0000</pubDate>
       
-      <guid>/zh/blog/2019/02/01/2019-02-01-txt-review-mode/</guid>
+      <guid>https://openr.netlify.com/zh/blog/txt-review-mode/</guid>
       <description>&lt;p&gt;这里说的审阅模式，指的是像 Microsoft Office Word 里的 Review 模式，可以显示修订前后的不同。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>纯文本：文献管理的终极之道</title>
-      <link>/zh/blog/2019/02/01/2019-02-01-literature-management/</link>
+      <link>https://openr.netlify.com/zh/blog/literature-management/</link>
       <pubDate>Fri, 01 Feb 2019 00:00:00 +0000</pubDate>
       
-      <guid>/zh/blog/2019/02/01/2019-02-01-literature-management/</guid>
+      <guid>https://openr.netlify.com/zh/blog/literature-management/</guid>
       <description>&lt;p&gt;​&lt;/p&gt;
 
 &lt;blockquote&gt;
@@ -43,10 +43,10 @@
     
     <item>
       <title>课件：R 语言、开放科学和可重复性研究</title>
-      <link>/zh/blog/2018/12/04/2018-12-04-r-course-slides/</link>
+      <link>https://openr.netlify.com/zh/blog/r-course-slides/</link>
       <pubDate>Tue, 04 Dec 2018 00:00:00 +0000</pubDate>
       
-      <guid>/zh/blog/2018/12/04/2018-12-04-r-course-slides/</guid>
+      <guid>https://openr.netlify.com/zh/blog/r-course-slides/</guid>
       <description>“R 语言，开放科学和可重复性研究”的课件，xaringan 包制作。这个包做幻灯片果然是可以飞起的。
 HUGOMORE42 一周课程的内容，浓缩在 5 小时讲完了。当然有意外，主要是大家遇见的 LaTeX 的各种问题不一而足。当然有惊喜，mac 用户居然全都顺利过来了。
 此外，原以为 rmarkdown 全家桶是 RStudio 默认安装的，结果发现 rticles 和 bookdown 等是需要手动安装的。我的 RStudio 已经升级好几次了，而那些包每次都在那里，所以……
@@ -55,10 +55,10 @@ HUGOMORE42 一周课程的内容，浓缩在 5 小时讲完了。当然有意�
     
     <item>
       <title>我把青春献给你：排版 (4)</title>
-      <link>/zh/blog/2018/01/17/2018-01-17-latex-and-me-4/</link>
+      <link>https://openr.netlify.com/zh/blog/latex-and-me-4/</link>
       <pubDate>Wed, 17 Jan 2018 00:00:00 +0000</pubDate>
       
-      <guid>/zh/blog/2018/01/17/2018-01-17-latex-and-me-4/</guid>
+      <guid>https://openr.netlify.com/zh/blog/latex-and-me-4/</guid>
       <description>9
 bookdown 或者说 Pandoc 的伟大之处，就是把原先必须在 LaTeX 里做的事情，99.9% 都可以用 markdown 语法完成。剩下的 0.1%，例如公式、索引、控制换行、临时改变字体字号、强制分页等操作，所涉及的 LaTeX 命令都很简单（$$, \index{}、\mbox{}、\small、\newpage），偶尔用一下无伤大雅。只需找个漂亮的编辑器，在 bookdown 下写作就有不错的体验，而生成的 pdf 文档处处透露着 LaTeX 的优雅。平时自用一下，美得不行，仿佛梅开二度，枯木逢春。我为 bookdown 量身制作了 bookdownplus，pinyin 和 mindr 几个扩展包，沉浸在美妙之中不可自拔。
 HUGOMORE42 但是，直到这次真正给《学 R》排版，真正要送到印刷厂印个几千本的时候，光有 bookdown 的现成模板就不够用了。《学 R》是本中文书，LaTeX 对中文的支持先天不足，很多细小的问题，得自己一个一个抠。
@@ -75,10 +75,10 @@ HUGOMORE42 但是，直到这次真正给《学 R》排版，真正要送到印�
     
     <item>
       <title>我把青春献给你：排版 (3)</title>
-      <link>/zh/blog/2017/12/23/2017-12-23-latex-and-me-3/</link>
+      <link>https://openr.netlify.com/zh/blog/latex-and-me-3/</link>
       <pubDate>Sat, 23 Dec 2017 00:00:00 +0000</pubDate>
       
-      <guid>/zh/blog/2017/12/23/2017-12-23-latex-and-me-3/</guid>
+      <guid>https://openr.netlify.com/zh/blog/latex-and-me-3/</guid>
       <description>7
 LaTeX 做出来的文档，确实漂亮。这种漂亮不是那种一眼就能看出哪儿漂亮的漂亮，而是一种说不出来的气质。这种气质来自字体、间距、断字等等诸多细节的堆积和交互作用。只要是用过 LaTeX 的人，拿来个文档用鼻子一闻，就知道是 Word 做的还是 LaTeX 做的。就好像你遇到了你的另一半，让你神魂颠倒，可就是说不出她究竟好在哪里; 她走在人群里，你一眼就能找到她。因为你眼里没别人。
 HUGOMORE42 然而，这种气质不是能轻易把握的。LaTeX 最为奇特的是，你为她投入了无数的时间，却竟然说不清楚到底是因为她太好还是她太糟。如果她太好，为何这么难用？如果她太糟，为何你甘心为她付出？
@@ -105,10 +105,10 @@ bookdown，就是攻陷特洛伊的木马; 里面藏着的，除了我的旧爱 
     
     <item>
       <title>R bookdownplus 升级手记，以及北大论文模板</title>
-      <link>/zh/blog/2017/11/26/2017-11-26-bookdownplus_update/</link>
+      <link>https://openr.netlify.com/zh/blog/bookdownplus-update/</link>
       <pubDate>Sun, 26 Nov 2017 00:00:00 +0000</pubDate>
       
-      <guid>/zh/blog/2017/11/26/2017-11-26-bookdownplus_update/</guid>
+      <guid>https://openr.netlify.com/zh/blog/bookdownplus-update/</guid>
       <description>bookdownplus 这个 R 语言程序包，自用起来感觉不错，当初发布的时候还小得意了一把。时过境迁，现在回头看起来是越来越不满意。CRAN 上，bookdownplus 的总下载量接近三千（与此相比，bookdown 的总下载量是七万），大约每小时就有一次下载。Google ‘bookdownplus’ 可以搜到 已经有中文用户在写使用体验了。越是这样，我越惶恐，因为我知道，这个包写得粗糙，可改进的地方数都数不过来。
 HUGOMORE42 向我反馈问题的用户超出了预期，主要是兼容性的问题：在 macOS上如何，在 Linux 上如何，这些问题我都没有办法回答，因为我只在 Windows 7 上测试了，其他操作系统既无精力也无条件测试。开发个软件，自用是一回事，让别人能用完全是另外一回事，这两回事之间真是相差了一个筋斗云。
 所以我决定先把自己看不过去的问题解决一下，那就是代码的构架问题。
@@ -122,10 +122,10 @@ bookdownplus v.1.3 以后的版本包含了 20 个模板。写这个包的时候
     
     <item>
       <title>我把青春献给你：排版 (2)</title>
-      <link>/zh/blog/2017/11/22/2017-11-22-latex-and-me-2/</link>
+      <link>https://openr.netlify.com/zh/blog/latex-and-me-2/</link>
       <pubDate>Wed, 22 Nov 2017 00:00:00 +0000</pubDate>
       
-      <guid>/zh/blog/2017/11/22/2017-11-22-latex-and-me-2/</guid>
+      <guid>https://openr.netlify.com/zh/blog/latex-and-me-2/</guid>
       <description>5
 如果上一篇帖子让你以为我在为 \(\LaTeX\) 做广告，呵呵，那你就上当了。为啥？
 因为我早就抛弃 LaTeX 了。
@@ -151,10 +151,10 @@ Linux 和 R 的血泪史按下不表，今天只说 LaTeX。
     
     <item>
       <title>我把青春献给你：排版 (1)</title>
-      <link>/zh/blog/2017/11/21/2017-11-21-latex-and-me-1/</link>
+      <link>https://openr.netlify.com/zh/blog/latex-and-me-1/</link>
       <pubDate>Tue, 21 Nov 2017 00:00:00 +0000</pubDate>
       
-      <guid>/zh/blog/2017/11/21/2017-11-21-latex-and-me-1/</guid>
+      <guid>https://openr.netlify.com/zh/blog/latex-and-me-1/</guid>
       <description>1
 2017 年快要过去了。如果剩下这四十天不出什么幺蛾子的话，我今年的最蠢事情排行榜，基本是板上钉钉。名列榜首的，就是过早给《学 R》一书大肆宣传。跟罗永浩当年头一回卖锤子手机一样一样的，还没量产，就先吹牛，结果吹破了，打了自己的脸。
 HUGOMORE42 其实，这本书早在今年 6 月就写完了，7 月做了最后一次修改。当时书号已经批了，封面也有了模样，我以为马上就能印出来了，于是告诉了我能告诉的每一个朋友。朋友们都很讲义气，把白花花的银子拍在桌上，就等着付钱买了。当了教授的老同学说：放心，到时候我送给我的学生人手一本！
@@ -189,10 +189,10 @@ Y 立刻对我说：“我明白问题出在哪里了！”
     
     <item>
       <title>LaTeX 公式转换成 Word 公式</title>
-      <link>/zh/blog/2017/06/20/2017-06-20-latex-equations-to-word/</link>
+      <link>https://openr.netlify.com/zh/blog/latex-equations-to-word/</link>
       <pubDate>Tue, 20 Jun 2017 00:00:00 +0000</pubDate>
       
-      <guid>/zh/blog/2017/06/20/2017-06-20-latex-equations-to-word/</guid>
+      <guid>https://openr.netlify.com/zh/blog/latex-equations-to-word/</guid>
       <description>最近写了篇论文，投往一家学术期刊。投稿时，Word 格式和 \(\LaTeX\) 格式可以任选，我选了 Word，是因为合作作者用 Word。可是，文稿里的公式是我输入的，而那些公式在我的博士论文里是用 \(\LaTeX\) 写的。为了图省事，我就用了 Word 的插件Aurora，这样，只需把公式的 \(\LaTeX\) 代码往 Word 文档的 Aurora 域里拷贝粘贴，bingo！公式就渲染好了，比 Word 的自带公式漂亮一些。
 HUGOMORE42 这篇论文很顺利，很快被接收了。到了最后一步的时候，编辑部要我把文档里的公式修改成可编辑的格式。——本来就是可编辑的呀。嗯，大概是编辑部不使用Aurora，那么他们的 Word 打开我的文档里看到的公式自然就是没法编辑的了。我懒得解释，最后决定把公式全部转换成 Word 公式。
 \(\LaTeX\) 公式转成 Word 公式并不难，只需三步：\(\LaTeX\) –&amp;gt; MathML –&amp;gt; 修改 –&amp;gt; Word.
@@ -203,10 +203,10 @@ HUGOMORE42 这篇论文很顺利，很快被接收了。到了最后一步的时
     
     <item>
       <title>微气象学常用的 LaTeX 公式</title>
-      <link>/zh/blog/2017/05/23/2017-05-23-equations/</link>
+      <link>https://openr.netlify.com/zh/blog/equations/</link>
       <pubDate>Tue, 23 May 2017 00:00:00 +0000</pubDate>
       
-      <guid>/zh/blog/2017/05/23/2017-05-23-equations/</guid>
+      <guid>https://openr.netlify.com/zh/blog/equations/</guid>
       <description>这些年，论文发得不多，公式却攒了不少，大部分都是自己亲手敲的 \(\LaTeX\) 代码。我把他们整理在一个 eq.tex 文档里，配合一个编译好的 eq.pdf 文件。每次需要的时候，在 eq.pdf 里找到需要的公式，然后去 eq.tex 找公式代码，拷到目标文档里完事儿。稍微有点小麻烦，但总比重新敲一遍代码要省事、准确。
 然而，现在有了 blogdown 和 Hugo-academic 主题，一切都变得不一样了。我把 eq.tex 里的文本全部拷贝粘贴到一个 .Rmd 文件，扔进网站里，就得到了现在这个帖子。鼠标放在公式上点右键- Show Math As - \(\TeX\) Commands，就得到了公式的 \(\LaTeX\) 代码。直接拷贝就行了，再也不用在两个文档里切换以及找来找去。
 HUGOMORE42 我觉得，我再也回不去了。
@@ -219,19 +219,19 @@ MeteorologyAtmpspheric pressure\[\begin{equation}P=101.325 \cdot (\frac{293-0
     
     <item>
       <title>如果用bookdown来写诗集</title>
-      <link>/archives/19150/</link>
+      <link>https://openr.netlify.com/archives/19150/</link>
       <pubDate>Wed, 15 Mar 2017 14:21:56 +0000</pubDate>
       
-      <guid>/archives/19150/</guid>
+      <guid>https://openr.netlify.com/archives/19150/</guid>
       <description>&lt;p&gt;今天，我用R的bookdown做出了第一本电子书：&amp;lt;&lt;a href=&#34;https://bookdown.org/baydap/papasdiary/papasdiary.html&#34;&gt;爸爸三定律&lt;/a&gt;&amp;gt;。内容是从我博客上选的育儿相关帖。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>R bookdown 快速入门和语法速查</title>
-      <link>/archives/19141/</link>
+      <link>https://openr.netlify.com/archives/19141/</link>
       <pubDate>Wed, 15 Mar 2017 07:29:47 +0000</pubDate>
       
-      <guid>/archives/19141/</guid>
+      <guid>https://openr.netlify.com/archives/19141/</guid>
       <description>&lt;div class=&#34;section level2&#34;&gt;
   &lt;h2&gt;
     快速开始&lt;br /&gt;
@@ -267,10 +267,10 @@ MeteorologyAtmpspheric pressure\[\begin{equation}P=101.325 \cdot (\frac{293-0
     
     <item>
       <title>不可挡的bookdown</title>
-      <link>/archives/19122/</link>
+      <link>https://openr.netlify.com/archives/19122/</link>
       <pubDate>Tue, 14 Mar 2017 14:36:57 +0000</pubDate>
       
-      <guid>/archives/19122/</guid>
+      <guid>https://openr.netlify.com/archives/19122/</guid>
       <description>&lt;p&gt;最近，我打算把博客上关于R语言的帖子整理成一本书，希望弄得帅气一点，整齐一点，将来容易维护一点。涌进脑子的第一个念头是 &lt;span class=&#34;math inline&#34;&gt;(\LaTeX)&lt;/span&gt; ，第二个念头是想吐。&lt;/p&gt;</description>
     </item>
     

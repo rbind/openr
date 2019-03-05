@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Pagedown on Open R</title>
-    <link>/zh/tags/pagedown/</link>
+    <link>https://openr.netlify.com/zh/tags/pagedown/</link>
     <description>Recent content in Pagedown on Open R</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Mon, 21 Jan 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/zh/tags/pagedown/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://openr.netlify.com/zh/tags/pagedown/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>啥是佩奇党</title>
-      <link>/zh/blog/2019/01/21/2019-01-21-pagedown/</link>
+      <link>https://openr.netlify.com/zh/blog/pagedown/</link>
       <pubDate>Mon, 21 Jan 2019 00:00:00 +0000</pubDate>
       
-      <guid>/zh/blog/2019/01/21/2019-01-21-pagedown/</guid>
+      <guid>https://openr.netlify.com/zh/blog/pagedown/</guid>
       <description>&lt;p&gt;最近，朋友圈被长广告《啥是佩奇》刷了屏。啥是佩奇，我不熟。我家的主流文化是小火车托马斯和海神之子波西·杰克森，坑已满，完全没有佩奇的位置。我只知道佩奇是一头动画小猪，她的形象我并不喜欢，原因是它完全无视透视原理，就像遭受过降维打击，据说是符合低龄儿童平面化的视角，而我家里的娃算是高龄儿童了，于是就没有引进。&lt;/p&gt;
 
 &lt;p&gt;然而也不是全无兴趣。比如说，佩奇的原名是啥？一搜，是 Peppa Pig。那么，应该叫做“佩帕猪”，那么为啥翻译成“佩奇”？&lt;/p&gt;

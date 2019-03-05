@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Beginr on Open R</title>
-    <link>/tags/beginr/</link>
+    <link>https://openr.netlify.com/tags/beginr/</link>
     <description>Recent content in Beginr on Open R</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 26 Jan 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/tags/beginr/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://openr.netlify.com/tags/beginr/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>[New Features on beginr] Automatically generate a self-contained package</title>
-      <link>/blog/2019/01/26/2019-01-26-beginr-features-packr/</link>
+      <link>https://openr.netlify.com/blog/beginr-features-packr/</link>
       <pubDate>Sat, 26 Jan 2019 00:00:00 +0000</pubDate>
       
-      <guid>/blog/2019/01/26/2019-01-26-beginr-features-packr/</guid>
+      <guid>https://openr.netlify.com/blog/beginr-features-packr/</guid>
       <description>&lt;p&gt;Most R beginners think that developing an R package is a mission impossible. It is not true. With the new function &lt;code&gt;packr()&lt;/code&gt; , users can create a user-defined useful R packages easily. They can specify in &lt;code&gt;packr()&lt;/code&gt;a group of packages (e.g. foo_1, foo_2, foo_x) which they often use and the new package name, say &lt;code&gt;foobar&lt;/code&gt;, then a new package called &lt;code&gt;foobar&lt;/code&gt; will be generated.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>[Task Request on beginr] Documentation for each function friendly to R beginners</title>
-      <link>/blog/2018/06/15/2018-06-15-beginr-task-documentation/</link>
+      <link>https://openr.netlify.com/blog/beginr-task-documentation/</link>
       <pubDate>Fri, 15 Jun 2018 15:30:21 +0000</pubDate>
       
-      <guid>/blog/2018/06/15/2018-06-15-beginr-task-documentation/</guid>
+      <guid>https://openr.netlify.com/blog/beginr-task-documentation/</guid>
       <description>&lt;blockquote&gt;
 &lt;p&gt;The documentation level of R is already much higher than average for open source software and even than some commercial packages (esp. SPSS is notorious for its attitude of &amp;ldquo;You want to do one of these things. If you don&amp;rsquo;t understand what the output means, click help and we&amp;rsquo;ll pop up five lines of mumbo-jumbo that you&amp;rsquo;re not going to understand either.&amp;rdquo;)&lt;/p&gt;
 
@@ -37,10 +37,10 @@
     
     <item>
       <title>R package beginr released on CRAN</title>
-      <link>/blog/2017/06/23/2017-06-23-beginr_released/</link>
+      <link>https://openr.netlify.com/blog/beginr-released/</link>
       <pubDate>Fri, 23 Jun 2017 00:00:00 +0000</pubDate>
       
-      <guid>/blog/2017/06/23/2017-06-23-beginr_released/</guid>
+      <guid>https://openr.netlify.com/blog/beginr-released/</guid>
       <description>I’m glad to announce that ‘beginr’ (Zhao 2017) is now on CRAN. This post is a brief documentation of ‘beginr 0.1.0’. Subsequent updates can be found on the GitHub site of beginr.
 HUGOMORE42 Introduction‘beginr’ is a collection of useful functions for R beginners, including hints for the arguments of the ‘plot()’ function, self-defined functions for error bars, user-customized pair plots and hist plots, enhanced linear regression figures, etc.. This package could be helpful to R experts as well.</description>
     </item>

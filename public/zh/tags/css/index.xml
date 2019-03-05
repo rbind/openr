@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Css on Open R</title>
-    <link>/zh/tags/css/</link>
+    <link>https://openr.netlify.com/zh/tags/css/</link>
     <description>Recent content in Css on Open R</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Wed, 26 Sep 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/zh/tags/css/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://openr.netlify.com/zh/tags/css/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>给 Hugo 网站的插图添加阴影</title>
-      <link>/zh/blog/2018/09/26/2018-09-26-shadowed-images/</link>
+      <link>https://openr.netlify.com/zh/blog/shadowed-images/</link>
       <pubDate>Wed, 26 Sep 2018 00:00:00 +0000</pubDate>
       
-      <guid>/zh/blog/2018/09/26/2018-09-26-shadowed-images/</guid>
+      <guid>https://openr.netlify.com/zh/blog/shadowed-images/</guid>
       <description>&lt;p&gt;最近一年多，有个东西一直困扰着我，就像半夜酣睡时飞来一只蚊子，时不时在耳朵边哼哼几声，很烦。挥手赶走它继续睡，过一会儿又过来哼哼。好几次我犹豫着要不要爬起来彻底消灭它，想着想着就又睡着了，于是就一直凑合。&lt;/p&gt;
 
 &lt;p&gt;这只蚊子就是我自己开发的 bookdownplus 包。&lt;/p&gt;</description>

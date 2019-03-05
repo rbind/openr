@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Bookdownplus on Open R</title>
-    <link>/zh/tags/bookdownplus/</link>
+    <link>https://openr.netlify.com/zh/tags/bookdownplus/</link>
     <description>Recent content in Bookdownplus on Open R</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Thu, 18 Oct 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/zh/tags/bookdownplus/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://openr.netlify.com/zh/tags/bookdownplus/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>外行 R 包开发手记：bookdownplus</title>
-      <link>/zh/blog/2018/10/18/2018-10-18-bookdownplus-one-year/</link>
+      <link>https://openr.netlify.com/zh/blog/bookdownplus-one-year/</link>
       <pubDate>Thu, 18 Oct 2018 00:00:00 +0000</pubDate>
       
-      <guid>/zh/blog/2018/10/18/2018-10-18-bookdownplus-one-year/</guid>
+      <guid>https://openr.netlify.com/zh/blog/bookdownplus-one-year/</guid>
       <description>&lt;blockquote&gt;
 &lt;p&gt;春有百花秋有月，夏有凉风冬有雪 。&lt;/p&gt;
 
@@ -30,10 +30,10 @@
     
     <item>
       <title>给 Hugo 网站的插图添加阴影</title>
-      <link>/zh/blog/2018/09/26/2018-09-26-shadowed-images/</link>
+      <link>https://openr.netlify.com/zh/blog/shadowed-images/</link>
       <pubDate>Wed, 26 Sep 2018 00:00:00 +0000</pubDate>
       
-      <guid>/zh/blog/2018/09/26/2018-09-26-shadowed-images/</guid>
+      <guid>https://openr.netlify.com/zh/blog/shadowed-images/</guid>
       <description>&lt;p&gt;最近一年多，有个东西一直困扰着我，就像半夜酣睡时飞来一只蚊子，时不时在耳朵边哼哼几声，很烦。挥手赶走它继续睡，过一会儿又过来哼哼。好几次我犹豫着要不要爬起来彻底消灭它，想着想着就又睡着了，于是就一直凑合。&lt;/p&gt;
 
 &lt;p&gt;这只蚊子就是我自己开发的 bookdownplus 包。&lt;/p&gt;</description>
@@ -41,10 +41,10 @@
     
     <item>
       <title>bookdownplus gallery: a web app for displaying and sharing bookdown templates</title>
-      <link>/zh/blog/2018/09/23/2018-09-23-bookdownplus-gallery/</link>
+      <link>https://openr.netlify.com/zh/blog/bookdownplus-gallery/</link>
       <pubDate>Sun, 23 Sep 2018 16:34:39 +0000</pubDate>
       
-      <guid>/zh/blog/2018/09/23/2018-09-23-bookdownplus-gallery/</guid>
+      <guid>https://openr.netlify.com/zh/blog/bookdownplus-gallery/</guid>
       <description>&lt;p&gt;Many years ago, I collected some LaTeX templates when learning LaTeX. However, my interest in LaTeX was gone after submitting my PhD dissertation. I should have deleted these templates if they had not been so small. They would never be useful in the future, I thought.&lt;/p&gt;
 
 &lt;p&gt;In 2017, I started writing the book &lt;a href=&#34;https://xuer.pzhao.org&#34;&gt; &lt;em&gt;Learning R: R for Rookies&lt;/em&gt; &lt;/a&gt;. Unexpectedly, MS Word could not satisfy me with the typesetting. You know what I mean if you have experience (and pain) in writing a long book or dissertation with Word. Actually I suffered more, but I do not want to talk about it. I was sure that LaTeX could, but I would rather not use it.&lt;/p&gt;
@@ -54,10 +54,10 @@
     
     <item>
       <title>R bookdownplus 升级手记，以及北大论文模板</title>
-      <link>/zh/blog/2017/11/26/2017-11-26-bookdownplus_update/</link>
+      <link>https://openr.netlify.com/zh/blog/bookdownplus-update/</link>
       <pubDate>Sun, 26 Nov 2017 00:00:00 +0000</pubDate>
       
-      <guid>/zh/blog/2017/11/26/2017-11-26-bookdownplus_update/</guid>
+      <guid>https://openr.netlify.com/zh/blog/bookdownplus-update/</guid>
       <description>bookdownplus 这个 R 语言程序包，自用起来感觉不错，当初发布的时候还小得意了一把。时过境迁，现在回头看起来是越来越不满意。CRAN 上，bookdownplus 的总下载量接近三千（与此相比，bookdown 的总下载量是七万），大约每小时就有一次下载。Google ‘bookdownplus’ 可以搜到 已经有中文用户在写使用体验了。越是这样，我越惶恐，因为我知道，这个包写得粗糙，可改进的地方数都数不过来。
 HUGOMORE42 向我反馈问题的用户超出了预期，主要是兼容性的问题：在 macOS上如何，在 Linux 上如何，这些问题我都没有办法回答，因为我只在 Windows 7 上测试了，其他操作系统既无精力也无条件测试。开发个软件，自用是一回事，让别人能用完全是另外一回事，这两回事之间真是相差了一个筋斗云。
 所以我决定先把自己看不过去的问题解决一下，那就是代码的构架问题。
@@ -71,10 +71,10 @@ bookdownplus v.1.3 以后的版本包含了 20 个模板。写这个包的时候
     
     <item>
       <title>R bookdown 的小技巧</title>
-      <link>/zh/blog/2017/09/22/2017-09-22-bookdown_tips/</link>
+      <link>https://openr.netlify.com/zh/blog/bookdown-tips/</link>
       <pubDate>Fri, 22 Sep 2017 00:00:00 +0000</pubDate>
       
-      <guid>/zh/blog/2017/09/22/2017-09-22-bookdown_tips/</guid>
+      <guid>https://openr.netlify.com/zh/blog/bookdown-tips/</guid>
       <description>本帖用来收集整理 R 语言 bookdown 扩展包的一些使用技巧。有些是在网上搜来的，有些是我在别处讨论得来的，有些是我尚未发布的，都写在这里备用。
 HUGOMORE42 输出 Markdown 文件使用 bookdown 编译 Rmd 文件，可以得到的输出格式五花八门。对此，bookdown 的官方文档 有详细介绍，包括 github， pdf，epub，word，html 单个文档等，偏偏没有提 markdown 格式。
 其实，markdown 文件是有的，在编译过程里作为过渡文档存在，编译结束后自动删除。编译顺利的时候，在文件夹里“刷”地闪一下就消失了。我以前的做法是“快手”，在它消失之前迅速用 notepad++ 打开，就存下来了。这显然不是办法，凑合着过日子而已。
@@ -88,10 +88,10 @@ bookdown 的编译，我习惯按快捷键 ctrl+alt+b，或者点击右上方面
     
     <item>
       <title>如何在 R markdown 里输出 r pi 并前后加上小撇`</title>
-      <link>/zh/blog/2017/09/22/2017-09-22-backticks_in_rmd/</link>
+      <link>https://openr.netlify.com/zh/blog/backticks-in-rmd/</link>
       <pubDate>Fri, 22 Sep 2017 00:00:00 +0000</pubDate>
       
-      <guid>/zh/blog/2017/09/22/2017-09-22-backticks_in_rmd/</guid>
+      <guid>https://openr.netlify.com/zh/blog/backticks-in-rmd/</guid>
       <description>其实本文的标题应该是：如何在文章里显示 `r pi` 这样的文字。但是我不知道怎么把这个格式弄到标题里。所以，就这样凑合过吧。
 这个问题的答案，要分几层意思来说。`r pi` 是代码格式（本博客显示为粉底红字），并且包含的`符号同样是代码格式，并且 pi 并没有被编译成 3.1415927。别看它短，这三点每个都是个坑。
 HUGOMORE42 这个问题在编写 R markdown 教程时常见。其实，等你明白这个问题的答案后，会发现答案并不难，难的是如何描述这个问题。我费了好大劲，都想不出一个准确描述的办法，并且在那些支持 markdown 的论坛上，我连这个小撇都输不出来，这叫人怎么问？最后我只能这么提问：
@@ -108,10 +108,10 @@ How to display verbatim/literal inline r code with backticks using Rmarkdown?
     
     <item>
       <title>bookdownplus 的两个魔法</title>
-      <link>/zh/blog/2017/06/27/2017-06-27-bookdownplus_magic/</link>
+      <link>https://openr.netlify.com/zh/blog/bookdownplus-magic/</link>
       <pubDate>Tue, 27 Jun 2017 00:00:00 +0000</pubDate>
       
-      <guid>/zh/blog/2017/06/27/2017-06-27-bookdownplus_magic/</guid>
+      <guid>https://openr.netlify.com/zh/blog/bookdownplus-magic/</guid>
       <description>bookdown 是个好东西，只是入手有点难，酒香巷深。
 对于 R 初学者来说，如果身边没有人指导，使用者可能需要花大量精力应付 LaTeX，YAML，Pandoc，而很多初学者可能从来没听说过这些，站在 bookdown 的门口往里张望了一下，说不定就被吓跑了，从而错过了门里的精彩世界。
 bookdownplus 扩展包，可以让新手对 bookdown 快速上手。从此，bookdown 这坛好酒就不必去深巷苦寻，它就放在你手边。
@@ -128,19 +128,19 @@ for (mf in mail_font()) {for (ms in mail_style()) {for (mt in mail_theme()) {
     
     <item>
       <title>发布了 4 个 R 语言包：bookdownplus, pinyin, mindr, beginr</title>
-      <link>/archives/19377/</link>
+      <link>https://openr.netlify.com/archives/19377/</link>
       <pubDate>Fri, 23 Jun 2017 18:29:38 +0000</pubDate>
       
-      <guid>/archives/19377/</guid>
+      <guid>https://openr.netlify.com/archives/19377/</guid>
       <description>&lt;p&gt;最近，一口气往 CRAN 提交了四个 R 扩展包，所幸都被发布了，这里简单介绍一下。详细情况请来&lt;a href=&#34;http://pzhao.org&#34;&gt;我的新网站&lt;/a&gt;围观。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>R 包 bookdownplus 正式发布</title>
-      <link>/zh/blog/2017/06/22/2017-06-22-bookdownplus_released/</link>
+      <link>https://openr.netlify.com/zh/blog/bookdownplus-released/</link>
       <pubDate>Thu, 22 Jun 2017 00:00:00 +0000</pubDate>
       
-      <guid>/zh/blog/2017/06/22/2017-06-22-bookdownplus_released/</guid>
+      <guid>https://openr.netlify.com/zh/blog/bookdownplus-released/</guid>
       <description>很高兴地宣布，我的 R 语言扩展包 ‘bookdownplus v1.0.2’ (Zhao 2017a) 在 CRAN 正式发布了。本文是对’bookdownplus v1.0.2’的简要描述. 由于最近更新频繁, 最新版的’bookdownplus’更加强大和易用, 例如 ‘bookdownplus v1.2.0’ 可以一条指令生成19个模板文档的 pdf, word, html 和 epub 四种格式. 建议移步位于 GitHub 的 bookdownplus 项目主页.
 HUGOMORE42 简介bookdownplus 是对 bookdown 包 (Xie 2016) 的增强和简化, 是快速使用 bookdown 的最简洁方法。bookdown 就好比 Microsoft Word 或 \(\LaTeX\)，可以用来写文档，而 bookdownplus 提供了很多有用的模板，可以很方便地在 bookdown 平台写期刊论文、学位论文、学术海报、化学分子式、信件、日记、日历、诗集、吉他谱等各种常用文档和书籍。这是功能上的增强（+）。
 bookdownplus 使用时只需指定一个模板，给定作者和书名，就可以一键生成模板文件，用户在模板文件里照猫画虎写自己的文字就可以了，不必再花力气上网找模板、设置 YAML 和 LaTeX。这是操作上的简化（-）。
@@ -151,10 +151,10 @@ bookdownplus 各个模板的使用方法详见 R bookdownplus Textbook。这本�
     
     <item>
       <title>R bookdown&#43;: 用 R bookdown 写期刊论文、日记、信件、日历、吉他书、化学方程式</title>
-      <link>/zh/blog/2017/05/09/2017-05-09-bookdown-plus/</link>
+      <link>https://openr.netlify.com/zh/blog/bookdown-plus/</link>
       <pubDate>Tue, 09 May 2017 00:00:00 +0000</pubDate>
       
-      <guid>/zh/blog/2017/05/09/2017-05-09-bookdown-plus/</guid>
+      <guid>https://openr.netlify.com/zh/blog/bookdown-plus/</guid>
       <description>注意：本文所述的bookdown+这个项目已经停止开发，继承者是我新开的R包项目bookdownplus ，这是因为我学会了写R包。当然，说不定有些朋友不喜欢安装R包，喜欢下载个文件夹直接免安装用，那么本文所述的方法仍然可以继续使用，只是我不再更新了而已。
 HUGOMORE42 R bookdown 能做的事情很多，可是那些功能迟迟不来，我只好自己动手，写了个 bookdown+，目前大体实现了用 bookdown 写期刊论文、化学分子式、信件、日记、日历等功能。当然，有些还没完全实现，革命不够彻底，带着浓重的\(\LaTeX\)旧社会的气息。革命尚未成功，同志仍需努力。
 下面是 bookdown+ 的简介和快速使用方法。
@@ -175,10 +175,10 @@ title &amp;lt;- &amp;#39;bookdown+: Authoring Articles, Mails, Guitar books, Che
     
     <item>
       <title>用 R bookdown 写吉他谱</title>
-      <link>/archives/19291/</link>
+      <link>https://openr.netlify.com/archives/19291/</link>
       <pubDate>Thu, 06 Apr 2017 09:15:36 +0000</pubDate>
       
-      <guid>/archives/19291/</guid>
+      <guid>https://openr.netlify.com/archives/19291/</guid>
       <description>&lt;p&gt;前情提要：&lt;/p&gt;
 
 &lt;ul&gt;

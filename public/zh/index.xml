@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Open R</title>
-    <link>/zh/</link>
+    <link>https://openr.netlify.com/zh/</link>
     <description>Recent content on Open R</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Fri, 01 Feb 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/zh/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://openr.netlify.com/zh/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>纯文本编辑器的审阅模式</title>
-      <link>/zh/blog/2019/02/01/2019-02-01-txt-review-mode/</link>
+      <link>https://openr.netlify.com/zh/blog/txt-review-mode/</link>
       <pubDate>Fri, 01 Feb 2019 00:00:00 +0000</pubDate>
       
-      <guid>/zh/blog/2019/02/01/2019-02-01-txt-review-mode/</guid>
+      <guid>https://openr.netlify.com/zh/blog/txt-review-mode/</guid>
       <description>&lt;p&gt;这里说的审阅模式，指的是像 Microsoft Office Word 里的 Review 模式，可以显示修订前后的不同。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>纯文本：文献管理的终极之道</title>
-      <link>/zh/blog/2019/02/01/2019-02-01-literature-management/</link>
+      <link>https://openr.netlify.com/zh/blog/literature-management/</link>
       <pubDate>Fri, 01 Feb 2019 00:00:00 +0000</pubDate>
       
-      <guid>/zh/blog/2019/02/01/2019-02-01-literature-management/</guid>
+      <guid>https://openr.netlify.com/zh/blog/literature-management/</guid>
       <description>&lt;p&gt;​&lt;/p&gt;
 
 &lt;blockquote&gt;
@@ -43,20 +43,20 @@
     
     <item>
       <title>往 ppt 里插入 500 张图片的小伎俩</title>
-      <link>/zh/blog/2019/01/28/2019-01-28-rstudio-ppt/</link>
+      <link>https://openr.netlify.com/zh/blog/rstudio-ppt/</link>
       <pubDate>Mon, 28 Jan 2019 00:00:00 +0000</pubDate>
       
-      <guid>/zh/blog/2019/01/28/2019-01-28-rstudio-ppt/</guid>
+      <guid>https://openr.netlify.com/zh/blog/rstudio-ppt/</guid>
       <description>&lt;p&gt;今天要做个 ppt，内涵几十张照片，每页一张。
 本来想手动，突然想起来，新版 RStudio 夹带了 新版 pandoc， 而 pandoc &amp;gt; 2.0.5， 可以用 markdown 做 ppt。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>&#39;rmd&#39; 包发布：一键安装、加载和探索 R markdown 全家桶</title>
-      <link>/zh/blog/2019/01/26/2019-01-26-rmd-new/</link>
+      <link>https://openr.netlify.com/zh/blog/rmd/</link>
       <pubDate>Sat, 26 Jan 2019 00:00:00 +0000</pubDate>
       
-      <guid>/zh/blog/2019/01/26/2019-01-26-rmd-new/</guid>
+      <guid>https://openr.netlify.com/zh/blog/rmd/</guid>
       <description>&lt;p&gt;前一段时间在所里&lt;a href=&#34;http://www.pzhao.org/zh/post/r-course-slides/&#34;&gt;讲课&lt;/a&gt;，以为 R markdown 全家桶是 RStudio 默认安装的，结果发现 rticles，bookdown，citr 等居然是需要手动安装的，本来上课时间就紧张，搞得好狼狈。&lt;/p&gt;
 
 &lt;p&gt;于是写了个小包，叫 rmd。主要功能有四个：&lt;/p&gt;</description>
@@ -64,19 +64,19 @@
     
     <item>
       <title>&#39;rosr&#39; 包发布：开放科学与可重复性研究</title>
-      <link>/zh/blog/2019/01/26/2019-01-26-rosr-new/</link>
+      <link>https://openr.netlify.com/zh/blog/rosr/</link>
       <pubDate>Sat, 26 Jan 2019 00:00:00 +0000</pubDate>
       
-      <guid>/zh/blog/2019/01/26/2019-01-26-rosr-new/</guid>
+      <guid>https://openr.netlify.com/zh/blog/rosr/</guid>
       <description>&lt;p&gt;又要从前一段时间讲的那门&lt;a href=&#34;http://www.pzhao.org/zh/post/r-course-slides/&#34;&gt;R 语言，开放科学与可重复性研究&lt;/a&gt;说起了。学生们在课上情绪高涨，认为学 R 的难度跟兴趣一样大，关键是对数据、代码、产品之间的协作关系不好把握。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>啥是佩奇党</title>
-      <link>/zh/blog/2019/01/21/2019-01-21-pagedown/</link>
+      <link>https://openr.netlify.com/zh/blog/pagedown/</link>
       <pubDate>Mon, 21 Jan 2019 00:00:00 +0000</pubDate>
       
-      <guid>/zh/blog/2019/01/21/2019-01-21-pagedown/</guid>
+      <guid>https://openr.netlify.com/zh/blog/pagedown/</guid>
       <description>&lt;p&gt;最近，朋友圈被长广告《啥是佩奇》刷了屏。啥是佩奇，我不熟。我家的主流文化是小火车托马斯和海神之子波西·杰克森，坑已满，完全没有佩奇的位置。我只知道佩奇是一头动画小猪，她的形象我并不喜欢，原因是它完全无视透视原理，就像遭受过降维打击，据说是符合低龄儿童平面化的视角，而我家里的娃算是高龄儿童了，于是就没有引进。&lt;/p&gt;
 
 &lt;p&gt;然而也不是全无兴趣。比如说，佩奇的原名是啥？一搜，是 Peppa Pig。那么，应该叫做“佩帕猪”，那么为啥翻译成“佩奇”？&lt;/p&gt;
@@ -86,10 +86,10 @@
     
     <item>
       <title>mindr 包的大一统：mm() 函数</title>
-      <link>/zh/blog/2019/01/07/2019-01-07-mindr-mm/</link>
+      <link>https://openr.netlify.com/zh/blog/mindr-mm/</link>
       <pubDate>Mon, 07 Jan 2019 00:00:00 +0000</pubDate>
       
-      <guid>/zh/blog/2019/01/07/2019-01-07-mindr-mm/</guid>
+      <guid>https://openr.netlify.com/zh/blog/mindr-mm/</guid>
       <description>&lt;p&gt;&amp;lt;&lt;a href=&#34;http://www.pzhao.org/zh/post/r-with-markdown2/&#34;&gt;用 markdown 的逻辑写 R 脚本注释(2)&lt;/a&gt;&amp;gt;一文里配了张示意图，展示了 mindr 包的六个主要函数。当时我觉得，四海已定，天下太平。&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;https://github.com/pzhaonet/mindr/raw/master/showcase/mindr_concept_1.1.8.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
@@ -101,19 +101,19 @@
     
     <item>
       <title>pinyin 包升级：终于可以转换汉字向量了</title>
-      <link>/zh/blog/2018/12/20/2018-12-20-pinyin-v.1.1.5/</link>
+      <link>https://openr.netlify.com/zh/blog/pinyin-v.1.1.5/</link>
       <pubDate>Thu, 20 Dec 2018 00:00:00 +0000</pubDate>
       
-      <guid>/zh/blog/2018/12/20/2018-12-20-pinyin-v.1.1.5/</guid>
+      <guid>https://openr.netlify.com/zh/blog/pinyin-v.1.1.5/</guid>
       <description>&lt;p&gt;在&amp;lt;&lt;a href=&#34;http://www.pzhao.org/zh/post/pinyin-one-year/&#34;&gt;外行 R 包开发手记：pinyin&lt;/a&gt;&amp;gt;里我写道：R pinyin 这么个小包，连五笔字型和四角号码都能转换了，“这回应该算是一劳永逸了吧。”然而仍然错估了形势。这不，在用户提问和提需求的压力下，pinyin 包又双叒叕升级了一次。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>课件：R 语言、开放科学和可重复性研究</title>
-      <link>/zh/blog/2018/12/04/2018-12-04-r-course-slides/</link>
+      <link>https://openr.netlify.com/zh/blog/r-course-slides/</link>
       <pubDate>Tue, 04 Dec 2018 00:00:00 +0000</pubDate>
       
-      <guid>/zh/blog/2018/12/04/2018-12-04-r-course-slides/</guid>
+      <guid>https://openr.netlify.com/zh/blog/r-course-slides/</guid>
       <description>“R 语言，开放科学和可重复性研究”的课件，xaringan 包制作。这个包做幻灯片果然是可以飞起的。
 HUGOMORE42 一周课程的内容，浓缩在 5 小时讲完了。当然有意外，主要是大家遇见的 LaTeX 的各种问题不一而足。当然有惊喜，mac 用户居然全都顺利过来了。
 此外，原以为 rmarkdown 全家桶是 RStudio 默认安装的，结果发现 rticles 和 bookdown 等是需要手动安装的。我的 RStudio 已经升级好几次了，而那些包每次都在那里，所以……
@@ -122,10 +122,10 @@ HUGOMORE42 一周课程的内容，浓缩在 5 小时讲完了。当然有意�
     
     <item>
       <title>培训通知：R 语言、开放科学和可重复性研究</title>
-      <link>/zh/blog/2018/12/01/2018-12-01-r-course-announcement/</link>
+      <link>https://openr.netlify.com/zh/blog/r-course-announcement/</link>
       <pubDate>Sat, 01 Dec 2018 00:00:00 +0000</pubDate>
       
-      <guid>/zh/blog/2018/12/01/2018-12-01-r-course-announcement/</guid>
+      <guid>https://openr.netlify.com/zh/blog/r-course-announcement/</guid>
       <description>本周我们系开了三天座谈会，好几位同事和同学对 R 语言感兴趣。经过一番简单准备，下周一和周二，我将在马普化学所举办一期培训班，题为“R 语言，开放科学和可重复性研究”。
 HUGOMORE42 下面是我用 drposter 包制作的小广告：
 啊哦，还没学会怎么插入 iframe 时让海报适应高度……
@@ -135,10 +135,10 @@ yihui 说得对，css 是个好东西，值得一学，而且比 LaTeX 容易。
     
     <item>
       <title>Xaringan 主题展示</title>
-      <link>/zh/blog/2018/11/23/2018-11-23-xaringan-themes/</link>
+      <link>https://openr.netlify.com/zh/blog/xaringan-themes/</link>
       <pubDate>Fri, 23 Nov 2018 00:00:00 +0000</pubDate>
       
-      <guid>/zh/blog/2018/11/23/2018-11-23-xaringan-themes/</guid>
+      <guid>https://openr.netlify.com/zh/blog/xaringan-themes/</guid>
       <description>Xaringan 自带 16 套主题（themes），其中 10 套配有对应的 fonts.css，可惜光看名字是想象不出来模样的，挑选有困难。Xaringan 的 wiki 展示了几套漂亮的主题，但是不全。
 我把每个主题都做了一个单独的幻灯片，以便选用，然而貌似 github 不支持嵌入幻灯片，而我又没有找到批量转成 gif 的办法。
 于是就做了本网页。
@@ -166,10 +166,10 @@ chocolate
     
     <item>
       <title>animate.css: Xaringan 动画转场</title>
-      <link>/zh/blog/2018/11/23/2018-11-23-xaringan-animate-single/</link>
+      <link>https://openr.netlify.com/zh/blog/xaringan-animate-single/</link>
       <pubDate>Fri, 23 Nov 2018 00:00:00 +0000</pubDate>
       
-      <guid>/zh/blog/2018/11/23/2018-11-23-xaringan-animate-single/</guid>
+      <guid>https://openr.netlify.com/zh/blog/xaringan-animate-single/</guid>
       <description>Xaringan 的动画转场效果，可以用 animate.css 实现。只需在 yaml 里声明一下 animate.css 的路径，然后每张幻灯片开头声明一下 class 即可（或者用 layout 来批量控制连续若干片子的转场效果）。
 HUGOMORE42 下面是个完整的 Rmd 文件示例：
 ---title: &amp;quot;zoomOutUp&amp;quot;output:xaringan::moon_reader:css:- default- default-fonts- &amp;quot;https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css&amp;quot;lib_dir: libs---layout: trueclass: inverse, center, middle, animated, zoomIn---# Yeah, Xaringan has animations...---# if animate.css!---layout: falseclass: inverse, left, center, middle# Click me and press the left or right arrow to see the zoomOutUp effect.</description>
@@ -177,10 +177,10 @@ HUGOMORE42 下面是个完整的 Rmd 文件示例：
     
     <item>
       <title>mindr 幻灯片演示</title>
-      <link>/zh/blog/2018/11/21/2018-11-21-mindr-slides/</link>
+      <link>https://openr.netlify.com/zh/blog/mindr-slides/</link>
       <pubDate>Wed, 21 Nov 2018 00:00:00 +0000</pubDate>
       
-      <guid>/zh/blog/2018/11/21/2018-11-21-mindr-slides/</guid>
+      <guid>https://openr.netlify.com/zh/blog/mindr-slides/</guid>
       <description>xaringan 做的幻灯片发布到网上的好处有很多，例如凡有网处皆可访问，例如每页幻灯片都有个固定网址方便引用等等。
 发布到网上的方法有很多种，借此机会发布一下 mindr 包简介幻灯片，并简单做个笔记：
 HUGOMORE42 Github 法将 xaringan 制作的一个幻灯片的文件夹（简称幻灯片文件夹）作为一个 repo 发布到 GitHub，然后在该 repo 的settings 里开启 page 功能，就可以用 your_id.github.io/your_repo 来访问幻灯片了。
@@ -198,10 +198,10 @@ knitr::include_url(&amp;#39;hyperlink_to_your_slides&amp;#39;)参考：https://
     
     <item>
       <title>用 markdown 的逻辑写 R 脚本注释（2）</title>
-      <link>/zh/blog/2018/11/16/2018-11-16-r-with-markdown2/</link>
+      <link>https://openr.netlify.com/zh/blog/r-with-markdown2/</link>
       <pubDate>Fri, 16 Nov 2018 00:00:00 +0000</pubDate>
       
-      <guid>/zh/blog/2018/11/16/2018-11-16-r-with-markdown2/</guid>
+      <guid>https://openr.netlify.com/zh/blog/r-with-markdown2/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://www.pzhao.org/zh/post/r-with-markdown/&#34;&gt;上回&lt;/a&gt;我抱怨没有现成的函数直接把 .R 脚本转换成 .Rmd 文档，于是自作聪明写了一个，结果很快 yihui 就留言说，有啊，&lt;code&gt;knitr::spin()&lt;/code&gt; 就可以。我就去研究了一下这个函数，发现比我写的那个要漂亮得多。&lt;/p&gt;
 
 &lt;p&gt;我的心情很复杂。&lt;/p&gt;
@@ -211,10 +211,10 @@ knitr::include_url(&amp;#39;hyperlink_to_your_slides&amp;#39;)参考：https://
     
     <item>
       <title>用 markdown 的逻辑写 R 脚本注释</title>
-      <link>/zh/blog/2018/10/27/2018-10-27-r-with-markdown/</link>
+      <link>https://openr.netlify.com/zh/blog/r-with-markdown/</link>
       <pubDate>Sat, 27 Oct 2018 00:00:00 +0000</pubDate>
       
-      <guid>/zh/blog/2018/10/27/2018-10-27-r-with-markdown/</guid>
+      <guid>https://openr.netlify.com/zh/blog/r-with-markdown/</guid>
       <description>&lt;h2 id=&#34;九阳真经&#34;&gt;九阳真经&lt;/h2&gt;
 
 &lt;p&gt;跟很多业余程序员一样，我意识到给代码写注释的重要性时，已经很晚了。有多晚？差不多就是隔一段时间再打开自己写的旧代码时。我惊讶得下巴都快掉了：这是我亲手写的吗？怎么一点都看不懂？这要是有人打假说我是抄袭，那恐怕连我自己都举双手赞成。&lt;/p&gt;
@@ -230,19 +230,19 @@ knitr::include_url(&amp;#39;hyperlink_to_your_slides&amp;#39;)参考：https://
     
     <item>
       <title>让人纠结的 ggplot2</title>
-      <link>/zh/blog/2018/10/26/2018-10-26-ggplot2-problems/</link>
+      <link>https://openr.netlify.com/zh/blog/ggplot2-problems/</link>
       <pubDate>Fri, 26 Oct 2018 00:00:00 +0000</pubDate>
       
-      <guid>/zh/blog/2018/10/26/2018-10-26-ggplot2-problems/</guid>
+      <guid>https://openr.netlify.com/zh/blog/ggplot2-problems/</guid>
       <description>&lt;p&gt;R 语言的 ggplot2 包很美很酷。比如，基于 ggplot2 做出的配对儿图是这样的：&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>如何在 R 语言相关论坛求助</title>
-      <link>/zh/blog/2018/10/24/2018-10-24-calling-for-help/</link>
+      <link>https://openr.netlify.com/zh/blog/how-to-call-for-help/</link>
       <pubDate>Wed, 24 Oct 2018 00:00:00 +0000</pubDate>
       
-      <guid>/zh/blog/2018/10/24/2018-10-24-calling-for-help/</guid>
+      <guid>https://openr.netlify.com/zh/blog/how-to-call-for-help/</guid>
       <description>&lt;p&gt;求助！求助！十万火急！&lt;/p&gt;
 
 &lt;p&gt;在 R 语言相关论坛发布求助帖之后，是不是急着等人响应？可惜惊叹号没啥用。如果按以下格式发帖，效果会胜过十万个惊叹号。&lt;/p&gt;</description>
@@ -250,19 +250,19 @@ knitr::include_url(&amp;#39;hyperlink_to_your_slides&amp;#39;)参考：https://
     
     <item>
       <title>外行 R 包开发手记：mindr</title>
-      <link>/zh/blog/2018/10/20/2018-10-20-mindr-one-year/</link>
+      <link>https://openr.netlify.com/zh/blog/mindr-one-year/</link>
       <pubDate>Sat, 20 Oct 2018 00:00:00 +0000</pubDate>
       
-      <guid>/zh/blog/2018/10/20/2018-10-20-mindr-one-year/</guid>
+      <guid>https://openr.netlify.com/zh/blog/mindr-one-year/</guid>
       <description>&lt;p&gt;在 CRAN 发布的几个包里， 我对 mindr 情有独钟。它像 pinyin 包一样，结构简单清晰。它得到的用户反馈不像 bookdownplus 包那样让我手足无措。相反，在跟用户的互动中，mindr 在成长，越来越酷。开发升级 mindr，是个很愉快的过程。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>外行 R 包开发手记：pinyin</title>
-      <link>/zh/blog/2018/10/19/2018-10-19-pinyin-one-year/</link>
+      <link>https://openr.netlify.com/zh/blog/pinyin-one-year/</link>
       <pubDate>Fri, 19 Oct 2018 00:00:00 +0000</pubDate>
       
-      <guid>/zh/blog/2018/10/19/2018-10-19-pinyin-one-year/</guid>
+      <guid>https://openr.netlify.com/zh/blog/pinyin-one-year/</guid>
       <description>&lt;p&gt;玩 bookdown 直接催生了两个包的诞生。上一篇说了  bookdownplus， 这回说说 pinyin。&lt;/p&gt;
 
 &lt;p&gt;时隔一年多，我再回头去看 pinyin 这个包，就跟回顾 bookdownplus 是类似的：这玩意儿也算个包？&lt;/p&gt;</description>
@@ -270,10 +270,10 @@ knitr::include_url(&amp;#39;hyperlink_to_your_slides&amp;#39;)参考：https://
     
     <item>
       <title>外行 R 包开发手记：bookdownplus</title>
-      <link>/zh/blog/2018/10/18/2018-10-18-bookdownplus-one-year/</link>
+      <link>https://openr.netlify.com/zh/blog/bookdownplus-one-year/</link>
       <pubDate>Thu, 18 Oct 2018 00:00:00 +0000</pubDate>
       
-      <guid>/zh/blog/2018/10/18/2018-10-18-bookdownplus-one-year/</guid>
+      <guid>https://openr.netlify.com/zh/blog/bookdownplus-one-year/</guid>
       <description>&lt;blockquote&gt;
 &lt;p&gt;春有百花秋有月，夏有凉风冬有雪 。&lt;/p&gt;
 
@@ -287,10 +287,10 @@ knitr::include_url(&amp;#39;hyperlink_to_your_slides&amp;#39;)参考：https://
     
     <item>
       <title>给 Hugo 网站的插图添加阴影</title>
-      <link>/zh/blog/2018/09/26/2018-09-26-shadowed-images/</link>
+      <link>https://openr.netlify.com/zh/blog/shadowed-images/</link>
       <pubDate>Wed, 26 Sep 2018 00:00:00 +0000</pubDate>
       
-      <guid>/zh/blog/2018/09/26/2018-09-26-shadowed-images/</guid>
+      <guid>https://openr.netlify.com/zh/blog/shadowed-images/</guid>
       <description>&lt;p&gt;最近一年多，有个东西一直困扰着我，就像半夜酣睡时飞来一只蚊子，时不时在耳朵边哼哼几声，很烦。挥手赶走它继续睡，过一会儿又过来哼哼。好几次我犹豫着要不要爬起来彻底消灭它，想着想着就又睡着了，于是就一直凑合。&lt;/p&gt;
 
 &lt;p&gt;这只蚊子就是我自己开发的 bookdownplus 包。&lt;/p&gt;</description>
@@ -298,10 +298,10 @@ knitr::include_url(&amp;#39;hyperlink_to_your_slides&amp;#39;)参考：https://
     
     <item>
       <title>bookdownplus gallery: a web app for displaying and sharing bookdown templates</title>
-      <link>/zh/blog/2018/09/23/2018-09-23-bookdownplus-gallery/</link>
+      <link>https://openr.netlify.com/zh/blog/bookdownplus-gallery/</link>
       <pubDate>Sun, 23 Sep 2018 16:34:39 +0000</pubDate>
       
-      <guid>/zh/blog/2018/09/23/2018-09-23-bookdownplus-gallery/</guid>
+      <guid>https://openr.netlify.com/zh/blog/bookdownplus-gallery/</guid>
       <description>&lt;p&gt;Many years ago, I collected some LaTeX templates when learning LaTeX. However, my interest in LaTeX was gone after submitting my PhD dissertation. I should have deleted these templates if they had not been so small. They would never be useful in the future, I thought.&lt;/p&gt;
 
 &lt;p&gt;In 2017, I started writing the book &lt;a href=&#34;https://xuer.pzhao.org&#34;&gt; &lt;em&gt;Learning R: R for Rookies&lt;/em&gt; &lt;/a&gt;. Unexpectedly, MS Word could not satisfy me with the typesetting. You know what I mean if you have experience (and pain) in writing a long book or dissertation with Word. Actually I suffered more, but I do not want to talk about it. I was sure that LaTeX could, but I would rather not use it.&lt;/p&gt;
@@ -311,10 +311,10 @@ knitr::include_url(&amp;#39;hyperlink_to_your_slides&amp;#39;)参考：https://
     
     <item>
       <title>R bookdown 用户的狂欢节：首届 bookdown 大奖赛</title>
-      <link>/zh/blog/2018/09/07/2018-09-07_bookdown-contest/</link>
+      <link>https://openr.netlify.com/zh/blog/bookdown-contest/</link>
       <pubDate>Fri, 07 Sep 2018 00:00:00 +0000</pubDate>
       
-      <guid>/zh/blog/2018/09/07/2018-09-07_bookdown-contest/</guid>
+      <guid>https://openr.netlify.com/zh/blog/bookdown-contest/</guid>
       <description>&lt;p&gt;这是令我感到非常困惑的一件事情：首届 bookdown 大奖赛已经开赛一个多月了，距离截止日期还剩三周，奖品超级丰厚，可是参赛的稿件只有寥寥十篇。目前看来，只要参加就有奖！奖品价值 150 元到 3000 元不等！&lt;/p&gt;
 
 &lt;p&gt;不知道人们还在等个啥……&lt;/p&gt;</description>
@@ -322,28 +322,28 @@ knitr::include_url(&amp;#39;hyperlink_to_your_slides&amp;#39;)参考：https://
     
     <item>
       <title>[New Project] advr: an R package for the scientific research on trace gas advection flux density</title>
-      <link>/zh/blog/2018/06/14/2018-06-14-advr/</link>
+      <link>https://openr.netlify.com/zh/blog/advr/</link>
       <pubDate>Thu, 14 Jun 2018 13:26:33 +0000</pubDate>
       
-      <guid>/zh/blog/2018/06/14/2018-06-14-advr/</guid>
+      <guid>https://openr.netlify.com/zh/blog/advr/</guid>
       <description>&lt;p&gt;Carbon dioxide (CO~2~) is one of the key green house gases which play an important role in the global climate change. In academia, the sources and sinks of CO~2~ are estimated with the flux density, e.g. the amount of CO~2~ passing through a unit area in a unit time. Estimates of net ecosystem CO~2~ exchange have been attracting a lot of attention. The research on the advection flux takes care of the contribution of the advection term to the CO~2~ balance.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>当 github 的项目做了可视化，我感觉像是上帝在创世纪</title>
-      <link>/zh/blog/2018/06/08/2018-06-08_gource/</link>
+      <link>https://openr.netlify.com/zh/blog/gource/</link>
       <pubDate>Fri, 08 Jun 2018 00:00:00 +0000</pubDate>
       
-      <guid>/zh/blog/2018/06/08/2018-06-08_gource/</guid>
+      <guid>https://openr.netlify.com/zh/blog/gource/</guid>
       <description>&lt;p&gt;用 blogdown 制作和维护本博客已经一年有余。昨天，我把本网站的发展过程做了一个 5 分钟的视频，从开始到现在。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>独狼死，群狼活：R 语言女子学习小组 &amp; 书友之窗</title>
-      <link>/zh/blog/2018/05/27/2018-05-27_xuer-girls/</link>
+      <link>https://openr.netlify.com/zh/blog/xuer-girls/</link>
       <pubDate>Sun, 27 May 2018 00:00:00 +0000</pubDate>
       
-      <guid>/zh/blog/2018/05/27/2018-05-27_xuer-girls/</guid>
+      <guid>https://openr.netlify.com/zh/blog/xuer-girls/</guid>
       <description>&lt;p&gt;文科女生 @dancingapple 买了《学 R》这本书，&lt;a href=&#34;http://xuer.dapengde.com/post/dancingapple/&#34;&gt;郑重宣告&lt;/a&gt;开始学习 R 语言。这个圈子里，据我所知，买了这书的还有：&lt;/p&gt;
 
 &lt;p&gt;@tvb, @nostalgic1212, @veronicazhu, @hqy&amp;hellip;&lt;/p&gt;
@@ -355,28 +355,28 @@ knitr::include_url(&amp;#39;hyperlink_to_your_slides&amp;#39;)参考：https://
     
     <item>
       <title>答《学 R》读者</title>
-      <link>/zh/blog/2018/05/26/2018-05-26_xuer-faq/</link>
+      <link>https://openr.netlify.com/zh/blog/xuer-faq/</link>
       <pubDate>Sat, 26 May 2018 00:00:00 +0000</pubDate>
       
-      <guid>/zh/blog/2018/05/26/2018-05-26_xuer-faq/</guid>
+      <guid>https://openr.netlify.com/zh/blog/xuer-faq/</guid>
       <description>&lt;p&gt;我主笔的《&lt;a href=&#34;http://xuer.pzhao.net/&#34;&gt;学 R&lt;/a&gt;》一书正在热销。有些朋友问了一些问题，我在此一并作答。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>我主笔的《学 R：零基础学习 R 语言》一书已面世</title>
-      <link>/zh/blog/2018/05/18/2018-05-18_xuer-sale/</link>
+      <link>https://openr.netlify.com/zh/blog/xuer-sale/</link>
       <pubDate>Fri, 18 May 2018 00:00:00 +0000</pubDate>
       
-      <guid>/zh/blog/2018/05/18/2018-05-18_xuer-sale/</guid>
+      <guid>https://openr.netlify.com/zh/blog/xuer-sale/</guid>
       <description>&lt;p&gt;书终于印好面世了。感谢北大的朱彤教授和 RStudio 公司的谢益辉博士慷慨作序。据我所知，这应该是国内第一本用 R bookdown 包来写作和排版的书。书的主页是 &lt;a href=&#34;http://xuer.pzhao.net&#34;&gt;http://xuer.pzhao.net&lt;/a&gt;。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>如何妥当地复制或同步文件</title>
-      <link>/zh/blog/2018/02/04/2018-02-04_sync/</link>
+      <link>https://openr.netlify.com/zh/blog/sync/</link>
       <pubDate>Sun, 04 Feb 2018 00:00:00 +0000</pubDate>
       
-      <guid>/zh/blog/2018/02/04/2018-02-04_sync/</guid>
+      <guid>https://openr.netlify.com/zh/blog/sync/</guid>
       <description>事情的起因是这样的：有人在群里问了个技术问题：从 Ubuntu 操作系统的电脑里，往另一台电脑里拷贝或同步一批文件，该如何操作？
 虽然问题是针对 Ubuntu，但我们的解决方案对 Windows 和 Mac 用户也是大有用处的。
 HUGOMORE42 最方便的是网盘。
@@ -400,10 +400,10 @@ syncthing 也是 P2P 同步工具，而且是开源的。这意味着，全世�
     
     <item>
       <title>Windows 的又一个坑：R writeLines() 函数的换行符</title>
-      <link>/zh/blog/2018/01/18/2018-01-18_writelines/</link>
+      <link>https://openr.netlify.com/zh/blog/r-writelines-line-break/</link>
       <pubDate>Thu, 18 Jan 2018 00:00:00 +0000</pubDate>
       
-      <guid>/zh/blog/2018/01/18/2018-01-18_writelines/</guid>
+      <guid>https://openr.netlify.com/zh/blog/r-writelines-line-break/</guid>
       <description>昨天，又被 Windows 坑到了。
 事情的背景是，我的工作环境是 Windows 操作系统。由于一些众所周知的原因，有些事情在 Linux 下做起来比较顺当。于是，我就用 virtualbox 装了个虚拟的 Ubuntu。由于不熟，只用到其中很小一部分功能，所以，凡是能在 Windows 下做的事情，我绝不去 Ubuntu。
 HUGOMORE42 昨天，我要写一批 bash 批处理文件，打算在 Ubuntu 里运行。这批 .sh 文件结构格式相同，只是内容略有不同。于是，我就动了点小心思，用 R 语言批量写好了文件内容，最后用 writeLines() 函数生成了这批 .sh 文件。
@@ -421,10 +421,10 @@ cd ~ls然后另存为 test.sh 文件，用来测试。运行 test.sh，结果�
     
     <item>
       <title>我把青春献给你：排版 (4)</title>
-      <link>/zh/blog/2018/01/17/2018-01-17-latex-and-me-4/</link>
+      <link>https://openr.netlify.com/zh/blog/latex-and-me-4/</link>
       <pubDate>Wed, 17 Jan 2018 00:00:00 +0000</pubDate>
       
-      <guid>/zh/blog/2018/01/17/2018-01-17-latex-and-me-4/</guid>
+      <guid>https://openr.netlify.com/zh/blog/latex-and-me-4/</guid>
       <description>9
 bookdown 或者说 Pandoc 的伟大之处，就是把原先必须在 LaTeX 里做的事情，99.9% 都可以用 markdown 语法完成。剩下的 0.1%，例如公式、索引、控制换行、临时改变字体字号、强制分页等操作，所涉及的 LaTeX 命令都很简单（$$, \index{}、\mbox{}、\small、\newpage），偶尔用一下无伤大雅。只需找个漂亮的编辑器，在 bookdown 下写作就有不错的体验，而生成的 pdf 文档处处透露着 LaTeX 的优雅。平时自用一下，美得不行，仿佛梅开二度，枯木逢春。我为 bookdown 量身制作了 bookdownplus，pinyin 和 mindr 几个扩展包，沉浸在美妙之中不可自拔。
 HUGOMORE42 但是，直到这次真正给《学 R》排版，真正要送到印刷厂印个几千本的时候，光有 bookdown 的现成模板就不够用了。《学 R》是本中文书，LaTeX 对中文的支持先天不足，很多细小的问题，得自己一个一个抠。
@@ -441,10 +441,10 @@ HUGOMORE42 但是，直到这次真正给《学 R》排版，真正要送到印�
     
     <item>
       <title>我把青春献给你：排版 (3)</title>
-      <link>/zh/blog/2017/12/23/2017-12-23-latex-and-me-3/</link>
+      <link>https://openr.netlify.com/zh/blog/latex-and-me-3/</link>
       <pubDate>Sat, 23 Dec 2017 00:00:00 +0000</pubDate>
       
-      <guid>/zh/blog/2017/12/23/2017-12-23-latex-and-me-3/</guid>
+      <guid>https://openr.netlify.com/zh/blog/latex-and-me-3/</guid>
       <description>7
 LaTeX 做出来的文档，确实漂亮。这种漂亮不是那种一眼就能看出哪儿漂亮的漂亮，而是一种说不出来的气质。这种气质来自字体、间距、断字等等诸多细节的堆积和交互作用。只要是用过 LaTeX 的人，拿来个文档用鼻子一闻，就知道是 Word 做的还是 LaTeX 做的。就好像你遇到了你的另一半，让你神魂颠倒，可就是说不出她究竟好在哪里; 她走在人群里，你一眼就能找到她。因为你眼里没别人。
 HUGOMORE42 然而，这种气质不是能轻易把握的。LaTeX 最为奇特的是，你为她投入了无数的时间，却竟然说不清楚到底是因为她太好还是她太糟。如果她太好，为何这么难用？如果她太糟，为何你甘心为她付出？
@@ -471,10 +471,10 @@ bookdown，就是攻陷特洛伊的木马; 里面藏着的，除了我的旧爱 
     
     <item>
       <title>R bookdownplus 升级手记，以及北大论文模板</title>
-      <link>/zh/blog/2017/11/26/2017-11-26-bookdownplus_update/</link>
+      <link>https://openr.netlify.com/zh/blog/bookdownplus-update/</link>
       <pubDate>Sun, 26 Nov 2017 00:00:00 +0000</pubDate>
       
-      <guid>/zh/blog/2017/11/26/2017-11-26-bookdownplus_update/</guid>
+      <guid>https://openr.netlify.com/zh/blog/bookdownplus-update/</guid>
       <description>bookdownplus 这个 R 语言程序包，自用起来感觉不错，当初发布的时候还小得意了一把。时过境迁，现在回头看起来是越来越不满意。CRAN 上，bookdownplus 的总下载量接近三千（与此相比，bookdown 的总下载量是七万），大约每小时就有一次下载。Google ‘bookdownplus’ 可以搜到 已经有中文用户在写使用体验了。越是这样，我越惶恐，因为我知道，这个包写得粗糙，可改进的地方数都数不过来。
 HUGOMORE42 向我反馈问题的用户超出了预期，主要是兼容性的问题：在 macOS上如何，在 Linux 上如何，这些问题我都没有办法回答，因为我只在 Windows 7 上测试了，其他操作系统既无精力也无条件测试。开发个软件，自用是一回事，让别人能用完全是另外一回事，这两回事之间真是相差了一个筋斗云。
 所以我决定先把自己看不过去的问题解决一下，那就是代码的构架问题。
@@ -488,19 +488,19 @@ bookdownplus v.1.3 以后的版本包含了 20 个模板。写这个包的时候
     
     <item>
       <title>全面迁站：从 Wordpress 到 Hugo</title>
-      <link>/zh/blog/2017/11/25/2017-11-25-migrated-to-hugo/</link>
+      <link>https://openr.netlify.com/zh/blog/migrated-to-hugo/</link>
       <pubDate>Sat, 25 Nov 2017 00:00:00 +0000</pubDate>
       
-      <guid>/zh/blog/2017/11/25/2017-11-25-migrated-to-hugo/</guid>
+      <guid>https://openr.netlify.com/zh/blog/migrated-to-hugo/</guid>
       <description>&lt;p&gt;从今天起，我的旧博客 dapengde.com 停止更新。旧博客的全部帖子已经搬到了 &lt;a href=&#34;http://www.pzhao.org&#34;&gt;pzhao.org&lt;/a&gt;，欢迎收藏（ctrl + d）和&lt;a href=&#34;http://www.pzhao.org/zh/index.xml&#34;&gt;订阅&lt;/a&gt;。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>我把青春献给你：排版 (2)</title>
-      <link>/zh/blog/2017/11/22/2017-11-22-latex-and-me-2/</link>
+      <link>https://openr.netlify.com/zh/blog/latex-and-me-2/</link>
       <pubDate>Wed, 22 Nov 2017 00:00:00 +0000</pubDate>
       
-      <guid>/zh/blog/2017/11/22/2017-11-22-latex-and-me-2/</guid>
+      <guid>https://openr.netlify.com/zh/blog/latex-and-me-2/</guid>
       <description>5
 如果上一篇帖子让你以为我在为 \(\LaTeX\) 做广告，呵呵，那你就上当了。为啥？
 因为我早就抛弃 LaTeX 了。
@@ -526,10 +526,10 @@ Linux 和 R 的血泪史按下不表，今天只说 LaTeX。
     
     <item>
       <title>我把青春献给你：排版 (1)</title>
-      <link>/zh/blog/2017/11/21/2017-11-21-latex-and-me-1/</link>
+      <link>https://openr.netlify.com/zh/blog/latex-and-me-1/</link>
       <pubDate>Tue, 21 Nov 2017 00:00:00 +0000</pubDate>
       
-      <guid>/zh/blog/2017/11/21/2017-11-21-latex-and-me-1/</guid>
+      <guid>https://openr.netlify.com/zh/blog/latex-and-me-1/</guid>
       <description>1
 2017 年快要过去了。如果剩下这四十天不出什么幺蛾子的话，我今年的最蠢事情排行榜，基本是板上钉钉。名列榜首的，就是过早给《学 R》一书大肆宣传。跟罗永浩当年头一回卖锤子手机一样一样的，还没量产，就先吹牛，结果吹破了，打了自己的脸。
 HUGOMORE42 其实，这本书早在今年 6 月就写完了，7 月做了最后一次修改。当时书号已经批了，封面也有了模样，我以为马上就能印出来了，于是告诉了我能告诉的每一个朋友。朋友们都很讲义气，把白花花的银子拍在桌上，就等着付钱买了。当了教授的老同学说：放心，到时候我送给我的学生人手一本！
@@ -564,19 +564,19 @@ Y 立刻对我说：“我明白问题出在哪里了！”
     
     <item>
       <title>Build a mirror/backup site for your own steem posts in 30 minutes - 30 分钟搭建自己的 steem 镜像备份网站</title>
-      <link>/zh/blog/2017/11/06/2017-11-06-build-a-mirror/</link>
+      <link>https://openr.netlify.com/zh/blog/build-a-mirror-backup-site-for-your-own-steem-posts-in-30-minutes-or-30-steem/</link>
       <pubDate>Mon, 06 Nov 2017 09:44:42 +0000</pubDate>
       
-      <guid>/zh/blog/2017/11/06/2017-11-06-build-a-mirror/</guid>
+      <guid>https://openr.netlify.com/zh/blog/build-a-mirror-backup-site-for-your-own-steem-posts-in-30-minutes-or-30-steem/</guid>
       <description>&lt;p&gt;Yesterday, I built two mirror sites for my steem posts (&lt;a href=&#34;https://dapeng.netlify.com/&#34;&gt;mirror 1&lt;/a&gt;，&lt;a href=&#34;https://steemit.netlify.com/&#34;&gt;mirror 2&lt;/a&gt;) as backups, which are synced automatically everyday, thanks to steemsql and steemdata. The mirror sites are very useful:&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>R bookdown 的小技巧</title>
-      <link>/zh/blog/2017/09/22/2017-09-22-bookdown_tips/</link>
+      <link>https://openr.netlify.com/zh/blog/bookdown-tips/</link>
       <pubDate>Fri, 22 Sep 2017 00:00:00 +0000</pubDate>
       
-      <guid>/zh/blog/2017/09/22/2017-09-22-bookdown_tips/</guid>
+      <guid>https://openr.netlify.com/zh/blog/bookdown-tips/</guid>
       <description>本帖用来收集整理 R 语言 bookdown 扩展包的一些使用技巧。有些是在网上搜来的，有些是我在别处讨论得来的，有些是我尚未发布的，都写在这里备用。
 HUGOMORE42 输出 Markdown 文件使用 bookdown 编译 Rmd 文件，可以得到的输出格式五花八门。对此，bookdown 的官方文档 有详细介绍，包括 github， pdf，epub，word，html 单个文档等，偏偏没有提 markdown 格式。
 其实，markdown 文件是有的，在编译过程里作为过渡文档存在，编译结束后自动删除。编译顺利的时候，在文件夹里“刷”地闪一下就消失了。我以前的做法是“快手”，在它消失之前迅速用 notepad++ 打开，就存下来了。这显然不是办法，凑合着过日子而已。
@@ -590,10 +590,10 @@ bookdown 的编译，我习惯按快捷键 ctrl+alt+b，或者点击右上方面
     
     <item>
       <title>如何在 R markdown 里输出 r pi 并前后加上小撇`</title>
-      <link>/zh/blog/2017/09/22/2017-09-22-backticks_in_rmd/</link>
+      <link>https://openr.netlify.com/zh/blog/backticks-in-rmd/</link>
       <pubDate>Fri, 22 Sep 2017 00:00:00 +0000</pubDate>
       
-      <guid>/zh/blog/2017/09/22/2017-09-22-backticks_in_rmd/</guid>
+      <guid>https://openr.netlify.com/zh/blog/backticks-in-rmd/</guid>
       <description>其实本文的标题应该是：如何在文章里显示 `r pi` 这样的文字。但是我不知道怎么把这个格式弄到标题里。所以，就这样凑合过吧。
 这个问题的答案，要分几层意思来说。`r pi` 是代码格式（本博客显示为粉底红字），并且包含的`符号同样是代码格式，并且 pi 并没有被编译成 3.1415927。别看它短，这三点每个都是个坑。
 HUGOMORE42 这个问题在编写 R markdown 教程时常见。其实，等你明白这个问题的答案后，会发现答案并不难，难的是如何描述这个问题。我费了好大劲，都想不出一个准确描述的办法，并且在那些支持 markdown 的论坛上，我连这个小撇都输不出来，这叫人怎么问？最后我只能这么提问：
@@ -610,28 +610,28 @@ How to display verbatim/literal inline r code with backticks using Rmarkdown?
     
     <item>
       <title>Typora: 一款无可挑剔的 Markdown 编辑器</title>
-      <link>/archives/19522/</link>
+      <link>https://openr.netlify.com/archives/19522/</link>
       <pubDate>Mon, 18 Sep 2017 12:43:59 +0000</pubDate>
       
-      <guid>/archives/19522/</guid>
+      <guid>https://openr.netlify.com/archives/19522/</guid>
       <description>&lt;p&gt;我郑重推荐一款免费开源、老少咸宜的编辑器：&lt;a href=&#34;https://typora.io/&#34;&gt;Typora&lt;/a&gt;。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>关于书封面设计的讨论</title>
-      <link>/archives/19401/</link>
+      <link>https://openr.netlify.com/archives/19401/</link>
       <pubDate>Tue, 27 Jun 2017 09:19:57 +0000</pubDate>
       
-      <guid>/archives/19401/</guid>
+      <guid>https://openr.netlify.com/archives/19401/</guid>
       <description>&lt;p&gt;昨天发了新书封面设计的三个方案. 我在微信朋友圈也征求大家的意见, 综合我博客上为数不多的投票, 汇总的结果是 白色 : 黑色 : 蓝色方案 为 2:10:8.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>bookdownplus 的两个魔法</title>
-      <link>/zh/blog/2017/06/27/2017-06-27-bookdownplus_magic/</link>
+      <link>https://openr.netlify.com/zh/blog/bookdownplus-magic/</link>
       <pubDate>Tue, 27 Jun 2017 00:00:00 +0000</pubDate>
       
-      <guid>/zh/blog/2017/06/27/2017-06-27-bookdownplus_magic/</guid>
+      <guid>https://openr.netlify.com/zh/blog/bookdownplus-magic/</guid>
       <description>bookdown 是个好东西，只是入手有点难，酒香巷深。
 对于 R 初学者来说，如果身边没有人指导，使用者可能需要花大量精力应付 LaTeX，YAML，Pandoc，而很多初学者可能从来没听说过这些，站在 bookdown 的门口往里张望了一下，说不定就被吓跑了，从而错过了门里的精彩世界。
 bookdownplus 扩展包，可以让新手对 bookdown 快速上手。从此，bookdown 这坛好酒就不必去深巷苦寻，它就放在你手边。
@@ -648,19 +648,19 @@ for (mf in mail_font()) {for (ms in mail_style()) {for (mt in mail_theme()) {
     
     <item>
       <title>发布了 4 个 R 语言包：bookdownplus, pinyin, mindr, beginr</title>
-      <link>/archives/19377/</link>
+      <link>https://openr.netlify.com/archives/19377/</link>
       <pubDate>Fri, 23 Jun 2017 18:29:38 +0000</pubDate>
       
-      <guid>/archives/19377/</guid>
+      <guid>https://openr.netlify.com/archives/19377/</guid>
       <description>&lt;p&gt;最近，一口气往 CRAN 提交了四个 R 扩展包，所幸都被发布了，这里简单介绍一下。详细情况请来&lt;a href=&#34;http://pzhao.org&#34;&gt;我的新网站&lt;/a&gt;围观。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>R 初学者包 beginr 在 CRAN 正式发布</title>
-      <link>/zh/blog/2017/06/23/2017-06-23-beginr_released/</link>
+      <link>https://openr.netlify.com/zh/blog/beginr-released/</link>
       <pubDate>Fri, 23 Jun 2017 00:00:00 +0000</pubDate>
       
-      <guid>/zh/blog/2017/06/23/2017-06-23-beginr_released/</guid>
+      <guid>https://openr.netlify.com/zh/blog/beginr-released/</guid>
       <description>又一次高兴地宣布, 我的 R 语言扩展包 ‘beginr’ (Zhao 2017a) 在 CRAN 正式发布了.
 HUGOMORE42 简介beginr是我为 R 语言初学者和自己写的工具包, 是我这些年来收集和自己编写的一些简化操作的函数和备忘录, 可能对中级用户也有帮助. 其实这个包的文档我写得不够详细, 有些函数还没来及整理进去, 之所以匆匆发布, 是想先把 ‘beginr’ 这个名字给占住. 毕竟, 我中意的名字如 ‘learnr’, ’startr’都被别人用过了.
 安装方法：
@@ -671,10 +671,10 @@ beginr::plotpch()beginr::plotlty()beginr::plottype()beginr::plotcolors()begi
     
     <item>
       <title>R 包 bookdownplus 正式发布</title>
-      <link>/zh/blog/2017/06/22/2017-06-22-bookdownplus_released/</link>
+      <link>https://openr.netlify.com/zh/blog/bookdownplus-released/</link>
       <pubDate>Thu, 22 Jun 2017 00:00:00 +0000</pubDate>
       
-      <guid>/zh/blog/2017/06/22/2017-06-22-bookdownplus_released/</guid>
+      <guid>https://openr.netlify.com/zh/blog/bookdownplus-released/</guid>
       <description>很高兴地宣布，我的 R 语言扩展包 ‘bookdownplus v1.0.2’ (Zhao 2017a) 在 CRAN 正式发布了。本文是对’bookdownplus v1.0.2’的简要描述. 由于最近更新频繁, 最新版的’bookdownplus’更加强大和易用, 例如 ‘bookdownplus v1.2.0’ 可以一条指令生成19个模板文档的 pdf, word, html 和 epub 四种格式. 建议移步位于 GitHub 的 bookdownplus 项目主页.
 HUGOMORE42 简介bookdownplus 是对 bookdown 包 (Xie 2016) 的增强和简化, 是快速使用 bookdown 的最简洁方法。bookdown 就好比 Microsoft Word 或 \(\LaTeX\)，可以用来写文档，而 bookdownplus 提供了很多有用的模板，可以很方便地在 bookdown 平台写期刊论文、学位论文、学术海报、化学分子式、信件、日记、日历、诗集、吉他谱等各种常用文档和书籍。这是功能上的增强（+）。
 bookdownplus 使用时只需指定一个模板，给定作者和书名，就可以一键生成模板文件，用户在模板文件里照猫画虎写自己的文字就可以了，不必再花力气上网找模板、设置 YAML 和 LaTeX。这是操作上的简化（-）。
@@ -685,10 +685,10 @@ bookdownplus 各个模板的使用方法详见 R bookdownplus Textbook。这本�
     
     <item>
       <title>LaTeX 公式转换成 Word 公式</title>
-      <link>/zh/blog/2017/06/20/2017-06-20-latex-equations-to-word/</link>
+      <link>https://openr.netlify.com/zh/blog/latex-equations-to-word/</link>
       <pubDate>Tue, 20 Jun 2017 00:00:00 +0000</pubDate>
       
-      <guid>/zh/blog/2017/06/20/2017-06-20-latex-equations-to-word/</guid>
+      <guid>https://openr.netlify.com/zh/blog/latex-equations-to-word/</guid>
       <description>最近写了篇论文，投往一家学术期刊。投稿时，Word 格式和 \(\LaTeX\) 格式可以任选，我选了 Word，是因为合作作者用 Word。可是，文稿里的公式是我输入的，而那些公式在我的博士论文里是用 \(\LaTeX\) 写的。为了图省事，我就用了 Word 的插件Aurora，这样，只需把公式的 \(\LaTeX\) 代码往 Word 文档的 Aurora 域里拷贝粘贴，bingo！公式就渲染好了，比 Word 的自带公式漂亮一些。
 HUGOMORE42 这篇论文很顺利，很快被接收了。到了最后一步的时候，编辑部要我把文档里的公式修改成可编辑的格式。——本来就是可编辑的呀。嗯，大概是编辑部不使用Aurora，那么他们的 Word 打开我的文档里看到的公式自然就是没法编辑的了。我懒得解释，最后决定把公式全部转换成 Word 公式。
 \(\LaTeX\) 公式转成 Word 公式并不难，只需三步：\(\LaTeX\) –&amp;gt; MathML –&amp;gt; 修改 –&amp;gt; Word.
@@ -699,10 +699,10 @@ HUGOMORE42 这篇论文很顺利，很快被接收了。到了最后一步的时
     
     <item>
       <title>R包发布记</title>
-      <link>/zh/blog/2017/06/19/2017-06-19-publish-r-packages/</link>
+      <link>https://openr.netlify.com/zh/blog/publish-r-packages/</link>
       <pubDate>Mon, 19 Jun 2017 00:00:00 +0000</pubDate>
       
-      <guid>/zh/blog/2017/06/19/2017-06-19-publish-r-packages/</guid>
+      <guid>https://openr.netlify.com/zh/blog/publish-r-packages/</guid>
       <description>最近，我把mindr，pinyin 和 bookdownplus 三个包都提交到了 CRAN。这三个包都很简单，我就是想体验一下发布R包的流程，免得将来学R那本书出版了被问起来，答不上来就丢人了，另外也算是承接菜鸟致简速成那篇帖子，里面只谈了野包的发布分享，而只有提交到了 CRAN，野包才算转正。
 HUGOMORE42 很快，这三个包都成功转正，可以正常安装了：
 install.packages(&amp;#39;mindr&amp;#39;)install.packages(&amp;#39;pinyin&amp;#39;)install.packages(&amp;#39;bookdownplus&amp;#39;)这里说说发布的过程和我遇到的一些问题。
@@ -720,10 +720,10 @@ install.packages(&amp;#39;mindr&amp;#39;)install.packages(&amp;#39;pinyin&amp;#
     
     <item>
       <title>《学R》序（朱彤）</title>
-      <link>/zh/blog/2017/06/14/2017-06-14-preface-zhu/</link>
+      <link>https://openr.netlify.com/zh/blog/preface_zhu/</link>
       <pubDate>Wed, 14 Jun 2017 00:00:00 +0000</pubDate>
       
-      <guid>/zh/blog/2017/06/14/2017-06-14-preface-zhu/</guid>
+      <guid>https://openr.netlify.com/zh/blog/preface_zhu/</guid>
       <description>&lt;p&gt;我读硕士研究生时的导师是朱彤教授。在朱老师科研小组 ZTGroup 学习的三年如沐春风，我从中得到的收获受益终生。正值北京大学环境大楼落成不久，又逢毕业季，作为环境科学与工程学院的院长，朱老师在极其繁忙的工作中抽出时间来为本书欣然作序，实属不易，仅凭“感激”二字岂能表达我们的谢意？&lt;/p&gt;
 
 &lt;p&gt;下面是朱老师为本书写的序言。&lt;/p&gt;</description>
@@ -731,19 +731,19 @@ install.packages(&amp;#39;mindr&amp;#39;)install.packages(&amp;#39;pinyin&amp;#
     
     <item>
       <title>pinyin: 把汉字转换成拼音的R包</title>
-      <link>/zh/blog/2017/05/26/2017-05-26-pinyin/</link>
+      <link>https://openr.netlify.com/zh/blog/pinyin/</link>
       <pubDate>Fri, 26 May 2017 00:00:00 +0000</pubDate>
       
-      <guid>/zh/blog/2017/05/26/2017-05-26-pinyin/</guid>
+      <guid>https://openr.netlify.com/zh/blog/pinyin/</guid>
       <description>&lt;p&gt;今天新写了个R包，粗暴地取名为 &lt;a href=&#34;https://github.com/pzhaonet/pinyin/&#34;&gt;pinyin&lt;/a&gt;，作用是把汉字转换成拼音。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>微气象学常用的 LaTeX 公式</title>
-      <link>/zh/blog/2017/05/23/2017-05-23-equations/</link>
+      <link>https://openr.netlify.com/zh/blog/equations/</link>
       <pubDate>Tue, 23 May 2017 00:00:00 +0000</pubDate>
       
-      <guid>/zh/blog/2017/05/23/2017-05-23-equations/</guid>
+      <guid>https://openr.netlify.com/zh/blog/equations/</guid>
       <description>这些年，论文发得不多，公式却攒了不少，大部分都是自己亲手敲的 \(\LaTeX\) 代码。我把他们整理在一个 eq.tex 文档里，配合一个编译好的 eq.pdf 文件。每次需要的时候，在 eq.pdf 里找到需要的公式，然后去 eq.tex 找公式代码，拷到目标文档里完事儿。稍微有点小麻烦，但总比重新敲一遍代码要省事、准确。
 然而，现在有了 blogdown 和 Hugo-academic 主题，一切都变得不一样了。我把 eq.tex 里的文本全部拷贝粘贴到一个 .Rmd 文件，扔进网站里，就得到了现在这个帖子。鼠标放在公式上点右键- Show Math As - \(\TeX\) Commands，就得到了公式的 \(\LaTeX\) 代码。直接拷贝就行了，再也不用在两个文档里切换以及找来找去。
 HUGOMORE42 我觉得，我再也回不去了。
@@ -756,10 +756,10 @@ MeteorologyAtmpspheric pressure\[\begin{equation}P=101.325 \cdot (\frac{293-0
     
     <item>
       <title>R mindr: 把 Markdown 转成思维导图</title>
-      <link>/zh/blog/2017/05/19/2017-05-19-mindr/</link>
+      <link>https://openr.netlify.com/zh/blog/mindr/</link>
       <pubDate>Fri, 19 May 2017 00:00:00 +0000</pubDate>
       
-      <guid>/zh/blog/2017/05/19/2017-05-19-mindr/</guid>
+      <guid>https://openr.netlify.com/zh/blog/mindr/</guid>
       <description>将 markdown (.md, .Rmd) 文件转换成思维导图的 R 扩展包 mindr 是我写的第五个 R 包，安装方法如下：
 HUGOMORE42 稳定版：
 install.packages(&amp;quot;mindr&amp;quot;)开发版：
@@ -780,10 +780,10 @@ freemind 确实简陋。再拿 blogdown 书稿 试试，导入 Xmind 看看：
     
     <item>
       <title>R blogdown 科研网站的公式和参考文献</title>
-      <link>/zh/blog/2017/05/18/2017-05-18-real-academic-site/</link>
+      <link>https://openr.netlify.com/zh/blog/rblogdown-bib/</link>
       <pubDate>Thu, 18 May 2017 00:00:00 +0000</pubDate>
       
-      <guid>/zh/blog/2017/05/18/2017-05-18-real-academic-site/</guid>
+      <guid>https://openr.netlify.com/zh/blog/rblogdown-bib/</guid>
       <description>本网站的公式和参考文献一直未能正常显示，直到今天我才把这两个问题解决。
 HUGOMORE42 公式公式的问题迟迟未解决，是因为我看到人们在讨论往html文件里加 Load mathjax 代码这种解决方案，一看就头大，不想做。
 其实，我用的hugo-academic主题，据说是支持数学环境的，据说在 config.toml 里设置 math = true就开启全站支持，在单篇post的yml头里这样设置就开启单篇支持。可是我两样都试过，然后运行 blogdown::serve_site()测试，在RStudio的Viewer里都不能成功显示公式。
@@ -799,10 +799,10 @@ blogdown 可以如此方便地往帖子里插入计算代码、图表、公式�
     
     <item>
       <title>9分钟写个R语言包：菜鸟致简速成</title>
-      <link>/zh/blog/2017/05/16/2017-05-17-rmickey/</link>
+      <link>https://openr.netlify.com/zh/blog/rmickey/</link>
       <pubDate>Tue, 16 May 2017 00:00:00 +0000</pubDate>
       
-      <guid>/zh/blog/2017/05/16/2017-05-17-rmickey/</guid>
+      <guid>https://openr.netlify.com/zh/blog/rmickey/</guid>
       <description>写R包这种高大上的工作，原以为学会怎么写得花个一年半载，学会之后写一个包怎么着也得个把月，谁料想周一上午下了决心，到周二下午就一口气写了4个包，算起来从学到写，只花了一天多时间。这里是个小结。
 HUGOMORE42 学写R包，我主要参考了3份资料：
 谢益辉的开发R程序包之忍者篇，2011年。反复读了好几遍。黄俊文的极简R包建立方法, 2013年。反复读了好几遍。Hadley Wickham 的R packages, 2015年。反复扫了好几眼。有了这3份很好的资料，那我还写本篇帖子做什么？
@@ -818,10 +818,10 @@ install.packages(c(&amp;quot;devtools&amp;quot;, &amp;quot;roxygen2&amp;quot;, &
     
     <item>
       <title>postr: 用R Markdown做海报</title>
-      <link>/zh/blog/2017/05/16/2017-05-16-postr/</link>
+      <link>https://openr.netlify.com/zh/blog/postr/</link>
       <pubDate>Tue, 16 May 2017 00:00:00 +0000</pubDate>
       
-      <guid>/zh/blog/2017/05/16/2017-05-16-postr/</guid>
+      <guid>https://openr.netlify.com/zh/blog/postr/</guid>
       <description>用R markdown写海报的扩展包postr安装使用方法（需要先安装好软件环境，详见postr项目主页）：
 HUGOMORE42 devtools::install_github(&amp;quot;pzhaonet/postr&amp;quot;)setwd()postr::postr()益辉的莽撞人项目，悬赏解决“用 R Markdown 做海报”这个技术难题。我私下说，Markdown走的是LaTeX路线，讲究篇章结构和逻辑，而海报追求更多随意性和艺术性，即使学术海报也不例外，所以费劲硬要用Markdown解决，可能吃力不讨好。倒不如Powerpoint来得方便，或者把整个海报在R里当成一个device，用layout画图来实现。话虽这么说，我仍然在留意这件事，因为我在新书学R里提出R语言科研方案的整体拼图，被我几乎全部拼完了，只缺海报这一块。这就好比在朋友圈发照片只发八张，看一眼就浑身不自在。
 前几天，做bookdownplus时找模板，在比利时鲁汶大学的一大堆模板当中，我极其偶然地发现，里面暗暗潜伏着的，竟然有用R Markdown制作海报的秘密，淹没在一大堆文件里，搞不清楚各个文件之间的关系，而且说明文档过于简单，用起来不够方便。于是，我花了些工夫，把海报部分择了出来，稍加修改，增添了几个自己做的颜色主题，纳入了bookdownplus里。我的想法是，用户只需下载我这个文件夹，选择好模板，一运行，就出来个Rmd文件，打开一点knit按钮，Duang！海报就出来了。
@@ -838,10 +838,10 @@ HUGOMORE42 devtools::install_github(&amp;quot;pzhaonet/postr&amp;quot;)setwd()
     
     <item>
       <title>R bookdown&#43;: 用 R bookdown 写期刊论文、日记、信件、日历、吉他书、化学方程式</title>
-      <link>/zh/blog/2017/05/09/2017-05-09-bookdown-plus/</link>
+      <link>https://openr.netlify.com/zh/blog/bookdown-plus/</link>
       <pubDate>Tue, 09 May 2017 00:00:00 +0000</pubDate>
       
-      <guid>/zh/blog/2017/05/09/2017-05-09-bookdown-plus/</guid>
+      <guid>https://openr.netlify.com/zh/blog/bookdown-plus/</guid>
       <description>注意：本文所述的bookdown+这个项目已经停止开发，继承者是我新开的R包项目bookdownplus ，这是因为我学会了写R包。当然，说不定有些朋友不喜欢安装R包，喜欢下载个文件夹直接免安装用，那么本文所述的方法仍然可以继续使用，只是我不再更新了而已。
 HUGOMORE42 R bookdown 能做的事情很多，可是那些功能迟迟不来，我只好自己动手，写了个 bookdown+，目前大体实现了用 bookdown 写期刊论文、化学分子式、信件、日记、日历等功能。当然，有些还没完全实现，革命不够彻底，带着浓重的\(\LaTeX\)旧社会的气息。革命尚未成功，同志仍需努力。
 下面是 bookdown+ 的简介和快速使用方法。
@@ -862,10 +862,10 @@ title &amp;lt;- &amp;#39;bookdown+: Authoring Articles, Mails, Guitar books, Che
     
     <item>
       <title>Hugo 网站的浏览器小图标</title>
-      <link>/zh/blog/2017/04/19/2017-04-18-hugo-icon/</link>
+      <link>https://openr.netlify.com/zh/blog/hugo-icon/</link>
       <pubDate>Wed, 19 Apr 2017 00:00:00 +0000</pubDate>
       
-      <guid>/zh/blog/2017/04/19/2017-04-18-hugo-icon/</guid>
+      <guid>https://openr.netlify.com/zh/blog/hugo-icon/</guid>
       <description>网站图标，就是下图的这些东东，用浏览器打开网站时显示在地址栏的顶端。R blogdown安装的hugo-academic主题，默认图标是个蓝色学位帽，挺好看的，不改也行，只是如果大家都用的话，泯然众人，识别度就低了。
 HUGOMORE42 改的方式很简单：将你自己的图标图片保存为.png格式，并命名为icon.png，替换\themes\hugo-academic\static\img\icon.png即可。
 update: 更好的方案来自yang Cao的提议：把icon.png放在static/img/，避免在更新themes时将自定义图标覆盖。</description>
@@ -873,10 +873,10 @@ update: 更好的方案来自yang Cao的提议：把icon.png放在static/img/，
     
     <item>
       <title>Hugo 网站的RSS</title>
-      <link>/zh/blog/2017/04/18/2017-04-16-hugo-rss/</link>
+      <link>https://openr.netlify.com/zh/blog/hugo-rss/</link>
       <pubDate>Tue, 18 Apr 2017 00:00:00 +0000</pubDate>
       
-      <guid>/zh/blog/2017/04/18/2017-04-16-hugo-rss/</guid>
+      <guid>https://openr.netlify.com/zh/blog/hugo-rss/</guid>
       <description>R blogdown 搭建的 Hugo 网站，小细节很多，可以一点一点完善，好在都不难搞定。今天添加了个RSS订阅按钮。
 HUGOMORE42 自从 Google Reader 死后，我就觉得 RSS 没有多大趣味，就好像子期死后伯牙摔琴一样。但是，没有 RSS 提醒的话，还真不知道谁的博客更新了，于是就勉强用 feedly 凑合。眼看我的新网站构架基本完成，就在 feedly 里订阅了一下自己的网站，输入 pzhao.org，发现没找到。嗯？研究一下才明白，我的主页完整地址是：
 http://pzhao.org/zh/这个路径对应的本地文件夹下面，不仅有个index.html，还有个index.xml，后者就是 RSS 订阅的文件。所以，在feedly添加：
@@ -888,19 +888,19 @@ http://pzhao.org/zh/post/index.xmlhttp://pzhao.org/zh/publication/index.xmlhtt
     
     <item>
       <title>斜杠</title>
-      <link>/zh/blog/2017/04/17/2017-04-16-slash/</link>
+      <link>https://openr.netlify.com/zh/blog/slash/</link>
       <pubDate>Mon, 17 Apr 2017 00:00:00 +0000</pubDate>
       
-      <guid>/zh/blog/2017/04/17/2017-04-16-slash/</guid>
+      <guid>https://openr.netlify.com/zh/blog/slash/</guid>
       <description>&lt;p&gt;在我的新书在线试读章节，益辉同学提出了&lt;a href=&#34;http://dapengde.com/xuer/post/2017-04-15_blogdown/#comment-3258130059&#34;&gt;一个话题&lt;/a&gt;，那就是斜杠。这个小东西已经困扰我多年了，事儿不大，我憋着一直没敢说，这回有益辉这么一位神级人肉盾牌罩着，就趁机吐个槽。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Hugo 网站 academic 主题的多语言界面</title>
-      <link>/zh/blog/2017/04/16/2017-04-16-hugo-multilingual/</link>
+      <link>https://openr.netlify.com/zh/blog/hugo-multilingual/</link>
       <pubDate>Sun, 16 Apr 2017 00:00:00 +0000</pubDate>
       
-      <guid>/zh/blog/2017/04/16/2017-04-16-hugo-multilingual/</guid>
+      <guid>https://openr.netlify.com/zh/blog/hugo-multilingual/</guid>
       <description>&lt;p&gt;几年前我弄过&lt;a href=&#34;http://dapengde.com/archives/15265&#34;&gt;双语博客&lt;/a&gt;， 后来放弃了，因为 WordPress 的双语方案有些遗留问题让我不爽，另外我没有精力写英文博客。现在，新网站是个科研网站，博客可以只出现在中文版里，而英文版只放自己的学术情况就行了，不用像博客更新那么频繁。所以，双语界面几乎是排在第一梯队的需求。&lt;/p&gt;
 
 &lt;p&gt;我对Hugo的架构并不熟悉，原以为会很麻烦，结果弄一会儿就搞定了，原来这么简单。有些步骤在&lt;a href=&#34;http://dapengde.com/blogdown_demo_academic/post/getting-started/&#34;&gt;主题的说明文档里&lt;/a&gt;提到了，但不够全。完整的步骤是这样的(看起来长，是因为我啰嗦，其实很快就能设置完)：&lt;/p&gt;</description>
@@ -908,10 +908,10 @@ http://pzhao.org/zh/post/index.xmlhttp://pzhao.org/zh/publication/index.xmlhtt
     
     <item>
       <title>Word 永远转不成 Markdown</title>
-      <link>/zh/blog/2017/04/16/2017-04-15-word-never-markdown/</link>
+      <link>https://openr.netlify.com/zh/blog/word-never-markdown/</link>
       <pubDate>Sun, 16 Apr 2017 00:00:00 +0000</pubDate>
       
-      <guid>/zh/blog/2017/04/16/2017-04-15-word-never-markdown/</guid>
+      <guid>https://openr.netlify.com/zh/blog/word-never-markdown/</guid>
       <description>&lt;p&gt;R bookdown 用扩展的 Markdown 语法来写书，可以很方便地导出 Word 格式，虽然不完美，但只需稍微调一下样式，就是一个漂漂亮亮的文档。但是，如果在 Word 里做了修改，想转回 Markdown 该怎么办？&lt;/p&gt;
 
 &lt;p&gt;多年来，我一直奢望能找到这样一款软件，哪怕是把 Word 转成 LaTeX 也行。随着时间的流逝，希望却是越来越渺茫; 我越来越深信，这样的软件过去不曾有，现在还没有，将来永远都不会有。因为，逻辑上是不可能实现的。&lt;/p&gt;</description>
@@ -919,10 +919,10 @@ http://pzhao.org/zh/post/index.xmlhttp://pzhao.org/zh/publication/index.xmlhtt
     
     <item>
       <title>Hugo 网站 academic 主题首页的文摘显示问题</title>
-      <link>/zh/blog/2017/04/15/2017-04-15-hogo-academic-summary/</link>
+      <link>https://openr.netlify.com/zh/blog/hugo-academic-summary/</link>
       <pubDate>Sat, 15 Apr 2017 00:00:00 +0000</pubDate>
       
-      <guid>/zh/blog/2017/04/15/2017-04-15-hogo-academic-summary/</guid>
+      <guid>https://openr.netlify.com/zh/blog/hugo-academic-summary/</guid>
       <description>在 RStudio 里用 R blogdown 来维护网站时，可以通过点击工具栏的 Addins - New Post 来创建新帖子，很方便。但是，如果用的是 Hugo 的 academic 主题，那么创建的新帖子在网站首页会显示全文，不大好看，尤其是全文很长的时候，根本就不像个首页了。这是因为，academic 首页的 posts 模块默认显示文摘。如果没有为每篇帖子设置文摘，就会显示全文。而上面说的创建新帖的方法里，并没有设置文摘的选项。那么，文摘在哪里设置呢？
 HUGOMORE42 直接说答案：手动在新帖的YAML文件头添加一行：
 summary: &amp;quot;我的文摘别太长。&amp;quot;答案来自blogdown 项目主页。
@@ -933,10 +933,10 @@ summary: &amp;quot;我的文摘别太长。&amp;quot;答案来自blogdown 项�
     
     <item>
       <title>Hugo 网站的 Disqus 加载问题</title>
-      <link>/zh/blog/2017/04/14/2017-04-14-hogo-disques-problem/</link>
+      <link>https://openr.netlify.com/zh/blog/hogo-disques-problem/</link>
       <pubDate>Fri, 14 Apr 2017 00:00:00 +0000</pubDate>
       
-      <guid>/zh/blog/2017/04/14/2017-04-14-hogo-disques-problem/</guid>
+      <guid>https://openr.netlify.com/zh/blog/hogo-disques-problem/</guid>
       <description>今天，复活节假期前夕，同事们都休假了。我虽然在办公室，却无心上班，发了一会儿呆，想想与其痛苦地工作，不如快乐地解决一下新网站的一个小问题：disqus 评论框的加载。
 HUGOMORE42 用 R blogdown 打建好站，disqus评论框就一直没成功加载过。后来听说是config.toml里 disqus shortname指的不是我的disqus ID，而是要专门设置一下， 我说“啊,还有这事儿？”于是就设置了一下，但是仍然不能成功加载。这个问题放了几天，今天心血来潮一搜，嗯，兴许是路径的问题，于是就把config.toml开头的路径改为
 baseurl = &amp;quot;http://www.pzhao.org&amp;quot;# relativeurls = true然后运行R语言的建站函数：
@@ -948,28 +948,28 @@ blogdown::build_site(local=FALSE)注意！此处千万不要运行blogdown::ser
     
     <item>
       <title>侠气</title>
-      <link>/archives/19309/</link>
+      <link>https://openr.netlify.com/archives/19309/</link>
       <pubDate>Thu, 13 Apr 2017 12:49:17 +0000</pubDate>
       
-      <guid>/archives/19309/</guid>
+      <guid>https://openr.netlify.com/archives/19309/</guid>
       <description>&lt;p&gt;我这个博客，访问量最大的帖子就是《 &lt;a href=&#34;http://pzhao.org/r4dummies&#34;&gt;R 菜鸟入门&lt;/a&gt;》。这是写给 R 语言新手的。四年前发布以来，浏览量累计大约 2 万。也就是说，如果只计算工作时间的话，平均每天每小时都有2个人在浏览这些帖子，如此连续了四年，对于这样一个小站来说，我还是挺得意的。就算是在高校讲课，如果每个班20人，每个学期一个班，我得教500年，才能这么大规模地普及 R 语言。但是500年后R语言早就不存在了。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>用 R blogdown 搭建个人博客或科研网站</title>
-      <link>/archives/19304/</link>
+      <link>https://openr.netlify.com/archives/19304/</link>
       <pubDate>Tue, 11 Apr 2017 14:10:56 +0000</pubDate>
       
-      <guid>/archives/19304/</guid>
+      <guid>https://openr.netlify.com/archives/19304/</guid>
       <description>&lt;p&gt;我正在撰写新书《 R 菜鸟入门》，新书预计今年下半年出版。本文是其中一个章节。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>R blogdown 搭建个人博客或科研网站</title>
-      <link>/zh/blog/2017/04/11/2017-04-11_r-blogdown/</link>
+      <link>https://openr.netlify.com/zh/blog/r-blogdown/</link>
       <pubDate>Tue, 11 Apr 2017 00:00:00 +0000</pubDate>
       
-      <guid>/zh/blog/2017/04/11/2017-04-11_r-blogdown/</guid>
+      <guid>https://openr.netlify.com/zh/blog/r-blogdown/</guid>
       <description>本文收录在《学 R 》一书的附录中。
 互联网时代有个自己的网站，就好像真实世界里有了自己的房子（服务器）和固定地址（域名）；自我介绍时附上自己的网站，就像生活里邀请朋友来访或者职场上递上名片，都甚为方便。然而，建立一个网站并不容易，涉及诸多领域的知识和技能，门槛比较高。好在，我们有万能的R语言，搭建网站只需几分钟，而并不需要多少网络知识。你甚至不用懂 R 语言是什么，照我下面说的做就行，包教包会，学不会免费再教。
 HUGOMORE42 这里，我提供两个示范，演示如何使用 R 语言的 blogdown 扩展包1，用来搭建一个个人博客和一个科研小组网站。截至本文成稿之日，blogdown 含苞待放，尚未正式发布，但是已经能够正常安装使用了。我们来尝尝鲜，提前一睹她的芳容。
@@ -982,10 +982,10 @@ blogdown 的背景平台是 R 语言，用户界面首选 RStudio ，产生的�
     
     <item>
       <title>用 R bookdown 写吉他谱</title>
-      <link>/archives/19291/</link>
+      <link>https://openr.netlify.com/archives/19291/</link>
       <pubDate>Thu, 06 Apr 2017 09:15:36 +0000</pubDate>
       
-      <guid>/archives/19291/</guid>
+      <guid>https://openr.netlify.com/archives/19291/</guid>
       <description>&lt;p&gt;前情提要：&lt;/p&gt;
 
 &lt;ul&gt;
@@ -1000,10 +1000,10 @@ blogdown 的背景平台是 R 语言，用户界面首选 RStudio ，产生的�
     
     <item>
       <title>R bookdown 写学术论文</title>
-      <link>/zh/blog/2017/03/24/2017-03-24-r-bookdown/</link>
+      <link>https://openr.netlify.com/zh/blog/r-bookdown/</link>
       <pubDate>Fri, 24 Mar 2017 00:00:00 +0000</pubDate>
       
-      <guid>/zh/blog/2017/03/24/2017-03-24-r-bookdown/</guid>
+      <guid>https://openr.netlify.com/zh/blog/r-bookdown/</guid>
       <description>&lt;p&gt;&lt;em&gt;1&lt;/em&gt;&lt;/p&gt;
 
 &lt;p&gt;最近，我使用 R 语言的 bookdown 扩展包接连做了三件事：先是整理出一本跟&lt;a href=&#34;http://dapengde.com/archives/19122&#34;&gt; R 语言有关的书&lt;/a&gt;，然后把博客的帖子整理出一本&lt;a href=&#34;http://dapengde.com/archives/19150&#34;&gt;纯文本的中文书&lt;/a&gt;，这两天我又在用它来写一篇打算投稿的学术期刊论文。&lt;/p&gt;</description>
@@ -1011,19 +1011,19 @@ blogdown 的背景平台是 R 语言，用户界面首选 RStudio ，产生的�
     
     <item>
       <title>如果用bookdown来写诗集</title>
-      <link>/archives/19150/</link>
+      <link>https://openr.netlify.com/archives/19150/</link>
       <pubDate>Wed, 15 Mar 2017 14:21:56 +0000</pubDate>
       
-      <guid>/archives/19150/</guid>
+      <guid>https://openr.netlify.com/archives/19150/</guid>
       <description>&lt;p&gt;今天，我用R的bookdown做出了第一本电子书：&amp;lt;&lt;a href=&#34;https://bookdown.org/baydap/papasdiary/papasdiary.html&#34;&gt;爸爸三定律&lt;/a&gt;&amp;gt;。内容是从我博客上选的育儿相关帖。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>R bookdown 快速入门和语法速查</title>
-      <link>/archives/19141/</link>
+      <link>https://openr.netlify.com/archives/19141/</link>
       <pubDate>Wed, 15 Mar 2017 07:29:47 +0000</pubDate>
       
-      <guid>/archives/19141/</guid>
+      <guid>https://openr.netlify.com/archives/19141/</guid>
       <description>&lt;div class=&#34;section level2&#34;&gt;
   &lt;h2&gt;
     快速开始&lt;br /&gt;
@@ -1059,19 +1059,19 @@ blogdown 的背景平台是 R 语言，用户界面首选 RStudio ，产生的�
     
     <item>
       <title>不可挡的bookdown</title>
-      <link>/archives/19122/</link>
+      <link>https://openr.netlify.com/archives/19122/</link>
       <pubDate>Tue, 14 Mar 2017 14:36:57 +0000</pubDate>
       
-      <guid>/archives/19122/</guid>
+      <guid>https://openr.netlify.com/archives/19122/</guid>
       <description>&lt;p&gt;最近，我打算把博客上关于R语言的帖子整理成一本书，希望弄得帅气一点，整齐一点，将来容易维护一点。涌进脑子的第一个念头是 &lt;span class=&#34;math inline&#34;&gt;(\LaTeX)&lt;/span&gt; ，第二个念头是想吐。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>R bookdown 语法标记速查</title>
-      <link>/zh/blog/2017/03/14/2017-03-14-bookdown-cheatsheet/</link>
+      <link>https://openr.netlify.com/zh/blog/bookdown-cheatsheet/</link>
       <pubDate>Tue, 14 Mar 2017 00:00:00 +0000</pubDate>
       
-      <guid>/zh/blog/2017/03/14/2017-03-14-bookdown-cheatsheet/</guid>
+      <guid>https://openr.netlify.com/zh/blog/bookdown-cheatsheet/</guid>
       <description>快速开始R bookdown 是什么一个用来写书写文章的软件。比Word更美观，比LaTeX更易用，比Markdown格式更丰富。可以方便地插入目录、图表、交叉引用、脚注、索引。可以方便地插入公式、参考文献、R代码。可以生成漂亮的pdf、word和网页文件。撰写可重复性报告的不二之选。HUGOMORE42 安装下载R并安装。下载RStudio并安装。下载CTEX并安装。建议安装完整版。下载Pandoc并安装。运行RStudio。在左上面板的代码窗口输入并运行以下代码（安装bookdown扩展包）：install.packages(&amp;quot;bookdown&amp;quot;)install.packages(&amp;#39;servr&amp;#39;)好了，安装完毕。
 从模板开始下载模板文档（到下载页面点击Clone or download - Download ZIP）：如果你要写英文文档，那么下载通用模板;如果你要写中文文档，那么下载中文模板。将模板文档解压缩到任意文件夹。
 在解压缩后得到的文件里找到扩展名为.Rproj的文件。双击，默认会用RSudio打开。
@@ -1084,10 +1084,10 @@ blogdown 的背景平台是 R 语言，用户界面首选 RStudio ，产生的�
     
     <item>
       <title>不可挡的bookdown</title>
-      <link>/zh/blog/2017/03/13/2017-03-13-irresistible-bookdown/</link>
+      <link>https://openr.netlify.com/zh/blog/inresistible-bookdown/</link>
       <pubDate>Mon, 13 Mar 2017 00:00:00 +0000</pubDate>
       
-      <guid>/zh/blog/2017/03/13/2017-03-13-irresistible-bookdown/</guid>
+      <guid>https://openr.netlify.com/zh/blog/inresistible-bookdown/</guid>
       <description>最近，我打算把博客上关于R语言的帖子整理成一本书，希望弄得帅气一点，整齐一点，将来容易维护一点。涌进脑子的第一个念头是 \(\LaTeX\) ，第二个念头是想吐。
 HUGOMORE42 是的，虽然我推崇 \(\LaTeX\) ，觉得这个工具排出来的文档很漂亮，但自从弄完博士论文1 之后，除了帮别人备份一下博客2 、往论文里插几个公式和玩玩吉他谱3，我再也没碰过她。惰性开始代替折腾，我宁可点点鼠标写出一份不太美观的Word文档，也不想面对 \(\LaTeX\) 那让人头疼的代码。大概我是真上了岁数罢。
 对于 \(\LaTeX\)，我想自己的内心深处是怀有恐惧的。她的美丽让我着迷，她的复杂令人生畏。
@@ -1113,20 +1113,20 @@ bookdown::word_document2: default 注意，default这个词是不能少的，�
     
     <item>
       <title>常见问题</title>
-      <link>/zh/faq/</link>
+      <link>https://openr.netlify.com/zh/faq/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/zh/faq/</guid>
+      <guid>https://openr.netlify.com/zh/faq/</guid>
       <description> 如果您在这里没有找到您需要的答案，欢迎发邮件垂询。
  </description>
     </item>
     
     <item>
       <title>联系我们</title>
-      <link>/zh/contact/</link>
+      <link>https://openr.netlify.com/zh/contact/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/zh/contact/</guid>
+      <guid>https://openr.netlify.com/zh/contact/</guid>
       <description>我们随时为您提供帮助 您是否对我们的产品感兴趣？
 您在使用我们的产品时出现了什么问题？
 您是否需要我们提供 R 语言或可持续性研究的相关培训？

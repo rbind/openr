@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Blogdown on Open R</title>
-    <link>/zh/tags/blogdown/</link>
+    <link>https://openr.netlify.com/zh/tags/blogdown/</link>
     <description>Recent content in Blogdown on Open R</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Wed, 26 Sep 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/zh/tags/blogdown/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://openr.netlify.com/zh/tags/blogdown/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>给 Hugo 网站的插图添加阴影</title>
-      <link>/zh/blog/2018/09/26/2018-09-26-shadowed-images/</link>
+      <link>https://openr.netlify.com/zh/blog/shadowed-images/</link>
       <pubDate>Wed, 26 Sep 2018 00:00:00 +0000</pubDate>
       
-      <guid>/zh/blog/2018/09/26/2018-09-26-shadowed-images/</guid>
+      <guid>https://openr.netlify.com/zh/blog/shadowed-images/</guid>
       <description>&lt;p&gt;最近一年多，有个东西一直困扰着我，就像半夜酣睡时飞来一只蚊子，时不时在耳朵边哼哼几声，很烦。挥手赶走它继续睡，过一会儿又过来哼哼。好几次我犹豫着要不要爬起来彻底消灭它，想着想着就又睡着了，于是就一直凑合。&lt;/p&gt;
 
 &lt;p&gt;这只蚊子就是我自己开发的 bookdownplus 包。&lt;/p&gt;</description>
@@ -24,37 +24,37 @@
     
     <item>
       <title>当 github 的项目做了可视化，我感觉像是上帝在创世纪</title>
-      <link>/zh/blog/2018/06/08/2018-06-08_gource/</link>
+      <link>https://openr.netlify.com/zh/blog/gource/</link>
       <pubDate>Fri, 08 Jun 2018 00:00:00 +0000</pubDate>
       
-      <guid>/zh/blog/2018/06/08/2018-06-08_gource/</guid>
+      <guid>https://openr.netlify.com/zh/blog/gource/</guid>
       <description>&lt;p&gt;用 blogdown 制作和维护本博客已经一年有余。昨天，我把本网站的发展过程做了一个 5 分钟的视频，从开始到现在。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>全面迁站：从 Wordpress 到 Hugo</title>
-      <link>/zh/blog/2017/11/25/2017-11-25-migrated-to-hugo/</link>
+      <link>https://openr.netlify.com/zh/blog/migrated-to-hugo/</link>
       <pubDate>Sat, 25 Nov 2017 00:00:00 +0000</pubDate>
       
-      <guid>/zh/blog/2017/11/25/2017-11-25-migrated-to-hugo/</guid>
+      <guid>https://openr.netlify.com/zh/blog/migrated-to-hugo/</guid>
       <description>&lt;p&gt;从今天起，我的旧博客 dapengde.com 停止更新。旧博客的全部帖子已经搬到了 &lt;a href=&#34;http://www.pzhao.org&#34;&gt;pzhao.org&lt;/a&gt;，欢迎收藏（ctrl + d）和&lt;a href=&#34;http://www.pzhao.org/zh/index.xml&#34;&gt;订阅&lt;/a&gt;。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Build a mirror/backup site for your own steem posts in 30 minutes - 30 分钟搭建自己的 steem 镜像备份网站</title>
-      <link>/zh/blog/2017/11/06/2017-11-06-build-a-mirror/</link>
+      <link>https://openr.netlify.com/zh/blog/build-a-mirror-backup-site-for-your-own-steem-posts-in-30-minutes-or-30-steem/</link>
       <pubDate>Mon, 06 Nov 2017 09:44:42 +0000</pubDate>
       
-      <guid>/zh/blog/2017/11/06/2017-11-06-build-a-mirror/</guid>
+      <guid>https://openr.netlify.com/zh/blog/build-a-mirror-backup-site-for-your-own-steem-posts-in-30-minutes-or-30-steem/</guid>
       <description>&lt;p&gt;Yesterday, I built two mirror sites for my steem posts (&lt;a href=&#34;https://dapeng.netlify.com/&#34;&gt;mirror 1&lt;/a&gt;，&lt;a href=&#34;https://steemit.netlify.com/&#34;&gt;mirror 2&lt;/a&gt;) as backups, which are synced automatically everyday, thanks to steemsql and steemdata. The mirror sites are very useful:&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>微气象学常用的 LaTeX 公式</title>
-      <link>/zh/blog/2017/05/23/2017-05-23-equations/</link>
+      <link>https://openr.netlify.com/zh/blog/equations/</link>
       <pubDate>Tue, 23 May 2017 00:00:00 +0000</pubDate>
       
-      <guid>/zh/blog/2017/05/23/2017-05-23-equations/</guid>
+      <guid>https://openr.netlify.com/zh/blog/equations/</guid>
       <description>这些年，论文发得不多，公式却攒了不少，大部分都是自己亲手敲的 \(\LaTeX\) 代码。我把他们整理在一个 eq.tex 文档里，配合一个编译好的 eq.pdf 文件。每次需要的时候，在 eq.pdf 里找到需要的公式，然后去 eq.tex 找公式代码，拷到目标文档里完事儿。稍微有点小麻烦，但总比重新敲一遍代码要省事、准确。
 然而，现在有了 blogdown 和 Hugo-academic 主题，一切都变得不一样了。我把 eq.tex 里的文本全部拷贝粘贴到一个 .Rmd 文件，扔进网站里，就得到了现在这个帖子。鼠标放在公式上点右键- Show Math As - \(\TeX\) Commands，就得到了公式的 \(\LaTeX\) 代码。直接拷贝就行了，再也不用在两个文档里切换以及找来找去。
 HUGOMORE42 我觉得，我再也回不去了。
@@ -67,10 +67,10 @@ MeteorologyAtmpspheric pressure\[\begin{equation}P=101.325 \cdot (\frac{293-0
     
     <item>
       <title>R blogdown 科研网站的公式和参考文献</title>
-      <link>/zh/blog/2017/05/18/2017-05-18-real-academic-site/</link>
+      <link>https://openr.netlify.com/zh/blog/rblogdown-bib/</link>
       <pubDate>Thu, 18 May 2017 00:00:00 +0000</pubDate>
       
-      <guid>/zh/blog/2017/05/18/2017-05-18-real-academic-site/</guid>
+      <guid>https://openr.netlify.com/zh/blog/rblogdown-bib/</guid>
       <description>本网站的公式和参考文献一直未能正常显示，直到今天我才把这两个问题解决。
 HUGOMORE42 公式公式的问题迟迟未解决，是因为我看到人们在讨论往html文件里加 Load mathjax 代码这种解决方案，一看就头大，不想做。
 其实，我用的hugo-academic主题，据说是支持数学环境的，据说在 config.toml 里设置 math = true就开启全站支持，在单篇post的yml头里这样设置就开启单篇支持。可是我两样都试过，然后运行 blogdown::serve_site()测试，在RStudio的Viewer里都不能成功显示公式。
@@ -86,10 +86,10 @@ blogdown 可以如此方便地往帖子里插入计算代码、图表、公式�
     
     <item>
       <title>Hugo 网站的浏览器小图标</title>
-      <link>/zh/blog/2017/04/19/2017-04-18-hugo-icon/</link>
+      <link>https://openr.netlify.com/zh/blog/hugo-icon/</link>
       <pubDate>Wed, 19 Apr 2017 00:00:00 +0000</pubDate>
       
-      <guid>/zh/blog/2017/04/19/2017-04-18-hugo-icon/</guid>
+      <guid>https://openr.netlify.com/zh/blog/hugo-icon/</guid>
       <description>网站图标，就是下图的这些东东，用浏览器打开网站时显示在地址栏的顶端。R blogdown安装的hugo-academic主题，默认图标是个蓝色学位帽，挺好看的，不改也行，只是如果大家都用的话，泯然众人，识别度就低了。
 HUGOMORE42 改的方式很简单：将你自己的图标图片保存为.png格式，并命名为icon.png，替换\themes\hugo-academic\static\img\icon.png即可。
 update: 更好的方案来自yang Cao的提议：把icon.png放在static/img/，避免在更新themes时将自定义图标覆盖。</description>
@@ -97,10 +97,10 @@ update: 更好的方案来自yang Cao的提议：把icon.png放在static/img/，
     
     <item>
       <title>Hugo 网站的RSS</title>
-      <link>/zh/blog/2017/04/18/2017-04-16-hugo-rss/</link>
+      <link>https://openr.netlify.com/zh/blog/hugo-rss/</link>
       <pubDate>Tue, 18 Apr 2017 00:00:00 +0000</pubDate>
       
-      <guid>/zh/blog/2017/04/18/2017-04-16-hugo-rss/</guid>
+      <guid>https://openr.netlify.com/zh/blog/hugo-rss/</guid>
       <description>R blogdown 搭建的 Hugo 网站，小细节很多，可以一点一点完善，好在都不难搞定。今天添加了个RSS订阅按钮。
 HUGOMORE42 自从 Google Reader 死后，我就觉得 RSS 没有多大趣味，就好像子期死后伯牙摔琴一样。但是，没有 RSS 提醒的话，还真不知道谁的博客更新了，于是就勉强用 feedly 凑合。眼看我的新网站构架基本完成，就在 feedly 里订阅了一下自己的网站，输入 pzhao.org，发现没找到。嗯？研究一下才明白，我的主页完整地址是：
 http://pzhao.org/zh/这个路径对应的本地文件夹下面，不仅有个index.html，还有个index.xml，后者就是 RSS 订阅的文件。所以，在feedly添加：
@@ -112,10 +112,10 @@ http://pzhao.org/zh/post/index.xmlhttp://pzhao.org/zh/publication/index.xmlhtt
     
     <item>
       <title>Hugo 网站 academic 主题的多语言界面</title>
-      <link>/zh/blog/2017/04/16/2017-04-16-hugo-multilingual/</link>
+      <link>https://openr.netlify.com/zh/blog/hugo-multilingual/</link>
       <pubDate>Sun, 16 Apr 2017 00:00:00 +0000</pubDate>
       
-      <guid>/zh/blog/2017/04/16/2017-04-16-hugo-multilingual/</guid>
+      <guid>https://openr.netlify.com/zh/blog/hugo-multilingual/</guid>
       <description>&lt;p&gt;几年前我弄过&lt;a href=&#34;http://dapengde.com/archives/15265&#34;&gt;双语博客&lt;/a&gt;， 后来放弃了，因为 WordPress 的双语方案有些遗留问题让我不爽，另外我没有精力写英文博客。现在，新网站是个科研网站，博客可以只出现在中文版里，而英文版只放自己的学术情况就行了，不用像博客更新那么频繁。所以，双语界面几乎是排在第一梯队的需求。&lt;/p&gt;
 
 &lt;p&gt;我对Hugo的架构并不熟悉，原以为会很麻烦，结果弄一会儿就搞定了，原来这么简单。有些步骤在&lt;a href=&#34;http://dapengde.com/blogdown_demo_academic/post/getting-started/&#34;&gt;主题的说明文档里&lt;/a&gt;提到了，但不够全。完整的步骤是这样的(看起来长，是因为我啰嗦，其实很快就能设置完)：&lt;/p&gt;</description>
@@ -123,10 +123,10 @@ http://pzhao.org/zh/post/index.xmlhttp://pzhao.org/zh/publication/index.xmlhtt
     
     <item>
       <title>Hugo 网站 academic 主题首页的文摘显示问题</title>
-      <link>/zh/blog/2017/04/15/2017-04-15-hogo-academic-summary/</link>
+      <link>https://openr.netlify.com/zh/blog/hugo-academic-summary/</link>
       <pubDate>Sat, 15 Apr 2017 00:00:00 +0000</pubDate>
       
-      <guid>/zh/blog/2017/04/15/2017-04-15-hogo-academic-summary/</guid>
+      <guid>https://openr.netlify.com/zh/blog/hugo-academic-summary/</guid>
       <description>在 RStudio 里用 R blogdown 来维护网站时，可以通过点击工具栏的 Addins - New Post 来创建新帖子，很方便。但是，如果用的是 Hugo 的 academic 主题，那么创建的新帖子在网站首页会显示全文，不大好看，尤其是全文很长的时候，根本就不像个首页了。这是因为，academic 首页的 posts 模块默认显示文摘。如果没有为每篇帖子设置文摘，就会显示全文。而上面说的创建新帖的方法里，并没有设置文摘的选项。那么，文摘在哪里设置呢？
 HUGOMORE42 直接说答案：手动在新帖的YAML文件头添加一行：
 summary: &amp;quot;我的文摘别太长。&amp;quot;答案来自blogdown 项目主页。
@@ -137,10 +137,10 @@ summary: &amp;quot;我的文摘别太长。&amp;quot;答案来自blogdown 项�
     
     <item>
       <title>Hugo 网站的 Disqus 加载问题</title>
-      <link>/zh/blog/2017/04/14/2017-04-14-hogo-disques-problem/</link>
+      <link>https://openr.netlify.com/zh/blog/hogo-disques-problem/</link>
       <pubDate>Fri, 14 Apr 2017 00:00:00 +0000</pubDate>
       
-      <guid>/zh/blog/2017/04/14/2017-04-14-hogo-disques-problem/</guid>
+      <guid>https://openr.netlify.com/zh/blog/hogo-disques-problem/</guid>
       <description>今天，复活节假期前夕，同事们都休假了。我虽然在办公室，却无心上班，发了一会儿呆，想想与其痛苦地工作，不如快乐地解决一下新网站的一个小问题：disqus 评论框的加载。
 HUGOMORE42 用 R blogdown 打建好站，disqus评论框就一直没成功加载过。后来听说是config.toml里 disqus shortname指的不是我的disqus ID，而是要专门设置一下， 我说“啊,还有这事儿？”于是就设置了一下，但是仍然不能成功加载。这个问题放了几天，今天心血来潮一搜，嗯，兴许是路径的问题，于是就把config.toml开头的路径改为
 baseurl = &amp;quot;http://www.pzhao.org&amp;quot;# relativeurls = true然后运行R语言的建站函数：
@@ -152,19 +152,19 @@ blogdown::build_site(local=FALSE)注意！此处千万不要运行blogdown::ser
     
     <item>
       <title>用 R blogdown 搭建个人博客或科研网站</title>
-      <link>/archives/19304/</link>
+      <link>https://openr.netlify.com/archives/19304/</link>
       <pubDate>Tue, 11 Apr 2017 14:10:56 +0000</pubDate>
       
-      <guid>/archives/19304/</guid>
+      <guid>https://openr.netlify.com/archives/19304/</guid>
       <description>&lt;p&gt;我正在撰写新书《 R 菜鸟入门》，新书预计今年下半年出版。本文是其中一个章节。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>R blogdown 搭建个人博客或科研网站</title>
-      <link>/zh/blog/2017/04/11/2017-04-11_r-blogdown/</link>
+      <link>https://openr.netlify.com/zh/blog/r-blogdown/</link>
       <pubDate>Tue, 11 Apr 2017 00:00:00 +0000</pubDate>
       
-      <guid>/zh/blog/2017/04/11/2017-04-11_r-blogdown/</guid>
+      <guid>https://openr.netlify.com/zh/blog/r-blogdown/</guid>
       <description>本文收录在《学 R 》一书的附录中。
 互联网时代有个自己的网站，就好像真实世界里有了自己的房子（服务器）和固定地址（域名）；自我介绍时附上自己的网站，就像生活里邀请朋友来访或者职场上递上名片，都甚为方便。然而，建立一个网站并不容易，涉及诸多领域的知识和技能，门槛比较高。好在，我们有万能的R语言，搭建网站只需几分钟，而并不需要多少网络知识。你甚至不用懂 R 语言是什么，照我下面说的做就行，包教包会，学不会免费再教。
 HUGOMORE42 这里，我提供两个示范，演示如何使用 R 语言的 blogdown 扩展包1，用来搭建一个个人博客和一个科研小组网站。截至本文成稿之日，blogdown 含苞待放，尚未正式发布，但是已经能够正常安装使用了。我们来尝尝鲜，提前一睹她的芳容。

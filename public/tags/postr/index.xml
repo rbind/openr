@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Postr on Open R</title>
-    <link>/tags/postr/</link>
+    <link>https://openr.netlify.com/tags/postr/</link>
     <description>Recent content in Postr on Open R</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 16 May 2017 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/tags/postr/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://openr.netlify.com/tags/postr/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>R package postr: created posters with R markdown</title>
-      <link>/blog/2017/05/16/2017-05-16-postr/</link>
+      <link>https://openr.netlify.com/blog/postr/</link>
       <pubDate>Tue, 16 May 2017 00:00:00 +0000</pubDate>
       
-      <guid>/blog/2017/05/16/2017-05-16-postr/</guid>
+      <guid>https://openr.netlify.com/blog/postr/</guid>
       <description>This is a preliminary version of the introduction to postr. Please go to my Github repo postr for the latest updates.
 HUGOMORE42 This package is modified from kuleuven-template, where you can see the requirements before using this package. Here I picked out the instruction for Windows users as follows.
 Install a LaTeX distribution, e.g. MiKTeX. For Chinese users CTeX is highly recommended.Install TexmakerInstall RInstall RStudioInstall Python 2Install Python filter support for Pandoc:on a Windows command prompt, type pip install pandocfiltersInstall SumatraPDF for auto-refresh of PDF previewsAfterwards, add the Python directory to the system PATH variable.</description>
