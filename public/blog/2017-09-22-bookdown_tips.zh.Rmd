@@ -16,7 +16,6 @@ banner: img/banners/logo-openr.png
 
 本帖用来收集整理 R 语言 bookdown 扩展包的一些使用技巧。有些是在网上搜来的，有些是我在别处讨论得来的，有些是我尚未发布的，都写在这里备用。
 
-<!--more-->
 
 ## 输出 Markdown 文件
 

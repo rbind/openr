@@ -19,7 +19,6 @@ Xaringan 自带 16 套主题（themes），其中 10 套配有对应的 fonts.cs
 
 于是就做了本网页。
 
-<!--more-->
 
 
 我自己添加了个主题，叫 mpic，打算从 middlebury 出发慢慢修改，目前只改了个 logo。

@@ -1,6 +1,6 @@
 ---
 title: "[New Features on steemr] Functions for a user friendly UI as an interactive follower report!"
-author: 赵鹏
+author: Peng Zhao
 date: "2018-07-10 19:45:03"
 slug: steemr-sfollow
 tags: 

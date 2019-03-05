@@ -1,6 +1,6 @@
 ---
 title: "[New Features on steemr] Display all the posts of a give Steemian with statistics, and get the utopian review and upvote plan!"
-author: 赵鹏
+author: Peng Zhao
 date: "2018-09-08 20:41:57"
 slug: steemr-sposts
 tags: 

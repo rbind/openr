@@ -1,6 +1,6 @@
 ---
 title: "rosr News: a Shiny GUI and RStudio addin for choosing and creating sub-projects"
-author: 赵鹏
+author: Peng Zhao
 date: "2019-01-31"
 slug: rosr-shiny
 tags: 

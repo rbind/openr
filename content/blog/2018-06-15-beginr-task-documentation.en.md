@@ -1,6 +1,6 @@
 ---
 title: "[Task Request on beginr] Documentation for each function friendly to R beginners"
-author: 赵鹏
+author: Peng Zhao
 date: "2018-06-15 15:30:21"
 slug: beginr-task-documentation
 tags: 

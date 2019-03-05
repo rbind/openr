@@ -1,6 +1,6 @@
 ---
 title: "[New Features on steemr]  Diagrams in the Shiny app for the statistics of the Steem CN community!"
-author: 赵鹏
+author: Peng Zhao
 date: "2018-09-07 05:42:45"
 slug: steemr-scner-diagrams
 tags: 

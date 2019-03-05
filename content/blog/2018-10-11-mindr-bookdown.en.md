@@ -1,6 +1,6 @@
 ---
 title: "[R: New Features on mindr] Supports the new format  of  FreeMind. Displays mind maps directly. Supports bookdown projects."
-author: 赵鹏
+author: Peng Zhao
 date: "2018-10-11 08:29:24"
 slug: mindr-bookdown
 tags: 

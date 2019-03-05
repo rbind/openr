@@ -1,6 +1,6 @@
 ---
 title: 'bookdownplus: an R package for writing Articles, Mails, Guitar Chords, Chemical Molecular Formulae and Equations with R bookdown'
-author: 赵鹏
+author: Peng Zhao
 date: '2017-05-09'
 slug: bookdownplus
 summary: "`R bookdownplus` extends the features of `bookdown`, and simplifies the procedure. Users only have to choose a template, clarify the book title and author name, and then focus on writing the text. No need to struggle in YAML and LaTeX. "

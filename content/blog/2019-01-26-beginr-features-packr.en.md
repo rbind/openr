@@ -1,6 +1,6 @@
 ---
 title: "[New Features on beginr] Automatically generate a self-contained package"
-author: 赵鹏
+author: Peng Zhao
 date: "2019-01-26"
 slug: beginr-features-packr
 tags: 

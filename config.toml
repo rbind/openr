@@ -83,13 +83,13 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 [[menu.topbar]]
     weight = 1
     name = "GitHub"
-    url = "https://github.com/pzhaonet/openr"
+    url = "https://github.com/rind/openr"
     pre = "<i class='fa fa-2x fa-github'></i>"
 
 [[languages.zh.menu.topbar]]
     weight = 1
     name = "GitHub"
-    url = "https://github.com/pzhaonet/openr"
+    url = "https://github.com/rbind/openr"
     pre = "<i class='fa fa-2x fa-github'></i>"
 
 [[menu.topbar]]

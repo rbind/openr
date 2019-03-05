@@ -462,6 +462,16 @@
     <loc>https://openr.netlify.com/zh/tags/blogdown/</loc>
     <lastmod>2017-04-19T00:00:00+00:00</lastmod>
     <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://openr.netlify.com/tags/blogdown/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://openr.netlify.com/zh/tags/blogdown/"
+                />
   </url>
   
   <url>

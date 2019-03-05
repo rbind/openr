@@ -1,6 +1,6 @@
 ---
 title: 'LaTeX equations in micrometeorology'
-author: 赵鹏
+author: Peng Zhao
 date: '2017-05-23'
 slug: equations
 summary: "Right click your mouse on an equation in this post - Show Math As - TeX Commands, and I get the LaTeX code of the equation immediately."
@@ -14,7 +14,6 @@ I have collected plenty of equations in my research in recent years. Most of the
 
 Now comes blogdown and Hugo-academic theme. Everything has changed. I pasted all the texts from eq.tex to an .Rmd file and left it in blogdown. which produced this post. Right click your mouse on an equation in this post - Show Math As - TeX Commands, and I get the LaTeX code of the equation immediately.
 
-<!--more-->
 
 Farewell, \(\LaTeX\). I guess I would never go back to the old fashioned way of\(\TeX\) - pdf couple any more.
 

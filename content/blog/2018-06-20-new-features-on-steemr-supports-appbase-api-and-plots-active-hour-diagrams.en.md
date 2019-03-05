@@ -1,6 +1,6 @@
 ---
 title: "[New Features on steemr] supports AppBase API and plots active hour diagrams!"
-author: 赵鹏
+author: Peng Zhao
 date: "2018-06-20 10:44:24"
 slug: new-features-on-steemr-supports-appbase-api-and-plots-active-hour-diagrams
 tags: 

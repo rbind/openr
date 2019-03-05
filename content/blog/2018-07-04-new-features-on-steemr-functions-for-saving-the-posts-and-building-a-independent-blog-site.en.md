@@ -1,6 +1,6 @@
 ---
 title: "[New Features on steemr] Functions for saving the posts and building an independent blog site!"
-author: 赵鹏
+author: Peng Zhao
 date: "2018-07-04 11:58:18"
 slug: new-features-on-steemr-functions-for-saving-the-posts-and-building-a-independent-blog-site
 tags: 

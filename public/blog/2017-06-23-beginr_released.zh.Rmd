@@ -17,7 +17,6 @@ banner: img/banners/logo-beginr.png
 
 又一次高兴地宣布, 我的 R 语言扩展包 'beginr' [@R-beginr] 在 CRAN [正式发布](https://cran.r-project.org/web/packages/beginr/)了.
 
-<!--more-->
 
 ![](http://cranlogs.r-pkg.org/badges/grand-total/beginr)
 

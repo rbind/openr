@@ -1,6 +1,6 @@
 ---
 title: "[Task Request] Heteronym problem"
-author: 赵鹏
+author: Peng Zhao
 date: "2018-04-12 08:56:48"
 slug: heteronym-problem
 tags: 

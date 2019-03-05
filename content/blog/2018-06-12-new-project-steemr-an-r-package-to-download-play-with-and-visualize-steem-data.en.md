@@ -1,6 +1,6 @@
 ---
 title: "[New Project] steemr: an R package to download, play with, and visualize Steem data"
-author: 赵鹏
+author: Peng Zhao
 date: "2018-06-12 10:18:51"
 slug: new-project-steemr-an-r-package-to-download-play-with-and-visualize-steem-data
 tags: 

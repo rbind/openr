@@ -11,7 +11,6 @@ banner: img/banners/logo-openr.png
 
 网站图标，就是下图的这些东东，用浏览器打开网站时显示在地址栏的顶端。R blogdown安装的hugo-academic主题，默认图标是个蓝色学位帽，挺好看的，不改也行，只是如果大家都用的话，泯然众人，识别度就低了。
 
-<!--more-->
 
 
 ```{r, echo=FALSE}

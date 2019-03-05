@@ -1,6 +1,6 @@
 ---
 title: A template for MDPI academic journals
-author: 赵鹏
+author: Peng Zhao
 date: '2018-09-05'
 slug: bookdown-mdpi
 categories: []

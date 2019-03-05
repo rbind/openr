@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://openr.netlify.com/blog/openr/</loc>
+    <lastmod>2019-03-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://openr.netlify.com/blog/rosr-shiny/</loc>
     <lastmod>2019-01-31T00:00:00+00:00</lastmod>
   </url>
@@ -310,8 +315,24 @@
   </url>
   
   <url>
+    <loc>https://openr.netlify.com/tags/blogdown/</loc>
+    <lastmod>2019-03-05T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://openr.netlify.com/zh/tags/blogdown/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://openr.netlify.com/tags/blogdown/"
+                />
+  </url>
+  
+  <url>
     <loc>https://openr.netlify.com/blog/</loc>
-    <lastmod>2019-01-31T00:00:00+00:00</lastmod>
+    <lastmod>2019-03-05T00:00:00+00:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
@@ -450,7 +471,7 @@
   
   <url>
     <loc>https://openr.netlify.com/</loc>
-    <lastmod>2019-01-31T00:00:00+00:00</lastmod>
+    <lastmod>2019-03-05T00:00:00+00:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
@@ -462,6 +483,12 @@
                 hreflang="en"
                 href="https://openr.netlify.com/"
                 />
+  </url>
+  
+  <url>
+    <loc>https://openr.netlify.com/tags/openr/</loc>
+    <lastmod>2019-03-05T00:00:00+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -482,7 +509,7 @@
   
   <url>
     <loc>https://openr.netlify.com/tags/r/</loc>
-    <lastmod>2019-01-31T00:00:00+00:00</lastmod>
+    <lastmod>2019-03-05T00:00:00+00:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"

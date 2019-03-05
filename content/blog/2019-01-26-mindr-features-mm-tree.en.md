@@ -1,6 +1,6 @@
 ---
 title: "mindr v.1.2.0 released: universal function and directory tree"
-author: 赵鹏
+author: Peng Zhao
 date: "2019-01-26"
 slug: mindr-features-mm-tree
 tags: 

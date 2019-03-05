@@ -1,6 +1,6 @@
 ---
 title: "[R pinyin: New Features] User customized dictionaries"
-author: 赵鹏
+author: Peng Zhao
 date: "2018-10-15 14:34:03"
 slug: pinyin-user-defined
 tags: 

@@ -1,6 +1,6 @@
 ---
 title: "[New Features on steemr] Functions as vote reports!"
-author: 赵鹏
+author: Peng Zhao
 date: "2018-06-27 14:44:03"
 slug: steemr-vote
 tags: 

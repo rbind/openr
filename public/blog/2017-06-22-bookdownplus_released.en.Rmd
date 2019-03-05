@@ -1,6 +1,6 @@
 ---
 title: 'R package bookdownplus 1.0.2 released on CRAN'
-author: 赵鹏
+author: Peng Zhao
 date: '2017-06-22'
 slug: bookdownplus-released
 summary: "bookdownplus is an extension of bookdown. More enhancements. Less operation."
@@ -16,7 +16,6 @@ banner: img/banners/logo-bookdownplus.png
 
 I’m glad to announce that 'bookdownplus 1.0.2' [@R-bookdownplus] is now on [CRAN](https://cran.r-project.org/web/packages/bookdownplus/). This post is a brief documentation of 'bookdownplus 1.0.2'. However, I have been updating 'bookdownplus' frequently and the new version is more powerful and even easier. Please go to the [GitHub site of bookdownplus](http://github.com/pzhaonet/bookdownplus).
 
-<!--more-->
 
 ![](http://cranlogs.r-pkg.org/badges/grand-total/bookdownplus)
 

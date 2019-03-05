@@ -63,7 +63,7 @@
 MathJax.Hub.Config({
   tex2jax: {
     inlineMath: [['$','$'], ['\\(','\\)']],
-    displayMath: [['$$','$$'], ['\[\[','\]\]']],
+    displayMath: [['$$','$$'], ['\[','\]']],
     processEscapes: true,
     processEnvironments: true,
     skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
@@ -206,7 +206,7 @@ code.has-jax {
 
                     <div class="col-md-9" id="blog-post">
 
-                        <p class="text-muted text-uppercase mb-small text-right">By <a href="#">赵鹏</a> | June 23, 2017</p>
+                        <p class="text-muted text-uppercase mb-small text-right">By <a href="#">Peng Zhao</a> | June 23, 2017</p>
 
                         <div id="post-content">
                           
@@ -249,12 +249,12 @@ y &lt;- 1:10 + rnorm(10)
 beginr::plotlm(x, y)</code></pre>
 <p><img src="/blog/2017-06-23-beginr_released.en_files/figure-html/unnamed-chunk-3-1.png" width="672" /></p>
 <pre><code>## [[1]]
-##              Estimate Std. Error   t value     Pr(&gt;|t|)
-## (Intercept) 0.2609873  0.8811558 0.2961875 0.7746300673
-## x           0.9582400  0.1420111 6.7476407 0.0001454051
+##              Estimate Std. Error  t value     Pr(&gt;|t|)
+## (Intercept) 0.9869286 0.60388879 1.634289 1.408390e-01
+## x           0.9056051 0.09732549 9.304912 1.449589e-05
 ## 
 ## [[2]]
-## [1] 0.8505529</code></pre>
+## [1] 0.9154168</code></pre>
 <p>If you want to display the distribution of a data-set, use <code>plothist()</code>, which gives you a histogram with markers of the median, mean, quantiles, standard deviation, sample number and the skewness.</p>
 <pre class="r"><code>x &lt;- rnorm(10000)
 beginr::plothist(x)</code></pre>
@@ -288,20 +288,20 @@ beginr::errorbar(x, y, yupper = 0.1, ylower = 0.1)</code></pre>
 <p><code>lmdf()</code> performs the linear regression between every two columns in a data frame.</p>
 <pre class="r"><code>df &lt;- data.frame(a = 1:10, b = 1:10 + rnorm(10), c = 1:10 + rnorm(10))
 beginr::lmdf(df)</code></pre>
-<pre><code>##   x y r.squared adj.r.squared   intercept     slope Std.Error.intercept
-## 1 a b 0.9289632     0.9200836  0.01897068 1.0884695           0.6603041
-## 2 a c 0.9643351     0.9598770 -1.76655686 1.2275759           0.5178933
-## 3 b a 0.9289632     0.9200836  0.37451157 0.8534582           0.5695326
-## 4 b c 0.9043585     0.8924033 -1.33668825 1.0526589           0.8261037
-## 5 c a 0.9643351     0.9598770  1.58389424 0.7855605           0.3281419
-## 6 c b 0.9043585     0.8924033  1.72275355 0.8591183           0.6068501
-##   Std.Error.slope t.intercept   t.slope Pr.intercept     Pr.slope
-## 1      0.10641764  0.02873021 10.228281  0.977783548 7.170018e-06
-## 2      0.08346607 -3.41104378 14.707484  0.009208931 4.488635e-07
-## 3      0.08344102  0.65757706 10.228281  0.529271868 7.170018e-06
-## 4      0.12103071 -1.61806346  8.697452  0.144309949 2.381083e-05
-## 5      0.05341229  4.82685725 14.707484  0.001309866 4.488635e-07
-## 6      0.09877815  2.83884550  8.697452  0.021850742 2.381083e-05</code></pre>
+<pre><code>##   x y r.squared adj.r.squared intercept     slope Std.Error.intercept
+## 1 a b 0.8871887     0.8730873 0.3582715 1.0181219           0.7964406
+## 2 a c 0.8939342     0.8806760 0.3912455 0.9774169           0.7385843
+## 3 b a 0.8871887     0.8730873 0.3082652 0.8713974           0.7380775
+## 4 b c 0.8181423     0.7954101 0.6130198 0.8650670           0.9687653
+## 5 c a 0.8939342     0.8806760 0.2255332 0.9145885           0.7224871
+## 6 c b 0.8181423     0.7954101 0.5037303 0.9457561           1.0225865
+##   Std.Error.slope t.intercept  t.slope Pr.intercept     Pr.slope
+## 1       0.1283580   0.4498408 7.931891    0.6647641 4.643788e-05
+## 2       0.1190336   0.5297236 8.211266    0.6106849 3.618022e-05
+## 3       0.1098600   0.4176596 7.931891    0.6871802 4.643788e-05
+## 4       0.1441970   0.6327846 5.999203    0.5445330 3.236804e-04
+## 5       0.1113822   0.3121622 8.211266    0.7628984 3.618022e-05
+## 6       0.1576469   0.4926041 5.999203    0.6355264 3.236804e-04</code></pre>
 <p>There are two functions as improvements of <code>tapply()</code> for factor calculation.</p>
 <pre class="r"><code>beginr::tapplydf()
 beginr::tapplydfv()</code></pre>
@@ -428,6 +428,9 @@ beginr::list2ascii(alist)</code></pre>
             <li><a href="https://openr.netlify.com/tags/beginr"><i class="fa fa-tags"></i> beginr</a>
             </li>
             
+            <li><a href="https://openr.netlify.com/tags/blogdown"><i class="fa fa-tags"></i> blogdown</a>
+            </li>
+            
             <li><a href="https://openr.netlify.com/tags/bookdown"><i class="fa fa-tags"></i> bookdown</a>
             </li>
             
@@ -441,6 +444,9 @@ beginr::list2ascii(alist)</code></pre>
             </li>
             
             <li><a href="https://openr.netlify.com/tags/news"><i class="fa fa-tags"></i> news</a>
+            </li>
+            
+            <li><a href="https://openr.netlify.com/tags/openr"><i class="fa fa-tags"></i> openr</a>
             </li>
             
             <li><a href="https://openr.netlify.com/tags/pinyin"><i class="fa fa-tags"></i> pinyin</a>
@@ -509,6 +515,19 @@ beginr::list2ascii(alist)</code></pre>
                 
                 <div class="item same-height-row clearfix">
                     <div class="image same-height-always">
+                        <a href="https://openr.netlify.com/blog/openr/">
+                          
+                            <img src="https://openr.netlify.com/img/banners/logo-openr.png" class="img-responsive" alt="Hugo univesal 主题的个性化设置">
+                          
+                        </a>
+                    </div>
+                    <div class="name same-height-always">
+                        <h5><a href="https://openr.netlify.com/blog/openr/">Hugo univesal 主题的个性化设置</a></h5>
+                    </div>
+                </div>
+                
+                <div class="item same-height-row clearfix">
+                    <div class="image same-height-always">
                         <a href="https://openr.netlify.com/blog/rosr-shiny/">
                           
                             <img src="https://openr.netlify.com/img/banners/logo-rosr.png" class="img-responsive" alt="rosr News: a Shiny GUI and RStudio addin for choosing and creating sub-projects">
@@ -530,19 +549,6 @@ beginr::list2ascii(alist)</code></pre>
                     </div>
                     <div class="name same-height-always">
                         <h5><a href="https://openr.netlify.com/blog/rosr/">rosr: Create academic R markdown projects for open science and reproducible research</a></h5>
-                    </div>
-                </div>
-                
-                <div class="item same-height-row clearfix">
-                    <div class="image same-height-always">
-                        <a href="https://openr.netlify.com/blog/beginr-features-packr/">
-                          
-                            <img src="https://openr.netlify.com/img/banners/logo-beginr.png" class="img-responsive" alt="[New Features on beginr] Automatically generate a self-contained package">
-                          
-                        </a>
-                    </div>
-                    <div class="name same-height-always">
-                        <h5><a href="https://openr.netlify.com/blog/beginr-features-packr/">[New Features on beginr] Automatically generate a self-contained package</a></h5>
                     </div>
                 </div>
                 

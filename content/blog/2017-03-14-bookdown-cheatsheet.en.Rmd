@@ -1,6 +1,6 @@
 ---
 title: "R bookdown cheatsheet"
-author: 赵鹏
+author: Peng Zhao
 date: '2017-03-14'
 slug: bookdown-cheatsheet
 summary: "A summary of R bookdown usage and syntax."

@@ -1,6 +1,6 @@
 ---
 title: "[R: New Features on pinyin] Convert Chinese Characters into Sijiao and Wubi codes"
-author: 赵鹏
+author: Peng Zhao
 date: "2018-10-12 13:31:42"
 slug: pinyin-wubi
 tags: 

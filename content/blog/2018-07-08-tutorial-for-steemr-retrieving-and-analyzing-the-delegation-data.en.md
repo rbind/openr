@@ -1,6 +1,6 @@
 ---
 title: "[Tutorial for steemr] Retrieving and Analyzing the delegation Data"
-author: 赵鹏
+author: Peng Zhao
 date: "2018-07-08 21:08:06"
 slug: tutorial-for-steemr-retrieving-and-analyzing-the-delegation-data
 tags: 

@@ -15,7 +15,6 @@ banner: img/banners/logo-openr.png
 
 “R 语言，开放科学和可重复性研究”的课件，xaringan 包制作。这个包做幻灯片果然是可以飞起的。
 
-<!--more-->
 
 
 ```{r, echo = FALSE}

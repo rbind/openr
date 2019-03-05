@@ -1,6 +1,6 @@
 ---
 title: "[Tutorial for steemr] Installation + Retrieving and Analyzing Steemians' profiles"
-author: 赵鹏
+author: Peng Zhao
 date: "2018-07-06 14:15:00"
 slug: steemr-tutorial-gid
 tags: 

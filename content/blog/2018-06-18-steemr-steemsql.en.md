@@ -1,6 +1,6 @@
 ---
 title: "[New Features on steemr] Now steemr supports SteemSQL queries!"
-author: 赵鹏
+author: Peng Zhao
 date: "2018-06-18 15:06:48"
 slug: steemr-steemsql
 tags: 

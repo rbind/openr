@@ -1,6 +1,6 @@
 ---
 title: "[New Features on steemr] Functions for delegation report and CNer report!"
-author: 赵鹏
+author: Peng Zhao
 date: "2018-07-09 12:26:30"
 slug: steemr-delegation-cner
 tags: 

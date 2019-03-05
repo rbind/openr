@@ -1,6 +1,6 @@
 ---
 title: 'R package beginr released on CRAN'
-author: 赵鹏
+author: Peng Zhao
 date: '2017-06-23'
 slug: beginr-released
 summary: "beginr is a collection of useful functions for R beginners. It might be helpful to R experts as well."

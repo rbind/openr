@@ -1,6 +1,6 @@
 ---
 title: "bookdownplus gallery: a web app for displaying and sharing bookdown templates"
-author: 赵鹏
+author: Peng Zhao
 date: "2018-09-23 16:34:39"
 slug: bookdownplus-gallery
 tags: 

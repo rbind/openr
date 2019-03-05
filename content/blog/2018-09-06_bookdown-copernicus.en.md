@@ -1,6 +1,6 @@
 ---
 title: A template for Copernicus academic journals
-author: 赵鹏
+author: Peng Zhao
 date: '2018-09-06'
 slug: bookdown-copernicus
 categories: []

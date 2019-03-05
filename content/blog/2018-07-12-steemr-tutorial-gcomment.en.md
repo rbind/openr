@@ -1,6 +1,6 @@
 ---
 title: "[Tutorial for steemr] Retrieving and Analyzing the Comment Data"
-author: 赵鹏
+author: Peng Zhao
 date: "2018-07-12 09:44:48"
 slug: steemr-tutorial-gcomment
 tags: 

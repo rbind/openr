@@ -1,6 +1,6 @@
 ---
 title: "[New Features on steemr] Diagrams in the follower shiny app!"
-author: 赵鹏
+author: Peng Zhao
 date: "2018-08-16 12:57:21"
 slug: steemr-sfollow-diagrams
 tags: 

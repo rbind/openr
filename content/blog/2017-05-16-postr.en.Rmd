@@ -1,6 +1,6 @@
 ---
 title: 'R package postr: created posters with R markdown'
-author: 赵鹏
+author: Peng Zhao
 date: '2017-05-16'
 slug: postr
 summary: "My first self-developed R package."

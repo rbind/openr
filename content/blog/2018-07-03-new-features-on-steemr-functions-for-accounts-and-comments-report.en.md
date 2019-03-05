@@ -1,6 +1,6 @@
 ---
 title: "[New Features on steemr] Functions for accounts and comments report!"
-author: 赵鹏
+author: Peng Zhao
 date: "2018-07-03 09:59:42"
 slug: new-features-on-steemr-functions-for-accounts-and-comments-report
 tags: 

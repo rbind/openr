@@ -1,6 +1,6 @@
 ---
 title: "[New Features on steemr] A Shiny app for the statistics of the Steem CN community!"
-author: 赵鹏
+author: Peng Zhao
 date: "2018-09-06 09:36:42"
 slug: steemr-scner
 tags: 

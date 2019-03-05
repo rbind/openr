@@ -1,6 +1,6 @@
 ---
 title: "R bookdown cheatsheet"
-author: 赵鹏
+author: Peng Zhao
 date: '2017-03-14'
 slug: bookdown-cheatsheet
 summary: "A summary of R bookdown usage and syntax."
@@ -27,7 +27,6 @@ knitr::opts_chunk$set(echo = TRUE)
 - pdf, word and html files can be exported.
 - best choice to write reproducible documents.
 
-<!--more-->
 
 ### Installation
 
