@@ -55,7 +55,22 @@
                                             <a href="{{ .Permalink }}"><i class="fa fa-calendar-o"></i> {{ .Date.Format .Site.Params.date_format }}</a>
                                         </p>
                                     </div>
-                                    <p class="intro">{{ .Summary }}</p>
+									      {{ if .Params.summary }}
+      {{ .Params.summary | emojify }}
+      {{ else if .Params.abstract }}
+      {{ .Params.abstract | plainify | emojify | truncate 250 }}
+      {{ else if .Summary }}
+      {{ .Summary | emojify }}
+      {{ end }}
+	  
+<!--									                              <p> {{ if .Description }}
+                                    {{ .Description }}
+                                        {{ else }}
+                                  {{ .Summary | plainify | safeHTML }}
+                                        {{ end }}</p>
+										
+                                    <p class="intro">{{ .Summary }}</p> -->
+									
                                     <p class="read-more"><a href="{{ .Permalink }}" class="btn btn-template-main">{{ i18n "continueReading" }}</a>
                                     </p>
                                 </div>
