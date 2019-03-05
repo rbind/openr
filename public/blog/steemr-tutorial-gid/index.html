@@ -57,6 +57,42 @@
   <meta property="og:url" content="/blog/steemr-tutorial-gid//" />
   <meta property="og:image" content="img/logo-small.png" />
 
+  <script type="text/javascript"
+        async
+        src="https://cdn.bootcss.com/mathjax/2.7.3/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$'], ['\[\[','\]\]']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+});
+
+MathJax.Hub.Queue(function() {
+    
+    
+    
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i = 0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+});
+</script>
+
+<style>
+code.has-jax {
+    font: inherit;
+    font-size: 100%;
+    background: inherit;
+    border: inherit;
+    color: #515151;
+}
+</style>
+
 </head>
 
 
@@ -170,14 +206,14 @@
 
                     <div class="col-md-9" id="blog-post">
 
-                        <p class="text-muted text-uppercase mb-small text-right">By <a href="#">dapeng</a> | July 6, 2018</p>
+                        <p class="text-muted text-uppercase mb-small text-right">By <a href="#">赵鹏</a> | July 6, 2018</p>
 
                         <div id="post-content">
                           <h3 id="what-will-i-learn">What Will I Learn?</h3>
 
 <ul>
 <li>Setting-up of the environment which steemr requires.</li>
-<li>Using the function <code>gid()</code> to retrieve a Steemian&rsquo;s profile from the block chain or the data servers.</li>
+<li>Using the function <code>gid()</code> to retrieve a Steemian's profile from the block chain or the data servers.</li>
 <li>Using other R functions to enhance and analyze the data retrieved by <code>gid()</code>.</li>
 </ul>
 
@@ -203,17 +239,17 @@
 
 <p>R is a free, open-source, cross-platform programming language, which is very friendly to non-professional programmers. Although R was born for statistical analysis, nowadays it is popular not only in scientific research but also in industry. This tutorial will demonstrate how beginners can easily use R to process Steem data.</p>
 
-<p>The installation of R can be found on the official website of the <a href="https://cran.r-project.org/">Comprehensive R Archive Network (CRAN)</a> or in many textbooks such as <em><a href="https://steemit.com/cn/@dapeng/xuer-sale">Learning R: R for Rookies</a></em>. For the tutorial&rsquo;s integrity, here is a brief description for Windows users. Mac and Linux users can simply follow the official manual by CRAN.</p>
+<p>The installation of R can be found on the official website of the <a href="https://cran.r-project.org/">Comprehensive R Archive Network (CRAN)</a> or in many textbooks such as <em><a href="https://steemit.com/cn/@dapeng/xuer-sale">Learning R: R for Rookies</a></em>. For the tutorial's integrity, here is a brief description for Windows users. Mac and Linux users can simply follow the official manual by CRAN.</p>
 
 <ol>
-<li>Go to <a href="https://cran.r-project.org/">CRAN</a>. Click the right link in the list of &lsquo;Download and Install R&rsquo; according to your platform. Here we click &lsquo;<a href="https://cran.r-project.org/bin/windows/">Download R for Windows</a>&rsquo;.</li>
-<li>Click &lsquo;<a href="https://cran.r-project.org/bin/windows/base/">base</a>&rsquo;.</li>
-<li>Click &lsquo;<a href="https://cran.r-project.org/bin/windows/base/R-3.5.1-win.exe">Download R 3.5.1 for Windows</a>&rsquo;.</li>
+<li>Go to <a href="https://cran.r-project.org/">CRAN</a>. Click the right link in the list of 'Download and Install R' according to your platform. Here we click '<a href="https://cran.r-project.org/bin/windows/">Download R for Windows</a>'.</li>
+<li>Click '<a href="https://cran.r-project.org/bin/windows/base/">base</a>'.</li>
+<li>Click '<a href="https://cran.r-project.org/bin/windows/base/R-3.5.1-win.exe">Download R 3.5.1 for Windows</a>'.</li>
 </ol>
 
 <p>3.5.1 is the newest version number of R. It could be updated in the future.</p>
 
-<p>Now we get a file &lsquo;R-3.5.1-win.exe&rsquo; on the local disk. Double click it and click the &lsquo;Next&hellip;&rsquo; button to complete the installation.</p>
+<p>Now we get a file 'R-3.5.1-win.exe' on the local disk. Double click it and click the 'Next...' button to complete the installation.</p>
 
 <p><strong><em>RStudio</em></strong></p>
 
@@ -226,18 +262,18 @@
 
 <p>1.1.453 is the newest version number of RStudio. It could be updated in the future as well.</p>
 
-<p>Now we get a file &lsquo;RStudio-1.1.453.exe&rsquo; on the local disk. Double click it and click the &lsquo;Next&hellip;&rsquo; button to complete the installation.</p>
+<p>Now we get a file 'RStudio-1.1.453.exe' on the local disk. Double click it and click the 'Next...' button to complete the installation.</p>
 
-<p><strong><em>&lsquo;steemr&rsquo; and &lsquo;steemr2&rsquo; packages</em></strong></p>
+<p><strong><em>'steemr' and 'steemr2' packages</em></strong></p>
 
-<p>The &lsquo;steemr&rsquo; package is availalbe on <a href="https://cran.r-project.org/package=steemr">CRAN</a>. However, we suggest the development version, which could be installed from github. The &lsquo;steemr2&rsquo; package, forked from kharoof/steemR,  is available only on github.</p>
+<p>The 'steemr' package is availalbe on <a href="https://cran.r-project.org/package=steemr">CRAN</a>. However, we suggest the development version, which could be installed from github. The 'steemr2' package, forked from kharoof/steemR,  is available only on github.</p>
 
-<p>The &lsquo;devtools&rsquo; must be installed first. Open RStudio, and run the following codes.</p>
+<p>The 'devtools' must be installed first. Open RStudio, and run the following codes.</p>
 
 <pre><code>install.packages('devtools')
 </code></pre>
 
-<p>With the &lsquo;devtools&rsquo; package, we could install the pacakge from github.</p>
+<p>With the 'devtools' package, we could install the pacakge from github.</p>
 
 <pre><code>devtools::install_github('pzhaonet/steemr')
 devtools::install_github('pzhaonet/steemr2')
@@ -245,7 +281,7 @@ devtools::install_github('pzhaonet/steemr2')
 
 <h3 id="basic-usage-of-gid">Basic usage of <code>gid()</code></h3>
 
-<p>Load the &lsquo;steemr&rsquo; and &lsquo;steemr2&rsquo; packages:</p>
+<p>Load the 'steemr' and 'steemr2' packages:</p>
 
 <pre><code>require('steemr')
 
@@ -256,7 +292,7 @@ require('steemr2')
 ## Loading required package: steemr2
 </code></pre>
 
-<p>The function name &lsquo;gid&rsquo; means &lsquo;get ID information&rsquo;. It is very easy to get a Steemian&rsquo;s profile. Simply run the code:</p>
+<p>The function name 'gid' means 'get ID information'. It is very easy to get a Steemian's profile. Simply run the code:</p>
 
 <pre><code>gid('dapeng')
 
@@ -270,14 +306,14 @@ require('steemr2')
 ## 1: 事了拂衣去，深藏身与名。
 </code></pre>
 
-<p>It is a data frame with @dapeng&rsquo;s profile.</p>
+<p>It is a data frame with @dapeng's profile.</p>
 
 <p>As we need this data frame for future use, it can be assigned to a variable:</p>
 
 <pre><code>myid &lt;- gid('dapeng')
 </code></pre>
 
-<p>What information do we have in &lsquo;myid&rsquo;? Let&rsquo;s see the names of the columns:</p>
+<p>What information do we have in 'myid'? Let's see the names of the columns:</p>
 
 <pre><code>names(myid)
 
@@ -287,7 +323,7 @@ require('steemr2')
 ## [10] &quot;profile_about&quot;     &quot;profile_location&quot;
 </code></pre>
 
-<p>The column names are self-explanary. We could extract any column by using the <code>$</code> operator. For example, let&rsquo;s see @dapeng&rsquo;s reputation.</p>
+<p>The column names are self-explanary. We could extract any column by using the <code>$</code> operator. For example, let's see @dapeng's reputation.</p>
 
 <pre><code>myid$rep
 
@@ -295,18 +331,18 @@ require('steemr2')
 </code></pre>
 
 <blockquote>
-<p>Exercise 1: retrieve your own profile. Exercise 2: retrieve your friends&rsquo; profiles.</p>
+<p>Exercise 1: retrieve your own profile. Exercise 2: retrieve your friends' profiles.</p>
 </blockquote>
 
 <h3 id="advanced-usage-of-gid">Advanced usage of <code>gid()</code></h3>
 
-<p>Let&rsquo;s go further into <code>gid()</code>.</p>
+<p>Let's go further into <code>gid()</code>.</p>
 
 <p>Two parameters are available for <code>gid()</code>:</p>
 
 <ul>
 <li><code>id</code> specifies the ID of interest, which is mandatory.</li>
-<li><code>mothod</code> specifies the data server to connect, which is optional. By default, <code>gid()</code> uses &lsquo;appbase_api&rsquo;.</li>
+<li><code>mothod</code> specifies the data server to connect, which is optional. By default, <code>gid()</code> uses 'appbase_api'.</li>
 </ul>
 
 <p>We could get the ID data from steemdb.com as well, which provides much more information:</p>
@@ -451,7 +487,7 @@ myid_steemdb
 <pre><code>winda &lt;- c('winniex', 'windowglass', 'davidke20', 'dapeng')
 </code></pre>
 
-<p>Now I need a list of the profiles of the members. The <code>lapply()</code> function could retrieve multiple IDs&rsquo; profiles with one single line.</p>
+<p>Now I need a list of the profiles of the members. The <code>lapply()</code> function could retrieve multiple IDs' profiles with one single line.</p>
 
 <pre><code>winda_p &lt;- lapply(winda, gid)
 winda_p
@@ -623,16 +659,16 @@ summary(steemh_df)
 ## 
 </code></pre>
 
-<p>Now we can plot a histogram which displays the distribution of the authors&rsquo; reputations.</p>
+<p>Now we can plot a histogram which displays the distribution of the authors' reputations.</p>
 
 <pre><code>beginr::plothist(steemh_df$rep, show_normline = T, show_skewness = FALSE)
 </code></pre>
 
 <p><img src="https://raw.githubusercontent.com/pzhaonet/steemr-book/master/img/fig-gid-2-1.png" style="display: block; margin: auto;" /></p>
 
-<p>The reputation ranges  from 42 to 75, indicating that the authors include both rookies and high-level steemians. The median of the authors&rsquo; repuation is 58. Half of the authors have a reputation between 52 and 56. Yes, most of the authors are from the middle class.</p>
+<p>The reputation ranges  from 42 to 75, indicating that the authors include both rookies and high-level steemians. The median of the authors' repuation is 58. Half of the authors have a reputation between 52 and 56. Yes, most of the authors are from the middle class.</p>
 
-<p>As <code>gid()</code> imports the Steemians&rsquo; profile data into R, the users are free to use many powerful R functions to do whatever they want.</p>
+<p>As <code>gid()</code> imports the Steemians' profile data into R, the users are free to use many powerful R functions to do whatever they want.</p>
 
 <blockquote>
 <p>Exercise 6: plot a hist diagram for the Steem Power (SP) of the group in which you are involved.</p>
@@ -694,10 +730,10 @@ summary(steemh_df)
     <div class="panel-body">
         <ul class="tag-cloud">
             
-            <li><a href="https://openr.netlify.com/tags/beginr"><i class="fa fa-tags"></i> beginr</a>
+            <li><a href="https://openr.netlify.com/tags/advr"><i class="fa fa-tags"></i> advr</a>
             </li>
             
-            <li><a href="https://openr.netlify.com/tags/blogdown"><i class="fa fa-tags"></i> blogdown</a>
+            <li><a href="https://openr.netlify.com/tags/beginr"><i class="fa fa-tags"></i> beginr</a>
             </li>
             
             <li><a href="https://openr.netlify.com/tags/bookdown"><i class="fa fa-tags"></i> bookdown</a>
@@ -712,13 +748,10 @@ summary(steemh_df)
             <li><a href="https://openr.netlify.com/tags/mindr"><i class="fa fa-tags"></i> mindr</a>
             </li>
             
+            <li><a href="https://openr.netlify.com/tags/news"><i class="fa fa-tags"></i> news</a>
+            </li>
+            
             <li><a href="https://openr.netlify.com/tags/pinyin"><i class="fa fa-tags"></i> pinyin</a>
-            </li>
-            
-            <li><a href="https://openr.netlify.com/tags/post"><i class="fa fa-tags"></i> post</a>
-            </li>
-            
-            <li><a href="https://openr.netlify.com/tags/postr"><i class="fa fa-tags"></i> postr</a>
             </li>
             
             <li><a href="https://openr.netlify.com/tags/r"><i class="fa fa-tags"></i> r</a>
@@ -734,9 +767,6 @@ summary(steemh_df)
             </li>
             
             <li><a href="https://openr.netlify.com/tags/tutorial"><i class="fa fa-tags"></i> tutorial</a>
-            </li>
-            
-            <li><a href="https://openr.netlify.com/tags/utopian-io"><i class="fa fa-tags"></i> utopian-io</a>
             </li>
             
         </ul>

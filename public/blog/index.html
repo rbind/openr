@@ -57,6 +57,42 @@
   <meta property="og:url" content="/blog//" />
   <meta property="og:image" content="img/logo-small.png" />
 
+  <script type="text/javascript"
+        async
+        src="https://cdn.bootcss.com/mathjax/2.7.3/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$'], ['\[\[','\]\]']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+});
+
+MathJax.Hub.Queue(function() {
+    
+    
+    
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i = 0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+});
+</script>
+
+<style>
+code.has-jax {
+    font: inherit;
+    font-size: 100%;
+    background: inherit;
+    border: inherit;
+    color: #515151;
+}
+</style>
+
 </head>
 
 
@@ -186,7 +222,7 @@
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
-                                          By <a href="#">dapeng</a>
+                                          By <a href="#">赵鹏</a>
                                           
                                           
 
@@ -195,7 +231,12 @@
                                             <a href="https://openr.netlify.com/blog/rosr-shiny/"><i class="fa fa-calendar-o"></i> January 31, 2019</a>
                                         </p>
                                     </div>
-                                    <p class="intro"><p>&lsquo;rosr&rsquo; is an R package for creating reproducible academic project with integrated various academic elements, including data, bibliography, codes, images, manuscripts, dissertations, slides and so on. These elements are well connected so that they can be easily synchronized and updated. Users don&rsquo;t have to repeat copying and pasting their results and figures from time to time. It will be easy for the scientific researchers to use, even if they are R beginners, or even non-R-users.</p></p>
+									      
+      <p>'rosr' is an R package for creating reproducible academic project with integrated various academic elements, including data, bibliography, codes, images, manuscripts, dissertations, slides and so on. These elements are well connected so that they can be easily synchronized and updated. Users don't have to repeat copying and pasting their results and figures from time to time. It will be easy for the scientific researchers to use, even if they are R beginners, or even non-R-users.</p>
+      
+	  
+
+									
                                     <p class="read-more"><a href="https://openr.netlify.com/blog/rosr-shiny/" class="btn btn-template-main">Continue reading</a>
                                     </p>
                                 </div>
@@ -218,7 +259,7 @@
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
-                                          By <a href="#">dapeng</a>
+                                          By <a href="#">赵鹏</a>
                                           
                                           
 
@@ -227,7 +268,12 @@
                                             <a href="https://openr.netlify.com/blog/rosr/"><i class="fa fa-calendar-o"></i> January 28, 2019</a>
                                         </p>
                                     </div>
-                                    <p class="intro"><p>Weeks ago, I gave a short training course at one of the top institutes in the world. The course was called &lsquo;<em>R, Open Science and Reproducible Research</em>&rsquo;, abbreviated as <em>ROSS</em>. It was given to the academic researchers who were interested in R and reproducible research. The R markdown family, including &lsquo;rticles&rsquo;, &lsquo;bookdown&rsquo;, &lsquo;xaringan&rsquo; etc., were introduced. The audience were excited in the course. They felt, however, confused after the course by using these packages on their own work. It is not easy to connect their own work with the R Markdown ecosystem.</p></p>
+									      
+      <p>Weeks ago, I gave a short training course at one of the top institutes in the world. The course was called '<em>R, Open Science and Reproducible Research</em>', abbreviated as <em>ROSS</em>. It was given to the academic researchers who were interested in R and reproducible research. The R markdown family, including 'rticles', 'bookdown', 'xaringan' etc., were introduced. The audience were excited in the course. They felt, however, confused after the course by using these packages on their own work. It is not easy to connect their own work with the R Markdown ecosystem.</p>
+      
+	  
+
+									
                                     <p class="read-more"><a href="https://openr.netlify.com/blog/rosr/" class="btn btn-template-main">Continue reading</a>
                                     </p>
                                 </div>
@@ -250,7 +296,7 @@
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
-                                          By <a href="#">dapeng</a>
+                                          By <a href="#">赵鹏</a>
                                           
                                           
 
@@ -259,7 +305,12 @@
                                             <a href="https://openr.netlify.com/blog/beginr-features-packr/"><i class="fa fa-calendar-o"></i> January 26, 2019</a>
                                         </p>
                                     </div>
-                                    <p class="intro"><p>Most R beginners think that developing an R package is a mission impossible. It is not true. With the new function <code>packr()</code> , users can create a user-defined useful R packages easily. They can specify in <code>packr()</code>a group of packages (e.g. foo_1, foo_2, foo_x) which they often use and the new package name, say <code>foobar</code>, then a new package called <code>foobar</code> will be generated.</p></p>
+									      
+      <p>Most R beginners think that developing an R package is a mission impossible. It is not true. With the new function <code>packr()</code> , users can create a user-defined useful R packages easily. They can specify in <code>packr()</code>a group of packages (e.g. foo_1, foo_2, foo_x) which they often use and the new package name, say <code>foobar</code>, then a new package called <code>foobar</code> will be generated.</p>
+      
+	  
+
+									
                                     <p class="read-more"><a href="https://openr.netlify.com/blog/beginr-features-packr/" class="btn btn-template-main">Continue reading</a>
                                     </p>
                                 </div>
@@ -282,7 +333,7 @@
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
-                                          By <a href="#">dapeng</a>
+                                          By <a href="#">赵鹏</a>
                                           
                                           
 
@@ -291,7 +342,12 @@
                                             <a href="https://openr.netlify.com/blog/mindr-features-mm-tree/"><i class="fa fa-calendar-o"></i> January 26, 2019</a>
                                         </p>
                                     </div>
-                                    <p class="intro"><p>The new version 1.2.0 mainly brings four exciting features.</p></p>
+									      
+      <p>The new version 1.2.0 mainly brings four exciting features.</p>
+      
+	  
+
+									
                                     <p class="read-more"><a href="https://openr.netlify.com/blog/mindr-features-mm-tree/" class="btn btn-template-main">Continue reading</a>
                                     </p>
                                 </div>
@@ -314,7 +370,7 @@
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
-                                          By <a href="#">dapeng</a>
+                                          By <a href="#">赵鹏</a>
                                           
                                           
 
@@ -323,11 +379,16 @@
                                             <a href="https://openr.netlify.com/blog/rmd/"><i class="fa fa-calendar-o"></i> January 26, 2019</a>
                                         </p>
                                     </div>
-                                    <p class="intro"><p>Since &lsquo;rmarkdown&rsquo; and &lsquo;knitr&rsquo;, more and more members (rticles, bookdown, mindr&hellip;) have been joining the R Markdown family. Users can write elegant reproducible documents, manuscripts, dissertations, books, blog posts, posters, and slides within the framework of R markdown. It is exciting, while the installation and maintenance becomes annoying. In the meanwhile, there are plenty of useful RStudio addins, which equip the RStudio IDE as a powerful markdown editor. However, these little tools are often hidden somewhere deep in the community, and it is difficult to dig them out.</p>
+									      
+      <p>Since 'rmarkdown' and 'knitr', more and more members (rticles, bookdown, mindr...) have been joining the R Markdown family. Users can write elegant reproducible documents, manuscripts, dissertations, books, blog posts, posters, and slides within the framework of R markdown. It is exciting, while the installation and maintenance becomes annoying. In the meanwhile, there are plenty of useful RStudio addins, which equip the RStudio IDE as a powerful markdown editor. However, these little tools are often hidden somewhere deep in the community, and it is difficult to dig them out.</p>
 
-<p>With &lsquo;rmd&rsquo; you can easily explore, install, and load them for both R users and non-users. Furthermore, &lsquo;rmd&rsquo; provides a RStudio addin to explore the R Markdown family and install them with a single click.</p>
+<p>With 'rmd' you can easily explore, install, and load them for both R users and non-users. Furthermore, 'rmd' provides a RStudio addin to explore the R Markdown family and install them with a single click.</p>
 
-<p>Forget R, and enjoy the wonderful world of R Markdown.</p></p>
+<p>Forget R, and enjoy the wonderful world of R Markdown.</p>
+      
+	  
+
+									
                                     <p class="read-more"><a href="https://openr.netlify.com/blog/rmd/" class="btn btn-template-main">Continue reading</a>
                                     </p>
                                 </div>
@@ -350,7 +411,7 @@
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
-                                          By <a href="#">dapeng</a>
+                                          By <a href="#">赵鹏</a>
                                           
                                           
 
@@ -359,9 +420,14 @@
                                             <a href="https://openr.netlify.com/blog/mindr-r-mm/"><i class="fa fa-calendar-o"></i> November 17, 2018</a>
                                         </p>
                                     </div>
-                                    <p class="intro"><p>Commit: <a href="https://github.com/pzhaonet/mindr/commit/e82538b89421c314d1612affd2b24a62d4274165">convertion between .Rmd, .R. and .mm</a></p>
+									      
+      <p>Commit: <a href="https://github.com/pzhaonet/mindr/commit/e82538b89421c314d1612affd2b24a62d4274165">convertion between .Rmd, .R. and .mm</a></p>
 
-<p>The new version 1.1.8 mainly brings two exciting features.</p></p>
+<p>The new version 1.1.8 mainly brings two exciting features.</p>
+      
+	  
+
+									
                                     <p class="read-more"><a href="https://openr.netlify.com/blog/mindr-r-mm/" class="btn btn-template-main">Continue reading</a>
                                     </p>
                                 </div>
@@ -384,7 +450,7 @@
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
-                                          By <a href="#">dapeng</a>
+                                          By <a href="#">赵鹏</a>
                                           
                                           
 
@@ -393,7 +459,12 @@
                                             <a href="https://openr.netlify.com/blog/pinyin-user-defined/"><i class="fa fa-calendar-o"></i> October 15, 2018</a>
                                         </p>
                                     </div>
-                                    <p class="intro"><p>The pinyin package intended to convert Chinese characters into pinyin. However, more demands were called by users. That was why the features of converting to four-corner codes and five-stroke codes (version 98) were added. After my previous update, the utopian moderator @justyy kindly <a href="https://steemit.com/utopian-io/@justyy/re-dapeng-pinyin-wubi-20181012t201139924z">suggested</a> adding the Five-Stroke-86 as well. I totally agree, and I think there could be more.</p></p>
+									      
+      <p>The pinyin package intended to convert Chinese characters into pinyin. However, more demands were called by users. That was why the features of converting to four-corner codes and five-stroke codes (version 98) were added. After my previous update, the utopian moderator @justyy kindly <a href="https://steemit.com/utopian-io/@justyy/re-dapeng-pinyin-wubi-20181012t201139924z">suggested</a> adding the Five-Stroke-86 as well. I totally agree, and I think there could be more.</p>
+      
+	  
+
+									
                                     <p class="read-more"><a href="https://openr.netlify.com/blog/pinyin-user-defined/" class="btn btn-template-main">Continue reading</a>
                                     </p>
                                 </div>
@@ -416,7 +487,7 @@
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
-                                          By <a href="#">dapeng</a>
+                                          By <a href="#">赵鹏</a>
                                           
                                           
 
@@ -425,7 +496,8 @@
                                             <a href="https://openr.netlify.com/blog/pinyin-wubi/"><i class="fa fa-calendar-o"></i> October 12, 2018</a>
                                         </p>
                                     </div>
-                                    <p class="intro"><h4 id="what-features-did-i-add">What features did I add?</h4>
+									      
+      <h4 id="what-features-did-i-add">What features did I add?</h4>
 
 <ul>
 <li>Four times faster for converting.</li>
@@ -433,7 +505,11 @@
 <li>Convert Chinese characters into Sijiao codes (literally <a href="https://en.wikipedia.org/wiki/Four-Corner_Method">four corner code</a>).</li>
 <li>and Wubi codes (literally <a href="https://en.wikipedia.org/wiki/Wubi_method">five-stroke</a>).</li>
 <li>Some minor bugs were fixed.</li>
-</ul></p>
+</ul>
+      
+	  
+
+									
                                     <p class="read-more"><a href="https://openr.netlify.com/blog/pinyin-wubi/" class="btn btn-template-main">Continue reading</a>
                                     </p>
                                 </div>
@@ -456,7 +532,7 @@
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
-                                          By <a href="#">dapeng</a>
+                                          By <a href="#">赵鹏</a>
                                           
                                           
 
@@ -465,7 +541,12 @@
                                             <a href="https://openr.netlify.com/blog/mindr-bookdown/"><i class="fa fa-calendar-o"></i> October 11, 2018</a>
                                         </p>
                                     </div>
-                                    <p class="intro"><p>In the recent months, I have received many kind feedbacks and helpful suggestions from mindr users. I did not improve or enhance mindr until the latest week. Now the new version 1.1.5 brings more exciting features.</p></p>
+									      
+      <p>In the recent months, I have received many kind feedbacks and helpful suggestions from mindr users. I did not improve or enhance mindr until the latest week. Now the new version 1.1.5 brings more exciting features.</p>
+      
+	  
+
+									
                                     <p class="read-more"><a href="https://openr.netlify.com/blog/mindr-bookdown/" class="btn btn-template-main">Continue reading</a>
                                     </p>
                                 </div>
@@ -476,31 +557,38 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="https://openr.netlify.com/blog/steemr-sposts/">
+                                      <a href="https://openr.netlify.com/blog/bookdownplus-gallery/">
                                           
-                                          <img src="https://openr.netlify.com/img/banners/logo-steemr.png" class="img-responsive" alt="">
+                                          <img src="https://openr.netlify.com/img/banners/logo-bookdownplus.png" class="img-responsive" alt="">
                                           
                                       </a>
                                   </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <h2><a href="https://openr.netlify.com/blog/steemr-sposts/">[New Features on steemr] Display all the posts of a give Steemian with statistics, and get the utopian review and upvote plan!</a></h2>
+                                    <h2><a href="https://openr.netlify.com/blog/bookdownplus-gallery/">bookdownplus gallery: a web app for displaying and sharing bookdown templates</a></h2>
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
-                                          By <a href="#">dapeng</a>
+                                          By <a href="#">赵鹏</a>
                                           
                                           
 
                                         </p>
                                         <p class="date-comments">
-                                            <a href="https://openr.netlify.com/blog/steemr-sposts/"><i class="fa fa-calendar-o"></i> September 8, 2018</a>
+                                            <a href="https://openr.netlify.com/blog/bookdownplus-gallery/"><i class="fa fa-calendar-o"></i> September 23, 2018</a>
                                         </p>
                                     </div>
-                                    <p class="intro"><ul>
-<li>A new function<code>sposts()</code> displays a Shiny app, which is a user friendly interactive UI to show all the posts of a give Steemian&rsquo;s ID.  Analysis diagrams are plotted as well, including the distribution of the post payout and votes, the active hour of the Steemian&rsquo;s posting, and the time series of the growth of the cumulative post number, payout, and votes.<br /></li>
-</ul></p>
-                                    <p class="read-more"><a href="https://openr.netlify.com/blog/steemr-sposts/" class="btn btn-template-main">Continue reading</a>
+									      
+      <p>Many years ago, I collected some LaTeX templates when learning LaTeX. However, my interest in LaTeX was gone after submitting my PhD dissertation. I should have deleted these templates if they had not been so small. They would never be useful in the future, I thought.</p>
+
+<p>In 2017, I started writing the book <a href="https://xuer.pzhao.org"> <em>Learning R: R for Rookies</em> </a>. Unexpectedly, MS Word could not satisfy me with the typesetting. You know what I mean if you have experience (and pain) in writing a long book or dissertation with Word. Actually I suffered more, but I do not want to talk about it. I was sure that LaTeX could, but I would rather not use it.</p>
+
+<p>Like a bolt out of the blue, I found <a href="https://CRAN.R-project.org/package=bookdown">bookdown</a>.</p>
+      
+	  
+
+									
+                                    <p class="read-more"><a href="https://openr.netlify.com/blog/bookdownplus-gallery/" class="btn btn-template-main">Continue reading</a>
                                     </p>
                                 </div>
                             </div>
@@ -569,10 +657,10 @@
     <div class="panel-body">
         <ul class="tag-cloud">
             
-            <li><a href="https://openr.netlify.com/tags/beginr"><i class="fa fa-tags"></i> beginr</a>
+            <li><a href="https://openr.netlify.com/tags/advr"><i class="fa fa-tags"></i> advr</a>
             </li>
             
-            <li><a href="https://openr.netlify.com/tags/blogdown"><i class="fa fa-tags"></i> blogdown</a>
+            <li><a href="https://openr.netlify.com/tags/beginr"><i class="fa fa-tags"></i> beginr</a>
             </li>
             
             <li><a href="https://openr.netlify.com/tags/bookdown"><i class="fa fa-tags"></i> bookdown</a>
@@ -587,13 +675,10 @@
             <li><a href="https://openr.netlify.com/tags/mindr"><i class="fa fa-tags"></i> mindr</a>
             </li>
             
+            <li><a href="https://openr.netlify.com/tags/news"><i class="fa fa-tags"></i> news</a>
+            </li>
+            
             <li><a href="https://openr.netlify.com/tags/pinyin"><i class="fa fa-tags"></i> pinyin</a>
-            </li>
-            
-            <li><a href="https://openr.netlify.com/tags/post"><i class="fa fa-tags"></i> post</a>
-            </li>
-            
-            <li><a href="https://openr.netlify.com/tags/postr"><i class="fa fa-tags"></i> postr</a>
             </li>
             
             <li><a href="https://openr.netlify.com/tags/r"><i class="fa fa-tags"></i> r</a>
@@ -609,9 +694,6 @@
             </li>
             
             <li><a href="https://openr.netlify.com/tags/tutorial"><i class="fa fa-tags"></i> tutorial</a>
-            </li>
-            
-            <li><a href="https://openr.netlify.com/tags/utopian-io"><i class="fa fa-tags"></i> utopian-io</a>
             </li>
             
         </ul>

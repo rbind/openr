@@ -57,6 +57,42 @@
   <meta property="og:url" content="//" />
   <meta property="og:image" content="img/logo-small.png" />
 
+  <script type="text/javascript"
+        async
+        src="https://cdn.bootcss.com/mathjax/2.7.3/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$'], ['\[\[','\]\]']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+});
+
+MathJax.Hub.Queue(function() {
+    
+    
+    
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i = 0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+});
+</script>
+
+<style>
+code.has-jax {
+    font: inherit;
+    font-size: 100%;
+    background: inherit;
+    border: inherit;
+    color: #515151;
+}
+</style>
+
 </head>
 
 
@@ -198,7 +234,7 @@
 
                         </div>
                         <div class="col-sm-7">
-                            <img class="img-responsive" src="img/banners/logo-rmd.png" alt="">
+                            <img class="img-responsive" src="https://openr.netlify.com/img/banners/logo-rmd.png" alt="">
                         </div>
                     </div>
                 </div>
@@ -216,7 +252,7 @@
 
                         </div>
                         <div class="col-sm-7">
-                            <img class="img-responsive" src="img/banners/logo-rosr.png" alt="">
+                            <img class="img-responsive" src="https://openr.netlify.com/img/banners/logo-rosr.png" alt="">
                         </div>
                     </div>
                 </div>
@@ -234,7 +270,7 @@
 
                         </div>
                         <div class="col-sm-7">
-                            <img class="img-responsive" src="img/banners/logo-bookdownplus.png" alt="">
+                            <img class="img-responsive" src="https://openr.netlify.com/img/banners/logo-bookdownplus.png" alt="">
                         </div>
                     </div>
                 </div>
@@ -252,7 +288,7 @@
 
                         </div>
                         <div class="col-sm-7">
-                            <img class="img-responsive" src="img/banners/logo-mindr.png" alt="">
+                            <img class="img-responsive" src="https://openr.netlify.com/img/banners/logo-mindr.png" alt="">
                         </div>
                     </div>
                 </div>
@@ -270,7 +306,7 @@
 
                         </div>
                         <div class="col-sm-7">
-                            <img class="img-responsive" src="img/banners/logo-beginr.png" alt="">
+                            <img class="img-responsive" src="https://openr.netlify.com/img/banners/logo-beginr.png" alt="">
                         </div>
                     </div>
                 </div>
@@ -288,7 +324,7 @@
 
                         </div>
                         <div class="col-sm-7">
-                            <img class="img-responsive" src="img/banners/logo-pinyin.png" alt="">
+                            <img class="img-responsive" src="https://openr.netlify.com/img/banners/logo-pinyin.png" alt="">
                         </div>
                     </div>
                 </div>
@@ -534,11 +570,11 @@
                             <h4><a href="https://openr.netlify.com/blog/rosr-shiny/">rosr News: a Shiny GUI and RStudio addin for choosing and creating sub-projects</a></h4>
                             <p class="author-category">
                             
-                            By <a href="#">dapeng</a>
+                            By <a href="#">赵鹏</a>
                             
                             on January 31, 2019
                             </p>
-                            <p class="intro"><p>&lsquo;rosr&rsquo; is an R package for creating reproducible academic project with integrated various academic elements, including data, bibliography, codes, images, manuscripts, dissertations, slides and so on. These elements are well connected so that they can be easily synchronized and updated. Users don&rsquo;t have to repeat copying and pasting their results and figures from time to time. It will be easy for the scientific researchers to use, even if they are R beginners, or even non-R-users.</p></p>
+                            <p class="intro"><p>'rosr' is an R package for creating reproducible academic project with integrated various academic elements, including data, bibliography, codes, images, manuscripts, dissertations, slides and so on. These elements are well connected so that they can be easily synchronized and updated. Users don't have to repeat copying and pasting their results and figures from time to time. It will be easy for the scientific researchers to use, even if they are R beginners, or even non-R-users.</p></p>
                             <p class="read-more">
                               <a href="https://openr.netlify.com/blog/rosr-shiny/" class="btn btn-template-main">Continue reading</a>
                             </p>
@@ -568,11 +604,11 @@
                             <h4><a href="https://openr.netlify.com/blog/rosr/">rosr: Create academic R markdown projects for open science and reproducible research</a></h4>
                             <p class="author-category">
                             
-                            By <a href="#">dapeng</a>
+                            By <a href="#">赵鹏</a>
                             
                             on January 28, 2019
                             </p>
-                            <p class="intro"><p>Weeks ago, I gave a short training course at one of the top institutes in the world. The course was called &lsquo;<em>R, Open Science and Reproducible Research</em>&rsquo;, abbreviated as <em>ROSS</em>. It was given to the academic researchers who were interested in R and reproducible research. The R markdown family, including &lsquo;rticles&rsquo;, &lsquo;bookdown&rsquo;, &lsquo;xaringan&rsquo; etc., were introduced. The audience were excited in the course. They felt, however, confused after the course by using these packages on their own work. It is not easy to connect their own work with the R Markdown ecosystem.</p></p>
+                            <p class="intro"><p>Weeks ago, I gave a short training course at one of the top institutes in the world. The course was called '<em>R, Open Science and Reproducible Research</em>', abbreviated as <em>ROSS</em>. It was given to the academic researchers who were interested in R and reproducible research. The R markdown family, including 'rticles', 'bookdown', 'xaringan' etc., were introduced. The audience were excited in the course. They felt, however, confused after the course by using these packages on their own work. It is not easy to connect their own work with the R Markdown ecosystem.</p></p>
                             <p class="read-more">
                               <a href="https://openr.netlify.com/blog/rosr/" class="btn btn-template-main">Continue reading</a>
                             </p>
@@ -602,7 +638,7 @@
                             <h4><a href="https://openr.netlify.com/blog/beginr-features-packr/">[New Features on beginr] Automatically generate a self-contained package</a></h4>
                             <p class="author-category">
                             
-                            By <a href="#">dapeng</a>
+                            By <a href="#">赵鹏</a>
                             
                             on January 26, 2019
                             </p>
@@ -636,7 +672,7 @@
                             <h4><a href="https://openr.netlify.com/blog/mindr-features-mm-tree/">mindr v.1.2.0 released: universal function and directory tree</a></h4>
                             <p class="author-category">
                             
-                            By <a href="#">dapeng</a>
+                            By <a href="#">赵鹏</a>
                             
                             on January 26, 2019
                             </p>
@@ -685,7 +721,7 @@
                     <li class="item" title="Peng Zhao">
                         
                           <a href="https://pzhao.org" target="_blank">
-                            <img src="https://www.pzhao.org/img/zhao.jpg" alt="Peng Zhao" class="img-responsive" />
+                            <img src="https://openr.netlify.com/img/clients/pengzhao.jpg" alt="Peng Zhao" class="img-responsive" />
                           </a>
                         
                     </li>
@@ -693,7 +729,7 @@
                     <li class="item" title="Wanna Join us?">
                         
                           <a href="mailto:xuer@pzhao.net" target="_blank">
-                            <img src="img/clients/Unclesamwantyou.jpg" alt="Wanna Join us?" class="img-responsive" />
+                            <img src="https://openr.netlify.com/img/clients/Unclesamwantyou.jpg" alt="Wanna Join us?" class="img-responsive" />
                           </a>
                         
                     </li>

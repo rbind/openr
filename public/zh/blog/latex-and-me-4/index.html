@@ -57,6 +57,42 @@
   <meta property="og:url" content="/zh/blog/latex-and-me-4//" />
   <meta property="og:image" content="img/logo.png" />
 
+  <script type="text/javascript"
+        async
+        src="https://cdn.bootcss.com/mathjax/2.7.3/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$'], ['\[\[','\]\]']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+});
+
+MathJax.Hub.Queue(function() {
+    
+    
+    
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i = 0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+});
+</script>
+
+<style>
+code.has-jax {
+    font: inherit;
+    font-size: 100%;
+    background: inherit;
+    border: inherit;
+    color: #515151;
+}
+</style>
+
 </head>
 
 
@@ -178,10 +214,6 @@
 
 <p>9</p>
 <p>bookdown 或者说 Pandoc 的伟大之处，就是把原先必须在 LaTeX 里做的事情，99.9% 都可以用 markdown 语法完成。剩下的 0.1%，例如公式、索引、控制换行、临时改变字体字号、强制分页等操作，所涉及的 LaTeX 命令都很简单（<code>$$</code>, <code>\index{}</code>、<code>\mbox{}</code>、<code>\small</code>、<code>\newpage</code>），偶尔用一下无伤大雅。只需找个漂亮的编辑器，在 bookdown 下写作就有不错的体验，而生成的 pdf 文档处处透露着 LaTeX 的优雅。平时自用一下，美得不行，仿佛梅开二度，枯木逢春。我为 bookdown 量身制作了 bookdownplus，pinyin 和 mindr 几个扩展包，沉浸在美妙之中不可自拔。</p>
-
-
-HUGOMORE42
-
 <p>但是，直到这次真正给《学 R》排版，真正要送到印刷厂印个几千本的时候，光有 bookdown 的现成模板就不够用了。《学 R》是本中文书，LaTeX 对中文的支持先天不足，很多细小的问题，得自己一个一个抠。</p>
 <p>比如中文里夹杂的英文词的中断换行（hyphenation），总是在不该断的地方瞎断。找不到完美的解决方案，最后我手动添加了 <code>\mbox{}</code> 凑合。</p>
 <p>比如段首空两格。我明明记得原先是自动空两格的，不知哪一次升级以后，这个设置就不见了。好在这个不难解决。</p>
@@ -267,7 +299,7 @@ HUGOMORE42
     <div class="panel-body">
         <ul class="nav nav-pills nav-stacked">
             
-            <li><a href="https://openr.netlify.com/categories/%e6%9c%aa%e5%88%86%e7%b1%bb">未分类 (7)</a>
+            <li><a href="https://openr.netlify.com/categories/xuer">xuer (16)</a>
             </li>
             
         </ul>
@@ -289,13 +321,7 @@ HUGOMORE42
     <div class="panel-body">
         <ul class="tag-cloud">
             
-            <li><a href="https://openr.netlify.com/tags/advr"><i class="fa fa-tags"></i> advr</a>
-            </li>
-            
             <li><a href="https://openr.netlify.com/tags/beginr"><i class="fa fa-tags"></i> beginr</a>
-            </li>
-            
-            <li><a href="https://openr.netlify.com/tags/blog"><i class="fa fa-tags"></i> blog</a>
             </li>
             
             <li><a href="https://openr.netlify.com/tags/blogdown"><i class="fa fa-tags"></i> blogdown</a>
@@ -307,22 +333,7 @@ HUGOMORE42
             <li><a href="https://openr.netlify.com/tags/bookdownplus"><i class="fa fa-tags"></i> bookdownplus</a>
             </li>
             
-            <li><a href="https://openr.netlify.com/tags/css"><i class="fa fa-tags"></i> css</a>
-            </li>
-            
-            <li><a href="https://openr.netlify.com/tags/drposter"><i class="fa fa-tags"></i> drposter</a>
-            </li>
-            
-            <li><a href="https://openr.netlify.com/tags/git"><i class="fa fa-tags"></i> git</a>
-            </li>
-            
-            <li><a href="https://openr.netlify.com/tags/hugo"><i class="fa fa-tags"></i> hugo</a>
-            </li>
-            
             <li><a href="https://openr.netlify.com/tags/latex"><i class="fa fa-tags"></i> latex</a>
-            </li>
-            
-            <li><a href="https://openr.netlify.com/tags/linux"><i class="fa fa-tags"></i> linux</a>
             </li>
             
             <li><a href="https://openr.netlify.com/tags/markdown"><i class="fa fa-tags"></i> markdown</a>
@@ -343,9 +354,6 @@ HUGOMORE42
             <li><a href="https://openr.netlify.com/tags/post"><i class="fa fa-tags"></i> post</a>
             </li>
             
-            <li><a href="https://openr.netlify.com/tags/postr"><i class="fa fa-tags"></i> postr</a>
-            </li>
-            
             <li><a href="https://openr.netlify.com/tags/r"><i class="fa fa-tags"></i> r</a>
             </li>
             
@@ -358,10 +366,7 @@ HUGOMORE42
             <li><a href="https://openr.netlify.com/tags/steemr"><i class="fa fa-tags"></i> steemr</a>
             </li>
             
-            <li><a href="https://openr.netlify.com/tags/teaching"><i class="fa fa-tags"></i> teaching</a>
-            </li>
-            
-            <li><a href="https://openr.netlify.com/tags/utopian-io"><i class="fa fa-tags"></i> utopian-io</a>
+            <li><a href="https://openr.netlify.com/tags/tutorial"><i class="fa fa-tags"></i> tutorial</a>
             </li>
             
             <li><a href="https://openr.netlify.com/tags/word"><i class="fa fa-tags"></i> word</a>
@@ -370,10 +375,13 @@ HUGOMORE42
             <li><a href="https://openr.netlify.com/tags/xaringan"><i class="fa fa-tags"></i> xaringan</a>
             </li>
             
-            <li><a href="https://openr.netlify.com/tags/%e5%90%89%e4%bb%96"><i class="fa fa-tags"></i> 吉他</a>
+            <li><a href="https://openr.netlify.com/tags/%e5%ad%a6"><i class="fa fa-tags"></i> 学</a>
             </li>
             
             <li><a href="https://openr.netlify.com/tags/%e5%ad%a6-r"><i class="fa fa-tags"></i> 学-r</a>
+            </li>
+            
+            <li><a href="https://openr.netlify.com/tags/%e5%ad%a6r"><i class="fa fa-tags"></i> 学r</a>
             </li>
             
         </ul>

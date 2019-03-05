@@ -57,6 +57,42 @@
   <meta property="og:url" content="/tags/steemr//" />
   <meta property="og:image" content="img/logo-small.png" />
 
+  <script type="text/javascript"
+        async
+        src="https://cdn.bootcss.com/mathjax/2.7.3/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$'], ['\[\[','\]\]']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+});
+
+MathJax.Hub.Queue(function() {
+    
+    
+    
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i = 0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+});
+</script>
+
+<style>
+code.has-jax {
+    font: inherit;
+    font-size: 100%;
+    background: inherit;
+    border: inherit;
+    color: #515151;
+}
+</style>
+
 </head>
 
 
@@ -186,7 +222,7 @@
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
-                                          By <a href="#">dapeng</a>
+                                          By <a href="#">赵鹏</a>
                                           
                                           
 
@@ -195,9 +231,14 @@
                                             <a href="https://openr.netlify.com/blog/new-features-on-steemr-functions-for-accounts-and-comments-report/"><i class="fa fa-calendar-o"></i> July 3, 2018</a>
                                         </p>
                                     </div>
-                                    <p class="intro"><h4 id="what-features-did-i-add">What features did I add?</h4>
+									      
+      <h4 id="what-features-did-i-add">What features did I add?</h4>
 
-<p>New functions were added to the steemr pakcage, which now can retrieve the account data and the comment data and plot diagrams automatically.</p></p>
+<p>New functions were added to the steemr pakcage, which now can retrieve the account data and the comment data and plot diagrams automatically.</p>
+      
+	  
+
+									
                                     <p class="read-more"><a href="https://openr.netlify.com/blog/new-features-on-steemr-functions-for-accounts-and-comments-report/" class="btn btn-template-main">Continue reading</a>
                                     </p>
                                 </div>
@@ -220,7 +261,7 @@
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
-                                          By <a href="#">dapeng</a>
+                                          By <a href="#">赵鹏</a>
                                           
                                           
 
@@ -229,7 +270,12 @@
                                             <a href="https://openr.netlify.com/blog/steemr-vote/"><i class="fa fa-calendar-o"></i> June 27, 2018</a>
                                         </p>
                                     </div>
-                                    <p class="intro"><p>&lsquo;<a href="https://cran.r-project.org/package=steemr">steemr</a>&rsquo; is an open source R package for playing with Steem data in <a href="https://en.wikipedia.org/wiki/R_(programming_language)">R environment</a>. It is used to download, post process, analyze,  and visualize Steem data on the basis of the powerful statistic power of R.</p></p>
+									      
+      <p>'<a href="https://cran.r-project.org/package=steemr">steemr</a>' is an open source R package for playing with Steem data in <a href="https://en.wikipedia.org/wiki/R_(programming_language)">R environment</a>. It is used to download, post process, analyze,  and visualize Steem data on the basis of the powerful statistic power of R.</p>
+      
+	  
+
+									
                                     <p class="read-more"><a href="https://openr.netlify.com/blog/steemr-vote/" class="btn btn-template-main">Continue reading</a>
                                     </p>
                                 </div>
@@ -252,7 +298,7 @@
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
-                                          By <a href="#">dapeng</a>
+                                          By <a href="#">赵鹏</a>
                                           
                                           
 
@@ -261,9 +307,14 @@
                                             <a href="https://openr.netlify.com/blog/new-features-on-steemr-supports-appbase-api-and-plots-active-hour-diagrams/"><i class="fa fa-calendar-o"></i> June 20, 2018</a>
                                         </p>
                                     </div>
-                                    <p class="intro"><ul>
+									      
+      <ul>
 <li>I have submitted steemr to CRAN and now it is <a href="https://CRAN.R-project.org/package=steemr">available</a>. Users can install steemr directly from CRAN:</li>
-</ul></p>
+</ul>
+      
+	  
+
+									
                                     <p class="read-more"><a href="https://openr.netlify.com/blog/new-features-on-steemr-supports-appbase-api-and-plots-active-hour-diagrams/" class="btn btn-template-main">Continue reading</a>
                                     </p>
                                 </div>
@@ -286,7 +337,7 @@
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
-                                          By <a href="#">dapeng</a>
+                                          By <a href="#">赵鹏</a>
                                           
                                           
 
@@ -295,9 +346,14 @@
                                             <a href="https://openr.netlify.com/blog/steemr-steemsql/"><i class="fa fa-calendar-o"></i> June 18, 2018</a>
                                         </p>
                                     </div>
-                                    <p class="intro"><p>In the recent week, steemr has been updated from version 0.0.0 to version 0.0.5. Users can simply ignore 0.0.1 to 0.0.4, which were slightly modified to meet the requirements by CRAN. However, users cannot miss version 0.0.5, which now supports SteemSQL queries!</p>
+									      
+      <p>In the recent week, steemr has been updated from version 0.0.0 to version 0.0.5. Users can simply ignore 0.0.1 to 0.0.4, which were slightly modified to meet the requirements by CRAN. However, users cannot miss version 0.0.5, which now supports SteemSQL queries!</p>
 
-<p>The main features of version 0.0.5 are listed as follows:</p></p>
+<p>The main features of version 0.0.5 are listed as follows:</p>
+      
+	  
+
+									
                                     <p class="read-more"><a href="https://openr.netlify.com/blog/steemr-steemsql/" class="btn btn-template-main">Continue reading</a>
                                     </p>
                                 </div>
@@ -320,7 +376,7 @@
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
-                                          By <a href="#">dapeng</a>
+                                          By <a href="#">赵鹏</a>
                                           
                                           
 
@@ -329,9 +385,14 @@
                                             <a href="https://openr.netlify.com/blog/new-project-steemr-an-r-package-to-download-play-with-and-visualize-steem-data/"><i class="fa fa-calendar-o"></i> June 12, 2018</a>
                                         </p>
                                     </div>
-                                    <p class="intro"><p>When I became active on steemit.com in July 2017, the first thing for me to do was to find an R package to process Steem data. As an R user and package developer, it would have been amazing if I could easily download my posts, my operations, my communications with others on Steem, and analyze the data with the power of R language.</p>
+									      
+      <p>When I became active on steemit.com in July 2017, the first thing for me to do was to find an R package to process Steem data. As an R user and package developer, it would have been amazing if I could easily download my posts, my operations, my communications with others on Steem, and analyze the data with the power of R language.</p>
 
-<p>Unfortunately, I found nothing.</p></p>
+<p>Unfortunately, I found nothing.</p>
+      
+	  
+
+									
                                     <p class="read-more"><a href="https://openr.netlify.com/blog/new-project-steemr-an-r-package-to-download-play-with-and-visualize-steem-data/" class="btn btn-template-main">Continue reading</a>
                                     </p>
                                 </div>
@@ -401,10 +462,10 @@
     <div class="panel-body">
         <ul class="tag-cloud">
             
-            <li><a href="https://openr.netlify.com/tags/beginr"><i class="fa fa-tags"></i> beginr</a>
+            <li><a href="https://openr.netlify.com/tags/advr"><i class="fa fa-tags"></i> advr</a>
             </li>
             
-            <li><a href="https://openr.netlify.com/tags/blogdown"><i class="fa fa-tags"></i> blogdown</a>
+            <li><a href="https://openr.netlify.com/tags/beginr"><i class="fa fa-tags"></i> beginr</a>
             </li>
             
             <li><a href="https://openr.netlify.com/tags/bookdown"><i class="fa fa-tags"></i> bookdown</a>
@@ -419,13 +480,10 @@
             <li><a href="https://openr.netlify.com/tags/mindr"><i class="fa fa-tags"></i> mindr</a>
             </li>
             
+            <li><a href="https://openr.netlify.com/tags/news"><i class="fa fa-tags"></i> news</a>
+            </li>
+            
             <li><a href="https://openr.netlify.com/tags/pinyin"><i class="fa fa-tags"></i> pinyin</a>
-            </li>
-            
-            <li><a href="https://openr.netlify.com/tags/post"><i class="fa fa-tags"></i> post</a>
-            </li>
-            
-            <li><a href="https://openr.netlify.com/tags/postr"><i class="fa fa-tags"></i> postr</a>
             </li>
             
             <li><a href="https://openr.netlify.com/tags/r"><i class="fa fa-tags"></i> r</a>
@@ -441,9 +499,6 @@
             </li>
             
             <li><a href="https://openr.netlify.com/tags/tutorial"><i class="fa fa-tags"></i> tutorial</a>
-            </li>
-            
-            <li><a href="https://openr.netlify.com/tags/utopian-io"><i class="fa fa-tags"></i> utopian-io</a>
             </li>
             
         </ul>

@@ -57,6 +57,42 @@
   <meta property="og:url" content="/blog/rosr-shiny//" />
   <meta property="og:image" content="img/logo-small.png" />
 
+  <script type="text/javascript"
+        async
+        src="https://cdn.bootcss.com/mathjax/2.7.3/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$'], ['\[\[','\]\]']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+});
+
+MathJax.Hub.Queue(function() {
+    
+    
+    
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i = 0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+});
+</script>
+
+<style>
+code.has-jax {
+    font: inherit;
+    font-size: 100%;
+    background: inherit;
+    border: inherit;
+    color: #515151;
+}
+</style>
+
 </head>
 
 
@@ -170,14 +206,14 @@
 
                     <div class="col-md-9" id="blog-post">
 
-                        <p class="text-muted text-uppercase mb-small text-right">By <a href="#">dapeng</a> | January 31, 2019</p>
+                        <p class="text-muted text-uppercase mb-small text-right">By <a href="#">赵鹏</a> | January 31, 2019</p>
 
                         <div id="post-content">
-                          <p>&lsquo;rosr&rsquo; is an R package for creating reproducible academic project with integrated various academic elements, including data, bibliography, codes, images, manuscripts, dissertations, slides and so on. These elements are well connected so that they can be easily synchronized and updated. Users don&rsquo;t have to repeat copying and pasting their results and figures from time to time. It will be easy for the scientific researchers to use, even if they are R beginners, or even non-R-users.</p>
+                          <p>'rosr' is an R package for creating reproducible academic project with integrated various academic elements, including data, bibliography, codes, images, manuscripts, dissertations, slides and so on. These elements are well connected so that they can be easily synchronized and updated. Users don't have to repeat copying and pasting their results and figures from time to time. It will be easy for the scientific researchers to use, even if they are R beginners, or even non-R-users.</p>
 
 <h3 id="new-features">New Features</h3>
 
-<p>In my previous about &lsquo;rosr&rsquo;, I planned</p>
+<p>In my previous about 'rosr', I planned</p>
 
 <ol>
 <li>to add more choices of the sub-projects with demos  to the arguments of the functions</li>
@@ -200,13 +236,13 @@
 <li><a href="https://github.com/pzhaonet/rosr/commit/6f7b26304b099e36190d9c74cb5c18b06aabf2da">add skeleton of the project</a></li>
 </ul>
 
-<p>Now non-R users don&rsquo;t have to run any R codes after installation. Just click the &lsquo;Addins&rsquo; button in RStudio and you can find &ldquo;Create a rosr project&rdquo;.</p>
+<p>Now non-R users don't have to run any R codes after installation. Just click the 'Addins' button in RStudio and you can find &quot;Create a rosr project&quot;.</p>
 
 <p><img src="https://github.com/rbind/pzhao/raw/master/static/img/rosr-addin.png" alt="" /></p>
 
 <p>Then a sheet will pop out, with all useful templates of journal manuscripts, posters, slides, books, dissertations and websites.</p>
 
-<p>Click the elements you want, and click &lsquo;create&rsquo;. You will get everything you like.</p>
+<p>Click the elements you want, and click 'create'. You will get everything you like.</p>
 
 <p><img src="https://github.com/rbind/pzhao/raw/master/static/img/rosr-screenshot.png" alt="" /></p>
 
@@ -282,10 +318,10 @@
     <div class="panel-body">
         <ul class="tag-cloud">
             
-            <li><a href="https://openr.netlify.com/tags/beginr"><i class="fa fa-tags"></i> beginr</a>
+            <li><a href="https://openr.netlify.com/tags/advr"><i class="fa fa-tags"></i> advr</a>
             </li>
             
-            <li><a href="https://openr.netlify.com/tags/blogdown"><i class="fa fa-tags"></i> blogdown</a>
+            <li><a href="https://openr.netlify.com/tags/beginr"><i class="fa fa-tags"></i> beginr</a>
             </li>
             
             <li><a href="https://openr.netlify.com/tags/bookdown"><i class="fa fa-tags"></i> bookdown</a>
@@ -300,13 +336,10 @@
             <li><a href="https://openr.netlify.com/tags/mindr"><i class="fa fa-tags"></i> mindr</a>
             </li>
             
+            <li><a href="https://openr.netlify.com/tags/news"><i class="fa fa-tags"></i> news</a>
+            </li>
+            
             <li><a href="https://openr.netlify.com/tags/pinyin"><i class="fa fa-tags"></i> pinyin</a>
-            </li>
-            
-            <li><a href="https://openr.netlify.com/tags/post"><i class="fa fa-tags"></i> post</a>
-            </li>
-            
-            <li><a href="https://openr.netlify.com/tags/postr"><i class="fa fa-tags"></i> postr</a>
             </li>
             
             <li><a href="https://openr.netlify.com/tags/r"><i class="fa fa-tags"></i> r</a>
@@ -322,9 +355,6 @@
             </li>
             
             <li><a href="https://openr.netlify.com/tags/tutorial"><i class="fa fa-tags"></i> tutorial</a>
-            </li>
-            
-            <li><a href="https://openr.netlify.com/tags/utopian-io"><i class="fa fa-tags"></i> utopian-io</a>
             </li>
             
         </ul>

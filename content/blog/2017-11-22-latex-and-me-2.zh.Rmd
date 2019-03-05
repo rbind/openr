@@ -21,7 +21,6 @@ banner: img/banners/logo-openr.png
 
 因为我早就抛弃 LaTeX 了。
 
-<!--more-->
 
 几年前，把用 LaTeX 排版排得漂漂亮亮的博士论文提交的那一刻，我咬牙切齿地想：老子终于可以跟 LaTeX 这个怪物永别了。
 

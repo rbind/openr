@@ -57,6 +57,42 @@
   <meta property="og:url" content="/blog/tutorial-for-steemr-retrieving-and-analyzing-the-delegation-data//" />
   <meta property="og:image" content="img/logo-small.png" />
 
+  <script type="text/javascript"
+        async
+        src="https://cdn.bootcss.com/mathjax/2.7.3/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$'], ['\[\[','\]\]']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+});
+
+MathJax.Hub.Queue(function() {
+    
+    
+    
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i = 0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+});
+</script>
+
+<style>
+code.has-jax {
+    font: inherit;
+    font-size: 100%;
+    background: inherit;
+    border: inherit;
+    color: #515151;
+}
+</style>
+
 </head>
 
 
@@ -170,7 +206,7 @@
 
                     <div class="col-md-9" id="blog-post">
 
-                        <p class="text-muted text-uppercase mb-small text-right">By <a href="#">dapeng</a> | July 8, 2018</p>
+                        <p class="text-muted text-uppercase mb-small text-right">By <a href="#">赵鹏</a> | July 8, 2018</p>
 
                         <div id="post-content">
                           <h3 id="what-will-i-learn">What Will I Learn?</h3>
@@ -198,14 +234,14 @@
 
 <h3 id="basic-usage-of-gdelegation">Basic usage of <code>gdelegation()</code></h3>
 
-<p>Load the &lsquo;steemr&rsquo; package:</p>
+<p>Load the 'steemr' package:</p>
 
 <pre><code>require('steemr')
 
 ## Loading required package: steemr
 </code></pre>
 
-<p>The function name &lsquo;gdelegation&rsquo; means &lsquo;get the delegation data&rsquo;. You could easily get the delegation data if you have a SteemSQL ID and password. Simply use the <code>ssql()</code> function to build a connection to SteemSQl,</p>
+<p>The function name 'gdelegation' means 'get the delegation data'. You could easily get the delegation data if you have a SteemSQL ID and password. Simply use the <code>ssql()</code> function to build a connection to SteemSQl,</p>
 
 <pre><code>mysql &lt;- ssql(uid = your_steemsql_id, pwd = your_steemsql_password)
 </code></pre>
@@ -254,7 +290,7 @@ dlgt
 
 <p>There are 15 records with 6 columns with the self-explanatory column names.</p>
 
-<p>The records only show the vesting shares. How much is the SBD? We could use the fuction <code>gspmv()</code> function, which means &lsquo;get the value of Steem per Mvests&rsquo;:</p>
+<p>The records only show the vesting shares. How much is the SBD? We could use the fuction <code>gspmv()</code> function, which means 'get the value of Steem per Mvests':</p>
 
 <pre><code>spmv &lt;- gspmv()
 spmv
@@ -302,7 +338,7 @@ spmv
 
 <h3 id="advanced-usage-of-gdelegation">Advanced usage of <code>gdelegation()</code></h3>
 
-<p>Let&rsquo;s go further into <code>gdelegation()</code>.</p>
+<p>Let's go further into <code>gdelegation()</code>.</p>
 
 <p>Three parameters are available for <code>gdelegation()</code>:</p>
 
@@ -334,7 +370,7 @@ spmv
 
 <p>Using other R functions, we could easily get some statistics of the delegation data. Here we give an example.</p>
 
-<p>Although there are 457 records in @cnbuddy&rsquo;s delegation history, some people appeared in @cnbuddy&rsquo;s delegator list for multiple times. Let&rsquo;s see how many unique delegators:</p>
+<p>Although there are 457 records in @cnbuddy's delegation history, some people appeared in @cnbuddy's delegator list for multiple times. Let's see how many unique delegators:</p>
 
 <pre><code>length(unique(dlgt_cnbuddy$delegator))
 
@@ -420,10 +456,10 @@ summary(dlgt_cnbuddy$sbd[dlgt_cnbuddy$sbd &gt; 0])
     <div class="panel-body">
         <ul class="tag-cloud">
             
-            <li><a href="https://openr.netlify.com/tags/beginr"><i class="fa fa-tags"></i> beginr</a>
+            <li><a href="https://openr.netlify.com/tags/advr"><i class="fa fa-tags"></i> advr</a>
             </li>
             
-            <li><a href="https://openr.netlify.com/tags/blogdown"><i class="fa fa-tags"></i> blogdown</a>
+            <li><a href="https://openr.netlify.com/tags/beginr"><i class="fa fa-tags"></i> beginr</a>
             </li>
             
             <li><a href="https://openr.netlify.com/tags/bookdown"><i class="fa fa-tags"></i> bookdown</a>
@@ -438,13 +474,10 @@ summary(dlgt_cnbuddy$sbd[dlgt_cnbuddy$sbd &gt; 0])
             <li><a href="https://openr.netlify.com/tags/mindr"><i class="fa fa-tags"></i> mindr</a>
             </li>
             
+            <li><a href="https://openr.netlify.com/tags/news"><i class="fa fa-tags"></i> news</a>
+            </li>
+            
             <li><a href="https://openr.netlify.com/tags/pinyin"><i class="fa fa-tags"></i> pinyin</a>
-            </li>
-            
-            <li><a href="https://openr.netlify.com/tags/post"><i class="fa fa-tags"></i> post</a>
-            </li>
-            
-            <li><a href="https://openr.netlify.com/tags/postr"><i class="fa fa-tags"></i> postr</a>
             </li>
             
             <li><a href="https://openr.netlify.com/tags/r"><i class="fa fa-tags"></i> r</a>
@@ -460,9 +493,6 @@ summary(dlgt_cnbuddy$sbd[dlgt_cnbuddy$sbd &gt; 0])
             </li>
             
             <li><a href="https://openr.netlify.com/tags/tutorial"><i class="fa fa-tags"></i> tutorial</a>
-            </li>
-            
-            <li><a href="https://openr.netlify.com/tags/utopian-io"><i class="fa fa-tags"></i> utopian-io</a>
             </li>
             
         </ul>

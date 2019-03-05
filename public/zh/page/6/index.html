@@ -57,6 +57,42 @@
   <meta property="og:url" content="/zh//" />
   <meta property="og:image" content="img/logo.png" />
 
+  <script type="text/javascript"
+        async
+        src="https://cdn.bootcss.com/mathjax/2.7.3/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$'], ['\[\[','\]\]']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+});
+
+MathJax.Hub.Queue(function() {
+    
+    
+    
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i = 0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+});
+</script>
+
+<style>
+code.has-jax {
+    font: inherit;
+    font-size: 100%;
+    background: inherit;
+    border: inherit;
+    color: #515151;
+}
+</style>
+
 </head>
 
 
@@ -198,7 +234,7 @@
 
                         </div>
                         <div class="col-sm-7">
-                            <img class="img-responsive" src="img/banners/logo-rmd.png" alt="">
+                            <img class="img-responsive" src="https://openr.netlify.com/img/banners/logo-rmd.png" alt="">
                         </div>
                     </div>
                 </div>
@@ -216,7 +252,7 @@
 
                         </div>
                         <div class="col-sm-7">
-                            <img class="img-responsive" src="img/banners/logo-rosr.png" alt="">
+                            <img class="img-responsive" src="https://openr.netlify.com/img/banners/logo-rosr.png" alt="">
                         </div>
                     </div>
                 </div>
@@ -234,7 +270,7 @@
 
                         </div>
                         <div class="col-sm-7">
-                            <img class="img-responsive" src="img/banners/logo-bookdownplus.png" alt="">
+                            <img class="img-responsive" src="https://openr.netlify.com/img/banners/logo-bookdownplus.png" alt="">
                         </div>
                     </div>
                 </div>
@@ -252,7 +288,7 @@
 
                         </div>
                         <div class="col-sm-7">
-                            <img class="img-responsive" src="img/banners/logo-mindr.png" alt="">
+                            <img class="img-responsive" src="https://openr.netlify.com/img/banners/logo-mindr.png" alt="">
                         </div>
                     </div>
                 </div>
@@ -270,7 +306,7 @@
 
                         </div>
                         <div class="col-sm-7">
-                            <img class="img-responsive" src="img/banners/logo-beginr.png" alt="">
+                            <img class="img-responsive" src="https://openr.netlify.com/img/banners/logo-beginr.png" alt="">
                         </div>
                     </div>
                 </div>
@@ -288,7 +324,7 @@
 
                         </div>
                         <div class="col-sm-7">
-                            <img class="img-responsive" src="img/banners/logo-pinyin.png" alt="">
+                            <img class="img-responsive" src="https://openr.netlify.com/img/banners/logo-pinyin.png" alt="">
                         </div>
                     </div>
                 </div>
@@ -525,80 +561,6 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="https://openr.netlify.com/zh/blog/hugo-rss/" class="btn btn-template-transparent-primary"><i class="fa fa-link"></i> 阅读更多</a>
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="content">
-                            <h4><a href="https://openr.netlify.com/zh/blog/hugo-rss/">Hugo 网站的RSS</a></h4>
-                            <p class="author-category">
-                            
-                            由 <a href="#">赵鹏</a>
-                            
-                            在 April 18, 2017
-                            </p>
-                            <p class="intro">R blogdown 搭建的 Hugo 网站，小细节很多，可以一点一点完善，好在都不难搞定。今天添加了个RSS订阅按钮。
-HUGOMORE42 自从 Google Reader 死后，我就觉得 RSS 没有多大趣味，就好像子期死后伯牙摔琴一样。但是，没有 RSS 提醒的话，还真不知道谁的博客更新了，于是就勉强用 feedly 凑合。眼看我的新网站构架基本完成，就在 feedly 里订阅了一下自己的网站，输入 pzhao.org，发现没找到。嗯？研究一下才明白，我的主页完整地址是：
-http://pzhao.org/zh/这个路径对应的本地文件夹下面，不仅有个index.html，还有个index.xml，后者就是 RSS 订阅的文件。所以，在feedly添加：
-http://pzhao.org/zh/index.xml就把我的新网站添进去了。这是订阅全站。如果只想订阅其中的博客，或新发表的学术文章，或新做的报告，那么：
-http://pzhao.org/zh/post/index.xmlhttp://pzhao.org/zh/publication/index.xmlhttp://pzhao.org/zh/talk/index.xml这个RSS链接，我该放到主页的什么位置，来方便网友订阅呢？我决定放到我的头像下面的社交按钮里。
-头像下的社交按钮是在config.toml里设置的，只需添加个[[params.social]]就可以了，图标去fa或ai两个包的主页找便是。实在缺乏社交，只好把自己卡拉OK的录音和腾讯视频加进去凑数，代码如下：
- [[params.social]]icon = &quot;rss&quot;icon_pack = &quot;fa&quot;link = &quot;http://www.pzhao.org/zh/index.xml&quot;[[params.social]]icon = &quot;music&quot;icon_pack = &quot;fa&quot;link = &quot;http://kg.qq.com/node/personal?uid=649d9d85212c3489&quot;[[params.social]]icon = &quot;video-camera&quot;icon_pack = &quot;fa&quot;link = &quot;http://v.qq.com/vplus/0f8190586a3f2f22a25e9827b38c171e&quot;</p>
-                            <p class="read-more">
-                              <a href="https://openr.netlify.com/zh/blog/hugo-rss/" class="btn btn-template-main">继续阅读</a>
-                            </p>
-                        </div>
-                    </div>
-                    
-
-                </div>
-                
-                <div class="col-md-3 col-sm-6">
-                    <div class="box-image-text blog">
-                        <div class="top">
-                            <div class="image" style="overflow:hidden">
-                                
-                                <img src="https://openr.netlify.com/img/banners/logo-openr.png" class="img-responsive" alt="" >
-                                
-                            </div>
-                            <div class="bg"></div>
-                            <div class="text">
-                                <p class="buttons">
-                                    <a href="https://openr.netlify.com/zh/blog/slash/" class="btn btn-template-transparent-primary"><i class="fa fa-link"></i> 阅读更多</a>
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="content">
-                            <h4><a href="https://openr.netlify.com/zh/blog/slash/">斜杠</a></h4>
-                            <p class="author-category">
-                            
-                            由 <a href="#">赵鹏</a>
-                            
-                            在 April 17, 2017
-                            </p>
-                            <p class="intro"><p>在我的新书在线试读章节，益辉同学提出了<a href="http://dapengde.com/xuer/post/2017-04-15_blogdown/#comment-3258130059">一个话题</a>，那就是斜杠。这个小东西已经困扰我多年了，事儿不大，我憋着一直没敢说，这回有益辉这么一位神级人肉盾牌罩着，就趁机吐个槽。</p></p>
-                            <p class="read-more">
-                              <a href="https://openr.netlify.com/zh/blog/slash/" class="btn btn-template-main">继续阅读</a>
-                            </p>
-                        </div>
-                    </div>
-                    
-
-                </div>
-                
-                <div class="col-md-3 col-sm-6">
-                    <div class="box-image-text blog">
-                        <div class="top">
-                            <div class="image" style="overflow:hidden">
-                                
-                                <img src="https://openr.netlify.com/img/banners/logo-openr.png" class="img-responsive" alt="" >
-                                
-                            </div>
-                            <div class="bg"></div>
-                            <div class="text">
-                                <p class="buttons">
                                     <a href="https://openr.netlify.com/zh/blog/hugo-multilingual/" class="btn btn-template-transparent-primary"><i class="fa fa-link"></i> 阅读更多</a>
                                 </p>
                             </div>
@@ -660,6 +622,85 @@ http://pzhao.org/zh/post/index.xmlhttp://pzhao.org/zh/publication/index.xmlhtt
 
                 </div>
                 
+                <div class="col-md-3 col-sm-6">
+                    <div class="box-image-text blog">
+                        <div class="top">
+                            <div class="image" style="overflow:hidden">
+                                
+                                <img src="https://openr.netlify.com/img/banners/logo-openr.png" class="img-responsive" alt="" >
+                                
+                            </div>
+                            <div class="bg"></div>
+                            <div class="text">
+                                <p class="buttons">
+                                    <a href="https://openr.netlify.com/zh/blog/hugo-academic-summary/" class="btn btn-template-transparent-primary"><i class="fa fa-link"></i> 阅读更多</a>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="content">
+                            <h4><a href="https://openr.netlify.com/zh/blog/hugo-academic-summary/">Hugo 网站 academic 主题首页的文摘显示问题</a></h4>
+                            <p class="author-category">
+                            
+                            由 <a href="#">赵鹏</a>
+                            
+                            在 April 15, 2017
+                            </p>
+                            <p class="intro">在 RStudio 里用 R blogdown 来维护网站时，可以通过点击工具栏的 Addins - New Post 来创建新帖子，很方便。但是，如果用的是 Hugo 的 academic 主题，那么创建的新帖子在网站首页会显示全文，不大好看，尤其是全文很长的时候，根本就不像个首页了。这是因为，academic 首页的 posts 模块默认显示文摘。如果没有为每篇帖子设置文摘，就会显示全文。而上面说的创建新帖的方法里，并没有设置文摘的选项。那么，文摘在哪里设置呢？
+直接说答案：手动在新帖的YAML文件头添加一行：
+summary: &quot;我的文摘别太长。&quot;答案来自blogdown 项目主页。
+就这么个小问题，让我走了点弯路。我发现问题后，首先观察了一下主题自带的示例文档，文件头是这样的：
++++date = &quot;2016-04-20T11:00:00&quot;draft = falsetags = [&quot;academic&quot;, &quot;hugo&quot;]title = &quot;Customizing the homepage with widgets&quot;math = falsesummary = &quot;&quot;&quot;Enable/disable and configure widgets to customize your homepage.&quot;&quot;&quot;+++跟 R blogdown 生成的 .md 和 .Rmd 文件的文件头不同，这个文件头居然是用前后各三个加号表示的。里面的summary开始数三行，就是用来设置文摘的。
+于是我就把这三行拷贝粘贴到 .Rmd 文件里，当然是编译出错了。接着我想当然地把上面这段前后共六个加号的文件头拷贝粘贴到 .</p>
+                            <p class="read-more">
+                              <a href="https://openr.netlify.com/zh/blog/hugo-academic-summary/" class="btn btn-template-main">继续阅读</a>
+                            </p>
+                        </div>
+                    </div>
+                    
+
+                </div>
+                
+                <div class="col-md-3 col-sm-6">
+                    <div class="box-image-text blog">
+                        <div class="top">
+                            <div class="image" style="overflow:hidden">
+                                
+                                <img src="https://openr.netlify.com/img/banners/logo-openr.png" class="img-responsive" alt="" >
+                                
+                            </div>
+                            <div class="bg"></div>
+                            <div class="text">
+                                <p class="buttons">
+                                    <a href="https://openr.netlify.com/zh/blog/hogo-disques-problem/" class="btn btn-template-transparent-primary"><i class="fa fa-link"></i> 阅读更多</a>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="content">
+                            <h4><a href="https://openr.netlify.com/zh/blog/hogo-disques-problem/">Hugo 网站的 Disqus 加载问题</a></h4>
+                            <p class="author-category">
+                            
+                            由 <a href="#">赵鹏</a>
+                            
+                            在 April 14, 2017
+                            </p>
+                            <p class="intro">今天，复活节假期前夕，同事们都休假了。我虽然在办公室，却无心上班，发了一会儿呆，想想与其痛苦地工作，不如快乐地解决一下新网站的一个小问题：disqus 评论框的加载。
+用 R blogdown 打建好站，disqus评论框就一直没成功加载过。后来听说是config.toml里 disqus shortname指的不是我的disqus ID，而是要专门设置一下， 我说“啊,还有这事儿？”于是就设置了一下，但是仍然不能成功加载。这个问题放了几天，今天心血来潮一搜，嗯，兴许是路径的问题，于是就把config.toml开头的路径改为
+baseurl = &quot;http://www.pzhao.org&quot;# relativeurls = true然后运行R语言的建站函数：
+blogdown::build_site(local=FALSE)注意！此处千万不要运行blogdown::serve_site()，不然新生成的文件就又没法加载 Disqus 了。网上说是serve_site()忽略了config.toml里的某些设置而造成的。我不懂，总之就是建站函数运行完就直接上传。
+然后GitHub同步，几秒钟后，Netlify上完成了更新，Disqus评论框就乖乖出现了。
+欢迎来留言测试。
+啥，你看不见？嗯，听说好像是被墙了。</p>
+                            <p class="read-more">
+                              <a href="https://openr.netlify.com/zh/blog/hogo-disques-problem/" class="btn btn-template-main">继续阅读</a>
+                            </p>
+                        </div>
+                    </div>
+                    
+
+                </div>
+                
 
             </div>
             
@@ -695,7 +736,7 @@ http://pzhao.org/zh/post/index.xmlhttp://pzhao.org/zh/publication/index.xmlhtt
                     <li class="item" title="Peng Zhao">
                         
                           <a href="https://pzhao.org" target="_blank">
-                            <img src="https://www.pzhao.org/img/zhao.jpg" alt="Peng Zhao" class="img-responsive" />
+                            <img src="https://openr.netlify.com/img/clients/pengzhao.jpg" alt="Peng Zhao" class="img-responsive" />
                           </a>
                         
                     </li>
@@ -703,7 +744,7 @@ http://pzhao.org/zh/post/index.xmlhttp://pzhao.org/zh/publication/index.xmlhtt
                     <li class="item" title="Wanna Join us?">
                         
                           <a href="mailto:xuer@pzhao.net" target="_blank">
-                            <img src="img/clients/Unclesamwantyou.jpg" alt="Wanna Join us?" class="img-responsive" />
+                            <img src="https://openr.netlify.com/img/clients/Unclesamwantyou.jpg" alt="Wanna Join us?" class="img-responsive" />
                           </a>
                         
                     </li>

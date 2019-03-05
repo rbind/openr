@@ -15,7 +15,6 @@ banner: img/banners/logo-openr.png
 
 互联网时代有个自己的网站，就好像真实世界里有了自己的房子（服务器）和固定地址（域名）；自我介绍时附上自己的网站，就像生活里邀请朋友来访或者职场上递上名片，都甚为方便。然而，建立一个网站并不容易，涉及诸多领域的知识和技能，门槛比较高。好在，我们有万能的R语言，搭建网站只需几分钟，而并不需要多少网络知识。你甚至不用懂 R 语言是什么，照我下面说的做就行，包教包会，学不会免费再教。
 
-<!--more-->
 
 这里，我提供两个示范，演示如何使用 R 语言的 blogdown 扩展包^[Yihui Xie. blogdown: Create Blogs and Websites with R Markdown. R package version 0.0.24.]，用来搭建一个[个人博客](http://dapengde.com/blogdown_demo_default/)和一个[科研小组网站](http://dapengde.com/blogdown_demo_academic/)。截至本文成稿之日，blogdown 含苞待放，尚未正式发布，但是已经能够正常安装使用了。我们来尝尝鲜，提前一睹她的芳容。
 

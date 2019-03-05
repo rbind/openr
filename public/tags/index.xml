@@ -6,10 +6,19 @@
     <description>Recent content in Tags on Open R</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 26 Jan 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 14 Jun 2018 13:26:33 +0000</lastBuildDate>
     
 	<atom:link href="https://openr.netlify.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Advr</title>
+      <link>https://openr.netlify.com/tags/advr/</link>
+      <pubDate>Thu, 14 Jun 2018 13:26:33 +0000</pubDate>
+      
+      <guid>https://openr.netlify.com/tags/advr/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Beginr</title>
@@ -21,18 +30,9 @@
     </item>
     
     <item>
-      <title>Blogdown</title>
-      <link>https://openr.netlify.com/tags/blogdown/</link>
-      <pubDate>Tue, 23 May 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://openr.netlify.com/tags/blogdown/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Bookdown</title>
       <link>https://openr.netlify.com/tags/bookdown/</link>
-      <pubDate>Thu, 06 Sep 2018 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 23 Sep 2018 16:34:39 +0000</pubDate>
       
       <guid>https://openr.netlify.com/tags/bookdown/</guid>
       <description></description>
@@ -41,7 +41,7 @@
     <item>
       <title>Bookdownplus</title>
       <link>https://openr.netlify.com/tags/bookdownplus/</link>
-      <pubDate>Thu, 06 Sep 2018 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 23 Sep 2018 16:34:39 +0000</pubDate>
       
       <guid>https://openr.netlify.com/tags/bookdownplus/</guid>
       <description></description>
@@ -66,29 +66,20 @@
     </item>
     
     <item>
+      <title>News</title>
+      <link>https://openr.netlify.com/tags/news/</link>
+      <pubDate>Thu, 31 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://openr.netlify.com/tags/news/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Pinyin</title>
       <link>https://openr.netlify.com/tags/pinyin/</link>
       <pubDate>Mon, 15 Oct 2018 14:34:03 +0000</pubDate>
       
       <guid>https://openr.netlify.com/tags/pinyin/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Post</title>
-      <link>https://openr.netlify.com/tags/post/</link>
-      <pubDate>Thu, 31 Jan 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://openr.netlify.com/tags/post/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Postr</title>
-      <link>https://openr.netlify.com/tags/postr/</link>
-      <pubDate>Tue, 16 May 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://openr.netlify.com/tags/postr/</guid>
       <description></description>
     </item>
     
@@ -134,15 +125,6 @@
       <pubDate>Thu, 12 Jul 2018 09:44:48 +0000</pubDate>
       
       <guid>https://openr.netlify.com/tags/tutorial/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Utopian Io</title>
-      <link>https://openr.netlify.com/tags/utopian-io/</link>
-      <pubDate>Thu, 31 Jan 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://openr.netlify.com/tags/utopian-io/</guid>
       <description></description>
     </item>
     

@@ -57,6 +57,42 @@
   <meta property="og:url" content="/blog/steemr-tutorial-gcomment//" />
   <meta property="og:image" content="img/logo-small.png" />
 
+  <script type="text/javascript"
+        async
+        src="https://cdn.bootcss.com/mathjax/2.7.3/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$'], ['\[\[','\]\]']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+});
+
+MathJax.Hub.Queue(function() {
+    
+    
+    
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i = 0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+});
+</script>
+
+<style>
+code.has-jax {
+    font: inherit;
+    font-size: 100%;
+    background: inherit;
+    border: inherit;
+    color: #515151;
+}
+</style>
+
 </head>
 
 
@@ -170,7 +206,7 @@
 
                     <div class="col-md-9" id="blog-post">
 
-                        <p class="text-muted text-uppercase mb-small text-right">By <a href="#">dapeng</a> | July 12, 2018</p>
+                        <p class="text-muted text-uppercase mb-small text-right">By <a href="#">赵鹏</a> | July 12, 2018</p>
 
                         <div id="post-content">
                           <h3 id="what-will-i-learn">What Will I Learn?</h3>
@@ -197,14 +233,14 @@
 
 <h3 id="basic-usage-of-gcomments">Basic usage of <code>gcomments()</code></h3>
 
-<p>Load the &lsquo;steemr&rsquo; package:</p>
+<p>Load the 'steemr' package:</p>
 
 <pre><code>require('steemr')
 
 ## Loading required package: steemr
 </code></pre>
 
-<p>The function name &lsquo;gcomment&rsquo; means &lsquo;get comment data&rsquo;. It is very easy to get the comments of a given ID if you have a SteemSQL user name and password.</p>
+<p>The function name 'gcomment' means 'get comment data'. It is very easy to get the comments of a given ID if you have a SteemSQL user name and password.</p>
 
 <p>Firstly, use the <code>ssql()</code> function to build a connection to SteemSQL:</p>
 
@@ -213,12 +249,12 @@
 
 <p>You have to replace <code>your_steemsql_id</code> and <code>your_steemsql_password</code> with your own.</p>
 
-<p>Then, use the <code>gcomments()</code> function to retrieve the newest comment data of the given ID. Let&rsquo;s retrieve @dapeng&rsquo;s newest comments:</p>
+<p>Then, use the <code>gcomments()</code> function to retrieve the newest comment data of the given ID. Let's retrieve @dapeng's newest comments:</p>
 
 <pre><code>mycmt &lt;- gcomments(id = 'dapeng', sql_con = mysql)
 </code></pre>
 
-<p>&lsquo;mycmt&rsquo; is a list with 2 elements, which are &lsquo;comment&rsquo; and &lsquo;daily&rsquo;:</p>
+<p>'mycmt' is a list with 2 elements, which are 'comment' and 'daily':</p>
 
 <pre><code>length(mycmt)
 
@@ -241,7 +277,7 @@ names(mycmt$daily)
 ## [1] &quot;date&quot; &quot;Freq&quot;
 </code></pre>
 
-<p>The &lsquo;daily&rsquo; dataframe is a summary, showing how many comments every day. Let&rsquo;s see what it is:</p>
+<p>The 'daily' dataframe is a summary, showing how many comments every day. Let's see what it is:</p>
 
 <pre><code>mycmt$daily
 
@@ -255,12 +291,12 @@ names(mycmt$daily)
 ## 7 2018-07-06    3
 </code></pre>
 
-<p>We can view &lsquo;comment&rsquo; by running:</p>
+<p>We can view 'comment' by running:</p>
 
 <pre><code>View(mycmt$comment)
 </code></pre>
 
-<p>In the topleft panel, a spread sheet appears on the tab &lsquo;mycmt$comment&rsquo;. We can order or filter each column:</p>
+<p>In the topleft panel, a spread sheet appears on the tab 'mycmt$comment'. We can order or filter each column:</p>
 
 <p><img src="https://github.com/pzhaonet/steemr-book/raw/master/img/gcomments-1.gif" style="display: block; margin: auto;" /></p>
 
@@ -272,20 +308,20 @@ names(mycmt$daily)
 
 <h3 id="advanced-usage-of-gcomments">Advanced usage of <code>gcomments()</code></h3>
 
-<p>Let&rsquo;s go further into <code>gcomments()</code>.</p>
+<p>Let's go further into <code>gcomments()</code>.</p>
 
 <p>Multiple parameters are available for <code>gcomments()</code>:</p>
 
 <ul>
 <li><code>id</code> specifies the ID of interest, which is mandatory.</li>
-<li><code>from</code> and <code>to</code> specifies the date range of the target comments. The date must be given in &lsquo;year-month-day&rsquo; format.</li>
-<li><code>select</code> specifies the columns to retrieve. By default, it queries four columns from the server: &ldquo;root_title&rdquo;, &ldquo;root_comment&rdquo;, &ldquo;created&rdquo;, and &ldquo;body&rdquo;. <code>select = '*'</code> retrieves all the columns. We will give an example.</li>
+<li><code>from</code> and <code>to</code> specifies the date range of the target comments. The date must be given in 'year-month-day' format.</li>
+<li><code>select</code> specifies the columns to retrieve. By default, it queries four columns from the server: &quot;root_title&quot;, &quot;root_comment&quot;, &quot;created&quot;, and &quot;body&quot;. <code>select = '*'</code> retrieves all the columns. We will give an example.</li>
 <li><code>sql_con</code> builds a connection to SteemSQL server.</li>
 <li><code>if_plot</code> specifies whether to plot the daily comment number.</li>
 <li><code>ylab</code> specifies the label of the y axis. It is valid only when if_plot is TRUE.</li>
 </ul>
 
-<p>Now let&rsquo;s query the @dapeng&rsquo;s comments from the beginning of 2016 and make a plot of the daily comment number.</p>
+<p>Now let's query the @dapeng's comments from the beginning of 2016 and make a plot of the daily comment number.</p>
 
 <pre><code>mycmt_all &lt;- gcomments(id = 'dapeng', 
                        sql_con = mysql, 
@@ -304,7 +340,7 @@ names(mycmt$daily)
 
 <p>He wrote 5359 comments in total.</p>
 
-<p>Let&rsquo;s get the full information with all the columns of @dapeng&rsquo;s comments, and see what columns we can get.</p>
+<p>Let's get the full information with all the columns of @dapeng's comments, and see what columns we can get.</p>
 
 <pre><code>mycmt_full &lt;- gcomments(id = 'dapeng', 
                         sql_con = mysql, 
@@ -379,7 +415,7 @@ names(mycmt_full$comment)
 mytab &lt;- mytab[order(-mytab$Freq), ]
 </code></pre>
 
-<p>Then let&rsquo;s see the top 6 duplicated comments and their frequency:</p>
+<p>Then let's see the top 6 duplicated comments and their frequency:</p>
 
 <pre><code>head(mytab)
 
@@ -392,7 +428,7 @@ mytab &lt;- mytab[order(-mytab$Freq), ]
 ## 3931       谢谢   13
 </code></pre>
 
-<p>There seemed 18 blank comments, which means he deleted them. The rest are the English and Chinese version of &lsquo;thanks&rsquo;. It cannot be wrong if you repeat saying thanks, can it?</p>
+<p>There seemed 18 blank comments, which means he deleted them. The rest are the English and Chinese version of 'thanks'. It cannot be wrong if you repeat saying thanks, can it?</p>
 
 <blockquote>
 <p>Exercise 3: analyze the comment data you have got.</p>
@@ -454,10 +490,10 @@ mytab &lt;- mytab[order(-mytab$Freq), ]
     <div class="panel-body">
         <ul class="tag-cloud">
             
-            <li><a href="https://openr.netlify.com/tags/beginr"><i class="fa fa-tags"></i> beginr</a>
+            <li><a href="https://openr.netlify.com/tags/advr"><i class="fa fa-tags"></i> advr</a>
             </li>
             
-            <li><a href="https://openr.netlify.com/tags/blogdown"><i class="fa fa-tags"></i> blogdown</a>
+            <li><a href="https://openr.netlify.com/tags/beginr"><i class="fa fa-tags"></i> beginr</a>
             </li>
             
             <li><a href="https://openr.netlify.com/tags/bookdown"><i class="fa fa-tags"></i> bookdown</a>
@@ -472,13 +508,10 @@ mytab &lt;- mytab[order(-mytab$Freq), ]
             <li><a href="https://openr.netlify.com/tags/mindr"><i class="fa fa-tags"></i> mindr</a>
             </li>
             
+            <li><a href="https://openr.netlify.com/tags/news"><i class="fa fa-tags"></i> news</a>
+            </li>
+            
             <li><a href="https://openr.netlify.com/tags/pinyin"><i class="fa fa-tags"></i> pinyin</a>
-            </li>
-            
-            <li><a href="https://openr.netlify.com/tags/post"><i class="fa fa-tags"></i> post</a>
-            </li>
-            
-            <li><a href="https://openr.netlify.com/tags/postr"><i class="fa fa-tags"></i> postr</a>
             </li>
             
             <li><a href="https://openr.netlify.com/tags/r"><i class="fa fa-tags"></i> r</a>
@@ -494,9 +527,6 @@ mytab &lt;- mytab[order(-mytab$Freq), ]
             </li>
             
             <li><a href="https://openr.netlify.com/tags/tutorial"><i class="fa fa-tags"></i> tutorial</a>
-            </li>
-            
-            <li><a href="https://openr.netlify.com/tags/utopian-io"><i class="fa fa-tags"></i> utopian-io</a>
             </li>
             
         </ul>

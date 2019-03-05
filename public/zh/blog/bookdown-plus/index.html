@@ -57,6 +57,42 @@
   <meta property="og:url" content="/zh/blog/bookdown-plus//" />
   <meta property="og:image" content="img/logo.png" />
 
+  <script type="text/javascript"
+        async
+        src="https://cdn.bootcss.com/mathjax/2.7.3/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$'], ['\[\[','\]\]']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+});
+
+MathJax.Hub.Queue(function() {
+    
+    
+    
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i = 0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+});
+</script>
+
+<style>
+code.has-jax {
+    font: inherit;
+    font-size: 100%;
+    background: inherit;
+    border: inherit;
+    color: #515151;
+}
+</style>
+
 </head>
 
 
@@ -177,10 +213,6 @@
 
 
 <p><strong>注意：本文所述的<code>bookdown+</code>这个项目已经停止开发，继承者是我新开的R包项目<a href="https://github.com/pzhaonet/bookdownplus">bookdownplus</a> ，这是因为我学会了写R包。当然，说不定有些朋友不喜欢安装R包，喜欢下载个文件夹直接免安装用，那么本文所述的方法仍然可以继续使用，只是我不再更新了而已。</strong></p>
-
-
-HUGOMORE42
-
 <p>R bookdown 能做的事情很多，可是那些功能迟迟不来，我只好自己动手，写了个 <a href="https://github.com/pzhaonet/bookdown-plus">bookdown+</a>，目前大体实现了用 bookdown 写期刊论文、化学分子式、信件、日记、日历等功能。当然，有些还没完全实现，革命不够彻底，带着浓重的<span class="math inline">\(\LaTeX\)</span>旧社会的气息。革命尚未成功，同志仍需努力。</p>
 <p>下面是 <a href="https://github.com/pzhaonet/bookdown-plus">bookdown+</a> 的简介和快速使用方法。</p>
 <div id="section" class="section level1">
@@ -302,9 +334,6 @@ template &lt;- templates[8]</code></pre>
 <li>yihui_zh</li>
 </ul>
 <p><img src="https://raw.githubusercontent.com/pzhaonet/bookdown-plus/master/showcase/bookdown+yihui_zh.jpg" /></p>
-<ul>
-<li>poster</li>
-</ul>
 <p><img src="https://raw.githubusercontent.com/pzhaonet/bookdown-plus/master/showcase/bookdown+poster_ocean.jpg" /></p>
 <p><img src="https://raw.githubusercontent.com/pzhaonet/bookdown-plus/master/showcase/bookdown+poster_eco.jpg" /></p>
 </div>
@@ -383,7 +412,7 @@ template &lt;- templates[8]</code></pre>
     <div class="panel-body">
         <ul class="nav nav-pills nav-stacked">
             
-            <li><a href="https://openr.netlify.com/categories/%e6%9c%aa%e5%88%86%e7%b1%bb">未分类 (7)</a>
+            <li><a href="https://openr.netlify.com/categories/xuer">xuer (16)</a>
             </li>
             
         </ul>
@@ -405,13 +434,7 @@ template &lt;- templates[8]</code></pre>
     <div class="panel-body">
         <ul class="tag-cloud">
             
-            <li><a href="https://openr.netlify.com/tags/advr"><i class="fa fa-tags"></i> advr</a>
-            </li>
-            
             <li><a href="https://openr.netlify.com/tags/beginr"><i class="fa fa-tags"></i> beginr</a>
-            </li>
-            
-            <li><a href="https://openr.netlify.com/tags/blog"><i class="fa fa-tags"></i> blog</a>
             </li>
             
             <li><a href="https://openr.netlify.com/tags/blogdown"><i class="fa fa-tags"></i> blogdown</a>
@@ -423,22 +446,7 @@ template &lt;- templates[8]</code></pre>
             <li><a href="https://openr.netlify.com/tags/bookdownplus"><i class="fa fa-tags"></i> bookdownplus</a>
             </li>
             
-            <li><a href="https://openr.netlify.com/tags/css"><i class="fa fa-tags"></i> css</a>
-            </li>
-            
-            <li><a href="https://openr.netlify.com/tags/drposter"><i class="fa fa-tags"></i> drposter</a>
-            </li>
-            
-            <li><a href="https://openr.netlify.com/tags/git"><i class="fa fa-tags"></i> git</a>
-            </li>
-            
-            <li><a href="https://openr.netlify.com/tags/hugo"><i class="fa fa-tags"></i> hugo</a>
-            </li>
-            
             <li><a href="https://openr.netlify.com/tags/latex"><i class="fa fa-tags"></i> latex</a>
-            </li>
-            
-            <li><a href="https://openr.netlify.com/tags/linux"><i class="fa fa-tags"></i> linux</a>
             </li>
             
             <li><a href="https://openr.netlify.com/tags/markdown"><i class="fa fa-tags"></i> markdown</a>
@@ -459,9 +467,6 @@ template &lt;- templates[8]</code></pre>
             <li><a href="https://openr.netlify.com/tags/post"><i class="fa fa-tags"></i> post</a>
             </li>
             
-            <li><a href="https://openr.netlify.com/tags/postr"><i class="fa fa-tags"></i> postr</a>
-            </li>
-            
             <li><a href="https://openr.netlify.com/tags/r"><i class="fa fa-tags"></i> r</a>
             </li>
             
@@ -474,10 +479,7 @@ template &lt;- templates[8]</code></pre>
             <li><a href="https://openr.netlify.com/tags/steemr"><i class="fa fa-tags"></i> steemr</a>
             </li>
             
-            <li><a href="https://openr.netlify.com/tags/teaching"><i class="fa fa-tags"></i> teaching</a>
-            </li>
-            
-            <li><a href="https://openr.netlify.com/tags/utopian-io"><i class="fa fa-tags"></i> utopian-io</a>
+            <li><a href="https://openr.netlify.com/tags/tutorial"><i class="fa fa-tags"></i> tutorial</a>
             </li>
             
             <li><a href="https://openr.netlify.com/tags/word"><i class="fa fa-tags"></i> word</a>
@@ -486,10 +488,13 @@ template &lt;- templates[8]</code></pre>
             <li><a href="https://openr.netlify.com/tags/xaringan"><i class="fa fa-tags"></i> xaringan</a>
             </li>
             
-            <li><a href="https://openr.netlify.com/tags/%e5%90%89%e4%bb%96"><i class="fa fa-tags"></i> 吉他</a>
+            <li><a href="https://openr.netlify.com/tags/%e5%ad%a6"><i class="fa fa-tags"></i> 学</a>
             </li>
             
             <li><a href="https://openr.netlify.com/tags/%e5%ad%a6-r"><i class="fa fa-tags"></i> 学-r</a>
+            </li>
+            
+            <li><a href="https://openr.netlify.com/tags/%e5%ad%a6r"><i class="fa fa-tags"></i> 学r</a>
             </li>
             
         </ul>

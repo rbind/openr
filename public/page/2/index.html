@@ -57,6 +57,42 @@
   <meta property="og:url" content="//" />
   <meta property="og:image" content="img/logo-small.png" />
 
+  <script type="text/javascript"
+        async
+        src="https://cdn.bootcss.com/mathjax/2.7.3/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$'], ['\[\[','\]\]']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+});
+
+MathJax.Hub.Queue(function() {
+    
+    
+    
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i = 0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+});
+</script>
+
+<style>
+code.has-jax {
+    font: inherit;
+    font-size: 100%;
+    background: inherit;
+    border: inherit;
+    color: #515151;
+}
+</style>
+
 </head>
 
 
@@ -198,7 +234,7 @@
 
                         </div>
                         <div class="col-sm-7">
-                            <img class="img-responsive" src="img/banners/logo-rmd.png" alt="">
+                            <img class="img-responsive" src="https://openr.netlify.com/img/banners/logo-rmd.png" alt="">
                         </div>
                     </div>
                 </div>
@@ -216,7 +252,7 @@
 
                         </div>
                         <div class="col-sm-7">
-                            <img class="img-responsive" src="img/banners/logo-rosr.png" alt="">
+                            <img class="img-responsive" src="https://openr.netlify.com/img/banners/logo-rosr.png" alt="">
                         </div>
                     </div>
                 </div>
@@ -234,7 +270,7 @@
 
                         </div>
                         <div class="col-sm-7">
-                            <img class="img-responsive" src="img/banners/logo-bookdownplus.png" alt="">
+                            <img class="img-responsive" src="https://openr.netlify.com/img/banners/logo-bookdownplus.png" alt="">
                         </div>
                     </div>
                 </div>
@@ -252,7 +288,7 @@
 
                         </div>
                         <div class="col-sm-7">
-                            <img class="img-responsive" src="img/banners/logo-mindr.png" alt="">
+                            <img class="img-responsive" src="https://openr.netlify.com/img/banners/logo-mindr.png" alt="">
                         </div>
                     </div>
                 </div>
@@ -270,7 +306,7 @@
 
                         </div>
                         <div class="col-sm-7">
-                            <img class="img-responsive" src="img/banners/logo-beginr.png" alt="">
+                            <img class="img-responsive" src="https://openr.netlify.com/img/banners/logo-beginr.png" alt="">
                         </div>
                     </div>
                 </div>
@@ -288,7 +324,7 @@
 
                         </div>
                         <div class="col-sm-7">
-                            <img class="img-responsive" src="img/banners/logo-pinyin.png" alt="">
+                            <img class="img-responsive" src="https://openr.netlify.com/img/banners/logo-pinyin.png" alt="">
                         </div>
                     </div>
                 </div>
@@ -525,6 +561,42 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
+                                    <a href="https://openr.netlify.com/blog/steemr-sposts/" class="btn btn-template-transparent-primary"><i class="fa fa-link"></i> Read more</a>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="content">
+                            <h4><a href="https://openr.netlify.com/blog/steemr-sposts/">[New Features on steemr] Display all the posts of a give Steemian with statistics, and get the utopian review and upvote plan!</a></h4>
+                            <p class="author-category">
+                            
+                            By <a href="#">赵鹏</a>
+                            
+                            on September 8, 2018
+                            </p>
+                            <p class="intro"><ul>
+<li>A new function<code>sposts()</code> displays a Shiny app, which is a user friendly interactive UI to show all the posts of a give Steemian's ID.  Analysis diagrams are plotted as well, including the distribution of the post payout and votes, the active hour of the Steemian's posting, and the time series of the growth of the cumulative post number, payout, and votes.<br /></li>
+</ul></p>
+                            <p class="read-more">
+                              <a href="https://openr.netlify.com/blog/steemr-sposts/" class="btn btn-template-main">Continue reading</a>
+                            </p>
+                        </div>
+                    </div>
+                    
+
+                </div>
+                
+                <div class="col-md-3 col-sm-6">
+                    <div class="box-image-text blog">
+                        <div class="top">
+                            <div class="image" style="overflow:hidden">
+                                
+                                <img src="https://openr.netlify.com/img/banners/logo-steemr.png" class="img-responsive" alt="" >
+                                
+                            </div>
+                            <div class="bg"></div>
+                            <div class="text">
+                                <p class="buttons">
                                     <a href="https://openr.netlify.com/blog/steemr-scner-diagrams/" class="btn btn-template-transparent-primary"><i class="fa fa-link"></i> Read more</a>
                                 </p>
                             </div>
@@ -534,7 +606,7 @@
                             <h4><a href="https://openr.netlify.com/blog/steemr-scner-diagrams/">[New Features on steemr]  Diagrams in the Shiny app for the statistics of the Steem CN community!</a></h4>
                             <p class="author-category">
                             
-                            By <a href="#">dapeng</a>
+                            By <a href="#">赵鹏</a>
                             
                             on September 7, 2018
                             </p>
@@ -568,7 +640,7 @@
                             <h4><a href="https://openr.netlify.com/blog/steemr-scner/">[New Features on steemr] A Shiny app for the statistics of the Steem CN community!</a></h4>
                             <p class="author-category">
                             
-                            By <a href="#">dapeng</a>
+                            By <a href="#">赵鹏</a>
                             
                             on September 6, 2018
                             </p>
@@ -602,7 +674,7 @@
                             <h4><a href="https://openr.netlify.com/blog/bookdown-copernicus/">A template for Copernicus academic journals</a></h4>
                             <p class="author-category">
                             
-                            By <a href="#">大鹏</a>
+                            By <a href="#">赵鹏</a>
                             
                             on September 6, 2018
                             </p>
@@ -616,46 +688,6 @@
 </ul></p>
                             <p class="read-more">
                               <a href="https://openr.netlify.com/blog/bookdown-copernicus/" class="btn btn-template-main">Continue reading</a>
-                            </p>
-                        </div>
-                    </div>
-                    
-
-                </div>
-                
-                <div class="col-md-3 col-sm-6">
-                    <div class="box-image-text blog">
-                        <div class="top">
-                            <div class="image" style="overflow:hidden">
-                                
-                                <img src="https://openr.netlify.com/img/banners/logo-bookdownplus.png" class="img-responsive" alt="" >
-                                
-                            </div>
-                            <div class="bg"></div>
-                            <div class="text">
-                                <p class="buttons">
-                                    <a href="https://openr.netlify.com/blog/bookdown-mdpi/" class="btn btn-template-transparent-primary"><i class="fa fa-link"></i> Read more</a>
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="content">
-                            <h4><a href="https://openr.netlify.com/blog/bookdown-mdpi/">A template for MDPI academic journals</a></h4>
-                            <p class="author-category">
-                            
-                            By <a href="#">大鹏</a>
-                            
-                            on September 5, 2018
-                            </p>
-                            <p class="intro"><p>This is a submission to the <a href="https://blog.rstudio.com/2018/07/27/first-bookdown-contest/">1st bookdown contest</a>.</p>
-
-<ul>
-<li>Write academic papers in the layout of MDPI journals with R markdown syntax.</li>
-<li>Support ~ 200 MDPI journals.</li>
-<li>Create multiple file formats, including .pdf, single .html, gitbook, .md, .epub, docx.</li>
-</ul></p>
-                            <p class="read-more">
-                              <a href="https://openr.netlify.com/blog/bookdown-mdpi/" class="btn btn-template-main">Continue reading</a>
                             </p>
                         </div>
                     </div>
@@ -698,7 +730,7 @@
                     <li class="item" title="Peng Zhao">
                         
                           <a href="https://pzhao.org" target="_blank">
-                            <img src="https://www.pzhao.org/img/zhao.jpg" alt="Peng Zhao" class="img-responsive" />
+                            <img src="https://openr.netlify.com/img/clients/pengzhao.jpg" alt="Peng Zhao" class="img-responsive" />
                           </a>
                         
                     </li>
@@ -706,7 +738,7 @@
                     <li class="item" title="Wanna Join us?">
                         
                           <a href="mailto:xuer@pzhao.net" target="_blank">
-                            <img src="img/clients/Unclesamwantyou.jpg" alt="Wanna Join us?" class="img-responsive" />
+                            <img src="https://openr.netlify.com/img/clients/Unclesamwantyou.jpg" alt="Wanna Join us?" class="img-responsive" />
                           </a>
                         
                     </li>

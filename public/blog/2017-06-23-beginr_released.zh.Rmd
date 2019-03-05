@@ -1,13 +1,12 @@
 ---
 title: 'R 初学者包 beginr 在 CRAN 正式发布'
-author: "赵鹏"
+author: 赵鹏
 date: '2017-06-23'
 slug: beginr-released
 summary: "我为 R 语言初学者写的工具包，可能对中级用户也有帮助，包含了一些简化操作的函数和备忘录。"
 tags:
   - R
   - beginr
-  - post
 bibliography: ["zhaor.bib"]
 categories: []
 output: #md_document

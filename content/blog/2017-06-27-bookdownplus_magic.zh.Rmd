@@ -21,7 +21,6 @@ bookdown 是个好东西，只是入手有点难，酒香巷深。
 
 bookdownplus 扩展包，可以让新手对 bookdown 快速上手。从此，bookdown 这坛好酒就不必去深巷苦寻，它就放在你手边。
 
-<!--more-->
 
 从 v1.2.0 开始，bookdownplus 增加了两个魔法，更是让新手对 bookdown 一见钟情。如果你对 bookdown 感兴趣却苦于入门的烦恼，那么可以试试这两个魔法。
 

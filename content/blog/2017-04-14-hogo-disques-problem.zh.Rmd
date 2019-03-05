@@ -11,7 +11,6 @@ banner: img/banners/logo-openr.png
 
 今天，复活节假期前夕，同事们都休假了。我虽然在办公室，却无心上班，发了一会儿呆，想想与其痛苦地工作，不如快乐地解决一下[新网站](http://pzhao.org)的一个小问题：disqus 评论框的加载。
 
-<!--more-->
 
 用 R blogdown 打建好站，disqus评论框就一直没成功加载过。后来听说是`config.toml`里 `disqus shortname`指的不是我的disqus ID，而是要[专门设置](https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-)一下， 我说"啊,还有这事儿？"于是就设置了一下，但是仍然不能成功加载。这个问题放了几天，今天心血来潮[一搜](http://applyr.blogspot.co.at/2017/01/blogging-about-r-from-r-studio.html)，嗯，兴许是路径的问题，于是就把`config.toml`开头的路径改为
 

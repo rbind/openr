@@ -57,6 +57,42 @@
   <meta property="og:url" content="/zh/blog/rmickey//" />
   <meta property="og:image" content="img/logo.png" />
 
+  <script type="text/javascript"
+        async
+        src="https://cdn.bootcss.com/mathjax/2.7.3/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$'], ['\[\[','\]\]']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+});
+
+MathJax.Hub.Queue(function() {
+    
+    
+    
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i = 0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+});
+</script>
+
+<style>
+code.has-jax {
+    font: inherit;
+    font-size: 100%;
+    background: inherit;
+    border: inherit;
+    color: #515151;
+}
+</style>
+
 </head>
 
 
@@ -177,10 +213,6 @@
 
 
 <p>写R包这种高大上的工作，原以为学会怎么写得花个一年半载，学会之后写一个包怎么着也得个把月，谁料想周一上午下了决心，到周二下午就一口气写了4个包，算起来从学到写，只花了一天多时间。这里是个小结。</p>
-
-
-HUGOMORE42
-
 <p>学写R包，我主要参考了3份资料：</p>
 <ul>
 <li>谢益辉的<a href="https://cos.name/2011/05/write-r-packages-like-a-ninja/">开发R程序包之忍者篇</a>，2011年。反复读了好几遍。</li>
@@ -339,7 +371,7 @@ foo()</code></pre>
     <div class="panel-body">
         <ul class="nav nav-pills nav-stacked">
             
-            <li><a href="https://openr.netlify.com/categories/%e6%9c%aa%e5%88%86%e7%b1%bb">未分类 (7)</a>
+            <li><a href="https://openr.netlify.com/categories/xuer">xuer (16)</a>
             </li>
             
         </ul>
@@ -361,13 +393,7 @@ foo()</code></pre>
     <div class="panel-body">
         <ul class="tag-cloud">
             
-            <li><a href="https://openr.netlify.com/tags/advr"><i class="fa fa-tags"></i> advr</a>
-            </li>
-            
             <li><a href="https://openr.netlify.com/tags/beginr"><i class="fa fa-tags"></i> beginr</a>
-            </li>
-            
-            <li><a href="https://openr.netlify.com/tags/blog"><i class="fa fa-tags"></i> blog</a>
             </li>
             
             <li><a href="https://openr.netlify.com/tags/blogdown"><i class="fa fa-tags"></i> blogdown</a>
@@ -379,22 +405,7 @@ foo()</code></pre>
             <li><a href="https://openr.netlify.com/tags/bookdownplus"><i class="fa fa-tags"></i> bookdownplus</a>
             </li>
             
-            <li><a href="https://openr.netlify.com/tags/css"><i class="fa fa-tags"></i> css</a>
-            </li>
-            
-            <li><a href="https://openr.netlify.com/tags/drposter"><i class="fa fa-tags"></i> drposter</a>
-            </li>
-            
-            <li><a href="https://openr.netlify.com/tags/git"><i class="fa fa-tags"></i> git</a>
-            </li>
-            
-            <li><a href="https://openr.netlify.com/tags/hugo"><i class="fa fa-tags"></i> hugo</a>
-            </li>
-            
             <li><a href="https://openr.netlify.com/tags/latex"><i class="fa fa-tags"></i> latex</a>
-            </li>
-            
-            <li><a href="https://openr.netlify.com/tags/linux"><i class="fa fa-tags"></i> linux</a>
             </li>
             
             <li><a href="https://openr.netlify.com/tags/markdown"><i class="fa fa-tags"></i> markdown</a>
@@ -415,9 +426,6 @@ foo()</code></pre>
             <li><a href="https://openr.netlify.com/tags/post"><i class="fa fa-tags"></i> post</a>
             </li>
             
-            <li><a href="https://openr.netlify.com/tags/postr"><i class="fa fa-tags"></i> postr</a>
-            </li>
-            
             <li><a href="https://openr.netlify.com/tags/r"><i class="fa fa-tags"></i> r</a>
             </li>
             
@@ -430,10 +438,7 @@ foo()</code></pre>
             <li><a href="https://openr.netlify.com/tags/steemr"><i class="fa fa-tags"></i> steemr</a>
             </li>
             
-            <li><a href="https://openr.netlify.com/tags/teaching"><i class="fa fa-tags"></i> teaching</a>
-            </li>
-            
-            <li><a href="https://openr.netlify.com/tags/utopian-io"><i class="fa fa-tags"></i> utopian-io</a>
+            <li><a href="https://openr.netlify.com/tags/tutorial"><i class="fa fa-tags"></i> tutorial</a>
             </li>
             
             <li><a href="https://openr.netlify.com/tags/word"><i class="fa fa-tags"></i> word</a>
@@ -442,10 +447,13 @@ foo()</code></pre>
             <li><a href="https://openr.netlify.com/tags/xaringan"><i class="fa fa-tags"></i> xaringan</a>
             </li>
             
-            <li><a href="https://openr.netlify.com/tags/%e5%90%89%e4%bb%96"><i class="fa fa-tags"></i> 吉他</a>
+            <li><a href="https://openr.netlify.com/tags/%e5%ad%a6"><i class="fa fa-tags"></i> 学</a>
             </li>
             
             <li><a href="https://openr.netlify.com/tags/%e5%ad%a6-r"><i class="fa fa-tags"></i> 学-r</a>
+            </li>
+            
+            <li><a href="https://openr.netlify.com/tags/%e5%ad%a6r"><i class="fa fa-tags"></i> 学r</a>
             </li>
             
         </ul>

@@ -1,6 +1,6 @@
 ---
 title: 'R bookdownplus 升级手记，以及北大论文模板'
-author: "赵鹏"
+author: 赵鹏
 date: '2017-11-26'
 slug: -bookdownplus-update
 summary: "bookdownplus 自发布以来最大的一次升级，包含了北京大学学位论文的 bookdown 模板。"
@@ -9,7 +9,6 @@ tags:
   - LaTeX
   - bookdown
   - bookdownplus
-  - post
   - markdown
 bibliography: [zhaor.bib]
 categories: []

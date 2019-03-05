@@ -57,6 +57,42 @@
   <meta property="og:url" content="/blog/steemr-delegation-cner//" />
   <meta property="og:image" content="img/logo-small.png" />
 
+  <script type="text/javascript"
+        async
+        src="https://cdn.bootcss.com/mathjax/2.7.3/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$'], ['\[\[','\]\]']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+});
+
+MathJax.Hub.Queue(function() {
+    
+    
+    
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i = 0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+});
+</script>
+
+<style>
+code.has-jax {
+    font: inherit;
+    font-size: 100%;
+    background: inherit;
+    border: inherit;
+    color: #515151;
+}
+</style>
+
 </head>
 
 
@@ -170,7 +206,7 @@
 
                     <div class="col-md-9" id="blog-post">
 
-                        <p class="text-muted text-uppercase mb-small text-right">By <a href="#">dapeng</a> | July 9, 2018</p>
+                        <p class="text-muted text-uppercase mb-small text-right">By <a href="#">赵鹏</a> | July 9, 2018</p>
 
                         <div id="post-content">
                           <h4 id="what-features-did-i-add">What features did I add?</h4>
@@ -211,10 +247,10 @@
 168   5.0 74.05  16124.248 6.236688e+04    719  267.093 2901.328  52.98 2.435279e+04     4    NA          deanliu
 </code></pre>
 
-<p>The &lsquo;intro&rsquo; column is unavailable yet, which will be filled with the self-introduction post of each ID in the future.</p>
+<p>The 'intro' column is unavailable yet, which will be filled with the self-introduction post of each ID in the future.</p>
 
 <ul>
-<li>The <code>acnsub()</code> function produces a summary of the CN sub-categories, i.e. the categories beginning with &lsquo;cn-&rsquo;, which can help the CNers choose the tags when posting.</li>
+<li>The <code>acnsub()</code> function produces a summary of the CN sub-categories, i.e. the categories beginning with 'cn-', which can help the CNers choose the tags when posting.</li>
 </ul>
 
 <p>Here is a diagram of the Top 20 active CN sub categories and a table produced by <code>acnsub()</code> as an analysis of the data between June 28 to 2 July, 2018.</p>
@@ -262,7 +298,7 @@
 
 <h4 id="how-did-i-implement-them">How did I implement them?</h4>
 
-<p>I added these new functions in  &lsquo;R/analysis.r&rsquo;  and &lsquo;R/get.r&rsquo;, as well as an internal function in &lsquo;R/internal.r&rsquo;. Other files were updated automatically by compilation.</p>
+<p>I added these new functions in  'R/analysis.r'  and 'R/get.r', as well as an internal function in 'R/internal.r'. Other files were updated automatically by compilation.</p>
 
 <p>Link to relevant lines in the code on GitHub can be found mainly in my latest commit (click to see the details):</p>
 
@@ -326,10 +362,10 @@
     <div class="panel-body">
         <ul class="tag-cloud">
             
-            <li><a href="https://openr.netlify.com/tags/beginr"><i class="fa fa-tags"></i> beginr</a>
+            <li><a href="https://openr.netlify.com/tags/advr"><i class="fa fa-tags"></i> advr</a>
             </li>
             
-            <li><a href="https://openr.netlify.com/tags/blogdown"><i class="fa fa-tags"></i> blogdown</a>
+            <li><a href="https://openr.netlify.com/tags/beginr"><i class="fa fa-tags"></i> beginr</a>
             </li>
             
             <li><a href="https://openr.netlify.com/tags/bookdown"><i class="fa fa-tags"></i> bookdown</a>
@@ -344,13 +380,10 @@
             <li><a href="https://openr.netlify.com/tags/mindr"><i class="fa fa-tags"></i> mindr</a>
             </li>
             
+            <li><a href="https://openr.netlify.com/tags/news"><i class="fa fa-tags"></i> news</a>
+            </li>
+            
             <li><a href="https://openr.netlify.com/tags/pinyin"><i class="fa fa-tags"></i> pinyin</a>
-            </li>
-            
-            <li><a href="https://openr.netlify.com/tags/post"><i class="fa fa-tags"></i> post</a>
-            </li>
-            
-            <li><a href="https://openr.netlify.com/tags/postr"><i class="fa fa-tags"></i> postr</a>
             </li>
             
             <li><a href="https://openr.netlify.com/tags/r"><i class="fa fa-tags"></i> r</a>
@@ -366,9 +399,6 @@
             </li>
             
             <li><a href="https://openr.netlify.com/tags/tutorial"><i class="fa fa-tags"></i> tutorial</a>
-            </li>
-            
-            <li><a href="https://openr.netlify.com/tags/utopian-io"><i class="fa fa-tags"></i> utopian-io</a>
             </li>
             
         </ul>

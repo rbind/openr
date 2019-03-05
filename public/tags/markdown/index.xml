@@ -17,9 +17,9 @@
       <pubDate>Sat, 26 Jan 2019 00:00:00 +0000</pubDate>
       
       <guid>https://openr.netlify.com/blog/rmd/</guid>
-      <description>&lt;p&gt;Since &amp;lsquo;rmarkdown&amp;rsquo; and &amp;lsquo;knitr&amp;rsquo;, more and more members (rticles, bookdown, mindr&amp;hellip;) have been joining the R Markdown family. Users can write elegant reproducible documents, manuscripts, dissertations, books, blog posts, posters, and slides within the framework of R markdown. It is exciting, while the installation and maintenance becomes annoying. In the meanwhile, there are plenty of useful RStudio addins, which equip the RStudio IDE as a powerful markdown editor. However, these little tools are often hidden somewhere deep in the community, and it is difficult to dig them out.&lt;/p&gt;
+      <description>&lt;p&gt;Since &#39;rmarkdown&#39; and &#39;knitr&#39;, more and more members (rticles, bookdown, mindr...) have been joining the R Markdown family. Users can write elegant reproducible documents, manuscripts, dissertations, books, blog posts, posters, and slides within the framework of R markdown. It is exciting, while the installation and maintenance becomes annoying. In the meanwhile, there are plenty of useful RStudio addins, which equip the RStudio IDE as a powerful markdown editor. However, these little tools are often hidden somewhere deep in the community, and it is difficult to dig them out.&lt;/p&gt;
 
-&lt;p&gt;With &amp;lsquo;rmd&amp;rsquo; you can easily explore, install, and load them for both R users and non-users. Furthermore, &amp;lsquo;rmd&amp;rsquo; provides a RStudio addin to explore the R Markdown family and install them with a single click.&lt;/p&gt;
+&lt;p&gt;With &#39;rmd&#39; you can easily explore, install, and load them for both R users and non-users. Furthermore, &#39;rmd&#39; provides a RStudio addin to explore the R Markdown family and install them with a single click.&lt;/p&gt;
 
 &lt;p&gt;Forget R, and enjoy the wonderful world of R Markdown.&lt;/p&gt;</description>
     </item>
@@ -56,7 +56,7 @@
       
       <guid>https://openr.netlify.com/blog/bookdownplus-released/</guid>
       <description>I’m glad to announce that ‘bookdownplus 1.0.2’ (Zhao 2017) is now on CRAN. This post is a brief documentation of ‘bookdownplus 1.0.2’. However, I have been updating ‘bookdownplus’ frequently and the new version is more powerful and even easier. Please go to the GitHub site of bookdownplus.
-HUGOMORE42 IntroductionThe R package bookdownplus is an extension of bookdown (Xie 2016). It is a collection ofmultiple templates on the basis of LaTeX, which are tailored so that I can work happily under the umbrella of bookdown.</description>
+IntroductionThe R package bookdownplus is an extension of bookdown (Xie 2016). It is a collection ofmultiple templates on the basis of LaTeX, which are tailored so that I can work happily under the umbrella of bookdown.</description>
     </item>
     
     <item>
@@ -75,7 +75,7 @@ HUGOMORE42 IntroductionThe R package bookdownplus is an extension of bookdown (
       
       <guid>https://openr.netlify.com/blog/mindr/</guid>
       <description>This is a preliminary version of the introduction to mindr. Please go to my Github repo mindr for the latest updates.
-HUGOMORE42 Quick startInstallationdevtools::install_github(&amp;quot;pzhaonet/mindr&amp;quot;)Convert (a) markdown file(s) into a mindmapCreate a folder named mm in the working directory (getwd()), and drop some markdown or rmarkdown files into mm/. Run:
+Quick startInstallationdevtools::install_github(&amp;quot;pzhaonet/mindr&amp;quot;)Convert (a) markdown file(s) into a mindmapCreate a folder named mm in the working directory (getwd()), and drop some markdown or rmarkdown files into mm/. Run:
 mindr::md2mm()then you will get a mm.mm file. Open it with any mind-map (brainstorm) software, and you will get a mind map.</description>
     </item>
     
@@ -86,7 +86,7 @@ mindr::md2mm()then you will get a mm.mm file. Open it with any mind-map (brains
       
       <guid>https://openr.netlify.com/blog/postr/</guid>
       <description>This is a preliminary version of the introduction to postr. Please go to my Github repo postr for the latest updates.
-HUGOMORE42 This package is modified from kuleuven-template, where you can see the requirements before using this package. Here I picked out the instruction for Windows users as follows.
+This package is modified from kuleuven-template, where you can see the requirements before using this package. Here I picked out the instruction for Windows users as follows.
 Install a LaTeX distribution, e.g. MiKTeX. For Chinese users CTeX is highly recommended.Install TexmakerInstall RInstall RStudioInstall Python 2Install Python filter support for Pandoc:on a Windows command prompt, type pip install pandocfiltersInstall SumatraPDF for auto-refresh of PDF previewsAfterwards, add the Python directory to the system PATH variable.</description>
     </item>
     
@@ -97,7 +97,7 @@ HUGOMORE42 This package is modified from kuleuven-template, where you can see th
       
       <guid>https://openr.netlify.com/blog/bookdownplus/</guid>
       <description>This is a preliminary version of the introduction to bookdownplus. Please go to my Github repo bookdownplus for the latest updates. Full documentation can be found in the book R bookdownplus Textbook.
-HUGOMORE42 IntroductionR bookdownplus is an extension of R bookdown (Xie 2016). It is a collection ofmultiple templates on the basis of LaTeX, which are tailored so that I can work happily under the umbrella of bookdown.</description>
+IntroductionR bookdownplus is an extension of R bookdown (Xie 2016). It is a collection ofmultiple templates on the basis of LaTeX, which are tailored so that I can work happily under the umbrella of bookdown. R bookdownplus helps you write academic journal articles, guitar books, chemical equations, mails, calendars, and diaries.</description>
     </item>
     
     <item>
@@ -106,7 +106,7 @@ HUGOMORE42 IntroductionR bookdownplus is an extension of R bookdown (Xie 2016).
       <pubDate>Tue, 14 Mar 2017 00:00:00 +0000</pubDate>
       
       <guid>https://openr.netlify.com/blog/bookdown-cheatsheet/</guid>
-      <description>Quick StartWhat is R bookdownA software for writing books or documents.More elegant than MS Word. Much easier than \(\LaTeX\).Users can easily insert table of contents, figures and tables with cross-reference, footnotes, and index.Users can easily embed equations, citations, R scripts.pdf, word and html files can be exported.best choice to write reproducible documents.HUGOMORE42 InstallationDownload R and install it.Download RStudio and install it.</description>
+      <description>Quick StartWhat is R bookdownA software for writing books or documents.More elegant than MS Word. Much easier than \(\LaTeX\).Users can easily insert table of contents, figures and tables with cross-reference, footnotes, and index.Users can easily embed equations, citations, R scripts.pdf, word and html files can be exported.best choice to write reproducible documents.InstallationDownload R and install it.Download RStudio and install it.</description>
     </item>
     
   </channel>

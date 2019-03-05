@@ -57,6 +57,42 @@
   <meta property="og:url" content="/zh/blog/hugo-academic-summary//" />
   <meta property="og:image" content="img/logo.png" />
 
+  <script type="text/javascript"
+        async
+        src="https://cdn.bootcss.com/mathjax/2.7.3/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$'], ['\[\[','\]\]']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+});
+
+MathJax.Hub.Queue(function() {
+    
+    
+    
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i = 0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+});
+</script>
+
+<style>
+code.has-jax {
+    font: inherit;
+    font-size: 100%;
+    background: inherit;
+    border: inherit;
+    color: #515151;
+}
+</style>
+
 </head>
 
 
@@ -177,10 +213,6 @@
 
 
 <p>在 RStudio 里用 R blogdown 来维护网站时，可以通过点击工具栏的 Addins - New Post 来创建新帖子，很方便。但是，如果用的是 Hugo 的 academic 主题，那么创建的新帖子在网站首页会显示全文，不大好看，尤其是全文很长的时候，根本就不像个首页了。这是因为，academic 首页的 posts 模块默认显示文摘。如果没有为每篇帖子设置文摘，就会显示全文。而上面说的创建新帖的方法里，并没有设置文摘的选项。那么，文摘在哪里设置呢？</p>
-
-
-HUGOMORE42
-
 <p>直接说答案：手动在新帖的YAML文件头添加一行：</p>
 <pre><code>summary: &quot;我的文摘别太长。&quot;</code></pre>
 <p>答案来自<a href="https://github.com/rstudio/blogdown/issues/21#issuecomment-269555683">blogdown 项目主页</a>。</p>
@@ -273,7 +305,7 @@ Enable/disable and configure widgets to customize your homepage.
     <div class="panel-body">
         <ul class="nav nav-pills nav-stacked">
             
-            <li><a href="https://openr.netlify.com/categories/%e6%9c%aa%e5%88%86%e7%b1%bb">未分类 (7)</a>
+            <li><a href="https://openr.netlify.com/categories/xuer">xuer (16)</a>
             </li>
             
         </ul>
@@ -295,13 +327,7 @@ Enable/disable and configure widgets to customize your homepage.
     <div class="panel-body">
         <ul class="tag-cloud">
             
-            <li><a href="https://openr.netlify.com/tags/advr"><i class="fa fa-tags"></i> advr</a>
-            </li>
-            
             <li><a href="https://openr.netlify.com/tags/beginr"><i class="fa fa-tags"></i> beginr</a>
-            </li>
-            
-            <li><a href="https://openr.netlify.com/tags/blog"><i class="fa fa-tags"></i> blog</a>
             </li>
             
             <li><a href="https://openr.netlify.com/tags/blogdown"><i class="fa fa-tags"></i> blogdown</a>
@@ -313,22 +339,7 @@ Enable/disable and configure widgets to customize your homepage.
             <li><a href="https://openr.netlify.com/tags/bookdownplus"><i class="fa fa-tags"></i> bookdownplus</a>
             </li>
             
-            <li><a href="https://openr.netlify.com/tags/css"><i class="fa fa-tags"></i> css</a>
-            </li>
-            
-            <li><a href="https://openr.netlify.com/tags/drposter"><i class="fa fa-tags"></i> drposter</a>
-            </li>
-            
-            <li><a href="https://openr.netlify.com/tags/git"><i class="fa fa-tags"></i> git</a>
-            </li>
-            
-            <li><a href="https://openr.netlify.com/tags/hugo"><i class="fa fa-tags"></i> hugo</a>
-            </li>
-            
             <li><a href="https://openr.netlify.com/tags/latex"><i class="fa fa-tags"></i> latex</a>
-            </li>
-            
-            <li><a href="https://openr.netlify.com/tags/linux"><i class="fa fa-tags"></i> linux</a>
             </li>
             
             <li><a href="https://openr.netlify.com/tags/markdown"><i class="fa fa-tags"></i> markdown</a>
@@ -349,9 +360,6 @@ Enable/disable and configure widgets to customize your homepage.
             <li><a href="https://openr.netlify.com/tags/post"><i class="fa fa-tags"></i> post</a>
             </li>
             
-            <li><a href="https://openr.netlify.com/tags/postr"><i class="fa fa-tags"></i> postr</a>
-            </li>
-            
             <li><a href="https://openr.netlify.com/tags/r"><i class="fa fa-tags"></i> r</a>
             </li>
             
@@ -364,10 +372,7 @@ Enable/disable and configure widgets to customize your homepage.
             <li><a href="https://openr.netlify.com/tags/steemr"><i class="fa fa-tags"></i> steemr</a>
             </li>
             
-            <li><a href="https://openr.netlify.com/tags/teaching"><i class="fa fa-tags"></i> teaching</a>
-            </li>
-            
-            <li><a href="https://openr.netlify.com/tags/utopian-io"><i class="fa fa-tags"></i> utopian-io</a>
+            <li><a href="https://openr.netlify.com/tags/tutorial"><i class="fa fa-tags"></i> tutorial</a>
             </li>
             
             <li><a href="https://openr.netlify.com/tags/word"><i class="fa fa-tags"></i> word</a>
@@ -376,10 +381,13 @@ Enable/disable and configure widgets to customize your homepage.
             <li><a href="https://openr.netlify.com/tags/xaringan"><i class="fa fa-tags"></i> xaringan</a>
             </li>
             
-            <li><a href="https://openr.netlify.com/tags/%e5%90%89%e4%bb%96"><i class="fa fa-tags"></i> 吉他</a>
+            <li><a href="https://openr.netlify.com/tags/%e5%ad%a6"><i class="fa fa-tags"></i> 学</a>
             </li>
             
             <li><a href="https://openr.netlify.com/tags/%e5%ad%a6-r"><i class="fa fa-tags"></i> 学-r</a>
+            </li>
+            
+            <li><a href="https://openr.netlify.com/tags/%e5%ad%a6r"><i class="fa fa-tags"></i> 学r</a>
             </li>
             
         </ul>

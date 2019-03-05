@@ -1,31 +1,0 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Hugo on Open R</title>
-    <link>https://openr.netlify.com/zh/tags/hugo/</link>
-    <description>Recent content in Hugo on Open R</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>zh-cn</language>
-    <lastBuildDate>Tue, 11 Apr 2017 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://openr.netlify.com/zh/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>R blogdown 搭建个人博客或科研网站</title>
-      <link>https://openr.netlify.com/zh/blog/r-blogdown/</link>
-      <pubDate>Tue, 11 Apr 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://openr.netlify.com/zh/blog/r-blogdown/</guid>
-      <description>本文收录在《学 R 》一书的附录中。
-互联网时代有个自己的网站，就好像真实世界里有了自己的房子（服务器）和固定地址（域名）；自我介绍时附上自己的网站，就像生活里邀请朋友来访或者职场上递上名片，都甚为方便。然而，建立一个网站并不容易，涉及诸多领域的知识和技能，门槛比较高。好在，我们有万能的R语言，搭建网站只需几分钟，而并不需要多少网络知识。你甚至不用懂 R 语言是什么，照我下面说的做就行，包教包会，学不会免费再教。
-HUGOMORE42 这里，我提供两个示范，演示如何使用 R 语言的 blogdown 扩展包1，用来搭建一个个人博客和一个科研小组网站。截至本文成稿之日，blogdown 含苞待放，尚未正式发布，但是已经能够正常安装使用了。我们来尝尝鲜，提前一睹她的芳容。
-R blogdown 简介和安装R blogdown 是什么
-R语言的一个扩展包，用来制作网站的工具。可以用非常简洁的方式快速搭建静态网页构成的网站。虽然名字里有“博客”（blog）字样，但并不仅限于博客。非常适合搭建一个科研小组的展示窗口。基于 markdown 扩展语法，可以在网页中方便地插入图表、脚注、数学公式、R 代码等元素。非常容易将 bookdown 生成的论文转化成网页展示。非常易于维护，迁移，备份。本书的官方网站就是用 R blogdown 搭建的。网站里给大家提供的 R 示例代码、试读章节、勘误表等，都是直接从书稿中拷贝粘贴到文本文件里，然后运行一下 blogdown 的指令，网站就自动更新了。
-安装
-blogdown 的背景平台是 R 语言，用户界面首选 RStudio ，产生的网站框架是 Hugo ，掰手指头数一数，要安装4样东西，略显繁琐，但并不难，一劳永逸。安装方式如下：
-R。去R的服务器CRAN，点击Download R for Windows（其他操作系统的用户请自便），在打开的新网页最上方点击base，就找到下载链接了。下载完毕后安装，一路“下一步”的傻瓜式安装即可。RStudio。去官网下载安装文件运行即可。blogdown。运行RStudio，在左上面板的代码窗口输入并运行以下代码：if(!require(devtools)) install.packages(&amp;#39;devtools&amp;#39;)devtools::install_github(&amp;#39;rstudio/blogdown&amp;#39;)解释一下：由于 blogdown 目前只发布到了 GitHub 服务器上，尚未发布到CRAN，所以上面第一条代码先安装开发工具 devtools 包，第二行用这个包的install_github() 函数从 GitHub 安装。</description>
-    </item>
-    
-  </channel>
-</rss>

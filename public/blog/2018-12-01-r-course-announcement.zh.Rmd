@@ -1,14 +1,11 @@
 ---
 title: '培训通知：R 语言、开放科学和可重复性研究'
-author: "赵鹏"
+author: 赵鹏
 date: '2018-12-01'
 slug: r-course-announcement
 summary: "欢迎莅临指导。"
 tags:
-  - post
   - R
-  - teaching
-  - drposter
 categories: []
 banner: img/banners/logo-openr.png
 ---

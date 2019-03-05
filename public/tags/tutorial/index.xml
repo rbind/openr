@@ -50,7 +50,7 @@
 
 &lt;ul&gt;
 &lt;li&gt;Setting-up of the environment which steemr requires.&lt;/li&gt;
-&lt;li&gt;Using the function &lt;code&gt;gid()&lt;/code&gt; to retrieve a Steemian&amp;rsquo;s profile from the block chain or the data servers.&lt;/li&gt;
+&lt;li&gt;Using the function &lt;code&gt;gid()&lt;/code&gt; to retrieve a Steemian&#39;s profile from the block chain or the data servers.&lt;/li&gt;
 &lt;li&gt;Using other R functions to enhance and analyze the data retrieved by &lt;code&gt;gid()&lt;/code&gt;.&lt;/li&gt;
 &lt;/ul&gt;</description>
     </item>

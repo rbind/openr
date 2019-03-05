@@ -57,6 +57,42 @@
   <meta property="og:url" content="/zh//" />
   <meta property="og:image" content="img/logo.png" />
 
+  <script type="text/javascript"
+        async
+        src="https://cdn.bootcss.com/mathjax/2.7.3/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$'], ['\[\[','\]\]']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+});
+
+MathJax.Hub.Queue(function() {
+    
+    
+    
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i = 0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+});
+</script>
+
+<style>
+code.has-jax {
+    font: inherit;
+    font-size: 100%;
+    background: inherit;
+    border: inherit;
+    color: #515151;
+}
+</style>
+
 </head>
 
 
@@ -198,7 +234,7 @@
 
                         </div>
                         <div class="col-sm-7">
-                            <img class="img-responsive" src="img/banners/logo-rmd.png" alt="">
+                            <img class="img-responsive" src="https://openr.netlify.com/img/banners/logo-rmd.png" alt="">
                         </div>
                     </div>
                 </div>
@@ -216,7 +252,7 @@
 
                         </div>
                         <div class="col-sm-7">
-                            <img class="img-responsive" src="img/banners/logo-rosr.png" alt="">
+                            <img class="img-responsive" src="https://openr.netlify.com/img/banners/logo-rosr.png" alt="">
                         </div>
                     </div>
                 </div>
@@ -234,7 +270,7 @@
 
                         </div>
                         <div class="col-sm-7">
-                            <img class="img-responsive" src="img/banners/logo-bookdownplus.png" alt="">
+                            <img class="img-responsive" src="https://openr.netlify.com/img/banners/logo-bookdownplus.png" alt="">
                         </div>
                     </div>
                 </div>
@@ -252,7 +288,7 @@
 
                         </div>
                         <div class="col-sm-7">
-                            <img class="img-responsive" src="img/banners/logo-mindr.png" alt="">
+                            <img class="img-responsive" src="https://openr.netlify.com/img/banners/logo-mindr.png" alt="">
                         </div>
                     </div>
                 </div>
@@ -270,7 +306,7 @@
 
                         </div>
                         <div class="col-sm-7">
-                            <img class="img-responsive" src="img/banners/logo-beginr.png" alt="">
+                            <img class="img-responsive" src="https://openr.netlify.com/img/banners/logo-beginr.png" alt="">
                         </div>
                     </div>
                 </div>
@@ -288,7 +324,7 @@
 
                         </div>
                         <div class="col-sm-7">
-                            <img class="img-responsive" src="img/banners/logo-pinyin.png" alt="">
+                            <img class="img-responsive" src="https://openr.netlify.com/img/banners/logo-pinyin.png" alt="">
                         </div>
                     </div>
                 </div>
@@ -519,88 +555,6 @@
                         <div class="top">
                             <div class="image" style="overflow:hidden">
                                 
-                                <img src="https://openr.netlify.com/img/banners/logo-openr.png" class="img-responsive" alt="" >
-                                
-                            </div>
-                            <div class="bg"></div>
-                            <div class="text">
-                                <p class="buttons">
-                                    <a href="https://openr.netlify.com/zh/blog/publish-r-packages/" class="btn btn-template-transparent-primary"><i class="fa fa-link"></i> 阅读更多</a>
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="content">
-                            <h4><a href="https://openr.netlify.com/zh/blog/publish-r-packages/">R包发布记</a></h4>
-                            <p class="author-category">
-                            
-                            由 <a href="#">赵鹏</a>
-                            
-                            在 June 19, 2017
-                            </p>
-                            <p class="intro">最近，我把mindr，pinyin 和 bookdownplus 三个包都提交到了 CRAN。这三个包都很简单，我就是想体验一下发布R包的流程，免得将来学R那本书出版了被问起来，答不上来就丢人了，另外也算是承接菜鸟致简速成那篇帖子，里面只谈了野包的发布分享，而只有提交到了 CRAN，野包才算转正。
-HUGOMORE42 很快，这三个包都成功转正，可以正常安装了：
-install.packages(&#39;mindr&#39;)install.packages(&#39;pinyin&#39;)install.packages(&#39;bookdownplus&#39;)这里说说发布的过程和我遇到的一些问题。
-自查包发布之前，先自查有没有错误。只需用RStudio打开待发布的R包的.Rproj文件，然后点击右上方面板的 Build - Check 按钮，就可以看到自查结果。
-这里要注意：
-结果里尽量不要包含任何 Notes 和 Warnings。如果有，就去找到问题修改，不然在提交的时候会被退回。
-关于author &lt;author's email&gt;的那一条 Note 是可以忽略的，只是提醒你再次看看作者信息有没有填错。
-我最初的自查结果有些 Notes 我原以为可以无视。比如，DESCRIPTION 文件里 Title 字段有些词要求首字母大写，我心想，这也算错误？就没理。再比如，告诉我 “no example. no test. no vignette.” 我心想，好像很多包都没有这几样，不也都发布了么？所以我同样无视。结果就是……
-下面接着讲。
-提交把包的压缩文件在 CRAN 的网页上传即可。成功上传后会收到 email 通知，需要点击里面的链接进行确认。
-我两个宝贝儿 mindr 和 pinyin 的1.0.0版是六一那天上传并确认的，之后我就等，一直等到6月16号，我才想起来这事儿，就发信给 CRAN cran@r-project.org 催了一下，当天就得到了 Dr. Uwe Ligges 的回复，说：
-你那两个包在提交当天就被系统自动拒收了，因为系统自动检查时发现了两个 Notes。系统自动发信通知你了，如果没收到，请翻翻垃圾邮件。
-我一翻邮箱的 spam，果然，拒信早就在里面了。</p>
-                            <p class="read-more">
-                              <a href="https://openr.netlify.com/zh/blog/publish-r-packages/" class="btn btn-template-main">继续阅读</a>
-                            </p>
-                        </div>
-                    </div>
-                    
-
-                </div>
-                
-                <div class="col-md-3 col-sm-6">
-                    <div class="box-image-text blog">
-                        <div class="top">
-                            <div class="image" style="overflow:hidden">
-                                
-                                <img src="https://openr.netlify.com/img/banners/logo-xuer.png" class="img-responsive" alt="" >
-                                
-                            </div>
-                            <div class="bg"></div>
-                            <div class="text">
-                                <p class="buttons">
-                                    <a href="https://openr.netlify.com/zh/blog/preface_zhu/" class="btn btn-template-transparent-primary"><i class="fa fa-link"></i> 阅读更多</a>
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="content">
-                            <h4><a href="https://openr.netlify.com/zh/blog/preface_zhu/">《学R》序（朱彤）</a></h4>
-                            <p class="author-category">
-                            
-                            由 <a href="#">赵鹏</a>
-                            
-                            在 June 14, 2017
-                            </p>
-                            <p class="intro"><p>我读硕士研究生时的导师是朱彤教授。在朱老师科研小组 ZTGroup 学习的三年如沐春风，我从中得到的收获受益终生。正值北京大学环境大楼落成不久，又逢毕业季，作为环境科学与工程学院的院长，朱老师在极其繁忙的工作中抽出时间来为本书欣然作序，实属不易，仅凭“感激”二字岂能表达我们的谢意？</p>
-
-<p>下面是朱老师为本书写的序言。</p></p>
-                            <p class="read-more">
-                              <a href="https://openr.netlify.com/zh/blog/preface_zhu/" class="btn btn-template-main">继续阅读</a>
-                            </p>
-                        </div>
-                    </div>
-                    
-
-                </div>
-                
-                <div class="col-md-3 col-sm-6">
-                    <div class="box-image-text blog">
-                        <div class="top">
-                            <div class="image" style="overflow:hidden">
-                                
                                 <img src="https://openr.netlify.com/img/banners/logo-pinyin.png" class="img-responsive" alt="" >
                                 
                             </div>
@@ -656,7 +610,7 @@ install.packages(&#39;mindr&#39;)install.packages(&#39;pinyin&#39;)install.pac
                             </p>
                             <p class="intro">这些年，论文发得不多，公式却攒了不少，大部分都是自己亲手敲的 \(\LaTeX\) 代码。我把他们整理在一个 eq.tex 文档里，配合一个编译好的 eq.pdf 文件。每次需要的时候，在 eq.pdf 里找到需要的公式，然后去 eq.tex 找公式代码，拷到目标文档里完事儿。稍微有点小麻烦，但总比重新敲一遍代码要省事、准确。
 然而，现在有了 blogdown 和 Hugo-academic 主题，一切都变得不一样了。我把 eq.tex 里的文本全部拷贝粘贴到一个 .Rmd 文件，扔进网站里，就得到了现在这个帖子。鼠标放在公式上点右键- Show Math As - \(\TeX\) Commands，就得到了公式的 \(\LaTeX\) 代码。直接拷贝就行了，再也不用在两个文档里切换以及找来找去。
-HUGOMORE42 我觉得，我再也回不去了。
+我觉得，我再也回不去了。
 MeteorologyAtmpspheric pressure\[\begin{equation}P=101.325 \cdot (\frac{293-0.0065z}{293}) ^ {5.26} = 86.838\,\text{kPa}\end{equation}\]
 \(z\): elevation above sea level in m.
 \[\begin{equation}-\text{d} p =\rho g \text{d}z\end{equation}\]
@@ -664,6 +618,99 @@ MeteorologyAtmpspheric pressure\[\begin{equation}P=101.325 \cdot (\frac{293-0
 Psychrometric constant\[\begin{equation}\gamma =\frac{c_p P}{\varepsilon \lambda} = 0.</p>
                             <p class="read-more">
                               <a href="https://openr.netlify.com/zh/blog/equations/" class="btn btn-template-main">继续阅读</a>
+                            </p>
+                        </div>
+                    </div>
+                    
+
+                </div>
+                
+                <div class="col-md-3 col-sm-6">
+                    <div class="box-image-text blog">
+                        <div class="top">
+                            <div class="image" style="overflow:hidden">
+                                
+                                <img src="https://openr.netlify.com/img/banners/logo-mindr.png" class="img-responsive" alt="" >
+                                
+                            </div>
+                            <div class="bg"></div>
+                            <div class="text">
+                                <p class="buttons">
+                                    <a href="https://openr.netlify.com/zh/blog/mindr/" class="btn btn-template-transparent-primary"><i class="fa fa-link"></i> 阅读更多</a>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="content">
+                            <h4><a href="https://openr.netlify.com/zh/blog/mindr/">R mindr: 把 Markdown 转成思维导图</a></h4>
+                            <p class="author-category">
+                            
+                            由 <a href="#">赵鹏</a>
+                            
+                            在 May 19, 2017
+                            </p>
+                            <p class="intro">将 markdown (.md, .Rmd) 文件转换成思维导图的 R 扩展包 mindr 是我写的第五个 R 包，安装方法如下：
+稳定版：
+install.packages(&quot;mindr&quot;)开发版：
+devtools::install_github(&quot;pzhaonet/mindr&quot;)使用方法：
+在R的工作目录创建个名叫 mm/ 的文件夹，丢进去一堆 markdown 文件 (.md, .Rmd)，然后运行：
+mindr::md2mm()就得到个 mm.mm 的思维导图文件，用免费的思维导图软件 freemind 可以直接打开。界面比较简陋。或者用漂亮的免费软件 Xmind，需要选择导入 freemind 导图。
+mindr包还有另外两个函数：mm2md()是反向操作，将思维导图转换成markdown;outline()是从markdown文件里提取出各级标题生成大纲。
+我的书稿《学R》最初是先用思维导图拟定框架，然后在 Word 里写，后来转到 bookdown 里完成的。今天下午，我在书稿的旧思维导图里照着新稿修改，想把两者统一了。改着改着，觉得不对劲儿呀，R markdown 的哲学是维护一份文档，导出多个格式，我怎么又开始维护两份内容相同只是格式不同的文档了？
+这肯定不是什么新问题，肯定有办法直接把 markdown 转成思维导图。于是我搜。我搜搜搜，竟然没搜到！
+这就怪了。从常识上判断，我认为这个工具肯定有，说不定藏在某个 R 包里，只是太隐蔽了。
+是应该继续搜呢，还是自己动手？有时候真是难以权衡。我掂量了一下轻重，选择了后者。
+晚上，写好了。
+先拿 bookdown 书稿当小白鼠练手，用 freemind 直接打开：
+freemind 确实简陋。再拿 blogdown 书稿 试试，导入 Xmind 看看：
+还不错。好了，实验成熟了，放心地用在自己的书稿上，并且挑个最漂亮的款式：
+更新：2017-06-19，‘mindr 1.0.4’ 在 CRAN 正式发布。</p>
+                            <p class="read-more">
+                              <a href="https://openr.netlify.com/zh/blog/mindr/" class="btn btn-template-main">继续阅读</a>
+                            </p>
+                        </div>
+                    </div>
+                    
+
+                </div>
+                
+                <div class="col-md-3 col-sm-6">
+                    <div class="box-image-text blog">
+                        <div class="top">
+                            <div class="image" style="overflow:hidden">
+                                
+                                <img src="https://openr.netlify.com/img/banners/logo-openr.png" class="img-responsive" alt="" >
+                                
+                            </div>
+                            <div class="bg"></div>
+                            <div class="text">
+                                <p class="buttons">
+                                    <a href="https://openr.netlify.com/zh/blog/rblogdown-bib/" class="btn btn-template-transparent-primary"><i class="fa fa-link"></i> 阅读更多</a>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="content">
+                            <h4><a href="https://openr.netlify.com/zh/blog/rblogdown-bib/">R blogdown 科研网站的公式和参考文献</a></h4>
+                            <p class="author-category">
+                            
+                            由 <a href="#">赵鹏</a>
+                            
+                            在 May 18, 2017
+                            </p>
+                            <p class="intro">本网站的公式和参考文献一直未能正常显示，直到今天我才把这两个问题解决。
+公式公式的问题迟迟未解决，是因为我看到人们在讨论往html文件里加 Load mathjax 代码这种解决方案，一看就头大，不想做。
+其实，我用的hugo-academic主题，据说是支持数学环境的，据说在 config.toml 里设置 math = true就开启全站支持，在单篇post的yml头里这样设置就开启单篇支持。可是我两样都试过，然后运行 blogdown::serve_site()测试，在RStudio的Viewer里都不能成功显示公式。
+今天突然灵光一现，心想不会是RStudio Viewer的问题吧？于是点击Viewer左上角的 Show in new window 按钮，用外部浏览器打开一看，Duang！帖子里的公式就都可以正常显示了！这里秀一个：
+帖子里输入下面的 \(\LaTeX\) 公式：
+$$\int_0^\infty e^{-x^2} dx=\frac{\sqrt{\pi}}{2}$$网页就会显示：
+\[\int_0^\infty e^{-x^2} dx=\frac{\sqrt{\pi}}{2}\]
+参考文献两个多月前，就有个哥们儿问“有没有可能在blogdown创建的网站里添加参考文献?”作者回答得干脆：“有。”两人对话戛然而止，让我目瞪口呆。由于在blogdown 官方手册里并未看到添加参考文献的方法，我一直以为这个功能尚在开发中，直到今天也没见动静，有些起疑，就随便试了一下，步骤跟在 bookdown 里一样：
+把参考文献库 .bib 文件考到 content\post\.在帖子 .Rmd 文档的 yml 头里声明 .bib 文件的名称和路径。这里我设成 bibliography: [book.bib, packages.bib].在帖子里引用 .bib 里的文献条目，例如 [@R-blogdown].运行建站函数 blogdown::build_site().就这样，说时迟那时快，只见Duang！帖子里的引用就显示成了 (Xie 2017) ！而帖子末尾的参考文献列表就自动出来了！
+blogdown 可以如此方便地往帖子里插入计算代码、图表、公式、参考文献，我实在找不出第二个这样的工具。建科研网站，非 blogdown 莫属！
+最后顺便提一下：虽然最新正式版的 RStudio 1.</p>
+                            <p class="read-more">
+                              <a href="https://openr.netlify.com/zh/blog/rblogdown-bib/" class="btn btn-template-main">继续阅读</a>
                             </p>
                         </div>
                     </div>
@@ -706,7 +753,7 @@ MeteorologyAtmpspheric pressure\[\begin{equation}P=101.325 \cdot (\frac{293-0
                     <li class="item" title="Peng Zhao">
                         
                           <a href="https://pzhao.org" target="_blank">
-                            <img src="https://www.pzhao.org/img/zhao.jpg" alt="Peng Zhao" class="img-responsive" />
+                            <img src="https://openr.netlify.com/img/clients/pengzhao.jpg" alt="Peng Zhao" class="img-responsive" />
                           </a>
                         
                     </li>
@@ -714,7 +761,7 @@ MeteorologyAtmpspheric pressure\[\begin{equation}P=101.325 \cdot (\frac{293-0
                     <li class="item" title="Wanna Join us?">
                         
                           <a href="mailto:xuer@pzhao.net" target="_blank">
-                            <img src="img/clients/Unclesamwantyou.jpg" alt="Wanna Join us?" class="img-responsive" />
+                            <img src="https://openr.netlify.com/img/clients/Unclesamwantyou.jpg" alt="Wanna Join us?" class="img-responsive" />
                           </a>
                         
                     </li>

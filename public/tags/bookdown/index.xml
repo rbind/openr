@@ -6,10 +6,23 @@
     <description>Recent content in Bookdown on Open R</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 06 Sep 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 23 Sep 2018 16:34:39 +0000</lastBuildDate>
     
 	<atom:link href="https://openr.netlify.com/tags/bookdown/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>bookdownplus gallery: a web app for displaying and sharing bookdown templates</title>
+      <link>https://openr.netlify.com/blog/bookdownplus-gallery/</link>
+      <pubDate>Sun, 23 Sep 2018 16:34:39 +0000</pubDate>
+      
+      <guid>https://openr.netlify.com/blog/bookdownplus-gallery/</guid>
+      <description>&lt;p&gt;Many years ago, I collected some LaTeX templates when learning LaTeX. However, my interest in LaTeX was gone after submitting my PhD dissertation. I should have deleted these templates if they had not been so small. They would never be useful in the future, I thought.&lt;/p&gt;
+
+&lt;p&gt;In 2017, I started writing the book &lt;a href=&#34;https://xuer.pzhao.org&#34;&gt; &lt;em&gt;Learning R: R for Rookies&lt;/em&gt; &lt;/a&gt;. Unexpectedly, MS Word could not satisfy me with the typesetting. You know what I mean if you have experience (and pain) in writing a long book or dissertation with Word. Actually I suffered more, but I do not want to talk about it. I was sure that LaTeX could, but I would rather not use it.&lt;/p&gt;
+
+&lt;p&gt;Like a bolt out of the blue, I found &lt;a href=&#34;https://CRAN.R-project.org/package=bookdown&#34;&gt;bookdown&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>A template for Copernicus academic journals</title>
@@ -58,7 +71,7 @@
       
       <guid>https://openr.netlify.com/blog/bookdownplus-released/</guid>
       <description>I’m glad to announce that ‘bookdownplus 1.0.2’ (Zhao 2017) is now on CRAN. This post is a brief documentation of ‘bookdownplus 1.0.2’. However, I have been updating ‘bookdownplus’ frequently and the new version is more powerful and even easier. Please go to the GitHub site of bookdownplus.
-HUGOMORE42 IntroductionThe R package bookdownplus is an extension of bookdown (Xie 2016). It is a collection ofmultiple templates on the basis of LaTeX, which are tailored so that I can work happily under the umbrella of bookdown.</description>
+IntroductionThe R package bookdownplus is an extension of bookdown (Xie 2016). It is a collection ofmultiple templates on the basis of LaTeX, which are tailored so that I can work happily under the umbrella of bookdown.</description>
     </item>
     
     <item>
@@ -68,7 +81,7 @@ HUGOMORE42 IntroductionThe R package bookdownplus is an extension of bookdown (
       
       <guid>https://openr.netlify.com/blog/bookdownplus/</guid>
       <description>This is a preliminary version of the introduction to bookdownplus. Please go to my Github repo bookdownplus for the latest updates. Full documentation can be found in the book R bookdownplus Textbook.
-HUGOMORE42 IntroductionR bookdownplus is an extension of R bookdown (Xie 2016). It is a collection ofmultiple templates on the basis of LaTeX, which are tailored so that I can work happily under the umbrella of bookdown.</description>
+IntroductionR bookdownplus is an extension of R bookdown (Xie 2016). It is a collection ofmultiple templates on the basis of LaTeX, which are tailored so that I can work happily under the umbrella of bookdown. R bookdownplus helps you write academic journal articles, guitar books, chemical equations, mails, calendars, and diaries.</description>
     </item>
     
     <item>
@@ -77,7 +90,7 @@ HUGOMORE42 IntroductionR bookdownplus is an extension of R bookdown (Xie 2016).
       <pubDate>Tue, 14 Mar 2017 00:00:00 +0000</pubDate>
       
       <guid>https://openr.netlify.com/blog/bookdown-cheatsheet/</guid>
-      <description>Quick StartWhat is R bookdownA software for writing books or documents.More elegant than MS Word. Much easier than \(\LaTeX\).Users can easily insert table of contents, figures and tables with cross-reference, footnotes, and index.Users can easily embed equations, citations, R scripts.pdf, word and html files can be exported.best choice to write reproducible documents.HUGOMORE42 InstallationDownload R and install it.Download RStudio and install it.</description>
+      <description>Quick StartWhat is R bookdownA software for writing books or documents.More elegant than MS Word. Much easier than \(\LaTeX\).Users can easily insert table of contents, figures and tables with cross-reference, footnotes, and index.Users can easily embed equations, citations, R scripts.pdf, word and html files can be exported.best choice to write reproducible documents.InstallationDownload R and install it.Download RStudio and install it.</description>
     </item>
     
   </channel>

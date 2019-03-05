@@ -57,6 +57,42 @@
   <meta property="og:url" content="/zh/blog/r-with-markdown//" />
   <meta property="og:image" content="img/logo.png" />
 
+  <script type="text/javascript"
+        async
+        src="https://cdn.bootcss.com/mathjax/2.7.3/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$'], ['\[\[','\]\]']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+});
+
+MathJax.Hub.Queue(function() {
+    
+    
+    
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i = 0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+});
+</script>
+
+<style>
+code.has-jax {
+    font: inherit;
+    font-size: 100%;
+    background: inherit;
+    border: inherit;
+    color: #515151;
+}
+</style>
+
 </head>
 
 
@@ -182,7 +218,7 @@
 <blockquote>
 <p>如果你乐意，那么完全可以在注释里偷偷写一部小说，就像《倚天屠龙记》里有人在《楞伽经》夹缝处写下《九阳真经》一样。</p>
 
-<p>&mdash; 《学 R》第一章 “初见”</p>
+<p>--- 《学 R》第一章 “初见”</p>
 </blockquote>
 
 <p>然而，作为一名未经规范培训的 R 语言爱好者，我一直不太清楚注释里的说明文字怎么写才好。在网上搜吧，例如流传甚广的<a href="https://nanx.me/rstyle/">来自Google的R语言编码风格指南</a>，对注释的建议寥寥几笔就说完了。看别人怎么写吧，但大家的写法五花八门，随心所欲。印象深刻的，就是有个同事会以 telnet 时代 BBS 签名档的风格来写注释。开始我也跟风，后来时间一久，觉得麻烦，便不在乎了，怎么写全看心情。</p>
@@ -223,12 +259,12 @@
 
 <tbody>
 <tr>
-<td>&ldquo;<code>#</code> + 空格&rdquo; 开头的注释行</td>
+<td>&quot;<code>#</code> + 空格&quot; 开头的注释行</td>
 <td>保留不变，自动成为章节标题</td>
 </tr>
 
 <tr>
-<td>&ldquo;<code>#</code> + 非空格字符&rdquo;开头的注释行</td>
+<td>&quot;<code>#</code> + 非空格字符&quot;开头的注释行</td>
 <td>去掉开头的<code>#</code>，成为正文文字</td>
 </tr>
 
@@ -277,7 +313,7 @@ plot(x, y)
 ​```
 </code></pre>
 
-<p>很满意。唯一纠结的，是第二条规则，因为&rdquo;<code>#</code> + 非空格字符&rdquo;开头的话，不是很美观。可能 &ldquo;<code>#'</code> + 一个空格&rdquo;更好看一点。试一段时间再说吧。大不了让用户自定义。</p>
+<p>很满意。唯一纠结的，是第二条规则，因为&quot;<code>#</code> + 非空格字符&quot;开头的话，不是很美观。可能 &quot;<code>#'</code> + 一个空格&quot;更好看一点。试一段时间再说吧。大不了让用户自定义。</p>
 
 <p><img src="https://github.com/pzhaonet/mindr/raw/master/showcase/mindr_concept2.png" alt="" /></p>
 
@@ -285,7 +321,7 @@ plot(x, y)
 
 <p>一不做二不休，干脆把事情做绝，让 mindr 把上面那个同心圆画完。</p>
 
-<p>前面说过，将 .Rmd 变成 .R，已经有现成的方案了，那就是 <code>knitr::purl(documentation)</code>。<code>documentation = 0</code> 时，只提取出代码行；<code>= 2</code> 时，把代码之外的文字也全部提取出来，每行前面添加个 &ldquo;<code>#'</code> + 一个空格&rdquo;作为注释行；<code>= 1</code> 时……好像跟 2 一样。</p>
+<p>前面说过，将 .Rmd 变成 .R，已经有现成的方案了，那就是 <code>knitr::purl(documentation)</code>。<code>documentation = 0</code> 时，只提取出代码行；<code>= 2</code> 时，把代码之外的文字也全部提取出来，每行前面添加个 &quot;<code>#'</code> + 一个空格&quot;作为注释行；<code>= 1</code> 时……好像跟 2 一样。</p>
 
 <p>我以前一直这样用，但不是很中意：主要是因为代码块的标题后面添加若干 <code>-</code>后，在 RStudio 里以大纲视图的形式展示。例如，上文显示的 .Rmd 文件，用 purl() 得到的 .R 是这样的：</p>
 
@@ -318,13 +354,13 @@ plot(x, y)
 
 <tbody>
 <tr>
-<td>章节标题（&rdquo;<code>#</code> + 空格&rdquo; 开头）</td>
+<td>章节标题（&quot;<code>#</code> + 空格&quot; 开头）</td>
 <td>后面添加 <code>--------</code>，在 RStudio 里以大纲视图展示</td>
 </tr>
 
 <tr>
 <td>正文</td>
-<td>开头加个&rdquo;<code>#</code>&ldquo;，成为注释行</td>
+<td>开头加个&quot;<code>#</code>&quot;，成为注释行</td>
 </tr>
 
 <tr>
@@ -415,7 +451,7 @@ plot(x, y)
     <div class="panel-body">
         <ul class="nav nav-pills nav-stacked">
             
-            <li><a href="https://openr.netlify.com/categories/%e6%9c%aa%e5%88%86%e7%b1%bb">未分类 (7)</a>
+            <li><a href="https://openr.netlify.com/categories/xuer">xuer (16)</a>
             </li>
             
         </ul>
@@ -437,13 +473,7 @@ plot(x, y)
     <div class="panel-body">
         <ul class="tag-cloud">
             
-            <li><a href="https://openr.netlify.com/tags/advr"><i class="fa fa-tags"></i> advr</a>
-            </li>
-            
             <li><a href="https://openr.netlify.com/tags/beginr"><i class="fa fa-tags"></i> beginr</a>
-            </li>
-            
-            <li><a href="https://openr.netlify.com/tags/blog"><i class="fa fa-tags"></i> blog</a>
             </li>
             
             <li><a href="https://openr.netlify.com/tags/blogdown"><i class="fa fa-tags"></i> blogdown</a>
@@ -455,22 +485,7 @@ plot(x, y)
             <li><a href="https://openr.netlify.com/tags/bookdownplus"><i class="fa fa-tags"></i> bookdownplus</a>
             </li>
             
-            <li><a href="https://openr.netlify.com/tags/css"><i class="fa fa-tags"></i> css</a>
-            </li>
-            
-            <li><a href="https://openr.netlify.com/tags/drposter"><i class="fa fa-tags"></i> drposter</a>
-            </li>
-            
-            <li><a href="https://openr.netlify.com/tags/git"><i class="fa fa-tags"></i> git</a>
-            </li>
-            
-            <li><a href="https://openr.netlify.com/tags/hugo"><i class="fa fa-tags"></i> hugo</a>
-            </li>
-            
             <li><a href="https://openr.netlify.com/tags/latex"><i class="fa fa-tags"></i> latex</a>
-            </li>
-            
-            <li><a href="https://openr.netlify.com/tags/linux"><i class="fa fa-tags"></i> linux</a>
             </li>
             
             <li><a href="https://openr.netlify.com/tags/markdown"><i class="fa fa-tags"></i> markdown</a>
@@ -491,9 +506,6 @@ plot(x, y)
             <li><a href="https://openr.netlify.com/tags/post"><i class="fa fa-tags"></i> post</a>
             </li>
             
-            <li><a href="https://openr.netlify.com/tags/postr"><i class="fa fa-tags"></i> postr</a>
-            </li>
-            
             <li><a href="https://openr.netlify.com/tags/r"><i class="fa fa-tags"></i> r</a>
             </li>
             
@@ -506,10 +518,7 @@ plot(x, y)
             <li><a href="https://openr.netlify.com/tags/steemr"><i class="fa fa-tags"></i> steemr</a>
             </li>
             
-            <li><a href="https://openr.netlify.com/tags/teaching"><i class="fa fa-tags"></i> teaching</a>
-            </li>
-            
-            <li><a href="https://openr.netlify.com/tags/utopian-io"><i class="fa fa-tags"></i> utopian-io</a>
+            <li><a href="https://openr.netlify.com/tags/tutorial"><i class="fa fa-tags"></i> tutorial</a>
             </li>
             
             <li><a href="https://openr.netlify.com/tags/word"><i class="fa fa-tags"></i> word</a>
@@ -518,10 +527,13 @@ plot(x, y)
             <li><a href="https://openr.netlify.com/tags/xaringan"><i class="fa fa-tags"></i> xaringan</a>
             </li>
             
-            <li><a href="https://openr.netlify.com/tags/%e5%90%89%e4%bb%96"><i class="fa fa-tags"></i> 吉他</a>
+            <li><a href="https://openr.netlify.com/tags/%e5%ad%a6"><i class="fa fa-tags"></i> 学</a>
             </li>
             
             <li><a href="https://openr.netlify.com/tags/%e5%ad%a6-r"><i class="fa fa-tags"></i> 学-r</a>
+            </li>
+            
+            <li><a href="https://openr.netlify.com/tags/%e5%ad%a6r"><i class="fa fa-tags"></i> 学r</a>
             </li>
             
         </ul>

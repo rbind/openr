@@ -17,9 +17,9 @@
       <pubDate>Sat, 26 Jan 2019 00:00:00 +0000</pubDate>
       
       <guid>https://openr.netlify.com/blog/rmd/</guid>
-      <description>&lt;p&gt;Since &amp;lsquo;rmarkdown&amp;rsquo; and &amp;lsquo;knitr&amp;rsquo;, more and more members (rticles, bookdown, mindr&amp;hellip;) have been joining the R Markdown family. Users can write elegant reproducible documents, manuscripts, dissertations, books, blog posts, posters, and slides within the framework of R markdown. It is exciting, while the installation and maintenance becomes annoying. In the meanwhile, there are plenty of useful RStudio addins, which equip the RStudio IDE as a powerful markdown editor. However, these little tools are often hidden somewhere deep in the community, and it is difficult to dig them out.&lt;/p&gt;
+      <description>&lt;p&gt;Since &#39;rmarkdown&#39; and &#39;knitr&#39;, more and more members (rticles, bookdown, mindr...) have been joining the R Markdown family. Users can write elegant reproducible documents, manuscripts, dissertations, books, blog posts, posters, and slides within the framework of R markdown. It is exciting, while the installation and maintenance becomes annoying. In the meanwhile, there are plenty of useful RStudio addins, which equip the RStudio IDE as a powerful markdown editor. However, these little tools are often hidden somewhere deep in the community, and it is difficult to dig them out.&lt;/p&gt;
 
-&lt;p&gt;With &amp;lsquo;rmd&amp;rsquo; you can easily explore, install, and load them for both R users and non-users. Furthermore, &amp;lsquo;rmd&amp;rsquo; provides a RStudio addin to explore the R Markdown family and install them with a single click.&lt;/p&gt;
+&lt;p&gt;With &#39;rmd&#39; you can easily explore, install, and load them for both R users and non-users. Furthermore, &#39;rmd&#39; provides a RStudio addin to explore the R Markdown family and install them with a single click.&lt;/p&gt;
 
 &lt;p&gt;Forget R, and enjoy the wonderful world of R Markdown.&lt;/p&gt;</description>
     </item>

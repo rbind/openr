@@ -57,6 +57,42 @@
   <meta property="og:url" content="/zh/tags/r//" />
   <meta property="og:image" content="img/logo.png" />
 
+  <script type="text/javascript"
+        async
+        src="https://cdn.bootcss.com/mathjax/2.7.3/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$'], ['\[\[','\]\]']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+});
+
+MathJax.Hub.Queue(function() {
+    
+    
+    
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i = 0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+});
+</script>
+
+<style>
+code.has-jax {
+    font: inherit;
+    font-size: 100%;
+    background: inherit;
+    border: inherit;
+    color: #515151;
+}
+</style>
+
 </head>
 
 
@@ -186,7 +222,7 @@
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
-                                          由 <a href="#">dapeng</a>
+                                          由 <a href="#">赵鹏</a>
                                           
                                           
 
@@ -195,7 +231,12 @@
                                             <a href="https://openr.netlify.com/zh/blog/txt-review-mode/"><i class="fa fa-calendar-o"></i> February 1, 2019</a>
                                         </p>
                                     </div>
-                                    <p class="intro"><p>这里说的审阅模式，指的是像 Microsoft Office Word 里的 Review 模式，可以显示修订前后的不同。</p></p>
+									      
+      似乎没有完美的解决方案。
+      
+	  
+
+									
                                     <p class="read-more"><a href="https://openr.netlify.com/zh/blog/txt-review-mode/" class="btn btn-template-main">继续阅读</a>
                                     </p>
                                 </div>
@@ -229,8 +270,12 @@
                                             <a href="https://openr.netlify.com/zh/blog/rstudio-ppt/"><i class="fa fa-calendar-o"></i> January 28, 2019</a>
                                         </p>
                                     </div>
-                                    <p class="intro"><p>今天要做个 ppt，内涵几十张照片，每页一张。
-本来想手动，突然想起来，新版 RStudio 夹带了 新版 pandoc， 而 pandoc &gt; 2.0.5， 可以用 markdown 做 ppt。</p></p>
+									      
+      别说 500 张，5000 张也不在话下。
+      
+	  
+
+									
                                     <p class="read-more"><a href="https://openr.netlify.com/zh/blog/rstudio-ppt/" class="btn btn-template-main">继续阅读</a>
                                     </p>
                                 </div>
@@ -253,7 +298,7 @@
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
-                                          由 <a href="#">dapeng</a>
+                                          由 <a href="#">赵鹏</a>
                                           
                                           
 
@@ -262,9 +307,12 @@
                                             <a href="https://openr.netlify.com/zh/blog/rmd/"><i class="fa fa-calendar-o"></i> January 26, 2019</a>
                                         </p>
                                     </div>
-                                    <p class="intro"><p>前一段时间在所里<a href="http://www.pzhao.org/zh/post/r-course-slides/">讲课</a>，以为 R markdown 全家桶是 RStudio 默认安装的，结果发现 rticles，bookdown，citr 等居然是需要手动安装的，本来上课时间就紧张，搞得好狼狈。</p>
+									      
+      人竟然可以懒到这个地步。
+      
+	  
 
-<p>于是写了个小包，叫 rmd。主要功能有四个：</p></p>
+									
                                     <p class="read-more"><a href="https://openr.netlify.com/zh/blog/rmd/" class="btn btn-template-main">继续阅读</a>
                                     </p>
                                 </div>
@@ -287,7 +335,7 @@
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
-                                          由 <a href="#">dapeng</a>
+                                          由 <a href="#">赵鹏</a>
                                           
                                           
 
@@ -296,7 +344,12 @@
                                             <a href="https://openr.netlify.com/zh/blog/rosr/"><i class="fa fa-calendar-o"></i> January 26, 2019</a>
                                         </p>
                                     </div>
-                                    <p class="intro"><p>又要从前一段时间讲的那门<a href="http://www.pzhao.org/zh/post/r-course-slides/">R 语言，开放科学与可重复性研究</a>说起了。学生们在课上情绪高涨，认为学 R 的难度跟兴趣一样大，关键是对数据、代码、产品之间的协作关系不好把握。</p></p>
+									      
+      这个包，即使不懂 R 也可以用。忘掉 R，拥抱 R Markdown。
+      
+	  
+
+									
                                     <p class="read-more"><a href="https://openr.netlify.com/zh/blog/rosr/" class="btn btn-template-main">继续阅读</a>
                                     </p>
                                 </div>
@@ -330,11 +383,12 @@
                                             <a href="https://openr.netlify.com/zh/blog/pagedown/"><i class="fa fa-calendar-o"></i> January 21, 2019</a>
                                         </p>
                                     </div>
-                                    <p class="intro"><p>最近，朋友圈被长广告《啥是佩奇》刷了屏。啥是佩奇，我不熟。我家的主流文化是小火车托马斯和海神之子波西·杰克森，坑已满，完全没有佩奇的位置。我只知道佩奇是一头动画小猪，她的形象我并不喜欢，原因是它完全无视透视原理，就像遭受过降维打击，据说是符合低龄儿童平面化的视角，而我家里的娃算是高龄儿童了，于是就没有引进。</p>
+									      
+      今年过年不一样，全村用上佩奇党。
+      
+	  
 
-<p>然而也不是全无兴趣。比如说，佩奇的原名是啥？一搜，是 Peppa Pig。那么，应该叫做“佩帕猪”，那么为啥翻译成“佩奇”？</p>
-
-<p>这个在网上也讨论过，“佩奇”其实是 Peppa 跟 piggy（小猪）的混合。这就有趣了，进入了我家的主流文化：关于童话角色的命名，我已经暗中观察了很久。</p></p>
+									
                                     <p class="read-more"><a href="https://openr.netlify.com/zh/blog/pagedown/" class="btn btn-template-main">继续阅读</a>
                                     </p>
                                 </div>
@@ -368,13 +422,12 @@
                                             <a href="https://openr.netlify.com/zh/blog/mindr-mm/"><i class="fa fa-calendar-o"></i> January 7, 2019</a>
                                         </p>
                                     </div>
-                                    <p class="intro"><p>&lt;<a href="http://www.pzhao.org/zh/post/r-with-markdown2/">用 markdown 的逻辑写 R 脚本注释(2)</a>&gt;一文里配了张示意图，展示了 mindr 包的六个主要函数。当时我觉得，四海已定，天下太平。</p>
+									      
+      上了岁数，多做做减法。
+      
+	  
 
-<p><img src="https://github.com/pzhaonet/mindr/raw/master/showcase/mindr_concept_1.1.8.png" alt="" /></p>
-
-<p>的确，思维导图、R 脚本、markdown 文件可以两两随意转换，我想要的基本功能都已经实现了。不过，mindr 用起来总是觉得……连我自己都觉得差那么点意思。差哪一点，一时又说不上来。</p>
-
-<p>趁圣诞节假期，我细想了一下，差的这一点，应该是用户体验了。</p></p>
+									
                                     <p class="read-more"><a href="https://openr.netlify.com/zh/blog/mindr-mm/" class="btn btn-template-main">继续阅读</a>
                                     </p>
                                 </div>
@@ -408,7 +461,12 @@
                                             <a href="https://openr.netlify.com/zh/blog/pinyin-v.1.1.5/"><i class="fa fa-calendar-o"></i> December 20, 2018</a>
                                         </p>
                                     </div>
-                                    <p class="intro"><p>在&lt;<a href="http://www.pzhao.org/zh/post/pinyin-one-year/">外行 R 包开发手记：pinyin</a>&gt;里我写道：R pinyin 这么个小包，连五笔字型和四角号码都能转换了，“这回应该算是一劳永逸了吧。”然而仍然错估了形势。这不，在用户提问和提需求的压力下，pinyin 包又双叒叕升级了一次。</p></p>
+									      
+      这样一个基本的功能，竟然等待了一年多。
+      
+	  
+
+									
                                     <p class="read-more"><a href="https://openr.netlify.com/zh/blog/pinyin-v.1.1.5/" class="btn btn-template-main">继续阅读</a>
                                     </p>
                                 </div>
@@ -442,10 +500,12 @@
                                             <a href="https://openr.netlify.com/zh/blog/r-course-slides/"><i class="fa fa-calendar-o"></i> December 4, 2018</a>
                                         </p>
                                     </div>
-                                    <p class="intro">“R 语言，开放科学和可重复性研究”的课件，xaringan 包制作。这个包做幻灯片果然是可以飞起的。
-HUGOMORE42 一周课程的内容，浓缩在 5 小时讲完了。当然有意外，主要是大家遇见的 LaTeX 的各种问题不一而足。当然有惊喜，mac 用户居然全都顺利过来了。
-此外，原以为 rmarkdown 全家桶是 RStudio 默认安装的，结果发现 rticles 和 bookdown 等是需要手动安装的。我的 RStudio 已经升级好几次了，而那些包每次都在那里，所以……
-所以上课前得弄个虚拟的干净系统，从零装一遍才知道会遇见什么问题。</p>
+									      
+      我觉得这个课件需要花一周来讲。
+      
+	  
+
+									
                                     <p class="read-more"><a href="https://openr.netlify.com/zh/blog/r-course-slides/" class="btn btn-template-main">继续阅读</a>
                                     </p>
                                 </div>
@@ -479,11 +539,12 @@ HUGOMORE42 一周课程的内容，浓缩在 5 小时讲完了。当然有意�
                                             <a href="https://openr.netlify.com/zh/blog/r-course-announcement/"><i class="fa fa-calendar-o"></i> December 1, 2018</a>
                                         </p>
                                     </div>
-                                    <p class="intro">本周我们系开了三天座谈会，好几位同事和同学对 R 语言感兴趣。经过一番简单准备，下周一和周二，我将在马普化学所举办一期培训班，题为“R 语言，开放科学和可重复性研究”。
-HUGOMORE42 下面是我用 drposter 包制作的小广告：
-啊哦，还没学会怎么插入 iframe 时让海报适应高度……
-那么直接点击链接看海报吧，效果好。
-yihui 说得对，css 是个好东西，值得一学，而且比 LaTeX 容易。</p>
+									      
+      欢迎莅临指导。
+      
+	  
+
+									
                                     <p class="read-more"><a href="https://openr.netlify.com/zh/blog/r-course-announcement/" class="btn btn-template-main">继续阅读</a>
                                     </p>
                                 </div>
@@ -517,29 +578,12 @@ yihui 说得对，css 是个好东西，值得一学，而且比 LaTeX 容易。
                                             <a href="https://openr.netlify.com/zh/blog/xaringan-themes/"><i class="fa fa-calendar-o"></i> November 23, 2018</a>
                                         </p>
                                     </div>
-                                    <p class="intro">Xaringan 自带 16 套主题（themes），其中 10 套配有对应的 fonts.css，可惜光看名字是想象不出来模样的，挑选有困难。Xaringan 的 wiki 展示了几套漂亮的主题，但是不全。
-我把每个主题都做了一个单独的幻灯片，以便选用，然而貌似 github 不支持嵌入幻灯片，而我又没有找到批量转成 gif 的办法。
-于是就做了本网页。
-HUGOMORE42 我自己添加了个主题，叫 mpic，打算从 middlebury 出发慢慢修改，目前只改了个 logo。
-感觉又进了一个坑。
-chocolate
-default
-lucy
-metropolis
-middlebury
-mpic
-rladies
-robot
-rutgers
-tamu
-uo
-duke-blue
-hygge-duke
-hygge
-kunoichi
-ninjutsu
-shinobi
-</p>
+									      
+      xaringan-themes
+      
+	  
+
+									
                                     <p class="read-more"><a href="https://openr.netlify.com/zh/blog/xaringan-themes/" class="btn btn-template-main">继续阅读</a>
                                     </p>
                                 </div>
@@ -603,7 +647,7 @@ chocolate
     <div class="panel-body">
         <ul class="nav nav-pills nav-stacked">
             
-            <li><a href="https://openr.netlify.com/categories/%e6%9c%aa%e5%88%86%e7%b1%bb">未分类 (7)</a>
+            <li><a href="https://openr.netlify.com/categories/xuer">xuer (16)</a>
             </li>
             
         </ul>
@@ -625,13 +669,7 @@ chocolate
     <div class="panel-body">
         <ul class="tag-cloud">
             
-            <li><a href="https://openr.netlify.com/tags/advr"><i class="fa fa-tags"></i> advr</a>
-            </li>
-            
             <li><a href="https://openr.netlify.com/tags/beginr"><i class="fa fa-tags"></i> beginr</a>
-            </li>
-            
-            <li><a href="https://openr.netlify.com/tags/blog"><i class="fa fa-tags"></i> blog</a>
             </li>
             
             <li><a href="https://openr.netlify.com/tags/blogdown"><i class="fa fa-tags"></i> blogdown</a>
@@ -643,22 +681,7 @@ chocolate
             <li><a href="https://openr.netlify.com/tags/bookdownplus"><i class="fa fa-tags"></i> bookdownplus</a>
             </li>
             
-            <li><a href="https://openr.netlify.com/tags/css"><i class="fa fa-tags"></i> css</a>
-            </li>
-            
-            <li><a href="https://openr.netlify.com/tags/drposter"><i class="fa fa-tags"></i> drposter</a>
-            </li>
-            
-            <li><a href="https://openr.netlify.com/tags/git"><i class="fa fa-tags"></i> git</a>
-            </li>
-            
-            <li><a href="https://openr.netlify.com/tags/hugo"><i class="fa fa-tags"></i> hugo</a>
-            </li>
-            
             <li><a href="https://openr.netlify.com/tags/latex"><i class="fa fa-tags"></i> latex</a>
-            </li>
-            
-            <li><a href="https://openr.netlify.com/tags/linux"><i class="fa fa-tags"></i> linux</a>
             </li>
             
             <li><a href="https://openr.netlify.com/tags/markdown"><i class="fa fa-tags"></i> markdown</a>
@@ -679,9 +702,6 @@ chocolate
             <li><a href="https://openr.netlify.com/tags/post"><i class="fa fa-tags"></i> post</a>
             </li>
             
-            <li><a href="https://openr.netlify.com/tags/postr"><i class="fa fa-tags"></i> postr</a>
-            </li>
-            
             <li><a href="https://openr.netlify.com/tags/r"><i class="fa fa-tags"></i> r</a>
             </li>
             
@@ -694,10 +714,7 @@ chocolate
             <li><a href="https://openr.netlify.com/tags/steemr"><i class="fa fa-tags"></i> steemr</a>
             </li>
             
-            <li><a href="https://openr.netlify.com/tags/teaching"><i class="fa fa-tags"></i> teaching</a>
-            </li>
-            
-            <li><a href="https://openr.netlify.com/tags/utopian-io"><i class="fa fa-tags"></i> utopian-io</a>
+            <li><a href="https://openr.netlify.com/tags/tutorial"><i class="fa fa-tags"></i> tutorial</a>
             </li>
             
             <li><a href="https://openr.netlify.com/tags/word"><i class="fa fa-tags"></i> word</a>
@@ -706,10 +723,13 @@ chocolate
             <li><a href="https://openr.netlify.com/tags/xaringan"><i class="fa fa-tags"></i> xaringan</a>
             </li>
             
-            <li><a href="https://openr.netlify.com/tags/%e5%90%89%e4%bb%96"><i class="fa fa-tags"></i> 吉他</a>
+            <li><a href="https://openr.netlify.com/tags/%e5%ad%a6"><i class="fa fa-tags"></i> 学</a>
             </li>
             
             <li><a href="https://openr.netlify.com/tags/%e5%ad%a6-r"><i class="fa fa-tags"></i> 学-r</a>
+            </li>
+            
+            <li><a href="https://openr.netlify.com/tags/%e5%ad%a6r"><i class="fa fa-tags"></i> 学r</a>
             </li>
             
         </ul>

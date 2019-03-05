@@ -57,6 +57,42 @@
   <meta property="og:url" content="/zh/blog/slash//" />
   <meta property="og:image" content="img/logo.png" />
 
+  <script type="text/javascript"
+        async
+        src="https://cdn.bootcss.com/mathjax/2.7.3/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$'], ['\[\[','\]\]']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+});
+
+MathJax.Hub.Queue(function() {
+    
+    
+    
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i = 0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+});
+</script>
+
+<style>
+code.has-jax {
+    font: inherit;
+    font-size: 100%;
+    background: inherit;
+    border: inherit;
+    color: #515151;
+}
+</style>
+
 </head>
 
 
@@ -182,7 +218,7 @@
 
 <p>我不想提它的原因，是因为中文名字的翻译总让我糊涂。<code>/</code>叫做斜杠或斜线，<code>\</code>叫做反斜杠，我老是搞不清楚，写本帖的时候还要搜一下确认。凭什么呀？逻辑上这俩都是“斜”的啊？凭什么沿着从上往下从左往右的正常笔画顺序来写的<code>\</code>叫做<strong>反</strong>斜杠啊？人家反在哪里了？明明人家是顺的啊！我为<code>\</code>叫屈。要是我翻译，就叫<code>/</code>为“前俯”键，<code>\</code>叫“后仰”键，信达雅兼顾。或者叫“右倾”键和“左倾”键更直接。但是怕被误会成政治倾向，那就叫“东倒”键“西歪”键，左西右东嘛。你们非要叫斜杠和反斜杠，不符合我的逻辑框架，老是得犹豫一下，还不确定谁正谁反，那干脆还是别提他们了。</p>
 
-<p>R 语言里，表示路径的时候，两级文件夹之间要用<code>/</code>或<code>\\</code>分隔，否则就报错。这个问题初学者常遇见，我特意写进了新书的“答疑”一章。以前我跑 windows 和 Ubuntu 双系统时还会考虑正反斜杠，现在只用 windows，如果在 R 代码里需要本地路径，我都是在totalcommander 里 ctrl + 3 来获取完整路径到剪切板，再粘贴到代码里。要改成<code>\\</code>，只需在原有的一个<code>\</code>后面再添一个就行了。而改成<code>/</code>，我得先删掉原有的<code>\</code>，再敲一个<code>/</code>，工作量加倍。我就是懒&hellip;&hellip;</p>
+<p>R 语言里，表示路径的时候，两级文件夹之间要用<code>/</code>或<code>\\</code>分隔，否则就报错。这个问题初学者常遇见，我特意写进了新书的“答疑”一章。以前我跑 windows 和 Ubuntu 双系统时还会考虑正反斜杠，现在只用 windows，如果在 R 代码里需要本地路径，我都是在totalcommander 里 ctrl + 3 来获取完整路径到剪切板，再粘贴到代码里。要改成<code>\\</code>，只需在原有的一个<code>\</code>后面再添一个就行了。而改成<code>/</code>，我得先删掉原有的<code>\</code>，再敲一个<code>/</code>，工作量加倍。我就是懒......</p>
 
 <p>我用<code>\</code>的另一个理由就比较小众了，一般人可能难以理解：我人在德语国家，用的是德语键盘。不是系统设置成德语键盘，而是实体德语键盘，见下图：</p>
 
@@ -192,7 +228,7 @@
 
 <p>这回亮出德语键盘，顺便解释一下为何我是R语言的箭头党。因为，德语键盘如果用等号<code>=</code>作为赋值号，那么得按shift+0。为了代码整洁，前后还得各敲个空格。而箭头呢，在RStudio里按Alt+_，就是箭头，同时自动附送两个空格。那我当然用箭头，更不用提箭头是雄性的标志了。</p>
 
-<p>你瞧，一说起德语键盘，又有吐不完的槽，比如你会发现Z和Y两个键是跟英文键盘反着的。我对此不理解，就问德国人，德国人的回答是：你们英文键盘干嘛非要跟我们反着？你们英国人为啥非要靠左行驶？你们英国人为啥计量单位不用十进制？&hellip;&hellip;.</p>
+<p>你瞧，一说起德语键盘，又有吐不完的槽，比如你会发现Z和Y两个键是跟英文键盘反着的。我对此不理解，就问德国人，德国人的回答是：你们英文键盘干嘛非要跟我们反着？你们英国人为啥非要靠左行驶？你们英国人为啥计量单位不用十进制？.......</p>
 
 <p>一扯就又扯到二战去了。本帖就此打住。</p>
                         </div>
@@ -269,7 +305,7 @@
     <div class="panel-body">
         <ul class="nav nav-pills nav-stacked">
             
-            <li><a href="https://openr.netlify.com/categories/%e6%9c%aa%e5%88%86%e7%b1%bb">未分类 (7)</a>
+            <li><a href="https://openr.netlify.com/categories/xuer">xuer (16)</a>
             </li>
             
         </ul>
@@ -291,13 +327,7 @@
     <div class="panel-body">
         <ul class="tag-cloud">
             
-            <li><a href="https://openr.netlify.com/tags/advr"><i class="fa fa-tags"></i> advr</a>
-            </li>
-            
             <li><a href="https://openr.netlify.com/tags/beginr"><i class="fa fa-tags"></i> beginr</a>
-            </li>
-            
-            <li><a href="https://openr.netlify.com/tags/blog"><i class="fa fa-tags"></i> blog</a>
             </li>
             
             <li><a href="https://openr.netlify.com/tags/blogdown"><i class="fa fa-tags"></i> blogdown</a>
@@ -309,22 +339,7 @@
             <li><a href="https://openr.netlify.com/tags/bookdownplus"><i class="fa fa-tags"></i> bookdownplus</a>
             </li>
             
-            <li><a href="https://openr.netlify.com/tags/css"><i class="fa fa-tags"></i> css</a>
-            </li>
-            
-            <li><a href="https://openr.netlify.com/tags/drposter"><i class="fa fa-tags"></i> drposter</a>
-            </li>
-            
-            <li><a href="https://openr.netlify.com/tags/git"><i class="fa fa-tags"></i> git</a>
-            </li>
-            
-            <li><a href="https://openr.netlify.com/tags/hugo"><i class="fa fa-tags"></i> hugo</a>
-            </li>
-            
             <li><a href="https://openr.netlify.com/tags/latex"><i class="fa fa-tags"></i> latex</a>
-            </li>
-            
-            <li><a href="https://openr.netlify.com/tags/linux"><i class="fa fa-tags"></i> linux</a>
             </li>
             
             <li><a href="https://openr.netlify.com/tags/markdown"><i class="fa fa-tags"></i> markdown</a>
@@ -345,9 +360,6 @@
             <li><a href="https://openr.netlify.com/tags/post"><i class="fa fa-tags"></i> post</a>
             </li>
             
-            <li><a href="https://openr.netlify.com/tags/postr"><i class="fa fa-tags"></i> postr</a>
-            </li>
-            
             <li><a href="https://openr.netlify.com/tags/r"><i class="fa fa-tags"></i> r</a>
             </li>
             
@@ -360,10 +372,7 @@
             <li><a href="https://openr.netlify.com/tags/steemr"><i class="fa fa-tags"></i> steemr</a>
             </li>
             
-            <li><a href="https://openr.netlify.com/tags/teaching"><i class="fa fa-tags"></i> teaching</a>
-            </li>
-            
-            <li><a href="https://openr.netlify.com/tags/utopian-io"><i class="fa fa-tags"></i> utopian-io</a>
+            <li><a href="https://openr.netlify.com/tags/tutorial"><i class="fa fa-tags"></i> tutorial</a>
             </li>
             
             <li><a href="https://openr.netlify.com/tags/word"><i class="fa fa-tags"></i> word</a>
@@ -372,10 +381,13 @@
             <li><a href="https://openr.netlify.com/tags/xaringan"><i class="fa fa-tags"></i> xaringan</a>
             </li>
             
-            <li><a href="https://openr.netlify.com/tags/%e5%90%89%e4%bb%96"><i class="fa fa-tags"></i> 吉他</a>
+            <li><a href="https://openr.netlify.com/tags/%e5%ad%a6"><i class="fa fa-tags"></i> 学</a>
             </li>
             
             <li><a href="https://openr.netlify.com/tags/%e5%ad%a6-r"><i class="fa fa-tags"></i> 学-r</a>
+            </li>
+            
+            <li><a href="https://openr.netlify.com/tags/%e5%ad%a6r"><i class="fa fa-tags"></i> 学r</a>
             </li>
             
         </ul>

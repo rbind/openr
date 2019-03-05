@@ -17,7 +17,6 @@ output: #md_document
 
 I’m glad to announce that 'beginr' [@R-beginr] is now on [CRAN](https://CRAN.R-project.org/package=beginr). This post is a brief documentation of 'beginr 0.1.0'. Subsequent updates can be found on the [GitHub site of beginr](http://github.com/pzhaonet/beginr).
 
-<!--more-->
 
 ![](http://cranlogs.r-pkg.org/badges/grand-total/beginr)
 

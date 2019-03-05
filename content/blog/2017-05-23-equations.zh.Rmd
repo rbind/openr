@@ -16,7 +16,6 @@ banner: img/banners/logo-openr.png
 
 然而，现在有了 blogdown 和 Hugo-academic 主题，一切都变得不一样了。我把 eq.tex 里的文本全部拷贝粘贴到一个 .Rmd 文件，扔进网站里，就得到了现在这个帖子。鼠标放在公式上点右键- Show Math As - \(\TeX\) Commands，就得到了公式的 \(\LaTeX\) 代码。直接拷贝就行了，再也不用在两个文档里切换以及找来找去。
 
-<!--more-->
 
 我觉得，我再也回不去了。
 

@@ -57,6 +57,42 @@
   <meta property="og:url" content="/tags/r//" />
   <meta property="og:image" content="img/logo-small.png" />
 
+  <script type="text/javascript"
+        async
+        src="https://cdn.bootcss.com/mathjax/2.7.3/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$'], ['\[\[','\]\]']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+});
+
+MathJax.Hub.Queue(function() {
+    
+    
+    
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i = 0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+});
+</script>
+
+<style>
+code.has-jax {
+    font: inherit;
+    font-size: 100%;
+    background: inherit;
+    border: inherit;
+    color: #515151;
+}
+</style>
+
 </head>
 
 
@@ -174,6 +210,49 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
+                                      <a href="https://openr.netlify.com/blog/steemr-tutorial-gid/">
+                                          
+                                          <img src="https://openr.netlify.com/img/banners/logo-steemr.png" class="img-responsive" alt="">
+                                          
+                                      </a>
+                                  </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <h2><a href="https://openr.netlify.com/blog/steemr-tutorial-gid/">[Tutorial for steemr] Installation &#43; Retrieving and Analyzing Steemians&#39; profiles</a></h2>
+                                    <div class="clearfix">
+                                        <p class="author-category">
+                                          
+                                          By <a href="#">赵鹏</a>
+                                          
+                                          
+
+                                        </p>
+                                        <p class="date-comments">
+                                            <a href="https://openr.netlify.com/blog/steemr-tutorial-gid/"><i class="fa fa-calendar-o"></i> July 6, 2018</a>
+                                        </p>
+                                    </div>
+									      
+      <h3 id="what-will-i-learn">What Will I Learn?</h3>
+
+<ul>
+<li>Setting-up of the environment which steemr requires.</li>
+<li>Using the function <code>gid()</code> to retrieve a Steemian's profile from the block chain or the data servers.</li>
+<li>Using other R functions to enhance and analyze the data retrieved by <code>gid()</code>.</li>
+</ul>
+      
+	  
+
+									
+                                    <p class="read-more"><a href="https://openr.netlify.com/blog/steemr-tutorial-gid/" class="btn btn-template-main">Continue reading</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </section>
+                        
+                        <section class="post">
+                            <div class="row">
+                                <div class="col-md-4">
+                                  <div class="image">
                                       <a href="https://openr.netlify.com/blog/new-features-on-steemr-functions-for-saving-the-posts-and-building-a-independent-blog-site/">
                                           
                                           <img src="https://openr.netlify.com/img/banners/logo-steemr.png" class="img-responsive" alt="">
@@ -186,7 +265,7 @@
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
-                                          By <a href="#">dapeng</a>
+                                          By <a href="#">赵鹏</a>
                                           
                                           
 
@@ -195,9 +274,14 @@
                                             <a href="https://openr.netlify.com/blog/new-features-on-steemr-functions-for-saving-the-posts-and-building-a-independent-blog-site/"><i class="fa fa-calendar-o"></i> July 4, 2018</a>
                                         </p>
                                     </div>
-                                    <p class="intro"><ul>
+									      
+      <ul>
 <li>Do you want to backup your Steem posts in a local disk? The new function<code>bmd()</code> (build markdown files) saves the posts in the local path as markdown files easily.</li>
-</ul></p>
+</ul>
+      
+	  
+
+									
                                     <p class="read-more"><a href="https://openr.netlify.com/blog/new-features-on-steemr-functions-for-saving-the-posts-and-building-a-independent-blog-site/" class="btn btn-template-main">Continue reading</a>
                                     </p>
                                 </div>
@@ -220,7 +304,7 @@
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
-                                          By <a href="#">dapeng</a>
+                                          By <a href="#">赵鹏</a>
                                           
                                           
 
@@ -229,9 +313,14 @@
                                             <a href="https://openr.netlify.com/blog/new-features-on-steemr-functions-for-accounts-and-comments-report/"><i class="fa fa-calendar-o"></i> July 3, 2018</a>
                                         </p>
                                     </div>
-                                    <p class="intro"><h4 id="what-features-did-i-add">What features did I add?</h4>
+									      
+      <h4 id="what-features-did-i-add">What features did I add?</h4>
 
-<p>New functions were added to the steemr pakcage, which now can retrieve the account data and the comment data and plot diagrams automatically.</p></p>
+<p>New functions were added to the steemr pakcage, which now can retrieve the account data and the comment data and plot diagrams automatically.</p>
+      
+	  
+
+									
                                     <p class="read-more"><a href="https://openr.netlify.com/blog/new-features-on-steemr-functions-for-accounts-and-comments-report/" class="btn btn-template-main">Continue reading</a>
                                     </p>
                                 </div>
@@ -254,7 +343,7 @@
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
-                                          By <a href="#">dapeng</a>
+                                          By <a href="#">赵鹏</a>
                                           
                                           
 
@@ -263,7 +352,12 @@
                                             <a href="https://openr.netlify.com/blog/steemr-vote/"><i class="fa fa-calendar-o"></i> June 27, 2018</a>
                                         </p>
                                     </div>
-                                    <p class="intro"><p>&lsquo;<a href="https://cran.r-project.org/package=steemr">steemr</a>&rsquo; is an open source R package for playing with Steem data in <a href="https://en.wikipedia.org/wiki/R_(programming_language)">R environment</a>. It is used to download, post process, analyze,  and visualize Steem data on the basis of the powerful statistic power of R.</p></p>
+									      
+      <p>'<a href="https://cran.r-project.org/package=steemr">steemr</a>' is an open source R package for playing with Steem data in <a href="https://en.wikipedia.org/wiki/R_(programming_language)">R environment</a>. It is used to download, post process, analyze,  and visualize Steem data on the basis of the powerful statistic power of R.</p>
+      
+	  
+
+									
                                     <p class="read-more"><a href="https://openr.netlify.com/blog/steemr-vote/" class="btn btn-template-main">Continue reading</a>
                                     </p>
                                 </div>
@@ -286,7 +380,7 @@
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
-                                          By <a href="#">dapeng</a>
+                                          By <a href="#">赵鹏</a>
                                           
                                           
 
@@ -295,9 +389,14 @@
                                             <a href="https://openr.netlify.com/blog/new-features-on-steemr-supports-appbase-api-and-plots-active-hour-diagrams/"><i class="fa fa-calendar-o"></i> June 20, 2018</a>
                                         </p>
                                     </div>
-                                    <p class="intro"><ul>
+									      
+      <ul>
 <li>I have submitted steemr to CRAN and now it is <a href="https://CRAN.R-project.org/package=steemr">available</a>. Users can install steemr directly from CRAN:</li>
-</ul></p>
+</ul>
+      
+	  
+
+									
                                     <p class="read-more"><a href="https://openr.netlify.com/blog/new-features-on-steemr-supports-appbase-api-and-plots-active-hour-diagrams/" class="btn btn-template-main">Continue reading</a>
                                     </p>
                                 </div>
@@ -320,7 +419,7 @@
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
-                                          By <a href="#">dapeng</a>
+                                          By <a href="#">赵鹏</a>
                                           
                                           
 
@@ -329,9 +428,14 @@
                                             <a href="https://openr.netlify.com/blog/steemr-steemsql/"><i class="fa fa-calendar-o"></i> June 18, 2018</a>
                                         </p>
                                     </div>
-                                    <p class="intro"><p>In the recent week, steemr has been updated from version 0.0.0 to version 0.0.5. Users can simply ignore 0.0.1 to 0.0.4, which were slightly modified to meet the requirements by CRAN. However, users cannot miss version 0.0.5, which now supports SteemSQL queries!</p>
+									      
+      <p>In the recent week, steemr has been updated from version 0.0.0 to version 0.0.5. Users can simply ignore 0.0.1 to 0.0.4, which were slightly modified to meet the requirements by CRAN. However, users cannot miss version 0.0.5, which now supports SteemSQL queries!</p>
 
-<p>The main features of version 0.0.5 are listed as follows:</p></p>
+<p>The main features of version 0.0.5 are listed as follows:</p>
+      
+	  
+
+									
                                     <p class="read-more"><a href="https://openr.netlify.com/blog/steemr-steemsql/" class="btn btn-template-main">Continue reading</a>
                                     </p>
                                 </div>
@@ -354,7 +458,7 @@
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
-                                          By <a href="#">dapeng</a>
+                                          By <a href="#">赵鹏</a>
                                           
                                           
 
@@ -363,14 +467,56 @@
                                             <a href="https://openr.netlify.com/blog/beginr-task-documentation/"><i class="fa fa-calendar-o"></i> June 15, 2018</a>
                                         </p>
                                     </div>
-                                    <p class="intro"><blockquote>
-<p>The documentation level of R is already much higher than average for open source software and even than some commercial packages (esp. SPSS is notorious for its attitude of &ldquo;You want to do one of these things. If you don&rsquo;t understand what the output means, click help and we&rsquo;ll pop up five lines of mumbo-jumbo that you&rsquo;re not going to understand either.&rdquo;)</p>
+									      
+      <blockquote>
+<p>The documentation level of R is already much higher than average for open source software and even than some commercial packages (esp. SPSS is notorious for its attitude of &quot;You want to do one of these things. If you don't understand what the output means, click help and we'll pop up five lines of mumbo-jumbo that you're not going to understand either.&quot;)</p>
 
-<p>&ndash; Peter Dalgaard</p>
+<p>-- Peter Dalgaard</p>
 
 <p><U+200B>      R-help (April 2002)</p>
-</blockquote></p>
+</blockquote>
+      
+	  
+
+									
                                     <p class="read-more"><a href="https://openr.netlify.com/blog/beginr-task-documentation/" class="btn btn-template-main">Continue reading</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </section>
+                        
+                        <section class="post">
+                            <div class="row">
+                                <div class="col-md-4">
+                                  <div class="image">
+                                      <a href="https://openr.netlify.com/blog/advr/">
+                                          
+                                          <img src="https://openr.netlify.com/img/banners/logo-openr.png" class="img-responsive" alt="">
+                                          
+                                      </a>
+                                  </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <h2><a href="https://openr.netlify.com/blog/advr/">[New Project] advr: an R package for the scientific research on trace gas advection flux density</a></h2>
+                                    <div class="clearfix">
+                                        <p class="author-category">
+                                          
+                                          By <a href="#">赵鹏</a>
+                                          
+                                          
+
+                                        </p>
+                                        <p class="date-comments">
+                                            <a href="https://openr.netlify.com/blog/advr/"><i class="fa fa-calendar-o"></i> June 14, 2018</a>
+                                        </p>
+                                    </div>
+									      
+      <p>Carbon dioxide (CO~2~) is one of the key green house gases which play an important role in the global climate change. In academia, the sources and sinks of CO~2~ are estimated with the flux density, e.g. the amount of CO~2~ passing through a unit area in a unit time. Estimates of net ecosystem CO~2~ exchange have been attracting a lot of attention. The research on the advection flux takes care of the contribution of the advection term to the CO~2~ balance.</p>
+      
+	  
+
+									
+                                    <p class="read-more"><a href="https://openr.netlify.com/blog/advr/" class="btn btn-template-main">Continue reading</a>
                                     </p>
                                 </div>
                             </div>
@@ -392,7 +538,7 @@
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
-                                          By <a href="#">dapeng</a>
+                                          By <a href="#">赵鹏</a>
                                           
                                           
 
@@ -401,9 +547,14 @@
                                             <a href="https://openr.netlify.com/blog/new-project-steemr-an-r-package-to-download-play-with-and-visualize-steem-data/"><i class="fa fa-calendar-o"></i> June 12, 2018</a>
                                         </p>
                                     </div>
-                                    <p class="intro"><p>When I became active on steemit.com in July 2017, the first thing for me to do was to find an R package to process Steem data. As an R user and package developer, it would have been amazing if I could easily download my posts, my operations, my communications with others on Steem, and analyze the data with the power of R language.</p>
+									      
+      <p>When I became active on steemit.com in July 2017, the first thing for me to do was to find an R package to process Steem data. As an R user and package developer, it would have been amazing if I could easily download my posts, my operations, my communications with others on Steem, and analyze the data with the power of R language.</p>
 
-<p>Unfortunately, I found nothing.</p></p>
+<p>Unfortunately, I found nothing.</p>
+      
+	  
+
+									
                                     <p class="read-more"><a href="https://openr.netlify.com/blog/new-project-steemr-an-r-package-to-download-play-with-and-visualize-steem-data/" class="btn btn-template-main">Continue reading</a>
                                     </p>
                                 </div>
@@ -426,7 +577,7 @@
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
-                                          By <a href="#">dapeng</a>
+                                          By <a href="#">赵鹏</a>
                                           
                                           
 
@@ -435,79 +586,13 @@
                                             <a href="https://openr.netlify.com/blog/task-request-starting-layout-of-the-mindmaps/"><i class="fa fa-calendar-o"></i> April 18, 2018</a>
                                         </p>
                                     </div>
-                                    <p class="intro"><p>As an R package, mindr is used to convert markdown files into mindmaps, and vice versa. It can also convert <a href="https://steemit.com/utopian-io/@dapeng/new-features-mindr-supports-tibble-dataframes">tibble dataframes</a> into mindmaps. A brief introduction can be found in one of my previous posts: <a href="https://steemit.com/utopian-io/@dapeng/mindr-an-r-package-that-creates-a-markdown-post-out-of-a-mind-map">mindr: an R package that creates a markdown post out of a mind map</a>. Thanks to the support from utopian.io!</p></p>
+									      
+      <p>As an R package, mindr is used to convert markdown files into mindmaps, and vice versa. It can also convert <a href="https://steemit.com/utopian-io/@dapeng/new-features-mindr-supports-tibble-dataframes">tibble dataframes</a> into mindmaps. A brief introduction can be found in one of my previous posts: <a href="https://steemit.com/utopian-io/@dapeng/mindr-an-r-package-that-creates-a-markdown-post-out-of-a-mind-map">mindr: an R package that creates a markdown post out of a mind map</a>. Thanks to the support from utopian.io!</p>
+      
+	  
+
+									
                                     <p class="read-more"><a href="https://openr.netlify.com/blog/task-request-starting-layout-of-the-mindmaps/" class="btn btn-template-main">Continue reading</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </section>
-                        
-                        <section class="post">
-                            <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="https://openr.netlify.com/blog/heteronym-problem/">
-                                          
-                                          <img src="https://openr.netlify.com/img/banners/logo-pinyin.png" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="https://openr.netlify.com/blog/heteronym-problem/">[Task Request] Heteronym problem</a></h2>
-                                    <div class="clearfix">
-                                        <p class="author-category">
-                                          
-                                          By <a href="#">dapeng</a>
-                                          
-                                          
-
-                                        </p>
-                                        <p class="date-comments">
-                                            <a href="https://openr.netlify.com/blog/heteronym-problem/"><i class="fa fa-calendar-o"></i> April 12, 2018</a>
-                                        </p>
-                                    </div>
-                                    <p class="intro"><p>Heteronym is a common lingual phenomenon in the most languages.  Wikepedia:</p>
-
-<blockquote>
-<p>A heteronym (also known as a heterophone) is a word that has a different pronunciation and meaning as another word but the same spelling.</p>
-</blockquote></p>
-                                    <p class="read-more"><a href="https://openr.netlify.com/blog/heteronym-problem/" class="btn btn-template-main">Continue reading</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </section>
-                        
-                        <section class="post">
-                            <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="https://openr.netlify.com/blog/beginr-released/">
-                                          
-                                          <img src="https://openr.netlify.com/img/banners/logo-beginr.png" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="https://openr.netlify.com/blog/beginr-released/">R package beginr released on CRAN</a></h2>
-                                    <div class="clearfix">
-                                        <p class="author-category">
-                                          
-                                          By <a href="#">赵鹏</a>
-                                          
-                                          
-                                          
-                                          
-
-                                        </p>
-                                        <p class="date-comments">
-                                            <a href="https://openr.netlify.com/blog/beginr-released/"><i class="fa fa-calendar-o"></i> June 23, 2017</a>
-                                        </p>
-                                    </div>
-                                    <p class="intro">I’m glad to announce that ‘beginr’ (Zhao 2017) is now on CRAN. This post is a brief documentation of ‘beginr 0.1.0’. Subsequent updates can be found on the GitHub site of beginr.
-HUGOMORE42 Introduction‘beginr’ is a collection of useful functions for R beginners, including hints for the arguments of the ‘plot()’ function, self-defined functions for error bars, user-customized pair plots and hist plots, enhanced linear regression figures, etc.. This package could be helpful to R experts as well.</p>
-                                    <p class="read-more"><a href="https://openr.netlify.com/blog/beginr-released/" class="btn btn-template-main">Continue reading</a>
                                     </p>
                                 </div>
                             </div>
@@ -576,10 +661,10 @@ HUGOMORE42 Introduction‘beginr’ is a collection of useful functions for R b
     <div class="panel-body">
         <ul class="tag-cloud">
             
-            <li><a href="https://openr.netlify.com/tags/beginr"><i class="fa fa-tags"></i> beginr</a>
+            <li><a href="https://openr.netlify.com/tags/advr"><i class="fa fa-tags"></i> advr</a>
             </li>
             
-            <li><a href="https://openr.netlify.com/tags/blogdown"><i class="fa fa-tags"></i> blogdown</a>
+            <li><a href="https://openr.netlify.com/tags/beginr"><i class="fa fa-tags"></i> beginr</a>
             </li>
             
             <li><a href="https://openr.netlify.com/tags/bookdown"><i class="fa fa-tags"></i> bookdown</a>
@@ -594,13 +679,10 @@ HUGOMORE42 Introduction‘beginr’ is a collection of useful functions for R b
             <li><a href="https://openr.netlify.com/tags/mindr"><i class="fa fa-tags"></i> mindr</a>
             </li>
             
+            <li><a href="https://openr.netlify.com/tags/news"><i class="fa fa-tags"></i> news</a>
+            </li>
+            
             <li><a href="https://openr.netlify.com/tags/pinyin"><i class="fa fa-tags"></i> pinyin</a>
-            </li>
-            
-            <li><a href="https://openr.netlify.com/tags/post"><i class="fa fa-tags"></i> post</a>
-            </li>
-            
-            <li><a href="https://openr.netlify.com/tags/postr"><i class="fa fa-tags"></i> postr</a>
             </li>
             
             <li><a href="https://openr.netlify.com/tags/r"><i class="fa fa-tags"></i> r</a>
@@ -616,9 +698,6 @@ HUGOMORE42 Introduction‘beginr’ is a collection of useful functions for R b
             </li>
             
             <li><a href="https://openr.netlify.com/tags/tutorial"><i class="fa fa-tags"></i> tutorial</a>
-            </li>
-            
-            <li><a href="https://openr.netlify.com/tags/utopian-io"><i class="fa fa-tags"></i> utopian-io</a>
             </li>
             
         </ul>

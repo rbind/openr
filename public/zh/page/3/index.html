@@ -57,6 +57,42 @@
   <meta property="og:url" content="/zh//" />
   <meta property="og:image" content="img/logo.png" />
 
+  <script type="text/javascript"
+        async
+        src="https://cdn.bootcss.com/mathjax/2.7.3/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$'], ['\[\[','\]\]']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+});
+
+MathJax.Hub.Queue(function() {
+    
+    
+    
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i = 0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+});
+</script>
+
+<style>
+code.has-jax {
+    font: inherit;
+    font-size: 100%;
+    background: inherit;
+    border: inherit;
+    color: #515151;
+}
+</style>
+
 </head>
 
 
@@ -198,7 +234,7 @@
 
                         </div>
                         <div class="col-sm-7">
-                            <img class="img-responsive" src="img/banners/logo-rmd.png" alt="">
+                            <img class="img-responsive" src="https://openr.netlify.com/img/banners/logo-rmd.png" alt="">
                         </div>
                     </div>
                 </div>
@@ -216,7 +252,7 @@
 
                         </div>
                         <div class="col-sm-7">
-                            <img class="img-responsive" src="img/banners/logo-rosr.png" alt="">
+                            <img class="img-responsive" src="https://openr.netlify.com/img/banners/logo-rosr.png" alt="">
                         </div>
                     </div>
                 </div>
@@ -234,7 +270,7 @@
 
                         </div>
                         <div class="col-sm-7">
-                            <img class="img-responsive" src="img/banners/logo-bookdownplus.png" alt="">
+                            <img class="img-responsive" src="https://openr.netlify.com/img/banners/logo-bookdownplus.png" alt="">
                         </div>
                     </div>
                 </div>
@@ -252,7 +288,7 @@
 
                         </div>
                         <div class="col-sm-7">
-                            <img class="img-responsive" src="img/banners/logo-mindr.png" alt="">
+                            <img class="img-responsive" src="https://openr.netlify.com/img/banners/logo-mindr.png" alt="">
                         </div>
                     </div>
                 </div>
@@ -270,7 +306,7 @@
 
                         </div>
                         <div class="col-sm-7">
-                            <img class="img-responsive" src="img/banners/logo-beginr.png" alt="">
+                            <img class="img-responsive" src="https://openr.netlify.com/img/banners/logo-beginr.png" alt="">
                         </div>
                     </div>
                 </div>
@@ -288,7 +324,7 @@
 
                         </div>
                         <div class="col-sm-7">
-                            <img class="img-responsive" src="img/banners/logo-pinyin.png" alt="">
+                            <img class="img-responsive" src="https://openr.netlify.com/img/banners/logo-pinyin.png" alt="">
                         </div>
                     </div>
                 </div>
@@ -555,44 +591,6 @@
                         <div class="top">
                             <div class="image" style="overflow:hidden">
                                 
-                                <img src="https://openr.netlify.com/img/banners/logo-bookdownplus.png" class="img-responsive" alt="" >
-                                
-                            </div>
-                            <div class="bg"></div>
-                            <div class="text">
-                                <p class="buttons">
-                                    <a href="https://openr.netlify.com/zh/blog/bookdownplus-gallery/" class="btn btn-template-transparent-primary"><i class="fa fa-link"></i> 阅读更多</a>
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="content">
-                            <h4><a href="https://openr.netlify.com/zh/blog/bookdownplus-gallery/">bookdownplus gallery: a web app for displaying and sharing bookdown templates</a></h4>
-                            <p class="author-category">
-                            
-                            由 <a href="#">dapeng</a>
-                            
-                            在 September 23, 2018
-                            </p>
-                            <p class="intro"><p>Many years ago, I collected some LaTeX templates when learning LaTeX. However, my interest in LaTeX was gone after submitting my PhD dissertation. I should have deleted these templates if they had not been so small. They would never be useful in the future, I thought.</p>
-
-<p>In 2017, I started writing the book <a href="https://xuer.pzhao.org"> <em>Learning R: R for Rookies</em> </a>. Unexpectedly, MS Word could not satisfy me with the typesetting. You know what I mean if you have experience (and pain) in writing a long book or dissertation with Word. Actually I suffered more, but I do not want to talk about it. I was sure that LaTeX could, but I would rather not use it.</p>
-
-<p>Like a bolt out of the blue, I found <a href="https://CRAN.R-project.org/package=bookdown">bookdown</a>.</p></p>
-                            <p class="read-more">
-                              <a href="https://openr.netlify.com/zh/blog/bookdownplus-gallery/" class="btn btn-template-main">继续阅读</a>
-                            </p>
-                        </div>
-                    </div>
-                    
-
-                </div>
-                
-                <div class="col-md-3 col-sm-6">
-                    <div class="box-image-text blog">
-                        <div class="top">
-                            <div class="image" style="overflow:hidden">
-                                
                                 <img src="https://openr.netlify.com/img/banners/logo-openr.png" class="img-responsive" alt="" >
                                 
                             </div>
@@ -608,7 +606,7 @@
                             <h4><a href="https://openr.netlify.com/zh/blog/bookdown-contest/">R bookdown 用户的狂欢节：首届 bookdown 大奖赛</a></h4>
                             <p class="author-category">
                             
-                            由 <a href="#">大鹏</a>
+                            由 <a href="#">赵鹏</a>
                             
                             在 September 7, 2018
                             </p>
@@ -629,28 +627,87 @@
                         <div class="top">
                             <div class="image" style="overflow:hidden">
                                 
+                                <img src="https://openr.netlify.com/img/banners/logo-xuer.png" class="img-responsive" alt="" >
+                                
+                            </div>
+                            <div class="bg"></div>
+                            <div class="text">
+                                <p class="buttons">
+                                    <a href="https://openr.netlify.com/zh/blog/xuer-girls/" class="btn btn-template-transparent-primary"><i class="fa fa-link"></i> 阅读更多</a>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="content">
+                            <h4><a href="https://openr.netlify.com/zh/blog/xuer-girls/">独狼死，群狼活：R 语言女子学习小组 &amp; 书友之窗</a></h4>
+                            <p class="author-category">
+                            
+                            由 <a href="#">赵鹏</a>
+                            
+                            在 May 27, 2018
+                            </p>
+                            <p class="intro"><p>文科女生 @dancingapple 买了《学 R》这本书，<a href="http://xuer.dapengde.com/post/dancingapple/">郑重宣告</a>开始学习 R 语言。这个圈子里，据我所知，买了这书的还有：</p>
+
+<p>@tvb, @nostalgic1212, @veronicazhu, @hqy...</p>
+
+<p>都是女生！</p>
+
+<p>感慨之余，我做了个文案：</p></p>
+                            <p class="read-more">
+                              <a href="https://openr.netlify.com/zh/blog/xuer-girls/" class="btn btn-template-main">继续阅读</a>
+                            </p>
+                        </div>
+                    </div>
+                    
+
+                </div>
+                
+                <div class="col-md-3 col-sm-6">
+                    <div class="box-image-text blog">
+                        <div class="top">
+                            <div class="image" style="overflow:hidden">
+                                
                                 <img src="https://openr.netlify.com/img/banners/logo-openr.png" class="img-responsive" alt="" >
                                 
                             </div>
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
-                                    <a href="https://openr.netlify.com/zh/blog/advr/" class="btn btn-template-transparent-primary"><i class="fa fa-link"></i> 阅读更多</a>
+                                    <a href="https://openr.netlify.com/zh/blog/sync/" class="btn btn-template-transparent-primary"><i class="fa fa-link"></i> 阅读更多</a>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
-                            <h4><a href="https://openr.netlify.com/zh/blog/advr/">[New Project] advr: an R package for the scientific research on trace gas advection flux density</a></h4>
+                            <h4><a href="https://openr.netlify.com/zh/blog/sync/">如何妥当地复制或同步文件</a></h4>
                             <p class="author-category">
                             
-                            由 <a href="#">dapeng</a>
+                            由 <a href="#">赵鹏</a>
                             
-                            在 June 14, 2018
+                            在 February 4, 2018
                             </p>
-                            <p class="intro"><p>Carbon dioxide (CO~2~) is one of the key green house gases which play an important role in the global climate change. In academia, the sources and sinks of CO~2~ are estimated with the flux density, e.g. the amount of CO~2~ passing through a unit area in a unit time. Estimates of net ecosystem CO~2~ exchange have been attracting a lot of attention. The research on the advection flux takes care of the contribution of the advection term to the CO~2~ balance.</p></p>
+                            <p class="intro">事情的起因是这样的：有人在群里问了个技术问题：从 Ubuntu 操作系统的电脑里，往另一台电脑里拷贝或同步一批文件，该如何操作？
+虽然问题是针对 Ubuntu，但我们的解决方案对 Windows 和 Mac 用户也是大有用处的。
+最方便的是网盘。
+首选 Dropbox， 人送外号“丢丢盒”，是全人类网盘里的带头大哥，跨平台免费。只需在两台电脑上都安装 Dropbox，设置好同步文件夹，那么，往里丢就是了。电脑 A 里的指定文件夹的任何改动，都会实时同步到电脑 B。
+Dropbox 提供免费的 2.5G 空间。邀请朋友可以最多得到大约 20G 的奖励。为了不骚扰朋友，我通过邀请自己的小号而达到了扩容的目的。20+G，足够，这些年来用起来毫无压力。
+Dropbox 最让我称道的地方是历史版本功能。我经常在编辑文档时手贱，按下了 ctrl+s 并且关闭了文档又后悔。去 Dropbox 的网页上找旧版本文件就行了，这个功能救了我无数次。
+带头大哥这么好，可惜，他在大陆被墙了。
+一个替代方案是 Google Drive，免费 15 G 空间。这货最近改名叫 Backup and Sync 了，新名字令人发指。功能上不如 Dropbox，配合用一下也不错。
+可惜，Google Drive 好像也被墙了。
+那就腾讯微云或百度网盘（这个名字同样令人发指）吧，我不常用，不评价。好歹是个网盘吧。
+如果文件少，而且是一次性的，那就 email 也行。
+但是新的问题来了：如果用网盘或 email，那么文件势必经过中央服务器。如果是隐私文件，你不想在腾讯服务器上留一份吧？
+嗯，有时候留一份也无妨，加密就行了，例如使用加密邮箱 protonmail。
+如果文件多，邮箱不方便呢？
+那么可以用点对点的同步工具，例如 resilio sync。
+resilio sync 也是免费跨平台软件。手机、电脑等各个设备上安装一下，设置好各自的同步文件夹，那么只要设备连上网，就自动同步了，不经过中央服务器。
+但是新的问题来了： resilio sync 不是开源的；他们说没经过中央服务器，你信么？
+不信的话，可以用替代方案：syncthing。这是我此次微信聊天的最大收获。感谢提供这条方案的朋友。
+syncthing 也是 P2P 同步工具，而且是开源的。这意味着，全世界的程序员都可以去检查它到底有没有往某个中央服务器传文件。如果发现有，就会被无情揭露，然后被搞死。目前它还活着，说明是安全的，真正的去中心化。
+据说 Linux 里还有个 rsync 命令。rsync 的意思是 remote sync。这货没有图形界面，是黑底白字的命令行，我看见命令行就吓得哆嗦，所以就不去试用了。</p>
                             <p class="read-more">
-                              <a href="https://openr.netlify.com/zh/blog/advr/" class="btn btn-template-main">继续阅读</a>
+                              <a href="https://openr.netlify.com/zh/blog/sync/" class="btn btn-template-main">继续阅读</a>
                             </p>
                         </div>
                     </div>
@@ -693,7 +750,7 @@
                     <li class="item" title="Peng Zhao">
                         
                           <a href="https://pzhao.org" target="_blank">
-                            <img src="https://www.pzhao.org/img/zhao.jpg" alt="Peng Zhao" class="img-responsive" />
+                            <img src="https://openr.netlify.com/img/clients/pengzhao.jpg" alt="Peng Zhao" class="img-responsive" />
                           </a>
                         
                     </li>
@@ -701,7 +758,7 @@
                     <li class="item" title="Wanna Join us?">
                         
                           <a href="mailto:xuer@pzhao.net" target="_blank">
-                            <img src="img/clients/Unclesamwantyou.jpg" alt="Wanna Join us?" class="img-responsive" />
+                            <img src="https://openr.netlify.com/img/clients/Unclesamwantyou.jpg" alt="Wanna Join us?" class="img-responsive" />
                           </a>
                         
                     </li>

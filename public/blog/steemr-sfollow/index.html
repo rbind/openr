@@ -57,6 +57,42 @@
   <meta property="og:url" content="/blog/steemr-sfollow//" />
   <meta property="og:image" content="img/logo-small.png" />
 
+  <script type="text/javascript"
+        async
+        src="https://cdn.bootcss.com/mathjax/2.7.3/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$'], ['\[\[','\]\]']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+});
+
+MathJax.Hub.Queue(function() {
+    
+    
+    
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i = 0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+});
+</script>
+
+<style>
+code.has-jax {
+    font: inherit;
+    font-size: 100%;
+    background: inherit;
+    border: inherit;
+    color: #515151;
+}
+</style>
+
 </head>
 
 
@@ -170,28 +206,28 @@
 
                     <div class="col-md-9" id="blog-post">
 
-                        <p class="text-muted text-uppercase mb-small text-right">By <a href="#">dapeng</a> | July 10, 2018</p>
+                        <p class="text-muted text-uppercase mb-small text-right">By <a href="#">赵鹏</a> | July 10, 2018</p>
 
                         <div id="post-content">
                           <p>A new function<code>sfollow()</code> displays a Shiny app, which is a user friendly    interactive UI as a follower report.</p>
 
-<p>Shiny is an R package that makes it easy to build interactive web apps straight from R. It is very easy to use even for non-R users. The single command <code>sfollow()</code>  displays a webpage, on which the users just has to type an ID, and then a follower report will appear, with (1) a list of the &lsquo;followers but not following&rsquo;,  (2) &lsquo;following but not followers&rsquo;, (3) a table of the followers&rsquo; information, and (4) a table of the following information. The users can easily filter or order each column.</p>
+<p>Shiny is an R package that makes it easy to build interactive web apps straight from R. It is very easy to use even for non-R users. The single command <code>sfollow()</code>  displays a webpage, on which the users just has to type an ID, and then a follower report will appear, with (1) a list of the 'followers but not following',  (2) 'following but not followers', (3) a table of the followers' information, and (4) a table of the following information. The users can easily filter or order each column.</p>
 
 <p><img src="https://cdn.steemitimages.com/DQmZPfR1KSAUVEZLYxjPzm1tf2BBsEKaGdzFBUPqydsSURh/2018-07-10-002.jpg" alt="2018-07-10-002.jpg" /></p>
 
 <blockquote>
-<p>Part 1 of @ned&rsquo;s follower report  produced by <code>sfollow()</code>.</p>
+<p>Part 1 of @ned's follower report  produced by <code>sfollow()</code>.</p>
 </blockquote>
 
 <p><img src="https://cdn.steemitimages.com/DQmZ37NAPM1oLRVBPfjzGUgSF4ckGLfTuHMo5GCF3Bwz9L5/2018-07-10-001.gif" alt="2018-07-10-001.gif" /></p>
 
 <blockquote>
-<p>Part 4 of @ned&rsquo;s follower report   produced by <code>sfollow()</code>.</p>
+<p>Part 4 of @ned's follower report   produced by <code>sfollow()</code>.</p>
 </blockquote>
 
 <h4 id="how-did-i-implement-them">How did I implement them?</h4>
 
-<p>I added the new function <code>sfollow()</code> in  &lsquo;R/shiny.r&rsquo;, as well as the internal functions <code>sfollow_ui()</code> and <code>sfollow_server()</code>  which are the UI function and server function for <code>sfollow()</code>. Each part of the functions are well documented. Other files were updated automatically by compilation.</p>
+<p>I added the new function <code>sfollow()</code> in  'R/shiny.r', as well as the internal functions <code>sfollow_ui()</code> and <code>sfollow_server()</code>  which are the UI function and server function for <code>sfollow()</code>. Each part of the functions are well documented. Other files were updated automatically by compilation.</p>
 
 <p>Link to relevant lines in the code on GitHub can be found mainly in my latest commit (click to see the details):</p>
 
@@ -255,10 +291,10 @@
     <div class="panel-body">
         <ul class="tag-cloud">
             
-            <li><a href="https://openr.netlify.com/tags/beginr"><i class="fa fa-tags"></i> beginr</a>
+            <li><a href="https://openr.netlify.com/tags/advr"><i class="fa fa-tags"></i> advr</a>
             </li>
             
-            <li><a href="https://openr.netlify.com/tags/blogdown"><i class="fa fa-tags"></i> blogdown</a>
+            <li><a href="https://openr.netlify.com/tags/beginr"><i class="fa fa-tags"></i> beginr</a>
             </li>
             
             <li><a href="https://openr.netlify.com/tags/bookdown"><i class="fa fa-tags"></i> bookdown</a>
@@ -273,13 +309,10 @@
             <li><a href="https://openr.netlify.com/tags/mindr"><i class="fa fa-tags"></i> mindr</a>
             </li>
             
+            <li><a href="https://openr.netlify.com/tags/news"><i class="fa fa-tags"></i> news</a>
+            </li>
+            
             <li><a href="https://openr.netlify.com/tags/pinyin"><i class="fa fa-tags"></i> pinyin</a>
-            </li>
-            
-            <li><a href="https://openr.netlify.com/tags/post"><i class="fa fa-tags"></i> post</a>
-            </li>
-            
-            <li><a href="https://openr.netlify.com/tags/postr"><i class="fa fa-tags"></i> postr</a>
             </li>
             
             <li><a href="https://openr.netlify.com/tags/r"><i class="fa fa-tags"></i> r</a>
@@ -295,9 +328,6 @@
             </li>
             
             <li><a href="https://openr.netlify.com/tags/tutorial"><i class="fa fa-tags"></i> tutorial</a>
-            </li>
-            
-            <li><a href="https://openr.netlify.com/tags/utopian-io"><i class="fa fa-tags"></i> utopian-io</a>
             </li>
             
         </ul>

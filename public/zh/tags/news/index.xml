@@ -6,10 +6,63 @@
     <description>Recent content in News on Open R</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 18 May 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 26 Jan 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://openr.netlify.com/zh/tags/news/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>&#39;rmd&#39; 包发布：一键安装、加载和探索 R markdown 全家桶</title>
+      <link>https://openr.netlify.com/zh/blog/rmd/</link>
+      <pubDate>Sat, 26 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://openr.netlify.com/zh/blog/rmd/</guid>
+      <description>&lt;p&gt;前一段时间在所里&lt;a href=&#34;http://www.pzhao.org/zh/post/r-course-slides/&#34;&gt;讲课&lt;/a&gt;，以为 R markdown 全家桶是 RStudio 默认安装的，结果发现 rticles，bookdown，citr 等居然是需要手动安装的，本来上课时间就紧张，搞得好狼狈。&lt;/p&gt;
+
+&lt;p&gt;于是写了个小包，叫 rmd。主要功能有四个：&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>&#39;rosr&#39; 包发布：开放科学与可重复性研究</title>
+      <link>https://openr.netlify.com/zh/blog/rosr/</link>
+      <pubDate>Sat, 26 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://openr.netlify.com/zh/blog/rosr/</guid>
+      <description>&lt;p&gt;又要从前一段时间讲的那门&lt;a href=&#34;http://www.pzhao.org/zh/post/r-course-slides/&#34;&gt;R 语言，开放科学与可重复性研究&lt;/a&gt;说起了。学生们在课上情绪高涨，认为学 R 的难度跟兴趣一样大，关键是对数据、代码、产品之间的协作关系不好把握。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>啥是佩奇党</title>
+      <link>https://openr.netlify.com/zh/blog/pagedown/</link>
+      <pubDate>Mon, 21 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://openr.netlify.com/zh/blog/pagedown/</guid>
+      <description>&lt;p&gt;最近，朋友圈被长广告《啥是佩奇》刷了屏。啥是佩奇，我不熟。我家的主流文化是小火车托马斯和海神之子波西·杰克森，坑已满，完全没有佩奇的位置。我只知道佩奇是一头动画小猪，她的形象我并不喜欢，原因是它完全无视透视原理，就像遭受过降维打击，据说是符合低龄儿童平面化的视角，而我家里的娃算是高龄儿童了，于是就没有引进。&lt;/p&gt;
+
+&lt;p&gt;然而也不是全无兴趣。比如说，佩奇的原名是啥？一搜，是 Peppa Pig。那么，应该叫做“佩帕猪”，那么为啥翻译成“佩奇”？&lt;/p&gt;
+
+&lt;p&gt;这个在网上也讨论过，“佩奇”其实是 Peppa 跟 piggy（小猪）的混合。这就有趣了，进入了我家的主流文化：关于童话角色的命名，我已经暗中观察了很久。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>pinyin 包升级：终于可以转换汉字向量了</title>
+      <link>https://openr.netlify.com/zh/blog/pinyin-v.1.1.5/</link>
+      <pubDate>Thu, 20 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://openr.netlify.com/zh/blog/pinyin-v.1.1.5/</guid>
+      <description>&lt;p&gt;在&amp;lt;&lt;a href=&#34;http://www.pzhao.org/zh/post/pinyin-one-year/&#34;&gt;外行 R 包开发手记：pinyin&lt;/a&gt;&amp;gt;里我写道：R pinyin 这么个小包，连五笔字型和四角号码都能转换了，“这回应该算是一劳永逸了吧。”然而仍然错估了形势。这不，在用户提问和提需求的压力下，pinyin 包又双叒叕升级了一次。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>R bookdown 用户的狂欢节：首届 bookdown 大奖赛</title>
+      <link>https://openr.netlify.com/zh/blog/bookdown-contest/</link>
+      <pubDate>Fri, 07 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://openr.netlify.com/zh/blog/bookdown-contest/</guid>
+      <description>&lt;p&gt;这是令我感到非常困惑的一件事情：首届 bookdown 大奖赛已经开赛一个多月了，距离截止日期还剩三周，奖品超级丰厚，可是参赛的稿件只有寥寥十篇。目前看来，只要参加就有奖！奖品价值 150 元到 3000 元不等！&lt;/p&gt;
+
+&lt;p&gt;不知道人们还在等个啥……&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>我主笔的《学 R：零基础学习 R 语言》一书已面世</title>

@@ -57,6 +57,42 @@
   <meta property="og:url" content="/zh/blog/pinyin//" />
   <meta property="og:image" content="img/logo.png" />
 
+  <script type="text/javascript"
+        async
+        src="https://cdn.bootcss.com/mathjax/2.7.3/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$'], ['\[\[','\]\]']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+});
+
+MathJax.Hub.Queue(function() {
+    
+    
+    
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i = 0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+});
+</script>
+
+<style>
+code.has-jax {
+    font: inherit;
+    font-size: 100%;
+    background: inherit;
+    border: inherit;
+    color: #515151;
+}
+</style>
+
 </head>
 
 
@@ -225,7 +261,7 @@ pinyin('羌笛何须怨?杨柳春风,不度玉门关.', sep = '', nonezh_replace
 
 <ul>
 <li><code>file.rename2py()</code>用来将文件名里的汉字转换成拼音。</li>
-<li><code>bookdown2py()</code>是专门为 bookdown 包服务的，作用是为章节的中文标题自动添加个对应的拼音ID <code>{#biaotipinyin}</code>，避免在生成网页文件时文件名里出现一大堆乱码，并且解决<a href="https://disqus.com/home/discussion/yihui/_yihui_xie_679/#comment-3175332429">标题里中英文混合的问题</a>。这事儿已经让我惦记三个月了。&mdash; 当然这事儿手动完全可以处理，只是手动处理的过程毫无乐趣可言罢了。</li>
+<li><code>bookdown2py()</code>是专门为 bookdown 包服务的，作用是为章节的中文标题自动添加个对应的拼音ID <code>{#biaotipinyin}</code>，避免在生成网页文件时文件名里出现一大堆乱码，并且解决<a href="https://disqus.com/home/discussion/yihui/_yihui_xie_679/#comment-3175332429">标题里中英文混合的问题</a>。这事儿已经让我惦记三个月了。--- 当然这事儿手动完全可以处理，只是手动处理的过程毫无乐趣可言罢了。</li>
 </ul>
 
 <p>拼音库我试了好几个，最后选定了<a href="http://bbs.unispim.com/forum.php?mod=viewthread&amp;tid=31644">wangyanhan整理制作的42856字拼音表</a>，直接处理文本文件，简单粗暴，转换起来可能有点慢，会顿一下，但已经够我自用了。</p>
@@ -234,7 +270,7 @@ pinyin('羌笛何须怨?杨柳春风,不度玉门关.', sep = '', nonezh_replace
 
 <p>结果好尴尬。</p>
 
-<p><strong>更新：2017-06-19，<a href="https://cran.r-project.org/web/packages/mindr/index.html">&lsquo;pinyin 1.0.2&rsquo;</a> 在 CRAN 正式发布。</strong></p>
+<p><strong>更新：2017-06-19，<a href="https://cran.r-project.org/web/packages/mindr/index.html">'pinyin 1.0.2'</a> 在 CRAN 正式发布。</strong></p>
 
 <p><img src="http://cranlogs.r-pkg.org/badges/grand-total/pinyin" alt="" /></p>
 
@@ -315,7 +351,7 @@ pinyin('羌笛何须怨?杨柳春风,不度玉门关.', sep = '', nonezh_replace
     <div class="panel-body">
         <ul class="nav nav-pills nav-stacked">
             
-            <li><a href="https://openr.netlify.com/categories/%e6%9c%aa%e5%88%86%e7%b1%bb">未分类 (7)</a>
+            <li><a href="https://openr.netlify.com/categories/xuer">xuer (16)</a>
             </li>
             
         </ul>
@@ -337,13 +373,7 @@ pinyin('羌笛何须怨?杨柳春风,不度玉门关.', sep = '', nonezh_replace
     <div class="panel-body">
         <ul class="tag-cloud">
             
-            <li><a href="https://openr.netlify.com/tags/advr"><i class="fa fa-tags"></i> advr</a>
-            </li>
-            
             <li><a href="https://openr.netlify.com/tags/beginr"><i class="fa fa-tags"></i> beginr</a>
-            </li>
-            
-            <li><a href="https://openr.netlify.com/tags/blog"><i class="fa fa-tags"></i> blog</a>
             </li>
             
             <li><a href="https://openr.netlify.com/tags/blogdown"><i class="fa fa-tags"></i> blogdown</a>
@@ -355,22 +385,7 @@ pinyin('羌笛何须怨?杨柳春风,不度玉门关.', sep = '', nonezh_replace
             <li><a href="https://openr.netlify.com/tags/bookdownplus"><i class="fa fa-tags"></i> bookdownplus</a>
             </li>
             
-            <li><a href="https://openr.netlify.com/tags/css"><i class="fa fa-tags"></i> css</a>
-            </li>
-            
-            <li><a href="https://openr.netlify.com/tags/drposter"><i class="fa fa-tags"></i> drposter</a>
-            </li>
-            
-            <li><a href="https://openr.netlify.com/tags/git"><i class="fa fa-tags"></i> git</a>
-            </li>
-            
-            <li><a href="https://openr.netlify.com/tags/hugo"><i class="fa fa-tags"></i> hugo</a>
-            </li>
-            
             <li><a href="https://openr.netlify.com/tags/latex"><i class="fa fa-tags"></i> latex</a>
-            </li>
-            
-            <li><a href="https://openr.netlify.com/tags/linux"><i class="fa fa-tags"></i> linux</a>
             </li>
             
             <li><a href="https://openr.netlify.com/tags/markdown"><i class="fa fa-tags"></i> markdown</a>
@@ -391,9 +406,6 @@ pinyin('羌笛何须怨?杨柳春风,不度玉门关.', sep = '', nonezh_replace
             <li><a href="https://openr.netlify.com/tags/post"><i class="fa fa-tags"></i> post</a>
             </li>
             
-            <li><a href="https://openr.netlify.com/tags/postr"><i class="fa fa-tags"></i> postr</a>
-            </li>
-            
             <li><a href="https://openr.netlify.com/tags/r"><i class="fa fa-tags"></i> r</a>
             </li>
             
@@ -406,10 +418,7 @@ pinyin('羌笛何须怨?杨柳春风,不度玉门关.', sep = '', nonezh_replace
             <li><a href="https://openr.netlify.com/tags/steemr"><i class="fa fa-tags"></i> steemr</a>
             </li>
             
-            <li><a href="https://openr.netlify.com/tags/teaching"><i class="fa fa-tags"></i> teaching</a>
-            </li>
-            
-            <li><a href="https://openr.netlify.com/tags/utopian-io"><i class="fa fa-tags"></i> utopian-io</a>
+            <li><a href="https://openr.netlify.com/tags/tutorial"><i class="fa fa-tags"></i> tutorial</a>
             </li>
             
             <li><a href="https://openr.netlify.com/tags/word"><i class="fa fa-tags"></i> word</a>
@@ -418,10 +427,13 @@ pinyin('羌笛何须怨?杨柳春风,不度玉门关.', sep = '', nonezh_replace
             <li><a href="https://openr.netlify.com/tags/xaringan"><i class="fa fa-tags"></i> xaringan</a>
             </li>
             
-            <li><a href="https://openr.netlify.com/tags/%e5%90%89%e4%bb%96"><i class="fa fa-tags"></i> 吉他</a>
+            <li><a href="https://openr.netlify.com/tags/%e5%ad%a6"><i class="fa fa-tags"></i> 学</a>
             </li>
             
             <li><a href="https://openr.netlify.com/tags/%e5%ad%a6-r"><i class="fa fa-tags"></i> 学-r</a>
+            </li>
+            
+            <li><a href="https://openr.netlify.com/tags/%e5%ad%a6r"><i class="fa fa-tags"></i> 学r</a>
             </li>
             
         </ul>

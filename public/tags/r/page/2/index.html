@@ -57,6 +57,42 @@
   <meta property="og:url" content="/tags/r//" />
   <meta property="og:image" content="img/logo-small.png" />
 
+  <script type="text/javascript"
+        async
+        src="https://cdn.bootcss.com/mathjax/2.7.3/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$'], ['\[\[','\]\]']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+});
+
+MathJax.Hub.Queue(function() {
+    
+    
+    
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i = 0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+});
+</script>
+
+<style>
+code.has-jax {
+    font: inherit;
+    font-size: 100%;
+    background: inherit;
+    border: inherit;
+    color: #515151;
+}
+</style>
+
 </head>
 
 
@@ -174,6 +210,45 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
+                                      <a href="https://openr.netlify.com/blog/steemr-sposts/">
+                                          
+                                          <img src="https://openr.netlify.com/img/banners/logo-steemr.png" class="img-responsive" alt="">
+                                          
+                                      </a>
+                                  </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <h2><a href="https://openr.netlify.com/blog/steemr-sposts/">[New Features on steemr] Display all the posts of a give Steemian with statistics, and get the utopian review and upvote plan!</a></h2>
+                                    <div class="clearfix">
+                                        <p class="author-category">
+                                          
+                                          By <a href="#">赵鹏</a>
+                                          
+                                          
+
+                                        </p>
+                                        <p class="date-comments">
+                                            <a href="https://openr.netlify.com/blog/steemr-sposts/"><i class="fa fa-calendar-o"></i> September 8, 2018</a>
+                                        </p>
+                                    </div>
+									      
+      <ul>
+<li>A new function<code>sposts()</code> displays a Shiny app, which is a user friendly interactive UI to show all the posts of a give Steemian's ID.  Analysis diagrams are plotted as well, including the distribution of the post payout and votes, the active hour of the Steemian's posting, and the time series of the growth of the cumulative post number, payout, and votes.<br /></li>
+</ul>
+      
+	  
+
+									
+                                    <p class="read-more"><a href="https://openr.netlify.com/blog/steemr-sposts/" class="btn btn-template-main">Continue reading</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </section>
+                        
+                        <section class="post">
+                            <div class="row">
+                                <div class="col-md-4">
+                                  <div class="image">
                                       <a href="https://openr.netlify.com/blog/steemr-scner-diagrams/">
                                           
                                           <img src="https://openr.netlify.com/img/banners/logo-steemr.png" class="img-responsive" alt="">
@@ -186,7 +261,7 @@
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
-                                          By <a href="#">dapeng</a>
+                                          By <a href="#">赵鹏</a>
                                           
                                           
 
@@ -195,7 +270,12 @@
                                             <a href="https://openr.netlify.com/blog/steemr-scner-diagrams/"><i class="fa fa-calendar-o"></i> September 7, 2018</a>
                                         </p>
                                     </div>
-                                    <p class="intro"><p>I added diagrams into the Shiny app <code>scner()</code>. These diagrams include the word clouds of the Steemians of the CN community, as well as the histograms for the distributions according to the ESP, account value, online-days, etc..</p></p>
+									      
+      <p>I added diagrams into the Shiny app <code>scner()</code>. These diagrams include the word clouds of the Steemians of the CN community, as well as the histograms for the distributions according to the ESP, account value, online-days, etc..</p>
+      
+	  
+
+									
                                     <p class="read-more"><a href="https://openr.netlify.com/blog/steemr-scner-diagrams/" class="btn btn-template-main">Continue reading</a>
                                     </p>
                                 </div>
@@ -218,7 +298,7 @@
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
-                                          By <a href="#">dapeng</a>
+                                          By <a href="#">赵鹏</a>
                                           
                                           
 
@@ -227,7 +307,12 @@
                                             <a href="https://openr.netlify.com/blog/steemr-scner/"><i class="fa fa-calendar-o"></i> September 6, 2018</a>
                                         </p>
                                     </div>
-                                    <p class="intro"><p>A new function<code>scner()</code> displays a Shiny app, which is a user friendly interactive UI for the statistics of a group of Steemians, hereby those who are active in the CN community. It has the potential to be used for other groups of Steemians with some simple modifications to this function.</p></p>
+									      
+      <p>A new function<code>scner()</code> displays a Shiny app, which is a user friendly interactive UI for the statistics of a group of Steemians, hereby those who are active in the CN community. It has the potential to be used for other groups of Steemians with some simple modifications to this function.</p>
+      
+	  
+
+									
                                     <p class="read-more"><a href="https://openr.netlify.com/blog/steemr-scner/" class="btn btn-template-main">Continue reading</a>
                                     </p>
                                 </div>
@@ -250,7 +335,7 @@
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
-                                          By <a href="#">大鹏</a>
+                                          By <a href="#">赵鹏</a>
                                           
                                           
                                           
@@ -261,14 +346,12 @@
                                             <a href="https://openr.netlify.com/blog/bookdown-copernicus/"><i class="fa fa-calendar-o"></i> September 6, 2018</a>
                                         </p>
                                     </div>
-                                    <p class="intro"><p>This is a submission to the <a href="https://blog.rstudio.com/2018/07/27/first-bookdown-contest/">1st bookdown contest</a>.</p>
+									      
+      Write academic papers of Copernicus journals with R markdown syntax.
+      
+	  
 
-<ul>
-<li>Write academic papers of Copernicus journals with R markdown syntax.</li>
-<li>Support ~ 40 Copernicus journals.</li>
-<li>Support both the two-columned pdf version and the discussion version.</li>
-<li>Create multiple file formats, including .pdf, single .html, gitbook, .md, .epub, docx.</li>
-</ul></p>
+									
                                     <p class="read-more"><a href="https://openr.netlify.com/blog/bookdown-copernicus/" class="btn btn-template-main">Continue reading</a>
                                     </p>
                                 </div>
@@ -291,7 +374,7 @@
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
-                                          By <a href="#">大鹏</a>
+                                          By <a href="#">赵鹏</a>
                                           
                                           
                                           
@@ -302,13 +385,12 @@
                                             <a href="https://openr.netlify.com/blog/bookdown-mdpi/"><i class="fa fa-calendar-o"></i> September 5, 2018</a>
                                         </p>
                                     </div>
-                                    <p class="intro"><p>This is a submission to the <a href="https://blog.rstudio.com/2018/07/27/first-bookdown-contest/">1st bookdown contest</a>.</p>
+									      
+      Write academic papers of Copernicus journals with R markdown syntax.
+      
+	  
 
-<ul>
-<li>Write academic papers in the layout of MDPI journals with R markdown syntax.</li>
-<li>Support ~ 200 MDPI journals.</li>
-<li>Create multiple file formats, including .pdf, single .html, gitbook, .md, .epub, docx.</li>
-</ul></p>
+									
                                     <p class="read-more"><a href="https://openr.netlify.com/blog/bookdown-mdpi/" class="btn btn-template-main">Continue reading</a>
                                     </p>
                                 </div>
@@ -331,7 +413,7 @@
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
-                                          By <a href="#">dapeng</a>
+                                          By <a href="#">赵鹏</a>
                                           
                                           
 
@@ -340,7 +422,12 @@
                                             <a href="https://openr.netlify.com/blog/steemr-sfollow-diagrams/"><i class="fa fa-calendar-o"></i> August 16, 2018</a>
                                         </p>
                                     </div>
-                                    <p class="intro"><p><a href="https://steemit.com/utopian-io/@dapeng/steemr-sfollow#@codingdefined/re-dapeng-steemr-sfollow-20180711t113112798z">A comment</a> by the utopian.io moderator mentioned that the wordings of both &lsquo;followers but not following&rsquo;, &lsquo;following but not followers&rsquo; are confusing. Although they are the official callings that I cannot change, a diagram could help. Therefore, I added a Venn diagram into the <code>sfollow()</code>shiny app.</p></p>
+									      
+      <p><a href="https://steemit.com/utopian-io/@dapeng/steemr-sfollow#@codingdefined/re-dapeng-steemr-sfollow-20180711t113112798z">A comment</a> by the utopian.io moderator mentioned that the wordings of both 'followers but not following', 'following but not followers' are confusing. Although they are the official callings that I cannot change, a diagram could help. Therefore, I added a Venn diagram into the <code>sfollow()</code>shiny app.</p>
+      
+	  
+
+									
                                     <p class="read-more"><a href="https://openr.netlify.com/blog/steemr-sfollow-diagrams/" class="btn btn-template-main">Continue reading</a>
                                     </p>
                                 </div>
@@ -363,7 +450,7 @@
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
-                                          By <a href="#">dapeng</a>
+                                          By <a href="#">赵鹏</a>
                                           
                                           
 
@@ -372,12 +459,17 @@
                                             <a href="https://openr.netlify.com/blog/steemr-tutorial-gcomment/"><i class="fa fa-calendar-o"></i> July 12, 2018</a>
                                         </p>
                                     </div>
-                                    <p class="intro"><h3 id="what-will-i-learn">What Will I Learn?</h3>
+									      
+      <h3 id="what-will-i-learn">What Will I Learn?</h3>
 
 <ul>
 <li>Using the function <code>gcomment()</code> to retrieve the comment data of a given ID.</li>
 <li>Using other R functions to enhance and analyze the data retrieved by <code>gcomment()</code>.</li>
-</ul></p>
+</ul>
+      
+	  
+
+									
                                     <p class="read-more"><a href="https://openr.netlify.com/blog/steemr-tutorial-gcomment/" class="btn btn-template-main">Continue reading</a>
                                     </p>
                                 </div>
@@ -400,7 +492,7 @@
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
-                                          By <a href="#">dapeng</a>
+                                          By <a href="#">赵鹏</a>
                                           
                                           
 
@@ -409,7 +501,12 @@
                                             <a href="https://openr.netlify.com/blog/steemr-sfollow/"><i class="fa fa-calendar-o"></i> July 10, 2018</a>
                                         </p>
                                     </div>
-                                    <p class="intro"><p>A new function<code>sfollow()</code> displays a Shiny app, which is a user friendly    interactive UI as a follower report.</p></p>
+									      
+      <p>A new function<code>sfollow()</code> displays a Shiny app, which is a user friendly    interactive UI as a follower report.</p>
+      
+	  
+
+									
                                     <p class="read-more"><a href="https://openr.netlify.com/blog/steemr-sfollow/" class="btn btn-template-main">Continue reading</a>
                                     </p>
                                 </div>
@@ -432,7 +529,7 @@
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
-                                          By <a href="#">dapeng</a>
+                                          By <a href="#">赵鹏</a>
                                           
                                           
 
@@ -441,13 +538,18 @@
                                             <a href="https://openr.netlify.com/blog/steemr-delegation-cner/"><i class="fa fa-calendar-o"></i> July 9, 2018</a>
                                         </p>
                                     </div>
-                                    <p class="intro"><h4 id="what-features-did-i-add">What features did I add?</h4>
+									      
+      <h4 id="what-features-did-i-add">What features did I add?</h4>
 
 <ul>
 <li><p>The new function<code>gspmv()</code> retrieves the value of Steem per MVests from the server.</p></li>
 
 <li><p>The new function<code>gdelegation()</code> retrieves the delegation data from the server, makes a summary, and plot a time series automatically.</p></li>
-</ul></p>
+</ul>
+      
+	  
+
+									
                                     <p class="read-more"><a href="https://openr.netlify.com/blog/steemr-delegation-cner/" class="btn btn-template-main">Continue reading</a>
                                     </p>
                                 </div>
@@ -470,7 +572,7 @@
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
-                                          By <a href="#">dapeng</a>
+                                          By <a href="#">赵鹏</a>
                                           
                                           
 
@@ -479,52 +581,19 @@
                                             <a href="https://openr.netlify.com/blog/tutorial-for-steemr-retrieving-and-analyzing-the-delegation-data/"><i class="fa fa-calendar-o"></i> July 8, 2018</a>
                                         </p>
                                     </div>
-                                    <p class="intro"><h3 id="what-will-i-learn">What Will I Learn?</h3>
+									      
+      <h3 id="what-will-i-learn">What Will I Learn?</h3>
 
 <ul>
 <li>Using the function <code>gdelegation()</code> to retrieve and visualize the delegation data.</li>
 <li>Using the function <code>gspmv()</code> to retrieve the value of Steem per MVests.</li>
 <li>Using other R functions to enhance and analyse the data retrieved by <code>gdelegation()</code>.</li>
-</ul></p>
+</ul>
+      
+	  
+
+									
                                     <p class="read-more"><a href="https://openr.netlify.com/blog/tutorial-for-steemr-retrieving-and-analyzing-the-delegation-data/" class="btn btn-template-main">Continue reading</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </section>
-                        
-                        <section class="post">
-                            <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="https://openr.netlify.com/blog/steemr-tutorial-gid/">
-                                          
-                                          <img src="https://openr.netlify.com/img/banners/logo-steemr.png" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="https://openr.netlify.com/blog/steemr-tutorial-gid/">[Tutorial for steemr] Installation &#43; Retrieving and Analyzing Steemians&#39; profiles</a></h2>
-                                    <div class="clearfix">
-                                        <p class="author-category">
-                                          
-                                          By <a href="#">dapeng</a>
-                                          
-                                          
-
-                                        </p>
-                                        <p class="date-comments">
-                                            <a href="https://openr.netlify.com/blog/steemr-tutorial-gid/"><i class="fa fa-calendar-o"></i> July 6, 2018</a>
-                                        </p>
-                                    </div>
-                                    <p class="intro"><h3 id="what-will-i-learn">What Will I Learn?</h3>
-
-<ul>
-<li>Setting-up of the environment which steemr requires.</li>
-<li>Using the function <code>gid()</code> to retrieve a Steemian&rsquo;s profile from the block chain or the data servers.</li>
-<li>Using other R functions to enhance and analyze the data retrieved by <code>gid()</code>.</li>
-</ul></p>
-                                    <p class="read-more"><a href="https://openr.netlify.com/blog/steemr-tutorial-gid/" class="btn btn-template-main">Continue reading</a>
                                     </p>
                                 </div>
                             </div>
@@ -593,10 +662,10 @@
     <div class="panel-body">
         <ul class="tag-cloud">
             
-            <li><a href="https://openr.netlify.com/tags/beginr"><i class="fa fa-tags"></i> beginr</a>
+            <li><a href="https://openr.netlify.com/tags/advr"><i class="fa fa-tags"></i> advr</a>
             </li>
             
-            <li><a href="https://openr.netlify.com/tags/blogdown"><i class="fa fa-tags"></i> blogdown</a>
+            <li><a href="https://openr.netlify.com/tags/beginr"><i class="fa fa-tags"></i> beginr</a>
             </li>
             
             <li><a href="https://openr.netlify.com/tags/bookdown"><i class="fa fa-tags"></i> bookdown</a>
@@ -611,13 +680,10 @@
             <li><a href="https://openr.netlify.com/tags/mindr"><i class="fa fa-tags"></i> mindr</a>
             </li>
             
+            <li><a href="https://openr.netlify.com/tags/news"><i class="fa fa-tags"></i> news</a>
+            </li>
+            
             <li><a href="https://openr.netlify.com/tags/pinyin"><i class="fa fa-tags"></i> pinyin</a>
-            </li>
-            
-            <li><a href="https://openr.netlify.com/tags/post"><i class="fa fa-tags"></i> post</a>
-            </li>
-            
-            <li><a href="https://openr.netlify.com/tags/postr"><i class="fa fa-tags"></i> postr</a>
             </li>
             
             <li><a href="https://openr.netlify.com/tags/r"><i class="fa fa-tags"></i> r</a>
@@ -633,9 +699,6 @@
             </li>
             
             <li><a href="https://openr.netlify.com/tags/tutorial"><i class="fa fa-tags"></i> tutorial</a>
-            </li>
-            
-            <li><a href="https://openr.netlify.com/tags/utopian-io"><i class="fa fa-tags"></i> utopian-io</a>
             </li>
             
         </ul>

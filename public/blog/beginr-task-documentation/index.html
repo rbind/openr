@@ -57,6 +57,42 @@
   <meta property="og:url" content="/blog/beginr-task-documentation//" />
   <meta property="og:image" content="img/logo-small.png" />
 
+  <script type="text/javascript"
+        async
+        src="https://cdn.bootcss.com/mathjax/2.7.3/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$'], ['\[\[','\]\]']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+});
+
+MathJax.Hub.Queue(function() {
+    
+    
+    
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i = 0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+});
+</script>
+
+<style>
+code.has-jax {
+    font: inherit;
+    font-size: 100%;
+    background: inherit;
+    border: inherit;
+    color: #515151;
+}
+</style>
+
 </head>
 
 
@@ -170,13 +206,13 @@
 
                     <div class="col-md-9" id="blog-post">
 
-                        <p class="text-muted text-uppercase mb-small text-right">By <a href="#">dapeng</a> | June 15, 2018</p>
+                        <p class="text-muted text-uppercase mb-small text-right">By <a href="#">赵鹏</a> | June 15, 2018</p>
 
                         <div id="post-content">
                           <blockquote>
-<p>The documentation level of R is already much higher than average for open source software and even than some commercial packages (esp. SPSS is notorious for its attitude of &ldquo;You want to do one of these things. If you don&rsquo;t understand what the output means, click help and we&rsquo;ll pop up five lines of mumbo-jumbo that you&rsquo;re not going to understand either.&rdquo;)</p>
+<p>The documentation level of R is already much higher than average for open source software and even than some commercial packages (esp. SPSS is notorious for its attitude of &quot;You want to do one of these things. If you don't understand what the output means, click help and we'll pop up five lines of mumbo-jumbo that you're not going to understand either.&quot;)</p>
 
-<p>&ndash; Peter Dalgaard</p>
+<p>-- Peter Dalgaard</p>
 
 <p><U+200B>      R-help (April 2002)</p>
 </blockquote>
@@ -260,13 +296,13 @@ sd(1:2) ^ 2
 
 <p>The task is to write a friendly documentation for each function in beginr.</p>
 
-<p>The suggested tool is RStudio. Open &lsquo;R/foo.R&rsquo; (this file name is stupid and I will change it later) with a text editor (RStudio is recommended), and add the documentation in the header of each function. After the documentation is done, I will re-build the package, then the &lsquo;man/*.Rd&rsquo; files will be updated automatically.</p>
+<p>The suggested tool is RStudio. Open 'R/foo.R' (this file name is stupid and I will change it later) with a text editor (RStudio is recommended), and add the documentation in the header of each function. After the documentation is done, I will re-build the package, then the 'man/*.Rd' files will be updated automatically.</p>
 
 <h4 id="components">Components</h4>
 
 <p>Each function will have a detailed help information from the documentation.</p>
 
-<p>Open &lsquo;R/foo.R&rsquo;  with a text editor. Each function begins with a short description, followed by several lines beginning with <code>#'</code>, then the function body . For example, the <code>errorbar()</code> function begins at line 198, and looks like this:</p>
+<p>Open 'R/foo.R'  with a text editor. Each function begins with a short description, followed by several lines beginning with <code>#'</code>, then the function body . For example, the <code>errorbar()</code> function begins at line 198, and looks like this:</p>
 
 <pre><code>#' add error bars to a scatterplot.
 #'
@@ -290,7 +326,7 @@ sd(1:2) ^ 2
 errorbar &lt;- function(x, y, ......
 </code></pre>
 
-<p>The first line &lsquo;add error bars to a scatterplot&rsquo; is a short description about the function <code>errorbar()</code>. This description is sufficient. However, the lines beginning with <code>#' @param</code> are not sufficiently documented.  For instance, line  200:</p>
+<p>The first line 'add error bars to a scatterplot' is a short description about the function <code>errorbar()</code>. This description is sufficient. However, the lines beginning with <code>#' @param</code> are not sufficiently documented.  For instance, line  200:</p>
 
 <pre><code>#' @param x numeric
 </code></pre>
@@ -302,7 +338,7 @@ errorbar &lt;- function(x, y, ......
 
 <p>which is much better and more friendly to users.</p>
 
-<p>I would suggest that this task had better be claimed by an R user, because most of the &lsquo;@param&rsquo; lines are self-explanatory to an R expert. He/she could run the function <code>example(function_name)</code> to test each function in beginr, and get to understand what these parameters are really are.</p>
+<p>I would suggest that this task had better be claimed by an R user, because most of the '@param' lines are self-explanatory to an R expert. He/she could run the function <code>example(function_name)</code> to test each function in beginr, and get to understand what these parameters are really are.</p>
                         </div>
                         
                         
@@ -360,10 +396,10 @@ errorbar &lt;- function(x, y, ......
     <div class="panel-body">
         <ul class="tag-cloud">
             
-            <li><a href="https://openr.netlify.com/tags/beginr"><i class="fa fa-tags"></i> beginr</a>
+            <li><a href="https://openr.netlify.com/tags/advr"><i class="fa fa-tags"></i> advr</a>
             </li>
             
-            <li><a href="https://openr.netlify.com/tags/blogdown"><i class="fa fa-tags"></i> blogdown</a>
+            <li><a href="https://openr.netlify.com/tags/beginr"><i class="fa fa-tags"></i> beginr</a>
             </li>
             
             <li><a href="https://openr.netlify.com/tags/bookdown"><i class="fa fa-tags"></i> bookdown</a>
@@ -378,13 +414,10 @@ errorbar &lt;- function(x, y, ......
             <li><a href="https://openr.netlify.com/tags/mindr"><i class="fa fa-tags"></i> mindr</a>
             </li>
             
+            <li><a href="https://openr.netlify.com/tags/news"><i class="fa fa-tags"></i> news</a>
+            </li>
+            
             <li><a href="https://openr.netlify.com/tags/pinyin"><i class="fa fa-tags"></i> pinyin</a>
-            </li>
-            
-            <li><a href="https://openr.netlify.com/tags/post"><i class="fa fa-tags"></i> post</a>
-            </li>
-            
-            <li><a href="https://openr.netlify.com/tags/postr"><i class="fa fa-tags"></i> postr</a>
             </li>
             
             <li><a href="https://openr.netlify.com/tags/r"><i class="fa fa-tags"></i> r</a>
@@ -400,9 +433,6 @@ errorbar &lt;- function(x, y, ......
             </li>
             
             <li><a href="https://openr.netlify.com/tags/tutorial"><i class="fa fa-tags"></i> tutorial</a>
-            </li>
-            
-            <li><a href="https://openr.netlify.com/tags/utopian-io"><i class="fa fa-tags"></i> utopian-io</a>
             </li>
             
         </ul>

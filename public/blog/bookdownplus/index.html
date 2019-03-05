@@ -57,6 +57,42 @@
   <meta property="og:url" content="/blog/bookdownplus//" />
   <meta property="og:image" content="img/logo-small.png" />
 
+  <script type="text/javascript"
+        async
+        src="https://cdn.bootcss.com/mathjax/2.7.3/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$'], ['\[\[','\]\]']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+});
+
+MathJax.Hub.Queue(function() {
+    
+    
+    
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i = 0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+});
+</script>
+
+<style>
+code.has-jax {
+    font: inherit;
+    font-size: 100%;
+    background: inherit;
+    border: inherit;
+    color: #515151;
+}
+</style>
+
 </head>
 
 
@@ -177,10 +213,6 @@
 
 
 <p>This is a preliminary version of the introduction to bookdownplus. Please go to my Github repo <a href="https://github.com/pzhaonet/bookdownplus">bookdownplus</a> for the latest updates. Full documentation can be found in the book <a href="https://bookdown.org/baydap/bookdown-plus">R bookdownplus Textbook</a>.</p>
-
-
-HUGOMORE42
-
 <div id="introduction" class="section level1">
 <h1>Introduction</h1>
 <p><code>R bookdownplus</code> is an extension of <code>R bookdown</code> (Xie 2016). It is a collection of
@@ -284,9 +316,6 @@ bookdownplus::bookdownplus()</code></pre>
 <li>yihui_zh</li>
 </ul>
 <p><img src="https://raw.githubusercontent.com/pzhaonet/bookdown-plus/master/showcase/bookdown+yihui_zh.jpg" /></p>
-<ul>
-<li>poster</li>
-</ul>
 <p><img src="https://raw.githubusercontent.com/pzhaonet/bookdown-plus/master/showcase/bookdown+poster_ocean.jpg" /></p>
 <p><img src="https://raw.githubusercontent.com/pzhaonet/bookdown-plus/master/showcase/bookdown+poster_eco.jpg" /></p>
 </div>
@@ -354,10 +383,10 @@ bookdownplus::bookdownplus()</code></pre>
     <div class="panel-body">
         <ul class="tag-cloud">
             
-            <li><a href="https://openr.netlify.com/tags/beginr"><i class="fa fa-tags"></i> beginr</a>
+            <li><a href="https://openr.netlify.com/tags/advr"><i class="fa fa-tags"></i> advr</a>
             </li>
             
-            <li><a href="https://openr.netlify.com/tags/blogdown"><i class="fa fa-tags"></i> blogdown</a>
+            <li><a href="https://openr.netlify.com/tags/beginr"><i class="fa fa-tags"></i> beginr</a>
             </li>
             
             <li><a href="https://openr.netlify.com/tags/bookdown"><i class="fa fa-tags"></i> bookdown</a>
@@ -372,13 +401,10 @@ bookdownplus::bookdownplus()</code></pre>
             <li><a href="https://openr.netlify.com/tags/mindr"><i class="fa fa-tags"></i> mindr</a>
             </li>
             
+            <li><a href="https://openr.netlify.com/tags/news"><i class="fa fa-tags"></i> news</a>
+            </li>
+            
             <li><a href="https://openr.netlify.com/tags/pinyin"><i class="fa fa-tags"></i> pinyin</a>
-            </li>
-            
-            <li><a href="https://openr.netlify.com/tags/post"><i class="fa fa-tags"></i> post</a>
-            </li>
-            
-            <li><a href="https://openr.netlify.com/tags/postr"><i class="fa fa-tags"></i> postr</a>
             </li>
             
             <li><a href="https://openr.netlify.com/tags/r"><i class="fa fa-tags"></i> r</a>
@@ -394,9 +420,6 @@ bookdownplus::bookdownplus()</code></pre>
             </li>
             
             <li><a href="https://openr.netlify.com/tags/tutorial"><i class="fa fa-tags"></i> tutorial</a>
-            </li>
-            
-            <li><a href="https://openr.netlify.com/tags/utopian-io"><i class="fa fa-tags"></i> utopian-io</a>
             </li>
             
         </ul>

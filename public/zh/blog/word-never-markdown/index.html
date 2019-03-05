@@ -57,6 +57,42 @@
   <meta property="og:url" content="/zh/blog/word-never-markdown//" />
   <meta property="og:image" content="img/logo.png" />
 
+  <script type="text/javascript"
+        async
+        src="https://cdn.bootcss.com/mathjax/2.7.3/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$'], ['\[\[','\]\]']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+});
+
+MathJax.Hub.Queue(function() {
+    
+    
+    
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i = 0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+});
+</script>
+
+<style>
+code.has-jax {
+    font: inherit;
+    font-size: 100%;
+    background: inherit;
+    border: inherit;
+    color: #515151;
+}
+</style>
+
 </head>
 
 
@@ -179,7 +215,7 @@
 
 <p>Markdown 和 LaTeX 能相互转换，是因为两者都是标记语言，是逻辑上有对应关系的。Markdown 里的标题标记<code>#</code>，翻译成 LaTeX 标记就是<code>\section{}</code>; Markdown里的粗体标记<code>** **</code>，翻译成 LaTeX 标记就是<code>\textbf{}</code>。这就是所想即所得，大家虽然你说英语我说德语，但想法是一样的，只要有本字典，以词为单位互换，那么大体意思就能通。想完美的话，根据各自的语法规则调整调整就行了。</p>
 
-<p>但是 Word 不是这样的。你看见一个大字体加粗的词，看上去像是标题，乐观一点可能是用 Word 的标题样式设置的，一般情况下是用户把正文样式的文字直接点加粗换字号得到的，悲观一点说不定是插入的文本框或图片&hellip;&hellip;所见即所得，你永远猜不透一个大字体背后的逻辑是什么。这就好比你说英语而我画了一幅水墨山水画，你猜我是什么意思？你猜我大量的留白该翻译成那句英语？就像小说《三体》里说的：</p>
+<p>但是 Word 不是这样的。你看见一个大字体加粗的词，看上去像是标题，乐观一点可能是用 Word 的标题样式设置的，一般情况下是用户把正文样式的文字直接点加粗换字号得到的，悲观一点说不定是插入的文本框或图片......所见即所得，你永远猜不透一个大字体背后的逻辑是什么。这就好比你说英语而我画了一幅水墨山水画，你猜我是什么意思？你猜我大量的留白该翻译成那句英语？就像小说《三体》里说的：</p>
 
 <blockquote>
 <p>教授挂出了两幅大图片，一幅是画面庞杂精细的《清明上河图》，另一幅是一张空旷的天空照片，空荡荡的蓝天上只有一缕似有似无的白云。教授问这两幅画中哪一幅所包含的信息量更大，答案是后者要比前者大一至两个数量级!</p>
@@ -270,7 +306,7 @@
     <div class="panel-body">
         <ul class="nav nav-pills nav-stacked">
             
-            <li><a href="https://openr.netlify.com/categories/%e6%9c%aa%e5%88%86%e7%b1%bb">未分类 (7)</a>
+            <li><a href="https://openr.netlify.com/categories/xuer">xuer (16)</a>
             </li>
             
         </ul>
@@ -292,13 +328,7 @@
     <div class="panel-body">
         <ul class="tag-cloud">
             
-            <li><a href="https://openr.netlify.com/tags/advr"><i class="fa fa-tags"></i> advr</a>
-            </li>
-            
             <li><a href="https://openr.netlify.com/tags/beginr"><i class="fa fa-tags"></i> beginr</a>
-            </li>
-            
-            <li><a href="https://openr.netlify.com/tags/blog"><i class="fa fa-tags"></i> blog</a>
             </li>
             
             <li><a href="https://openr.netlify.com/tags/blogdown"><i class="fa fa-tags"></i> blogdown</a>
@@ -310,22 +340,7 @@
             <li><a href="https://openr.netlify.com/tags/bookdownplus"><i class="fa fa-tags"></i> bookdownplus</a>
             </li>
             
-            <li><a href="https://openr.netlify.com/tags/css"><i class="fa fa-tags"></i> css</a>
-            </li>
-            
-            <li><a href="https://openr.netlify.com/tags/drposter"><i class="fa fa-tags"></i> drposter</a>
-            </li>
-            
-            <li><a href="https://openr.netlify.com/tags/git"><i class="fa fa-tags"></i> git</a>
-            </li>
-            
-            <li><a href="https://openr.netlify.com/tags/hugo"><i class="fa fa-tags"></i> hugo</a>
-            </li>
-            
             <li><a href="https://openr.netlify.com/tags/latex"><i class="fa fa-tags"></i> latex</a>
-            </li>
-            
-            <li><a href="https://openr.netlify.com/tags/linux"><i class="fa fa-tags"></i> linux</a>
             </li>
             
             <li><a href="https://openr.netlify.com/tags/markdown"><i class="fa fa-tags"></i> markdown</a>
@@ -346,9 +361,6 @@
             <li><a href="https://openr.netlify.com/tags/post"><i class="fa fa-tags"></i> post</a>
             </li>
             
-            <li><a href="https://openr.netlify.com/tags/postr"><i class="fa fa-tags"></i> postr</a>
-            </li>
-            
             <li><a href="https://openr.netlify.com/tags/r"><i class="fa fa-tags"></i> r</a>
             </li>
             
@@ -361,10 +373,7 @@
             <li><a href="https://openr.netlify.com/tags/steemr"><i class="fa fa-tags"></i> steemr</a>
             </li>
             
-            <li><a href="https://openr.netlify.com/tags/teaching"><i class="fa fa-tags"></i> teaching</a>
-            </li>
-            
-            <li><a href="https://openr.netlify.com/tags/utopian-io"><i class="fa fa-tags"></i> utopian-io</a>
+            <li><a href="https://openr.netlify.com/tags/tutorial"><i class="fa fa-tags"></i> tutorial</a>
             </li>
             
             <li><a href="https://openr.netlify.com/tags/word"><i class="fa fa-tags"></i> word</a>
@@ -373,10 +382,13 @@
             <li><a href="https://openr.netlify.com/tags/xaringan"><i class="fa fa-tags"></i> xaringan</a>
             </li>
             
-            <li><a href="https://openr.netlify.com/tags/%e5%90%89%e4%bb%96"><i class="fa fa-tags"></i> 吉他</a>
+            <li><a href="https://openr.netlify.com/tags/%e5%ad%a6"><i class="fa fa-tags"></i> 学</a>
             </li>
             
             <li><a href="https://openr.netlify.com/tags/%e5%ad%a6-r"><i class="fa fa-tags"></i> 学-r</a>
+            </li>
+            
+            <li><a href="https://openr.netlify.com/tags/%e5%ad%a6r"><i class="fa fa-tags"></i> 学r</a>
             </li>
             
         </ul>

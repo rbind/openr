@@ -115,7 +115,7 @@
       
       <guid>https://openr.netlify.com/zh/blog/r-course-slides/</guid>
       <description>“R 语言，开放科学和可重复性研究”的课件，xaringan 包制作。这个包做幻灯片果然是可以飞起的。
-HUGOMORE42 一周课程的内容，浓缩在 5 小时讲完了。当然有意外，主要是大家遇见的 LaTeX 的各种问题不一而足。当然有惊喜，mac 用户居然全都顺利过来了。
+一周课程的内容，浓缩在 5 小时讲完了。当然有意外，主要是大家遇见的 LaTeX 的各种问题不一而足。当然有惊喜，mac 用户居然全都顺利过来了。
 此外，原以为 rmarkdown 全家桶是 RStudio 默认安装的，结果发现 rticles 和 bookdown 等是需要手动安装的。我的 RStudio 已经升级好几次了，而那些包每次都在那里，所以……
 所以上课前得弄个虚拟的干净系统，从零装一遍才知道会遇见什么问题。</description>
     </item>
@@ -127,7 +127,7 @@ HUGOMORE42 一周课程的内容，浓缩在 5 小时讲完了。当然有意�
       
       <guid>https://openr.netlify.com/zh/blog/r-course-announcement/</guid>
       <description>本周我们系开了三天座谈会，好几位同事和同学对 R 语言感兴趣。经过一番简单准备，下周一和周二，我将在马普化学所举办一期培训班，题为“R 语言，开放科学和可重复性研究”。
-HUGOMORE42 下面是我用 drposter 包制作的小广告：
+下面是我用 drposter 包制作的小广告：
 啊哦，还没学会怎么插入 iframe 时让海报适应高度……
 那么直接点击链接看海报吧，效果好。
 yihui 说得对，css 是个好东西，值得一学，而且比 LaTeX 容易。</description>
@@ -142,7 +142,7 @@ yihui 说得对，css 是个好东西，值得一学，而且比 LaTeX 容易。
       <description>Xaringan 自带 16 套主题（themes），其中 10 套配有对应的 fonts.css，可惜光看名字是想象不出来模样的，挑选有困难。Xaringan 的 wiki 展示了几套漂亮的主题，但是不全。
 我把每个主题都做了一个单独的幻灯片，以便选用，然而貌似 github 不支持嵌入幻灯片，而我又没有找到批量转成 gif 的办法。
 于是就做了本网页。
-HUGOMORE42 我自己添加了个主题，叫 mpic，打算从 middlebury 出发慢慢修改，目前只改了个 logo。
+我自己添加了个主题，叫 mpic，打算从 middlebury 出发慢慢修改，目前只改了个 logo。
 感觉又进了一个坑。
 chocolate
 default
@@ -171,7 +171,7 @@ chocolate
       
       <guid>https://openr.netlify.com/zh/blog/xaringan-animate-single/</guid>
       <description>Xaringan 的动画转场效果，可以用 animate.css 实现。只需在 yaml 里声明一下 animate.css 的路径，然后每张幻灯片开头声明一下 class 即可（或者用 layout 来批量控制连续若干片子的转场效果）。
-HUGOMORE42 下面是个完整的 Rmd 文件示例：
+下面是个完整的 Rmd 文件示例：
 ---title: &amp;quot;zoomOutUp&amp;quot;output:xaringan::moon_reader:css:- default- default-fonts- &amp;quot;https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css&amp;quot;lib_dir: libs---layout: trueclass: inverse, center, middle, animated, zoomIn---# Yeah, Xaringan has animations...---# if animate.css!---layout: falseclass: inverse, left, center, middle# Click me and press the left or right arrow to see the zoomOutUp effect.</description>
     </item>
     
@@ -183,7 +183,7 @@ HUGOMORE42 下面是个完整的 Rmd 文件示例：
       <guid>https://openr.netlify.com/zh/blog/mindr-slides/</guid>
       <description>xaringan 做的幻灯片发布到网上的好处有很多，例如凡有网处皆可访问，例如每页幻灯片都有个固定网址方便引用等等。
 发布到网上的方法有很多种，借此机会发布一下 mindr 包简介幻灯片，并简单做个笔记：
-HUGOMORE42 Github 法将 xaringan 制作的一个幻灯片的文件夹（简称幻灯片文件夹）作为一个 repo 发布到 GitHub，然后在该 repo 的settings 里开启 page 功能，就可以用 your_id.github.io/your_repo 来访问幻灯片了。
+Github 法将 xaringan 制作的一个幻灯片的文件夹（简称幻灯片文件夹）作为一个 repo 发布到 GitHub，然后在该 repo 的settings 里开启 page 功能，就可以用 your_id.github.io/your_repo 来访问幻灯片了。
 示例：https://pzhaonet.github.io/mindr-slides
 参考：https://github.com/yihui/xaringan/wiki/Deploy-Slides-Online
 Hugo + netlify 法如果你有个 Hugo 静态网站并由洋雷锋 netlify 托管（例如本站），那就可以将幻灯片文件夹直接放到 Hugo 网站的 static 文件夹里即可。netlify 自动部署后，访问 your_domain/your_xaringan 就行了。
@@ -224,7 +224,7 @@ knitr::include_url(&amp;#39;hyperlink_to_your_slides&amp;#39;)参考：https://
 &lt;blockquote&gt;
 &lt;p&gt;如果你乐意，那么完全可以在注释里偷偷写一部小说，就像《倚天屠龙记》里有人在《楞伽经》夹缝处写下《九阳真经》一样。&lt;/p&gt;
 
-&lt;p&gt;&amp;mdash; 《学 R》第一章 “初见”&lt;/p&gt;
+&lt;p&gt;--- 《学 R》第一章 “初见”&lt;/p&gt;
 &lt;/blockquote&gt;</description>
     </item>
     
@@ -297,19 +297,6 @@ knitr::include_url(&amp;#39;hyperlink_to_your_slides&amp;#39;)参考：https://
     </item>
     
     <item>
-      <title>bookdownplus gallery: a web app for displaying and sharing bookdown templates</title>
-      <link>https://openr.netlify.com/zh/blog/bookdownplus-gallery/</link>
-      <pubDate>Sun, 23 Sep 2018 16:34:39 +0000</pubDate>
-      
-      <guid>https://openr.netlify.com/zh/blog/bookdownplus-gallery/</guid>
-      <description>&lt;p&gt;Many years ago, I collected some LaTeX templates when learning LaTeX. However, my interest in LaTeX was gone after submitting my PhD dissertation. I should have deleted these templates if they had not been so small. They would never be useful in the future, I thought.&lt;/p&gt;
-
-&lt;p&gt;In 2017, I started writing the book &lt;a href=&#34;https://xuer.pzhao.org&#34;&gt; &lt;em&gt;Learning R: R for Rookies&lt;/em&gt; &lt;/a&gt;. Unexpectedly, MS Word could not satisfy me with the typesetting. You know what I mean if you have experience (and pain) in writing a long book or dissertation with Word. Actually I suffered more, but I do not want to talk about it. I was sure that LaTeX could, but I would rather not use it.&lt;/p&gt;
-
-&lt;p&gt;Like a bolt out of the blue, I found &lt;a href=&#34;https://CRAN.R-project.org/package=bookdown&#34;&gt;bookdown&lt;/a&gt;.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
       <title>R bookdown 用户的狂欢节：首届 bookdown 大奖赛</title>
       <link>https://openr.netlify.com/zh/blog/bookdown-contest/</link>
       <pubDate>Fri, 07 Sep 2018 00:00:00 +0000</pubDate>
@@ -318,15 +305,6 @@ knitr::include_url(&amp;#39;hyperlink_to_your_slides&amp;#39;)参考：https://
       <description>&lt;p&gt;这是令我感到非常困惑的一件事情：首届 bookdown 大奖赛已经开赛一个多月了，距离截止日期还剩三周，奖品超级丰厚，可是参赛的稿件只有寥寥十篇。目前看来，只要参加就有奖！奖品价值 150 元到 3000 元不等！&lt;/p&gt;
 
 &lt;p&gt;不知道人们还在等个啥……&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>[New Project] advr: an R package for the scientific research on trace gas advection flux density</title>
-      <link>https://openr.netlify.com/zh/blog/advr/</link>
-      <pubDate>Thu, 14 Jun 2018 13:26:33 +0000</pubDate>
-      
-      <guid>https://openr.netlify.com/zh/blog/advr/</guid>
-      <description>&lt;p&gt;Carbon dioxide (CO~2~) is one of the key green house gases which play an important role in the global climate change. In academia, the sources and sinks of CO~2~ are estimated with the flux density, e.g. the amount of CO~2~ passing through a unit area in a unit time. Estimates of net ecosystem CO~2~ exchange have been attracting a lot of attention. The research on the advection flux takes care of the contribution of the advection term to the CO~2~ balance.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -346,7 +324,7 @@ knitr::include_url(&amp;#39;hyperlink_to_your_slides&amp;#39;)参考：https://
       <guid>https://openr.netlify.com/zh/blog/xuer-girls/</guid>
       <description>&lt;p&gt;文科女生 @dancingapple 买了《学 R》这本书，&lt;a href=&#34;http://xuer.dapengde.com/post/dancingapple/&#34;&gt;郑重宣告&lt;/a&gt;开始学习 R 语言。这个圈子里，据我所知，买了这书的还有：&lt;/p&gt;
 
-&lt;p&gt;@tvb, @nostalgic1212, @veronicazhu, @hqy&amp;hellip;&lt;/p&gt;
+&lt;p&gt;@tvb, @nostalgic1212, @veronicazhu, @hqy...&lt;/p&gt;
 
 &lt;p&gt;都是女生！&lt;/p&gt;
 
@@ -379,7 +357,7 @@ knitr::include_url(&amp;#39;hyperlink_to_your_slides&amp;#39;)参考：https://
       <guid>https://openr.netlify.com/zh/blog/sync/</guid>
       <description>事情的起因是这样的：有人在群里问了个技术问题：从 Ubuntu 操作系统的电脑里，往另一台电脑里拷贝或同步一批文件，该如何操作？
 虽然问题是针对 Ubuntu，但我们的解决方案对 Windows 和 Mac 用户也是大有用处的。
-HUGOMORE42 最方便的是网盘。
+最方便的是网盘。
 首选 Dropbox， 人送外号“丢丢盒”，是全人类网盘里的带头大哥，跨平台免费。只需在两台电脑上都安装 Dropbox，设置好同步文件夹，那么，往里丢就是了。电脑 A 里的指定文件夹的任何改动，都会实时同步到电脑 B。
 Dropbox 提供免费的 2.5G 空间。邀请朋友可以最多得到大约 20G 的奖励。为了不骚扰朋友，我通过邀请自己的小号而达到了扩容的目的。20+G，足够，这些年来用起来毫无压力。
 Dropbox 最让我称道的地方是历史版本功能。我经常在编辑文档时手贱，按下了 ctrl+s 并且关闭了文档又后悔。去 Dropbox 的网页上找旧版本文件就行了，这个功能救了我无数次。
@@ -395,7 +373,8 @@ Dropbox 最让我称道的地方是历史版本功能。我经常在编辑文档
 resilio sync 也是免费跨平台软件。手机、电脑等各个设备上安装一下，设置好各自的同步文件夹，那么只要设备连上网，就自动同步了，不经过中央服务器。
 但是新的问题来了： resilio sync 不是开源的；他们说没经过中央服务器，你信么？
 不信的话，可以用替代方案：syncthing。这是我此次微信聊天的最大收获。感谢提供这条方案的朋友。
-syncthing 也是 P2P 同步工具，而且是开源的。这意味着，全世界的程序员都可以去检查它到底有没有往某个中央服务器传文件。如果发现有，就会被无情揭露，然后被搞死。目前它还活着，说明是安全的，真正的去中心化。</description>
+syncthing 也是 P2P 同步工具，而且是开源的。这意味着，全世界的程序员都可以去检查它到底有没有往某个中央服务器传文件。如果发现有，就会被无情揭露，然后被搞死。目前它还活着，说明是安全的，真正的去中心化。
+据说 Linux 里还有个 rsync 命令。rsync 的意思是 remote sync。这货没有图形界面，是黑底白字的命令行，我看见命令行就吓得哆嗦，所以就不去试用了。</description>
     </item>
     
     <item>
@@ -406,7 +385,7 @@ syncthing 也是 P2P 同步工具，而且是开源的。这意味着，全世�
       <guid>https://openr.netlify.com/zh/blog/r-writelines-line-break/</guid>
       <description>昨天，又被 Windows 坑到了。
 事情的背景是，我的工作环境是 Windows 操作系统。由于一些众所周知的原因，有些事情在 Linux 下做起来比较顺当。于是，我就用 virtualbox 装了个虚拟的 Ubuntu。由于不熟，只用到其中很小一部分功能，所以，凡是能在 Windows 下做的事情，我绝不去 Ubuntu。
-HUGOMORE42 昨天，我要写一批 bash 批处理文件，打算在 Ubuntu 里运行。这批 .sh 文件结构格式相同，只是内容略有不同。于是，我就动了点小心思，用 R 语言批量写好了文件内容，最后用 writeLines() 函数生成了这批 .sh 文件。
+昨天，我要写一批 bash 批处理文件，打算在 Ubuntu 里运行。这批 .sh 文件结构格式相同，只是内容略有不同。于是，我就动了点小心思，用 R 语言批量写好了文件内容，最后用 writeLines() 函数生成了这批 .sh 文件。
 前面我提到了，这些操作都是在 windows 下完成了。保险起见，我特地指定了 writeLines(useBytes = TRUE)，来保证这批 .sh 文件的编码 UTF-8，心想这下应该没问题了吧。
 但是，在 Ubuntu 里执行 这批 .sh 文件，居然出错！说什么文件找不到……
 为了简化问题，我把从这批运行失败的 .sh 文件里面随便拎出一个，里面删得只剩两条指令：
@@ -427,7 +406,7 @@ cd ~ls然后另存为 test.sh 文件，用来测试。运行 test.sh，结果�
       <guid>https://openr.netlify.com/zh/blog/latex-and-me-4/</guid>
       <description>9
 bookdown 或者说 Pandoc 的伟大之处，就是把原先必须在 LaTeX 里做的事情，99.9% 都可以用 markdown 语法完成。剩下的 0.1%，例如公式、索引、控制换行、临时改变字体字号、强制分页等操作，所涉及的 LaTeX 命令都很简单（$$, \index{}、\mbox{}、\small、\newpage），偶尔用一下无伤大雅。只需找个漂亮的编辑器，在 bookdown 下写作就有不错的体验，而生成的 pdf 文档处处透露着 LaTeX 的优雅。平时自用一下，美得不行，仿佛梅开二度，枯木逢春。我为 bookdown 量身制作了 bookdownplus，pinyin 和 mindr 几个扩展包，沉浸在美妙之中不可自拔。
-HUGOMORE42 但是，直到这次真正给《学 R》排版，真正要送到印刷厂印个几千本的时候，光有 bookdown 的现成模板就不够用了。《学 R》是本中文书，LaTeX 对中文的支持先天不足，很多细小的问题，得自己一个一个抠。
+但是，直到这次真正给《学 R》排版，真正要送到印刷厂印个几千本的时候，光有 bookdown 的现成模板就不够用了。《学 R》是本中文书，LaTeX 对中文的支持先天不足，很多细小的问题，得自己一个一个抠。
 比如中文里夹杂的英文词的中断换行（hyphenation），总是在不该断的地方瞎断。找不到完美的解决方案，最后我手动添加了 \mbox{} 凑合。
 比如段首空两格。我明明记得原先是自动空两格的，不知哪一次升级以后，这个设置就不见了。好在这个不难解决。
 比如脚注和上标。bookdown 里^[]表示脚注，两个^之间表示上标。问题是两个脚注连在一起怎么办？要是写成杨过^[]和小龙女^[]，那两个^之间的文字就变成了上标。我试来试去，最简单的就是在中间偷偷摸摸塞进去个空格，把上标结构破坏掉。想来英文不存在这个问题，到处都是空格。
@@ -447,7 +426,7 @@ HUGOMORE42 但是，直到这次真正给《学 R》排版，真正要送到印�
       <guid>https://openr.netlify.com/zh/blog/latex-and-me-3/</guid>
       <description>7
 LaTeX 做出来的文档，确实漂亮。这种漂亮不是那种一眼就能看出哪儿漂亮的漂亮，而是一种说不出来的气质。这种气质来自字体、间距、断字等等诸多细节的堆积和交互作用。只要是用过 LaTeX 的人，拿来个文档用鼻子一闻，就知道是 Word 做的还是 LaTeX 做的。就好像你遇到了你的另一半，让你神魂颠倒，可就是说不出她究竟好在哪里; 她走在人群里，你一眼就能找到她。因为你眼里没别人。
-HUGOMORE42 然而，这种气质不是能轻易把握的。LaTeX 最为奇特的是，你为她投入了无数的时间，却竟然说不清楚到底是因为她太好还是她太糟。如果她太好，为何这么难用？如果她太糟，为何你甘心为她付出？
+然而，这种气质不是能轻易把握的。LaTeX 最为奇特的是，你为她投入了无数的时间，却竟然说不清楚到底是因为她太好还是她太糟。如果她太好，为何这么难用？如果她太糟，为何你甘心为她付出？
 之所以能用 LaTeX 写完博士论文，我想来想去，这个奇迹是以下四点一起促成的：
 组里的同事提供了现成的论文模板，
 身边有同事可以随时问，
@@ -466,7 +445,8 @@ LaTeX 就像个绝世美人，不时让你为她的美貌倾倒。更大的诱�
 我以为，从此就跟 LaTeX 形同陌路了。
 有一天，我在使用 R 语言的时候，神使鬼差地装上了一个名叫 bookdown 的扩展包。
 很久以后，再次回忆那一刻，仍然不由得感慨万千。命中注定的事，逃不掉的劫数。
-bookdown，就是攻陷特洛伊的木马; 里面藏着的，除了我的旧爱 LaTeX，还有 Pandoc 这个魔鬼。后者从名字上一看，就知道是潘多拉放出来的。</description>
+bookdown，就是攻陷特洛伊的木马; 里面藏着的，除了我的旧爱 LaTeX，还有 Pandoc 这个魔鬼。后者从名字上一看，就知道是潘多拉放出来的。
+安装 bookdown 的那一瞬间，我把木马轰隆隆地拉进了我的城，而我却浑然不知。</description>
     </item>
     
     <item>
@@ -476,7 +456,7 @@ bookdown，就是攻陷特洛伊的木马; 里面藏着的，除了我的旧爱 
       
       <guid>https://openr.netlify.com/zh/blog/bookdownplus-update/</guid>
       <description>bookdownplus 这个 R 语言程序包，自用起来感觉不错，当初发布的时候还小得意了一把。时过境迁，现在回头看起来是越来越不满意。CRAN 上，bookdownplus 的总下载量接近三千（与此相比，bookdown 的总下载量是七万），大约每小时就有一次下载。Google ‘bookdownplus’ 可以搜到 已经有中文用户在写使用体验了。越是这样，我越惶恐，因为我知道，这个包写得粗糙，可改进的地方数都数不过来。
-HUGOMORE42 向我反馈问题的用户超出了预期，主要是兼容性的问题：在 macOS上如何，在 Linux 上如何，这些问题我都没有办法回答，因为我只在 Windows 7 上测试了，其他操作系统既无精力也无条件测试。开发个软件，自用是一回事，让别人能用完全是另外一回事，这两回事之间真是相差了一个筋斗云。
+向我反馈问题的用户超出了预期，主要是兼容性的问题：在 macOS上如何，在 Linux 上如何，这些问题我都没有办法回答，因为我只在 Windows 7 上测试了，其他操作系统既无精力也无条件测试。开发个软件，自用是一回事，让别人能用完全是另外一回事，这两回事之间真是相差了一个筋斗云。
 所以我决定先把自己看不过去的问题解决一下，那就是代码的构架问题。
 bookdownplus v.1.3 以后的版本包含了 20 个模板。写这个包的时候，因为懒，我就把所有模板的 .tex 文件混到一个文件夹里，style 和 cls 文件混在另一文件夹里，到最后自己都搞不清楚哪个模板用哪个文件了。用户每次想运行 bookdownplus() 生成一个新文档时，都把所有有用没用的文件一股脑考进来（反正也不大），连我自己都看不下去了。此外，我还指望着别人贡献一些新模板，可是目前乱糟糟的，谁愿意把好东西往垃圾堆里扔呢？
 于是这两天我花了一个上午，把这些文件重新整理归类，让他们各回各家各找各妈，每个 bookdown 模板都对应一个 zip 压缩文件，扔在 bookdownplus 的安装目录里。而且，如果再开发新 bookdown 模板，只需按照现有模板 zip 文件里的结构，将所需文件压缩并甩进 bookdownplus 安装目录，就可以用 bookdownplus() 直接调用了，连升级都不用。
@@ -504,7 +484,7 @@ bookdownplus v.1.3 以后的版本包含了 20 个模板。写这个包的时候
       <description>5
 如果上一篇帖子让你以为我在为 \(\LaTeX\) 做广告，呵呵，那你就上当了。为啥？
 因为我早就抛弃 LaTeX 了。
-HUGOMORE42 几年前，把用 LaTeX 排版排得漂漂亮亮的博士论文提交的那一刻，我咬牙切齿地想：老子终于可以跟 LaTeX 这个怪物永别了。
+几年前，把用 LaTeX 排版排得漂漂亮亮的博士论文提交的那一刻，我咬牙切齿地想：老子终于可以跟 LaTeX 这个怪物永别了。
 想不起来第一次是从哪里知道 LaTeX 的。好像是从 Linux 的学习里，得知 LaTeX 是科研圈常用的写作工具。作为一个混科研圈的工具控，我居然没听说过？而且身边全是搞科研的，居然没人用过？怪哉怪哉。
 于是，我就去问见多识广的朋友：“你用过 LaTeX 吗？”
 朋友正穿着白大褂，在中科院化学所的有机实验室忙活，一听我的问题，痛痛快快地回答：
@@ -532,7 +512,7 @@ Linux 和 R 的血泪史按下不表，今天只说 LaTeX。
       <guid>https://openr.netlify.com/zh/blog/latex-and-me-1/</guid>
       <description>1
 2017 年快要过去了。如果剩下这四十天不出什么幺蛾子的话，我今年的最蠢事情排行榜，基本是板上钉钉。名列榜首的，就是过早给《学 R》一书大肆宣传。跟罗永浩当年头一回卖锤子手机一样一样的，还没量产，就先吹牛，结果吹破了，打了自己的脸。
-HUGOMORE42 其实，这本书早在今年 6 月就写完了，7 月做了最后一次修改。当时书号已经批了，封面也有了模样，我以为马上就能印出来了，于是告诉了我能告诉的每一个朋友。朋友们都很讲义气，把白花花的银子拍在桌上，就等着付钱买了。当了教授的老同学说：放心，到时候我送给我的学生人手一本！
+其实，这本书早在今年 6 月就写完了，7 月做了最后一次修改。当时书号已经批了，封面也有了模样，我以为马上就能印出来了，于是告诉了我能告诉的每一个朋友。朋友们都很讲义气，把白花花的银子拍在桌上，就等着付钱买了。当了教授的老同学说：放心，到时候我送给我的学生人手一本！
 谁知道，一晃四个多月过去了，书还没出来。我的前期宣传算是白费了。让人欣慰的是，直到现在，仍然有铁杆粉丝惦记着我，时不时发来鼓励的短信：“喂，你那书烂尾了吧？啊哈哈哈哈~~~~”
 谢谢。
 那么，四个月里，这书干嘛去了？
@@ -559,7 +539,8 @@ Y 立刻对我说：“我明白问题出在哪里了！”
 这正是录排一贯的工作流程。
 这个流程，对文学类书籍没有问题。一篇小说，重要的是内容，不是格式；只要把文字分好段，就不会有大错。
 然而，这个流程用在《学 R》 这本书上，就是个灾难。因为这本书，内容和格式，都很重要。
-然而，这一点，录排不知道。</description>
+然而，这一点，录排不知道。
+然而，我们不知道录排不知道。</description>
     </item>
     
     <item>
@@ -578,7 +559,7 @@ Y 立刻对我说：“我明白问题出在哪里了！”
       
       <guid>https://openr.netlify.com/zh/blog/bookdown-tips/</guid>
       <description>本帖用来收集整理 R 语言 bookdown 扩展包的一些使用技巧。有些是在网上搜来的，有些是我在别处讨论得来的，有些是我尚未发布的，都写在这里备用。
-HUGOMORE42 输出 Markdown 文件使用 bookdown 编译 Rmd 文件，可以得到的输出格式五花八门。对此，bookdown 的官方文档 有详细介绍，包括 github， pdf，epub，word，html 单个文档等，偏偏没有提 markdown 格式。
+输出 Markdown 文件使用 bookdown 编译 Rmd 文件，可以得到的输出格式五花八门。对此，bookdown 的官方文档 有详细介绍，包括 github， pdf，epub，word，html 单个文档等，偏偏没有提 markdown 格式。
 其实，markdown 文件是有的，在编译过程里作为过渡文档存在，编译结束后自动删除。编译顺利的时候，在文件夹里“刷”地闪一下就消失了。我以前的做法是“快手”，在它消失之前迅速用 notepad++ 打开，就存下来了。这显然不是办法，凑合着过日子而已。
 一般来说，如果仅仅是使用 rmarkdown，只需在 yaml 设置里声明一下：
 output:md_document:variant: markdown_github然后 knit 一下，就可以得到 markdown 文件了。想当然地，我把这段代码加到了 bookdown 的yaml 里，却得到警告，说 bookdown 不支持。
@@ -596,7 +577,7 @@ bookdown 的编译，我习惯按快捷键 ctrl+alt+b，或者点击右上方面
       <guid>https://openr.netlify.com/zh/blog/backticks-in-rmd/</guid>
       <description>其实本文的标题应该是：如何在文章里显示 `r pi` 这样的文字。但是我不知道怎么把这个格式弄到标题里。所以，就这样凑合过吧。
 这个问题的答案，要分几层意思来说。`r pi` 是代码格式（本博客显示为粉底红字），并且包含的`符号同样是代码格式，并且 pi 并没有被编译成 3.1415927。别看它短，这三点每个都是个坑。
-HUGOMORE42 这个问题在编写 R markdown 教程时常见。其实，等你明白这个问题的答案后，会发现答案并不难，难的是如何描述这个问题。我费了好大劲，都想不出一个准确描述的办法，并且在那些支持 markdown 的论坛上，我连这个小撇都输不出来，这叫人怎么问？最后我只能这么提问：
+这个问题在编写 R markdown 教程时常见。其实，等你明白这个问题的答案后，会发现答案并不难，难的是如何描述这个问题。我费了好大劲，都想不出一个准确描述的办法，并且在那些支持 markdown 的论坛上，我连这个小撇都输不出来，这叫人怎么问？最后我只能这么提问：
 请问在输出文档里怎么显示’撇 r pi 撇’并且别让它编译出来 3.1415927？
 第 1 层意思，那个小撇 `，它到底叫什么？总不能总叫“小撇”吧？我用的是德语键盘，挪，就是上图第一行右起第二个键的上面那个小可爱。
 查维基百科才知道，` 的学名叫 Grave accent ，中文叫“重音符”。在程序猿的世界里，它又被称作 backquote 或 backtick，中文叫反引号。所以，跟这个有关的问题可以这么问：
@@ -635,7 +616,7 @@ How to display verbatim/literal inline r code with backticks using Rmarkdown?
       <description>bookdown 是个好东西，只是入手有点难，酒香巷深。
 对于 R 初学者来说，如果身边没有人指导，使用者可能需要花大量精力应付 LaTeX，YAML，Pandoc，而很多初学者可能从来没听说过这些，站在 bookdown 的门口往里张望了一下，说不定就被吓跑了，从而错过了门里的精彩世界。
 bookdownplus 扩展包，可以让新手对 bookdown 快速上手。从此，bookdown 这坛好酒就不必去深巷苦寻，它就放在你手边。
-HUGOMORE42 从 v1.2.0 开始，bookdownplus 增加了两个魔法，更是让新手对 bookdown 一见钟情。如果你对 bookdown 感兴趣却苦于入门的烦恼，那么可以试试这两个魔法。
+从 v1.2.0 开始，bookdownplus 增加了两个魔法，更是让新手对 bookdown 一见钟情。如果你对 bookdown 感兴趣却苦于入门的烦恼，那么可以试试这两个魔法。
 准备工作首先，安装好必需的软件，包括 R, RStudio, \(\LaTeX\)等。详见 bookdown 官方手册。然后，安装开发版的bookdownplus：
 devtools::install_github(&amp;quot;pzhaonet/bookdownplus&amp;quot;)再用 setwd() 将R的工作目录设置到一个空文件夹里。
 一切准备就绪后，接下来就是见证奇迹的时刻。
@@ -662,7 +643,7 @@ for (mf in mail_font()) {for (ms in mail_style()) {for (mt in mail_theme()) {
       
       <guid>https://openr.netlify.com/zh/blog/beginr-released/</guid>
       <description>又一次高兴地宣布, 我的 R 语言扩展包 ‘beginr’ (Zhao 2017a) 在 CRAN 正式发布了.
-HUGOMORE42 简介beginr是我为 R 语言初学者和自己写的工具包, 是我这些年来收集和自己编写的一些简化操作的函数和备忘录, 可能对中级用户也有帮助. 其实这个包的文档我写得不够详细, 有些函数还没来及整理进去, 之所以匆匆发布, 是想先把 ‘beginr’ 这个名字给占住. 毕竟, 我中意的名字如 ‘learnr’, ’startr’都被别人用过了.
+简介beginr是我为 R 语言初学者和自己写的工具包, 是我这些年来收集和自己编写的一些简化操作的函数和备忘录, 可能对中级用户也有帮助. 其实这个包的文档我写得不够详细, 有些函数还没来及整理进去, 之所以匆匆发布, 是想先把 ‘beginr’ 这个名字给占住. 毕竟, 我中意的名字如 ‘learnr’, ’startr’都被别人用过了.
 安装方法：
 # 稳定版：install.packages(&amp;#39;beginr&amp;#39;)# 开发版：devtools::install_github(&amp;quot;pzhaonet/beginr&amp;quot;)下面分类介绍一下其中的函数.
 备忘函数我初学 R 的时候用 plot() 作图时, 常常忘记不同形状数据点(pch)对应的编号, 实线虚线(lty)的编号, 散点图类型(type)的代码, 以及最难选择的颜色代码. 每次忘了都要上网搜一下. 现在, beginr 里提供了 plotpch(), plotlty(), plottype(), plotcolors(), plotcolorbar()等函数, 想不起来的时候运行一下就行了.
@@ -676,7 +657,7 @@ beginr::plotpch()beginr::plotlty()beginr::plottype()beginr::plotcolors()begi
       
       <guid>https://openr.netlify.com/zh/blog/bookdownplus-released/</guid>
       <description>很高兴地宣布，我的 R 语言扩展包 ‘bookdownplus v1.0.2’ (Zhao 2017a) 在 CRAN 正式发布了。本文是对’bookdownplus v1.0.2’的简要描述. 由于最近更新频繁, 最新版的’bookdownplus’更加强大和易用, 例如 ‘bookdownplus v1.2.0’ 可以一条指令生成19个模板文档的 pdf, word, html 和 epub 四种格式. 建议移步位于 GitHub 的 bookdownplus 项目主页.
-HUGOMORE42 简介bookdownplus 是对 bookdown 包 (Xie 2016) 的增强和简化, 是快速使用 bookdown 的最简洁方法。bookdown 就好比 Microsoft Word 或 \(\LaTeX\)，可以用来写文档，而 bookdownplus 提供了很多有用的模板，可以很方便地在 bookdown 平台写期刊论文、学位论文、学术海报、化学分子式、信件、日记、日历、诗集、吉他谱等各种常用文档和书籍。这是功能上的增强（+）。
+简介bookdownplus 是对 bookdown 包 (Xie 2016) 的增强和简化, 是快速使用 bookdown 的最简洁方法。bookdown 就好比 Microsoft Word 或 \(\LaTeX\)，可以用来写文档，而 bookdownplus 提供了很多有用的模板，可以很方便地在 bookdown 平台写期刊论文、学位论文、学术海报、化学分子式、信件、日记、日历、诗集、吉他谱等各种常用文档和书籍。这是功能上的增强（+）。
 bookdownplus 使用时只需指定一个模板，给定作者和书名，就可以一键生成模板文件，用户在模板文件里照猫画虎写自己的文字就可以了，不必再花力气上网找模板、设置 YAML 和 LaTeX。这是操作上的简化（-）。
 bookdownplus 各个模板的使用方法详见 R bookdownplus Textbook。这本电子书本身就是用 bookdownplus 生成的，尤其是它的 pdf 版本很美观。此书的源码开放，可以作为使用 bookdownplus写书的示例。
 下面是 bookdownplus 的简介和快速使用方法。
@@ -690,7 +671,7 @@ bookdownplus 各个模板的使用方法详见 R bookdownplus Textbook。这本�
       
       <guid>https://openr.netlify.com/zh/blog/latex-equations-to-word/</guid>
       <description>最近写了篇论文，投往一家学术期刊。投稿时，Word 格式和 \(\LaTeX\) 格式可以任选，我选了 Word，是因为合作作者用 Word。可是，文稿里的公式是我输入的，而那些公式在我的博士论文里是用 \(\LaTeX\) 写的。为了图省事，我就用了 Word 的插件Aurora，这样，只需把公式的 \(\LaTeX\) 代码往 Word 文档的 Aurora 域里拷贝粘贴，bingo！公式就渲染好了，比 Word 的自带公式漂亮一些。
-HUGOMORE42 这篇论文很顺利，很快被接收了。到了最后一步的时候，编辑部要我把文档里的公式修改成可编辑的格式。——本来就是可编辑的呀。嗯，大概是编辑部不使用Aurora，那么他们的 Word 打开我的文档里看到的公式自然就是没法编辑的了。我懒得解释，最后决定把公式全部转换成 Word 公式。
+这篇论文很顺利，很快被接收了。到了最后一步的时候，编辑部要我把文档里的公式修改成可编辑的格式。——本来就是可编辑的呀。嗯，大概是编辑部不使用Aurora，那么他们的 Word 打开我的文档里看到的公式自然就是没法编辑的了。我懒得解释，最后决定把公式全部转换成 Word 公式。
 \(\LaTeX\) 公式转成 Word 公式并不难，只需三步：\(\LaTeX\) –&amp;gt; MathML –&amp;gt; 修改 –&amp;gt; Word.
 \(\LaTeX\) 公式转成 MathML公式。这可以在 blogdown 里操作，只需把 \(\LaTeX\) 公式代码扔进一个帖子里，运行建站函数，在生成的网页里获取公式的 MathML 代码即可（在公式上点右键 - Show Math As - MathML Code）。没有 blodown 的，用texmath 在线转换也可以。
 修改 MathML 代码。将上一步得到的 MathML 代码拷贝粘贴到文本编辑器，然后在开头添上一行：
@@ -704,7 +685,7 @@ HUGOMORE42 这篇论文很顺利，很快被接收了。到了最后一步的时
       
       <guid>https://openr.netlify.com/zh/blog/publish-r-packages/</guid>
       <description>最近，我把mindr，pinyin 和 bookdownplus 三个包都提交到了 CRAN。这三个包都很简单，我就是想体验一下发布R包的流程，免得将来学R那本书出版了被问起来，答不上来就丢人了，另外也算是承接菜鸟致简速成那篇帖子，里面只谈了野包的发布分享，而只有提交到了 CRAN，野包才算转正。
-HUGOMORE42 很快，这三个包都成功转正，可以正常安装了：
+很快，这三个包都成功转正，可以正常安装了：
 install.packages(&amp;#39;mindr&amp;#39;)install.packages(&amp;#39;pinyin&amp;#39;)install.packages(&amp;#39;bookdownplus&amp;#39;)这里说说发布的过程和我遇到的一些问题。
 自查包发布之前，先自查有没有错误。只需用RStudio打开待发布的R包的.Rproj文件，然后点击右上方面板的 Build - Check 按钮，就可以看到自查结果。
 这里要注意：
@@ -746,7 +727,7 @@ install.packages(&amp;#39;mindr&amp;#39;)install.packages(&amp;#39;pinyin&amp;#
       <guid>https://openr.netlify.com/zh/blog/equations/</guid>
       <description>这些年，论文发得不多，公式却攒了不少，大部分都是自己亲手敲的 \(\LaTeX\) 代码。我把他们整理在一个 eq.tex 文档里，配合一个编译好的 eq.pdf 文件。每次需要的时候，在 eq.pdf 里找到需要的公式，然后去 eq.tex 找公式代码，拷到目标文档里完事儿。稍微有点小麻烦，但总比重新敲一遍代码要省事、准确。
 然而，现在有了 blogdown 和 Hugo-academic 主题，一切都变得不一样了。我把 eq.tex 里的文本全部拷贝粘贴到一个 .Rmd 文件，扔进网站里，就得到了现在这个帖子。鼠标放在公式上点右键- Show Math As - \(\TeX\) Commands，就得到了公式的 \(\LaTeX\) 代码。直接拷贝就行了，再也不用在两个文档里切换以及找来找去。
-HUGOMORE42 我觉得，我再也回不去了。
+我觉得，我再也回不去了。
 MeteorologyAtmpspheric pressure\[\begin{equation}P=101.325 \cdot (\frac{293-0.0065z}{293}) ^ {5.26} = 86.838\,\text{kPa}\end{equation}\]
 \(z\): elevation above sea level in m.
 \[\begin{equation}-\text{d} p =\rho g \text{d}z\end{equation}\]
@@ -761,7 +742,7 @@ MeteorologyAtmpspheric pressure\[\begin{equation}P=101.325 \cdot (\frac{293-0
       
       <guid>https://openr.netlify.com/zh/blog/mindr/</guid>
       <description>将 markdown (.md, .Rmd) 文件转换成思维导图的 R 扩展包 mindr 是我写的第五个 R 包，安装方法如下：
-HUGOMORE42 稳定版：
+稳定版：
 install.packages(&amp;quot;mindr&amp;quot;)开发版：
 devtools::install_github(&amp;quot;pzhaonet/mindr&amp;quot;)使用方法：
 在R的工作目录创建个名叫 mm/ 的文件夹，丢进去一堆 markdown 文件 (.md, .Rmd)，然后运行：
@@ -785,7 +766,7 @@ freemind 确实简陋。再拿 blogdown 书稿 试试，导入 Xmind 看看：
       
       <guid>https://openr.netlify.com/zh/blog/rblogdown-bib/</guid>
       <description>本网站的公式和参考文献一直未能正常显示，直到今天我才把这两个问题解决。
-HUGOMORE42 公式公式的问题迟迟未解决，是因为我看到人们在讨论往html文件里加 Load mathjax 代码这种解决方案，一看就头大，不想做。
+公式公式的问题迟迟未解决，是因为我看到人们在讨论往html文件里加 Load mathjax 代码这种解决方案，一看就头大，不想做。
 其实，我用的hugo-academic主题，据说是支持数学环境的，据说在 config.toml 里设置 math = true就开启全站支持，在单篇post的yml头里这样设置就开启单篇支持。可是我两样都试过，然后运行 blogdown::serve_site()测试，在RStudio的Viewer里都不能成功显示公式。
 今天突然灵光一现，心想不会是RStudio Viewer的问题吧？于是点击Viewer左上角的 Show in new window 按钮，用外部浏览器打开一看，Duang！帖子里的公式就都可以正常显示了！这里秀一个：
 帖子里输入下面的 \(\LaTeX\) 公式：
@@ -804,7 +785,7 @@ blogdown 可以如此方便地往帖子里插入计算代码、图表、公式�
       
       <guid>https://openr.netlify.com/zh/blog/rmickey/</guid>
       <description>写R包这种高大上的工作，原以为学会怎么写得花个一年半载，学会之后写一个包怎么着也得个把月，谁料想周一上午下了决心，到周二下午就一口气写了4个包，算起来从学到写，只花了一天多时间。这里是个小结。
-HUGOMORE42 学写R包，我主要参考了3份资料：
+学写R包，我主要参考了3份资料：
 谢益辉的开发R程序包之忍者篇，2011年。反复读了好几遍。黄俊文的极简R包建立方法, 2013年。反复读了好几遍。Hadley Wickham 的R packages, 2015年。反复扫了好几眼。有了这3份很好的资料，那我还写本篇帖子做什么？
 这是因为，他们都是高手中的高手，只是我觉得他们写得，就好比教授写幼儿园教材，仍然不太合小朋友的胃口，不足以让我等菜鸟快速入门。比如读到roxygen2是多么美妙，我起初完全没体验，不知道“举头望文档，低头思函数”到底说的是什么（what the hell was Yihui talking about? 当然，一天之后我就体会到了静夜思的精妙），再一看Emacs就被吓得河水倒流，当年光一个vim就把我折腾个半死。而极简篇里，我觉得既然是极简，能减掉的步骤尽量减，所以还能继续剪。可能当年是极简，时过境迁，人类进步，现在可以比极简更简。
 下面，我试试写个减到不能再减的一剑封喉致简版，只需小改两个文本文件，不出十分钟就写出一个能用的R包。
@@ -823,7 +804,7 @@ install.packages(c(&amp;quot;devtools&amp;quot;, &amp;quot;roxygen2&amp;quot;, &
       
       <guid>https://openr.netlify.com/zh/blog/postr/</guid>
       <description>用R markdown写海报的扩展包postr安装使用方法（需要先安装好软件环境，详见postr项目主页）：
-HUGOMORE42 devtools::install_github(&amp;quot;pzhaonet/postr&amp;quot;)setwd()postr::postr()益辉的莽撞人项目，悬赏解决“用 R Markdown 做海报”这个技术难题。我私下说，Markdown走的是LaTeX路线，讲究篇章结构和逻辑，而海报追求更多随意性和艺术性，即使学术海报也不例外，所以费劲硬要用Markdown解决，可能吃力不讨好。倒不如Powerpoint来得方便，或者把整个海报在R里当成一个device，用layout画图来实现。话虽这么说，我仍然在留意这件事，因为我在新书学R里提出R语言科研方案的整体拼图，被我几乎全部拼完了，只缺海报这一块。这就好比在朋友圈发照片只发八张，看一眼就浑身不自在。
+devtools::install_github(&amp;quot;pzhaonet/postr&amp;quot;)setwd()postr::postr()益辉的莽撞人项目，悬赏解决“用 R Markdown 做海报”这个技术难题。我私下说，Markdown走的是LaTeX路线，讲究篇章结构和逻辑，而海报追求更多随意性和艺术性，即使学术海报也不例外，所以费劲硬要用Markdown解决，可能吃力不讨好。倒不如Powerpoint来得方便，或者把整个海报在R里当成一个device，用layout画图来实现。话虽这么说，我仍然在留意这件事，因为我在新书学R里提出R语言科研方案的整体拼图，被我几乎全部拼完了，只缺海报这一块。这就好比在朋友圈发照片只发八张，看一眼就浑身不自在。
 前几天，做bookdownplus时找模板，在比利时鲁汶大学的一大堆模板当中，我极其偶然地发现，里面暗暗潜伏着的，竟然有用R Markdown制作海报的秘密，淹没在一大堆文件里，搞不清楚各个文件之间的关系，而且说明文档过于简单，用起来不够方便。于是，我花了些工夫，把海报部分择了出来，稍加修改，增添了几个自己做的颜色主题，纳入了bookdownplus里。我的想法是，用户只需下载我这个文件夹，选择好模板，一运行，就出来个Rmd文件，打开一点knit按钮，Duang！海报就出来了。
 于是去揭“莽撞人”榜。榜主说：很好。然后说：做成个包吧！名字都起好了，叫postr。为啥不直接叫poster？我猜大概是postr跟knitr的命名法类似，更容易搜到吧。
 想来也是。我这种下载文件夹的方法毕竟路子太野，不符合R语言的习惯，大家更喜欢的是做包，上传，安装。但是我从来没做过包。而且，我认为做包是R语言里高大上的东西，我不认为自己能很快学会做。于是，我在朋友圈招贤，看有没有谁愿意把这活儿给接过去。消息放出去一天，无人理睬。
@@ -843,7 +824,7 @@ HUGOMORE42 devtools::install_github(&amp;quot;pzhaonet/postr&amp;quot;)setwd()
       
       <guid>https://openr.netlify.com/zh/blog/bookdown-plus/</guid>
       <description>注意：本文所述的bookdown+这个项目已经停止开发，继承者是我新开的R包项目bookdownplus ，这是因为我学会了写R包。当然，说不定有些朋友不喜欢安装R包，喜欢下载个文件夹直接免安装用，那么本文所述的方法仍然可以继续使用，只是我不再更新了而已。
-HUGOMORE42 R bookdown 能做的事情很多，可是那些功能迟迟不来，我只好自己动手，写了个 bookdown+，目前大体实现了用 bookdown 写期刊论文、化学分子式、信件、日记、日历等功能。当然，有些还没完全实现，革命不够彻底，带着浓重的\(\LaTeX\)旧社会的气息。革命尚未成功，同志仍需努力。
+R bookdown 能做的事情很多，可是那些功能迟迟不来，我只好自己动手，写了个 bookdown+，目前大体实现了用 bookdown 写期刊论文、化学分子式、信件、日记、日历等功能。当然，有些还没完全实现，革命不够彻底，带着浓重的\(\LaTeX\)旧社会的气息。革命尚未成功，同志仍需努力。
 下面是 bookdown+ 的简介和快速使用方法。
 背景R bookdown+，听起来像是跟R[@R-base]的扩展包bookdown[@R-bookdown]有关吧?
 一点没错！我们知道，bookdown天生是个用来写编程书籍的称手工具。只是，这仅仅是硬币的一面。bookdown的功能远远不止如此。它就像一个美味的蛋糕，我等啊等啊，等着谁把它切开，实在等不及了，就自己下手吧。所以，我弄了个bookdown+。
@@ -867,7 +848,7 @@ title &amp;lt;- &amp;#39;bookdown+: Authoring Articles, Mails, Guitar books, Che
       
       <guid>https://openr.netlify.com/zh/blog/hugo-icon/</guid>
       <description>网站图标，就是下图的这些东东，用浏览器打开网站时显示在地址栏的顶端。R blogdown安装的hugo-academic主题，默认图标是个蓝色学位帽，挺好看的，不改也行，只是如果大家都用的话，泯然众人，识别度就低了。
-HUGOMORE42 改的方式很简单：将你自己的图标图片保存为.png格式，并命名为icon.png，替换\themes\hugo-academic\static\img\icon.png即可。
+改的方式很简单：将你自己的图标图片保存为.png格式，并命名为icon.png，替换\themes\hugo-academic\static\img\icon.png即可。
 update: 更好的方案来自yang Cao的提议：把icon.png放在static/img/，避免在更新themes时将自定义图标覆盖。</description>
     </item>
     
@@ -878,7 +859,7 @@ update: 更好的方案来自yang Cao的提议：把icon.png放在static/img/，
       
       <guid>https://openr.netlify.com/zh/blog/hugo-rss/</guid>
       <description>R blogdown 搭建的 Hugo 网站，小细节很多，可以一点一点完善，好在都不难搞定。今天添加了个RSS订阅按钮。
-HUGOMORE42 自从 Google Reader 死后，我就觉得 RSS 没有多大趣味，就好像子期死后伯牙摔琴一样。但是，没有 RSS 提醒的话，还真不知道谁的博客更新了，于是就勉强用 feedly 凑合。眼看我的新网站构架基本完成，就在 feedly 里订阅了一下自己的网站，输入 pzhao.org，发现没找到。嗯？研究一下才明白，我的主页完整地址是：
+自从 Google Reader 死后，我就觉得 RSS 没有多大趣味，就好像子期死后伯牙摔琴一样。但是，没有 RSS 提醒的话，还真不知道谁的博客更新了，于是就勉强用 feedly 凑合。眼看我的新网站构架基本完成，就在 feedly 里订阅了一下自己的网站，输入 pzhao.org，发现没找到。嗯？研究一下才明白，我的主页完整地址是：
 http://pzhao.org/zh/这个路径对应的本地文件夹下面，不仅有个index.html，还有个index.xml，后者就是 RSS 订阅的文件。所以，在feedly添加：
 http://pzhao.org/zh/index.xml就把我的新网站添进去了。这是订阅全站。如果只想订阅其中的博客，或新发表的学术文章，或新做的报告，那么：
 http://pzhao.org/zh/post/index.xmlhttp://pzhao.org/zh/publication/index.xmlhttp://pzhao.org/zh/talk/index.xml这个RSS链接，我该放到主页的什么位置，来方便网友订阅呢？我决定放到我的头像下面的社交按钮里。
@@ -924,7 +905,7 @@ http://pzhao.org/zh/post/index.xmlhttp://pzhao.org/zh/publication/index.xmlhtt
       
       <guid>https://openr.netlify.com/zh/blog/hugo-academic-summary/</guid>
       <description>在 RStudio 里用 R blogdown 来维护网站时，可以通过点击工具栏的 Addins - New Post 来创建新帖子，很方便。但是，如果用的是 Hugo 的 academic 主题，那么创建的新帖子在网站首页会显示全文，不大好看，尤其是全文很长的时候，根本就不像个首页了。这是因为，academic 首页的 posts 模块默认显示文摘。如果没有为每篇帖子设置文摘，就会显示全文。而上面说的创建新帖的方法里，并没有设置文摘的选项。那么，文摘在哪里设置呢？
-HUGOMORE42 直接说答案：手动在新帖的YAML文件头添加一行：
+直接说答案：手动在新帖的YAML文件头添加一行：
 summary: &amp;quot;我的文摘别太长。&amp;quot;答案来自blogdown 项目主页。
 就这么个小问题，让我走了点弯路。我发现问题后，首先观察了一下主题自带的示例文档，文件头是这样的：
 +++date = &amp;quot;2016-04-20T11:00:00&amp;quot;draft = falsetags = [&amp;quot;academic&amp;quot;, &amp;quot;hugo&amp;quot;]title = &amp;quot;Customizing the homepage with widgets&amp;quot;math = falsesummary = &amp;quot;&amp;quot;&amp;quot;Enable/disable and configure widgets to customize your homepage.&amp;quot;&amp;quot;&amp;quot;+++跟 R blogdown 生成的 .md 和 .Rmd 文件的文件头不同，这个文件头居然是用前后各三个加号表示的。里面的summary开始数三行，就是用来设置文摘的。
@@ -938,7 +919,7 @@ summary: &amp;quot;我的文摘别太长。&amp;quot;答案来自blogdown 项�
       
       <guid>https://openr.netlify.com/zh/blog/hogo-disques-problem/</guid>
       <description>今天，复活节假期前夕，同事们都休假了。我虽然在办公室，却无心上班，发了一会儿呆，想想与其痛苦地工作，不如快乐地解决一下新网站的一个小问题：disqus 评论框的加载。
-HUGOMORE42 用 R blogdown 打建好站，disqus评论框就一直没成功加载过。后来听说是config.toml里 disqus shortname指的不是我的disqus ID，而是要专门设置一下， 我说“啊,还有这事儿？”于是就设置了一下，但是仍然不能成功加载。这个问题放了几天，今天心血来潮一搜，嗯，兴许是路径的问题，于是就把config.toml开头的路径改为
+用 R blogdown 打建好站，disqus评论框就一直没成功加载过。后来听说是config.toml里 disqus shortname指的不是我的disqus ID，而是要专门设置一下， 我说“啊,还有这事儿？”于是就设置了一下，但是仍然不能成功加载。这个问题放了几天，今天心血来潮一搜，嗯，兴许是路径的问题，于是就把config.toml开头的路径改为
 baseurl = &amp;quot;http://www.pzhao.org&amp;quot;# relativeurls = true然后运行R语言的建站函数：
 blogdown::build_site(local=FALSE)注意！此处千万不要运行blogdown::serve_site()，不然新生成的文件就又没法加载 Disqus 了。网上说是serve_site()忽略了config.toml里的某些设置而造成的。我不懂，总之就是建站函数运行完就直接上传。
 然后GitHub同步，几秒钟后，Netlify上完成了更新，Disqus评论框就乖乖出现了。
@@ -972,12 +953,13 @@ blogdown::build_site(local=FALSE)注意！此处千万不要运行blogdown::ser
       <guid>https://openr.netlify.com/zh/blog/r-blogdown/</guid>
       <description>本文收录在《学 R 》一书的附录中。
 互联网时代有个自己的网站，就好像真实世界里有了自己的房子（服务器）和固定地址（域名）；自我介绍时附上自己的网站，就像生活里邀请朋友来访或者职场上递上名片，都甚为方便。然而，建立一个网站并不容易，涉及诸多领域的知识和技能，门槛比较高。好在，我们有万能的R语言，搭建网站只需几分钟，而并不需要多少网络知识。你甚至不用懂 R 语言是什么，照我下面说的做就行，包教包会，学不会免费再教。
-HUGOMORE42 这里，我提供两个示范，演示如何使用 R 语言的 blogdown 扩展包1，用来搭建一个个人博客和一个科研小组网站。截至本文成稿之日，blogdown 含苞待放，尚未正式发布，但是已经能够正常安装使用了。我们来尝尝鲜，提前一睹她的芳容。
+这里，我提供两个示范，演示如何使用 R 语言的 blogdown 扩展包1，用来搭建一个个人博客和一个科研小组网站。截至本文成稿之日，blogdown 含苞待放，尚未正式发布，但是已经能够正常安装使用了。我们来尝尝鲜，提前一睹她的芳容。
 R blogdown 简介和安装R blogdown 是什么
 R语言的一个扩展包，用来制作网站的工具。可以用非常简洁的方式快速搭建静态网页构成的网站。虽然名字里有“博客”（blog）字样，但并不仅限于博客。非常适合搭建一个科研小组的展示窗口。基于 markdown 扩展语法，可以在网页中方便地插入图表、脚注、数学公式、R 代码等元素。非常容易将 bookdown 生成的论文转化成网页展示。非常易于维护，迁移，备份。本书的官方网站就是用 R blogdown 搭建的。网站里给大家提供的 R 示例代码、试读章节、勘误表等，都是直接从书稿中拷贝粘贴到文本文件里，然后运行一下 blogdown 的指令，网站就自动更新了。
 安装
 blogdown 的背景平台是 R 语言，用户界面首选 RStudio ，产生的网站框架是 Hugo ，掰手指头数一数，要安装4样东西，略显繁琐，但并不难，一劳永逸。安装方式如下：
-R。去R的服务器CRAN，点击Download R for Windows（其他操作系统的用户请自便），在打开的新网页最上方点击base，就找到下载链接了。下载完毕后安装，一路“下一步”的傻瓜式安装即可。RStudio。去官网下载安装文件运行即可。blogdown。运行RStudio，在左上面板的代码窗口输入并运行以下代码：if(!require(devtools)) install.packages(&amp;#39;devtools&amp;#39;)devtools::install_github(&amp;#39;rstudio/blogdown&amp;#39;)解释一下：由于 blogdown 目前只发布到了 GitHub 服务器上，尚未发布到CRAN，所以上面第一条代码先安装开发工具 devtools 包，第二行用这个包的install_github() 函数从 GitHub 安装。</description>
+R。去R的服务器CRAN，点击Download R for Windows（其他操作系统的用户请自便），在打开的新网页最上方点击base，就找到下载链接了。下载完毕后安装，一路“下一步”的傻瓜式安装即可。RStudio。去官网下载安装文件运行即可。if(!require(devtools)) install.packages(&amp;#39;devtools&amp;#39;)devtools::install_github(&amp;#39;rstudio/blogdown&amp;#39;)解释一下：由于 blogdown 目前只发布到了 GitHub 服务器上，尚未发布到CRAN，所以上面第一条代码先安装开发工具 devtools 包，第二行用这个包的install_github() 函数从 GitHub 安装。
+blogdown::install_hugo()安装完毕。</description>
     </item>
     
     <item>
@@ -1072,7 +1054,7 @@ blogdown 的背景平台是 R 语言，用户界面首选 RStudio ，产生的�
       <pubDate>Tue, 14 Mar 2017 00:00:00 +0000</pubDate>
       
       <guid>https://openr.netlify.com/zh/blog/bookdown-cheatsheet/</guid>
-      <description>快速开始R bookdown 是什么一个用来写书写文章的软件。比Word更美观，比LaTeX更易用，比Markdown格式更丰富。可以方便地插入目录、图表、交叉引用、脚注、索引。可以方便地插入公式、参考文献、R代码。可以生成漂亮的pdf、word和网页文件。撰写可重复性报告的不二之选。HUGOMORE42 安装下载R并安装。下载RStudio并安装。下载CTEX并安装。建议安装完整版。下载Pandoc并安装。运行RStudio。在左上面板的代码窗口输入并运行以下代码（安装bookdown扩展包）：install.packages(&amp;quot;bookdown&amp;quot;)install.packages(&amp;#39;servr&amp;#39;)好了，安装完毕。
+      <description>快速开始R bookdown 是什么一个用来写书写文章的软件。比Word更美观，比LaTeX更易用，比Markdown格式更丰富。可以方便地插入目录、图表、交叉引用、脚注、索引。可以方便地插入公式、参考文献、R代码。可以生成漂亮的pdf、word和网页文件。撰写可重复性报告的不二之选。安装下载R并安装。下载RStudio并安装。下载CTEX并安装。建议安装完整版。下载Pandoc并安装。运行RStudio。在左上面板的代码窗口输入并运行以下代码（安装bookdown扩展包）：install.packages(&amp;quot;bookdown&amp;quot;)install.packages(&amp;#39;servr&amp;#39;)好了，安装完毕。
 从模板开始下载模板文档（到下载页面点击Clone or download - Download ZIP）：如果你要写英文文档，那么下载通用模板;如果你要写中文文档，那么下载中文模板。将模板文档解压缩到任意文件夹。
 在解压缩后得到的文件里找到扩展名为.Rproj的文件。双击，默认会用RSudio打开。
 在RStudio右上面板点击Build标签，再点击build book。好了，模板书出现在名为_book的子文件夹里。
@@ -1089,7 +1071,7 @@ blogdown 的背景平台是 R 语言，用户界面首选 RStudio ，产生的�
       
       <guid>https://openr.netlify.com/zh/blog/inresistible-bookdown/</guid>
       <description>最近，我打算把博客上关于R语言的帖子整理成一本书，希望弄得帅气一点，整齐一点，将来容易维护一点。涌进脑子的第一个念头是 \(\LaTeX\) ，第二个念头是想吐。
-HUGOMORE42 是的，虽然我推崇 \(\LaTeX\) ，觉得这个工具排出来的文档很漂亮，但自从弄完博士论文1 之后，除了帮别人备份一下博客2 、往论文里插几个公式和玩玩吉他谱3，我再也没碰过她。惰性开始代替折腾，我宁可点点鼠标写出一份不太美观的Word文档，也不想面对 \(\LaTeX\) 那让人头疼的代码。大概我是真上了岁数罢。
+是的，虽然我推崇 \(\LaTeX\) ，觉得这个工具排出来的文档很漂亮，但自从弄完博士论文1 之后，除了帮别人备份一下博客2 、往论文里插几个公式和玩玩吉他谱3，我再也没碰过她。惰性开始代替折腾，我宁可点点鼠标写出一份不太美观的Word文档，也不想面对 \(\LaTeX\) 那让人头疼的代码。大概我是真上了岁数罢。
 对于 \(\LaTeX\)，我想自己的内心深处是怀有恐惧的。她的美丽让我着迷，她的复杂令人生畏。
 所以，这次整理博客，我决定在Word里做。用了这么多年，对Word的秉性我算是略知一二，从一开始就用主控文档和子文档的方式管理，以防单个文档太大而死机；从标题到R代码，我预先都设置好了样式以及样式的快捷键，方便调整格式；每写几句话，就左手抽筋一样ctrl+s一下，以防万一。其间，发现帖子里有些R代码要修改调试，我就咬牙忍着在RStudio和Word之间频繁拷贝粘贴的煎熬。反正换回 \(\LaTeX\) 也是一样想吐，既来之则安之，嫁鸡随鸡嫁狗随狗吧。
 我天真地以为，这样就万无一失了。
@@ -1108,7 +1090,7 @@ HUGOMORE42 是的，虽然我推崇 \(\LaTeX\) ，觉得这个工具排出来的
 bookdown是可以直接导出为word文档的。这么重要的功能，却隐藏得很深，在官方文档里都没有强调。导出方法是，在_output.yml里添加一行：
 bookdown::word_document2: default 注意，default这个词是不能少的，不管它是不是默认。我也不知道为什么。
 导出的word文档相当令人满意，参考文献的版式、图表的交叉引用都堪称完美。唯一不足之处，是公式的编号和交叉引用。bookdown的官方文档5给出的公式书写方案是，利用 \(\LaTeX\) 的公式环境来编号和引用，这一点在生成pdf时没问题，但生成word时，会发现别说编号，连公式本身都消失了。这大概是因为pandoc未能将公式环境正确转换的缘故。解决办法是，不使用公式环境，而使用行内公式（即公式前后有一个美元符号），公式前面用圆括号里加公式标签就可以了。例如，输入：
-(@eq-mc) $E = mc^2$I like Eq.</description>
+(@eq-mc) $E = mc^2$I like Eq. (@eq-mc) so much that I am falling love with her.</description>
     </item>
     
     <item>

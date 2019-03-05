@@ -4,7 +4,7 @@ author: 赵鹏
 date: '2017-04-15'
 slug: hugo-academic-summary
 categories: []
-tags: ["R", "blogdown", "post"]
+tags: ["R", "blogdown"]
 summary: "academic 首页的 posts 模块默认显示文摘。如果没有为每篇帖子设置文摘，就会显示全文。那么，文摘在哪里设置呢？"
 banner: img/banners/logo-openr.png
 ---

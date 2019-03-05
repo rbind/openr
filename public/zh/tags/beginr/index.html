@@ -57,6 +57,42 @@
   <meta property="og:url" content="/zh/tags/beginr//" />
   <meta property="og:image" content="img/logo.png" />
 
+  <script type="text/javascript"
+        async
+        src="https://cdn.bootcss.com/mathjax/2.7.3/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$'], ['\[\[','\]\]']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+});
+
+MathJax.Hub.Queue(function() {
+    
+    
+    
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i = 0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+});
+</script>
+
+<style>
+code.has-jax {
+    font: inherit;
+    font-size: 100%;
+    background: inherit;
+    border: inherit;
+    color: #515151;
+}
+</style>
+
 </head>
 
 
@@ -197,12 +233,12 @@
                                             <a href="https://openr.netlify.com/zh/blog/beginr-released/"><i class="fa fa-calendar-o"></i> June 23, 2017</a>
                                         </p>
                                     </div>
-                                    <p class="intro">又一次高兴地宣布, 我的 R 语言扩展包 ‘beginr’ (Zhao 2017a) 在 CRAN 正式发布了.
-HUGOMORE42 简介beginr是我为 R 语言初学者和自己写的工具包, 是我这些年来收集和自己编写的一些简化操作的函数和备忘录, 可能对中级用户也有帮助. 其实这个包的文档我写得不够详细, 有些函数还没来及整理进去, 之所以匆匆发布, 是想先把 ‘beginr’ 这个名字给占住. 毕竟, 我中意的名字如 ‘learnr’, ’startr’都被别人用过了.
-安装方法：
-# 稳定版：install.packages(&#39;beginr&#39;)# 开发版：devtools::install_github(&quot;pzhaonet/beginr&quot;)下面分类介绍一下其中的函数.
-备忘函数我初学 R 的时候用 plot() 作图时, 常常忘记不同形状数据点(pch)对应的编号, 实线虚线(lty)的编号, 散点图类型(type)的代码, 以及最难选择的颜色代码. 每次忘了都要上网搜一下. 现在, beginr 里提供了 plotpch(), plotlty(), plottype(), plotcolors(), plotcolorbar()等函数, 想不起来的时候运行一下就行了.
-beginr::plotpch()beginr::plotlty()beginr::plottype()beginr::plotcolors()beginr::plotcolorbar()快速作图函数我常常需要做线性拟合, 每次又是作图又是添加拟合方程, 繁琐. 现在, beginr 里的一个 plotlm()函数就搞定.</p>
+									      
+      我为 R 语言初学者写的工具包，可能对中级用户也有帮助，包含了一些简化操作的函数和备忘录。
+      
+	  
+
+									
                                     <p class="read-more"><a href="https://openr.netlify.com/zh/blog/beginr-released/" class="btn btn-template-main">继续阅读</a>
                                     </p>
                                 </div>
@@ -266,7 +302,7 @@ beginr::plotpch()beginr::plotlty()beginr::plottype()beginr::plotcolors()begi
     <div class="panel-body">
         <ul class="nav nav-pills nav-stacked">
             
-            <li><a href="https://openr.netlify.com/categories/%e6%9c%aa%e5%88%86%e7%b1%bb">未分类 (7)</a>
+            <li><a href="https://openr.netlify.com/categories/xuer">xuer (16)</a>
             </li>
             
         </ul>
@@ -288,13 +324,7 @@ beginr::plotpch()beginr::plotlty()beginr::plottype()beginr::plotcolors()begi
     <div class="panel-body">
         <ul class="tag-cloud">
             
-            <li><a href="https://openr.netlify.com/tags/advr"><i class="fa fa-tags"></i> advr</a>
-            </li>
-            
             <li><a href="https://openr.netlify.com/tags/beginr"><i class="fa fa-tags"></i> beginr</a>
-            </li>
-            
-            <li><a href="https://openr.netlify.com/tags/blog"><i class="fa fa-tags"></i> blog</a>
             </li>
             
             <li><a href="https://openr.netlify.com/tags/blogdown"><i class="fa fa-tags"></i> blogdown</a>
@@ -306,22 +336,7 @@ beginr::plotpch()beginr::plotlty()beginr::plottype()beginr::plotcolors()begi
             <li><a href="https://openr.netlify.com/tags/bookdownplus"><i class="fa fa-tags"></i> bookdownplus</a>
             </li>
             
-            <li><a href="https://openr.netlify.com/tags/css"><i class="fa fa-tags"></i> css</a>
-            </li>
-            
-            <li><a href="https://openr.netlify.com/tags/drposter"><i class="fa fa-tags"></i> drposter</a>
-            </li>
-            
-            <li><a href="https://openr.netlify.com/tags/git"><i class="fa fa-tags"></i> git</a>
-            </li>
-            
-            <li><a href="https://openr.netlify.com/tags/hugo"><i class="fa fa-tags"></i> hugo</a>
-            </li>
-            
             <li><a href="https://openr.netlify.com/tags/latex"><i class="fa fa-tags"></i> latex</a>
-            </li>
-            
-            <li><a href="https://openr.netlify.com/tags/linux"><i class="fa fa-tags"></i> linux</a>
             </li>
             
             <li><a href="https://openr.netlify.com/tags/markdown"><i class="fa fa-tags"></i> markdown</a>
@@ -342,9 +357,6 @@ beginr::plotpch()beginr::plotlty()beginr::plottype()beginr::plotcolors()begi
             <li><a href="https://openr.netlify.com/tags/post"><i class="fa fa-tags"></i> post</a>
             </li>
             
-            <li><a href="https://openr.netlify.com/tags/postr"><i class="fa fa-tags"></i> postr</a>
-            </li>
-            
             <li><a href="https://openr.netlify.com/tags/r"><i class="fa fa-tags"></i> r</a>
             </li>
             
@@ -357,10 +369,7 @@ beginr::plotpch()beginr::plotlty()beginr::plottype()beginr::plotcolors()begi
             <li><a href="https://openr.netlify.com/tags/steemr"><i class="fa fa-tags"></i> steemr</a>
             </li>
             
-            <li><a href="https://openr.netlify.com/tags/teaching"><i class="fa fa-tags"></i> teaching</a>
-            </li>
-            
-            <li><a href="https://openr.netlify.com/tags/utopian-io"><i class="fa fa-tags"></i> utopian-io</a>
+            <li><a href="https://openr.netlify.com/tags/tutorial"><i class="fa fa-tags"></i> tutorial</a>
             </li>
             
             <li><a href="https://openr.netlify.com/tags/word"><i class="fa fa-tags"></i> word</a>
@@ -369,10 +378,13 @@ beginr::plotpch()beginr::plotlty()beginr::plottype()beginr::plotcolors()begi
             <li><a href="https://openr.netlify.com/tags/xaringan"><i class="fa fa-tags"></i> xaringan</a>
             </li>
             
-            <li><a href="https://openr.netlify.com/tags/%e5%90%89%e4%bb%96"><i class="fa fa-tags"></i> 吉他</a>
+            <li><a href="https://openr.netlify.com/tags/%e5%ad%a6"><i class="fa fa-tags"></i> 学</a>
             </li>
             
             <li><a href="https://openr.netlify.com/tags/%e5%ad%a6-r"><i class="fa fa-tags"></i> 学-r</a>
+            </li>
+            
+            <li><a href="https://openr.netlify.com/tags/%e5%ad%a6r"><i class="fa fa-tags"></i> 学r</a>
             </li>
             
         </ul>

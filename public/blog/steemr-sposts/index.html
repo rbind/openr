@@ -57,6 +57,42 @@
   <meta property="og:url" content="/blog/steemr-sposts//" />
   <meta property="og:image" content="img/logo-small.png" />
 
+  <script type="text/javascript"
+        async
+        src="https://cdn.bootcss.com/mathjax/2.7.3/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$'], ['\[\[','\]\]']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+});
+
+MathJax.Hub.Queue(function() {
+    
+    
+    
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i = 0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+});
+</script>
+
+<style>
+code.has-jax {
+    font: inherit;
+    font-size: 100%;
+    background: inherit;
+    border: inherit;
+    color: #515151;
+}
+</style>
+
 </head>
 
 
@@ -170,14 +206,14 @@
 
                     <div class="col-md-9" id="blog-post">
 
-                        <p class="text-muted text-uppercase mb-small text-right">By <a href="#">dapeng</a> | September 8, 2018</p>
+                        <p class="text-muted text-uppercase mb-small text-right">By <a href="#">赵鹏</a> | September 8, 2018</p>
 
                         <div id="post-content">
                           <ul>
-<li>A new function<code>sposts()</code> displays a Shiny app, which is a user friendly interactive UI to show all the posts of a give Steemian&rsquo;s ID.  Analysis diagrams are plotted as well, including the distribution of the post payout and votes, the active hour of the Steemian&rsquo;s posting, and the time series of the growth of the cumulative post number, payout, and votes.<br /></li>
+<li>A new function<code>sposts()</code> displays a Shiny app, which is a user friendly interactive UI to show all the posts of a give Steemian's ID.  Analysis diagrams are plotted as well, including the distribution of the post payout and votes, the active hour of the Steemian's posting, and the time series of the growth of the cumulative post number, payout, and votes.<br /></li>
 </ul>
 
-<p>Shiny is an R package that makes it easy to build interactive web apps straight from R. It is very easy to use even for non-R users. The single command <code>sposts()</code>  displays a webpage, on which a flexible data frame shows the data of all the posts of the given Steemian&rsquo;s ID. The users can easily filter, order or search each column.</p>
+<p>Shiny is an R package that makes it easy to build interactive web apps straight from R. It is very easy to use even for non-R users. The single command <code>sposts()</code>  displays a webpage, on which a flexible data frame shows the data of all the posts of the given Steemian's ID. The users can easily filter, order or search each column.</p>
 
 <p><img src="https://cdn.steemitimages.com/DQmeJTjCY9tCNFdgtD8Jq3YoVprnoBfD9BK7D8vcTE4gYvn/posts.png" alt="posts.png" /></p>
 
@@ -193,9 +229,9 @@
 
 <h4 id="how-did-i-implement-them">How did I implement them?</h4>
 
-<p>I added the new function <code>sposts()</code> in  &lsquo;R/shiny.r&rsquo;, as well as the internal functions <code>sposts_ui()</code> and <code>sposts_server()</code>  which are the UI function and server function for <code>sposts()</code>, the function <code>repcalc()</code> which calculates the reputation of the given Steemian, and the function <code>skewness()</code> to calculate whether a distribution is normal.</p>
+<p>I added the new function <code>sposts()</code> in  'R/shiny.r', as well as the internal functions <code>sposts_ui()</code> and <code>sposts_server()</code>  which are the UI function and server function for <code>sposts()</code>, the function <code>repcalc()</code> which calculates the reputation of the given Steemian, and the function <code>skewness()</code> to calculate whether a distribution is normal.</p>
 
-<p>I added the new function <code>gur()</code> in &lsquo;R/get.r&rsquo;.</p>
+<p>I added the new function <code>gur()</code> in 'R/get.r'.</p>
 
 <p>Each part of the functions are well documented. Other files were updated automatically by compilation.</p>
 
@@ -261,10 +297,10 @@
     <div class="panel-body">
         <ul class="tag-cloud">
             
-            <li><a href="https://openr.netlify.com/tags/beginr"><i class="fa fa-tags"></i> beginr</a>
+            <li><a href="https://openr.netlify.com/tags/advr"><i class="fa fa-tags"></i> advr</a>
             </li>
             
-            <li><a href="https://openr.netlify.com/tags/blogdown"><i class="fa fa-tags"></i> blogdown</a>
+            <li><a href="https://openr.netlify.com/tags/beginr"><i class="fa fa-tags"></i> beginr</a>
             </li>
             
             <li><a href="https://openr.netlify.com/tags/bookdown"><i class="fa fa-tags"></i> bookdown</a>
@@ -279,13 +315,10 @@
             <li><a href="https://openr.netlify.com/tags/mindr"><i class="fa fa-tags"></i> mindr</a>
             </li>
             
+            <li><a href="https://openr.netlify.com/tags/news"><i class="fa fa-tags"></i> news</a>
+            </li>
+            
             <li><a href="https://openr.netlify.com/tags/pinyin"><i class="fa fa-tags"></i> pinyin</a>
-            </li>
-            
-            <li><a href="https://openr.netlify.com/tags/post"><i class="fa fa-tags"></i> post</a>
-            </li>
-            
-            <li><a href="https://openr.netlify.com/tags/postr"><i class="fa fa-tags"></i> postr</a>
             </li>
             
             <li><a href="https://openr.netlify.com/tags/r"><i class="fa fa-tags"></i> r</a>
@@ -301,9 +334,6 @@
             </li>
             
             <li><a href="https://openr.netlify.com/tags/tutorial"><i class="fa fa-tags"></i> tutorial</a>
-            </li>
-            
-            <li><a href="https://openr.netlify.com/tags/utopian-io"><i class="fa fa-tags"></i> utopian-io</a>
             </li>
             
         </ul>

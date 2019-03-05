@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tutorial on Open R</title>
+    <link>https://openr.netlify.com/zh/tags/tutorial/</link>
+    <description>Recent content in Tutorial on Open R</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Mon, 28 Jan 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://openr.netlify.com/zh/tags/tutorial/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>往 ppt 里插入 500 张图片的小伎俩</title>
+      <link>https://openr.netlify.com/zh/blog/rstudio-ppt/</link>
+      <pubDate>Mon, 28 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://openr.netlify.com/zh/blog/rstudio-ppt/</guid>
+      <description>&lt;p&gt;今天要做个 ppt，内涵几十张照片，每页一张。
+本来想手动，突然想起来，新版 RStudio 夹带了 新版 pandoc， 而 pandoc &amp;gt; 2.0.5， 可以用 markdown 做 ppt。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>如何在 R 语言相关论坛求助</title>
+      <link>https://openr.netlify.com/zh/blog/how-to-call-for-help/</link>
+      <pubDate>Wed, 24 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://openr.netlify.com/zh/blog/how-to-call-for-help/</guid>
+      <description>&lt;p&gt;求助！求助！十万火急！&lt;/p&gt;
+
+&lt;p&gt;在 R 语言相关论坛发布求助帖之后，是不是急着等人响应？可惜惊叹号没啥用。如果按以下格式发帖，效果会胜过十万个惊叹号。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>给 Hugo 网站的插图添加阴影</title>
+      <link>https://openr.netlify.com/zh/blog/shadowed-images/</link>
+      <pubDate>Wed, 26 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://openr.netlify.com/zh/blog/shadowed-images/</guid>
+      <description>&lt;p&gt;最近一年多，有个东西一直困扰着我，就像半夜酣睡时飞来一只蚊子，时不时在耳朵边哼哼几声，很烦。挥手赶走它继续睡，过一会儿又过来哼哼。好几次我犹豫着要不要爬起来彻底消灭它，想着想着就又睡着了，于是就一直凑合。&lt;/p&gt;
+
+&lt;p&gt;这只蚊子就是我自己开发的 bookdownplus 包。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

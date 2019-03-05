@@ -57,6 +57,42 @@
   <meta property="og:url" content="/zh/blog/beginr-released//" />
   <meta property="og:image" content="img/logo.png" />
 
+  <script type="text/javascript"
+        async
+        src="https://cdn.bootcss.com/mathjax/2.7.3/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$'], ['\[\[','\]\]']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+});
+
+MathJax.Hub.Queue(function() {
+    
+    
+    
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i = 0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+});
+</script>
+
+<style>
+code.has-jax {
+    font: inherit;
+    font-size: 100%;
+    background: inherit;
+    border: inherit;
+    color: #515151;
+}
+</style>
+
 </head>
 
 
@@ -177,10 +213,6 @@
 
 
 <p>又一次高兴地宣布, 我的 R 语言扩展包 ‘beginr’ <span class="citation">(Zhao 2017a)</span> 在 CRAN <a href="https://cran.r-project.org/web/packages/beginr/">正式发布</a>了.</p>
-
-
-HUGOMORE42
-
 <p><img src="http://cranlogs.r-pkg.org/badges/grand-total/beginr" /></p>
 <div id="section" class="section level1">
 <h1>简介</h1>
@@ -214,12 +246,12 @@ y &lt;- 1:10 + rnorm(10)
 beginr::plotlm(x, y)</code></pre>
 <p><img src="/blog/2017-06-23-beginr_released.zh_files/figure-html/unnamed-chunk-2-1.png" width="672" /></p>
 <pre><code>## [[1]]
-##              Estimate Std. Error   t value     Pr(&gt;|t|)
-## (Intercept) 0.3707549  0.7079095 0.5237321 6.146597e-01
-## x           1.0136694  0.1140899 8.8848263 2.036962e-05
+##               Estimate Std. Error    t value     Pr(&gt;|t|)
+## (Intercept) -0.1819669 0.43765463 -0.4157773 6.885019e-01
+## x            1.0275024 0.07053443 14.5673882 4.833814e-07
 ## 
 ## [[2]]
-## [1] 0.9079827</code></pre>
+## [1] 0.9636708</code></pre>
 <p>经常需要了解一组数据的分布, 看看是不是正态分布. beginr 里的 <code>plothist()</code> 函数不仅做出直方图和平滑曲线, 并且标出中值, 中位数, 四分位数, 标准偏差, 样本数, 以及用来判断是否正态分布的 skewness 值.</p>
 <pre class="r"><code>x &lt;- rnorm(10000)
 beginr::plothist(x)</code></pre>
@@ -254,19 +286,19 @@ beginr::errorbar(x, y, yupper = 0.1, ylower = 0.1)</code></pre>
 <pre class="r"><code>df &lt;- data.frame(a = 1:10, b = 1:10 + rnorm(10), c = 1:10 + rnorm(10))
 beginr::lmdf(df)</code></pre>
 <pre><code>##   x y r.squared adj.r.squared  intercept     slope Std.Error.intercept
-## 1 a b 0.8620645     0.8448225  0.9770820 0.9686774           0.8500271
-## 2 a c 0.9525699     0.9466412 -0.3770247 1.0434183           0.5107664
-## 3 b a 0.8620645     0.8448225 -0.1108986 0.8899397           0.8785861
-## 4 b c 0.8315060     0.8104442 -0.5294441 0.9344013           1.0381224
-## 5 c a 0.9525699     0.9466412  0.6050633 0.9129319           0.4450179
-## 6 c b 0.8315060     0.8104442  1.5334649 0.8898810           0.8750889
+## 1 a b 0.9293045     0.9204676  0.7648914 0.8844211           0.5351325
+## 2 a c 0.8958252     0.8828034  0.5994454 0.7941498           0.5940972
+## 3 b a 0.9293045     0.9204676 -0.4148837 1.0507489           0.6368610
+## 4 b c 0.8292293     0.8078829  0.2791863 0.8328140           0.8305127
+## 5 c a 0.8958252     0.8828034 -0.1032314 1.1280305           0.7508729
+## 6 c b 0.8292293     0.8078829  0.6833192 0.9956956           0.8820067
 ##   Std.Error.slope t.intercept   t.slope Pr.intercept     Pr.slope
-## 1      0.13699427   1.1494716  7.070934    0.2835638 1.049675e-04
-## 2      0.08231745  -0.7381550 12.675542    0.4815101 1.410858e-06
-## 3      0.12585886  -0.1262239  7.070934    0.9026693 1.049675e-04
-## 4      0.14871269  -0.5100016  6.283265    0.6238195 2.370268e-04
-## 5      0.07202311   1.3596383 12.675542    0.2110242 1.410858e-06
-## 6      0.14162716   1.7523533  6.283265    0.1178102 2.370268e-04</code></pre>
+## 1      0.08624440   1.4293497 10.254823    0.1907680 7.032196e-06
+## 2      0.09574743   1.0090023  8.294215    0.3425139 3.364029e-05
+## 3      0.10246387  -0.6514509 10.254823    0.5330185 7.032196e-06
+## 4      0.13362029   0.3361614  6.232691    0.7453964 2.503660e-04
+## 5      0.13600208  -0.1374818  8.294215    0.8940472 3.364029e-05
+## 6      0.15975372   0.7747324  6.232691    0.4607802 2.503660e-04</code></pre>
 <p>还有两个函数对<code>tapply()</code>进行了改善, 用来进行因子计算.</p>
 <pre class="r"><code>beginr::tapplydf()
 beginr::tapplydfv()</code></pre>
@@ -411,7 +443,7 @@ beginr::list2ascii(alist)</code></pre>
     <div class="panel-body">
         <ul class="nav nav-pills nav-stacked">
             
-            <li><a href="https://openr.netlify.com/categories/%e6%9c%aa%e5%88%86%e7%b1%bb">未分类 (7)</a>
+            <li><a href="https://openr.netlify.com/categories/xuer">xuer (16)</a>
             </li>
             
         </ul>
@@ -433,13 +465,7 @@ beginr::list2ascii(alist)</code></pre>
     <div class="panel-body">
         <ul class="tag-cloud">
             
-            <li><a href="https://openr.netlify.com/tags/advr"><i class="fa fa-tags"></i> advr</a>
-            </li>
-            
             <li><a href="https://openr.netlify.com/tags/beginr"><i class="fa fa-tags"></i> beginr</a>
-            </li>
-            
-            <li><a href="https://openr.netlify.com/tags/blog"><i class="fa fa-tags"></i> blog</a>
             </li>
             
             <li><a href="https://openr.netlify.com/tags/blogdown"><i class="fa fa-tags"></i> blogdown</a>
@@ -451,22 +477,7 @@ beginr::list2ascii(alist)</code></pre>
             <li><a href="https://openr.netlify.com/tags/bookdownplus"><i class="fa fa-tags"></i> bookdownplus</a>
             </li>
             
-            <li><a href="https://openr.netlify.com/tags/css"><i class="fa fa-tags"></i> css</a>
-            </li>
-            
-            <li><a href="https://openr.netlify.com/tags/drposter"><i class="fa fa-tags"></i> drposter</a>
-            </li>
-            
-            <li><a href="https://openr.netlify.com/tags/git"><i class="fa fa-tags"></i> git</a>
-            </li>
-            
-            <li><a href="https://openr.netlify.com/tags/hugo"><i class="fa fa-tags"></i> hugo</a>
-            </li>
-            
             <li><a href="https://openr.netlify.com/tags/latex"><i class="fa fa-tags"></i> latex</a>
-            </li>
-            
-            <li><a href="https://openr.netlify.com/tags/linux"><i class="fa fa-tags"></i> linux</a>
             </li>
             
             <li><a href="https://openr.netlify.com/tags/markdown"><i class="fa fa-tags"></i> markdown</a>
@@ -487,9 +498,6 @@ beginr::list2ascii(alist)</code></pre>
             <li><a href="https://openr.netlify.com/tags/post"><i class="fa fa-tags"></i> post</a>
             </li>
             
-            <li><a href="https://openr.netlify.com/tags/postr"><i class="fa fa-tags"></i> postr</a>
-            </li>
-            
             <li><a href="https://openr.netlify.com/tags/r"><i class="fa fa-tags"></i> r</a>
             </li>
             
@@ -502,10 +510,7 @@ beginr::list2ascii(alist)</code></pre>
             <li><a href="https://openr.netlify.com/tags/steemr"><i class="fa fa-tags"></i> steemr</a>
             </li>
             
-            <li><a href="https://openr.netlify.com/tags/teaching"><i class="fa fa-tags"></i> teaching</a>
-            </li>
-            
-            <li><a href="https://openr.netlify.com/tags/utopian-io"><i class="fa fa-tags"></i> utopian-io</a>
+            <li><a href="https://openr.netlify.com/tags/tutorial"><i class="fa fa-tags"></i> tutorial</a>
             </li>
             
             <li><a href="https://openr.netlify.com/tags/word"><i class="fa fa-tags"></i> word</a>
@@ -514,10 +519,13 @@ beginr::list2ascii(alist)</code></pre>
             <li><a href="https://openr.netlify.com/tags/xaringan"><i class="fa fa-tags"></i> xaringan</a>
             </li>
             
-            <li><a href="https://openr.netlify.com/tags/%e5%90%89%e4%bb%96"><i class="fa fa-tags"></i> 吉他</a>
+            <li><a href="https://openr.netlify.com/tags/%e5%ad%a6"><i class="fa fa-tags"></i> 学</a>
             </li>
             
             <li><a href="https://openr.netlify.com/tags/%e5%ad%a6-r"><i class="fa fa-tags"></i> 学-r</a>
+            </li>
+            
+            <li><a href="https://openr.netlify.com/tags/%e5%ad%a6r"><i class="fa fa-tags"></i> 学r</a>
             </li>
             
         </ul>

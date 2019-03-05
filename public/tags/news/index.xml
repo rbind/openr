@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>News on Open R</title>
+    <link>https://openr.netlify.com/tags/news/</link>
+    <description>Recent content in News on Open R</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 31 Jan 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://openr.netlify.com/tags/news/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>rosr News: a Shiny GUI and RStudio addin for choosing and creating sub-projects</title>
+      <link>https://openr.netlify.com/blog/rosr-shiny/</link>
+      <pubDate>Thu, 31 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://openr.netlify.com/blog/rosr-shiny/</guid>
+      <description>&lt;p&gt;&#39;rosr&#39; is an R package for creating reproducible academic project with integrated various academic elements, including data, bibliography, codes, images, manuscripts, dissertations, slides and so on. These elements are well connected so that they can be easily synchronized and updated. Users don&#39;t have to repeat copying and pasting their results and figures from time to time. It will be easy for the scientific researchers to use, even if they are R beginners, or even non-R-users.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>rosr: Create academic R markdown projects for open science and reproducible research</title>
+      <link>https://openr.netlify.com/blog/rosr/</link>
+      <pubDate>Mon, 28 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://openr.netlify.com/blog/rosr/</guid>
+      <description>&lt;p&gt;Weeks ago, I gave a short training course at one of the top institutes in the world. The course was called &#39;&lt;em&gt;R, Open Science and Reproducible Research&lt;/em&gt;&#39;, abbreviated as &lt;em&gt;ROSS&lt;/em&gt;. It was given to the academic researchers who were interested in R and reproducible research. The R markdown family, including &#39;rticles&#39;, &#39;bookdown&#39;, &#39;xaringan&#39; etc., were introduced. The audience were excited in the course. They felt, however, confused after the course by using these packages on their own work. It is not easy to connect their own work with the R Markdown ecosystem.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>[New Features on beginr] Automatically generate a self-contained package</title>
+      <link>https://openr.netlify.com/blog/beginr-features-packr/</link>
+      <pubDate>Sat, 26 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://openr.netlify.com/blog/beginr-features-packr/</guid>
+      <description>&lt;p&gt;Most R beginners think that developing an R package is a mission impossible. It is not true. With the new function &lt;code&gt;packr()&lt;/code&gt; , users can create a user-defined useful R packages easily. They can specify in &lt;code&gt;packr()&lt;/code&gt;a group of packages (e.g. foo_1, foo_2, foo_x) which they often use and the new package name, say &lt;code&gt;foobar&lt;/code&gt;, then a new package called &lt;code&gt;foobar&lt;/code&gt; will be generated.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>mindr v.1.2.0 released: universal function and directory tree</title>
+      <link>https://openr.netlify.com/blog/mindr-features-mm-tree/</link>
+      <pubDate>Sat, 26 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://openr.netlify.com/blog/mindr-features-mm-tree/</guid>
+      <description>&lt;p&gt;The new version 1.2.0 mainly brings four exciting features.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>rmd: Easily Install, Load and Explore the R Markdown Family</title>
+      <link>https://openr.netlify.com/blog/rmd/</link>
+      <pubDate>Sat, 26 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://openr.netlify.com/blog/rmd/</guid>
+      <description>&lt;p&gt;Since &#39;rmarkdown&#39; and &#39;knitr&#39;, more and more members (rticles, bookdown, mindr...) have been joining the R Markdown family. Users can write elegant reproducible documents, manuscripts, dissertations, books, blog posts, posters, and slides within the framework of R markdown. It is exciting, while the installation and maintenance becomes annoying. In the meanwhile, there are plenty of useful RStudio addins, which equip the RStudio IDE as a powerful markdown editor. However, these little tools are often hidden somewhere deep in the community, and it is difficult to dig them out.&lt;/p&gt;
+
+&lt;p&gt;With &#39;rmd&#39; you can easily explore, install, and load them for both R users and non-users. Furthermore, &#39;rmd&#39; provides a RStudio addin to explore the R Markdown family and install them with a single click.&lt;/p&gt;
+
+&lt;p&gt;Forget R, and enjoy the wonderful world of R Markdown.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>[R: New Features on mindr] New strategy of writing R comments. Conversion between .R scripts and .mm mind maps</title>
+      <link>https://openr.netlify.com/blog/mindr-r-mm/</link>
+      <pubDate>Sat, 17 Nov 2018 09:50:27 +0000</pubDate>
+      
+      <guid>https://openr.netlify.com/blog/mindr-r-mm/</guid>
+      <description>&lt;p&gt;Commit: &lt;a href=&#34;https://github.com/pzhaonet/mindr/commit/e82538b89421c314d1612affd2b24a62d4274165&#34;&gt;convertion between .Rmd, .R. and .mm&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;The new version 1.1.8 mainly brings two exciting features.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>[R pinyin: New Features] User customized dictionaries</title>
+      <link>https://openr.netlify.com/blog/pinyin-user-defined/</link>
+      <pubDate>Mon, 15 Oct 2018 14:34:03 +0000</pubDate>
+      
+      <guid>https://openr.netlify.com/blog/pinyin-user-defined/</guid>
+      <description>&lt;p&gt;The pinyin package intended to convert Chinese characters into pinyin. However, more demands were called by users. That was why the features of converting to four-corner codes and five-stroke codes (version 98) were added. After my previous update, the utopian moderator @justyy kindly &lt;a href=&#34;https://steemit.com/utopian-io/@justyy/re-dapeng-pinyin-wubi-20181012t201139924z&#34;&gt;suggested&lt;/a&gt; adding the Five-Stroke-86 as well. I totally agree, and I think there could be more.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>[R: New Features on pinyin] Convert Chinese Characters into Sijiao and Wubi codes</title>
+      <link>https://openr.netlify.com/blog/pinyin-wubi/</link>
+      <pubDate>Fri, 12 Oct 2018 13:31:42 +0000</pubDate>
+      
+      <guid>https://openr.netlify.com/blog/pinyin-wubi/</guid>
+      <description>&lt;h4 id=&#34;what-features-did-i-add&#34;&gt;What features did I add?&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Four times faster for converting.&lt;/li&gt;
+&lt;li&gt;At the beginning of the year 2018 I received an issue report by &lt;a href=&#34;https://github.com/pzhaonet/pinyin/issues/3#issue-295041288&#34;&gt;psychelzh&lt;/a&gt; about a polyphone error. Now a new pinyin library has been added, which more or less solved the polyphone problem.&lt;/li&gt;
+&lt;li&gt;Convert Chinese characters into Sijiao codes (literally &lt;a href=&#34;https://en.wikipedia.org/wiki/Four-Corner_Method&#34;&gt;four corner code&lt;/a&gt;).&lt;/li&gt;
+&lt;li&gt;and Wubi codes (literally &lt;a href=&#34;https://en.wikipedia.org/wiki/Wubi_method&#34;&gt;five-stroke&lt;/a&gt;).&lt;/li&gt;
+&lt;li&gt;Some minor bugs were fixed.&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    
+    <item>
+      <title>[R: New Features on mindr] Supports the new format  of  FreeMind. Displays mind maps directly. Supports bookdown projects.</title>
+      <link>https://openr.netlify.com/blog/mindr-bookdown/</link>
+      <pubDate>Thu, 11 Oct 2018 08:29:24 +0000</pubDate>
+      
+      <guid>https://openr.netlify.com/blog/mindr-bookdown/</guid>
+      <description>&lt;p&gt;In the recent months, I have received many kind feedbacks and helpful suggestions from mindr users. I did not improve or enhance mindr until the latest week. Now the new version 1.1.5 brings more exciting features.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>bookdownplus gallery: a web app for displaying and sharing bookdown templates</title>
+      <link>https://openr.netlify.com/blog/bookdownplus-gallery/</link>
+      <pubDate>Sun, 23 Sep 2018 16:34:39 +0000</pubDate>
+      
+      <guid>https://openr.netlify.com/blog/bookdownplus-gallery/</guid>
+      <description>&lt;p&gt;Many years ago, I collected some LaTeX templates when learning LaTeX. However, my interest in LaTeX was gone after submitting my PhD dissertation. I should have deleted these templates if they had not been so small. They would never be useful in the future, I thought.&lt;/p&gt;
+
+&lt;p&gt;In 2017, I started writing the book &lt;a href=&#34;https://xuer.pzhao.org&#34;&gt; &lt;em&gt;Learning R: R for Rookies&lt;/em&gt; &lt;/a&gt;. Unexpectedly, MS Word could not satisfy me with the typesetting. You know what I mean if you have experience (and pain) in writing a long book or dissertation with Word. Actually I suffered more, but I do not want to talk about it. I was sure that LaTeX could, but I would rather not use it.&lt;/p&gt;
+
+&lt;p&gt;Like a bolt out of the blue, I found &lt;a href=&#34;https://CRAN.R-project.org/package=bookdown&#34;&gt;bookdown&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>[New Features on steemr] Display all the posts of a give Steemian with statistics, and get the utopian review and upvote plan!</title>
+      <link>https://openr.netlify.com/blog/steemr-sposts/</link>
+      <pubDate>Sat, 08 Sep 2018 20:41:57 +0000</pubDate>
+      
+      <guid>https://openr.netlify.com/blog/steemr-sposts/</guid>
+      <description>&lt;ul&gt;
+&lt;li&gt;A new function&lt;code&gt;sposts()&lt;/code&gt; displays a Shiny app, which is a user friendly interactive UI to show all the posts of a give Steemian&#39;s ID.  Analysis diagrams are plotted as well, including the distribution of the post payout and votes, the active hour of the Steemian&#39;s posting, and the time series of the growth of the cumulative post number, payout, and votes.&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    
+    <item>
+      <title>[New Features on steemr]  Diagrams in the Shiny app for the statistics of the Steem CN community!</title>
+      <link>https://openr.netlify.com/blog/steemr-scner-diagrams/</link>
+      <pubDate>Fri, 07 Sep 2018 05:42:45 +0000</pubDate>
+      
+      <guid>https://openr.netlify.com/blog/steemr-scner-diagrams/</guid>
+      <description>&lt;p&gt;I added diagrams into the Shiny app &lt;code&gt;scner()&lt;/code&gt;. These diagrams include the word clouds of the Steemians of the CN community, as well as the histograms for the distributions according to the ESP, account value, online-days, etc..&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>[New Features on steemr] A Shiny app for the statistics of the Steem CN community!</title>
+      <link>https://openr.netlify.com/blog/steemr-scner/</link>
+      <pubDate>Thu, 06 Sep 2018 09:36:42 +0000</pubDate>
+      
+      <guid>https://openr.netlify.com/blog/steemr-scner/</guid>
+      <description>&lt;p&gt;A new function&lt;code&gt;scner()&lt;/code&gt; displays a Shiny app, which is a user friendly interactive UI for the statistics of a group of Steemians, hereby those who are active in the CN community. It has the potential to be used for other groups of Steemians with some simple modifications to this function.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>A template for Copernicus academic journals</title>
+      <link>https://openr.netlify.com/blog/bookdown-copernicus/</link>
+      <pubDate>Thu, 06 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://openr.netlify.com/blog/bookdown-copernicus/</guid>
+      <description>&lt;p&gt;This is a submission to the &lt;a href=&#34;https://blog.rstudio.com/2018/07/27/first-bookdown-contest/&#34;&gt;1st bookdown contest&lt;/a&gt;.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Write academic papers of Copernicus journals with R markdown syntax.&lt;/li&gt;
+&lt;li&gt;Support ~ 40 Copernicus journals.&lt;/li&gt;
+&lt;li&gt;Support both the two-columned pdf version and the discussion version.&lt;/li&gt;
+&lt;li&gt;Create multiple file formats, including .pdf, single .html, gitbook, .md, .epub, docx.&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    
+    <item>
+      <title>[New Features on steemr] Diagrams in the follower shiny app!</title>
+      <link>https://openr.netlify.com/blog/steemr-sfollow-diagrams/</link>
+      <pubDate>Thu, 16 Aug 2018 12:57:21 +0000</pubDate>
+      
+      <guid>https://openr.netlify.com/blog/steemr-sfollow-diagrams/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://steemit.com/utopian-io/@dapeng/steemr-sfollow#@codingdefined/re-dapeng-steemr-sfollow-20180711t113112798z&#34;&gt;A comment&lt;/a&gt; by the utopian.io moderator mentioned that the wordings of both &#39;followers but not following&#39;, &#39;following but not followers&#39; are confusing. Although they are the official callings that I cannot change, a diagram could help. Therefore, I added a Venn diagram into the &lt;code&gt;sfollow()&lt;/code&gt;shiny app.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>[New Features on steemr] Functions for a user friendly UI as an interactive follower report!</title>
+      <link>https://openr.netlify.com/blog/steemr-sfollow/</link>
+      <pubDate>Tue, 10 Jul 2018 19:45:03 +0000</pubDate>
+      
+      <guid>https://openr.netlify.com/blog/steemr-sfollow/</guid>
+      <description>&lt;p&gt;A new function&lt;code&gt;sfollow()&lt;/code&gt; displays a Shiny app, which is a user friendly    interactive UI as a follower report.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>[New Features on steemr] Functions for delegation report and CNer report!</title>
+      <link>https://openr.netlify.com/blog/steemr-delegation-cner/</link>
+      <pubDate>Mon, 09 Jul 2018 12:26:30 +0000</pubDate>
+      
+      <guid>https://openr.netlify.com/blog/steemr-delegation-cner/</guid>
+      <description>&lt;h4 id=&#34;what-features-did-i-add&#34;&gt;What features did I add?&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;The new function&lt;code&gt;gspmv()&lt;/code&gt; retrieves the value of Steem per MVests from the server.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;The new function&lt;code&gt;gdelegation()&lt;/code&gt; retrieves the delegation data from the server, makes a summary, and plot a time series automatically.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    
+    <item>
+      <title>[New Features on steemr] Functions for saving the posts and building an independent blog site!</title>
+      <link>https://openr.netlify.com/blog/new-features-on-steemr-functions-for-saving-the-posts-and-building-a-independent-blog-site/</link>
+      <pubDate>Wed, 04 Jul 2018 11:58:18 +0000</pubDate>
+      
+      <guid>https://openr.netlify.com/blog/new-features-on-steemr-functions-for-saving-the-posts-and-building-a-independent-blog-site/</guid>
+      <description>&lt;ul&gt;
+&lt;li&gt;Do you want to backup your Steem posts in a local disk? The new function&lt;code&gt;bmd()&lt;/code&gt; (build markdown files) saves the posts in the local path as markdown files easily.&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    
+    <item>
+      <title>[New Features on steemr] Functions for accounts and comments report!</title>
+      <link>https://openr.netlify.com/blog/new-features-on-steemr-functions-for-accounts-and-comments-report/</link>
+      <pubDate>Tue, 03 Jul 2018 09:59:42 +0000</pubDate>
+      
+      <guid>https://openr.netlify.com/blog/new-features-on-steemr-functions-for-accounts-and-comments-report/</guid>
+      <description>&lt;h4 id=&#34;what-features-did-i-add&#34;&gt;What features did I add?&lt;/h4&gt;
+
+&lt;p&gt;New functions were added to the steemr pakcage, which now can retrieve the account data and the comment data and plot diagrams automatically.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>[New Features on steemr] Functions as vote reports!</title>
+      <link>https://openr.netlify.com/blog/steemr-vote/</link>
+      <pubDate>Wed, 27 Jun 2018 14:44:03 +0000</pubDate>
+      
+      <guid>https://openr.netlify.com/blog/steemr-vote/</guid>
+      <description>&lt;p&gt;&#39;&lt;a href=&#34;https://cran.r-project.org/package=steemr&#34;&gt;steemr&lt;/a&gt;&#39; is an open source R package for playing with Steem data in &lt;a href=&#34;https://en.wikipedia.org/wiki/R_(programming_language)&#34;&gt;R environment&lt;/a&gt;. It is used to download, post process, analyze,  and visualize Steem data on the basis of the powerful statistic power of R.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>[New Features on steemr] supports AppBase API and plots active hour diagrams!</title>
+      <link>https://openr.netlify.com/blog/new-features-on-steemr-supports-appbase-api-and-plots-active-hour-diagrams/</link>
+      <pubDate>Wed, 20 Jun 2018 10:44:24 +0000</pubDate>
+      
+      <guid>https://openr.netlify.com/blog/new-features-on-steemr-supports-appbase-api-and-plots-active-hour-diagrams/</guid>
+      <description>&lt;ul&gt;
+&lt;li&gt;I have submitted steemr to CRAN and now it is &lt;a href=&#34;https://CRAN.R-project.org/package=steemr&#34;&gt;available&lt;/a&gt;. Users can install steemr directly from CRAN:&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    
+    <item>
+      <title>[New Features on steemr] Now steemr supports SteemSQL queries!</title>
+      <link>https://openr.netlify.com/blog/steemr-steemsql/</link>
+      <pubDate>Mon, 18 Jun 2018 15:06:48 +0000</pubDate>
+      
+      <guid>https://openr.netlify.com/blog/steemr-steemsql/</guid>
+      <description>&lt;p&gt;In the recent week, steemr has been updated from version 0.0.0 to version 0.0.5. Users can simply ignore 0.0.1 to 0.0.4, which were slightly modified to meet the requirements by CRAN. However, users cannot miss version 0.0.5, which now supports SteemSQL queries!&lt;/p&gt;
+
+&lt;p&gt;The main features of version 0.0.5 are listed as follows:&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>[New Project] advr: an R package for the scientific research on trace gas advection flux density</title>
+      <link>https://openr.netlify.com/blog/advr/</link>
+      <pubDate>Thu, 14 Jun 2018 13:26:33 +0000</pubDate>
+      
+      <guid>https://openr.netlify.com/blog/advr/</guid>
+      <description>&lt;p&gt;Carbon dioxide (CO~2~) is one of the key green house gases which play an important role in the global climate change. In academia, the sources and sinks of CO~2~ are estimated with the flux density, e.g. the amount of CO~2~ passing through a unit area in a unit time. Estimates of net ecosystem CO~2~ exchange have been attracting a lot of attention. The research on the advection flux takes care of the contribution of the advection term to the CO~2~ balance.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>[New Project] steemr: an R package to download, play with, and visualize Steem data</title>
+      <link>https://openr.netlify.com/blog/new-project-steemr-an-r-package-to-download-play-with-and-visualize-steem-data/</link>
+      <pubDate>Tue, 12 Jun 2018 10:18:51 +0000</pubDate>
+      
+      <guid>https://openr.netlify.com/blog/new-project-steemr-an-r-package-to-download-play-with-and-visualize-steem-data/</guid>
+      <description>&lt;p&gt;When I became active on steemit.com in July 2017, the first thing for me to do was to find an R package to process Steem data. As an R user and package developer, it would have been amazing if I could easily download my posts, my operations, my communications with others on Steem, and analyze the data with the power of R language.&lt;/p&gt;
+
+&lt;p&gt;Unfortunately, I found nothing.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

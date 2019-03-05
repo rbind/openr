@@ -57,6 +57,42 @@
   <meta property="og:url" content="/blog/new-project-steemr-an-r-package-to-download-play-with-and-visualize-steem-data//" />
   <meta property="og:image" content="img/logo-small.png" />
 
+  <script type="text/javascript"
+        async
+        src="https://cdn.bootcss.com/mathjax/2.7.3/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$'], ['\[\[','\]\]']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+});
+
+MathJax.Hub.Queue(function() {
+    
+    
+    
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i = 0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+});
+</script>
+
+<style>
+code.has-jax {
+    font: inherit;
+    font-size: 100%;
+    background: inherit;
+    border: inherit;
+    color: #515151;
+}
+</style>
+
 </head>
 
 
@@ -170,19 +206,19 @@
 
                     <div class="col-md-9" id="blog-post">
 
-                        <p class="text-muted text-uppercase mb-small text-right">By <a href="#">dapeng</a> | June 12, 2018</p>
+                        <p class="text-muted text-uppercase mb-small text-right">By <a href="#">赵鹏</a> | June 12, 2018</p>
 
                         <div id="post-content">
                           <p>When I became active on steemit.com in July 2017, the first thing for me to do was to find an R package to process Steem data. As an R user and package developer, it would have been amazing if I could easily download my posts, my operations, my communications with others on Steem, and analyze the data with the power of R language.</p>
 
 <p>Unfortunately, I found nothing.</p>
 
-<p>Then I started to  write R functions on my own based on Steemdb, SteemData and SteemSQL. Some of these functions were used in a series of data analysis posts with the title &lsquo;Steem Watch&rsquo;, and others were used to build the site steemr.org.</p>
+<p>Then I started to  write R functions on my own based on Steemdb, SteemData and SteemSQL. Some of these functions were used in a series of data analysis posts with the title 'Steem Watch', and others were used to build the site steemr.org.</p>
 
 <p><img src="https://steemitimages.com/0x0/https://gateway.ipfs.io/ipfs/QmTY9hEDUcSZQcdf5grhA1GcW1XnZ5y4orXjiY9hiAyuJ7" alt="" />
 Logo for steemr. Designed by @maiyude</p>
 
-<p>steemr.org gained an impressive reputation in the community. However, as most of its components were based on SteemData, its heart was broken when SteemData was down. It was a pity that these codes were not really shared in the community and now they are useless, &mdash; unless SteemData comes back.</p>
+<p>steemr.org gained an impressive reputation in the community. However, as most of its components were based on SteemData, its heart was broken when SteemData was down. It was a pity that these codes were not really shared in the community and now they are useless, --- unless SteemData comes back.</p>
 
 <p><img src="https://steemitimages.com/DQmWDzc2TNk429yRotiFHCCZk6KKPEh3aQ8i5zJiLyfWW3y/steemrmap.jpg" alt="" /></p>
 
@@ -192,7 +228,7 @@ Logo for steemr. Designed by @maiyude</p>
 
 <p><img src="https://steemitimages.com/DQmZ16mP1YE9JSbNcA86aUCw82kCWssNJ1EEQohXaKt72LR/steemr20171109.gif" alt="" /></p>
 
-<p>One of steemr.org&rsquo;s features: display all the posts of a user</p>
+<p>One of steemr.org's features: display all the posts of a user</p>
 
 <p>In the meanwhile, my book <em><a href="http://xuer.pzhao.net">Leaning R: for Rookies (in Chinese)</a></em> was published last month. Readers began to give me exciting feedback. It would be helpful to show them how to use R in the Steem community. I would expect that some of them could join me in developing steemr, which would be a valuable gift to the Steem community.</p>
 
@@ -203,7 +239,7 @@ Logo for steemr. Designed by @maiyude</p>
 <ul>
 <li>obtain the complete post list for a given account,</li>
 <li>obtain the complete account information from steemdb.com,</li>
-<li>organized the &lsquo;follower&rsquo; and &lsquo;following&rsquo; information for a given account,</li>
+<li>organized the 'follower' and 'following' information for a given account,</li>
 <li>obtain the following history of a given account,</li>
 <li>download the vote records of a given post, and</li>
 <li>download the complete data of the latest 100 posts of a given account.</li>
@@ -231,7 +267,7 @@ Logo for steemr. Designed by @maiyude</p>
 
 <p><img src="https://steemitimages.com/DQma9ULTms89jkrCjvwvCcntLBa6Tj1DVXbWbokqYD4C3Vy/a8-1.jpeg" alt="" /></p>
 
-<p>One of steemr&rsquo;s future features: easily plot a word cloud from an ID&rsquo; posts. image taken from <a href="https://steemit.com/cn/@dapeng/steem-hannahwu">one of my Steem Watch posts</a>.</p>
+<p>One of steemr's future features: easily plot a word cloud from an ID' posts. image taken from <a href="https://steemit.com/cn/@dapeng/steem-hannahwu">one of my Steem Watch posts</a>.</p>
 
 <h4 id="how-to-contribute">How to contribute?</h4>
 
@@ -293,10 +329,10 @@ Logo for steemr. Designed by @maiyude</p>
     <div class="panel-body">
         <ul class="tag-cloud">
             
-            <li><a href="https://openr.netlify.com/tags/beginr"><i class="fa fa-tags"></i> beginr</a>
+            <li><a href="https://openr.netlify.com/tags/advr"><i class="fa fa-tags"></i> advr</a>
             </li>
             
-            <li><a href="https://openr.netlify.com/tags/blogdown"><i class="fa fa-tags"></i> blogdown</a>
+            <li><a href="https://openr.netlify.com/tags/beginr"><i class="fa fa-tags"></i> beginr</a>
             </li>
             
             <li><a href="https://openr.netlify.com/tags/bookdown"><i class="fa fa-tags"></i> bookdown</a>
@@ -311,13 +347,10 @@ Logo for steemr. Designed by @maiyude</p>
             <li><a href="https://openr.netlify.com/tags/mindr"><i class="fa fa-tags"></i> mindr</a>
             </li>
             
+            <li><a href="https://openr.netlify.com/tags/news"><i class="fa fa-tags"></i> news</a>
+            </li>
+            
             <li><a href="https://openr.netlify.com/tags/pinyin"><i class="fa fa-tags"></i> pinyin</a>
-            </li>
-            
-            <li><a href="https://openr.netlify.com/tags/post"><i class="fa fa-tags"></i> post</a>
-            </li>
-            
-            <li><a href="https://openr.netlify.com/tags/postr"><i class="fa fa-tags"></i> postr</a>
             </li>
             
             <li><a href="https://openr.netlify.com/tags/r"><i class="fa fa-tags"></i> r</a>
@@ -333,9 +366,6 @@ Logo for steemr. Designed by @maiyude</p>
             </li>
             
             <li><a href="https://openr.netlify.com/tags/tutorial"><i class="fa fa-tags"></i> tutorial</a>
-            </li>
-            
-            <li><a href="https://openr.netlify.com/tags/utopian-io"><i class="fa fa-tags"></i> utopian-io</a>
             </li>
             
         </ul>

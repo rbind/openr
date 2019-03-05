@@ -1,13 +1,11 @@
 ---
 title: '微气象学常用的 LaTeX 公式'
-author: "赵鹏"
+author: 赵鹏
 date: '2017-05-23'
 slug: equations
 summary: "现在有了 blogdown ，只需把常用公式扔进本帖里，在本帖的公式上点鼠标右键- Show Math As - TeX Commands，就得到了公式的 LaTeX 代码。直接拷贝就行。世界变得不一样了，我觉得，我再也回不去了。"
 tags:
-- post
 - R
-- blogdown
 - markdown
 - LaTeX
 categories: []

@@ -57,6 +57,42 @@
   <meta property="og:url" content="/tags/rmd//" />
   <meta property="og:image" content="img/logo-small.png" />
 
+  <script type="text/javascript"
+        async
+        src="https://cdn.bootcss.com/mathjax/2.7.3/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$'], ['\[\[','\]\]']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+});
+
+MathJax.Hub.Queue(function() {
+    
+    
+    
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i = 0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+});
+</script>
+
+<style>
+code.has-jax {
+    font: inherit;
+    font-size: 100%;
+    background: inherit;
+    border: inherit;
+    color: #515151;
+}
+</style>
+
 </head>
 
 
@@ -186,7 +222,7 @@
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
-                                          By <a href="#">dapeng</a>
+                                          By <a href="#">赵鹏</a>
                                           
                                           
 
@@ -195,11 +231,16 @@
                                             <a href="https://openr.netlify.com/blog/rmd/"><i class="fa fa-calendar-o"></i> January 26, 2019</a>
                                         </p>
                                     </div>
-                                    <p class="intro"><p>Since &lsquo;rmarkdown&rsquo; and &lsquo;knitr&rsquo;, more and more members (rticles, bookdown, mindr&hellip;) have been joining the R Markdown family. Users can write elegant reproducible documents, manuscripts, dissertations, books, blog posts, posters, and slides within the framework of R markdown. It is exciting, while the installation and maintenance becomes annoying. In the meanwhile, there are plenty of useful RStudio addins, which equip the RStudio IDE as a powerful markdown editor. However, these little tools are often hidden somewhere deep in the community, and it is difficult to dig them out.</p>
+									      
+      <p>Since 'rmarkdown' and 'knitr', more and more members (rticles, bookdown, mindr...) have been joining the R Markdown family. Users can write elegant reproducible documents, manuscripts, dissertations, books, blog posts, posters, and slides within the framework of R markdown. It is exciting, while the installation and maintenance becomes annoying. In the meanwhile, there are plenty of useful RStudio addins, which equip the RStudio IDE as a powerful markdown editor. However, these little tools are often hidden somewhere deep in the community, and it is difficult to dig them out.</p>
 
-<p>With &lsquo;rmd&rsquo; you can easily explore, install, and load them for both R users and non-users. Furthermore, &lsquo;rmd&rsquo; provides a RStudio addin to explore the R Markdown family and install them with a single click.</p>
+<p>With 'rmd' you can easily explore, install, and load them for both R users and non-users. Furthermore, 'rmd' provides a RStudio addin to explore the R Markdown family and install them with a single click.</p>
 
-<p>Forget R, and enjoy the wonderful world of R Markdown.</p></p>
+<p>Forget R, and enjoy the wonderful world of R Markdown.</p>
+      
+	  
+
+									
                                     <p class="read-more"><a href="https://openr.netlify.com/blog/rmd/" class="btn btn-template-main">Continue reading</a>
                                     </p>
                                 </div>
@@ -269,10 +310,10 @@
     <div class="panel-body">
         <ul class="tag-cloud">
             
-            <li><a href="https://openr.netlify.com/tags/beginr"><i class="fa fa-tags"></i> beginr</a>
+            <li><a href="https://openr.netlify.com/tags/advr"><i class="fa fa-tags"></i> advr</a>
             </li>
             
-            <li><a href="https://openr.netlify.com/tags/blogdown"><i class="fa fa-tags"></i> blogdown</a>
+            <li><a href="https://openr.netlify.com/tags/beginr"><i class="fa fa-tags"></i> beginr</a>
             </li>
             
             <li><a href="https://openr.netlify.com/tags/bookdown"><i class="fa fa-tags"></i> bookdown</a>
@@ -287,13 +328,10 @@
             <li><a href="https://openr.netlify.com/tags/mindr"><i class="fa fa-tags"></i> mindr</a>
             </li>
             
+            <li><a href="https://openr.netlify.com/tags/news"><i class="fa fa-tags"></i> news</a>
+            </li>
+            
             <li><a href="https://openr.netlify.com/tags/pinyin"><i class="fa fa-tags"></i> pinyin</a>
-            </li>
-            
-            <li><a href="https://openr.netlify.com/tags/post"><i class="fa fa-tags"></i> post</a>
-            </li>
-            
-            <li><a href="https://openr.netlify.com/tags/postr"><i class="fa fa-tags"></i> postr</a>
             </li>
             
             <li><a href="https://openr.netlify.com/tags/r"><i class="fa fa-tags"></i> r</a>
@@ -309,9 +347,6 @@
             </li>
             
             <li><a href="https://openr.netlify.com/tags/tutorial"><i class="fa fa-tags"></i> tutorial</a>
-            </li>
-            
-            <li><a href="https://openr.netlify.com/tags/utopian-io"><i class="fa fa-tags"></i> utopian-io</a>
             </li>
             
         </ul>

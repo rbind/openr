@@ -57,6 +57,42 @@
   <meta property="og:url" content="/zh/tags/blogdown//" />
   <meta property="og:image" content="img/logo.png" />
 
+  <script type="text/javascript"
+        async
+        src="https://cdn.bootcss.com/mathjax/2.7.3/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$'], ['\[\[','\]\]']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+});
+
+MathJax.Hub.Queue(function() {
+    
+    
+    
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i = 0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+});
+</script>
+
+<style>
+code.has-jax {
+    font: inherit;
+    font-size: 100%;
+    background: inherit;
+    border: inherit;
+    color: #515151;
+}
+</style>
+
 </head>
 
 
@@ -174,193 +210,6 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="https://openr.netlify.com/zh/blog/shadowed-images/">
-                                          
-                                          <img src="https://openr.netlify.com/img/banners/logo-bookdownplus.png" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="https://openr.netlify.com/zh/blog/shadowed-images/">给 Hugo 网站的插图添加阴影</a></h2>
-                                    <div class="clearfix">
-                                        <p class="author-category">
-                                          
-                                          由 <a href="#">赵鹏</a>
-                                          
-                                          
-                                          
-                                          
-
-                                        </p>
-                                        <p class="date-comments">
-                                            <a href="https://openr.netlify.com/zh/blog/shadowed-images/"><i class="fa fa-calendar-o"></i> September 26, 2018</a>
-                                        </p>
-                                    </div>
-                                    <p class="intro"><p>最近一年多，有个东西一直困扰着我，就像半夜酣睡时飞来一只蚊子，时不时在耳朵边哼哼几声，很烦。挥手赶走它继续睡，过一会儿又过来哼哼。好几次我犹豫着要不要爬起来彻底消灭它，想着想着就又睡着了，于是就一直凑合。</p>
-
-<p>这只蚊子就是我自己开发的 bookdownplus 包。</p></p>
-                                    <p class="read-more"><a href="https://openr.netlify.com/zh/blog/shadowed-images/" class="btn btn-template-main">继续阅读</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </section>
-                        
-                        <section class="post">
-                            <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="https://openr.netlify.com/zh/blog/migrated-to-hugo/">
-                                          
-                                          <img src="https://openr.netlify.com/img/banners/logo-openr.png" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="https://openr.netlify.com/zh/blog/migrated-to-hugo/">全面迁站：从 Wordpress 到 Hugo</a></h2>
-                                    <div class="clearfix">
-                                        <p class="author-category">
-                                          
-                                          由 <a href="#">赵鹏</a>
-                                          
-                                          
-                                          
-                                          
-
-                                        </p>
-                                        <p class="date-comments">
-                                            <a href="https://openr.netlify.com/zh/blog/migrated-to-hugo/"><i class="fa fa-calendar-o"></i> November 25, 2017</a>
-                                        </p>
-                                    </div>
-                                    <p class="intro"><p>从今天起，我的旧博客 dapengde.com 停止更新。旧博客的全部帖子已经搬到了 <a href="http://www.pzhao.org">pzhao.org</a>，欢迎收藏（ctrl + d）和<a href="http://www.pzhao.org/zh/index.xml">订阅</a>。</p></p>
-                                    <p class="read-more"><a href="https://openr.netlify.com/zh/blog/migrated-to-hugo/" class="btn btn-template-main">继续阅读</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </section>
-                        
-                        <section class="post">
-                            <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="https://openr.netlify.com/zh/blog/build-a-mirror-backup-site-for-your-own-steem-posts-in-30-minutes-or-30-steem/">
-                                          
-                                          <img src="https://openr.netlify.com/img/banners/logo-steemr.png" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="https://openr.netlify.com/zh/blog/build-a-mirror-backup-site-for-your-own-steem-posts-in-30-minutes-or-30-steem/">Build a mirror/backup site for your own steem posts in 30 minutes - 30 分钟搭建自己的 steem 镜像备份网站</a></h2>
-                                    <div class="clearfix">
-                                        <p class="author-category">
-                                          
-                                          由 <a href="#">dapeng</a>
-                                          
-                                          
-
-                                        </p>
-                                        <p class="date-comments">
-                                            <a href="https://openr.netlify.com/zh/blog/build-a-mirror-backup-site-for-your-own-steem-posts-in-30-minutes-or-30-steem/"><i class="fa fa-calendar-o"></i> November 6, 2017</a>
-                                        </p>
-                                    </div>
-                                    <p class="intro"><p>Yesterday, I built two mirror sites for my steem posts (<a href="https://dapeng.netlify.com/">mirror 1</a>，<a href="https://steemit.netlify.com/">mirror 2</a>) as backups, which are synced automatically everyday, thanks to steemsql and steemdata. The mirror sites are very useful:</p></p>
-                                    <p class="read-more"><a href="https://openr.netlify.com/zh/blog/build-a-mirror-backup-site-for-your-own-steem-posts-in-30-minutes-or-30-steem/" class="btn btn-template-main">继续阅读</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </section>
-                        
-                        <section class="post">
-                            <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="https://openr.netlify.com/zh/blog/equations/">
-                                          
-                                          <img src="https://openr.netlify.com/img/banners/logo-openr.png" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="https://openr.netlify.com/zh/blog/equations/">微气象学常用的 LaTeX 公式</a></h2>
-                                    <div class="clearfix">
-                                        <p class="author-category">
-                                          
-                                          由 <a href="#">赵鹏</a>
-                                          
-                                          
-                                          
-                                          
-
-                                        </p>
-                                        <p class="date-comments">
-                                            <a href="https://openr.netlify.com/zh/blog/equations/"><i class="fa fa-calendar-o"></i> May 23, 2017</a>
-                                        </p>
-                                    </div>
-                                    <p class="intro">这些年，论文发得不多，公式却攒了不少，大部分都是自己亲手敲的 \(\LaTeX\) 代码。我把他们整理在一个 eq.tex 文档里，配合一个编译好的 eq.pdf 文件。每次需要的时候，在 eq.pdf 里找到需要的公式，然后去 eq.tex 找公式代码，拷到目标文档里完事儿。稍微有点小麻烦，但总比重新敲一遍代码要省事、准确。
-然而，现在有了 blogdown 和 Hugo-academic 主题，一切都变得不一样了。我把 eq.tex 里的文本全部拷贝粘贴到一个 .Rmd 文件，扔进网站里，就得到了现在这个帖子。鼠标放在公式上点右键- Show Math As - \(\TeX\) Commands，就得到了公式的 \(\LaTeX\) 代码。直接拷贝就行了，再也不用在两个文档里切换以及找来找去。
-HUGOMORE42 我觉得，我再也回不去了。
-MeteorologyAtmpspheric pressure\[\begin{equation}P=101.325 \cdot (\frac{293-0.0065z}{293}) ^ {5.26} = 86.838\,\text{kPa}\end{equation}\]
-\(z\): elevation above sea level in m.
-\[\begin{equation}-\text{d} p =\rho g \text{d}z\end{equation}\]
-\[\begin{equation}\ln \frac{p_2}{p_1} = - \int_{z_1}^{z_2} \frac{g}{RT}\text{d}z\end{equation}\]
-Psychrometric constant\[\begin{equation}\gamma =\frac{c_p P}{\varepsilon \lambda} = 0.</p>
-                                    <p class="read-more"><a href="https://openr.netlify.com/zh/blog/equations/" class="btn btn-template-main">继续阅读</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </section>
-                        
-                        <section class="post">
-                            <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="https://openr.netlify.com/zh/blog/rblogdown-bib/">
-                                          
-                                          <img src="https://openr.netlify.com/img/banners/logo-openr.png" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="https://openr.netlify.com/zh/blog/rblogdown-bib/">R blogdown 科研网站的公式和参考文献</a></h2>
-                                    <div class="clearfix">
-                                        <p class="author-category">
-                                          
-                                          由 <a href="#">赵鹏</a>
-                                          
-                                          
-                                          
-                                          
-
-                                        </p>
-                                        <p class="date-comments">
-                                            <a href="https://openr.netlify.com/zh/blog/rblogdown-bib/"><i class="fa fa-calendar-o"></i> May 18, 2017</a>
-                                        </p>
-                                    </div>
-                                    <p class="intro">本网站的公式和参考文献一直未能正常显示，直到今天我才把这两个问题解决。
-HUGOMORE42 公式公式的问题迟迟未解决，是因为我看到人们在讨论往html文件里加 Load mathjax 代码这种解决方案，一看就头大，不想做。
-其实，我用的hugo-academic主题，据说是支持数学环境的，据说在 config.toml 里设置 math = true就开启全站支持，在单篇post的yml头里这样设置就开启单篇支持。可是我两样都试过，然后运行 blogdown::serve_site()测试，在RStudio的Viewer里都不能成功显示公式。
-今天突然灵光一现，心想不会是RStudio Viewer的问题吧？于是点击Viewer左上角的 Show in new window 按钮，用外部浏览器打开一看，Duang！帖子里的公式就都可以正常显示了！这里秀一个：
-帖子里输入下面的 \(\LaTeX\) 公式：
-$$\int_0^\infty e^{-x^2} dx=\frac{\sqrt{\pi}}{2}$$网页就会显示：
-\[\int_0^\infty e^{-x^2} dx=\frac{\sqrt{\pi}}{2}\]
-参考文献两个多月前，就有个哥们儿问“有没有可能在blogdown创建的网站里添加参考文献?”作者回答得干脆：“有。”两人对话戛然而止，让我目瞪口呆。由于在blogdown 官方手册里并未看到添加参考文献的方法，我一直以为这个功能尚在开发中，直到今天也没见动静，有些起疑，就随便试了一下，步骤跟在 bookdown 里一样：
-把参考文献库 .bib 文件考到 content\post\.在帖子 .Rmd 文档的 yml 头里声明 .bib 文件的名称和路径。这里我设成 bibliography: [book.bib, packages.bib].在帖子里引用 .bib 里的文献条目，例如 [@R-blogdown].运行建站函数 blogdown::build_site().就这样，说时迟那时快，只见Duang！帖子里的引用就显示成了 (Xie 2017) ！而帖子末尾的参考文献列表就自动出来了！
-blogdown 可以如此方便地往帖子里插入计算代码、图表、公式、参考文献，我实在找不出第二个这样的工具。建科研网站，非 blogdown 莫属！
-最后顺便提一下：虽然最新正式版的 RStudio 1.</p>
-                                    <p class="read-more"><a href="https://openr.netlify.com/zh/blog/rblogdown-bib/" class="btn btn-template-main">继续阅读</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </section>
-                        
-                        <section class="post">
-                            <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
                                       <a href="https://openr.netlify.com/zh/blog/hugo-icon/">
                                           
                                           <img src="https://openr.netlify.com/img/banners/logo-openr.png" class="img-responsive" alt="">
@@ -384,9 +233,12 @@ blogdown 可以如此方便地往帖子里插入计算代码、图表、公式�
                                             <a href="https://openr.netlify.com/zh/blog/hugo-icon/"><i class="fa fa-calendar-o"></i> April 19, 2017</a>
                                         </p>
                                     </div>
-                                    <p class="intro">网站图标，就是下图的这些东东，用浏览器打开网站时显示在地址栏的顶端。R blogdown安装的hugo-academic主题，默认图标是个蓝色学位帽，挺好看的，不改也行，只是如果大家都用的话，泯然众人，识别度就低了。
-HUGOMORE42 改的方式很简单：将你自己的图标图片保存为.png格式，并命名为icon.png，替换\themes\hugo-academic\static\img\icon.png即可。
-update: 更好的方案来自yang Cao的提议：把icon.png放在static/img/，避免在更新themes时将自定义图标覆盖。</p>
+									      
+      Hugo 网站的另一个小细节，就是浏览器顶端的小图标。
+      
+	  
+
+									
                                     <p class="read-more"><a href="https://openr.netlify.com/zh/blog/hugo-icon/" class="btn btn-template-main">继续阅读</a>
                                     </p>
                                 </div>
@@ -420,13 +272,12 @@ update: 更好的方案来自yang Cao的提议：把icon.png放在static/img/，
                                             <a href="https://openr.netlify.com/zh/blog/hugo-rss/"><i class="fa fa-calendar-o"></i> April 18, 2017</a>
                                         </p>
                                     </div>
-                                    <p class="intro">R blogdown 搭建的 Hugo 网站，小细节很多，可以一点一点完善，好在都不难搞定。今天添加了个RSS订阅按钮。
-HUGOMORE42 自从 Google Reader 死后，我就觉得 RSS 没有多大趣味，就好像子期死后伯牙摔琴一样。但是，没有 RSS 提醒的话，还真不知道谁的博客更新了，于是就勉强用 feedly 凑合。眼看我的新网站构架基本完成，就在 feedly 里订阅了一下自己的网站，输入 pzhao.org，发现没找到。嗯？研究一下才明白，我的主页完整地址是：
-http://pzhao.org/zh/这个路径对应的本地文件夹下面，不仅有个index.html，还有个index.xml，后者就是 RSS 订阅的文件。所以，在feedly添加：
-http://pzhao.org/zh/index.xml就把我的新网站添进去了。这是订阅全站。如果只想订阅其中的博客，或新发表的学术文章，或新做的报告，那么：
-http://pzhao.org/zh/post/index.xmlhttp://pzhao.org/zh/publication/index.xmlhttp://pzhao.org/zh/talk/index.xml这个RSS链接，我该放到主页的什么位置，来方便网友订阅呢？我决定放到我的头像下面的社交按钮里。
-头像下的社交按钮是在config.toml里设置的，只需添加个[[params.social]]就可以了，图标去fa或ai两个包的主页找便是。实在缺乏社交，只好把自己卡拉OK的录音和腾讯视频加进去凑数，代码如下：
- [[params.social]]icon = &quot;rss&quot;icon_pack = &quot;fa&quot;link = &quot;http://www.pzhao.org/zh/index.xml&quot;[[params.social]]icon = &quot;music&quot;icon_pack = &quot;fa&quot;link = &quot;http://kg.qq.com/node/personal?uid=649d9d85212c3489&quot;[[params.social]]icon = &quot;video-camera&quot;icon_pack = &quot;fa&quot;link = &quot;http://v.qq.com/vplus/0f8190586a3f2f22a25e9827b38c171e&quot;</p>
+									      
+      Hugo 网站的小细节真是需要一点点来，好在都不难搞定。
+      
+	  
+
+									
                                     <p class="read-more"><a href="https://openr.netlify.com/zh/blog/hugo-rss/" class="btn btn-template-main">继续阅读</a>
                                     </p>
                                 </div>
@@ -460,9 +311,12 @@ http://pzhao.org/zh/post/index.xmlhttp://pzhao.org/zh/publication/index.xmlhtt
                                             <a href="https://openr.netlify.com/zh/blog/hugo-multilingual/"><i class="fa fa-calendar-o"></i> April 16, 2017</a>
                                         </p>
                                     </div>
-                                    <p class="intro"><p>几年前我弄过<a href="http://dapengde.com/archives/15265">双语博客</a>， 后来放弃了，因为 WordPress 的双语方案有些遗留问题让我不爽，另外我没有精力写英文博客。现在，新网站是个科研网站，博客可以只出现在中文版里，而英文版只放自己的学术情况就行了，不用像博客更新那么频繁。所以，双语界面几乎是排在第一梯队的需求。</p>
+									      
+      双语界面是科研网站排在第一梯队的需求。我对Hugo的架构并不熟悉，原以为会很麻烦，结果弄一会儿就搞定了，原来这么简单。
+      
+	  
 
-<p>我对Hugo的架构并不熟悉，原以为会很麻烦，结果弄一会儿就搞定了，原来这么简单。有些步骤在<a href="http://dapengde.com/blogdown_demo_academic/post/getting-started/">主题的说明文档里</a>提到了，但不够全。完整的步骤是这样的(看起来长，是因为我啰嗦，其实很快就能设置完)：</p></p>
+									
                                     <p class="read-more"><a href="https://openr.netlify.com/zh/blog/hugo-multilingual/" class="btn btn-template-main">继续阅读</a>
                                     </p>
                                 </div>
@@ -496,12 +350,12 @@ http://pzhao.org/zh/post/index.xmlhttp://pzhao.org/zh/publication/index.xmlhtt
                                             <a href="https://openr.netlify.com/zh/blog/hugo-academic-summary/"><i class="fa fa-calendar-o"></i> April 15, 2017</a>
                                         </p>
                                     </div>
-                                    <p class="intro">在 RStudio 里用 R blogdown 来维护网站时，可以通过点击工具栏的 Addins - New Post 来创建新帖子，很方便。但是，如果用的是 Hugo 的 academic 主题，那么创建的新帖子在网站首页会显示全文，不大好看，尤其是全文很长的时候，根本就不像个首页了。这是因为，academic 首页的 posts 模块默认显示文摘。如果没有为每篇帖子设置文摘，就会显示全文。而上面说的创建新帖的方法里，并没有设置文摘的选项。那么，文摘在哪里设置呢？
-HUGOMORE42 直接说答案：手动在新帖的YAML文件头添加一行：
-summary: &quot;我的文摘别太长。&quot;答案来自blogdown 项目主页。
-就这么个小问题，让我走了点弯路。我发现问题后，首先观察了一下主题自带的示例文档，文件头是这样的：
-+++date = &quot;2016-04-20T11:00:00&quot;draft = falsetags = [&quot;academic&quot;, &quot;hugo&quot;]title = &quot;Customizing the homepage with widgets&quot;math = falsesummary = &quot;&quot;&quot;Enable/disable and configure widgets to customize your homepage.&quot;&quot;&quot;+++跟 R blogdown 生成的 .md 和 .Rmd 文件的文件头不同，这个文件头居然是用前后各三个加号表示的。里面的summary开始数三行，就是用来设置文摘的。
-于是我就把这三行拷贝粘贴到 .Rmd 文件里，当然是编译出错了。接着我想当然地把上面这段前后共六个加号的文件头拷贝粘贴到 .</p>
+									      
+      academic 首页的 posts 模块默认显示文摘。如果没有为每篇帖子设置文摘，就会显示全文。那么，文摘在哪里设置呢？
+      
+	  
+
+									
                                     <p class="read-more"><a href="https://openr.netlify.com/zh/blog/hugo-academic-summary/" class="btn btn-template-main">继续阅读</a>
                                     </p>
                                 </div>
@@ -535,14 +389,54 @@ summary: &quot;我的文摘别太长。&quot;答案来自blogdown 项目主页�
                                             <a href="https://openr.netlify.com/zh/blog/hogo-disques-problem/"><i class="fa fa-calendar-o"></i> April 14, 2017</a>
                                         </p>
                                     </div>
-                                    <p class="intro">今天，复活节假期前夕，同事们都休假了。我虽然在办公室，却无心上班，发了一会儿呆，想想与其痛苦地工作，不如快乐地解决一下新网站的一个小问题：disqus 评论框的加载。
-HUGOMORE42 用 R blogdown 打建好站，disqus评论框就一直没成功加载过。后来听说是config.toml里 disqus shortname指的不是我的disqus ID，而是要专门设置一下， 我说“啊,还有这事儿？”于是就设置了一下，但是仍然不能成功加载。这个问题放了几天，今天心血来潮一搜，嗯，兴许是路径的问题，于是就把config.toml开头的路径改为
-baseurl = &quot;http://www.pzhao.org&quot;# relativeurls = true然后运行R语言的建站函数：
-blogdown::build_site(local=FALSE)注意！此处千万不要运行blogdown::serve_site()，不然新生成的文件就又没法加载 Disqus 了。网上说是serve_site()忽略了config.toml里的某些设置而造成的。我不懂，总之就是建站函数运行完就直接上传。
-然后GitHub同步，几秒钟后，Netlify上完成了更新，Disqus评论框就乖乖出现了。
-欢迎来留言测试。
-啥，你看不见？嗯，听说好像是被墙了。</p>
+									      
+      用 R blogdown 打建好站，disqus评论框就一直没成功加载过。这次终于搞定了！可惜被墙，多情却被无情恼.......
+      
+	  
+
+									
                                     <p class="read-more"><a href="https://openr.netlify.com/zh/blog/hogo-disques-problem/" class="btn btn-template-main">继续阅读</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </section>
+                        
+                        <section class="post">
+                            <div class="row">
+                                <div class="col-md-4">
+                                  <div class="image">
+                                      <a href="https://openr.netlify.com/zh/blog/r-blogdown/">
+                                          
+                                          <img src="https://openr.netlify.com/img/banners/logo-openr.png" class="img-responsive" alt="">
+                                          
+                                      </a>
+                                  </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <h2><a href="https://openr.netlify.com/zh/blog/r-blogdown/">R blogdown 搭建个人博客或科研网站</a></h2>
+                                    <div class="clearfix">
+                                        <p class="author-category">
+                                          
+                                          由 <a href="#">赵鹏</a>
+                                          
+                                          
+                                          
+                                          in <a href="https://openr.netlify.com/categories/xuer">xuer</a>
+                                          
+                                          
+
+                                        </p>
+                                        <p class="date-comments">
+                                            <a href="https://openr.netlify.com/zh/blog/r-blogdown/"><i class="fa fa-calendar-o"></i> April 11, 2017</a>
+                                        </p>
+                                    </div>
+									      
+      我正在撰写新书《学R —— 零基础学习R语言》，新书预计今年下半年出版。本文是其中一个章节。
+      
+	  
+
+									
+                                    <p class="read-more"><a href="https://openr.netlify.com/zh/blog/r-blogdown/" class="btn btn-template-main">继续阅读</a>
                                     </p>
                                 </div>
                             </div>
@@ -555,7 +449,7 @@ blogdown::build_site(local=FALSE)注意！此处千万不要运行blogdown::ser
                             
 
                             
-                            <li class="next"><a href="https://openr.netlify.com//zh/tags/blogdown/page/2/">更旧 &rarr;</a></li>
+                            <li class="next disabled"><a href="#">更旧 &rarr;</a></li>
                             
                         </ul>
                     </div>
@@ -605,7 +499,7 @@ blogdown::build_site(local=FALSE)注意！此处千万不要运行blogdown::ser
     <div class="panel-body">
         <ul class="nav nav-pills nav-stacked">
             
-            <li><a href="https://openr.netlify.com/categories/%e6%9c%aa%e5%88%86%e7%b1%bb">未分类 (7)</a>
+            <li><a href="https://openr.netlify.com/categories/xuer">xuer (16)</a>
             </li>
             
         </ul>
@@ -627,13 +521,7 @@ blogdown::build_site(local=FALSE)注意！此处千万不要运行blogdown::ser
     <div class="panel-body">
         <ul class="tag-cloud">
             
-            <li><a href="https://openr.netlify.com/tags/advr"><i class="fa fa-tags"></i> advr</a>
-            </li>
-            
             <li><a href="https://openr.netlify.com/tags/beginr"><i class="fa fa-tags"></i> beginr</a>
-            </li>
-            
-            <li><a href="https://openr.netlify.com/tags/blog"><i class="fa fa-tags"></i> blog</a>
             </li>
             
             <li><a href="https://openr.netlify.com/tags/blogdown"><i class="fa fa-tags"></i> blogdown</a>
@@ -645,22 +533,7 @@ blogdown::build_site(local=FALSE)注意！此处千万不要运行blogdown::ser
             <li><a href="https://openr.netlify.com/tags/bookdownplus"><i class="fa fa-tags"></i> bookdownplus</a>
             </li>
             
-            <li><a href="https://openr.netlify.com/tags/css"><i class="fa fa-tags"></i> css</a>
-            </li>
-            
-            <li><a href="https://openr.netlify.com/tags/drposter"><i class="fa fa-tags"></i> drposter</a>
-            </li>
-            
-            <li><a href="https://openr.netlify.com/tags/git"><i class="fa fa-tags"></i> git</a>
-            </li>
-            
-            <li><a href="https://openr.netlify.com/tags/hugo"><i class="fa fa-tags"></i> hugo</a>
-            </li>
-            
             <li><a href="https://openr.netlify.com/tags/latex"><i class="fa fa-tags"></i> latex</a>
-            </li>
-            
-            <li><a href="https://openr.netlify.com/tags/linux"><i class="fa fa-tags"></i> linux</a>
             </li>
             
             <li><a href="https://openr.netlify.com/tags/markdown"><i class="fa fa-tags"></i> markdown</a>
@@ -681,9 +554,6 @@ blogdown::build_site(local=FALSE)注意！此处千万不要运行blogdown::ser
             <li><a href="https://openr.netlify.com/tags/post"><i class="fa fa-tags"></i> post</a>
             </li>
             
-            <li><a href="https://openr.netlify.com/tags/postr"><i class="fa fa-tags"></i> postr</a>
-            </li>
-            
             <li><a href="https://openr.netlify.com/tags/r"><i class="fa fa-tags"></i> r</a>
             </li>
             
@@ -696,10 +566,7 @@ blogdown::build_site(local=FALSE)注意！此处千万不要运行blogdown::ser
             <li><a href="https://openr.netlify.com/tags/steemr"><i class="fa fa-tags"></i> steemr</a>
             </li>
             
-            <li><a href="https://openr.netlify.com/tags/teaching"><i class="fa fa-tags"></i> teaching</a>
-            </li>
-            
-            <li><a href="https://openr.netlify.com/tags/utopian-io"><i class="fa fa-tags"></i> utopian-io</a>
+            <li><a href="https://openr.netlify.com/tags/tutorial"><i class="fa fa-tags"></i> tutorial</a>
             </li>
             
             <li><a href="https://openr.netlify.com/tags/word"><i class="fa fa-tags"></i> word</a>
@@ -708,10 +575,13 @@ blogdown::build_site(local=FALSE)注意！此处千万不要运行blogdown::ser
             <li><a href="https://openr.netlify.com/tags/xaringan"><i class="fa fa-tags"></i> xaringan</a>
             </li>
             
-            <li><a href="https://openr.netlify.com/tags/%e5%90%89%e4%bb%96"><i class="fa fa-tags"></i> 吉他</a>
+            <li><a href="https://openr.netlify.com/tags/%e5%ad%a6"><i class="fa fa-tags"></i> 学</a>
             </li>
             
             <li><a href="https://openr.netlify.com/tags/%e5%ad%a6-r"><i class="fa fa-tags"></i> 学-r</a>
+            </li>
+            
+            <li><a href="https://openr.netlify.com/tags/%e5%ad%a6r"><i class="fa fa-tags"></i> 学r</a>
             </li>
             
         </ul>

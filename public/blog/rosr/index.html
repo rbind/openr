@@ -57,6 +57,42 @@
   <meta property="og:url" content="/blog/rosr//" />
   <meta property="og:image" content="img/logo-small.png" />
 
+  <script type="text/javascript"
+        async
+        src="https://cdn.bootcss.com/mathjax/2.7.3/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$'], ['\[\[','\]\]']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+});
+
+MathJax.Hub.Queue(function() {
+    
+    
+    
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i = 0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+});
+</script>
+
+<style>
+code.has-jax {
+    font: inherit;
+    font-size: 100%;
+    background: inherit;
+    border: inherit;
+    color: #515151;
+}
+</style>
+
 </head>
 
 
@@ -170,10 +206,10 @@
 
                     <div class="col-md-9" id="blog-post">
 
-                        <p class="text-muted text-uppercase mb-small text-right">By <a href="#">dapeng</a> | January 28, 2019</p>
+                        <p class="text-muted text-uppercase mb-small text-right">By <a href="#">赵鹏</a> | January 28, 2019</p>
 
                         <div id="post-content">
-                          <p>Weeks ago, I gave a short training course at one of the top institutes in the world. The course was called &lsquo;<em>R, Open Science and Reproducible Research</em>&rsquo;, abbreviated as <em>ROSS</em>. It was given to the academic researchers who were interested in R and reproducible research. The R markdown family, including &lsquo;rticles&rsquo;, &lsquo;bookdown&rsquo;, &lsquo;xaringan&rsquo; etc., were introduced. The audience were excited in the course. They felt, however, confused after the course by using these packages on their own work. It is not easy to connect their own work with the R Markdown ecosystem.</p>
+                          <p>Weeks ago, I gave a short training course at one of the top institutes in the world. The course was called '<em>R, Open Science and Reproducible Research</em>', abbreviated as <em>ROSS</em>. It was given to the academic researchers who were interested in R and reproducible research. The R markdown family, including 'rticles', 'bookdown', 'xaringan' etc., were introduced. The audience were excited in the course. They felt, however, confused after the course by using these packages on their own work. It is not easy to connect their own work with the R Markdown ecosystem.</p>
 
 <p><img src="https://www.pzhao.org/slides/ross-mpic/img/workflow.png" alt="" /></p>
 
@@ -185,9 +221,9 @@
 
 <p>R Markdown is a document format that embeds code chunks (of R or other languages) in Markdown documents for literate programming. With years of development and continuous contributions from the open-source community, users nowadays can use R Markdown not only for writing documents and books, but also for producing reproducible academic articles, dissertations, slides, posters, and even websites. Although it has been seven years since the first idea of R Markdown came out, many people in academia nowadays are unaware of this handy tool yet, probably because of the difficulty at the beginning of learning R.</p>
 
-<p>After the <em>ROSS</em> course, I decided to develop a package which integrates various academic elements, including data, codes, images, manuscripts, dissertations, slides and so on, into a single reproducible academic project. The datasets, codes and documents should be well connected so that they can be easily synchronized and updated. users don&rsquo;t have to repeat copying and pasting their results and figures from time to time. It will be easy for the scientific researchers to use, even if they are R beginners, or even non-R-users.</p>
+<p>After the <em>ROSS</em> course, I decided to develop a package which integrates various academic elements, including data, codes, images, manuscripts, dissertations, slides and so on, into a single reproducible academic project. The datasets, codes and documents should be well connected so that they can be easily synchronized and updated. users don't have to repeat copying and pasting their results and figures from time to time. It will be easy for the scientific researchers to use, even if they are R beginners, or even non-R-users.</p>
 
-<p>I chose the name &lsquo;rosr&rsquo; rather than &lsquo;ross&rsquo; so that users could easily use a search engine to find it, rather than the well-know scientist Ross Geller.</p>
+<p>I chose the name 'rosr' rather than 'ross' so that users could easily use a search engine to find it, rather than the well-know scientist Ross Geller.</p>
 
 <p><img src="https://www.pzhao.org/slides/ross-mpic/img/fine-by-me.gif" alt="" /></p>
 
@@ -195,7 +231,7 @@
 
 <h3 id="what-are-the-current-features">What are the current features?</h3>
 
-<p>Briefly speaking, the current features of &lsquo;rosr&rsquo; are as follows.</p>
+<p>Briefly speaking, the current features of 'rosr' are as follows.</p>
 
 <ul>
 <li>Users can create a brand new project with demo files in user-selected directories. The project has a well-organized structure. The demo files can be demo datasets, images, codes, journal manuscripts, books, slides, posters, mind maps, or websites. They are well connected, which means that all the documents will update automatically if the data or the codes change.</li>
@@ -208,7 +244,7 @@
 <ul>
 <li><p>Users can add new sub-project to an existing project according the sub-project type they choose.</p></li>
 
-<li><p>Users can create a skeleton project with no demo files when they get used to the way how &lsquo;rosr&rsquo; works.</p></li>
+<li><p>Users can create a skeleton project with no demo files when they get used to the way how 'rosr' works.</p></li>
 
 <li><p>Users can use a single R markdown file for the mathematic equations they use, and cross refer them in different documents. The advantage is that users do not have to copy and paste the same equation to different documents. If they want to update a certain equation, they only have to update the equation file.</p></li>
 </ul>
@@ -217,11 +253,11 @@
 
 <p>Figure 4. An equation sheet in a rosr project.</p>
 
-<p>The detailed usage of &lsquo;rosr&rsquo; is out of the scope of this post. A tutorial of &lsquo;rosr&rsquo; will be available soon.</p>
+<p>The detailed usage of 'rosr' is out of the scope of this post. A tutorial of 'rosr' will be available soon.</p>
 
 <h3 id="roadmap">Roadmap</h3>
 
-<p>In the future, more features will be brought into &lsquo;rosr&rsquo; as follows.</p>
+<p>In the future, more features will be brought into 'rosr' as follows.</p>
 
 <ol>
 <li>The insertion of equations will be improved. Currently, equations are inserted via the function <code>eq()</code> and users have to specify the number or label of an equation. A friendly GUI, which could be an RStudio addin or a shiny app, would be expected for code-haters.</li>
@@ -285,10 +321,10 @@
     <div class="panel-body">
         <ul class="tag-cloud">
             
-            <li><a href="https://openr.netlify.com/tags/beginr"><i class="fa fa-tags"></i> beginr</a>
+            <li><a href="https://openr.netlify.com/tags/advr"><i class="fa fa-tags"></i> advr</a>
             </li>
             
-            <li><a href="https://openr.netlify.com/tags/blogdown"><i class="fa fa-tags"></i> blogdown</a>
+            <li><a href="https://openr.netlify.com/tags/beginr"><i class="fa fa-tags"></i> beginr</a>
             </li>
             
             <li><a href="https://openr.netlify.com/tags/bookdown"><i class="fa fa-tags"></i> bookdown</a>
@@ -303,13 +339,10 @@
             <li><a href="https://openr.netlify.com/tags/mindr"><i class="fa fa-tags"></i> mindr</a>
             </li>
             
+            <li><a href="https://openr.netlify.com/tags/news"><i class="fa fa-tags"></i> news</a>
+            </li>
+            
             <li><a href="https://openr.netlify.com/tags/pinyin"><i class="fa fa-tags"></i> pinyin</a>
-            </li>
-            
-            <li><a href="https://openr.netlify.com/tags/post"><i class="fa fa-tags"></i> post</a>
-            </li>
-            
-            <li><a href="https://openr.netlify.com/tags/postr"><i class="fa fa-tags"></i> postr</a>
             </li>
             
             <li><a href="https://openr.netlify.com/tags/r"><i class="fa fa-tags"></i> r</a>
@@ -325,9 +358,6 @@
             </li>
             
             <li><a href="https://openr.netlify.com/tags/tutorial"><i class="fa fa-tags"></i> tutorial</a>
-            </li>
-            
-            <li><a href="https://openr.netlify.com/tags/utopian-io"><i class="fa fa-tags"></i> utopian-io</a>
             </li>
             
         </ul>

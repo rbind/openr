@@ -18,7 +18,7 @@
       
       <guid>https://openr.netlify.com/blog/steemr-sposts/</guid>
       <description>&lt;ul&gt;
-&lt;li&gt;A new function&lt;code&gt;sposts()&lt;/code&gt; displays a Shiny app, which is a user friendly interactive UI to show all the posts of a give Steemian&amp;rsquo;s ID.  Analysis diagrams are plotted as well, including the distribution of the post payout and votes, the active hour of the Steemian&amp;rsquo;s posting, and the time series of the growth of the cumulative post number, payout, and votes.&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;A new function&lt;code&gt;sposts()&lt;/code&gt; displays a Shiny app, which is a user friendly interactive UI to show all the posts of a give Steemian&#39;s ID.  Analysis diagrams are plotted as well, including the distribution of the post payout and votes, the active hour of the Steemian&#39;s posting, and the time series of the growth of the cumulative post number, payout, and votes.&lt;br /&gt;&lt;/li&gt;
 &lt;/ul&gt;</description>
     </item>
     
@@ -46,7 +46,7 @@
       <pubDate>Thu, 16 Aug 2018 12:57:21 +0000</pubDate>
       
       <guid>https://openr.netlify.com/blog/steemr-sfollow-diagrams/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://steemit.com/utopian-io/@dapeng/steemr-sfollow#@codingdefined/re-dapeng-steemr-sfollow-20180711t113112798z&#34;&gt;A comment&lt;/a&gt; by the utopian.io moderator mentioned that the wordings of both &amp;lsquo;followers but not following&amp;rsquo;, &amp;lsquo;following but not followers&amp;rsquo; are confusing. Although they are the official callings that I cannot change, a diagram could help. Therefore, I added a Venn diagram into the &lt;code&gt;sfollow()&lt;/code&gt;shiny app.&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;a href=&#34;https://steemit.com/utopian-io/@dapeng/steemr-sfollow#@codingdefined/re-dapeng-steemr-sfollow-20180711t113112798z&#34;&gt;A comment&lt;/a&gt; by the utopian.io moderator mentioned that the wordings of both &#39;followers but not following&#39;, &#39;following but not followers&#39; are confusing. Although they are the official callings that I cannot change, a diagram could help. Therefore, I added a Venn diagram into the &lt;code&gt;sfollow()&lt;/code&gt;shiny app.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -112,7 +112,7 @@
 
 &lt;ul&gt;
 &lt;li&gt;Setting-up of the environment which steemr requires.&lt;/li&gt;
-&lt;li&gt;Using the function &lt;code&gt;gid()&lt;/code&gt; to retrieve a Steemian&amp;rsquo;s profile from the block chain or the data servers.&lt;/li&gt;
+&lt;li&gt;Using the function &lt;code&gt;gid()&lt;/code&gt; to retrieve a Steemian&#39;s profile from the block chain or the data servers.&lt;/li&gt;
 &lt;li&gt;Using other R functions to enhance and analyze the data retrieved by &lt;code&gt;gid()&lt;/code&gt;.&lt;/li&gt;
 &lt;/ul&gt;</description>
     </item>
@@ -145,7 +145,7 @@
       <pubDate>Wed, 27 Jun 2018 14:44:03 +0000</pubDate>
       
       <guid>https://openr.netlify.com/blog/steemr-vote/</guid>
-      <description>&lt;p&gt;&amp;lsquo;&lt;a href=&#34;https://cran.r-project.org/package=steemr&#34;&gt;steemr&lt;/a&gt;&amp;rsquo; is an open source R package for playing with Steem data in &lt;a href=&#34;https://en.wikipedia.org/wiki/R_(programming_language)&#34;&gt;R environment&lt;/a&gt;. It is used to download, post process, analyze,  and visualize Steem data on the basis of the powerful statistic power of R.&lt;/p&gt;</description>
+      <description>&lt;p&gt;&#39;&lt;a href=&#34;https://cran.r-project.org/package=steemr&#34;&gt;steemr&lt;/a&gt;&#39; is an open source R package for playing with Steem data in &lt;a href=&#34;https://en.wikipedia.org/wiki/R_(programming_language)&#34;&gt;R environment&lt;/a&gt;. It is used to download, post process, analyze,  and visualize Steem data on the basis of the powerful statistic power of R.&lt;/p&gt;</description>
     </item>
     
     <item>

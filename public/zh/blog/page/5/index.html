@@ -57,6 +57,42 @@
   <meta property="og:url" content="/zh/blog//" />
   <meta property="og:image" content="img/logo.png" />
 
+  <script type="text/javascript"
+        async
+        src="https://cdn.bootcss.com/mathjax/2.7.3/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$'], ['\[\[','\]\]']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+});
+
+MathJax.Hub.Queue(function() {
+    
+    
+    
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i = 0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+});
+</script>
+
+<style>
+code.has-jax {
+    font: inherit;
+    font-size: 100%;
+    background: inherit;
+    border: inherit;
+    color: #515151;
+}
+</style>
+
 </head>
 
 
@@ -174,88 +210,6 @@
                             <div class="row">
                                 <div class="col-md-4">
                                   <div class="image">
-                                      <a href="https://openr.netlify.com/zh/blog/publish-r-packages/">
-                                          
-                                          <img src="https://openr.netlify.com/img/banners/logo-openr.png" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="https://openr.netlify.com/zh/blog/publish-r-packages/">R包发布记</a></h2>
-                                    <div class="clearfix">
-                                        <p class="author-category">
-                                          
-                                          由 <a href="#">赵鹏</a>
-                                          
-                                          
-                                          
-                                          
-
-                                        </p>
-                                        <p class="date-comments">
-                                            <a href="https://openr.netlify.com/zh/blog/publish-r-packages/"><i class="fa fa-calendar-o"></i> June 19, 2017</a>
-                                        </p>
-                                    </div>
-                                    <p class="intro">最近，我把mindr，pinyin 和 bookdownplus 三个包都提交到了 CRAN。这三个包都很简单，我就是想体验一下发布R包的流程，免得将来学R那本书出版了被问起来，答不上来就丢人了，另外也算是承接菜鸟致简速成那篇帖子，里面只谈了野包的发布分享，而只有提交到了 CRAN，野包才算转正。
-HUGOMORE42 很快，这三个包都成功转正，可以正常安装了：
-install.packages(&#39;mindr&#39;)install.packages(&#39;pinyin&#39;)install.packages(&#39;bookdownplus&#39;)这里说说发布的过程和我遇到的一些问题。
-自查包发布之前，先自查有没有错误。只需用RStudio打开待发布的R包的.Rproj文件，然后点击右上方面板的 Build - Check 按钮，就可以看到自查结果。
-这里要注意：
-结果里尽量不要包含任何 Notes 和 Warnings。如果有，就去找到问题修改，不然在提交的时候会被退回。
-关于author &lt;author's email&gt;的那一条 Note 是可以忽略的，只是提醒你再次看看作者信息有没有填错。
-我最初的自查结果有些 Notes 我原以为可以无视。比如，DESCRIPTION 文件里 Title 字段有些词要求首字母大写，我心想，这也算错误？就没理。再比如，告诉我 “no example. no test. no vignette.” 我心想，好像很多包都没有这几样，不也都发布了么？所以我同样无视。结果就是……
-下面接着讲。
-提交把包的压缩文件在 CRAN 的网页上传即可。成功上传后会收到 email 通知，需要点击里面的链接进行确认。
-我两个宝贝儿 mindr 和 pinyin 的1.0.0版是六一那天上传并确认的，之后我就等，一直等到6月16号，我才想起来这事儿，就发信给 CRAN cran@r-project.org 催了一下，当天就得到了 Dr. Uwe Ligges 的回复，说：
-你那两个包在提交当天就被系统自动拒收了，因为系统自动检查时发现了两个 Notes。系统自动发信通知你了，如果没收到，请翻翻垃圾邮件。
-我一翻邮箱的 spam，果然，拒信早就在里面了。</p>
-                                    <p class="read-more"><a href="https://openr.netlify.com/zh/blog/publish-r-packages/" class="btn btn-template-main">继续阅读</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </section>
-                        
-                        <section class="post">
-                            <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
-                                      <a href="https://openr.netlify.com/zh/blog/preface_zhu/">
-                                          
-                                          <img src="https://openr.netlify.com/img/banners/logo-xuer.png" class="img-responsive" alt="">
-                                          
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <h2><a href="https://openr.netlify.com/zh/blog/preface_zhu/">《学R》序（朱彤）</a></h2>
-                                    <div class="clearfix">
-                                        <p class="author-category">
-                                          
-                                          由 <a href="#">赵鹏</a>
-                                          
-                                          
-                                          
-                                          
-
-                                        </p>
-                                        <p class="date-comments">
-                                            <a href="https://openr.netlify.com/zh/blog/preface_zhu/"><i class="fa fa-calendar-o"></i> June 14, 2017</a>
-                                        </p>
-                                    </div>
-                                    <p class="intro"><p>我读硕士研究生时的导师是朱彤教授。在朱老师科研小组 ZTGroup 学习的三年如沐春风，我从中得到的收获受益终生。正值北京大学环境大楼落成不久，又逢毕业季，作为环境科学与工程学院的院长，朱老师在极其繁忙的工作中抽出时间来为本书欣然作序，实属不易，仅凭“感激”二字岂能表达我们的谢意？</p>
-
-<p>下面是朱老师为本书写的序言。</p></p>
-                                    <p class="read-more"><a href="https://openr.netlify.com/zh/blog/preface_zhu/" class="btn btn-template-main">继续阅读</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </section>
-                        
-                        <section class="post">
-                            <div class="row">
-                                <div class="col-md-4">
-                                  <div class="image">
                                       <a href="https://openr.netlify.com/zh/blog/pinyin/">
                                           
                                           <img src="https://openr.netlify.com/img/banners/logo-pinyin.png" class="img-responsive" alt="">
@@ -272,6 +226,8 @@ install.packages(&#39;mindr&#39;)install.packages(&#39;pinyin&#39;)install.pac
                                           
                                           
                                           
+                                          in <a href="https://openr.netlify.com/categories/120">120</a>
+                                          
                                           
 
                                         </p>
@@ -279,7 +235,12 @@ install.packages(&#39;mindr&#39;)install.packages(&#39;pinyin&#39;)install.pac
                                             <a href="https://openr.netlify.com/zh/blog/pinyin/"><i class="fa fa-calendar-o"></i> May 26, 2017</a>
                                         </p>
                                     </div>
-                                    <p class="intro"><p>今天新写了个R包，粗暴地取名为 <a href="https://github.com/pzhaonet/pinyin/">pinyin</a>，作用是把汉字转换成拼音。</p></p>
+									      
+      新写了pinyin这个R语言扩展包。
+      
+	  
+
+									
                                     <p class="read-more"><a href="https://openr.netlify.com/zh/blog/pinyin/" class="btn btn-template-main">继续阅读</a>
                                     </p>
                                 </div>
@@ -313,14 +274,12 @@ install.packages(&#39;mindr&#39;)install.packages(&#39;pinyin&#39;)install.pac
                                             <a href="https://openr.netlify.com/zh/blog/equations/"><i class="fa fa-calendar-o"></i> May 23, 2017</a>
                                         </p>
                                     </div>
-                                    <p class="intro">这些年，论文发得不多，公式却攒了不少，大部分都是自己亲手敲的 \(\LaTeX\) 代码。我把他们整理在一个 eq.tex 文档里，配合一个编译好的 eq.pdf 文件。每次需要的时候，在 eq.pdf 里找到需要的公式，然后去 eq.tex 找公式代码，拷到目标文档里完事儿。稍微有点小麻烦，但总比重新敲一遍代码要省事、准确。
-然而，现在有了 blogdown 和 Hugo-academic 主题，一切都变得不一样了。我把 eq.tex 里的文本全部拷贝粘贴到一个 .Rmd 文件，扔进网站里，就得到了现在这个帖子。鼠标放在公式上点右键- Show Math As - \(\TeX\) Commands，就得到了公式的 \(\LaTeX\) 代码。直接拷贝就行了，再也不用在两个文档里切换以及找来找去。
-HUGOMORE42 我觉得，我再也回不去了。
-MeteorologyAtmpspheric pressure\[\begin{equation}P=101.325 \cdot (\frac{293-0.0065z}{293}) ^ {5.26} = 86.838\,\text{kPa}\end{equation}\]
-\(z\): elevation above sea level in m.
-\[\begin{equation}-\text{d} p =\rho g \text{d}z\end{equation}\]
-\[\begin{equation}\ln \frac{p_2}{p_1} = - \int_{z_1}^{z_2} \frac{g}{RT}\text{d}z\end{equation}\]
-Psychrometric constant\[\begin{equation}\gamma =\frac{c_p P}{\varepsilon \lambda} = 0.</p>
+									      
+      现在有了 blogdown ，只需把常用公式扔进本帖里，在本帖的公式上点鼠标右键- Show Math As - TeX Commands，就得到了公式的 LaTeX 代码。直接拷贝就行。世界变得不一样了，我觉得，我再也回不去了。
+      
+	  
+
+									
                                     <p class="read-more"><a href="https://openr.netlify.com/zh/blog/equations/" class="btn btn-template-main">继续阅读</a>
                                     </p>
                                 </div>
@@ -354,22 +313,12 @@ MeteorologyAtmpspheric pressure\[\begin{equation}P=101.325 \cdot (\frac{293-0
                                             <a href="https://openr.netlify.com/zh/blog/mindr/"><i class="fa fa-calendar-o"></i> May 19, 2017</a>
                                         </p>
                                     </div>
-                                    <p class="intro">将 markdown (.md, .Rmd) 文件转换成思维导图的 R 扩展包 mindr 是我写的第五个 R 包，安装方法如下：
-HUGOMORE42 稳定版：
-install.packages(&quot;mindr&quot;)开发版：
-devtools::install_github(&quot;pzhaonet/mindr&quot;)使用方法：
-在R的工作目录创建个名叫 mm/ 的文件夹，丢进去一堆 markdown 文件 (.md, .Rmd)，然后运行：
-mindr::md2mm()就得到个 mm.mm 的思维导图文件，用免费的思维导图软件 freemind 可以直接打开。界面比较简陋。或者用漂亮的免费软件 Xmind，需要选择导入 freemind 导图。
-mindr包还有另外两个函数：mm2md()是反向操作，将思维导图转换成markdown;outline()是从markdown文件里提取出各级标题生成大纲。
-我的书稿《学R》最初是先用思维导图拟定框架，然后在 Word 里写，后来转到 bookdown 里完成的。今天下午，我在书稿的旧思维导图里照着新稿修改，想把两者统一了。改着改着，觉得不对劲儿呀，R markdown 的哲学是维护一份文档，导出多个格式，我怎么又开始维护两份内容相同只是格式不同的文档了？
-这肯定不是什么新问题，肯定有办法直接把 markdown 转成思维导图。于是我搜。我搜搜搜，竟然没搜到！
-这就怪了。从常识上判断，我认为这个工具肯定有，说不定藏在某个 R 包里，只是太隐蔽了。
-是应该继续搜呢，还是自己动手？有时候真是难以权衡。我掂量了一下轻重，选择了后者。
-晚上，写好了。
-先拿 bookdown 书稿当小白鼠练手，用 freemind 直接打开：
-freemind 确实简陋。再拿 blogdown 书稿 试试，导入 Xmind 看看：
-还不错。好了，实验成熟了，放心地用在自己的书稿上，并且挑个最漂亮的款式：
-更新：2017-06-19，‘mindr 1.0.4’ 在 CRAN 正式发布。</p>
+									      
+      我开发的第 5 个 R 语言扩展包。欢迎测试。
+      
+	  
+
+									
                                     <p class="read-more"><a href="https://openr.netlify.com/zh/blog/mindr/" class="btn btn-template-main">继续阅读</a>
                                     </p>
                                 </div>
@@ -403,17 +352,12 @@ freemind 确实简陋。再拿 blogdown 书稿 试试，导入 Xmind 看看：
                                             <a href="https://openr.netlify.com/zh/blog/rblogdown-bib/"><i class="fa fa-calendar-o"></i> May 18, 2017</a>
                                         </p>
                                     </div>
-                                    <p class="intro">本网站的公式和参考文献一直未能正常显示，直到今天我才把这两个问题解决。
-HUGOMORE42 公式公式的问题迟迟未解决，是因为我看到人们在讨论往html文件里加 Load mathjax 代码这种解决方案，一看就头大，不想做。
-其实，我用的hugo-academic主题，据说是支持数学环境的，据说在 config.toml 里设置 math = true就开启全站支持，在单篇post的yml头里这样设置就开启单篇支持。可是我两样都试过，然后运行 blogdown::serve_site()测试，在RStudio的Viewer里都不能成功显示公式。
-今天突然灵光一现，心想不会是RStudio Viewer的问题吧？于是点击Viewer左上角的 Show in new window 按钮，用外部浏览器打开一看，Duang！帖子里的公式就都可以正常显示了！这里秀一个：
-帖子里输入下面的 \(\LaTeX\) 公式：
-$$\int_0^\infty e^{-x^2} dx=\frac{\sqrt{\pi}}{2}$$网页就会显示：
-\[\int_0^\infty e^{-x^2} dx=\frac{\sqrt{\pi}}{2}\]
-参考文献两个多月前，就有个哥们儿问“有没有可能在blogdown创建的网站里添加参考文献?”作者回答得干脆：“有。”两人对话戛然而止，让我目瞪口呆。由于在blogdown 官方手册里并未看到添加参考文献的方法，我一直以为这个功能尚在开发中，直到今天也没见动静，有些起疑，就随便试了一下，步骤跟在 bookdown 里一样：
-把参考文献库 .bib 文件考到 content\post\.在帖子 .Rmd 文档的 yml 头里声明 .bib 文件的名称和路径。这里我设成 bibliography: [book.bib, packages.bib].在帖子里引用 .bib 里的文献条目，例如 [@R-blogdown].运行建站函数 blogdown::build_site().就这样，说时迟那时快，只见Duang！帖子里的引用就显示成了 (Xie 2017) ！而帖子末尾的参考文献列表就自动出来了！
-blogdown 可以如此方便地往帖子里插入计算代码、图表、公式、参考文献，我实在找不出第二个这样的工具。建科研网站，非 blogdown 莫属！
-最后顺便提一下：虽然最新正式版的 RStudio 1.</p>
+									      
+      一个号称科研主题的网站，如果不能方便地插入公式和参考文献，那还能叫科研网站么？
+      
+	  
+
+									
                                     <p class="read-more"><a href="https://openr.netlify.com/zh/blog/rblogdown-bib/" class="btn btn-template-main">继续阅读</a>
                                     </p>
                                 </div>
@@ -447,17 +391,12 @@ blogdown 可以如此方便地往帖子里插入计算代码、图表、公式�
                                             <a href="https://openr.netlify.com/zh/blog/rmickey/"><i class="fa fa-calendar-o"></i> May 16, 2017</a>
                                         </p>
                                     </div>
-                                    <p class="intro">写R包这种高大上的工作，原以为学会怎么写得花个一年半载，学会之后写一个包怎么着也得个把月，谁料想周一上午下了决心，到周二下午就一口气写了4个包，算起来从学到写，只花了一天多时间。这里是个小结。
-HUGOMORE42 学写R包，我主要参考了3份资料：
-谢益辉的开发R程序包之忍者篇，2011年。反复读了好几遍。黄俊文的极简R包建立方法, 2013年。反复读了好几遍。Hadley Wickham 的R packages, 2015年。反复扫了好几眼。有了这3份很好的资料，那我还写本篇帖子做什么？
-这是因为，他们都是高手中的高手，只是我觉得他们写得，就好比教授写幼儿园教材，仍然不太合小朋友的胃口，不足以让我等菜鸟快速入门。比如读到roxygen2是多么美妙，我起初完全没体验，不知道“举头望文档，低头思函数”到底说的是什么（what the hell was Yihui talking about? 当然，一天之后我就体会到了静夜思的精妙），再一看Emacs就被吓得河水倒流，当年光一个vim就把我折腾个半死。而极简篇里，我觉得既然是极简，能减掉的步骤尽量减，所以还能继续剪。可能当年是极简，时过境迁，人类进步，现在可以比极简更简。
-下面，我试试写个减到不能再减的一剑封喉致简版，只需小改两个文本文件，不出十分钟就写出一个能用的R包。
-准备跟前期准备和后期维护相比，写包本身其实是最简单的环节。假定你已经安装好了R和RStudio，那么，运行R，安装几个包：
-install.packages(c(&quot;devtools&quot;, &quot;roxygen2&quot;, &quot;testthat&quot;, &quot;knitr&quot;))然后：
-Windows用户，安装 rtools.Linux用户，安装对应的 R 开发包，sudo apt-get install r-base-dev.OS X 用户，安装command-line-tools，Terminal 运行 git 或者 xcode-select.致简四部曲参照益辉的rmini，我做了个更简单的模板（Update：根据Dong的建议，也可以RStudio - File - New project - New directory - R package），叫做rmickey。点击下载并解压缩，得到个名叫rmickey文件夹。这个文件夹名字可以随便改。
-双击rmickey.Rproj（这个文件名也可以随便改），就会用RStudio打开这个项目。后续步骤全部在RStudio里操作。
-点击打开RStudio右下窗口Files下的DESCRIPTION文件（这个文件名千万别改）和R/foo.R文件（这个文件名可以随便改）。DESCRIPTION里是你的包的描述信息。可以看到包名称，版本，日期，包标题，包作者，维护者，依赖性，描述等信息。把其中每一条冒号后面的信息改成你自己的信息，比如把第一行包的名称改成mymickey，保存。R/foo.R里是你的包里包含的自定义函数，模板里只列了一条做示例。函数的写法跟平时没区别。而函数前面的几行，就是所谓的说明文档，都以#'开头，第一行是简要介绍，以@param开头的行逐个介绍函数的自变量（懒得介绍的话就像示例里的x2那一行一样空着，但x2后面必须有一个空格），@return开头的行介绍因变量（必填），@export @examples两行可以不修改。有更多函数的话，照葫芦画瓢在文件里往下继续写就是了。保存。
-点击RStudio右上窗口的Build标签下的Build &amp; Reload按钮，包就编译并自动安装好了！</p>
+									      
+      写R包，原以为学会怎么写得花个一年半载，学会之后写一个怎么着也得花个把个月，谁料想一旦下了决心，我一口气写了4个包，算起来从学到写，只花了一天多时间。
+      
+	  
+
+									
                                     <p class="read-more"><a href="https://openr.netlify.com/zh/blog/rmickey/" class="btn btn-template-main">继续阅读</a>
                                     </p>
                                 </div>
@@ -491,18 +430,12 @@ install.packages(c(&quot;devtools&quot;, &quot;roxygen2&quot;, &quot;testthat&qu
                                             <a href="https://openr.netlify.com/zh/blog/postr/"><i class="fa fa-calendar-o"></i> May 16, 2017</a>
                                         </p>
                                     </div>
-                                    <p class="intro">用R markdown写海报的扩展包postr安装使用方法（需要先安装好软件环境，详见postr项目主页）：
-HUGOMORE42 devtools::install_github(&quot;pzhaonet/postr&quot;)setwd()postr::postr()益辉的莽撞人项目，悬赏解决“用 R Markdown 做海报”这个技术难题。我私下说，Markdown走的是LaTeX路线，讲究篇章结构和逻辑，而海报追求更多随意性和艺术性，即使学术海报也不例外，所以费劲硬要用Markdown解决，可能吃力不讨好。倒不如Powerpoint来得方便，或者把整个海报在R里当成一个device，用layout画图来实现。话虽这么说，我仍然在留意这件事，因为我在新书学R里提出R语言科研方案的整体拼图，被我几乎全部拼完了，只缺海报这一块。这就好比在朋友圈发照片只发八张，看一眼就浑身不自在。
-前几天，做bookdownplus时找模板，在比利时鲁汶大学的一大堆模板当中，我极其偶然地发现，里面暗暗潜伏着的，竟然有用R Markdown制作海报的秘密，淹没在一大堆文件里，搞不清楚各个文件之间的关系，而且说明文档过于简单，用起来不够方便。于是，我花了些工夫，把海报部分择了出来，稍加修改，增添了几个自己做的颜色主题，纳入了bookdownplus里。我的想法是，用户只需下载我这个文件夹，选择好模板，一运行，就出来个Rmd文件，打开一点knit按钮，Duang！海报就出来了。
-于是去揭“莽撞人”榜。榜主说：很好。然后说：做成个包吧！名字都起好了，叫postr。为啥不直接叫poster？我猜大概是postr跟knitr的命名法类似，更容易搜到吧。
-想来也是。我这种下载文件夹的方法毕竟路子太野，不符合R语言的习惯，大家更喜欢的是做包，上传，安装。但是我从来没做过包。而且，我认为做包是R语言里高大上的东西，我不认为自己能很快学会做。于是，我在朋友圈招贤，看有没有谁愿意把这活儿给接过去。消息放出去一天，无人理睬。
-得，自己来吧。
-这天大娃生病了，早上带他看医生。诊所人满为患。排队的时候，我把网上几篇关于R包开发入门的帖子扫了几遍，好像不太难哦。从诊所出来，十点多了，一到办公室，就干劲十足地折腾。事情出乎意料的顺利。我原以要到明年才能把这个包写出来，结果当天下午就写完了。这个过程里，多亏了几位前人的工作，几年前还很繁琐复杂的R包开发，现在分分钟就能写一个玩玩。
-既然这么容易，我顺手把bookdownplus也写成了个包。然后把平时常用的方程写成了第三个包。我还准备写个R包开发菜鸟教程，于是又写了个示例包。
-从对R包开发一无所知，到一口气干掉四个包，花了不到两天工夫。用力过猛，有点撑了，我隐隐觉得不妙：好像不该这么顺利吧。
-果然，postr放到github当天晚上，就有人留言了。我很好奇这哥们儿是怎么在第一时间发现我这么个无名之辈发布了一个包。这哥们儿先说，postr这个名字起得好，很容易记住。这得感谢益辉，他给我的域名提的建议也让人说容易记。然后这哥们儿说：这个包他运行无法通过。
-这时我陡然发现，这才是R包开发的关键。写个包发布到github并不难，难的是解决用户的问题。
-前面等待的，将是一个又一个的坑。</p>
+									      
+      我开发的第一个R语言扩展包。欢迎测试。
+      
+	  
+
+									
                                     <p class="read-more"><a href="https://openr.netlify.com/zh/blog/postr/" class="btn btn-template-main">继续阅读</a>
                                     </p>
                                 </div>
@@ -536,22 +469,12 @@ HUGOMORE42 devtools::install_github(&quot;pzhaonet/postr&quot;)setwd()postr::p
                                             <a href="https://openr.netlify.com/zh/blog/bookdown-plus/"><i class="fa fa-calendar-o"></i> May 9, 2017</a>
                                         </p>
                                     </div>
-                                    <p class="intro">注意：本文所述的bookdown+这个项目已经停止开发，继承者是我新开的R包项目bookdownplus ，这是因为我学会了写R包。当然，说不定有些朋友不喜欢安装R包，喜欢下载个文件夹直接免安装用，那么本文所述的方法仍然可以继续使用，只是我不再更新了而已。
-HUGOMORE42 R bookdown 能做的事情很多，可是那些功能迟迟不来，我只好自己动手，写了个 bookdown+，目前大体实现了用 bookdown 写期刊论文、化学分子式、信件、日记、日历等功能。当然，有些还没完全实现，革命不够彻底，带着浓重的\(\LaTeX\)旧社会的气息。革命尚未成功，同志仍需努力。
-下面是 bookdown+ 的简介和快速使用方法。
-背景R bookdown+，听起来像是跟R[@R-base]的扩展包bookdown[@R-bookdown]有关吧?
-一点没错！我们知道，bookdown天生是个用来写编程书籍的称手工具。只是，这仅仅是硬币的一面。bookdown的功能远远不止如此。它就像一个美味的蛋糕，我等啊等啊，等着谁把它切开，实在等不及了，就自己下手吧。所以，我弄了个bookdown+。
-bookdown+是bookdown的扩展。我数年前收集了一些\(\LaTeX\)模板，现在我把他们整理到bookdown+里，这样就可以开开心心在bookdown的环境里做喜欢的事情。bookdown+ 展示了硬币的另一面：你可以用它来写写期刊论文、化学分子式、信件、日历、甚至日记。
-另一方面，我从个人角度对bookdown的使用做了简化。官方提供的bookdown模板虽然很好用，但对新手来说略显繁琐，需要：
-在index.Rmd和_output.yml两个文件里设置yaml，需要在_bookdown.yml里设置文件名；对中文用户来说，还得跟LaTeX打交道，需要考虑before_body.tex, after_body, preamble.tex里面的设置。这些操作可能让新手望而生畏。
-R bookdown+用起来就容易多了，只需在一个叫做_runme.R的文件里设置好书名、作者，选好模板，binggo！就可以开始放心写自己的文字了。
-功能扩展，操作简化，这就是R bookdown+。
-在不久的未来，肯定会出现很多官方的bookdown模板，但是我不想等了。你要是也等不及，就跟我来一起使用或开发[bookdown+]吧！
-快速入门预备在开始前，你需要安装 R, RStudio, bookdown，和其他依赖的软件和包(例如 Pandoc, \(\LaTeX\), rmarkdown, rticle, knitr等)。详见bookdown官方手册.
-准备好后，从Github下载bookdown+压缩文件。解压缩到你的电脑里，在得到的文件夹里找到 _start.Rproj文件，双击就会在RStudio里打开一个项目。
-文件夹里还有个_runme.R文件。你可以双击打开并运行。下面是对这个文件里代码的详细解释。
-第1步：标题和作者改成你自己书的标题和作者名。
-title &lt;- &#39;bookdown+: Authoring Articles, Mails, Guitar books, Chemical Molecular Formulae and Equations with R bookdown&#39;author &lt;- &#39;Peng Zhao&#39;第2步: 模板在给定的可用模板里选择你想要的。这里我们选第8个。</p>
+									      
+      我对R bookdown做了两件事：功能上增强，操作上简化, 这就是R bookdown+。
+      
+	  
+
+									
                                     <p class="read-more"><a href="https://openr.netlify.com/zh/blog/bookdown-plus/" class="btn btn-template-main">继续阅读</a>
                                     </p>
                                 </div>
@@ -585,10 +508,91 @@ title &lt;- &#39;bookdown+: Authoring Articles, Mails, Guitar books, Chemical Mo
                                             <a href="https://openr.netlify.com/zh/blog/hugo-icon/"><i class="fa fa-calendar-o"></i> April 19, 2017</a>
                                         </p>
                                     </div>
-                                    <p class="intro">网站图标，就是下图的这些东东，用浏览器打开网站时显示在地址栏的顶端。R blogdown安装的hugo-academic主题，默认图标是个蓝色学位帽，挺好看的，不改也行，只是如果大家都用的话，泯然众人，识别度就低了。
-HUGOMORE42 改的方式很简单：将你自己的图标图片保存为.png格式，并命名为icon.png，替换\themes\hugo-academic\static\img\icon.png即可。
-update: 更好的方案来自yang Cao的提议：把icon.png放在static/img/，避免在更新themes时将自定义图标覆盖。</p>
+									      
+      Hugo 网站的另一个小细节，就是浏览器顶端的小图标。
+      
+	  
+
+									
                                     <p class="read-more"><a href="https://openr.netlify.com/zh/blog/hugo-icon/" class="btn btn-template-main">继续阅读</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </section>
+                        
+                        <section class="post">
+                            <div class="row">
+                                <div class="col-md-4">
+                                  <div class="image">
+                                      <a href="https://openr.netlify.com/zh/blog/hugo-rss/">
+                                          
+                                          <img src="https://openr.netlify.com/img/banners/logo-openr.png" class="img-responsive" alt="">
+                                          
+                                      </a>
+                                  </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <h2><a href="https://openr.netlify.com/zh/blog/hugo-rss/">Hugo 网站的RSS</a></h2>
+                                    <div class="clearfix">
+                                        <p class="author-category">
+                                          
+                                          由 <a href="#">赵鹏</a>
+                                          
+                                          
+                                          
+                                          
+
+                                        </p>
+                                        <p class="date-comments">
+                                            <a href="https://openr.netlify.com/zh/blog/hugo-rss/"><i class="fa fa-calendar-o"></i> April 18, 2017</a>
+                                        </p>
+                                    </div>
+									      
+      Hugo 网站的小细节真是需要一点点来，好在都不难搞定。
+      
+	  
+
+									
+                                    <p class="read-more"><a href="https://openr.netlify.com/zh/blog/hugo-rss/" class="btn btn-template-main">继续阅读</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </section>
+                        
+                        <section class="post">
+                            <div class="row">
+                                <div class="col-md-4">
+                                  <div class="image">
+                                      <a href="https://openr.netlify.com/zh/blog/slash/">
+                                          
+                                          <img src="https://openr.netlify.com/img/banners/logo-openr.png" class="img-responsive" alt="">
+                                          
+                                      </a>
+                                  </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <h2><a href="https://openr.netlify.com/zh/blog/slash/">斜杠</a></h2>
+                                    <div class="clearfix">
+                                        <p class="author-category">
+                                          
+                                          由 <a href="#">赵鹏</a>
+                                          
+                                          
+                                          
+                                          
+
+                                        </p>
+                                        <p class="date-comments">
+                                            <a href="https://openr.netlify.com/zh/blog/slash/"><i class="fa fa-calendar-o"></i> April 17, 2017</a>
+                                        </p>
+                                    </div>
+									      
+      这个小东西已经困扰我多年了，事儿不大，我一直没敢说......
+      
+	  
+
+									
+                                    <p class="read-more"><a href="https://openr.netlify.com/zh/blog/slash/" class="btn btn-template-main">继续阅读</a>
                                     </p>
                                 </div>
                             </div>
@@ -651,7 +655,7 @@ update: 更好的方案来自yang Cao的提议：把icon.png放在static/img/，
     <div class="panel-body">
         <ul class="nav nav-pills nav-stacked">
             
-            <li><a href="https://openr.netlify.com/categories/%e6%9c%aa%e5%88%86%e7%b1%bb">未分类 (7)</a>
+            <li><a href="https://openr.netlify.com/categories/xuer">xuer (16)</a>
             </li>
             
         </ul>
@@ -673,13 +677,7 @@ update: 更好的方案来自yang Cao的提议：把icon.png放在static/img/，
     <div class="panel-body">
         <ul class="tag-cloud">
             
-            <li><a href="https://openr.netlify.com/tags/advr"><i class="fa fa-tags"></i> advr</a>
-            </li>
-            
             <li><a href="https://openr.netlify.com/tags/beginr"><i class="fa fa-tags"></i> beginr</a>
-            </li>
-            
-            <li><a href="https://openr.netlify.com/tags/blog"><i class="fa fa-tags"></i> blog</a>
             </li>
             
             <li><a href="https://openr.netlify.com/tags/blogdown"><i class="fa fa-tags"></i> blogdown</a>
@@ -691,22 +689,7 @@ update: 更好的方案来自yang Cao的提议：把icon.png放在static/img/，
             <li><a href="https://openr.netlify.com/tags/bookdownplus"><i class="fa fa-tags"></i> bookdownplus</a>
             </li>
             
-            <li><a href="https://openr.netlify.com/tags/css"><i class="fa fa-tags"></i> css</a>
-            </li>
-            
-            <li><a href="https://openr.netlify.com/tags/drposter"><i class="fa fa-tags"></i> drposter</a>
-            </li>
-            
-            <li><a href="https://openr.netlify.com/tags/git"><i class="fa fa-tags"></i> git</a>
-            </li>
-            
-            <li><a href="https://openr.netlify.com/tags/hugo"><i class="fa fa-tags"></i> hugo</a>
-            </li>
-            
             <li><a href="https://openr.netlify.com/tags/latex"><i class="fa fa-tags"></i> latex</a>
-            </li>
-            
-            <li><a href="https://openr.netlify.com/tags/linux"><i class="fa fa-tags"></i> linux</a>
             </li>
             
             <li><a href="https://openr.netlify.com/tags/markdown"><i class="fa fa-tags"></i> markdown</a>
@@ -727,9 +710,6 @@ update: 更好的方案来自yang Cao的提议：把icon.png放在static/img/，
             <li><a href="https://openr.netlify.com/tags/post"><i class="fa fa-tags"></i> post</a>
             </li>
             
-            <li><a href="https://openr.netlify.com/tags/postr"><i class="fa fa-tags"></i> postr</a>
-            </li>
-            
             <li><a href="https://openr.netlify.com/tags/r"><i class="fa fa-tags"></i> r</a>
             </li>
             
@@ -742,10 +722,7 @@ update: 更好的方案来自yang Cao的提议：把icon.png放在static/img/，
             <li><a href="https://openr.netlify.com/tags/steemr"><i class="fa fa-tags"></i> steemr</a>
             </li>
             
-            <li><a href="https://openr.netlify.com/tags/teaching"><i class="fa fa-tags"></i> teaching</a>
-            </li>
-            
-            <li><a href="https://openr.netlify.com/tags/utopian-io"><i class="fa fa-tags"></i> utopian-io</a>
+            <li><a href="https://openr.netlify.com/tags/tutorial"><i class="fa fa-tags"></i> tutorial</a>
             </li>
             
             <li><a href="https://openr.netlify.com/tags/word"><i class="fa fa-tags"></i> word</a>
@@ -754,10 +731,13 @@ update: 更好的方案来自yang Cao的提议：把icon.png放在static/img/，
             <li><a href="https://openr.netlify.com/tags/xaringan"><i class="fa fa-tags"></i> xaringan</a>
             </li>
             
-            <li><a href="https://openr.netlify.com/tags/%e5%90%89%e4%bb%96"><i class="fa fa-tags"></i> 吉他</a>
+            <li><a href="https://openr.netlify.com/tags/%e5%ad%a6"><i class="fa fa-tags"></i> 学</a>
             </li>
             
             <li><a href="https://openr.netlify.com/tags/%e5%ad%a6-r"><i class="fa fa-tags"></i> 学-r</a>
+            </li>
+            
+            <li><a href="https://openr.netlify.com/tags/%e5%ad%a6r"><i class="fa fa-tags"></i> 学r</a>
             </li>
             
         </ul>

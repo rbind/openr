@@ -57,6 +57,42 @@
   <meta property="og:url" content="//" />
   <meta property="og:image" content="img/logo-small.png" />
 
+  <script type="text/javascript"
+        async
+        src="https://cdn.bootcss.com/mathjax/2.7.3/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$'], ['\[\[','\]\]']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+});
+
+MathJax.Hub.Queue(function() {
+    
+    
+    
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i = 0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+});
+</script>
+
+<style>
+code.has-jax {
+    font: inherit;
+    font-size: 100%;
+    background: inherit;
+    border: inherit;
+    color: #515151;
+}
+</style>
+
 </head>
 
 
@@ -198,7 +234,7 @@
 
                         </div>
                         <div class="col-sm-7">
-                            <img class="img-responsive" src="img/banners/logo-rmd.png" alt="">
+                            <img class="img-responsive" src="https://openr.netlify.com/img/banners/logo-rmd.png" alt="">
                         </div>
                     </div>
                 </div>
@@ -216,7 +252,7 @@
 
                         </div>
                         <div class="col-sm-7">
-                            <img class="img-responsive" src="img/banners/logo-rosr.png" alt="">
+                            <img class="img-responsive" src="https://openr.netlify.com/img/banners/logo-rosr.png" alt="">
                         </div>
                     </div>
                 </div>
@@ -234,7 +270,7 @@
 
                         </div>
                         <div class="col-sm-7">
-                            <img class="img-responsive" src="img/banners/logo-bookdownplus.png" alt="">
+                            <img class="img-responsive" src="https://openr.netlify.com/img/banners/logo-bookdownplus.png" alt="">
                         </div>
                     </div>
                 </div>
@@ -252,7 +288,7 @@
 
                         </div>
                         <div class="col-sm-7">
-                            <img class="img-responsive" src="img/banners/logo-mindr.png" alt="">
+                            <img class="img-responsive" src="https://openr.netlify.com/img/banners/logo-mindr.png" alt="">
                         </div>
                     </div>
                 </div>
@@ -270,7 +306,7 @@
 
                         </div>
                         <div class="col-sm-7">
-                            <img class="img-responsive" src="img/banners/logo-beginr.png" alt="">
+                            <img class="img-responsive" src="https://openr.netlify.com/img/banners/logo-beginr.png" alt="">
                         </div>
                     </div>
                 </div>
@@ -288,7 +324,7 @@
 
                         </div>
                         <div class="col-sm-7">
-                            <img class="img-responsive" src="img/banners/logo-pinyin.png" alt="">
+                            <img class="img-responsive" src="https://openr.netlify.com/img/banners/logo-pinyin.png" alt="">
                         </div>
                     </div>
                 </div>
@@ -519,6 +555,79 @@
                         <div class="top">
                             <div class="image" style="overflow:hidden">
                                 
+                                <img src="https://openr.netlify.com/img/banners/logo-pinyin.png" class="img-responsive" alt="" >
+                                
+                            </div>
+                            <div class="bg"></div>
+                            <div class="text">
+                                <p class="buttons">
+                                    <a href="https://openr.netlify.com/blog/heteronym-problem/" class="btn btn-template-transparent-primary"><i class="fa fa-link"></i> Read more</a>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="content">
+                            <h4><a href="https://openr.netlify.com/blog/heteronym-problem/">[Task Request] Heteronym problem</a></h4>
+                            <p class="author-category">
+                            
+                            By <a href="#">赵鹏</a>
+                            
+                            on April 12, 2018
+                            </p>
+                            <p class="intro"><p>Heteronym is a common lingual phenomenon in the most languages.  Wikepedia:</p>
+
+<blockquote>
+<p>A heteronym (also known as a heterophone) is a word that has a different pronunciation and meaning as another word but the same spelling.</p>
+</blockquote></p>
+                            <p class="read-more">
+                              <a href="https://openr.netlify.com/blog/heteronym-problem/" class="btn btn-template-main">Continue reading</a>
+                            </p>
+                        </div>
+                    </div>
+                    
+
+                </div>
+                
+                <div class="col-md-3 col-sm-6">
+                    <div class="box-image-text blog">
+                        <div class="top">
+                            <div class="image" style="overflow:hidden">
+                                
+                                <img src="https://openr.netlify.com/img/banners/logo-beginr.png" class="img-responsive" alt="" >
+                                
+                            </div>
+                            <div class="bg"></div>
+                            <div class="text">
+                                <p class="buttons">
+                                    <a href="https://openr.netlify.com/blog/beginr-released/" class="btn btn-template-transparent-primary"><i class="fa fa-link"></i> Read more</a>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="content">
+                            <h4><a href="https://openr.netlify.com/blog/beginr-released/">R package beginr released on CRAN</a></h4>
+                            <p class="author-category">
+                            
+                            By <a href="#">赵鹏</a>
+                            
+                            on June 23, 2017
+                            </p>
+                            <p class="intro">I’m glad to announce that ‘beginr’ (Zhao 2017) is now on CRAN. This post is a brief documentation of ‘beginr 0.1.0’. Subsequent updates can be found on the GitHub site of beginr.
+Introduction‘beginr’ is a collection of useful functions for R beginners, including hints for the arguments of the ‘plot()’ function, self-defined functions for error bars, user-customized pair plots and hist plots, enhanced linear regression figures, etc.. This package could be helpful to R experts as well.</p>
+                            <p class="read-more">
+                              <a href="https://openr.netlify.com/blog/beginr-released/" class="btn btn-template-main">Continue reading</a>
+                            </p>
+                        </div>
+                    </div>
+                    
+
+                </div>
+                
+                <div class="col-md-3 col-sm-6">
+                    <div class="box-image-text blog">
+                        <div class="top">
+                            <div class="image" style="overflow:hidden">
+                                
                                 <img src="https://openr.netlify.com/img/banners/logo-bookdownplus.png" class="img-responsive" alt="" >
                                 
                             </div>
@@ -539,7 +648,7 @@
                             on June 22, 2017
                             </p>
                             <p class="intro">I’m glad to announce that ‘bookdownplus 1.0.2’ (Zhao 2017) is now on CRAN. This post is a brief documentation of ‘bookdownplus 1.0.2’. However, I have been updating ‘bookdownplus’ frequently and the new version is more powerful and even easier. Please go to the GitHub site of bookdownplus.
-HUGOMORE42 IntroductionThe R package bookdownplus is an extension of bookdown (Xie 2016). It is a collection ofmultiple templates on the basis of LaTeX, which are tailored so that I can work happily under the umbrella of bookdown.</p>
+IntroductionThe R package bookdownplus is an extension of bookdown (Xie 2016). It is a collection ofmultiple templates on the basis of LaTeX, which are tailored so that I can work happily under the umbrella of bookdown.</p>
                             <p class="read-more">
                               <a href="https://openr.netlify.com/blog/bookdownplus-released/" class="btn btn-template-main">Continue reading</a>
                             </p>
@@ -583,78 +692,6 @@ HUGOMORE42 IntroductionThe R package bookdownplus is an extension of bookdown (
 
                 </div>
                 
-                <div class="col-md-3 col-sm-6">
-                    <div class="box-image-text blog">
-                        <div class="top">
-                            <div class="image" style="overflow:hidden">
-                                
-                                <img src="https://openr.netlify.com/img/banners/logo-mindr.png" class="img-responsive" alt="" >
-                                
-                            </div>
-                            <div class="bg"></div>
-                            <div class="text">
-                                <p class="buttons">
-                                    <a href="https://openr.netlify.com/blog/mindr/" class="btn btn-template-transparent-primary"><i class="fa fa-link"></i> Read more</a>
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="content">
-                            <h4><a href="https://openr.netlify.com/blog/mindr/">R package mindr: convert markdown files to mind maps, and vice versa</a></h4>
-                            <p class="author-category">
-                            
-                            By <a href="#">赵鹏</a>
-                            
-                            on May 19, 2017
-                            </p>
-                            <p class="intro">This is a preliminary version of the introduction to mindr. Please go to my Github repo mindr for the latest updates.
-HUGOMORE42 Quick startInstallationdevtools::install_github(&quot;pzhaonet/mindr&quot;)Convert (a) markdown file(s) into a mindmapCreate a folder named mm in the working directory (getwd()), and drop some markdown or rmarkdown files into mm/. Run:
-mindr::md2mm()then you will get a mm.mm file. Open it with any mind-map (brainstorm) software, and you will get a mind map.</p>
-                            <p class="read-more">
-                              <a href="https://openr.netlify.com/blog/mindr/" class="btn btn-template-main">Continue reading</a>
-                            </p>
-                        </div>
-                    </div>
-                    
-
-                </div>
-                
-                <div class="col-md-3 col-sm-6">
-                    <div class="box-image-text blog">
-                        <div class="top">
-                            <div class="image" style="overflow:hidden">
-                                
-                                <img src="https://openr.netlify.com/img/banners/logo-openr.png" class="img-responsive" alt="" >
-                                
-                            </div>
-                            <div class="bg"></div>
-                            <div class="text">
-                                <p class="buttons">
-                                    <a href="https://openr.netlify.com/blog/postr/" class="btn btn-template-transparent-primary"><i class="fa fa-link"></i> Read more</a>
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="content">
-                            <h4><a href="https://openr.netlify.com/blog/postr/">R package postr: created posters with R markdown</a></h4>
-                            <p class="author-category">
-                            
-                            By <a href="#">赵鹏</a>
-                            
-                            on May 16, 2017
-                            </p>
-                            <p class="intro">This is a preliminary version of the introduction to postr. Please go to my Github repo postr for the latest updates.
-HUGOMORE42 This package is modified from kuleuven-template, where you can see the requirements before using this package. Here I picked out the instruction for Windows users as follows.
-Install a LaTeX distribution, e.g. MiKTeX. For Chinese users CTeX is highly recommended.Install TexmakerInstall RInstall RStudioInstall Python 2Install Python filter support for Pandoc:on a Windows command prompt, type pip install pandocfiltersInstall SumatraPDF for auto-refresh of PDF previewsAfterwards, add the Python directory to the system PATH variable.</p>
-                            <p class="read-more">
-                              <a href="https://openr.netlify.com/blog/postr/" class="btn btn-template-main">Continue reading</a>
-                            </p>
-                        </div>
-                    </div>
-                    
-
-                </div>
-                
 
             </div>
             
@@ -690,7 +727,7 @@ HUGOMORE42 This package is modified from kuleuven-template, where you can see th
                     <li class="item" title="Peng Zhao">
                         
                           <a href="https://pzhao.org" target="_blank">
-                            <img src="https://www.pzhao.org/img/zhao.jpg" alt="Peng Zhao" class="img-responsive" />
+                            <img src="https://openr.netlify.com/img/clients/pengzhao.jpg" alt="Peng Zhao" class="img-responsive" />
                           </a>
                         
                     </li>
@@ -698,7 +735,7 @@ HUGOMORE42 This package is modified from kuleuven-template, where you can see th
                     <li class="item" title="Wanna Join us?">
                         
                           <a href="mailto:xuer@pzhao.net" target="_blank">
-                            <img src="img/clients/Unclesamwantyou.jpg" alt="Wanna Join us?" class="img-responsive" />
+                            <img src="https://openr.netlify.com/img/clients/Unclesamwantyou.jpg" alt="Wanna Join us?" class="img-responsive" />
                           </a>
                         
                     </li>

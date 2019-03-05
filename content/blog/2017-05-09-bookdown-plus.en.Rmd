@@ -15,7 +15,6 @@ banner: img/banners/logo-bookdownplus.png
 
 This is a preliminary version of the introduction to bookdownplus. Please go to my Github repo [bookdownplus](https://github.com/pzhaonet/bookdownplus) for the latest updates. Full documentation can be found in the book [R bookdownplus Textbook](https://bookdown.org/baydap/bookdown-plus).
 
-<!--more-->
 
 # Introduction
 

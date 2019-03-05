@@ -13,7 +13,6 @@ banner: img/banners/logo-openr.png
 
 This is a preliminary version of the introduction to postr. Please go to my Github repo [postr](https://github.com/pzhaonet/postr) for the latest updates. 
 
-<!--more-->
 
 This package is modified from [kuleuven-template](https://github.com/exporl/kuleuven-templates), where you can see the requirements before using this package. Here I picked out the instruction for Windows users as follows.
 

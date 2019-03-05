@@ -1,11 +1,10 @@
 ---
 title: 'animate.css: Xaringan 动画转场'
-author: "赵鹏"
+author: 赵鹏
 date: '2018-11-23'
 slug: xaringan-animate-single
 summary: "animate.css。"
 tags:
-  - post
   - R
   - markdown
   - xaringan

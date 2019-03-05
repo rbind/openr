@@ -7,4 +7,4 @@ description: >
     <li>将汉字转为拼音，四角号码，五笔字型编码。</li>
     <li>bookdown 的中文助手。</li>
   </ul>
-image: "img/banners/logo-pinyin.png"
+image: "https://openr.netlify.com/img/banners/logo-pinyin.png"

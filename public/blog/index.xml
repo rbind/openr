@@ -17,7 +17,7 @@
       <pubDate>Thu, 31 Jan 2019 00:00:00 +0000</pubDate>
       
       <guid>https://openr.netlify.com/blog/rosr-shiny/</guid>
-      <description>&lt;p&gt;&amp;lsquo;rosr&amp;rsquo; is an R package for creating reproducible academic project with integrated various academic elements, including data, bibliography, codes, images, manuscripts, dissertations, slides and so on. These elements are well connected so that they can be easily synchronized and updated. Users don&amp;rsquo;t have to repeat copying and pasting their results and figures from time to time. It will be easy for the scientific researchers to use, even if they are R beginners, or even non-R-users.&lt;/p&gt;</description>
+      <description>&lt;p&gt;&#39;rosr&#39; is an R package for creating reproducible academic project with integrated various academic elements, including data, bibliography, codes, images, manuscripts, dissertations, slides and so on. These elements are well connected so that they can be easily synchronized and updated. Users don&#39;t have to repeat copying and pasting their results and figures from time to time. It will be easy for the scientific researchers to use, even if they are R beginners, or even non-R-users.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -26,7 +26,7 @@
       <pubDate>Mon, 28 Jan 2019 00:00:00 +0000</pubDate>
       
       <guid>https://openr.netlify.com/blog/rosr/</guid>
-      <description>&lt;p&gt;Weeks ago, I gave a short training course at one of the top institutes in the world. The course was called &amp;lsquo;&lt;em&gt;R, Open Science and Reproducible Research&lt;/em&gt;&amp;rsquo;, abbreviated as &lt;em&gt;ROSS&lt;/em&gt;. It was given to the academic researchers who were interested in R and reproducible research. The R markdown family, including &amp;lsquo;rticles&amp;rsquo;, &amp;lsquo;bookdown&amp;rsquo;, &amp;lsquo;xaringan&amp;rsquo; etc., were introduced. The audience were excited in the course. They felt, however, confused after the course by using these packages on their own work. It is not easy to connect their own work with the R Markdown ecosystem.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Weeks ago, I gave a short training course at one of the top institutes in the world. The course was called &#39;&lt;em&gt;R, Open Science and Reproducible Research&lt;/em&gt;&#39;, abbreviated as &lt;em&gt;ROSS&lt;/em&gt;. It was given to the academic researchers who were interested in R and reproducible research. The R markdown family, including &#39;rticles&#39;, &#39;bookdown&#39;, &#39;xaringan&#39; etc., were introduced. The audience were excited in the course. They felt, however, confused after the course by using these packages on their own work. It is not easy to connect their own work with the R Markdown ecosystem.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -53,9 +53,9 @@
       <pubDate>Sat, 26 Jan 2019 00:00:00 +0000</pubDate>
       
       <guid>https://openr.netlify.com/blog/rmd/</guid>
-      <description>&lt;p&gt;Since &amp;lsquo;rmarkdown&amp;rsquo; and &amp;lsquo;knitr&amp;rsquo;, more and more members (rticles, bookdown, mindr&amp;hellip;) have been joining the R Markdown family. Users can write elegant reproducible documents, manuscripts, dissertations, books, blog posts, posters, and slides within the framework of R markdown. It is exciting, while the installation and maintenance becomes annoying. In the meanwhile, there are plenty of useful RStudio addins, which equip the RStudio IDE as a powerful markdown editor. However, these little tools are often hidden somewhere deep in the community, and it is difficult to dig them out.&lt;/p&gt;
+      <description>&lt;p&gt;Since &#39;rmarkdown&#39; and &#39;knitr&#39;, more and more members (rticles, bookdown, mindr...) have been joining the R Markdown family. Users can write elegant reproducible documents, manuscripts, dissertations, books, blog posts, posters, and slides within the framework of R markdown. It is exciting, while the installation and maintenance becomes annoying. In the meanwhile, there are plenty of useful RStudio addins, which equip the RStudio IDE as a powerful markdown editor. However, these little tools are often hidden somewhere deep in the community, and it is difficult to dig them out.&lt;/p&gt;
 
-&lt;p&gt;With &amp;lsquo;rmd&amp;rsquo; you can easily explore, install, and load them for both R users and non-users. Furthermore, &amp;lsquo;rmd&amp;rsquo; provides a RStudio addin to explore the R Markdown family and install them with a single click.&lt;/p&gt;
+&lt;p&gt;With &#39;rmd&#39; you can easily explore, install, and load them for both R users and non-users. Furthermore, &#39;rmd&#39; provides a RStudio addin to explore the R Markdown family and install them with a single click.&lt;/p&gt;
 
 &lt;p&gt;Forget R, and enjoy the wonderful world of R Markdown.&lt;/p&gt;</description>
     </item>
@@ -107,13 +107,26 @@
     </item>
     
     <item>
+      <title>bookdownplus gallery: a web app for displaying and sharing bookdown templates</title>
+      <link>https://openr.netlify.com/blog/bookdownplus-gallery/</link>
+      <pubDate>Sun, 23 Sep 2018 16:34:39 +0000</pubDate>
+      
+      <guid>https://openr.netlify.com/blog/bookdownplus-gallery/</guid>
+      <description>&lt;p&gt;Many years ago, I collected some LaTeX templates when learning LaTeX. However, my interest in LaTeX was gone after submitting my PhD dissertation. I should have deleted these templates if they had not been so small. They would never be useful in the future, I thought.&lt;/p&gt;
+
+&lt;p&gt;In 2017, I started writing the book &lt;a href=&#34;https://xuer.pzhao.org&#34;&gt; &lt;em&gt;Learning R: R for Rookies&lt;/em&gt; &lt;/a&gt;. Unexpectedly, MS Word could not satisfy me with the typesetting. You know what I mean if you have experience (and pain) in writing a long book or dissertation with Word. Actually I suffered more, but I do not want to talk about it. I was sure that LaTeX could, but I would rather not use it.&lt;/p&gt;
+
+&lt;p&gt;Like a bolt out of the blue, I found &lt;a href=&#34;https://CRAN.R-project.org/package=bookdown&#34;&gt;bookdown&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>[New Features on steemr] Display all the posts of a give Steemian with statistics, and get the utopian review and upvote plan!</title>
       <link>https://openr.netlify.com/blog/steemr-sposts/</link>
       <pubDate>Sat, 08 Sep 2018 20:41:57 +0000</pubDate>
       
       <guid>https://openr.netlify.com/blog/steemr-sposts/</guid>
       <description>&lt;ul&gt;
-&lt;li&gt;A new function&lt;code&gt;sposts()&lt;/code&gt; displays a Shiny app, which is a user friendly interactive UI to show all the posts of a give Steemian&amp;rsquo;s ID.  Analysis diagrams are plotted as well, including the distribution of the post payout and votes, the active hour of the Steemian&amp;rsquo;s posting, and the time series of the growth of the cumulative post number, payout, and votes.&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;A new function&lt;code&gt;sposts()&lt;/code&gt; displays a Shiny app, which is a user friendly interactive UI to show all the posts of a give Steemian&#39;s ID.  Analysis diagrams are plotted as well, including the distribution of the post payout and votes, the active hour of the Steemian&#39;s posting, and the time series of the growth of the cumulative post number, payout, and votes.&lt;br /&gt;&lt;/li&gt;
 &lt;/ul&gt;</description>
     </item>
     
@@ -172,7 +185,7 @@
       <pubDate>Thu, 16 Aug 2018 12:57:21 +0000</pubDate>
       
       <guid>https://openr.netlify.com/blog/steemr-sfollow-diagrams/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://steemit.com/utopian-io/@dapeng/steemr-sfollow#@codingdefined/re-dapeng-steemr-sfollow-20180711t113112798z&#34;&gt;A comment&lt;/a&gt; by the utopian.io moderator mentioned that the wordings of both &amp;lsquo;followers but not following&amp;rsquo;, &amp;lsquo;following but not followers&amp;rsquo; are confusing. Although they are the official callings that I cannot change, a diagram could help. Therefore, I added a Venn diagram into the &lt;code&gt;sfollow()&lt;/code&gt;shiny app.&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;a href=&#34;https://steemit.com/utopian-io/@dapeng/steemr-sfollow#@codingdefined/re-dapeng-steemr-sfollow-20180711t113112798z&#34;&gt;A comment&lt;/a&gt; by the utopian.io moderator mentioned that the wordings of both &#39;followers but not following&#39;, &#39;following but not followers&#39; are confusing. Although they are the official callings that I cannot change, a diagram could help. Therefore, I added a Venn diagram into the &lt;code&gt;sfollow()&lt;/code&gt;shiny app.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -238,7 +251,7 @@
 
 &lt;ul&gt;
 &lt;li&gt;Setting-up of the environment which steemr requires.&lt;/li&gt;
-&lt;li&gt;Using the function &lt;code&gt;gid()&lt;/code&gt; to retrieve a Steemian&amp;rsquo;s profile from the block chain or the data servers.&lt;/li&gt;
+&lt;li&gt;Using the function &lt;code&gt;gid()&lt;/code&gt; to retrieve a Steemian&#39;s profile from the block chain or the data servers.&lt;/li&gt;
 &lt;li&gt;Using other R functions to enhance and analyze the data retrieved by &lt;code&gt;gid()&lt;/code&gt;.&lt;/li&gt;
 &lt;/ul&gt;</description>
     </item>
@@ -271,7 +284,7 @@
       <pubDate>Wed, 27 Jun 2018 14:44:03 +0000</pubDate>
       
       <guid>https://openr.netlify.com/blog/steemr-vote/</guid>
-      <description>&lt;p&gt;&amp;lsquo;&lt;a href=&#34;https://cran.r-project.org/package=steemr&#34;&gt;steemr&lt;/a&gt;&amp;rsquo; is an open source R package for playing with Steem data in &lt;a href=&#34;https://en.wikipedia.org/wiki/R_(programming_language)&#34;&gt;R environment&lt;/a&gt;. It is used to download, post process, analyze,  and visualize Steem data on the basis of the powerful statistic power of R.&lt;/p&gt;</description>
+      <description>&lt;p&gt;&#39;&lt;a href=&#34;https://cran.r-project.org/package=steemr&#34;&gt;steemr&lt;/a&gt;&#39; is an open source R package for playing with Steem data in &lt;a href=&#34;https://en.wikipedia.org/wiki/R_(programming_language)&#34;&gt;R environment&lt;/a&gt;. It is used to download, post process, analyze,  and visualize Steem data on the basis of the powerful statistic power of R.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -303,12 +316,21 @@
       
       <guid>https://openr.netlify.com/blog/beginr-task-documentation/</guid>
       <description>&lt;blockquote&gt;
-&lt;p&gt;The documentation level of R is already much higher than average for open source software and even than some commercial packages (esp. SPSS is notorious for its attitude of &amp;ldquo;You want to do one of these things. If you don&amp;rsquo;t understand what the output means, click help and we&amp;rsquo;ll pop up five lines of mumbo-jumbo that you&amp;rsquo;re not going to understand either.&amp;rdquo;)&lt;/p&gt;
+&lt;p&gt;The documentation level of R is already much higher than average for open source software and even than some commercial packages (esp. SPSS is notorious for its attitude of &amp;quot;You want to do one of these things. If you don&#39;t understand what the output means, click help and we&#39;ll pop up five lines of mumbo-jumbo that you&#39;re not going to understand either.&amp;quot;)&lt;/p&gt;
 
-&lt;p&gt;&amp;ndash; Peter Dalgaard&lt;/p&gt;
+&lt;p&gt;-- Peter Dalgaard&lt;/p&gt;
 
 &lt;p&gt;&lt;U+200B&gt;      R-help (April 2002)&lt;/p&gt;
 &lt;/blockquote&gt;</description>
+    </item>
+    
+    <item>
+      <title>[New Project] advr: an R package for the scientific research on trace gas advection flux density</title>
+      <link>https://openr.netlify.com/blog/advr/</link>
+      <pubDate>Thu, 14 Jun 2018 13:26:33 +0000</pubDate>
+      
+      <guid>https://openr.netlify.com/blog/advr/</guid>
+      <description>&lt;p&gt;Carbon dioxide (CO~2~) is one of the key green house gases which play an important role in the global climate change. In academia, the sources and sinks of CO~2~ are estimated with the flux density, e.g. the amount of CO~2~ passing through a unit area in a unit time. Estimates of net ecosystem CO~2~ exchange have been attracting a lot of attention. The research on the advection flux takes care of the contribution of the advection term to the CO~2~ balance.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -360,7 +382,7 @@
       
       <guid>https://openr.netlify.com/blog/beginr-released/</guid>
       <description>I’m glad to announce that ‘beginr’ (Zhao 2017) is now on CRAN. This post is a brief documentation of ‘beginr 0.1.0’. Subsequent updates can be found on the GitHub site of beginr.
-HUGOMORE42 Introduction‘beginr’ is a collection of useful functions for R beginners, including hints for the arguments of the ‘plot()’ function, self-defined functions for error bars, user-customized pair plots and hist plots, enhanced linear regression figures, etc.. This package could be helpful to R experts as well.</description>
+Introduction‘beginr’ is a collection of useful functions for R beginners, including hints for the arguments of the ‘plot()’ function, self-defined functions for error bars, user-customized pair plots and hist plots, enhanced linear regression figures, etc.. This package could be helpful to R experts as well.</description>
     </item>
     
     <item>
@@ -370,7 +392,7 @@ HUGOMORE42 Introduction‘beginr’ is a collection of useful functions for R b
       
       <guid>https://openr.netlify.com/blog/bookdownplus-released/</guid>
       <description>I’m glad to announce that ‘bookdownplus 1.0.2’ (Zhao 2017) is now on CRAN. This post is a brief documentation of ‘bookdownplus 1.0.2’. However, I have been updating ‘bookdownplus’ frequently and the new version is more powerful and even easier. Please go to the GitHub site of bookdownplus.
-HUGOMORE42 IntroductionThe R package bookdownplus is an extension of bookdown (Xie 2016). It is a collection ofmultiple templates on the basis of LaTeX, which are tailored so that I can work happily under the umbrella of bookdown.</description>
+IntroductionThe R package bookdownplus is an extension of bookdown (Xie 2016). It is a collection ofmultiple templates on the basis of LaTeX, which are tailored so that I can work happily under the umbrella of bookdown.</description>
     </item>
     
     <item>
@@ -389,7 +411,7 @@ HUGOMORE42 IntroductionThe R package bookdownplus is an extension of bookdown (
       
       <guid>https://openr.netlify.com/blog/mindr/</guid>
       <description>This is a preliminary version of the introduction to mindr. Please go to my Github repo mindr for the latest updates.
-HUGOMORE42 Quick startInstallationdevtools::install_github(&amp;quot;pzhaonet/mindr&amp;quot;)Convert (a) markdown file(s) into a mindmapCreate a folder named mm in the working directory (getwd()), and drop some markdown or rmarkdown files into mm/. Run:
+Quick startInstallationdevtools::install_github(&amp;quot;pzhaonet/mindr&amp;quot;)Convert (a) markdown file(s) into a mindmapCreate a folder named mm in the working directory (getwd()), and drop some markdown or rmarkdown files into mm/. Run:
 mindr::md2mm()then you will get a mm.mm file. Open it with any mind-map (brainstorm) software, and you will get a mind map.</description>
     </item>
     
@@ -400,7 +422,7 @@ mindr::md2mm()then you will get a mm.mm file. Open it with any mind-map (brains
       
       <guid>https://openr.netlify.com/blog/postr/</guid>
       <description>This is a preliminary version of the introduction to postr. Please go to my Github repo postr for the latest updates.
-HUGOMORE42 This package is modified from kuleuven-template, where you can see the requirements before using this package. Here I picked out the instruction for Windows users as follows.
+This package is modified from kuleuven-template, where you can see the requirements before using this package. Here I picked out the instruction for Windows users as follows.
 Install a LaTeX distribution, e.g. MiKTeX. For Chinese users CTeX is highly recommended.Install TexmakerInstall RInstall RStudioInstall Python 2Install Python filter support for Pandoc:on a Windows command prompt, type pip install pandocfiltersInstall SumatraPDF for auto-refresh of PDF previewsAfterwards, add the Python directory to the system PATH variable.</description>
     </item>
     
@@ -411,7 +433,7 @@ HUGOMORE42 This package is modified from kuleuven-template, where you can see th
       
       <guid>https://openr.netlify.com/blog/bookdownplus/</guid>
       <description>This is a preliminary version of the introduction to bookdownplus. Please go to my Github repo bookdownplus for the latest updates. Full documentation can be found in the book R bookdownplus Textbook.
-HUGOMORE42 IntroductionR bookdownplus is an extension of R bookdown (Xie 2016). It is a collection ofmultiple templates on the basis of LaTeX, which are tailored so that I can work happily under the umbrella of bookdown.</description>
+IntroductionR bookdownplus is an extension of R bookdown (Xie 2016). It is a collection ofmultiple templates on the basis of LaTeX, which are tailored so that I can work happily under the umbrella of bookdown. R bookdownplus helps you write academic journal articles, guitar books, chemical equations, mails, calendars, and diaries.</description>
     </item>
     
     <item>
@@ -420,7 +442,7 @@ HUGOMORE42 IntroductionR bookdownplus is an extension of R bookdown (Xie 2016).
       <pubDate>Tue, 14 Mar 2017 00:00:00 +0000</pubDate>
       
       <guid>https://openr.netlify.com/blog/bookdown-cheatsheet/</guid>
-      <description>Quick StartWhat is R bookdownA software for writing books or documents.More elegant than MS Word. Much easier than \(\LaTeX\).Users can easily insert table of contents, figures and tables with cross-reference, footnotes, and index.Users can easily embed equations, citations, R scripts.pdf, word and html files can be exported.best choice to write reproducible documents.HUGOMORE42 InstallationDownload R and install it.Download RStudio and install it.</description>
+      <description>Quick StartWhat is R bookdownA software for writing books or documents.More elegant than MS Word. Much easier than \(\LaTeX\).Users can easily insert table of contents, figures and tables with cross-reference, footnotes, and index.Users can easily embed equations, citations, R scripts.pdf, word and html files can be exported.best choice to write reproducible documents.InstallationDownload R and install it.Download RStudio and install it.</description>
     </item>
     
   </channel>

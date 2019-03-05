@@ -57,6 +57,42 @@
   <meta property="og:url" content="/blog/new-features-on-steemr-functions-for-saving-the-posts-and-building-a-independent-blog-site//" />
   <meta property="og:image" content="img/logo-small.png" />
 
+  <script type="text/javascript"
+        async
+        src="https://cdn.bootcss.com/mathjax/2.7.3/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$'], ['\[\[','\]\]']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+});
+
+MathJax.Hub.Queue(function() {
+    
+    
+    
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i = 0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+});
+</script>
+
+<style>
+code.has-jax {
+    font: inherit;
+    font-size: 100%;
+    background: inherit;
+    border: inherit;
+    color: #515151;
+}
+</style>
+
 </head>
 
 
@@ -170,7 +206,7 @@
 
                     <div class="col-md-9" id="blog-post">
 
-                        <p class="text-muted text-uppercase mb-small text-right">By <a href="#">dapeng</a> | July 4, 2018</p>
+                        <p class="text-muted text-uppercase mb-small text-right">By <a href="#">赵鹏</a> | July 4, 2018</p>
 
                         <div id="post-content">
                           <ul>
@@ -183,9 +219,9 @@
 bmd(post_df = tgidposts)
 </code></pre>
 
-<p>Then the user gets the markdown files &lsquo;*.md&rsquo;, each of which is a Steem post. The use can view them via any text editor (recommended: <a href="https://steemit.com/utopian-io/@dapeng/typora-the-best-cross-platform-markdown-editor-or-typora">Typora</a>).</p>
+<p>Then the user gets the markdown files '*.md', each of which is a Steem post. The use can view them via any text editor (recommended: <a href="https://steemit.com/utopian-io/@dapeng/typora-the-best-cross-platform-markdown-editor-or-typora">Typora</a>).</p>
 
-<p>If the parameter &lsquo;if_yaml&rsquo; is TRUE, each md file will get a header with the title, posting time stamp, tags, original links, etc., which would be very useful for other R packages, such as R blogdown or R bookdown.</p>
+<p>If the parameter 'if_yaml' is TRUE, each md file will get a header with the title, posting time stamp, tags, original links, etc., which would be very useful for other R packages, such as R blogdown or R bookdown.</p>
 
 <pre><code>bmd(post_df = tgidposts, if_yaml = TRUE)
 </code></pre>
@@ -225,11 +261,11 @@ bmd(post_df = tgidposts)
 
 <h4 id="how-did-i-implement-them">How did I implement them?</h4>
 
-<p>I added these new functions in  &lsquo;R/build.r&rsquo;.</p>
+<p>I added these new functions in  'R/build.r'.</p>
 
-<p>I created a template for the Hugo blog in &lsquo;inst/template/blogdown_xmin.zip&rsquo;.</p>
+<p>I created a template for the Hugo blog in 'inst/template/blogdown_xmin.zip'.</p>
 
-<p>I added a <code>clear_title()</code> function in &lsquo;R/internal.r&rsquo; as an internal function to support the two functions mentioned above.</p>
+<p>I added a <code>clear_title()</code> function in 'R/internal.r' as an internal function to support the two functions mentioned above.</p>
 
 <p>Links to relevant lines in the codes on GitHub can be found mainly in my latest commits (click to see the details):</p>
 
@@ -295,10 +331,10 @@ bmd(post_df = tgidposts)
     <div class="panel-body">
         <ul class="tag-cloud">
             
-            <li><a href="https://openr.netlify.com/tags/beginr"><i class="fa fa-tags"></i> beginr</a>
+            <li><a href="https://openr.netlify.com/tags/advr"><i class="fa fa-tags"></i> advr</a>
             </li>
             
-            <li><a href="https://openr.netlify.com/tags/blogdown"><i class="fa fa-tags"></i> blogdown</a>
+            <li><a href="https://openr.netlify.com/tags/beginr"><i class="fa fa-tags"></i> beginr</a>
             </li>
             
             <li><a href="https://openr.netlify.com/tags/bookdown"><i class="fa fa-tags"></i> bookdown</a>
@@ -313,13 +349,10 @@ bmd(post_df = tgidposts)
             <li><a href="https://openr.netlify.com/tags/mindr"><i class="fa fa-tags"></i> mindr</a>
             </li>
             
+            <li><a href="https://openr.netlify.com/tags/news"><i class="fa fa-tags"></i> news</a>
+            </li>
+            
             <li><a href="https://openr.netlify.com/tags/pinyin"><i class="fa fa-tags"></i> pinyin</a>
-            </li>
-            
-            <li><a href="https://openr.netlify.com/tags/post"><i class="fa fa-tags"></i> post</a>
-            </li>
-            
-            <li><a href="https://openr.netlify.com/tags/postr"><i class="fa fa-tags"></i> postr</a>
             </li>
             
             <li><a href="https://openr.netlify.com/tags/r"><i class="fa fa-tags"></i> r</a>
@@ -335,9 +368,6 @@ bmd(post_df = tgidposts)
             </li>
             
             <li><a href="https://openr.netlify.com/tags/tutorial"><i class="fa fa-tags"></i> tutorial</a>
-            </li>
-            
-            <li><a href="https://openr.netlify.com/tags/utopian-io"><i class="fa fa-tags"></i> utopian-io</a>
             </li>
             
         </ul>

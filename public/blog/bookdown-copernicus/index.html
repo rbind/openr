@@ -57,6 +57,42 @@
   <meta property="og:url" content="/blog/bookdown-copernicus//" />
   <meta property="og:image" content="img/logo-small.png" />
 
+  <script type="text/javascript"
+        async
+        src="https://cdn.bootcss.com/mathjax/2.7.3/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$'], ['\[\[','\]\]']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+});
+
+MathJax.Hub.Queue(function() {
+    
+    
+    
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i = 0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+});
+</script>
+
+<style>
+code.has-jax {
+    font: inherit;
+    font-size: 100%;
+    background: inherit;
+    border: inherit;
+    color: #515151;
+}
+</style>
+
 </head>
 
 
@@ -170,7 +206,7 @@
 
                     <div class="col-md-9" id="blog-post">
 
-                        <p class="text-muted text-uppercase mb-small text-right">By <a href="#">大鹏</a> | September 6, 2018</p>
+                        <p class="text-muted text-uppercase mb-small text-right">By <a href="#">赵鹏</a> | September 6, 2018</p>
 
                         <div id="post-content">
                           <p>This is a submission to the <a href="https://blog.rstudio.com/2018/07/27/first-bookdown-contest/">1st bookdown contest</a>.</p>
@@ -186,7 +222,7 @@
 
 <p><a href="https://www.copernicus.org">Copernicus Publications</a> is a publisher of scientific literature which publishes around 40 peer-reviewed open access scientific journals and other publications on behalf of the European Geosciences Union (EGU). Many years ago, one of my manuscripts was submitted to the academic <em>Biogeosciences</em> (BG). I wrote it with LaTeX. BG is one of the top journals in my research area. I believe I will submit to BG again in the future and I would not use LaTeX again. Therefore I created the bookdown template for Copernicus.</p>
 
-<p>The bookdown-copernicus template was firstly included in the bookdownplus package in 2017. It used to be named as &lsquo;article&rsquo; and &lsquo;discussion&rsquo;. For the 1st bookdown contest I merged them into one and improved the structure of the files for easier use.</p>
+<p>The bookdown-copernicus template was firstly included in the bookdownplus package in 2017. It used to be named as 'article' and 'discussion'. For the 1st bookdown contest I merged them into one and improved the structure of the files for easier use.</p>
 
 <h2 id="an-example-with-its-repo">An Example with Its Repo</h2>
 
@@ -218,7 +254,7 @@
 
 <h2 id="technical-details">Technical details</h2>
 
-<p>Copernicus provides a <a href="https://publications.copernicus.org/for_authors/latex_instructions.html">LaTeX template</a> which is free for using. I modified it as &lsquo;tex/template_article.tex&rsquo;, i.e. something was moved from the original LaTeX template to the yaml of &lsquo;index.Rmd&rsquo;. Users could simply compare them and then get an idea how to convert a LaTeX template into a bookdown template.</p>
+<p>Copernicus provides a <a href="https://publications.copernicus.org/for_authors/latex_instructions.html">LaTeX template</a> which is free for using. I modified it as 'tex/template_article.tex', i.e. something was moved from the original LaTeX template to the yaml of 'index.Rmd'. Users could simply compare them and then get an idea how to convert a LaTeX template into a bookdown template.</p>
 
 <p>Any suggestions are welcome. Just PR the repo!</p>
                         </div>
@@ -278,10 +314,10 @@
     <div class="panel-body">
         <ul class="tag-cloud">
             
-            <li><a href="https://openr.netlify.com/tags/beginr"><i class="fa fa-tags"></i> beginr</a>
+            <li><a href="https://openr.netlify.com/tags/advr"><i class="fa fa-tags"></i> advr</a>
             </li>
             
-            <li><a href="https://openr.netlify.com/tags/blogdown"><i class="fa fa-tags"></i> blogdown</a>
+            <li><a href="https://openr.netlify.com/tags/beginr"><i class="fa fa-tags"></i> beginr</a>
             </li>
             
             <li><a href="https://openr.netlify.com/tags/bookdown"><i class="fa fa-tags"></i> bookdown</a>
@@ -296,13 +332,10 @@
             <li><a href="https://openr.netlify.com/tags/mindr"><i class="fa fa-tags"></i> mindr</a>
             </li>
             
+            <li><a href="https://openr.netlify.com/tags/news"><i class="fa fa-tags"></i> news</a>
+            </li>
+            
             <li><a href="https://openr.netlify.com/tags/pinyin"><i class="fa fa-tags"></i> pinyin</a>
-            </li>
-            
-            <li><a href="https://openr.netlify.com/tags/post"><i class="fa fa-tags"></i> post</a>
-            </li>
-            
-            <li><a href="https://openr.netlify.com/tags/postr"><i class="fa fa-tags"></i> postr</a>
             </li>
             
             <li><a href="https://openr.netlify.com/tags/r"><i class="fa fa-tags"></i> r</a>
@@ -318,9 +351,6 @@
             </li>
             
             <li><a href="https://openr.netlify.com/tags/tutorial"><i class="fa fa-tags"></i> tutorial</a>
-            </li>
-            
-            <li><a href="https://openr.netlify.com/tags/utopian-io"><i class="fa fa-tags"></i> utopian-io</a>
             </li>
             
         </ul>

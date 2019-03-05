@@ -17,7 +17,7 @@
       <pubDate>Thu, 31 Jan 2019 00:00:00 +0000</pubDate>
       
       <guid>https://openr.netlify.com/blog/rosr-shiny/</guid>
-      <description>&lt;p&gt;&amp;lsquo;rosr&amp;rsquo; is an R package for creating reproducible academic project with integrated various academic elements, including data, bibliography, codes, images, manuscripts, dissertations, slides and so on. These elements are well connected so that they can be easily synchronized and updated. Users don&amp;rsquo;t have to repeat copying and pasting their results and figures from time to time. It will be easy for the scientific researchers to use, even if they are R beginners, or even non-R-users.&lt;/p&gt;</description>
+      <description>&lt;p&gt;&#39;rosr&#39; is an R package for creating reproducible academic project with integrated various academic elements, including data, bibliography, codes, images, manuscripts, dissertations, slides and so on. These elements are well connected so that they can be easily synchronized and updated. Users don&#39;t have to repeat copying and pasting their results and figures from time to time. It will be easy for the scientific researchers to use, even if they are R beginners, or even non-R-users.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -26,7 +26,7 @@
       <pubDate>Mon, 28 Jan 2019 00:00:00 +0000</pubDate>
       
       <guid>https://openr.netlify.com/blog/rosr/</guid>
-      <description>&lt;p&gt;Weeks ago, I gave a short training course at one of the top institutes in the world. The course was called &amp;lsquo;&lt;em&gt;R, Open Science and Reproducible Research&lt;/em&gt;&amp;rsquo;, abbreviated as &lt;em&gt;ROSS&lt;/em&gt;. It was given to the academic researchers who were interested in R and reproducible research. The R markdown family, including &amp;lsquo;rticles&amp;rsquo;, &amp;lsquo;bookdown&amp;rsquo;, &amp;lsquo;xaringan&amp;rsquo; etc., were introduced. The audience were excited in the course. They felt, however, confused after the course by using these packages on their own work. It is not easy to connect their own work with the R Markdown ecosystem.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Weeks ago, I gave a short training course at one of the top institutes in the world. The course was called &#39;&lt;em&gt;R, Open Science and Reproducible Research&lt;/em&gt;&#39;, abbreviated as &lt;em&gt;ROSS&lt;/em&gt;. It was given to the academic researchers who were interested in R and reproducible research. The R markdown family, including &#39;rticles&#39;, &#39;bookdown&#39;, &#39;xaringan&#39; etc., were introduced. The audience were excited in the course. They felt, however, confused after the course by using these packages on their own work. It is not easy to connect their own work with the R Markdown ecosystem.&lt;/p&gt;</description>
     </item>
     
   </channel>

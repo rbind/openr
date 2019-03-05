@@ -57,6 +57,42 @@
   <meta property="og:url" content="//" />
   <meta property="og:image" content="img/logo-small.png" />
 
+  <script type="text/javascript"
+        async
+        src="https://cdn.bootcss.com/mathjax/2.7.3/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$'], ['\[\[','\]\]']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+});
+
+MathJax.Hub.Queue(function() {
+    
+    
+    
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i = 0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+});
+</script>
+
+<style>
+code.has-jax {
+    font: inherit;
+    font-size: 100%;
+    background: inherit;
+    border: inherit;
+    color: #515151;
+}
+</style>
+
 </head>
 
 
@@ -198,7 +234,7 @@
 
                         </div>
                         <div class="col-sm-7">
-                            <img class="img-responsive" src="img/banners/logo-rmd.png" alt="">
+                            <img class="img-responsive" src="https://openr.netlify.com/img/banners/logo-rmd.png" alt="">
                         </div>
                     </div>
                 </div>
@@ -216,7 +252,7 @@
 
                         </div>
                         <div class="col-sm-7">
-                            <img class="img-responsive" src="img/banners/logo-rosr.png" alt="">
+                            <img class="img-responsive" src="https://openr.netlify.com/img/banners/logo-rosr.png" alt="">
                         </div>
                     </div>
                 </div>
@@ -234,7 +270,7 @@
 
                         </div>
                         <div class="col-sm-7">
-                            <img class="img-responsive" src="img/banners/logo-bookdownplus.png" alt="">
+                            <img class="img-responsive" src="https://openr.netlify.com/img/banners/logo-bookdownplus.png" alt="">
                         </div>
                     </div>
                 </div>
@@ -252,7 +288,7 @@
 
                         </div>
                         <div class="col-sm-7">
-                            <img class="img-responsive" src="img/banners/logo-mindr.png" alt="">
+                            <img class="img-responsive" src="https://openr.netlify.com/img/banners/logo-mindr.png" alt="">
                         </div>
                     </div>
                 </div>
@@ -270,7 +306,7 @@
 
                         </div>
                         <div class="col-sm-7">
-                            <img class="img-responsive" src="img/banners/logo-beginr.png" alt="">
+                            <img class="img-responsive" src="https://openr.netlify.com/img/banners/logo-beginr.png" alt="">
                         </div>
                     </div>
                 </div>
@@ -288,7 +324,7 @@
 
                         </div>
                         <div class="col-sm-7">
-                            <img class="img-responsive" src="img/banners/logo-pinyin.png" alt="">
+                            <img class="img-responsive" src="https://openr.netlify.com/img/banners/logo-pinyin.png" alt="">
                         </div>
                     </div>
                 </div>
@@ -525,6 +561,46 @@
                             <div class="bg"></div>
                             <div class="text">
                                 <p class="buttons">
+                                    <a href="https://openr.netlify.com/blog/steemr-tutorial-gid/" class="btn btn-template-transparent-primary"><i class="fa fa-link"></i> Read more</a>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="content">
+                            <h4><a href="https://openr.netlify.com/blog/steemr-tutorial-gid/">[Tutorial for steemr] Installation &#43; Retrieving and Analyzing Steemians&#39; profiles</a></h4>
+                            <p class="author-category">
+                            
+                            By <a href="#">赵鹏</a>
+                            
+                            on July 6, 2018
+                            </p>
+                            <p class="intro"><h3 id="what-will-i-learn">What Will I Learn?</h3>
+
+<ul>
+<li>Setting-up of the environment which steemr requires.</li>
+<li>Using the function <code>gid()</code> to retrieve a Steemian's profile from the block chain or the data servers.</li>
+<li>Using other R functions to enhance and analyze the data retrieved by <code>gid()</code>.</li>
+</ul></p>
+                            <p class="read-more">
+                              <a href="https://openr.netlify.com/blog/steemr-tutorial-gid/" class="btn btn-template-main">Continue reading</a>
+                            </p>
+                        </div>
+                    </div>
+                    
+
+                </div>
+                
+                <div class="col-md-3 col-sm-6">
+                    <div class="box-image-text blog">
+                        <div class="top">
+                            <div class="image" style="overflow:hidden">
+                                
+                                <img src="https://openr.netlify.com/img/banners/logo-steemr.png" class="img-responsive" alt="" >
+                                
+                            </div>
+                            <div class="bg"></div>
+                            <div class="text">
+                                <p class="buttons">
                                     <a href="https://openr.netlify.com/blog/new-features-on-steemr-functions-for-saving-the-posts-and-building-a-independent-blog-site/" class="btn btn-template-transparent-primary"><i class="fa fa-link"></i> Read more</a>
                                 </p>
                             </div>
@@ -534,7 +610,7 @@
                             <h4><a href="https://openr.netlify.com/blog/new-features-on-steemr-functions-for-saving-the-posts-and-building-a-independent-blog-site/">[New Features on steemr] Functions for saving the posts and building an independent blog site!</a></h4>
                             <p class="author-category">
                             
-                            By <a href="#">dapeng</a>
+                            By <a href="#">赵鹏</a>
                             
                             on July 4, 2018
                             </p>
@@ -570,7 +646,7 @@
                             <h4><a href="https://openr.netlify.com/blog/new-features-on-steemr-functions-for-accounts-and-comments-report/">[New Features on steemr] Functions for accounts and comments report!</a></h4>
                             <p class="author-category">
                             
-                            By <a href="#">dapeng</a>
+                            By <a href="#">赵鹏</a>
                             
                             on July 3, 2018
                             </p>
@@ -606,49 +682,13 @@
                             <h4><a href="https://openr.netlify.com/blog/steemr-vote/">[New Features on steemr] Functions as vote reports!</a></h4>
                             <p class="author-category">
                             
-                            By <a href="#">dapeng</a>
+                            By <a href="#">赵鹏</a>
                             
                             on June 27, 2018
                             </p>
-                            <p class="intro"><p>&lsquo;<a href="https://cran.r-project.org/package=steemr">steemr</a>&rsquo; is an open source R package for playing with Steem data in <a href="https://en.wikipedia.org/wiki/R_(programming_language)">R environment</a>. It is used to download, post process, analyze,  and visualize Steem data on the basis of the powerful statistic power of R.</p></p>
+                            <p class="intro"><p>'<a href="https://cran.r-project.org/package=steemr">steemr</a>' is an open source R package for playing with Steem data in <a href="https://en.wikipedia.org/wiki/R_(programming_language)">R environment</a>. It is used to download, post process, analyze,  and visualize Steem data on the basis of the powerful statistic power of R.</p></p>
                             <p class="read-more">
                               <a href="https://openr.netlify.com/blog/steemr-vote/" class="btn btn-template-main">Continue reading</a>
-                            </p>
-                        </div>
-                    </div>
-                    
-
-                </div>
-                
-                <div class="col-md-3 col-sm-6">
-                    <div class="box-image-text blog">
-                        <div class="top">
-                            <div class="image" style="overflow:hidden">
-                                
-                                <img src="https://openr.netlify.com/img/banners/logo-steemr.png" class="img-responsive" alt="" >
-                                
-                            </div>
-                            <div class="bg"></div>
-                            <div class="text">
-                                <p class="buttons">
-                                    <a href="https://openr.netlify.com/blog/new-features-on-steemr-supports-appbase-api-and-plots-active-hour-diagrams/" class="btn btn-template-transparent-primary"><i class="fa fa-link"></i> Read more</a>
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="content">
-                            <h4><a href="https://openr.netlify.com/blog/new-features-on-steemr-supports-appbase-api-and-plots-active-hour-diagrams/">[New Features on steemr] supports AppBase API and plots active hour diagrams!</a></h4>
-                            <p class="author-category">
-                            
-                            By <a href="#">dapeng</a>
-                            
-                            on June 20, 2018
-                            </p>
-                            <p class="intro"><ul>
-<li>I have submitted steemr to CRAN and now it is <a href="https://CRAN.R-project.org/package=steemr">available</a>. Users can install steemr directly from CRAN:</li>
-</ul></p>
-                            <p class="read-more">
-                              <a href="https://openr.netlify.com/blog/new-features-on-steemr-supports-appbase-api-and-plots-active-hour-diagrams/" class="btn btn-template-main">Continue reading</a>
                             </p>
                         </div>
                     </div>
@@ -691,7 +731,7 @@
                     <li class="item" title="Peng Zhao">
                         
                           <a href="https://pzhao.org" target="_blank">
-                            <img src="https://www.pzhao.org/img/zhao.jpg" alt="Peng Zhao" class="img-responsive" />
+                            <img src="https://openr.netlify.com/img/clients/pengzhao.jpg" alt="Peng Zhao" class="img-responsive" />
                           </a>
                         
                     </li>
@@ -699,7 +739,7 @@
                     <li class="item" title="Wanna Join us?">
                         
                           <a href="mailto:xuer@pzhao.net" target="_blank">
-                            <img src="img/clients/Unclesamwantyou.jpg" alt="Wanna Join us?" class="img-responsive" />
+                            <img src="https://openr.netlify.com/img/clients/Unclesamwantyou.jpg" alt="Wanna Join us?" class="img-responsive" />
                           </a>
                         
                     </li>

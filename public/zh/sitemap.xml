@@ -118,18 +118,8 @@
   </url>
   
   <url>
-    <loc>https://openr.netlify.com/zh/blog/bookdownplus-gallery/</loc>
-    <lastmod>2018-09-23T16:34:39+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://openr.netlify.com/zh/blog/bookdown-contest/</loc>
     <lastmod>2018-09-07T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://openr.netlify.com/zh/blog/advr/</loc>
-    <lastmod>2018-06-14T13:26:33+00:00</lastmod>
   </url>
   
   <url>
@@ -453,12 +443,6 @@
   </url>
   
   <url>
-    <loc>https://openr.netlify.com/zh/tags/advr/</loc>
-    <lastmod>2018-06-14T13:26:33+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://openr.netlify.com/zh/tags/beginr/</loc>
     <lastmod>2017-06-23T18:29:38+00:00</lastmod>
     <priority>0</priority>
@@ -475,25 +459,9 @@
   </url>
   
   <url>
-    <loc>https://openr.netlify.com/zh/tags/blog/</loc>
-    <lastmod>2017-11-25T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://openr.netlify.com/zh/tags/blogdown/</loc>
-    <lastmod>2018-09-26T00:00:00+00:00</lastmod>
+    <lastmod>2017-04-19T00:00:00+00:00</lastmod>
     <priority>0</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://openr.netlify.com/tags/blogdown/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://openr.netlify.com/zh/tags/blogdown/"
-                />
   </url>
   
   <url>
@@ -560,38 +528,8 @@
   </url>
   
   <url>
-    <loc>https://openr.netlify.com/zh/tags/css/</loc>
-    <lastmod>2018-09-26T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://openr.netlify.com/zh/tags/drposter/</loc>
-    <lastmod>2018-12-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://openr.netlify.com/zh/tags/git/</loc>
-    <lastmod>2019-02-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://openr.netlify.com/zh/tags/hugo/</loc>
-    <lastmod>2017-04-11T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://openr.netlify.com/zh/tags/latex/</loc>
     <lastmod>2019-02-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://openr.netlify.com/zh/tags/linux/</loc>
-    <lastmod>2018-02-04T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -629,8 +567,18 @@
   
   <url>
     <loc>https://openr.netlify.com/zh/tags/news/</loc>
-    <lastmod>2018-05-18T00:00:00+00:00</lastmod>
+    <lastmod>2019-01-26T00:00:00+00:00</lastmod>
     <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://openr.netlify.com/tags/news/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://openr.netlify.com/zh/tags/news/"
+                />
   </url>
   
   <url>
@@ -673,34 +621,8 @@
   
   <url>
     <loc>https://openr.netlify.com/zh/tags/post/</loc>
-    <lastmod>2019-02-01T00:00:00+00:00</lastmod>
+    <lastmod>2017-03-13T00:00:00+00:00</lastmod>
     <priority>0</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://openr.netlify.com/tags/post/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://openr.netlify.com/zh/tags/post/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://openr.netlify.com/zh/tags/postr/</loc>
-    <lastmod>2017-05-16T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://openr.netlify.com/tags/postr/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://openr.netlify.com/zh/tags/postr/"
-                />
   </url>
   
   <url>
@@ -769,7 +691,7 @@
   
   <url>
     <loc>https://openr.netlify.com/zh/tags/</loc>
-    <lastmod>2018-06-14T13:26:33+00:00</lastmod>
+    <lastmod>2017-06-23T18:29:38+00:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
@@ -784,24 +706,18 @@
   </url>
   
   <url>
-    <loc>https://openr.netlify.com/zh/tags/teaching/</loc>
-    <lastmod>2018-12-04T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://openr.netlify.com/zh/tags/utopian-io/</loc>
-    <lastmod>2018-09-23T16:34:39+00:00</lastmod>
+    <loc>https://openr.netlify.com/zh/tags/tutorial/</loc>
+    <lastmod>2019-01-28T00:00:00+00:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://openr.netlify.com/tags/utopian-io/"
+                href="https://openr.netlify.com/tags/tutorial/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://openr.netlify.com/zh/tags/utopian-io/"
+                href="https://openr.netlify.com/zh/tags/tutorial/"
                 />
   </url>
   
@@ -818,13 +734,25 @@
   </url>
   
   <url>
-    <loc>https://openr.netlify.com/zh/tags/%E5%90%89%E4%BB%96/</loc>
-    <lastmod>2017-04-06T09:15:36+00:00</lastmod>
+    <loc>https://openr.netlify.com/zh/categories/xuer/</loc>
+    <lastmod>2018-05-27T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://openr.netlify.com/zh/tags/%E5%AD%A6/</loc>
+    <lastmod>2017-04-11T14:10:56+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://openr.netlify.com/zh/tags/%E5%AD%A6-r/</loc>
+    <lastmod>2017-04-13T12:49:17+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://openr.netlify.com/zh/tags/%E5%AD%A6r/</loc>
     <lastmod>2018-05-27T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -841,12 +769,6 @@
                 hreflang="zh"
                 href="https://openr.netlify.com/zh/faq/"
                 />
-  </url>
-  
-  <url>
-    <loc>https://openr.netlify.com/zh/categories/%E6%9C%AA%E5%88%86%E7%B1%BB/</loc>
-    <lastmod>2017-06-23T18:29:38+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>

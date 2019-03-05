@@ -7,4 +7,4 @@ description: >
     <li>适合 R 初学者。</li>
     <li>R 基本函数的初级应用。</li>
   </ul>
-image: "img/banners/logo-beginr.png"
+image: "https://openr.netlify.com/img/banners/logo-beginr.png"

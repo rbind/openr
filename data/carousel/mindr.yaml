@@ -7,4 +7,4 @@ description: >
     <li>使用 R markdown 制作思维导图。</li>
     <li>在思维导图，R 脚本，幻灯片，书籍章节之间自由转换。</li>
   </ul>
-image: "img/banners/logo-mindr.png"
+image: "https://openr.netlify.com/img/banners/logo-mindr.png"

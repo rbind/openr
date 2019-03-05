@@ -57,6 +57,42 @@
   <meta property="og:url" content="/zh/tags/word//" />
   <meta property="og:image" content="img/logo.png" />
 
+  <script type="text/javascript"
+        async
+        src="https://cdn.bootcss.com/mathjax/2.7.3/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$'], ['\[\[','\]\]']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+});
+
+MathJax.Hub.Queue(function() {
+    
+    
+    
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i = 0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+});
+</script>
+
+<style>
+code.has-jax {
+    font: inherit;
+    font-size: 100%;
+    background: inherit;
+    border: inherit;
+    color: #515151;
+}
+</style>
+
 </head>
 
 
@@ -197,12 +233,12 @@
                                             <a href="https://openr.netlify.com/zh/blog/latex-equations-to-word/"><i class="fa fa-calendar-o"></i> June 20, 2017</a>
                                         </p>
                                     </div>
-                                    <p class="intro">最近写了篇论文，投往一家学术期刊。投稿时，Word 格式和 \(\LaTeX\) 格式可以任选，我选了 Word，是因为合作作者用 Word。可是，文稿里的公式是我输入的，而那些公式在我的博士论文里是用 \(\LaTeX\) 写的。为了图省事，我就用了 Word 的插件Aurora，这样，只需把公式的 \(\LaTeX\) 代码往 Word 文档的 Aurora 域里拷贝粘贴，bingo！公式就渲染好了，比 Word 的自带公式漂亮一些。
-HUGOMORE42 这篇论文很顺利，很快被接收了。到了最后一步的时候，编辑部要我把文档里的公式修改成可编辑的格式。——本来就是可编辑的呀。嗯，大概是编辑部不使用Aurora，那么他们的 Word 打开我的文档里看到的公式自然就是没法编辑的了。我懒得解释，最后决定把公式全部转换成 Word 公式。
-\(\LaTeX\) 公式转成 Word 公式并不难，只需三步：\(\LaTeX\) –&gt; MathML –&gt; 修改 –&gt; Word.
-\(\LaTeX\) 公式转成 MathML公式。这可以在 blogdown 里操作，只需把 \(\LaTeX\) 公式代码扔进一个帖子里，运行建站函数，在生成的网页里获取公式的 MathML 代码即可（在公式上点右键 - Show Math As - MathML Code）。没有 blodown 的，用texmath 在线转换也可以。
-修改 MathML 代码。将上一步得到的 MathML 代码拷贝粘贴到文本编辑器，然后在开头添上一行：
-&lt;?xml version=&quot;1.0&quot;?&gt;将修改的 MathML 代码全部选中，拷贝粘贴到 Word 里，就自动变成公式了。当然，上面第一步也可以用别的软件来完成，下图是个示例。</p>
+									      
+      基本流程：LaTeX --> MathML --> 修改 --> Word.
+      
+	  
+
+									
                                     <p class="read-more"><a href="https://openr.netlify.com/zh/blog/latex-equations-to-word/" class="btn btn-template-main">继续阅读</a>
                                     </p>
                                 </div>
@@ -266,7 +302,7 @@ HUGOMORE42 这篇论文很顺利，很快被接收了。到了最后一步的时
     <div class="panel-body">
         <ul class="nav nav-pills nav-stacked">
             
-            <li><a href="https://openr.netlify.com/categories/%e6%9c%aa%e5%88%86%e7%b1%bb">未分类 (7)</a>
+            <li><a href="https://openr.netlify.com/categories/xuer">xuer (16)</a>
             </li>
             
         </ul>
@@ -288,13 +324,7 @@ HUGOMORE42 这篇论文很顺利，很快被接收了。到了最后一步的时
     <div class="panel-body">
         <ul class="tag-cloud">
             
-            <li><a href="https://openr.netlify.com/tags/advr"><i class="fa fa-tags"></i> advr</a>
-            </li>
-            
             <li><a href="https://openr.netlify.com/tags/beginr"><i class="fa fa-tags"></i> beginr</a>
-            </li>
-            
-            <li><a href="https://openr.netlify.com/tags/blog"><i class="fa fa-tags"></i> blog</a>
             </li>
             
             <li><a href="https://openr.netlify.com/tags/blogdown"><i class="fa fa-tags"></i> blogdown</a>
@@ -306,22 +336,7 @@ HUGOMORE42 这篇论文很顺利，很快被接收了。到了最后一步的时
             <li><a href="https://openr.netlify.com/tags/bookdownplus"><i class="fa fa-tags"></i> bookdownplus</a>
             </li>
             
-            <li><a href="https://openr.netlify.com/tags/css"><i class="fa fa-tags"></i> css</a>
-            </li>
-            
-            <li><a href="https://openr.netlify.com/tags/drposter"><i class="fa fa-tags"></i> drposter</a>
-            </li>
-            
-            <li><a href="https://openr.netlify.com/tags/git"><i class="fa fa-tags"></i> git</a>
-            </li>
-            
-            <li><a href="https://openr.netlify.com/tags/hugo"><i class="fa fa-tags"></i> hugo</a>
-            </li>
-            
             <li><a href="https://openr.netlify.com/tags/latex"><i class="fa fa-tags"></i> latex</a>
-            </li>
-            
-            <li><a href="https://openr.netlify.com/tags/linux"><i class="fa fa-tags"></i> linux</a>
             </li>
             
             <li><a href="https://openr.netlify.com/tags/markdown"><i class="fa fa-tags"></i> markdown</a>
@@ -342,9 +357,6 @@ HUGOMORE42 这篇论文很顺利，很快被接收了。到了最后一步的时
             <li><a href="https://openr.netlify.com/tags/post"><i class="fa fa-tags"></i> post</a>
             </li>
             
-            <li><a href="https://openr.netlify.com/tags/postr"><i class="fa fa-tags"></i> postr</a>
-            </li>
-            
             <li><a href="https://openr.netlify.com/tags/r"><i class="fa fa-tags"></i> r</a>
             </li>
             
@@ -357,10 +369,7 @@ HUGOMORE42 这篇论文很顺利，很快被接收了。到了最后一步的时
             <li><a href="https://openr.netlify.com/tags/steemr"><i class="fa fa-tags"></i> steemr</a>
             </li>
             
-            <li><a href="https://openr.netlify.com/tags/teaching"><i class="fa fa-tags"></i> teaching</a>
-            </li>
-            
-            <li><a href="https://openr.netlify.com/tags/utopian-io"><i class="fa fa-tags"></i> utopian-io</a>
+            <li><a href="https://openr.netlify.com/tags/tutorial"><i class="fa fa-tags"></i> tutorial</a>
             </li>
             
             <li><a href="https://openr.netlify.com/tags/word"><i class="fa fa-tags"></i> word</a>
@@ -369,10 +378,13 @@ HUGOMORE42 这篇论文很顺利，很快被接收了。到了最后一步的时
             <li><a href="https://openr.netlify.com/tags/xaringan"><i class="fa fa-tags"></i> xaringan</a>
             </li>
             
-            <li><a href="https://openr.netlify.com/tags/%e5%90%89%e4%bb%96"><i class="fa fa-tags"></i> 吉他</a>
+            <li><a href="https://openr.netlify.com/tags/%e5%ad%a6"><i class="fa fa-tags"></i> 学</a>
             </li>
             
             <li><a href="https://openr.netlify.com/tags/%e5%ad%a6-r"><i class="fa fa-tags"></i> 学-r</a>
+            </li>
+            
+            <li><a href="https://openr.netlify.com/tags/%e5%ad%a6r"><i class="fa fa-tags"></i> 学r</a>
             </li>
             
         </ul>

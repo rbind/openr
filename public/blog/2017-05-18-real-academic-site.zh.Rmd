@@ -1,14 +1,12 @@
 ---
 title: 'R blogdown 科研网站的公式和参考文献'
-author: "赵鹏"
+author: 赵鹏
 date: '2017-05-18'
 slug: rblogdown-bib
 summary: "一个号称科研主题的网站，如果不能方便地插入公式和参考文献，那还能叫科研网站么？"
 tags:
 - R
-- blogdown
 - markdown
-- post
 bibliography: [bib.bib]
 categories: []
 banner: img/banners/logo-openr.png

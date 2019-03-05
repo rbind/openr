@@ -15,7 +15,6 @@ banner: img/banners/logo-mindr.png
 
 将 markdown (.md, .Rmd) 文件转换成思维导图的 R 扩展包 [mindr](https://github.com/pzhaonet/mindr) 是我写的第五个 R 包，安装方法如下：
 
-<!--more-->
 
 稳定版：
 

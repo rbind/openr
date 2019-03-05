@@ -57,6 +57,42 @@
   <meta property="og:url" content="/tags/beginr//" />
   <meta property="og:image" content="img/logo-small.png" />
 
+  <script type="text/javascript"
+        async
+        src="https://cdn.bootcss.com/mathjax/2.7.3/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$'], ['\[\[','\]\]']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+});
+
+MathJax.Hub.Queue(function() {
+    
+    
+    
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i = 0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+});
+</script>
+
+<style>
+code.has-jax {
+    font: inherit;
+    font-size: 100%;
+    background: inherit;
+    border: inherit;
+    color: #515151;
+}
+</style>
+
 </head>
 
 
@@ -186,7 +222,7 @@
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
-                                          By <a href="#">dapeng</a>
+                                          By <a href="#">赵鹏</a>
                                           
                                           
 
@@ -195,7 +231,12 @@
                                             <a href="https://openr.netlify.com/blog/beginr-features-packr/"><i class="fa fa-calendar-o"></i> January 26, 2019</a>
                                         </p>
                                     </div>
-                                    <p class="intro"><p>Most R beginners think that developing an R package is a mission impossible. It is not true. With the new function <code>packr()</code> , users can create a user-defined useful R packages easily. They can specify in <code>packr()</code>a group of packages (e.g. foo_1, foo_2, foo_x) which they often use and the new package name, say <code>foobar</code>, then a new package called <code>foobar</code> will be generated.</p></p>
+									      
+      <p>Most R beginners think that developing an R package is a mission impossible. It is not true. With the new function <code>packr()</code> , users can create a user-defined useful R packages easily. They can specify in <code>packr()</code>a group of packages (e.g. foo_1, foo_2, foo_x) which they often use and the new package name, say <code>foobar</code>, then a new package called <code>foobar</code> will be generated.</p>
+      
+	  
+
+									
                                     <p class="read-more"><a href="https://openr.netlify.com/blog/beginr-features-packr/" class="btn btn-template-main">Continue reading</a>
                                     </p>
                                 </div>
@@ -218,7 +259,7 @@
                                     <div class="clearfix">
                                         <p class="author-category">
                                           
-                                          By <a href="#">dapeng</a>
+                                          By <a href="#">赵鹏</a>
                                           
                                           
 
@@ -227,13 +268,18 @@
                                             <a href="https://openr.netlify.com/blog/beginr-task-documentation/"><i class="fa fa-calendar-o"></i> June 15, 2018</a>
                                         </p>
                                     </div>
-                                    <p class="intro"><blockquote>
-<p>The documentation level of R is already much higher than average for open source software and even than some commercial packages (esp. SPSS is notorious for its attitude of &ldquo;You want to do one of these things. If you don&rsquo;t understand what the output means, click help and we&rsquo;ll pop up five lines of mumbo-jumbo that you&rsquo;re not going to understand either.&rdquo;)</p>
+									      
+      <blockquote>
+<p>The documentation level of R is already much higher than average for open source software and even than some commercial packages (esp. SPSS is notorious for its attitude of &quot;You want to do one of these things. If you don't understand what the output means, click help and we'll pop up five lines of mumbo-jumbo that you're not going to understand either.&quot;)</p>
 
-<p>&ndash; Peter Dalgaard</p>
+<p>-- Peter Dalgaard</p>
 
 <p><U+200B>      R-help (April 2002)</p>
-</blockquote></p>
+</blockquote>
+      
+	  
+
+									
                                     <p class="read-more"><a href="https://openr.netlify.com/blog/beginr-task-documentation/" class="btn btn-template-main">Continue reading</a>
                                     </p>
                                 </div>
@@ -267,8 +313,12 @@
                                             <a href="https://openr.netlify.com/blog/beginr-released/"><i class="fa fa-calendar-o"></i> June 23, 2017</a>
                                         </p>
                                     </div>
-                                    <p class="intro">I’m glad to announce that ‘beginr’ (Zhao 2017) is now on CRAN. This post is a brief documentation of ‘beginr 0.1.0’. Subsequent updates can be found on the GitHub site of beginr.
-HUGOMORE42 Introduction‘beginr’ is a collection of useful functions for R beginners, including hints for the arguments of the ‘plot()’ function, self-defined functions for error bars, user-customized pair plots and hist plots, enhanced linear regression figures, etc.. This package could be helpful to R experts as well.</p>
+									      
+      beginr is a collection of useful functions for R beginners. It might be helpful to R experts as well.
+      
+	  
+
+									
                                     <p class="read-more"><a href="https://openr.netlify.com/blog/beginr-released/" class="btn btn-template-main">Continue reading</a>
                                     </p>
                                 </div>
@@ -338,10 +388,10 @@ HUGOMORE42 Introduction‘beginr’ is a collection of useful functions for R b
     <div class="panel-body">
         <ul class="tag-cloud">
             
-            <li><a href="https://openr.netlify.com/tags/beginr"><i class="fa fa-tags"></i> beginr</a>
+            <li><a href="https://openr.netlify.com/tags/advr"><i class="fa fa-tags"></i> advr</a>
             </li>
             
-            <li><a href="https://openr.netlify.com/tags/blogdown"><i class="fa fa-tags"></i> blogdown</a>
+            <li><a href="https://openr.netlify.com/tags/beginr"><i class="fa fa-tags"></i> beginr</a>
             </li>
             
             <li><a href="https://openr.netlify.com/tags/bookdown"><i class="fa fa-tags"></i> bookdown</a>
@@ -356,13 +406,10 @@ HUGOMORE42 Introduction‘beginr’ is a collection of useful functions for R b
             <li><a href="https://openr.netlify.com/tags/mindr"><i class="fa fa-tags"></i> mindr</a>
             </li>
             
+            <li><a href="https://openr.netlify.com/tags/news"><i class="fa fa-tags"></i> news</a>
+            </li>
+            
             <li><a href="https://openr.netlify.com/tags/pinyin"><i class="fa fa-tags"></i> pinyin</a>
-            </li>
-            
-            <li><a href="https://openr.netlify.com/tags/post"><i class="fa fa-tags"></i> post</a>
-            </li>
-            
-            <li><a href="https://openr.netlify.com/tags/postr"><i class="fa fa-tags"></i> postr</a>
             </li>
             
             <li><a href="https://openr.netlify.com/tags/r"><i class="fa fa-tags"></i> r</a>
@@ -378,9 +425,6 @@ HUGOMORE42 Introduction‘beginr’ is a collection of useful functions for R b
             </li>
             
             <li><a href="https://openr.netlify.com/tags/tutorial"><i class="fa fa-tags"></i> tutorial</a>
-            </li>
-            
-            <li><a href="https://openr.netlify.com/tags/utopian-io"><i class="fa fa-tags"></i> utopian-io</a>
             </li>
             
         </ul>

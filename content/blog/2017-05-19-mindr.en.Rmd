@@ -14,7 +14,6 @@ banner: img/banners/logo-mindr.png
 
 This is a preliminary version of the introduction to mindr. Please go to my Github repo [mindr](https://github.com/pzhaonet/mindr) for the latest updates.
 
-<!--more-->
 
 ![](http://cranlogs.r-pkg.org/badges/grand-total/mindr)
 

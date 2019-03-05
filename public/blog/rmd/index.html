@@ -57,6 +57,42 @@
   <meta property="og:url" content="/blog/rmd//" />
   <meta property="og:image" content="img/logo-small.png" />
 
+  <script type="text/javascript"
+        async
+        src="https://cdn.bootcss.com/mathjax/2.7.3/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$'], ['\[\[','\]\]']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+});
+
+MathJax.Hub.Queue(function() {
+    
+    
+    
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i = 0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+});
+</script>
+
+<style>
+code.has-jax {
+    font: inherit;
+    font-size: 100%;
+    background: inherit;
+    border: inherit;
+    color: #515151;
+}
+</style>
+
 </head>
 
 
@@ -170,12 +206,12 @@
 
                     <div class="col-md-9" id="blog-post">
 
-                        <p class="text-muted text-uppercase mb-small text-right">By <a href="#">dapeng</a> | January 26, 2019</p>
+                        <p class="text-muted text-uppercase mb-small text-right">By <a href="#">赵鹏</a> | January 26, 2019</p>
 
                         <div id="post-content">
-                          <p>Since &lsquo;rmarkdown&rsquo; and &lsquo;knitr&rsquo;, more and more members (rticles, bookdown, mindr&hellip;) have been joining the R Markdown family. Users can write elegant reproducible documents, manuscripts, dissertations, books, blog posts, posters, and slides within the framework of R markdown. It is exciting, while the installation and maintenance becomes annoying. In the meanwhile, there are plenty of useful RStudio addins, which equip the RStudio IDE as a powerful markdown editor. However, these little tools are often hidden somewhere deep in the community, and it is difficult to dig them out.</p>
+                          <p>Since 'rmarkdown' and 'knitr', more and more members (rticles, bookdown, mindr...) have been joining the R Markdown family. Users can write elegant reproducible documents, manuscripts, dissertations, books, blog posts, posters, and slides within the framework of R markdown. It is exciting, while the installation and maintenance becomes annoying. In the meanwhile, there are plenty of useful RStudio addins, which equip the RStudio IDE as a powerful markdown editor. However, these little tools are often hidden somewhere deep in the community, and it is difficult to dig them out.</p>
 
-<p>With &lsquo;rmd&rsquo; you can easily explore, install, and load them for both R users and non-users. Furthermore, &lsquo;rmd&rsquo; provides a RStudio addin to explore the R Markdown family and install them with a single click.</p>
+<p>With 'rmd' you can easily explore, install, and load them for both R users and non-users. Furthermore, 'rmd' provides a RStudio addin to explore the R Markdown family and install them with a single click.</p>
 
 <p>Forget R, and enjoy the wonderful world of R Markdown.</p>
 
@@ -185,7 +221,7 @@
 <li>Load multiple functions with one command</li>
 </ul>
 
-<p>When &lsquo;rmd&rsquo; is loaded, multiple useful markdown packages are loaded. Uses can directly write all kinds of documents with them.</p>
+<p>When 'rmd' is loaded, multiple useful markdown packages are loaded. Uses can directly write all kinds of documents with them.</p>
 
 <pre><code class="language-R">require('rmd')
 &gt;&gt; Loading required package: rmd
@@ -198,19 +234,19 @@
 </code></pre>
 
 <ul>
-<li><p>&lsquo;rmd&rsquo; provides four main functions currently.</p>
+<li><p>'rmd' provides four main functions currently.</p>
 
 <ul>
-<li><p>rmd_conflicts(): check the conflicts of the functions in &lsquo;rmd&rsquo; and other loaded packages.</p></li>
+<li><p>rmd_conflicts(): check the conflicts of the functions in 'rmd' and other loaded packages.</p></li>
 
-<li><p>rmd_deps(): list all the &lsquo;rmd&rsquo; dependencies.</p></li>
+<li><p>rmd_deps(): list all the 'rmd' dependencies.</p></li>
 
-<li><p>rmd_packages(): list all packages in &lsquo;rmd&rsquo;.</p></li>
+<li><p>rmd_packages(): list all packages in 'rmd'.</p></li>
 
 <li><p>rmd_update(): check to see if all rmd packages (and optionally, their dependencies) are up-to-date, and will install after an interactive confirmation.</p></li>
 </ul></li>
 
-<li><p>&lsquo;rmd&rsquo; provides an RStudio addin. Click the &lsquo;Addins&rsquo; button on the tool bar and find &lsquo;R Markdown Family&rsquo; under &lsquo;RMD&rsquo;. A table of suggested R markdown packages will pop out. A package in a green row has already been installed. Click a row to install or remove the package.</p></li>
+<li><p>'rmd' provides an RStudio addin. Click the 'Addins' button on the tool bar and find 'R Markdown Family' under 'RMD'. A table of suggested R markdown packages will pop out. A package in a green row has already been installed. Click a row to install or remove the package.</p></li>
 </ul>
 
 <p><img src="https://raw.githubusercontent.com/pzhaonet/rmd/master/inst/media/rmd-addin.jpg" alt="" /></p>
@@ -298,7 +334,7 @@
 <tr>
 <td><a href="https://github.com/bbucior">drposter</a></td>
 <td>2019-01-26</td>
-<td>Generate Academic Posters in R Markdown and CSS, inspired by &lsquo;reveal.js&rsquo;</td>
+<td>Generate Academic Posters in R Markdown and CSS, inspired by 'reveal.js'</td>
 <td>:x:</td>
 <td><a href="https://github.com/bbucior">Ben Bucior</a></td>
 <td><a href="https://github.com/bbucior/drposter/blob/master/inst/example/poster.pdf">Demo pdf</a></td>
@@ -488,7 +524,7 @@
 <tr>
 <td><a href="https://github.com/tjmahr/WrapRmd">WrapRmd</a></td>
 <td>2019-01-26</td>
-<td>Wrap selected R Markdown text but don&rsquo;t insert lines breaks into inline R code</td>
+<td>Wrap selected R Markdown text but don't insert lines breaks into inline R code</td>
 <td>:x:</td>
 <td><a href="http://tjmahr.com/">TJ Mahr</a></td>
 <td></td>
@@ -498,7 +534,7 @@
 <tr>
 <td><a href="https://github.com/yihui/xaringan">xaringan</a></td>
 <td>2019-01-26</td>
-<td>Create HTML5 slides with R Markdown and the JavaScript library   &lsquo;remark.js&rsquo;</td>
+<td>Create HTML5 slides with R Markdown and the JavaScript library   'remark.js'</td>
 <td>:white_check_mark:</td>
 <td><a href="https://github.com/yihui">Yihui Xie et al.</a></td>
 <td><a href="https://slides.yihui.name/xaringan">Slides</a></td>
@@ -509,7 +545,7 @@
 
 <h3 id="roadmap">Roadmap</h3>
 
-<p>The main structure of &lsquo;rmd&rsquo; is more or less done. In the future, two things will be maintained.</p>
+<p>The main structure of 'rmd' is more or less done. In the future, two things will be maintained.</p>
 
 <ol>
 <li>Keep an eye on useful R markdown packages and add the new ones into the R markdown family.</li>
@@ -572,10 +608,10 @@
     <div class="panel-body">
         <ul class="tag-cloud">
             
-            <li><a href="https://openr.netlify.com/tags/beginr"><i class="fa fa-tags"></i> beginr</a>
+            <li><a href="https://openr.netlify.com/tags/advr"><i class="fa fa-tags"></i> advr</a>
             </li>
             
-            <li><a href="https://openr.netlify.com/tags/blogdown"><i class="fa fa-tags"></i> blogdown</a>
+            <li><a href="https://openr.netlify.com/tags/beginr"><i class="fa fa-tags"></i> beginr</a>
             </li>
             
             <li><a href="https://openr.netlify.com/tags/bookdown"><i class="fa fa-tags"></i> bookdown</a>
@@ -590,13 +626,10 @@
             <li><a href="https://openr.netlify.com/tags/mindr"><i class="fa fa-tags"></i> mindr</a>
             </li>
             
+            <li><a href="https://openr.netlify.com/tags/news"><i class="fa fa-tags"></i> news</a>
+            </li>
+            
             <li><a href="https://openr.netlify.com/tags/pinyin"><i class="fa fa-tags"></i> pinyin</a>
-            </li>
-            
-            <li><a href="https://openr.netlify.com/tags/post"><i class="fa fa-tags"></i> post</a>
-            </li>
-            
-            <li><a href="https://openr.netlify.com/tags/postr"><i class="fa fa-tags"></i> postr</a>
             </li>
             
             <li><a href="https://openr.netlify.com/tags/r"><i class="fa fa-tags"></i> r</a>
@@ -612,9 +645,6 @@
             </li>
             
             <li><a href="https://openr.netlify.com/tags/tutorial"><i class="fa fa-tags"></i> tutorial</a>
-            </li>
-            
-            <li><a href="https://openr.netlify.com/tags/utopian-io"><i class="fa fa-tags"></i> utopian-io</a>
             </li>
             
         </ul>

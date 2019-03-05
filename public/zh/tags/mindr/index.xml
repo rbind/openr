@@ -34,7 +34,7 @@
       <guid>https://openr.netlify.com/zh/blog/mindr-slides/</guid>
       <description>xaringan 做的幻灯片发布到网上的好处有很多，例如凡有网处皆可访问，例如每页幻灯片都有个固定网址方便引用等等。
 发布到网上的方法有很多种，借此机会发布一下 mindr 包简介幻灯片，并简单做个笔记：
-HUGOMORE42 Github 法将 xaringan 制作的一个幻灯片的文件夹（简称幻灯片文件夹）作为一个 repo 发布到 GitHub，然后在该 repo 的settings 里开启 page 功能，就可以用 your_id.github.io/your_repo 来访问幻灯片了。
+Github 法将 xaringan 制作的一个幻灯片的文件夹（简称幻灯片文件夹）作为一个 repo 发布到 GitHub，然后在该 repo 的settings 里开启 page 功能，就可以用 your_id.github.io/your_repo 来访问幻灯片了。
 示例：https://pzhaonet.github.io/mindr-slides
 参考：https://github.com/yihui/xaringan/wiki/Deploy-Slides-Online
 Hugo + netlify 法如果你有个 Hugo 静态网站并由洋雷锋 netlify 托管（例如本站），那就可以将幻灯片文件夹直接放到 Hugo 网站的 static 文件夹里即可。netlify 自动部署后，访问 your_domain/your_xaringan 就行了。
@@ -75,7 +75,7 @@ knitr::include_url(&amp;#39;hyperlink_to_your_slides&amp;#39;)参考：https://
 &lt;blockquote&gt;
 &lt;p&gt;如果你乐意，那么完全可以在注释里偷偷写一部小说，就像《倚天屠龙记》里有人在《楞伽经》夹缝处写下《九阳真经》一样。&lt;/p&gt;
 
-&lt;p&gt;&amp;mdash; 《学 R》第一章 “初见”&lt;/p&gt;
+&lt;p&gt;--- 《学 R》第一章 “初见”&lt;/p&gt;
 &lt;/blockquote&gt;</description>
     </item>
     
@@ -104,7 +104,7 @@ knitr::include_url(&amp;#39;hyperlink_to_your_slides&amp;#39;)参考：https://
       
       <guid>https://openr.netlify.com/zh/blog/publish-r-packages/</guid>
       <description>最近，我把mindr，pinyin 和 bookdownplus 三个包都提交到了 CRAN。这三个包都很简单，我就是想体验一下发布R包的流程，免得将来学R那本书出版了被问起来，答不上来就丢人了，另外也算是承接菜鸟致简速成那篇帖子，里面只谈了野包的发布分享，而只有提交到了 CRAN，野包才算转正。
-HUGOMORE42 很快，这三个包都成功转正，可以正常安装了：
+很快，这三个包都成功转正，可以正常安装了：
 install.packages(&amp;#39;mindr&amp;#39;)install.packages(&amp;#39;pinyin&amp;#39;)install.packages(&amp;#39;bookdownplus&amp;#39;)这里说说发布的过程和我遇到的一些问题。
 自查包发布之前，先自查有没有错误。只需用RStudio打开待发布的R包的.Rproj文件，然后点击右上方面板的 Build - Check 按钮，就可以看到自查结果。
 这里要注意：
@@ -125,7 +125,7 @@ install.packages(&amp;#39;mindr&amp;#39;)install.packages(&amp;#39;pinyin&amp;#
       
       <guid>https://openr.netlify.com/zh/blog/mindr/</guid>
       <description>将 markdown (.md, .Rmd) 文件转换成思维导图的 R 扩展包 mindr 是我写的第五个 R 包，安装方法如下：
-HUGOMORE42 稳定版：
+稳定版：
 install.packages(&amp;quot;mindr&amp;quot;)开发版：
 devtools::install_github(&amp;quot;pzhaonet/mindr&amp;quot;)使用方法：
 在R的工作目录创建个名叫 mm/ 的文件夹，丢进去一堆 markdown 文件 (.md, .Rmd)，然后运行：

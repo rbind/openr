@@ -1,35 +1,0 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Postr on Open R</title>
-    <link>https://openr.netlify.com/zh/tags/postr/</link>
-    <description>Recent content in Postr on Open R</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>zh-cn</language>
-    <lastBuildDate>Tue, 16 May 2017 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://openr.netlify.com/zh/tags/postr/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>postr: 用R Markdown做海报</title>
-      <link>https://openr.netlify.com/zh/blog/postr/</link>
-      <pubDate>Tue, 16 May 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://openr.netlify.com/zh/blog/postr/</guid>
-      <description>用R markdown写海报的扩展包postr安装使用方法（需要先安装好软件环境，详见postr项目主页）：
-HUGOMORE42 devtools::install_github(&amp;quot;pzhaonet/postr&amp;quot;)setwd()postr::postr()益辉的莽撞人项目，悬赏解决“用 R Markdown 做海报”这个技术难题。我私下说，Markdown走的是LaTeX路线，讲究篇章结构和逻辑，而海报追求更多随意性和艺术性，即使学术海报也不例外，所以费劲硬要用Markdown解决，可能吃力不讨好。倒不如Powerpoint来得方便，或者把整个海报在R里当成一个device，用layout画图来实现。话虽这么说，我仍然在留意这件事，因为我在新书学R里提出R语言科研方案的整体拼图，被我几乎全部拼完了，只缺海报这一块。这就好比在朋友圈发照片只发八张，看一眼就浑身不自在。
-前几天，做bookdownplus时找模板，在比利时鲁汶大学的一大堆模板当中，我极其偶然地发现，里面暗暗潜伏着的，竟然有用R Markdown制作海报的秘密，淹没在一大堆文件里，搞不清楚各个文件之间的关系，而且说明文档过于简单，用起来不够方便。于是，我花了些工夫，把海报部分择了出来，稍加修改，增添了几个自己做的颜色主题，纳入了bookdownplus里。我的想法是，用户只需下载我这个文件夹，选择好模板，一运行，就出来个Rmd文件，打开一点knit按钮，Duang！海报就出来了。
-于是去揭“莽撞人”榜。榜主说：很好。然后说：做成个包吧！名字都起好了，叫postr。为啥不直接叫poster？我猜大概是postr跟knitr的命名法类似，更容易搜到吧。
-想来也是。我这种下载文件夹的方法毕竟路子太野，不符合R语言的习惯，大家更喜欢的是做包，上传，安装。但是我从来没做过包。而且，我认为做包是R语言里高大上的东西，我不认为自己能很快学会做。于是，我在朋友圈招贤，看有没有谁愿意把这活儿给接过去。消息放出去一天，无人理睬。
-得，自己来吧。
-这天大娃生病了，早上带他看医生。诊所人满为患。排队的时候，我把网上几篇关于R包开发入门的帖子扫了几遍，好像不太难哦。从诊所出来，十点多了，一到办公室，就干劲十足地折腾。事情出乎意料的顺利。我原以要到明年才能把这个包写出来，结果当天下午就写完了。这个过程里，多亏了几位前人的工作，几年前还很繁琐复杂的R包开发，现在分分钟就能写一个玩玩。
-既然这么容易，我顺手把bookdownplus也写成了个包。然后把平时常用的方程写成了第三个包。我还准备写个R包开发菜鸟教程，于是又写了个示例包。
-从对R包开发一无所知，到一口气干掉四个包，花了不到两天工夫。用力过猛，有点撑了，我隐隐觉得不妙：好像不该这么顺利吧。
-果然，postr放到github当天晚上，就有人留言了。我很好奇这哥们儿是怎么在第一时间发现我这么个无名之辈发布了一个包。这哥们儿先说，postr这个名字起得好，很容易记住。这得感谢益辉，他给我的域名提的建议也让人说容易记。然后这哥们儿说：这个包他运行无法通过。
-这时我陡然发现，这才是R包开发的关键。写个包发布到github并不难，难的是解决用户的问题。
-前面等待的，将是一个又一个的坑。</description>
-    </item>
-    
-  </channel>
-</rss>

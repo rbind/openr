@@ -57,6 +57,42 @@
   <meta property="og:url" content="/blog/mindr-bookdown//" />
   <meta property="og:image" content="img/logo-small.png" />
 
+  <script type="text/javascript"
+        async
+        src="https://cdn.bootcss.com/mathjax/2.7.3/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$'], ['\[\[','\]\]']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+});
+
+MathJax.Hub.Queue(function() {
+    
+    
+    
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i = 0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+});
+</script>
+
+<style>
+code.has-jax {
+    font: inherit;
+    font-size: 100%;
+    background: inherit;
+    border: inherit;
+    color: #515151;
+}
+</style>
+
 </head>
 
 
@@ -170,7 +206,7 @@
 
                     <div class="col-md-9" id="blog-post">
 
-                        <p class="text-muted text-uppercase mb-small text-right">By <a href="#">dapeng</a> | October 11, 2018</p>
+                        <p class="text-muted text-uppercase mb-small text-right">By <a href="#">赵鹏</a> | October 11, 2018</p>
 
                         <div id="post-content">
                           <p>In the recent months, I have received many kind feedbacks and helpful suggestions from mindr users. I did not improve or enhance mindr until the latest week. Now the new version 1.1.5 brings more exciting features.</p>
@@ -179,7 +215,7 @@
 <li>Create mind maps out of a directory.</li>
 </ul>
 
-<p>I added a new function <code>dir2()</code> to create a mind map out of a directory in the user&rsquo;s computer.</p>
+<p>I added a new function <code>dir2()</code> to create a mind map out of a directory in the user's computer.</p>
 
 <p>Commit: <a href="https://github.com/pzhaonet/mindr/commit/0109d784422ea125b730371e689c90b26657b6a2">compitable with both the old and new versions of mindmaps. new function</a></p>
 
@@ -192,7 +228,7 @@
 <p>Commit: <a href="https://github.com/pzhaonet/mindr/commit/0109d784422ea125b730371e689c90b26657b6a2">compitable with both the old and new versions of mindmaps</a></p>
 
 <ul>
-<li>Display FreeMind mind maps directly, as a reply to <a href="https://github.com/pzhaonet/mindr/issues/8#issue-299619384">askhari139&rsquo;s comment</a>.</li>
+<li>Display FreeMind mind maps directly, as a reply to <a href="https://github.com/pzhaonet/mindr/issues/8#issue-299619384">askhari139's comment</a>.</li>
 </ul>
 
 <p>I added a new parameter to the function <code>markmap(input = c('.md', '.mm'))</code>. Now it can display not only markdown files, but also FreeMind mind maps in a markmap widge.</p>
@@ -200,18 +236,18 @@
 <p>commit: <a href="https://github.com/pzhaonet/mindr/commit/b1e1f9159f4b75fa695f9791ff447d3493b51d06">display .mm files directly</a></p>
 
 <ul>
-<li>Filter for file types were added, as a reply to <a href="https://github.com/pzhaonet/mindr/issues/12#issue-338185363">wuffi&rsquo;s comment</a>. Support hyperlinks in FreeMind mind maps, as a reply to <a href="https://github.com/pzhaonet/mindr/issues/9#issue-314193635">instantkaffee&rsquo;s comment</a>.</li>
+<li>Filter for file types were added, as a reply to <a href="https://github.com/pzhaonet/mindr/issues/12#issue-338185363">wuffi's comment</a>. Support hyperlinks in FreeMind mind maps, as a reply to <a href="https://github.com/pzhaonet/mindr/issues/9#issue-314193635">instantkaffee's comment</a>.</li>
 </ul>
 
-<p>I added a new paramter  <code>pattern</code> to the funcrtion <code>md2mm</code>, by which the uses can decide what files to import. By default, the &lsquo;.md&rsquo; and &lsquo;.Rmd&rsquo; files are imported.</p>
+<p>I added a new paramter  <code>pattern</code> to the funcrtion <code>md2mm</code>, by which the uses can decide what files to import. By default, the '.md' and '.Rmd' files are imported.</p>
 
 <p>Commit: <a href="https://github.com/pzhaonet/mindr/commit/550e9a0801451cb6077ade5893299e3e252532ce">file filter</a></p>
 
 <ul>
-<li>Enhance the support for bookdown projects, according to <a href="https://community.rstudio.com/t/bookdown-contest-submission-mindr-convert-a-bookdown-project-into-a-mind-map-and-vice-versa/15121/2?u=dapeng">Yihui&rsquo;s suggestions</a>.</li>
+<li>Enhance the support for bookdown projects, according to <a href="https://community.rstudio.com/t/bookdown-contest-submission-mindr-convert-a-bookdown-project-into-a-mind-map-and-vice-versa/15121/2?u=dapeng">Yihui's suggestions</a>.</li>
 </ul>
 
-<p>I added a parameter &lsquo;bookdown_style&rsquo; to the function <code>md2mm</code>. If the user choose the bookdown style, then mindr will put &lsquo;index.Rmd&rsquo; before all the rest files, and lower the levels of the chapter headings if there is <code># (Part)</code>, <code># (APPENDIX)</code> or <code># Reference</code>. The identification of chapter headings were improved as well.</p>
+<p>I added a parameter 'bookdown_style' to the function <code>md2mm</code>. If the user choose the bookdown style, then mindr will put 'index.Rmd' before all the rest files, and lower the levels of the chapter headings if there is <code># (Part)</code>, <code># (APPENDIX)</code> or <code># Reference</code>. The identification of chapter headings were improved as well.</p>
 
 <p>Commit: <a href="https://github.com/pzhaonet/mindr/commit/8f8a639d2f3622610e930603f262b0678ae5ae12">enchance the support for bookdown project</a></p>
 
@@ -220,13 +256,13 @@
 <p><a href="https://discourse-cdn-sjc1.com/business4/uploads/tidyverse/original/2X/9/9165086d21772e9ae06d405cef10e26e709e0fc2.png"><img src="https://discourse-cdn-sjc1.com/business4/uploads/tidyverse/original/2X/9/9165086d21772e9ae06d405cef10e26e709e0fc2.png" alt="" /></a></p>
 
 <ul>
-<li>Some minor bugs were fixed, partly according to <a href="https://github.com/pzhaonet/mindr/issues/10#issue-317041556">jooyoungseo&rsquo;s comment</a></li>
+<li>Some minor bugs were fixed, partly according to <a href="https://github.com/pzhaonet/mindr/issues/10#issue-317041556">jooyoungseo's comment</a></li>
 </ul>
 
 <p>Commits:</p>
 
 <ul>
-<li><a href="https://github.com/pzhaonet/mindr/commit/9ee25e627ab6127d146ae31be9a63fbf8909999d">&lsquo;invalid URLs&rsquo; fixed</a></li>
+<li><a href="https://github.com/pzhaonet/mindr/commit/9ee25e627ab6127d146ae31be9a63fbf8909999d">'invalid URLs' fixed</a></li>
 <li><a href="https://github.com/pzhaonet/mindr/commit/1504accd874c48d8ad719a8be9347325604954b5">users can specify the root of a mind map by markup()</a></li>
 </ul>
                         </div>
@@ -286,10 +322,10 @@
     <div class="panel-body">
         <ul class="tag-cloud">
             
-            <li><a href="https://openr.netlify.com/tags/beginr"><i class="fa fa-tags"></i> beginr</a>
+            <li><a href="https://openr.netlify.com/tags/advr"><i class="fa fa-tags"></i> advr</a>
             </li>
             
-            <li><a href="https://openr.netlify.com/tags/blogdown"><i class="fa fa-tags"></i> blogdown</a>
+            <li><a href="https://openr.netlify.com/tags/beginr"><i class="fa fa-tags"></i> beginr</a>
             </li>
             
             <li><a href="https://openr.netlify.com/tags/bookdown"><i class="fa fa-tags"></i> bookdown</a>
@@ -304,13 +340,10 @@
             <li><a href="https://openr.netlify.com/tags/mindr"><i class="fa fa-tags"></i> mindr</a>
             </li>
             
+            <li><a href="https://openr.netlify.com/tags/news"><i class="fa fa-tags"></i> news</a>
+            </li>
+            
             <li><a href="https://openr.netlify.com/tags/pinyin"><i class="fa fa-tags"></i> pinyin</a>
-            </li>
-            
-            <li><a href="https://openr.netlify.com/tags/post"><i class="fa fa-tags"></i> post</a>
-            </li>
-            
-            <li><a href="https://openr.netlify.com/tags/postr"><i class="fa fa-tags"></i> postr</a>
             </li>
             
             <li><a href="https://openr.netlify.com/tags/r"><i class="fa fa-tags"></i> r</a>
@@ -326,9 +359,6 @@
             </li>
             
             <li><a href="https://openr.netlify.com/tags/tutorial"><i class="fa fa-tags"></i> tutorial</a>
-            </li>
-            
-            <li><a href="https://openr.netlify.com/tags/utopian-io"><i class="fa fa-tags"></i> utopian-io</a>
             </li>
             
         </ul>

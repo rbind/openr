@@ -29,7 +29,6 @@ knitr::opts_chunk$set(echo = TRUE)
 - 可以生成漂亮的pdf、word和网页文件。
 - 撰写可重复性报告的不二之选。
 
-<!--more-->
 
 ### 安装
 

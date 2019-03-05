@@ -7,4 +7,4 @@ description: >
     <li>一键安装 R markdown 全家桶。</li>
     <li>探索 R markdown 工具。</li>
   </ul>
-image: "img/banners/logo-rmd.png"
+image: "https://openr.netlify.com/img/banners/logo-rmd.png"

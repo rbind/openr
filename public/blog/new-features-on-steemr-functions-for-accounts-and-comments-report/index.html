@@ -57,6 +57,42 @@
   <meta property="og:url" content="/blog/new-features-on-steemr-functions-for-accounts-and-comments-report//" />
   <meta property="og:image" content="img/logo-small.png" />
 
+  <script type="text/javascript"
+        async
+        src="https://cdn.bootcss.com/mathjax/2.7.3/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$'], ['\[\[','\]\]']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+});
+
+MathJax.Hub.Queue(function() {
+    
+    
+    
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i = 0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+});
+</script>
+
+<style>
+code.has-jax {
+    font: inherit;
+    font-size: 100%;
+    background: inherit;
+    border: inherit;
+    color: #515151;
+}
+</style>
+
 </head>
 
 
@@ -170,7 +206,7 @@
 
                     <div class="col-md-9" id="blog-post">
 
-                        <p class="text-muted text-uppercase mb-small text-right">By <a href="#">dapeng</a> | July 3, 2018</p>
+                        <p class="text-muted text-uppercase mb-small text-right">By <a href="#">赵鹏</a> | July 3, 2018</p>
 
                         <div id="post-content">
                           <h4 id="what-features-did-i-add">What features did I add?</h4>
@@ -247,11 +283,11 @@
 
 <h4 id="how-did-i-implement-them">How did I implement them?</h4>
 
-<p>I split the former &lsquo;R/steemr.R&rsquo; into &lsquo;R/plothour.r&rsquo;, &lsquo;R/analysis.r&rsquo;, and &lsquo;R/get.r&rsquo;.</p>
+<p>I split the former 'R/steemr.R' into 'R/plothour.r', 'R/analysis.r', and 'R/get.r'.</p>
 
-<p>I created new scripts &lsquo;R/internal.r&rsquo; for internal used function, &lsquo;R/plot.r&rsquo; for plotting functions, and &lsquo;R/import.r&rsquo; for importing some external packages</p>
+<p>I created new scripts 'R/internal.r' for internal used function, 'R/plot.r' for plotting functions, and 'R/import.r' for importing some external packages</p>
 
-<p>I added the new functions into &lsquo;R/plot.r&rsquo;, &lsquo;R/analysis.r&rsquo; and &lsquo;R/get.r&rsquo;</p>
+<p>I added the new functions into 'R/plot.r', 'R/analysis.r' and 'R/get.r'</p>
 
 <p>Links to relevant lines in the code on GitHub can be found mainly in my latest commits (click to see the details):</p>
 
@@ -319,10 +355,10 @@
     <div class="panel-body">
         <ul class="tag-cloud">
             
-            <li><a href="https://openr.netlify.com/tags/beginr"><i class="fa fa-tags"></i> beginr</a>
+            <li><a href="https://openr.netlify.com/tags/advr"><i class="fa fa-tags"></i> advr</a>
             </li>
             
-            <li><a href="https://openr.netlify.com/tags/blogdown"><i class="fa fa-tags"></i> blogdown</a>
+            <li><a href="https://openr.netlify.com/tags/beginr"><i class="fa fa-tags"></i> beginr</a>
             </li>
             
             <li><a href="https://openr.netlify.com/tags/bookdown"><i class="fa fa-tags"></i> bookdown</a>
@@ -337,13 +373,10 @@
             <li><a href="https://openr.netlify.com/tags/mindr"><i class="fa fa-tags"></i> mindr</a>
             </li>
             
+            <li><a href="https://openr.netlify.com/tags/news"><i class="fa fa-tags"></i> news</a>
+            </li>
+            
             <li><a href="https://openr.netlify.com/tags/pinyin"><i class="fa fa-tags"></i> pinyin</a>
-            </li>
-            
-            <li><a href="https://openr.netlify.com/tags/post"><i class="fa fa-tags"></i> post</a>
-            </li>
-            
-            <li><a href="https://openr.netlify.com/tags/postr"><i class="fa fa-tags"></i> postr</a>
             </li>
             
             <li><a href="https://openr.netlify.com/tags/r"><i class="fa fa-tags"></i> r</a>
@@ -359,9 +392,6 @@
             </li>
             
             <li><a href="https://openr.netlify.com/tags/tutorial"><i class="fa fa-tags"></i> tutorial</a>
-            </li>
-            
-            <li><a href="https://openr.netlify.com/tags/utopian-io"><i class="fa fa-tags"></i> utopian-io</a>
             </li>
             
         </ul>

@@ -57,6 +57,42 @@
   <meta property="og:url" content="/zh/blog/pinyin-v.1.1.5//" />
   <meta property="og:image" content="img/logo.png" />
 
+  <script type="text/javascript"
+        async
+        src="https://cdn.bootcss.com/mathjax/2.7.3/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$'], ['\[\[','\]\]']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+});
+
+MathJax.Hub.Queue(function() {
+    
+    
+    
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i = 0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+});
+</script>
+
+<style>
+code.has-jax {
+    font: inherit;
+    font-size: 100%;
+    background: inherit;
+    border: inherit;
+    color: #515151;
+}
+</style>
+
 </head>
 
 
@@ -177,9 +213,9 @@
 
 <p>还好变化不大，主要增加了两处。</p>
 
-<p>第一处是支持向量转换。也就是说，原先运行 <code>py(c(&quot;我&quot;, &quot;一定&quot;, &quot;是&quot;, &quot;天才&quot;))</code>，只会将第一个元素“我”转换成&rdquo;wǒ&rdquo;。这个我在 readme 里说明了：想转换向量的话，用 <code>sapply(c(&quot;我&quot;, &quot;一定&quot;, &quot;是&quot;, &quot;天才&quot;), py)</code> 就行了。</p>
+<p>第一处是支持向量转换。也就是说，原先运行 <code>py(c(&quot;我&quot;, &quot;一定&quot;, &quot;是&quot;, &quot;天才&quot;))</code>，只会将第一个元素“我”转换成&quot;wǒ&quot;。这个我在 readme 里说明了：想转换向量的话，用 <code>sapply(c(&quot;我&quot;, &quot;一定&quot;, &quot;是&quot;, &quot;天才&quot;), py)</code> 就行了。</p>
 
-<p>然而，可能是 <code>apply()</code>全家桶函数（包括 sapply, tapply, lapply, mapply &hellip;.）太晦涩的缘故，——我记得当初刚刚学 R ，就觉得这家子函数有点反人类，——很多用户对这个用法不买账。例如<a href="https://www.zhihu.com/question/66458021">知乎上有用户推荐 pinyin 包</a>的时候说道：</p>
+<p>然而，可能是 <code>apply()</code>全家桶函数（包括 sapply, tapply, lapply, mapply ....）太晦涩的缘故，——我记得当初刚刚学 R ，就觉得这家子函数有点反人类，——很多用户对这个用法不买账。例如<a href="https://www.zhihu.com/question/66458021">知乎上有用户推荐 pinyin 包</a>的时候说道：</p>
 
 <blockquote>
 <p>pinyin()只能翻译一个字符串，不能翻译向量，如果是向量输入的话，只翻译第一个元素。这个时候或许你想使用一下 for 循环之类的，遍历向量元素。</p>
@@ -198,7 +234,7 @@
 
 <p>第二处，是对旧函数的兼容。</p>
 
-<p>以前，pinyin 包的主函数是 <code>pinyin()</code>。后来因为能转换五笔和四角了，我觉得这个函数名称名不符实，就改成了 <code>py()</code>——缩写嘛，我想解释成啥就解释成啥，比如就说 py 的意思是&rsquo;朋友&rsquo;或&rsquo;飘逸&rsquo;，谁能奈我何。旧函数<code>pinyin()</code>就被我删掉了。反正这个包的用户并不多，谁能注意到呢？</p>
+<p>以前，pinyin 包的主函数是 <code>pinyin()</code>。后来因为能转换五笔和四角了，我觉得这个函数名称名不符实，就改成了 <code>py()</code>——缩写嘛，我想解释成啥就解释成啥，比如就说 py 的意思是'朋友'或'飘逸'，谁能奈我何。旧函数<code>pinyin()</code>就被我删掉了。反正这个包的用户并不多，谁能注意到呢？</p>
 
 <p>我忘了一件事：<code>pinyin()</code> 函数是被我写进&lt;<a href="https://xuer.dapengde.com">学 R：零基础学习 R 语言</a>&gt;一书里的。</p>
 
@@ -219,7 +255,7 @@
 
 <p>如果去年我搜到了这个函数，我才不会花力气去开发和维护 pinyin 包。</p>
 
-<p>在我的大肆宣传下，如今搜索 &lsquo;R语言 汉字 拼音&rsquo;，排在前面的就是我的pinyin 包，而开发更早，速度更快的 <code>tmcn::toPinyin()</code>，就这样被埋没了，不知这算不算一种不公平。</p>
+<p>在我的大肆宣传下，如今搜索 'R语言 汉字 拼音'，排在前面的就是我的pinyin 包，而开发更早，速度更快的 <code>tmcn::toPinyin()</code>，就这样被埋没了，不知这算不算一种不公平。</p>
                         </div>
                         
                         
@@ -294,7 +330,7 @@
     <div class="panel-body">
         <ul class="nav nav-pills nav-stacked">
             
-            <li><a href="https://openr.netlify.com/categories/%e6%9c%aa%e5%88%86%e7%b1%bb">未分类 (7)</a>
+            <li><a href="https://openr.netlify.com/categories/xuer">xuer (16)</a>
             </li>
             
         </ul>
@@ -316,13 +352,7 @@
     <div class="panel-body">
         <ul class="tag-cloud">
             
-            <li><a href="https://openr.netlify.com/tags/advr"><i class="fa fa-tags"></i> advr</a>
-            </li>
-            
             <li><a href="https://openr.netlify.com/tags/beginr"><i class="fa fa-tags"></i> beginr</a>
-            </li>
-            
-            <li><a href="https://openr.netlify.com/tags/blog"><i class="fa fa-tags"></i> blog</a>
             </li>
             
             <li><a href="https://openr.netlify.com/tags/blogdown"><i class="fa fa-tags"></i> blogdown</a>
@@ -334,22 +364,7 @@
             <li><a href="https://openr.netlify.com/tags/bookdownplus"><i class="fa fa-tags"></i> bookdownplus</a>
             </li>
             
-            <li><a href="https://openr.netlify.com/tags/css"><i class="fa fa-tags"></i> css</a>
-            </li>
-            
-            <li><a href="https://openr.netlify.com/tags/drposter"><i class="fa fa-tags"></i> drposter</a>
-            </li>
-            
-            <li><a href="https://openr.netlify.com/tags/git"><i class="fa fa-tags"></i> git</a>
-            </li>
-            
-            <li><a href="https://openr.netlify.com/tags/hugo"><i class="fa fa-tags"></i> hugo</a>
-            </li>
-            
             <li><a href="https://openr.netlify.com/tags/latex"><i class="fa fa-tags"></i> latex</a>
-            </li>
-            
-            <li><a href="https://openr.netlify.com/tags/linux"><i class="fa fa-tags"></i> linux</a>
             </li>
             
             <li><a href="https://openr.netlify.com/tags/markdown"><i class="fa fa-tags"></i> markdown</a>
@@ -370,9 +385,6 @@
             <li><a href="https://openr.netlify.com/tags/post"><i class="fa fa-tags"></i> post</a>
             </li>
             
-            <li><a href="https://openr.netlify.com/tags/postr"><i class="fa fa-tags"></i> postr</a>
-            </li>
-            
             <li><a href="https://openr.netlify.com/tags/r"><i class="fa fa-tags"></i> r</a>
             </li>
             
@@ -385,10 +397,7 @@
             <li><a href="https://openr.netlify.com/tags/steemr"><i class="fa fa-tags"></i> steemr</a>
             </li>
             
-            <li><a href="https://openr.netlify.com/tags/teaching"><i class="fa fa-tags"></i> teaching</a>
-            </li>
-            
-            <li><a href="https://openr.netlify.com/tags/utopian-io"><i class="fa fa-tags"></i> utopian-io</a>
+            <li><a href="https://openr.netlify.com/tags/tutorial"><i class="fa fa-tags"></i> tutorial</a>
             </li>
             
             <li><a href="https://openr.netlify.com/tags/word"><i class="fa fa-tags"></i> word</a>
@@ -397,10 +406,13 @@
             <li><a href="https://openr.netlify.com/tags/xaringan"><i class="fa fa-tags"></i> xaringan</a>
             </li>
             
-            <li><a href="https://openr.netlify.com/tags/%e5%90%89%e4%bb%96"><i class="fa fa-tags"></i> 吉他</a>
+            <li><a href="https://openr.netlify.com/tags/%e5%ad%a6"><i class="fa fa-tags"></i> 学</a>
             </li>
             
             <li><a href="https://openr.netlify.com/tags/%e5%ad%a6-r"><i class="fa fa-tags"></i> 学-r</a>
+            </li>
+            
+            <li><a href="https://openr.netlify.com/tags/%e5%ad%a6r"><i class="fa fa-tags"></i> 学r</a>
             </li>
             
         </ul>

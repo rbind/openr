@@ -57,6 +57,42 @@
   <meta property="og:url" content="/blog/heteronym-problem//" />
   <meta property="og:image" content="img/logo-small.png" />
 
+  <script type="text/javascript"
+        async
+        src="https://cdn.bootcss.com/mathjax/2.7.3/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$'], ['\[\[','\]\]']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+});
+
+MathJax.Hub.Queue(function() {
+    
+    
+    
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i = 0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+});
+</script>
+
+<style>
+code.has-jax {
+    font: inherit;
+    font-size: 100%;
+    background: inherit;
+    border: inherit;
+    color: #515151;
+}
+</style>
+
 </head>
 
 
@@ -170,7 +206,7 @@
 
                     <div class="col-md-9" id="blog-post">
 
-                        <p class="text-muted text-uppercase mb-small text-right">By <a href="#">dapeng</a> | April 12, 2018</p>
+                        <p class="text-muted text-uppercase mb-small text-right">By <a href="#">赵鹏</a> | April 12, 2018</p>
 
                         <div id="post-content">
                           <p>Heteronym is a common lingual phenomenon in the most languages.  Wikepedia:</p>
@@ -179,7 +215,7 @@
 <p>A heteronym (also known as a heterophone) is a word that has a different pronunciation and meaning as another word but the same spelling.</p>
 </blockquote>
 
-<p>For the Chinese language, the definition should be &lsquo;the same character&rsquo; instead of &lsquo;the same spelling&rsquo;, as Chinese is not a spelling language. There are around 4000 frequently used Chinese characters, more than 1000 of which are heteronyms. The choice of the correct pronunciation of a character depends on the context.</p>
+<p>For the Chinese language, the definition should be 'the same character' instead of 'the same spelling', as Chinese is not a spelling language. There are around 4000 frequently used Chinese characters, more than 1000 of which are heteronyms. The choice of the correct pronunciation of a character depends on the context.</p>
 
 <p>Currently the <a href="https://steemit.com/utopian-io/@dapeng/pinyin-an-r-package-that-converts-chineses-characters-into-latin-letters-r">R pinyin package</a> cannot handle heteronyms correctly. The Chinese language library which pinyin is using does not consider the context.</p>
 
@@ -196,9 +232,9 @@
 <p>The correct pronunciations of these characters should be:</p>
 
 <ul>
-<li>&lsquo;我是一只小小鸟&rsquo; :  &ldquo;wǒ shì yī zhī xiǎo xiǎo niǎo&rdquo;</li>
-<li>&lsquo;音乐&rsquo;: &ldquo;yīn yuè&rdquo;</li>
-<li>&lsquo;月亮&rsquo;: “yuè liang”</li>
+<li>'我是一只小小鸟' :  &quot;wǒ shì yī zhī xiǎo xiǎo niǎo&quot;</li>
+<li>'音乐': &quot;yīn yuè&quot;</li>
+<li>'月亮': “yuè liang”</li>
 </ul>
 
 <p>pinyin was intended to avoid problems in non-Asian computers which might not support Chinese display. Technically I knew this bug and I thought that heteronym would not be a problem. Now it seems that there is a demand for pinyin to improve this feature. Thanks to @nydaily for the bug report, which makes much sense. I am sorry that this report could not be approved by utopian.io because there was no license file in the repo. Now I have added a license file.</p>
@@ -271,10 +307,10 @@ pinyin::pinyin()
     <div class="panel-body">
         <ul class="tag-cloud">
             
-            <li><a href="https://openr.netlify.com/tags/beginr"><i class="fa fa-tags"></i> beginr</a>
+            <li><a href="https://openr.netlify.com/tags/advr"><i class="fa fa-tags"></i> advr</a>
             </li>
             
-            <li><a href="https://openr.netlify.com/tags/blogdown"><i class="fa fa-tags"></i> blogdown</a>
+            <li><a href="https://openr.netlify.com/tags/beginr"><i class="fa fa-tags"></i> beginr</a>
             </li>
             
             <li><a href="https://openr.netlify.com/tags/bookdown"><i class="fa fa-tags"></i> bookdown</a>
@@ -289,13 +325,10 @@ pinyin::pinyin()
             <li><a href="https://openr.netlify.com/tags/mindr"><i class="fa fa-tags"></i> mindr</a>
             </li>
             
+            <li><a href="https://openr.netlify.com/tags/news"><i class="fa fa-tags"></i> news</a>
+            </li>
+            
             <li><a href="https://openr.netlify.com/tags/pinyin"><i class="fa fa-tags"></i> pinyin</a>
-            </li>
-            
-            <li><a href="https://openr.netlify.com/tags/post"><i class="fa fa-tags"></i> post</a>
-            </li>
-            
-            <li><a href="https://openr.netlify.com/tags/postr"><i class="fa fa-tags"></i> postr</a>
             </li>
             
             <li><a href="https://openr.netlify.com/tags/r"><i class="fa fa-tags"></i> r</a>
@@ -311,9 +344,6 @@ pinyin::pinyin()
             </li>
             
             <li><a href="https://openr.netlify.com/tags/tutorial"><i class="fa fa-tags"></i> tutorial</a>
-            </li>
-            
-            <li><a href="https://openr.netlify.com/tags/utopian-io"><i class="fa fa-tags"></i> utopian-io</a>
             </li>
             
         </ul>

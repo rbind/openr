@@ -20,7 +20,7 @@
       <description>Xaringan 自带 16 套主题（themes），其中 10 套配有对应的 fonts.css，可惜光看名字是想象不出来模样的，挑选有困难。Xaringan 的 wiki 展示了几套漂亮的主题，但是不全。
 我把每个主题都做了一个单独的幻灯片，以便选用，然而貌似 github 不支持嵌入幻灯片，而我又没有找到批量转成 gif 的办法。
 于是就做了本网页。
-HUGOMORE42 我自己添加了个主题，叫 mpic，打算从 middlebury 出发慢慢修改，目前只改了个 logo。
+我自己添加了个主题，叫 mpic，打算从 middlebury 出发慢慢修改，目前只改了个 logo。
 感觉又进了一个坑。
 chocolate
 default
@@ -49,7 +49,7 @@ chocolate
       
       <guid>https://openr.netlify.com/zh/blog/xaringan-animate-single/</guid>
       <description>Xaringan 的动画转场效果，可以用 animate.css 实现。只需在 yaml 里声明一下 animate.css 的路径，然后每张幻灯片开头声明一下 class 即可（或者用 layout 来批量控制连续若干片子的转场效果）。
-HUGOMORE42 下面是个完整的 Rmd 文件示例：
+下面是个完整的 Rmd 文件示例：
 ---title: &amp;quot;zoomOutUp&amp;quot;output:xaringan::moon_reader:css:- default- default-fonts- &amp;quot;https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css&amp;quot;lib_dir: libs---layout: trueclass: inverse, center, middle, animated, zoomIn---# Yeah, Xaringan has animations...---# if animate.css!---layout: falseclass: inverse, left, center, middle# Click me and press the left or right arrow to see the zoomOutUp effect.</description>
     </item>
     
@@ -61,7 +61,7 @@ HUGOMORE42 下面是个完整的 Rmd 文件示例：
       <guid>https://openr.netlify.com/zh/blog/mindr-slides/</guid>
       <description>xaringan 做的幻灯片发布到网上的好处有很多，例如凡有网处皆可访问，例如每页幻灯片都有个固定网址方便引用等等。
 发布到网上的方法有很多种，借此机会发布一下 mindr 包简介幻灯片，并简单做个笔记：
-HUGOMORE42 Github 法将 xaringan 制作的一个幻灯片的文件夹（简称幻灯片文件夹）作为一个 repo 发布到 GitHub，然后在该 repo 的settings 里开启 page 功能，就可以用 your_id.github.io/your_repo 来访问幻灯片了。
+Github 法将 xaringan 制作的一个幻灯片的文件夹（简称幻灯片文件夹）作为一个 repo 发布到 GitHub，然后在该 repo 的settings 里开启 page 功能，就可以用 your_id.github.io/your_repo 来访问幻灯片了。
 示例：https://pzhaonet.github.io/mindr-slides
 参考：https://github.com/yihui/xaringan/wiki/Deploy-Slides-Online
 Hugo + netlify 法如果你有个 Hugo 静态网站并由洋雷锋 netlify 托管（例如本站），那就可以将幻灯片文件夹直接放到 Hugo 网站的 static 文件夹里即可。netlify 自动部署后，访问 your_domain/your_xaringan 就行了。

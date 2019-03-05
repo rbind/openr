@@ -20,7 +20,6 @@ banner: img/banners/logo-openr.png
 
 bookdown 或者说 Pandoc 的伟大之处，就是把原先必须在 LaTeX 里做的事情，99.9% 都可以用 markdown 语法完成。剩下的 0.1%，例如公式、索引、控制换行、临时改变字体字号、强制分页等操作，所涉及的 LaTeX 命令都很简单（`$$`, `\index{}`、`\mbox{}`、`\small`、`\newpage`），偶尔用一下无伤大雅。只需找个漂亮的编辑器，在 bookdown 下写作就有不错的体验，而生成的 pdf 文档处处透露着 LaTeX 的优雅。平时自用一下，美得不行，仿佛梅开二度，枯木逢春。我为 bookdown 量身制作了 bookdownplus，pinyin 和 mindr 几个扩展包，沉浸在美妙之中不可自拔。
 
-<!--more-->
 
 但是，直到这次真正给《学 R》排版，真正要送到印刷厂印个几千本的时候，光有 bookdown 的现成模板就不够用了。《学 R》是本中文书，LaTeX 对中文的支持先天不足，很多细小的问题，得自己一个一个抠。
 

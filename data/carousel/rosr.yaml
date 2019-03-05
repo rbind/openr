@@ -7,4 +7,4 @@ description: >
     <li>创建可重复性研究项目。</li>
     <li>即使不会用 R 语言，也没关系。</li>
   </ul>
-image: "img/banners/logo-rosr.png"
+image: "https://openr.netlify.com/img/banners/logo-rosr.png"

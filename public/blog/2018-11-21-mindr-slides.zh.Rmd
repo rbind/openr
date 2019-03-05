@@ -1,11 +1,10 @@
 ---
 title: 'mindr 幻灯片演示'
-author: "赵鹏"
+author: 赵鹏
 date: '2018-11-21'
 slug: mindr-slides
 summary: "听说可以把 xaringan 做的幻灯片放到 blogdown 的博客上。"
 tags:
-  - post
   - markdown
   - R
   - mindr

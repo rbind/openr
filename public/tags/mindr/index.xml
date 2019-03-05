@@ -56,7 +56,7 @@
       
       <guid>https://openr.netlify.com/blog/mindr/</guid>
       <description>This is a preliminary version of the introduction to mindr. Please go to my Github repo mindr for the latest updates.
-HUGOMORE42 Quick startInstallationdevtools::install_github(&amp;quot;pzhaonet/mindr&amp;quot;)Convert (a) markdown file(s) into a mindmapCreate a folder named mm in the working directory (getwd()), and drop some markdown or rmarkdown files into mm/. Run:
+Quick startInstallationdevtools::install_github(&amp;quot;pzhaonet/mindr&amp;quot;)Convert (a) markdown file(s) into a mindmapCreate a folder named mm in the working directory (getwd()), and drop some markdown or rmarkdown files into mm/. Run:
 mindr::md2mm()then you will get a mm.mm file. Open it with any mind-map (brainstorm) software, and you will get a mind map.</description>
     </item>
     
