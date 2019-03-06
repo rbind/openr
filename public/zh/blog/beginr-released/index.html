@@ -49,7 +49,7 @@
   <link href="/css/owl.carousel.css" rel="stylesheet">
   <link href="/css/owl.theme.css" rel="stylesheet">
 
-  <link rel="alternate" href="/index.xml" type="application/rss+xml" title="Open R">
+  <link rel="alternate" href="https://openr.netlify.com/index.xml" type="application/rss+xml" title="Open R">
 
   
   <meta property="og:title" content="R 初学者包 beginr 在 CRAN 正式发布" />
@@ -108,9 +108,9 @@ code.has-jax {
 
         <div class="container">
             <div class="navbar-header">
-                <a class="navbar-brand home" href="/">
-                    <img src="/img/logo.png" alt="R 初学者包 beginr 在 CRAN 正式发布 logo" class="hidden-xs hidden-sm">
-                    <img src="/img/logo-small.png" alt="R 初学者包 beginr 在 CRAN 正式发布 logo" class="visible-xs visible-sm">
+                <a class="navbar-brand home" href="https://openr.netlify.com/">
+                    <img src="https://openr.netlify.com/img/logo.png" alt="R 初学者包 beginr 在 CRAN 正式发布 logo" class="hidden-xs hidden-sm">
+                    <img src="https://openr.netlify.com/img/logo-small.png" alt="R 初学者包 beginr 在 CRAN 正式发布 logo" class="visible-xs visible-sm">
                     <span class="sr-only">R 初学者包 beginr 在 CRAN 正式发布 - 跳到主页</span>
                 </a>
                 <div class="navbar-buttons">
@@ -246,12 +246,12 @@ y &lt;- 1:10 + rnorm(10)
 beginr::plotlm(x, y)</code></pre>
 <p><img src="/blog/2017-06-23-beginr_released.zh_files/figure-html/unnamed-chunk-2-1.png" width="672" /></p>
 <pre><code>## [[1]]
-##              Estimate Std. Error  t value     Pr(&gt;|t|)
-## (Intercept) 1.3567043 0.60715529 2.234526 5.590086e-02
-## x           0.8792391 0.09785193 8.985403 1.875362e-05
+##               Estimate Std. Error    t value    Pr(&gt;|t|)
+## (Intercept) -0.2443981  0.9514698 -0.2568637 0.803766668
+## x            1.0045380  0.1533432  6.5509116 0.000178304
 ## 
 ## [[2]]
-## [1] 0.9098464</code></pre>
+## [1] 0.8428737</code></pre>
 <p>经常需要了解一组数据的分布, 看看是不是正态分布. beginr 里的 <code>plothist()</code> 函数不仅做出直方图和平滑曲线, 并且标出中值, 中位数, 四分位数, 标准偏差, 样本数, 以及用来判断是否正态分布的 skewness 值.</p>
 <pre class="r"><code>x &lt;- rnorm(10000)
 beginr::plothist(x)</code></pre>
@@ -285,20 +285,20 @@ beginr::errorbar(x, y, yupper = 0.1, ylower = 0.1)</code></pre>
 <p>beginr 提供了一些对数据框计算的函数, 例如计算多列数据两两的相关性和线性拟合结果, 可以用 <code>lmdf()</code> 函数.</p>
 <pre class="r"><code>df &lt;- data.frame(a = 1:10, b = 1:10 + rnorm(10), c = 1:10 + rnorm(10))
 beginr::lmdf(df)</code></pre>
-<pre><code>##   x y r.squared adj.r.squared   intercept     slope Std.Error.intercept
-## 1 a b 0.9534013     0.9475765  0.04472695 0.9551040           0.4632175
-## 2 a c 0.9383149     0.9306043 -0.45951870 1.0589636           0.5956376
-## 3 b a 0.9534013     0.9475765  0.21164549 0.9982173           0.4678870
-## 4 b c 0.9569744     0.9515962 -0.42736585 1.0933120           0.4915008
-## 5 c a 0.9383149     0.9306043  0.74643326 0.8860691           0.4992989
-## 6 c b 0.9569744     0.9515962  0.60201356 0.8752986           0.4078934
+<pre><code>##   x y r.squared adj.r.squared  intercept     slope Std.Error.intercept
+## 1 a b 0.7828439     0.7556994  0.3417343 0.9742507           1.1256528
+## 2 a c 0.8776855     0.8623962  1.4699940 0.8367150           0.6852237
+## 3 b a 0.7828439     0.7556994  0.9197630 0.8035344           0.9753757
+## 4 b c 0.7392513     0.7066577  2.0967679 0.6973825           0.9545643
+## 5 c a 0.8776855     0.8623962 -0.8692441 1.0489659           0.9125896
+## 6 c b 0.7392513     0.7066577 -0.7363545 1.0600371           1.4671714
 ##   Std.Error.slope t.intercept  t.slope Pr.intercept     Pr.slope
-## 1      0.07465425  0.09655714 12.79370    0.9254532 1.314051e-06
-## 2      0.09599570 -0.77147358 11.03136    0.4626026 4.060559e-06
-## 3      0.07802415  0.45234318 12.79370    0.6630356 1.314051e-06
-## 4      0.08196195 -0.86951200 13.33926    0.4098956 9.536287e-07
-## 5      0.08032271  1.49496276 11.03136    0.1732847 4.060559e-06
-## 6      0.06561821  1.47590912 13.33926    0.1782090 9.536287e-07</code></pre>
+## 1       0.1814154   0.3035876 5.370276   0.76918763 6.693811e-04
+## 2       0.1104338   2.1452762 7.576621   0.06424629 6.444788e-05
+## 3       0.1496263   0.9429833 5.370276   0.37329103 6.693811e-04
+## 4       0.1464337   2.1965707 4.762445   0.05931023 1.422332e-03
+## 5       0.1384477  -0.9525028 7.576621   0.36873007 6.444788e-05
+## 6       0.2225826  -0.5018872 4.762445   0.62926592 1.422332e-03</code></pre>
 <p>还有两个函数对<code>tapply()</code>进行了改善, 用来进行因子计算.</p>
 <pre class="r"><code>beginr::tapplydf()
 beginr::tapplydfv()</code></pre>
@@ -419,7 +419,7 @@ beginr::list2ascii(alist)</code></pre>
         <form action="//google.com/search" method="get" accept-charset="UTF-8" role="search">
             <div class="input-group">
                 <input type="search" name="q" class="form-control" placeholder="搜索">
-                <input type="hidden" name="sitesearch" value="/">
+                <input type="hidden" name="sitesearch" value="https://openr.netlify.com/">
                 <span class="input-group-btn">
                     <button type="submit" class="btn btn-template-main"><i class="fa fa-search"></i></button>
                 </span>
@@ -446,58 +446,58 @@ beginr::list2ascii(alist)</code></pre>
     <div class="panel-body">
         <ul class="tag-cloud">
             
-            <li><a href="/zh/tags/beginr"><i class="fa fa-tags"></i> beginr</a>
+            <li><a href="https://openr.netlify.com/zh/tags/beginr"><i class="fa fa-tags"></i> beginr</a>
             </li>
             
-            <li><a href="/zh/tags/blogdown"><i class="fa fa-tags"></i> blogdown</a>
+            <li><a href="https://openr.netlify.com/zh/tags/blogdown"><i class="fa fa-tags"></i> blogdown</a>
             </li>
             
-            <li><a href="/zh/tags/bookdown"><i class="fa fa-tags"></i> bookdown</a>
+            <li><a href="https://openr.netlify.com/zh/tags/bookdown"><i class="fa fa-tags"></i> bookdown</a>
             </li>
             
-            <li><a href="/zh/tags/bookdownplus"><i class="fa fa-tags"></i> bookdownplus</a>
+            <li><a href="https://openr.netlify.com/zh/tags/bookdownplus"><i class="fa fa-tags"></i> bookdownplus</a>
             </li>
             
-            <li><a href="/zh/tags/latex"><i class="fa fa-tags"></i> latex</a>
+            <li><a href="https://openr.netlify.com/zh/tags/latex"><i class="fa fa-tags"></i> latex</a>
             </li>
             
-            <li><a href="/zh/tags/markdown"><i class="fa fa-tags"></i> markdown</a>
+            <li><a href="https://openr.netlify.com/zh/tags/markdown"><i class="fa fa-tags"></i> markdown</a>
             </li>
             
-            <li><a href="/zh/tags/mindr"><i class="fa fa-tags"></i> mindr</a>
+            <li><a href="https://openr.netlify.com/zh/tags/mindr"><i class="fa fa-tags"></i> mindr</a>
             </li>
             
-            <li><a href="/zh/tags/news"><i class="fa fa-tags"></i> news</a>
+            <li><a href="https://openr.netlify.com/zh/tags/news"><i class="fa fa-tags"></i> news</a>
             </li>
             
-            <li><a href="/zh/tags/openr"><i class="fa fa-tags"></i> openr</a>
+            <li><a href="https://openr.netlify.com/zh/tags/openr"><i class="fa fa-tags"></i> openr</a>
             </li>
             
-            <li><a href="/zh/tags/pagedown"><i class="fa fa-tags"></i> pagedown</a>
+            <li><a href="https://openr.netlify.com/zh/tags/pagedown"><i class="fa fa-tags"></i> pagedown</a>
             </li>
             
-            <li><a href="/zh/tags/pinyin"><i class="fa fa-tags"></i> pinyin</a>
+            <li><a href="https://openr.netlify.com/zh/tags/pinyin"><i class="fa fa-tags"></i> pinyin</a>
             </li>
             
-            <li><a href="/zh/tags/r"><i class="fa fa-tags"></i> r</a>
+            <li><a href="https://openr.netlify.com/zh/tags/r"><i class="fa fa-tags"></i> r</a>
             </li>
             
-            <li><a href="/zh/tags/rmd"><i class="fa fa-tags"></i> rmd</a>
+            <li><a href="https://openr.netlify.com/zh/tags/rmd"><i class="fa fa-tags"></i> rmd</a>
             </li>
             
-            <li><a href="/zh/tags/rosr"><i class="fa fa-tags"></i> rosr</a>
+            <li><a href="https://openr.netlify.com/zh/tags/rosr"><i class="fa fa-tags"></i> rosr</a>
             </li>
             
-            <li><a href="/zh/tags/steemr"><i class="fa fa-tags"></i> steemr</a>
+            <li><a href="https://openr.netlify.com/zh/tags/steemr"><i class="fa fa-tags"></i> steemr</a>
             </li>
             
-            <li><a href="/zh/tags/tutorial"><i class="fa fa-tags"></i> tutorial</a>
+            <li><a href="https://openr.netlify.com/zh/tags/tutorial"><i class="fa fa-tags"></i> tutorial</a>
             </li>
             
-            <li><a href="/zh/tags/word"><i class="fa fa-tags"></i> word</a>
+            <li><a href="https://openr.netlify.com/zh/tags/word"><i class="fa fa-tags"></i> word</a>
             </li>
             
-            <li><a href="/zh/tags/xaringan"><i class="fa fa-tags"></i> xaringan</a>
+            <li><a href="https://openr.netlify.com/zh/tags/xaringan"><i class="fa fa-tags"></i> xaringan</a>
             </li>
             
         </ul>
@@ -550,40 +550,40 @@ beginr::list2ascii(alist)</code></pre>
                 
                 <div class="item same-height-row clearfix">
                     <div class="image same-height-always">
-                        <a href="/zh/blog/openr/">
+                        <a href="https://openr.netlify.com/zh/blog/openr/">
                           
-                            <img src="/img/banners/logo-openr.png" class="img-responsive" alt="Hugo univesal 主题的个性化设置">
+                            <img src="https://openr.netlify.com/img/banners/logo-openr.png" class="img-responsive" alt="Hugo univesal 主题的个性化设置">
                           
                         </a>
                     </div>
                     <div class="name same-height-always">
-                        <h5><a href="/zh/blog/openr/">Hugo univesal 主题的个性化设置</a></h5>
+                        <h5><a href="https://openr.netlify.com/zh/blog/openr/">Hugo univesal 主题的个性化设置</a></h5>
                     </div>
                 </div>
                 
                 <div class="item same-height-row clearfix">
                     <div class="image same-height-always">
-                        <a href="/zh/blog/txt-review-mode/">
+                        <a href="https://openr.netlify.com/zh/blog/txt-review-mode/">
                           
-                            <img src="/img/banners/logo-openr.png" class="img-responsive" alt="纯文本编辑器的审阅模式">
+                            <img src="https://openr.netlify.com/img/banners/logo-openr.png" class="img-responsive" alt="纯文本编辑器的审阅模式">
                           
                         </a>
                     </div>
                     <div class="name same-height-always">
-                        <h5><a href="/zh/blog/txt-review-mode/">纯文本编辑器的审阅模式</a></h5>
+                        <h5><a href="https://openr.netlify.com/zh/blog/txt-review-mode/">纯文本编辑器的审阅模式</a></h5>
                     </div>
                 </div>
                 
                 <div class="item same-height-row clearfix">
                     <div class="image same-height-always">
-                        <a href="/zh/blog/literature-management/">
+                        <a href="https://openr.netlify.com/zh/blog/literature-management/">
                           
-                            <img src="/img/banners/logo-openr.png" class="img-responsive" alt="纯文本：文献管理的终极之道">
+                            <img src="https://openr.netlify.com/img/banners/logo-openr.png" class="img-responsive" alt="纯文本：文献管理的终极之道">
                           
                         </a>
                     </div>
                     <div class="name same-height-always">
-                        <h5><a href="/zh/blog/literature-management/">纯文本：文献管理的终极之道</a></h5>
+                        <h5><a href="https://openr.netlify.com/zh/blog/literature-management/">纯文本：文献管理的终极之道</a></h5>
                     </div>
                 </div>
                 
@@ -657,12 +657,12 @@ beginr::list2ascii(alist)</code></pre>
 
 <script src="//maps.googleapis.com/maps/api/js?v=3.exp"></script>
 
-<script src="/js/hpneo.gmaps.js"></script>
-<script src="/js/gmaps.init.js"></script>
-<script src="/js/front.js"></script>
+<script src="https://openr.netlify.com/js/hpneo.gmaps.js"></script>
+<script src="https://openr.netlify.com/js/gmaps.init.js"></script>
+<script src="https://openr.netlify.com/js/front.js"></script>
 
 
-<script src="/js/owl.carousel.min.js"></script>
+<script src="https://openr.netlify.com/js/owl.carousel.min.js"></script>
 
 
   </body>
