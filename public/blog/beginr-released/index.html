@@ -49,7 +49,7 @@
   <link href="/css/owl.carousel.css" rel="stylesheet">
   <link href="/css/owl.theme.css" rel="stylesheet">
 
-  <link rel="alternate" href="https://openr.netlify.com/index.xml" type="application/rss+xml" title="Open R">
+  <link rel="alternate" href="/index.xml" type="application/rss+xml" title="Open R">
 
   
   <meta property="og:title" content="R package beginr released on CRAN" />
@@ -108,9 +108,9 @@ code.has-jax {
 
         <div class="container">
             <div class="navbar-header">
-                <a class="navbar-brand home" href="https://openr.netlify.com/">
-                    <img src="https://openr.netlify.com/img/logo-small.png" alt="R package beginr released on CRAN logo" class="hidden-xs hidden-sm">
-                    <img src="https://openr.netlify.com/img/logo-small.png" alt="R package beginr released on CRAN logo" class="visible-xs visible-sm">
+                <a class="navbar-brand home" href="/">
+                    <img src="/img/logo-small.png" alt="R package beginr released on CRAN logo" class="hidden-xs hidden-sm">
+                    <img src="/img/logo-small.png" alt="R package beginr released on CRAN logo" class="visible-xs visible-sm">
                     <span class="sr-only">R package beginr released on CRAN - go to homepage</span>
                 </a>
                 <div class="navbar-buttons">
@@ -249,12 +249,12 @@ y &lt;- 1:10 + rnorm(10)
 beginr::plotlm(x, y)</code></pre>
 <p><img src="/blog/2017-06-23-beginr_released.en_files/figure-html/unnamed-chunk-3-1.png" width="672" /></p>
 <pre><code>## [[1]]
-##              Estimate Std. Error  t value     Pr(&gt;|t|)
-## (Intercept) 1.2212071  0.6453226 1.892398 9.507435e-02
-## x           0.8208312  0.1040032 7.892368 4.813426e-05
+##              Estimate Std. Error    t value     Pr(&gt;|t|)
+## (Intercept) 0.1050823 0.55877570  0.1880581 8.555137e-01
+## x           1.0174014 0.09005486 11.2975736 3.390323e-06
 ## 
 ## [[2]]
-## [1] 0.886185</code></pre>
+## [1] 0.9410182</code></pre>
 <p>If you want to display the distribution of a data-set, use <code>plothist()</code>, which gives you a histogram with markers of the median, mean, quantiles, standard deviation, sample number and the skewness.</p>
 <pre class="r"><code>x &lt;- rnorm(10000)
 beginr::plothist(x)</code></pre>
@@ -289,19 +289,19 @@ beginr::errorbar(x, y, yupper = 0.1, ylower = 0.1)</code></pre>
 <pre class="r"><code>df &lt;- data.frame(a = 1:10, b = 1:10 + rnorm(10), c = 1:10 + rnorm(10))
 beginr::lmdf(df)</code></pre>
 <pre><code>##   x y r.squared adj.r.squared  intercept     slope Std.Error.intercept
-## 1 a b 0.8632148     0.8461166 -0.2094833 1.0167831           0.8879201
-## 2 a c 0.8446698     0.8252536  0.4749630 0.9383074           0.8827037
-## 3 b a 0.8632148     0.8461166  0.9301631 0.8489665           0.7447876
-## 4 b c 0.6960173     0.6580194  1.4462431 0.7782924           1.1335455
-## 5 c a 0.8446698     0.8252536  0.4267515 0.9002059           0.8670730
-## 6 c b 0.6960173     0.6580194  0.3429281 0.8942877           1.3274589
+## 1 a b 0.9237934     0.9142676 -1.0425731 1.1438220           0.7206968
+## 2 a c 0.8958917     0.8828782  0.1026083 0.9216067           0.6892009
+## 3 b a 0.9237934     0.9142676  1.2611572 0.8076374           0.5136782
+## 4 b c 0.8822229     0.8675007  1.1380860 0.7684861           0.6217894
+## 5 c a 0.8958917     0.8828782  0.4728501 0.9720977           0.6888111
+## 6 c b 0.8822229     0.8675007 -0.6883769 1.1480011           0.8718847
 ##   Std.Error.slope t.intercept  t.slope Pr.intercept     Pr.slope
-## 1       0.1431013  -0.2359258 7.105339    0.8194181 0.0001014568
-## 2       0.1422606   0.5380775 6.595695    0.6051658 0.0001701486
-## 3       0.1194829   1.2488971 7.105339    0.2470083 0.0001014568
-## 4       0.1818496   1.2758580 4.279870    0.2378009 0.0026879819
-## 5       0.1364839   0.4921748 6.595695    0.6358167 0.0001701486
-## 6       0.2089521   0.2583343 4.279870    0.8026709 0.0026879819</code></pre>
+## 1      0.11615081  -1.4466181 9.847732   0.18602162 9.517333e-06
+## 2      0.11107478   0.1488801 8.297173   0.88533274 3.355346e-05
+## 3      0.08201253   2.4551501 9.847732   0.03961725 9.517333e-06
+## 4      0.09927327   1.8303401 7.741118   0.10458258 5.529211e-05
+## 5      0.11716011   0.6864728 8.297173   0.51181740 3.355346e-05
+## 6      0.14829914  -0.7895274 7.741118   0.45256691 5.529211e-05</code></pre>
 <p>There are two functions as improvements of <code>tapply()</code> for factor calculation.</p>
 <pre class="r"><code>beginr::tapplydf()
 beginr::tapplydfv()</code></pre>
@@ -392,7 +392,7 @@ beginr::list2ascii(alist)</code></pre>
         <form action="//google.com/search" method="get" accept-charset="UTF-8" role="search">
             <div class="input-group">
                 <input type="search" name="q" class="form-control" placeholder="Search">
-                <input type="hidden" name="sitesearch" value="https://openr.netlify.com/">
+                <input type="hidden" name="sitesearch" value="/">
                 <span class="input-group-btn">
                     <button type="submit" class="btn btn-template-main"><i class="fa fa-search"></i></button>
                 </span>
@@ -400,8 +400,6 @@ beginr::list2ascii(alist)</code></pre>
         </form>
     </div>
 </div>
-
-
 
 
 
@@ -422,51 +420,52 @@ beginr::list2ascii(alist)</code></pre>
     <div class="panel-body">
         <ul class="tag-cloud">
             
-            <li><a href="https://openr.netlify.com/tags/advr"><i class="fa fa-tags"></i> advr</a>
+            <li><a href="/tags/advr"><i class="fa fa-tags"></i> advr</a>
             </li>
             
-            <li><a href="https://openr.netlify.com/tags/beginr"><i class="fa fa-tags"></i> beginr</a>
+            <li><a href="/tags/beginr"><i class="fa fa-tags"></i> beginr</a>
             </li>
             
-            <li><a href="https://openr.netlify.com/tags/bookdown"><i class="fa fa-tags"></i> bookdown</a>
+            <li><a href="/tags/bookdown"><i class="fa fa-tags"></i> bookdown</a>
             </li>
             
-            <li><a href="https://openr.netlify.com/tags/bookdownplus"><i class="fa fa-tags"></i> bookdownplus</a>
+            <li><a href="/tags/bookdownplus"><i class="fa fa-tags"></i> bookdownplus</a>
             </li>
             
-            <li><a href="https://openr.netlify.com/tags/markdown"><i class="fa fa-tags"></i> markdown</a>
+            <li><a href="/tags/markdown"><i class="fa fa-tags"></i> markdown</a>
             </li>
             
-            <li><a href="https://openr.netlify.com/tags/mindr"><i class="fa fa-tags"></i> mindr</a>
+            <li><a href="/tags/mindr"><i class="fa fa-tags"></i> mindr</a>
             </li>
             
-            <li><a href="https://openr.netlify.com/tags/news"><i class="fa fa-tags"></i> news</a>
+            <li><a href="/tags/news"><i class="fa fa-tags"></i> news</a>
             </li>
             
-            <li><a href="https://openr.netlify.com/tags/pinyin"><i class="fa fa-tags"></i> pinyin</a>
+            <li><a href="/tags/pinyin"><i class="fa fa-tags"></i> pinyin</a>
             </li>
             
-            <li><a href="https://openr.netlify.com/tags/r"><i class="fa fa-tags"></i> r</a>
+            <li><a href="/tags/r"><i class="fa fa-tags"></i> r</a>
             </li>
             
-            <li><a href="https://openr.netlify.com/tags/rmd"><i class="fa fa-tags"></i> rmd</a>
+            <li><a href="/tags/rmd"><i class="fa fa-tags"></i> rmd</a>
             </li>
             
-            <li><a href="https://openr.netlify.com/tags/rosr"><i class="fa fa-tags"></i> rosr</a>
+            <li><a href="/tags/rosr"><i class="fa fa-tags"></i> rosr</a>
             </li>
             
-            <li><a href="https://openr.netlify.com/tags/sinx"><i class="fa fa-tags"></i> sinx</a>
+            <li><a href="/tags/sinx"><i class="fa fa-tags"></i> sinx</a>
             </li>
             
-            <li><a href="https://openr.netlify.com/tags/steemr"><i class="fa fa-tags"></i> steemr</a>
+            <li><a href="/tags/steemr"><i class="fa fa-tags"></i> steemr</a>
             </li>
             
-            <li><a href="https://openr.netlify.com/tags/tutorial"><i class="fa fa-tags"></i> tutorial</a>
+            <li><a href="/tags/tutorial"><i class="fa fa-tags"></i> tutorial</a>
             </li>
             
         </ul>
     </div>
 </div>
+
 
 
 
@@ -512,40 +511,40 @@ beginr::list2ascii(alist)</code></pre>
                 
                 <div class="item same-height-row clearfix">
                     <div class="image same-height-always">
-                        <a href="https://openr.netlify.com/blog/sinx/">
+                        <a href="/blog/sinx/">
                           
-                            <img src="https://openr.netlify.com/img/banners/logo-sinx.png" class="img-responsive" alt="sinx: R fortunes in Chinese">
+                            <img src="/img/banners/logo-sinx.png" class="img-responsive" alt="sinx: R fortunes in Chinese">
                           
                         </a>
                     </div>
                     <div class="name same-height-always">
-                        <h5><a href="https://openr.netlify.com/blog/sinx/">sinx: R fortunes in Chinese</a></h5>
+                        <h5><a href="/blog/sinx/">sinx: R fortunes in Chinese</a></h5>
                     </div>
                 </div>
                 
                 <div class="item same-height-row clearfix">
                     <div class="image same-height-always">
-                        <a href="https://openr.netlify.com/blog/rosr-shiny/">
+                        <a href="/blog/rosr-shiny/">
                           
-                            <img src="https://openr.netlify.com/img/banners/logo-rosr.png" class="img-responsive" alt="rosr News: a Shiny GUI and RStudio addin for choosing and creating sub-projects">
+                            <img src="/img/banners/logo-rosr.png" class="img-responsive" alt="rosr News: a Shiny GUI and RStudio addin for choosing and creating sub-projects">
                           
                         </a>
                     </div>
                     <div class="name same-height-always">
-                        <h5><a href="https://openr.netlify.com/blog/rosr-shiny/">rosr News: a Shiny GUI and RStudio addin for choosing and creating sub-projects</a></h5>
+                        <h5><a href="/blog/rosr-shiny/">rosr News: a Shiny GUI and RStudio addin for choosing and creating sub-projects</a></h5>
                     </div>
                 </div>
                 
                 <div class="item same-height-row clearfix">
                     <div class="image same-height-always">
-                        <a href="https://openr.netlify.com/blog/rosr/">
+                        <a href="/blog/rosr/">
                           
-                            <img src="https://openr.netlify.com/img/banners/logo-rosr.png" class="img-responsive" alt="rosr: Create academic R markdown projects for open science and reproducible research">
+                            <img src="/img/banners/logo-rosr.png" class="img-responsive" alt="rosr: Create academic R markdown projects for open science and reproducible research">
                           
                         </a>
                     </div>
                     <div class="name same-height-always">
-                        <h5><a href="https://openr.netlify.com/blog/rosr/">rosr: Create academic R markdown projects for open science and reproducible research</a></h5>
+                        <h5><a href="/blog/rosr/">rosr: Create academic R markdown projects for open science and reproducible research</a></h5>
                     </div>
                 </div>
                 
@@ -619,12 +618,12 @@ beginr::list2ascii(alist)</code></pre>
 
 <script src="//maps.googleapis.com/maps/api/js?v=3.exp"></script>
 
-<script src="https://openr.netlify.com/js/hpneo.gmaps.js"></script>
-<script src="https://openr.netlify.com/js/gmaps.init.js"></script>
-<script src="https://openr.netlify.com/js/front.js"></script>
+<script src="/js/hpneo.gmaps.js"></script>
+<script src="/js/gmaps.init.js"></script>
+<script src="/js/front.js"></script>
 
 
-<script src="https://openr.netlify.com/js/owl.carousel.min.js"></script>
+<script src="/js/owl.carousel.min.js"></script>
 
 
   </body>

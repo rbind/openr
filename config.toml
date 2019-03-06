@@ -208,17 +208,16 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 
 # Enable and disable widgets for the right sidebar
 [params.widgets]
-    categories = true
+    categories = false
+    tags = true
+    search = true
+
+[languages.zh.params.widgets]
+    categories = false
     tags = true
     search = true
 
 [params.carousel]
-    enable = true
-    # All carousel items are defined in their own files. You can find example items
-    # at 'exampleSite/data/carousel'.
-    # For more informtion take a look at the README.
-
-[languages.zh.params.carousel]
     enable = true
     # All carousel items are defined in their own files. You can find example items
     # at 'exampleSite/data/carousel'.
