@@ -631,12 +631,6 @@
   </url>
   
   <url>
-    <loc>https://openr.netlify.com/zh/tags/post/</loc>
-    <lastmod>2017-03-13T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://openr.netlify.com/zh/tags/r/</loc>
     <lastmod>2019-03-05T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -747,12 +741,6 @@
   <url>
     <loc>https://openr.netlify.com/zh/categories/xuer/</loc>
     <lastmod>2018-05-27T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://openr.netlify.com/zh/tags/%E5%AD%A6-r/</loc>
-    <lastmod>2017-04-13T12:49:17+00:00</lastmod>
     <priority>0</priority>
   </url>
   

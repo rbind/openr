@@ -68,7 +68,7 @@
     <item>
       <title>News</title>
       <link>https://openr.netlify.com/tags/news/</link>
-      <pubDate>Thu, 31 Jan 2019 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 06 Mar 2019 00:00:00 +0000</pubDate>
       
       <guid>https://openr.netlify.com/tags/news/</guid>
       <description></description>
@@ -86,7 +86,7 @@
     <item>
       <title>R</title>
       <link>https://openr.netlify.com/tags/r/</link>
-      <pubDate>Thu, 31 Jan 2019 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 06 Mar 2019 00:00:00 +0000</pubDate>
       
       <guid>https://openr.netlify.com/tags/r/</guid>
       <description></description>
@@ -107,6 +107,15 @@
       <pubDate>Thu, 31 Jan 2019 00:00:00 +0000</pubDate>
       
       <guid>https://openr.netlify.com/tags/rosr/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Sinx</title>
+      <link>https://openr.netlify.com/tags/sinx/</link>
+      <pubDate>Wed, 06 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://openr.netlify.com/tags/sinx/</guid>
       <description></description>
     </item>
     

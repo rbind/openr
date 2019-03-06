@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sinx on Open R</title>
+    <link>https://openr.netlify.com/tags/sinx/</link>
+    <description>Recent content in Sinx on Open R</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 06 Mar 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://openr.netlify.com/tags/sinx/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>sinx: R fortunes in Chinese</title>
+      <link>https://openr.netlify.com/blog/sinx/</link>
+      <pubDate>Wed, 06 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://openr.netlify.com/blog/sinx/</guid>
+      <description>&lt;p&gt;One of the funniest things I found when I (as a Windows user) leant Ubuntu  was that there is a command &lt;code&gt;fortune&lt;/code&gt;, which prints a random/pseudorandom message from a database of quotations. It is said that this old feature has been available since 1970s. It was a pity that this feature was unavailable in boring Windows OS, until the R community developed in 2012 a package called &#39;fortunes,&#39;  which displays funny messages taken from the talks or communications in the R community. It supports external database as well. Unfortunately, it does not support Chinese texts, probably because (1) the &#39;fortunes&#39; package cannot read multibyte characters such as Chinese, and (2) no one contributes Chinese database of fortunes.&lt;/p&gt;
+
+&lt;p&gt;It is a great loss, as fortunes actually come from Chinese restaurants.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

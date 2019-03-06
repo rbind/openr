@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://openr.netlify.com/blog/sinx/</loc>
+    <lastmod>2019-03-06T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://openr.netlify.com/blog/rosr-shiny/</loc>
     <lastmod>2019-01-31T00:00:00+00:00</lastmod>
   </url>
@@ -311,7 +316,7 @@
   
   <url>
     <loc>https://openr.netlify.com/blog/</loc>
-    <lastmod>2019-01-31T00:00:00+00:00</lastmod>
+    <lastmod>2019-03-06T00:00:00+00:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
@@ -434,7 +439,7 @@
   
   <url>
     <loc>https://openr.netlify.com/tags/news/</loc>
-    <lastmod>2019-01-31T00:00:00+00:00</lastmod>
+    <lastmod>2019-03-06T00:00:00+00:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
@@ -450,7 +455,7 @@
   
   <url>
     <loc>https://openr.netlify.com/</loc>
-    <lastmod>2019-01-31T00:00:00+00:00</lastmod>
+    <lastmod>2019-03-06T00:00:00+00:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
@@ -482,7 +487,7 @@
   
   <url>
     <loc>https://openr.netlify.com/tags/r/</loc>
-    <lastmod>2019-01-31T00:00:00+00:00</lastmod>
+    <lastmod>2019-03-06T00:00:00+00:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
@@ -526,6 +531,12 @@
                 hreflang="en"
                 href="https://openr.netlify.com/tags/rosr/"
                 />
+  </url>
+  
+  <url>
+    <loc>https://openr.netlify.com/tags/sinx/</loc>
+    <lastmod>2019-03-06T00:00:00+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>

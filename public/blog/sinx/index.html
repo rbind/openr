@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  <meta charset="utf-8">
+  <meta name="robots" content="all,follow">
+  <meta name="googlebot" content="index,follow,snippet,archive">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>sinx: R fortunes in Chinese</title>
+  <meta name="author" content="" />
+
+  
+
+  
+
+  <meta name="generator" content="Hugo 0.53" />
+
+  <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
+
+  
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  
+  <link href="/css/animate.css" rel="stylesheet">
+
+  
+  
+    <link href="/css/style.blue.css" rel="stylesheet" id="theme-stylesheet">
+  
+
+
+  
+  <link href="/css/custom.css" rel="stylesheet">
+
+  
+  
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  
+
+  
+  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon" href="/img/apple-touch-icon.png" />
+  
+
+  <link href="/css/owl.carousel.css" rel="stylesheet">
+  <link href="/css/owl.theme.css" rel="stylesheet">
+
+  <link rel="alternate" href="https://openr.netlify.com/index.xml" type="application/rss+xml" title="Open R">
+
+  
+  <meta property="og:title" content="sinx: R fortunes in Chinese" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="/blog/sinx//" />
+  <meta property="og:image" content="img/logo-small.png" />
+
+  <script type="text/javascript"
+        async
+        src="https://cdn.bootcss.com/mathjax/2.7.3/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$'], ['\[','\]']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+});
+
+MathJax.Hub.Queue(function() {
+    
+    
+    
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i = 0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+});
+</script>
+
+<style>
+code.has-jax {
+    font: inherit;
+    font-size: 100%;
+    background: inherit;
+    border: inherit;
+    color: #515151;
+}
+</style>
+
+</head>
+
+
+  <body>
+
+    <div id="all">
+
+        <header>
+
+          <div class="navbar-affixed-top" data-spy="affix" data-offset-top="200">
+
+    <div class="navbar navbar-default yamm" role="navigation" id="navbar">
+
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand home" href="https://openr.netlify.com/">
+                    <img src="https://openr.netlify.com/img/logo-small.png" alt="sinx: R fortunes in Chinese logo" class="hidden-xs hidden-sm">
+                    <img src="https://openr.netlify.com/img/logo-small.png" alt="sinx: R fortunes in Chinese logo" class="visible-xs visible-sm">
+                    <span class="sr-only">sinx: R fortunes in Chinese - go to homepage</span>
+                </a>
+                <div class="navbar-buttons">
+                    <button type="button" class="navbar-toggle btn-template-main" data-toggle="collapse" data-target="#navigation">
+                      <span class="sr-only">Toggle Navigation</span>
+                        <i class="fa fa-align-justify"></i>
+                    </button>
+                </div>
+            </div>
+            
+
+            <div class="navbar-collapse collapse" id="navigation">
+                <ul class="nav navbar-nav navbar-right">
+                  
+                  <li class="dropdown">
+                    
+                    <a href="/">Home</a>
+                    
+                  </li>
+                  
+                  <li class="dropdown">
+                    
+                    <a href="/blog/">Blog</a>
+                    
+                  </li>
+                  
+                  <li class="dropdown">
+                    
+                    <a href="/faq/">FAQ</a>
+                    
+                  </li>
+                  
+                  <li class="dropdown">
+                    
+                    <a href="/contact/">Contact</a>
+                    
+                  </li>
+                  
+                  <li class="dropdown">
+                    
+                    <a href="/zh/">中文</a>
+                    
+                  </li>
+                  
+                </ul>
+            </div>
+            
+
+            <div class="collapse clearfix" id="search">
+
+                <form class="navbar-form" role="search">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search">
+                        <span class="input-group-btn">
+
+                    <button type="submit" class="btn btn-template-main"><i class="fa fa-search"></i></button>
+
+                </span>
+                    </div>
+                </form>
+
+            </div>
+            
+
+        </div>
+    </div>
+    
+
+</div>
+
+
+
+
+        </header>
+
+        <div id="heading-breadcrumbs">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>sinx: R fortunes in Chinese</h1>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+        <div id="content">
+            <div class="container">
+
+                <div class="row">
+
+                    
+
+                    <div class="col-md-9" id="blog-post">
+
+                        <p class="text-muted text-uppercase mb-small text-right">By <a href="#">Peng Zhao</a> | March 6, 2019</p>
+
+                        <div id="post-content">
+                          <p>One of the funniest things I found when I (as a Windows user) leant Ubuntu  was that there is a command <code>fortune</code>, which prints a random/pseudorandom message from a database of quotations. It is said that this old feature has been available since 1970s. It was a pity that this feature was unavailable in boring Windows OS, until the R community developed in 2012 a package called 'fortunes,'  which displays funny messages taken from the talks or communications in the R community. It supports external database as well. Unfortunately, it does not support Chinese texts, probably because (1) the 'fortunes' package cannot read multibyte characters such as Chinese, and (2) no one contributes Chinese database of fortunes.</p>
+
+<p>It is a great loss, as fortunes actually come from Chinese restaurants.</p>
+
+<p><img src="https://img.taste.com.au/LJmHu6_E/w643-h428-cfill-q90/taste/2016/11/fortune-cookies-16447-1.jpeg" alt="" /></p>
+
+<p>R has been developing very rapidly in the Chinese community in recent years. There are online Chinese forums such as the <a href="https://d.cosx.org">Capital of Statistics</a>, annually organized R conference in China, and numerous books on R. Many interesting 'fortunes' are hidden there. What if bring them into a 'fortunes'-like package? Or bring some more fun into it?</p>
+
+<p>It is a pity that the 'fortunes' package is read-only. Therefore, I develop a brand new package, called 'sinx'. It displays fortunes in any language, only if a database is available.</p>
+
+<p>The name originated from the name cosx, which is the domain of the Capital of Statistics. <code>sin(x)</code> is the derivative of <code>-cos(x)</code>, or I would like to explain 'sinx' as 'Sino Xmen Said'.</p>
+
+<p>I designed a logo for 'sinx', which can be printed on a T-shirt.</p>
+
+<p><img src="https://github.com/pzhaonet/sinx/raw/master/img/logo-sinx1.png" alt="" /></p>
+
+<p>Briefly speaking, the current features of 'sinx' are as follows.</p>
+
+<ul>
+<li>Like the 'fortunes' package, the main feature of 'sinx' prints randomly a Chinese message taken from the R community by default. See <code>?sinx()</code>.</li>
+<li>External data bases can be imported into sinx. Users can customize their own fortunes in their favorite languages. See <code>?cscx()</code>.</li>
+<li>One advantage of a 'sinx' database is that it can be organized either in markdown format besides the table format. Users can easily contribute good fortunes to 'sinx' via github. See the <a href="https://github.com/pzhaonet/sinx/blob/master/inst/sinxs/sinxs.md">source database</a>.</li>
+<li>Another funny thing is 'cowsay'. The 'sinx' package can print messages in a cowsay way, which means that a colored pet can be displayed behind the sinx message. See <code>?tanx()</code>.</li>
+<li>A useful feature is that users can easily convert a database into an E-book (<a href="https://www.pzhao.org/book/cosx/">demo</a>) or slides (<a href="https://www.pzhao.org/slides/songshi/">demo</a>). See <code>?secx()</code>.</li>
+<li>Users can easily choose whether to display a sinx message at the startup of R. See <code>?ctanx()</code></li>
+<li>I have prepared six databases including famous poems in ancient China and famous sayings worldwide besides the default one.</li>
+</ul>
+
+<p>Here is an example, which prints randomly a poem by the top poet Li Bai, in the cowsay mode (spoken by a frog):</p>
+
+<pre><code>libs &lt;- read.sinxs(lib = c(&quot;tangshi&quot;, &quot;songshi&quot;, &quot;chinese&quot;, &quot;yangsheng&quot;, &quot;english&quot;,&quot;jinyong&quot;))
+tanx(sinxs.data = libs)
+#&gt; 
+#&gt; 
+#&gt;  ----- 
+#&gt; 风吹柳花满店香，吴姬压酒唤客尝。
+#&gt; 金陵子弟来相送，欲行不行各尽觞。
+#&gt; 请君试问东流水，别意与之谁短长。
+#&gt; 
+#&gt; --- 李白 (金陵酒肆留别) 
+#&gt;  ------ 
+#&gt;     \   
+#&gt;      \
+#&gt;         (.)_(.)
+#&gt;      _ (   _   ) _
+#&gt;     / \/`-----'\/ \
+#&gt;   __\ ( (     ) ) /__
+#&gt;   )   /\ \._./ /\   (
+#&gt;    )_/ /|\   /|\ \_(  [nosig]
+</code></pre>
+
+<p>More details can be found on the online <a href="https://www.pzhao.org/pkg/sinx/reference/index.html">documentation.</a></p>
+
+<p>In the future, more features will be brought into 'sinx' as follows.</p>
+
+<ol>
+<li>Create more funny database.</li>
+<li>Develop an RStudio addin for users to easily contribute new fortunes.</li>
+<li>Create a new feature for quizzes. Let users fill blanks in the message.</li>
+</ol>
+                        </div>
+                        
+                        
+
+                    </div>
+                    
+
+                    
+
+                    
+
+                    <div class="col-md-3">
+
+                        
+
+                        
+
+<div class="panel panel-default sidebar-menu">
+
+    <div class="panel-heading">
+      <h3 class="panel-title">Search</h3>
+    </div>
+
+    <div class="panel-body">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" role="search">
+            <div class="input-group">
+                <input type="search" name="q" class="form-control" placeholder="Search">
+                <input type="hidden" name="sitesearch" value="https://openr.netlify.com/">
+                <span class="input-group-btn">
+                    <button type="submit" class="btn btn-template-main"><i class="fa fa-search"></i></button>
+                </span>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="panel sidebar-menu">
+    <div class="panel-heading">
+      <h3 class="panel-title">Tags</h3>
+    </div>
+
+    <div class="panel-body">
+        <ul class="tag-cloud">
+            
+            <li><a href="https://openr.netlify.com/tags/advr"><i class="fa fa-tags"></i> advr</a>
+            </li>
+            
+            <li><a href="https://openr.netlify.com/tags/beginr"><i class="fa fa-tags"></i> beginr</a>
+            </li>
+            
+            <li><a href="https://openr.netlify.com/tags/bookdown"><i class="fa fa-tags"></i> bookdown</a>
+            </li>
+            
+            <li><a href="https://openr.netlify.com/tags/bookdownplus"><i class="fa fa-tags"></i> bookdownplus</a>
+            </li>
+            
+            <li><a href="https://openr.netlify.com/tags/markdown"><i class="fa fa-tags"></i> markdown</a>
+            </li>
+            
+            <li><a href="https://openr.netlify.com/tags/mindr"><i class="fa fa-tags"></i> mindr</a>
+            </li>
+            
+            <li><a href="https://openr.netlify.com/tags/news"><i class="fa fa-tags"></i> news</a>
+            </li>
+            
+            <li><a href="https://openr.netlify.com/tags/pinyin"><i class="fa fa-tags"></i> pinyin</a>
+            </li>
+            
+            <li><a href="https://openr.netlify.com/tags/r"><i class="fa fa-tags"></i> r</a>
+            </li>
+            
+            <li><a href="https://openr.netlify.com/tags/rmd"><i class="fa fa-tags"></i> rmd</a>
+            </li>
+            
+            <li><a href="https://openr.netlify.com/tags/rosr"><i class="fa fa-tags"></i> rosr</a>
+            </li>
+            
+            <li><a href="https://openr.netlify.com/tags/sinx"><i class="fa fa-tags"></i> sinx</a>
+            </li>
+            
+            <li><a href="https://openr.netlify.com/tags/steemr"><i class="fa fa-tags"></i> steemr</a>
+            </li>
+            
+            <li><a href="https://openr.netlify.com/tags/tutorial"><i class="fa fa-tags"></i> tutorial</a>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+
+
+
+
+
+                        
+
+                    </div>
+                    
+
+                    
+
+                </div>
+                
+
+            </div>
+            
+        </div>
+        
+
+        <footer id="footer">
+    <div class="container">
+
+        
+        <div class="col-md-4 col-sm-6">
+            <h4>About us</h4>
+
+            We are one.
+
+            <hr class="hidden-md hidden-lg hidden-sm">
+
+        </div>
+        
+        
+
+        <div class="col-md-4 col-sm-6">
+
+             
+            <h4>Recent posts</h4>
+
+            <div class="blog-entries">
+                
+                <div class="item same-height-row clearfix">
+                    <div class="image same-height-always">
+                        <a href="https://openr.netlify.com/blog/sinx/">
+                          
+                            <img src="https://openr.netlify.com/img/banners/logo-sinx.png" class="img-responsive" alt="sinx: R fortunes in Chinese">
+                          
+                        </a>
+                    </div>
+                    <div class="name same-height-always">
+                        <h5><a href="https://openr.netlify.com/blog/sinx/">sinx: R fortunes in Chinese</a></h5>
+                    </div>
+                </div>
+                
+                <div class="item same-height-row clearfix">
+                    <div class="image same-height-always">
+                        <a href="https://openr.netlify.com/blog/rosr-shiny/">
+                          
+                            <img src="https://openr.netlify.com/img/banners/logo-rosr.png" class="img-responsive" alt="rosr News: a Shiny GUI and RStudio addin for choosing and creating sub-projects">
+                          
+                        </a>
+                    </div>
+                    <div class="name same-height-always">
+                        <h5><a href="https://openr.netlify.com/blog/rosr-shiny/">rosr News: a Shiny GUI and RStudio addin for choosing and creating sub-projects</a></h5>
+                    </div>
+                </div>
+                
+                <div class="item same-height-row clearfix">
+                    <div class="image same-height-always">
+                        <a href="https://openr.netlify.com/blog/rosr/">
+                          
+                            <img src="https://openr.netlify.com/img/banners/logo-rosr.png" class="img-responsive" alt="rosr: Create academic R markdown projects for open science and reproducible research">
+                          
+                        </a>
+                    </div>
+                    <div class="name same-height-always">
+                        <h5><a href="https://openr.netlify.com/blog/rosr/">rosr: Create academic R markdown projects for open science and reproducible research</a></h5>
+                    </div>
+                </div>
+                
+            </div>
+
+            <hr class="hidden-md hidden-lg">
+             
+
+        </div>
+        
+
+        
+        <div class="col-md-4 col-sm-6">
+
+          <h4>Contact</h4>
+
+            <strong>OpenR Team</strong>
+      </p>
+      
+
+
+            <a href="/contact" class="btn btn-small btn-template-main">Go to contact page</a>
+
+            <hr class="hidden-md hidden-lg hidden-sm">
+
+        </div>
+        
+        
+
+    </div>
+    
+</footer>
+
+
+
+
+
+
+
+<div id="copyright">
+    <div class="container">
+        <div class="col-md-12">
+            
+            <p class="pull-left">Copyright (c) 2019, OpenR Team; all rights reserved.</p>
+            
+            <p class="pull-right">
+              Template by <a href="http://bootstrapious.com/free-templates">Bootstrapious</a>.
+              
+
+              Ported to Hugo by <a href="https://github.com/devcows/hugo-universal-theme">DevCows</a>
+            </p>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+    </div>
+    
+
+    
+<script src="//code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0/jquery.counterup.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-parallax/1.1.3/jquery-parallax.js"></script>
+
+<script src="//maps.googleapis.com/maps/api/js?v=3.exp"></script>
+
+<script src="https://openr.netlify.com/js/hpneo.gmaps.js"></script>
+<script src="https://openr.netlify.com/js/gmaps.init.js"></script>
+<script src="https://openr.netlify.com/js/front.js"></script>
+
+
+<script src="https://openr.netlify.com/js/owl.carousel.min.js"></script>
+
+
+  </body>
+</html>
