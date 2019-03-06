@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://openr.netlify.com/zh/blog/openr/</loc>
+    <lastmod>2019-03-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://openr.netlify.com/zh/blog/txt-review-mode/</loc>
     <lastmod>2019-02-01T00:00:00+00:00</lastmod>
   </url>
@@ -460,23 +465,13 @@
   
   <url>
     <loc>https://openr.netlify.com/zh/tags/blogdown/</loc>
-    <lastmod>2017-04-19T00:00:00+00:00</lastmod>
+    <lastmod>2019-03-05T00:00:00+00:00</lastmod>
     <priority>0</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://openr.netlify.com/tags/blogdown/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://openr.netlify.com/zh/tags/blogdown/"
-                />
   </url>
   
   <url>
     <loc>https://openr.netlify.com/zh/blog/</loc>
-    <lastmod>2019-02-01T00:00:00+00:00</lastmod>
+    <lastmod>2019-03-05T00:00:00+00:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
@@ -593,7 +588,7 @@
   
   <url>
     <loc>https://openr.netlify.com/zh/</loc>
-    <lastmod>2019-02-01T00:00:00+00:00</lastmod>
+    <lastmod>2019-03-05T00:00:00+00:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
@@ -605,6 +600,12 @@
                 hreflang="zh"
                 href="https://openr.netlify.com/zh/"
                 />
+  </url>
+  
+  <url>
+    <loc>https://openr.netlify.com/zh/tags/openr/</loc>
+    <lastmod>2019-03-05T00:00:00+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -637,7 +638,7 @@
   
   <url>
     <loc>https://openr.netlify.com/zh/tags/r/</loc>
-    <lastmod>2019-02-01T00:00:00+00:00</lastmod>
+    <lastmod>2019-03-05T00:00:00+00:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
@@ -750,20 +751,8 @@
   </url>
   
   <url>
-    <loc>https://openr.netlify.com/zh/tags/%E5%AD%A6/</loc>
-    <lastmod>2017-04-11T14:10:56+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://openr.netlify.com/zh/tags/%E5%AD%A6-r/</loc>
     <lastmod>2017-04-13T12:49:17+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://openr.netlify.com/zh/tags/%E5%AD%A6r/</loc>
-    <lastmod>2018-05-27T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

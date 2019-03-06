@@ -7,7 +7,6 @@ categories: []
 summary: "独狼死，群狼活。光靠买本书自己啃，哪怕这本书写得像个段子集，她们仍然有半途而废的风险。除非，除非她们组成一支“女子学习小组”，互相帮忙互相敦促……"
 tags:
   - R
-  - 学R
 categories:
   - xuer
 banner: img/banners/logo-xuer.png

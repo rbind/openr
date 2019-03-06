@@ -6,7 +6,6 @@ slug: preface_zhu
 categories: xuer
 tags:
 - R
-- 学R
 banner: img/banners/logo-xuer.png
 
 summary: "衷心感谢我的导师朱彤教授为本书作序。"

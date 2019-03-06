@@ -54,12 +54,12 @@ y &lt;- 1:10 + rnorm(10)
 beginr::plotlm(x, y)</code></pre>
 <p><img src="/blog/2017-06-23-beginr_released.en_files/figure-html/unnamed-chunk-3-1.png" width="672" /></p>
 <pre><code>## [[1]]
-##              Estimate Std. Error  t value     Pr(&gt;|t|)
-## (Intercept) 0.9869286 0.60388879 1.634289 1.408390e-01
-## x           0.9056051 0.09732549 9.304912 1.449589e-05
+##              Estimate Std. Error   t value     Pr(&gt;|t|)
+## (Intercept) 0.5216416  0.9020104 0.5783099 0.5789665639
+## x           0.8835631  0.1453721 6.0779393 0.0002966029
 ## 
 ## [[2]]
-## [1] 0.9154168</code></pre>
+## [1] 0.8219902</code></pre>
 <p>If you want to display the distribution of a data-set, use <code>plothist()</code>, which gives you a histogram with markers of the median, mean, quantiles, standard deviation, sample number and the skewness.</p>
 <pre class="r"><code>x &lt;- rnorm(10000)
 beginr::plothist(x)</code></pre>
@@ -93,20 +93,20 @@ beginr::errorbar(x, y, yupper = 0.1, ylower = 0.1)</code></pre>
 <p><code>lmdf()</code> performs the linear regression between every two columns in a data frame.</p>
 <pre class="r"><code>df &lt;- data.frame(a = 1:10, b = 1:10 + rnorm(10), c = 1:10 + rnorm(10))
 beginr::lmdf(df)</code></pre>
-<pre><code>##   x y r.squared adj.r.squared intercept     slope Std.Error.intercept
-## 1 a b 0.8871887     0.8730873 0.3582715 1.0181219           0.7964406
-## 2 a c 0.8939342     0.8806760 0.3912455 0.9774169           0.7385843
-## 3 b a 0.8871887     0.8730873 0.3082652 0.8713974           0.7380775
-## 4 b c 0.8181423     0.7954101 0.6130198 0.8650670           0.9687653
-## 5 c a 0.8939342     0.8806760 0.2255332 0.9145885           0.7224871
-## 6 c b 0.8181423     0.7954101 0.5037303 0.9457561           1.0225865
+<pre><code>##   x y r.squared adj.r.squared   intercept     slope Std.Error.intercept
+## 1 a b 0.8916406     0.8780957  0.08771730 0.9709758           0.7425610
+## 2 a c 0.9679040     0.9638920 -0.02492272 0.9793675           0.3912375
+## 3 b a 0.8916406     0.8780957  0.51542649 0.9182933           0.6994149
+## 4 b c 0.9427221     0.9355624  0.25943368 0.9399569           0.5062028
+## 5 c a 0.9679040     0.9638920  0.20115906 0.9882949           0.3866294
+## 6 c b 0.9427221     0.9355624  0.05071217 1.0029419           0.5310999
 ##   Std.Error.slope t.intercept  t.slope Pr.intercept     Pr.slope
-## 1       0.1283580   0.4498408 7.931891    0.6647641 4.643788e-05
-## 2       0.1190336   0.5297236 8.211266    0.6106849 3.618022e-05
-## 3       0.1098600   0.4176596 7.931891    0.6871802 4.643788e-05
-## 4       0.1441970   0.6327846 5.999203    0.5445330 3.236804e-04
-## 5       0.1113822   0.3121622 8.211266    0.7628984 3.618022e-05
-## 6       0.1576469   0.4926041 5.999203    0.6355264 3.236804e-04</code></pre>
+## 1      0.11967455  0.11812807  8.11347    0.9088783 3.945253e-05
+## 2      0.06305363 -0.06370228 15.53229    0.9507702 2.939784e-07
+## 3      0.11318134  0.73693956  8.11347    0.4822093 3.945253e-05
+## 4      0.08191520  0.51250937 11.47476    0.6221413 3.013049e-06
+## 5      0.06362840  0.52028910 15.53229    0.6169499 2.939784e-07
+## 6      0.08740421  0.09548517 11.47476    0.9262780 3.013049e-06</code></pre>
 <p>There are two functions as improvements of <code>tapply()</code> for factor calculation.</p>
 <pre class="r"><code>beginr::tapplydf()
 beginr::tapplydfv()</code></pre>
@@ -129,7 +129,7 @@ beginr::list2ascii(alist)</code></pre>
 ##   title = {beginr: Functions for R Beginners},
 ##   author = {Peng Zhao},
 ##   year = {2019},
-##   note = {R package version 0.1.6},
+##   note = {R package version 0.1.5},
 ##   url = {https://github.com/pzhaonet/beginr},
 ## }
 ## @Manual{R-bookdownplus,
@@ -152,7 +152,7 @@ beginr::list2ascii(alist)</code></pre>
 ##   author = {Peng Zhao},
 ##   year = {2018},
 ##   note = {R package version 1.1.5},
-##   url = {https://github.com/pzhaonet/pinyin},
+##   url = {https://CRAN.R-project.org/package=pinyin},
 ## }</code></pre>
 <p><code>plotpkg()</code> displays a figure showing the downloads of packages.</p>
 <pre class="r"><code>beginr::plotpkg(&quot;beginr&quot;, from = &quot;2017-06-23&quot;)</code></pre>

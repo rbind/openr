@@ -6,35 +6,10 @@
     <description>Recent content on Open R</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 05 Mar 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 31 Jan 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://openr.netlify.com/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Hugo univesal 主题的个性化设置</title>
-      <link>https://openr.netlify.com/blog/openr/</link>
-      <pubDate>Tue, 05 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://openr.netlify.com/blog/openr/</guid>
-      <description>&lt;p&gt;openr 网站用的是 blogdown 搭建，hugo 的 &lt;code&gt;devcows/hugo-universal-theme&lt;/code&gt; 主题。这个主题挺漂亮，功能强大，折腾的过程值得记录一下。&lt;/p&gt;
-
-&lt;p&gt;在示例网站代码基础上，我经过了如下修改：&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;修改自己的网址、名称、logo、图标等。&lt;/li&gt;
-&lt;li&gt;增加双语界面。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;具体操作主要见&lt;a href=&#34;https://github.com/rbind/openr/commit/56fdd5e799e95ac9420f76b3744ecc13a40749e3&#34;&gt;这里&lt;/a&gt;和&lt;a href=&#34;https://github.com/rbind/openr/commit/6674425686790e52d7ea1838153af60cb42cf81e&#34;&gt;这里&lt;/a&gt;。双语问题解决得不够彻底，carousel、features、testimonials 这三处，我还没弄清该怎么把双语分开设置，目前凑合着。&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;增加数学公式 mathjax 支持。（&lt;a href=&#34;https://github.com/rbind/openr/commit/a12898e8a6cbdab31234ee9d128f57239008c7a6&#34;&gt;操作方法&lt;/a&gt;）&lt;/li&gt;
-&lt;li&gt;增加列表文摘的支持。（&lt;a href=&#34;https://github.com/rbind/openr/commit/863cfb399c99779caf7f2bc6d485b54531d79eaa&#34;&gt;操作方法&lt;/a&gt;）&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Hugo 本身会截取 .md 文件里 `&lt;/p&gt;</description>
-    </item>
     
     <item>
       <title>rosr News: a Shiny GUI and RStudio addin for choosing and creating sub-projects</title>
