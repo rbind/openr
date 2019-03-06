@@ -1,6 +1,23 @@
 {{ if .Site.Params.widgets.tags }}
 {{ if isset .Site.Taxonomies "tags" }}
 {{ if not (eq (len .Site.Taxonomies.tags) 0) }}
+{{ if eq .Site.Language.Lang "zh" }}
+<div class="panel sidebar-menu">
+    <div class="panel-heading">
+      <h3 class="panel-title">{{ i18n "tagsTitle" }}</h3>
+    </div>
+
+    <div class="panel-body">
+        <ul class="tag-cloud">
+            {{ range $name, $items := .Site.Taxonomies.tags }}
+            <li><a href="{{ $.Site.BaseURL }}{{ $.Site.Language.Lang }}/tags/{{ $name | urlize | lower }}"><i class="fa fa-tags"></i> {{ $name }}</a>
+            </li>
+            {{ end }}
+        </ul>
+    </div>
+</div>
+{{ end }}
+{{ if not (eq .Site.Language.Lang "zh") }}
 <div class="panel sidebar-menu">
     <div class="panel-heading">
       <h3 class="panel-title">{{ i18n "tagsTitle" }}</h3>
@@ -15,6 +32,7 @@
         </ul>
     </div>
 </div>
+{{ end }}
 {{ end }}
 {{ end }}
 {{ end }}
