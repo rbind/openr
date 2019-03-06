@@ -225,7 +225,7 @@ code.has-jax {
 <li>增加列表文摘的支持。（<a href="https://github.com/rbind/openr/commit/863cfb399c99779caf7f2bc6d485b54531d79eaa">操作方法</a>）</li>
 </ul>
 
-<p>Hugo 本身会截取 .md 文件里 <pre><!--more--></pre>之前的部分作为 summary 出现在文章列表里，而 blogdown 对此不支持。blogdown 的做法是从 .Rmd 的 yaml 里找指定的字段，但是需要自己设置一下。由于 Hugo 的方案对文摘支持 markdown 格式，所以可以 .md 文件用 Hugo 方案，.Rmd 文件用 blogdown 方案。</p>
+<p>Hugo 本身会截取 .md 文件里 <code>&lt;!--more--&gt;</code> 之前的部分作为 summary 出现在文章列表里，而 blogdown 对此不支持。blogdown 的做法是从 .Rmd 的 yaml 里找指定的字段，但是需要自己设置一下。由于 Hugo 的方案对文摘支持 markdown 格式，所以可以 .md 文件用 Hugo 方案，.Rmd 文件用 blogdown 方案。</p>
 
 <p>差不多就这些。还有个坑，就是 netlify 没法成功布署，一大堆错误。我以为是 hugo 版本的问题，看看本地是 0.54 版，就在 netlify 指定了一下，然而 netlify 自动下载 hugo 的链接是错的，这我就不知道是为什么了。于是，我只能用 blogdown 在本地生成 public/ 文件夹，直接交给 netlify 布署了。</p>
 
