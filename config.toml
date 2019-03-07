@@ -1,8 +1,6 @@
 baseurl = "https://openr.netlify.com/"
 title = "Open R"
 theme = "hugo-universal-theme"
-# canonifyURLs = "true"
-# relativeurls = false
 [languages.en]
   languageCode = "en-us"
 

@@ -5,7 +5,7 @@
   translation: "模板来自"
 
 - id: portedBy
-  translation: "移植到 Hugo 来自"
+  translation: "移植到 Hugo 的工作来自"
 
 - id: contactGoTo
   translation: "跳到联系页面"
@@ -20,13 +20,13 @@
   translation: "联系表单"
 
 - id: contactName
-  translation: "你的名字"
+  translation: "您的名字"
 
 - id: contactMail
-  translation: "你的 Email"
+  translation: "您的 Email"
 
 - id: contactMessage
-  translation: "你的信息"
+  translation: "您的信息"
 
 - id: contactSend
   translation: "发送信息"
@@ -53,7 +53,7 @@
   translation: "阅读更多"
 
 - id: authorBy
-  translation: "由"
+  translation: "来自"
 
 - id: recentPosts
   translation: "最新博客"
@@ -65,7 +65,14 @@
   translation: "更新"
 
 - id: older
-  translation: "更旧"
+  translation: "更早"
 
 - id: publishedOn
-  translation: "在"
+  translation: "发布在"
+
+- id: features-tutorials-name
+  translation: "教程"
+
+- id: features-tutorials-description
+  translation: "我们为 R 初学者，用户，粉丝编写书籍。"
+  

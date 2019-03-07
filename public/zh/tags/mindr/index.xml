@@ -1,146 +1,0 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Mindr on Open R</title>
-    <link>https://openr.netlify.com/zh/tags/mindr/</link>
-    <description>Recent content in Mindr on Open R</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>zh-cn</language>
-    <lastBuildDate>Mon, 07 Jan 2019 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://openr.netlify.com/zh/tags/mindr/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>mindr 包的大一统：mm() 函数</title>
-      <link>https://openr.netlify.com/zh/blog/mindr-mm/</link>
-      <pubDate>Mon, 07 Jan 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://openr.netlify.com/zh/blog/mindr-mm/</guid>
-      <description>&lt;p&gt;&amp;lt;&lt;a href=&#34;http://www.pzhao.org/zh/post/r-with-markdown2/&#34;&gt;用 markdown 的逻辑写 R 脚本注释(2)&lt;/a&gt;&amp;gt;一文里配了张示意图，展示了 mindr 包的六个主要函数。当时我觉得，四海已定，天下太平。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://github.com/pzhaonet/mindr/raw/master/showcase/mindr_concept_1.1.8.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;的确，思维导图、R 脚本、markdown 文件可以两两随意转换，我想要的基本功能都已经实现了。不过，mindr 用起来总是觉得……连我自己都觉得差那么点意思。差哪一点，一时又说不上来。&lt;/p&gt;
-
-&lt;p&gt;趁圣诞节假期，我细想了一下，差的这一点，应该是用户体验了。&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>mindr 幻灯片演示</title>
-      <link>https://openr.netlify.com/zh/blog/mindr-slides/</link>
-      <pubDate>Wed, 21 Nov 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://openr.netlify.com/zh/blog/mindr-slides/</guid>
-      <description>xaringan 做的幻灯片发布到网上的好处有很多，例如凡有网处皆可访问，例如每页幻灯片都有个固定网址方便引用等等。
-发布到网上的方法有很多种，借此机会发布一下 mindr 包简介幻灯片，并简单做个笔记：
-Github 法将 xaringan 制作的一个幻灯片的文件夹（简称幻灯片文件夹）作为一个 repo 发布到 GitHub，然后在该 repo 的settings 里开启 page 功能，就可以用 your_id.github.io/your_repo 来访问幻灯片了。
-示例：https://pzhaonet.github.io/mindr-slides
-参考：https://github.com/yihui/xaringan/wiki/Deploy-Slides-Online
-Hugo + netlify 法如果你有个 Hugo 静态网站并由洋雷锋 netlify 托管（例如本站），那就可以将幻灯片文件夹直接放到 Hugo 网站的 static 文件夹里即可。netlify 自动部署后，访问 your_domain/your_xaringan 就行了。
-示例：http://www.pzhao.org/slides/mindr
-Dropbox + Updog 法这个我只是听说，没有亲手操作过。
-参考：https://community.rstudio.com/t/posting-xaringan-presentation-on-blogdown/8212/7
-用上面这些方法中的任意一个完成后，可以将幻灯片嵌入博客帖子里，如本文开头所示，方法是在 blogdown 的帖子里加入：
-knitr::include_url(&amp;#39;hyperlink_to_your_slides&amp;#39;)参考：https://timmastny.rbind.io/blog/embed-slides-knitr-blogdown/
-有种预感：三国群雄割据的局面快结束了，魏晋的风流时代即将来临……
-</description>
-    </item>
-    
-    <item>
-      <title>用 markdown 的逻辑写 R 脚本注释（2）</title>
-      <link>https://openr.netlify.com/zh/blog/r-with-markdown2/</link>
-      <pubDate>Fri, 16 Nov 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://openr.netlify.com/zh/blog/r-with-markdown2/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;http://www.pzhao.org/zh/post/r-with-markdown/&#34;&gt;上回&lt;/a&gt;我抱怨没有现成的函数直接把 .R 脚本转换成 .Rmd 文档，于是自作聪明写了一个，结果很快 yihui 就留言说，有啊，&lt;code&gt;knitr::spin()&lt;/code&gt; 就可以。我就去研究了一下这个函数，发现比我写的那个要漂亮得多。&lt;/p&gt;
-
-&lt;p&gt;我的心情很复杂。&lt;/p&gt;
-
-&lt;p&gt;话说诗仙李白当年游山玩水，看见什么就写什么，留下的诗篇个个照耀千古。有一天，他来到了黄鹤楼，照例诗兴大发，正待提笔，突然看见了墙上有前辈崔颢题写的一首七律：&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>用 markdown 的逻辑写 R 脚本注释</title>
-      <link>https://openr.netlify.com/zh/blog/r-with-markdown/</link>
-      <pubDate>Sat, 27 Oct 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://openr.netlify.com/zh/blog/r-with-markdown/</guid>
-      <description>&lt;h2 id=&#34;九阳真经&#34;&gt;九阳真经&lt;/h2&gt;
-
-&lt;p&gt;跟很多业余程序员一样，我意识到给代码写注释的重要性时，已经很晚了。有多晚？差不多就是隔一段时间再打开自己写的旧代码时。我惊讶得下巴都快掉了：这是我亲手写的吗？怎么一点都看不懂？这要是有人打假说我是抄袭，那恐怕连我自己都举双手赞成。&lt;/p&gt;
-
-&lt;p&gt;代码里的注释很重要，读者是未来的自己。好的注释不仅能把事儿说清楚，还可以写得波澜壮阔，跌宕起伏。就像我在 《&lt;a href=&#34;https://xuer.pzhao.org&#34;&gt;学 R&lt;/a&gt;》一书里写的：&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;如果你乐意，那么完全可以在注释里偷偷写一部小说，就像《倚天屠龙记》里有人在《楞伽经》夹缝处写下《九阳真经》一样。&lt;/p&gt;
-
-&lt;p&gt;--- 《学 R》第一章 “初见”&lt;/p&gt;
-&lt;/blockquote&gt;</description>
-    </item>
-    
-    <item>
-      <title>外行 R 包开发手记：mindr</title>
-      <link>https://openr.netlify.com/zh/blog/mindr-one-year/</link>
-      <pubDate>Sat, 20 Oct 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://openr.netlify.com/zh/blog/mindr-one-year/</guid>
-      <description>&lt;p&gt;在 CRAN 发布的几个包里， 我对 mindr 情有独钟。它像 pinyin 包一样，结构简单清晰。它得到的用户反馈不像 bookdownplus 包那样让我手足无措。相反，在跟用户的互动中，mindr 在成长，越来越酷。开发升级 mindr，是个很愉快的过程。&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>发布了 4 个 R 语言包：bookdownplus, pinyin, mindr, beginr</title>
-      <link>https://openr.netlify.com/archives/19377/</link>
-      <pubDate>Fri, 23 Jun 2017 18:29:38 +0000</pubDate>
-      
-      <guid>https://openr.netlify.com/archives/19377/</guid>
-      <description>&lt;p&gt;最近，一口气往 CRAN 提交了四个 R 扩展包，所幸都被发布了，这里简单介绍一下。详细情况请来&lt;a href=&#34;http://pzhao.org&#34;&gt;我的新网站&lt;/a&gt;围观。&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>R包发布记</title>
-      <link>https://openr.netlify.com/zh/blog/publish-r-packages/</link>
-      <pubDate>Mon, 19 Jun 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://openr.netlify.com/zh/blog/publish-r-packages/</guid>
-      <description>最近，我把mindr，pinyin 和 bookdownplus 三个包都提交到了 CRAN。这三个包都很简单，我就是想体验一下发布R包的流程，免得将来学R那本书出版了被问起来，答不上来就丢人了，另外也算是承接菜鸟致简速成那篇帖子，里面只谈了野包的发布分享，而只有提交到了 CRAN，野包才算转正。
-很快，这三个包都成功转正，可以正常安装了：
-install.packages(&amp;#39;mindr&amp;#39;)install.packages(&amp;#39;pinyin&amp;#39;)install.packages(&amp;#39;bookdownplus&amp;#39;)这里说说发布的过程和我遇到的一些问题。
-自查包发布之前，先自查有没有错误。只需用RStudio打开待发布的R包的.Rproj文件，然后点击右上方面板的 Build - Check 按钮，就可以看到自查结果。
-这里要注意：
-结果里尽量不要包含任何 Notes 和 Warnings。如果有，就去找到问题修改，不然在提交的时候会被退回。
-关于author &amp;lt;author&#39;s email&amp;gt;的那一条 Note 是可以忽略的，只是提醒你再次看看作者信息有没有填错。
-我最初的自查结果有些 Notes 我原以为可以无视。比如，DESCRIPTION 文件里 Title 字段有些词要求首字母大写，我心想，这也算错误？就没理。再比如，告诉我 “no example. no test. no vignette.” 我心想，好像很多包都没有这几样，不也都发布了么？所以我同样无视。结果就是……
-下面接着讲。
-提交把包的压缩文件在 CRAN 的网页上传即可。成功上传后会收到 email 通知，需要点击里面的链接进行确认。
-我两个宝贝儿 mindr 和 pinyin 的1.0.0版是六一那天上传并确认的，之后我就等，一直等到6月16号，我才想起来这事儿，就发信给 CRAN cran@r-project.org 催了一下，当天就得到了 Dr. Uwe Ligges 的回复，说：
-你那两个包在提交当天就被系统自动拒收了，因为系统自动检查时发现了两个 Notes。系统自动发信通知你了，如果没收到，请翻翻垃圾邮件。
-我一翻邮箱的 spam，果然，拒信早就在里面了。</description>
-    </item>
-    
-    <item>
-      <title>R mindr: 把 Markdown 转成思维导图</title>
-      <link>https://openr.netlify.com/zh/blog/mindr/</link>
-      <pubDate>Fri, 19 May 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://openr.netlify.com/zh/blog/mindr/</guid>
-      <description>将 markdown (.md, .Rmd) 文件转换成思维导图的 R 扩展包 mindr 是我写的第五个 R 包，安装方法如下：
-稳定版：
-install.packages(&amp;quot;mindr&amp;quot;)开发版：
-devtools::install_github(&amp;quot;pzhaonet/mindr&amp;quot;)使用方法：
-在R的工作目录创建个名叫 mm/ 的文件夹，丢进去一堆 markdown 文件 (.md, .Rmd)，然后运行：
-mindr::md2mm()就得到个 mm.mm 的思维导图文件，用免费的思维导图软件 freemind 可以直接打开。界面比较简陋。或者用漂亮的免费软件 Xmind，需要选择导入 freemind 导图。
-mindr包还有另外两个函数：mm2md()是反向操作，将思维导图转换成markdown;outline()是从markdown文件里提取出各级标题生成大纲。
-我的书稿《学R》最初是先用思维导图拟定框架，然后在 Word 里写，后来转到 bookdown 里完成的。今天下午，我在书稿的旧思维导图里照着新稿修改，想把两者统一了。改着改着，觉得不对劲儿呀，R markdown 的哲学是维护一份文档，导出多个格式，我怎么又开始维护两份内容相同只是格式不同的文档了？
-这肯定不是什么新问题，肯定有办法直接把 markdown 转成思维导图。于是我搜。我搜搜搜，竟然没搜到！
-这就怪了。从常识上判断，我认为这个工具肯定有，说不定藏在某个 R 包里，只是太隐蔽了。
-是应该继续搜呢，还是自己动手？有时候真是难以权衡。我掂量了一下轻重，选择了后者。
-晚上，写好了。
-先拿 bookdown 书稿当小白鼠练手，用 freemind 直接打开：
-freemind 确实简陋。再拿 blogdown 书稿 试试，导入 Xmind 看看：
-还不错。好了，实验成熟了，放心地用在自己的书稿上，并且挑个最漂亮的款式：
-更新：2017-06-19，‘mindr 1.0.4’ 在 CRAN 正式发布。</description>
-    </item>
-    
-  </channel>
-</rss>

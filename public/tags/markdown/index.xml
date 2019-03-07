@@ -1,113 +1,0 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Markdown on Open R</title>
-    <link>https://openr.netlify.com/tags/markdown/</link>
-    <description>Recent content in Markdown on Open R</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Sat, 26 Jan 2019 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://openr.netlify.com/tags/markdown/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>rmd: Easily Install, Load and Explore the R Markdown Family</title>
-      <link>https://openr.netlify.com/blog/rmd/</link>
-      <pubDate>Sat, 26 Jan 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://openr.netlify.com/blog/rmd/</guid>
-      <description>&lt;p&gt;Since &#39;rmarkdown&#39; and &#39;knitr&#39;, more and more members (rticles, bookdown, mindr...) have been joining the R Markdown family. Users can write elegant reproducible documents, manuscripts, dissertations, books, blog posts, posters, and slides within the framework of R markdown. It is exciting, while the installation and maintenance becomes annoying. In the meanwhile, there are plenty of useful RStudio addins, which equip the RStudio IDE as a powerful markdown editor. However, these little tools are often hidden somewhere deep in the community, and it is difficult to dig them out.&lt;/p&gt;
-
-&lt;p&gt;With &#39;rmd&#39; you can easily explore, install, and load them for both R users and non-users. Furthermore, &#39;rmd&#39; provides a RStudio addin to explore the R Markdown family and install them with a single click.&lt;/p&gt;
-
-&lt;p&gt;Forget R, and enjoy the wonderful world of R Markdown.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>A template for Copernicus academic journals</title>
-      <link>https://openr.netlify.com/blog/bookdown-copernicus/</link>
-      <pubDate>Thu, 06 Sep 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://openr.netlify.com/blog/bookdown-copernicus/</guid>
-      <description>&lt;p&gt;This is a submission to the &lt;a href=&#34;https://blog.rstudio.com/2018/07/27/first-bookdown-contest/&#34;&gt;1st bookdown contest&lt;/a&gt;.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Write academic papers of Copernicus journals with R markdown syntax.&lt;/li&gt;
-&lt;li&gt;Support ~ 40 Copernicus journals.&lt;/li&gt;
-&lt;li&gt;Support both the two-columned pdf version and the discussion version.&lt;/li&gt;
-&lt;li&gt;Create multiple file formats, including .pdf, single .html, gitbook, .md, .epub, docx.&lt;/li&gt;
-&lt;/ul&gt;</description>
-    </item>
-    
-    <item>
-      <title>Two Achievements by R bookdown</title>
-      <link>https://openr.netlify.com/blog/gource/</link>
-      <pubDate>Fri, 08 Jun 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://openr.netlify.com/blog/gource/</guid>
-      <description>&lt;p&gt;This post is presenting two achievements by bookdown.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>R package bookdownplus 1.0.2 released on CRAN</title>
-      <link>https://openr.netlify.com/blog/bookdownplus-released/</link>
-      <pubDate>Thu, 22 Jun 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://openr.netlify.com/blog/bookdownplus-released/</guid>
-      <description>I’m glad to announce that ‘bookdownplus 1.0.2’ (Zhao 2017) is now on CRAN. This post is a brief documentation of ‘bookdownplus 1.0.2’. However, I have been updating ‘bookdownplus’ frequently and the new version is more powerful and even easier. Please go to the GitHub site of bookdownplus.
-IntroductionThe R package bookdownplus is an extension of bookdown (Xie 2016). It is a collection ofmultiple templates on the basis of LaTeX, which are tailored so that I can work happily under the umbrella of bookdown.</description>
-    </item>
-    
-    <item>
-      <title>LaTeX equations in micrometeorology</title>
-      <link>https://openr.netlify.com/blog/equations/</link>
-      <pubDate>Tue, 23 May 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://openr.netlify.com/blog/equations/</guid>
-      <description>I have collected plenty of equations in my research in recent years. Most of them were typed by my own hands. For convenience, I organized them in an ASCII file named eq.tex as an equation library, side by side with a compiled file named eq.pdf. When I needed an equation, I searched eq.pdf, and looked for the codes in eq.tex, and then copied and posted it to my working document.</description>
-    </item>
-    
-    <item>
-      <title>R package mindr: convert markdown files to mind maps, and vice versa</title>
-      <link>https://openr.netlify.com/blog/mindr/</link>
-      <pubDate>Fri, 19 May 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://openr.netlify.com/blog/mindr/</guid>
-      <description>This is a preliminary version of the introduction to mindr. Please go to my Github repo mindr for the latest updates.
-Quick startInstallationdevtools::install_github(&amp;quot;pzhaonet/mindr&amp;quot;)Convert (a) markdown file(s) into a mindmapCreate a folder named mm in the working directory (getwd()), and drop some markdown or rmarkdown files into mm/. Run:
-mindr::md2mm()then you will get a mm.mm file. Open it with any mind-map (brainstorm) software, and you will get a mind map.</description>
-    </item>
-    
-    <item>
-      <title>R package postr: created posters with R markdown</title>
-      <link>https://openr.netlify.com/blog/postr/</link>
-      <pubDate>Tue, 16 May 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://openr.netlify.com/blog/postr/</guid>
-      <description>This is a preliminary version of the introduction to postr. Please go to my Github repo postr for the latest updates.
-This package is modified from kuleuven-template, where you can see the requirements before using this package. Here I picked out the instruction for Windows users as follows.
-Install a LaTeX distribution, e.g. MiKTeX. For Chinese users CTeX is highly recommended.Install TexmakerInstall RInstall RStudioInstall Python 2Install Python filter support for Pandoc:on a Windows command prompt, type pip install pandocfiltersInstall SumatraPDF for auto-refresh of PDF previewsAfterwards, add the Python directory to the system PATH variable.</description>
-    </item>
-    
-    <item>
-      <title>bookdownplus: an R package for writing Articles, Mails, Guitar Chords, Chemical Molecular Formulae and Equations with R bookdown</title>
-      <link>https://openr.netlify.com/blog/bookdownplus/</link>
-      <pubDate>Tue, 09 May 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://openr.netlify.com/blog/bookdownplus/</guid>
-      <description>This is a preliminary version of the introduction to bookdownplus. Please go to my Github repo bookdownplus for the latest updates. Full documentation can be found in the book R bookdownplus Textbook.
-IntroductionR bookdownplus is an extension of R bookdown (Xie 2016). It is a collection ofmultiple templates on the basis of LaTeX, which are tailored so that I can work happily under the umbrella of bookdown. R bookdownplus helps you write academic journal articles, guitar books, chemical equations, mails, calendars, and diaries.</description>
-    </item>
-    
-    <item>
-      <title>R bookdown cheatsheet</title>
-      <link>https://openr.netlify.com/blog/bookdown-cheatsheet/</link>
-      <pubDate>Tue, 14 Mar 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://openr.netlify.com/blog/bookdown-cheatsheet/</guid>
-      <description>Quick StartWhat is R bookdownA software for writing books or documents.More elegant than MS Word. Much easier than \(\LaTeX\).Users can easily insert table of contents, figures and tables with cross-reference, footnotes, and index.Users can easily embed equations, citations, R scripts.pdf, word and html files can be exported.best choice to write reproducible documents.InstallationDownload R and install it.Download RStudio and install it.</description>
-    </item>
-    
-  </channel>
-</rss>

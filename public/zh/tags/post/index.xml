@@ -1,44 +1,0 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Post on Open R</title>
-    <link>https://openr.netlify.com/zh/tags/post/</link>
-    <description>Recent content in Post on Open R</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>zh-cn</language>
-    <lastBuildDate>Mon, 13 Mar 2017 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://openr.netlify.com/zh/tags/post/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>不可挡的bookdown</title>
-      <link>https://openr.netlify.com/zh/blog/inresistible-bookdown/</link>
-      <pubDate>Mon, 13 Mar 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://openr.netlify.com/zh/blog/inresistible-bookdown/</guid>
-      <description>最近，我打算把博客上关于R语言的帖子整理成一本书，希望弄得帅气一点，整齐一点，将来容易维护一点。涌进脑子的第一个念头是 \(\LaTeX\) ，第二个念头是想吐。
-是的，虽然我推崇 \(\LaTeX\) ，觉得这个工具排出来的文档很漂亮，但自从弄完博士论文1 之后，除了帮别人备份一下博客2 、往论文里插几个公式和玩玩吉他谱3，我再也没碰过她。惰性开始代替折腾，我宁可点点鼠标写出一份不太美观的Word文档，也不想面对 \(\LaTeX\) 那让人头疼的代码。大概我是真上了岁数罢。
-对于 \(\LaTeX\)，我想自己的内心深处是怀有恐惧的。她的美丽让我着迷，她的复杂令人生畏。
-所以，这次整理博客，我决定在Word里做。用了这么多年，对Word的秉性我算是略知一二，从一开始就用主控文档和子文档的方式管理，以防单个文档太大而死机；从标题到R代码，我预先都设置好了样式以及样式的快捷键，方便调整格式；每写几句话，就左手抽筋一样ctrl+s一下，以防万一。其间，发现帖子里有些R代码要修改调试，我就咬牙忍着在RStudio和Word之间频繁拷贝粘贴的煎熬。反正换回 \(\LaTeX\) 也是一样想吐，既来之则安之，嫁鸡随鸡嫁狗随狗吧。
-我天真地以为，这样就万无一失了。
-有一天，我正在Word里改某篇帖子，改之前我留意了一下总页数是160多页。改了几个段落之后，我惊奇地发现，总页数成了220多页。再仔细找，发现有些代码区的文字无缘无故变成了乱码，一乱就新增几十页。进而测试发现，我正在好端端敲字，Word左下角的页数突然就刷刷地增加了，翻回去看，乱码已经被填进去了。试了好几次，都是这样。我甚至给文档权限设置为凭密码修订，仍然挡不住Word疯狂的脚步。
-对着那自动呼呼上涨的页码，我想：认识十来年，想不到对你依然不了解。
-\(\LaTeX\) 的倩影再度闪现在我脑海。她虽然复杂，但至少源文件是纯文本，不会胡来，不像Word这么没有底线。
-为什么就没有个像Word那么界面简单，像 \(\LaTeX\) 那么源码单纯的两全其美方案呢？
-“叮”的一声，脑子里冒出刚刚发布不久的bookdown(Xie 2016a)(Xie 2016b)。这是R语言的一个扩展包，专门用来写书，可以看作是R markdown的升级版。我的博客原文都是以markdown写成的，弄到bookdown里应当是顺理成章的事。只是大约因为上了岁数，我近几年对新工具越来越排斥，所以一直懒得尝试。这次被逼无奈，要不就试试吧。反正都是折腾，与其把精力花在让人心碎的Word里或让人心焦的 \(\LaTeX\) 里，还不如花在崭新的bookdown里。就算是有缺点，还能比Word和 \(\LaTeX\) 更不能忍么？
-然后，刷！一晃十来天。春宵苦短日高起，从此君王不早朝。
-这大半个月，我陶醉在bookdown的魅力里不可自拔。bookdown秉承拿来主义，把一大串工具链里的精华整合起来，让以前繁琐的步骤无比简化，怎一个爽快了得！她近乎完美地解决了我遇到的所有问题：纯文本操作，满足了我的控制欲；在导出完美的网页格式同时，还能导出为pdf和word文档，足够拿出来跟依赖Word的人交流；公式、脚注、交叉引用、目录、参考文献，功能齐全而不臃肿，格式标记简洁而优雅。我不再需要为Word的自以为是而抑郁，也不再需要为 \(\LaTeX\) 的纷繁复杂而烦恼了。
-我用bookdown生成的书稿
-一种亲切之美扑面而来，我感到无法抗拒无法阻挡。有了bookdown在手，写东西我还需要别的什么呢？想来想去，我不需要别的了。在Word和\(\LaTeX\) 之间摇摆了十来年，到头来才发现bookdown才是真爱。
-不过，bookdown绝非完美。如果不了解rmarkdown(Allaire et al. 2017)，没见过 \(\LaTeX\) ，没听过pandoc，没用过knitr (Xie 2016c)(Xie 2015)(Xie 2014)，那么bookdown对新手来说，门槛仍然有点高。幸运的是，这几样工具我都用过，那么投入bookdown的怀抱就属于水到渠成了。即便如此，在使用初期仍然遇到了一些难以解决的问题，好在有bookdown的开发者益辉同学4 和其他同道中人热心地提供帮助，才能一路披荆斩棘，最后走上了幸福的康庄大道。
-下面，我把我那些散落在各处的提问和解决方法汇总在这里。
-编译起初我连bookdown的界面都没搞清楚，想编译却不知该点哪儿。益辉一直说build，build，我一直以为是菜单栏的build，后来才看到是在RStudio右上面板的build按钮。
-bookdown是可以直接导出为word文档的。这么重要的功能，却隐藏得很深，在官方文档里都没有强调。导出方法是，在_output.yml里添加一行：
-bookdown::word_document2: default 注意，default这个词是不能少的，不管它是不是默认。我也不知道为什么。
-导出的word文档相当令人满意，参考文献的版式、图表的交叉引用都堪称完美。唯一不足之处，是公式的编号和交叉引用。bookdown的官方文档5给出的公式书写方案是，利用 \(\LaTeX\) 的公式环境来编号和引用，这一点在生成pdf时没问题，但生成word时，会发现别说编号，连公式本身都消失了。这大概是因为pandoc未能将公式环境正确转换的缘故。解决办法是，不使用公式环境，而使用行内公式（即公式前后有一个美元符号），公式前面用圆括号里加公式标签就可以了。例如，输入：
-(@eq-mc) $E = mc^2$I like Eq. (@eq-mc) so much that I am falling love with her.</description>
-    </item>
-    
-  </channel>
-</rss>

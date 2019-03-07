@@ -1,38 +1,0 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Beginr on Open R</title>
-    <link>https://openr.netlify.com/zh/tags/beginr/</link>
-    <description>Recent content in Beginr on Open R</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>zh-cn</language>
-    <lastBuildDate>Fri, 23 Jun 2017 18:29:38 +0000</lastBuildDate>
-    
-	<atom:link href="https://openr.netlify.com/zh/tags/beginr/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>发布了 4 个 R 语言包：bookdownplus, pinyin, mindr, beginr</title>
-      <link>https://openr.netlify.com/archives/19377/</link>
-      <pubDate>Fri, 23 Jun 2017 18:29:38 +0000</pubDate>
-      
-      <guid>https://openr.netlify.com/archives/19377/</guid>
-      <description>&lt;p&gt;最近，一口气往 CRAN 提交了四个 R 扩展包，所幸都被发布了，这里简单介绍一下。详细情况请来&lt;a href=&#34;http://pzhao.org&#34;&gt;我的新网站&lt;/a&gt;围观。&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>R 初学者包 beginr 在 CRAN 正式发布</title>
-      <link>https://openr.netlify.com/zh/blog/beginr-released/</link>
-      <pubDate>Fri, 23 Jun 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://openr.netlify.com/zh/blog/beginr-released/</guid>
-      <description>又一次高兴地宣布, 我的 R 语言扩展包 ‘beginr’ (Zhao 2017a) 在 CRAN 正式发布了.
-简介beginr是我为 R 语言初学者和自己写的工具包, 是我这些年来收集和自己编写的一些简化操作的函数和备忘录, 可能对中级用户也有帮助. 其实这个包的文档我写得不够详细, 有些函数还没来及整理进去, 之所以匆匆发布, 是想先把 ‘beginr’ 这个名字给占住. 毕竟, 我中意的名字如 ‘learnr’, ’startr’都被别人用过了.
-安装方法：
-# 稳定版：install.packages(&amp;#39;beginr&amp;#39;)# 开发版：devtools::install_github(&amp;quot;pzhaonet/beginr&amp;quot;)下面分类介绍一下其中的函数.
-备忘函数我初学 R 的时候用 plot() 作图时, 常常忘记不同形状数据点(pch)对应的编号, 实线虚线(lty)的编号, 散点图类型(type)的代码, 以及最难选择的颜色代码. 每次忘了都要上网搜一下. 现在, beginr 里提供了 plotpch(), plotlty(), plottype(), plotcolors(), plotcolorbar()等函数, 想不起来的时候运行一下就行了.
-beginr::plotpch()beginr::plotlty()beginr::plottype()beginr::plotcolors()beginr::plotcolorbar()快速作图函数我常常需要做线性拟合, 每次又是作图又是添加拟合方程, 繁琐. 现在, beginr 里的一个 plotlm()函数就搞定.</description>
-    </item>
-    
-  </channel>
-</rss>

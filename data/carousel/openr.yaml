@@ -1,0 +1,10 @@
+weight: 0
+title: "OpenR"
+description: >
+  <ul class="list-style-none">
+    <li>Open the door to the R world.</li>
+    <li>Open Science and reproducible research.</li>
+    <li>打开 R 的世界。</li>
+    <li>开放科学和可持续性研究。</li>
+  </ul>
+image: "https://openr.netlify.com/img/banners/logo-openr.png"

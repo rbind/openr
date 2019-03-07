@@ -1,107 +1,0 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Blogdown on Open R</title>
-    <link>https://openr.netlify.com/zh/tags/blogdown/</link>
-    <description>Recent content in Blogdown on Open R</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>zh-cn</language>
-    <lastBuildDate>Tue, 05 Mar 2019 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://openr.netlify.com/zh/tags/blogdown/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>Hugo univesal 主题的个性化设置</title>
-      <link>https://openr.netlify.com/zh/blog/openr/</link>
-      <pubDate>Tue, 05 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://openr.netlify.com/zh/blog/openr/</guid>
-      <description>&lt;p&gt;openr 网站用的是 blogdown 搭建，hugo 的 &lt;code&gt;devcows/hugo-universal-theme&lt;/code&gt; 主题。这个主题挺漂亮，功能强大，折腾的过程值得记录一下。&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Hugo 网站的浏览器小图标</title>
-      <link>https://openr.netlify.com/zh/blog/hugo-icon/</link>
-      <pubDate>Wed, 19 Apr 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://openr.netlify.com/zh/blog/hugo-icon/</guid>
-      <description>网站图标，就是下图的这些东东，用浏览器打开网站时显示在地址栏的顶端。R blogdown安装的hugo-academic主题，默认图标是个蓝色学位帽，挺好看的，不改也行，只是如果大家都用的话，泯然众人，识别度就低了。
-改的方式很简单：将你自己的图标图片保存为.png格式，并命名为icon.png，替换\themes\hugo-academic\static\img\icon.png即可。
-update: 更好的方案来自yang Cao的提议：把icon.png放在static/img/，避免在更新themes时将自定义图标覆盖。</description>
-    </item>
-    
-    <item>
-      <title>Hugo 网站的RSS</title>
-      <link>https://openr.netlify.com/zh/blog/hugo-rss/</link>
-      <pubDate>Tue, 18 Apr 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://openr.netlify.com/zh/blog/hugo-rss/</guid>
-      <description>R blogdown 搭建的 Hugo 网站，小细节很多，可以一点一点完善，好在都不难搞定。今天添加了个RSS订阅按钮。
-自从 Google Reader 死后，我就觉得 RSS 没有多大趣味，就好像子期死后伯牙摔琴一样。但是，没有 RSS 提醒的话，还真不知道谁的博客更新了，于是就勉强用 feedly 凑合。眼看我的新网站构架基本完成，就在 feedly 里订阅了一下自己的网站，输入 pzhao.org，发现没找到。嗯？研究一下才明白，我的主页完整地址是：
-http://pzhao.org/zh/这个路径对应的本地文件夹下面，不仅有个index.html，还有个index.xml，后者就是 RSS 订阅的文件。所以，在feedly添加：
-http://pzhao.org/zh/index.xml就把我的新网站添进去了。这是订阅全站。如果只想订阅其中的博客，或新发表的学术文章，或新做的报告，那么：
-http://pzhao.org/zh/post/index.xmlhttp://pzhao.org/zh/publication/index.xmlhttp://pzhao.org/zh/talk/index.xml这个RSS链接，我该放到主页的什么位置，来方便网友订阅呢？我决定放到我的头像下面的社交按钮里。
-头像下的社交按钮是在config.toml里设置的，只需添加个[[params.social]]就可以了，图标去fa或ai两个包的主页找便是。实在缺乏社交，只好把自己卡拉OK的录音和腾讯视频加进去凑数，代码如下：
- [[params.social]]icon = &amp;quot;rss&amp;quot;icon_pack = &amp;quot;fa&amp;quot;link = &amp;quot;http://www.pzhao.org/zh/index.xml&amp;quot;[[params.social]]icon = &amp;quot;music&amp;quot;icon_pack = &amp;quot;fa&amp;quot;link = &amp;quot;http://kg.qq.com/node/personal?uid=649d9d85212c3489&amp;quot;[[params.social]]icon = &amp;quot;video-camera&amp;quot;icon_pack = &amp;quot;fa&amp;quot;link = &amp;quot;http://v.qq.com/vplus/0f8190586a3f2f22a25e9827b38c171e&amp;quot;</description>
-    </item>
-    
-    <item>
-      <title>Hugo 网站 academic 主题的多语言界面</title>
-      <link>https://openr.netlify.com/zh/blog/hugo-multilingual/</link>
-      <pubDate>Sun, 16 Apr 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://openr.netlify.com/zh/blog/hugo-multilingual/</guid>
-      <description>&lt;p&gt;几年前我弄过&lt;a href=&#34;http://dapengde.com/archives/15265&#34;&gt;双语博客&lt;/a&gt;， 后来放弃了，因为 WordPress 的双语方案有些遗留问题让我不爽，另外我没有精力写英文博客。现在，新网站是个科研网站，博客可以只出现在中文版里，而英文版只放自己的学术情况就行了，不用像博客更新那么频繁。所以，双语界面几乎是排在第一梯队的需求。&lt;/p&gt;
-
-&lt;p&gt;我对Hugo的架构并不熟悉，原以为会很麻烦，结果弄一会儿就搞定了，原来这么简单。有些步骤在&lt;a href=&#34;http://dapengde.com/blogdown_demo_academic/post/getting-started/&#34;&gt;主题的说明文档里&lt;/a&gt;提到了，但不够全。完整的步骤是这样的(看起来长，是因为我啰嗦，其实很快就能设置完)：&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Hugo 网站 academic 主题首页的文摘显示问题</title>
-      <link>https://openr.netlify.com/zh/blog/hugo-academic-summary/</link>
-      <pubDate>Sat, 15 Apr 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://openr.netlify.com/zh/blog/hugo-academic-summary/</guid>
-      <description>在 RStudio 里用 R blogdown 来维护网站时，可以通过点击工具栏的 Addins - New Post 来创建新帖子，很方便。但是，如果用的是 Hugo 的 academic 主题，那么创建的新帖子在网站首页会显示全文，不大好看，尤其是全文很长的时候，根本就不像个首页了。这是因为，academic 首页的 posts 模块默认显示文摘。如果没有为每篇帖子设置文摘，就会显示全文。而上面说的创建新帖的方法里，并没有设置文摘的选项。那么，文摘在哪里设置呢？
-直接说答案：手动在新帖的YAML文件头添加一行：
-summary: &amp;quot;我的文摘别太长。&amp;quot;答案来自blogdown 项目主页。
-就这么个小问题，让我走了点弯路。我发现问题后，首先观察了一下主题自带的示例文档，文件头是这样的：
-+++date = &amp;quot;2016-04-20T11:00:00&amp;quot;draft = falsetags = [&amp;quot;academic&amp;quot;, &amp;quot;hugo&amp;quot;]title = &amp;quot;Customizing the homepage with widgets&amp;quot;math = falsesummary = &amp;quot;&amp;quot;&amp;quot;Enable/disable and configure widgets to customize your homepage.&amp;quot;&amp;quot;&amp;quot;+++跟 R blogdown 生成的 .md 和 .Rmd 文件的文件头不同，这个文件头居然是用前后各三个加号表示的。里面的summary开始数三行，就是用来设置文摘的。
-于是我就把这三行拷贝粘贴到 .Rmd 文件里，当然是编译出错了。接着我想当然地把上面这段前后共六个加号的文件头拷贝粘贴到 .</description>
-    </item>
-    
-    <item>
-      <title>Hugo 网站的 Disqus 加载问题</title>
-      <link>https://openr.netlify.com/zh/blog/hogo-disques-problem/</link>
-      <pubDate>Fri, 14 Apr 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://openr.netlify.com/zh/blog/hogo-disques-problem/</guid>
-      <description>今天，复活节假期前夕，同事们都休假了。我虽然在办公室，却无心上班，发了一会儿呆，想想与其痛苦地工作，不如快乐地解决一下新网站的一个小问题：disqus 评论框的加载。
-用 R blogdown 打建好站，disqus评论框就一直没成功加载过。后来听说是config.toml里 disqus shortname指的不是我的disqus ID，而是要专门设置一下， 我说“啊,还有这事儿？”于是就设置了一下，但是仍然不能成功加载。这个问题放了几天，今天心血来潮一搜，嗯，兴许是路径的问题，于是就把config.toml开头的路径改为
-baseurl = &amp;quot;http://www.pzhao.org&amp;quot;# relativeurls = true然后运行R语言的建站函数：
-blogdown::build_site(local=FALSE)注意！此处千万不要运行blogdown::serve_site()，不然新生成的文件就又没法加载 Disqus 了。网上说是serve_site()忽略了config.toml里的某些设置而造成的。我不懂，总之就是建站函数运行完就直接上传。
-然后GitHub同步，几秒钟后，Netlify上完成了更新，Disqus评论框就乖乖出现了。
-欢迎来留言测试。
-啥，你看不见？嗯，听说好像是被墙了。</description>
-    </item>
-    
-    <item>
-      <title>R blogdown 搭建个人博客或科研网站</title>
-      <link>https://openr.netlify.com/zh/blog/r-blogdown/</link>
-      <pubDate>Tue, 11 Apr 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://openr.netlify.com/zh/blog/r-blogdown/</guid>
-      <description>本文收录在《学 R 》一书的附录中。
-互联网时代有个自己的网站，就好像真实世界里有了自己的房子（服务器）和固定地址（域名）；自我介绍时附上自己的网站，就像生活里邀请朋友来访或者职场上递上名片，都甚为方便。然而，建立一个网站并不容易，涉及诸多领域的知识和技能，门槛比较高。好在，我们有万能的R语言，搭建网站只需几分钟，而并不需要多少网络知识。你甚至不用懂 R 语言是什么，照我下面说的做就行，包教包会，学不会免费再教。
-这里，我提供两个示范，演示如何使用 R 语言的 blogdown 扩展包1，用来搭建一个个人博客和一个科研小组网站。截至本文成稿之日，blogdown 含苞待放，尚未正式发布，但是已经能够正常安装使用了。我们来尝尝鲜，提前一睹她的芳容。
-R blogdown 简介和安装R blogdown 是什么
-R语言的一个扩展包，用来制作网站的工具。可以用非常简洁的方式快速搭建静态网页构成的网站。虽然名字里有“博客”（blog）字样，但并不仅限于博客。非常适合搭建一个科研小组的展示窗口。基于 markdown 扩展语法，可以在网页中方便地插入图表、脚注、数学公式、R 代码等元素。非常容易将 bookdown 生成的论文转化成网页展示。非常易于维护，迁移，备份。本书的官方网站就是用 R blogdown 搭建的。网站里给大家提供的 R 示例代码、试读章节、勘误表等，都是直接从书稿中拷贝粘贴到文本文件里，然后运行一下 blogdown 的指令，网站就自动更新了。
-安装
-blogdown 的背景平台是 R 语言，用户界面首选 RStudio ，产生的网站框架是 Hugo ，掰手指头数一数，要安装4样东西，略显繁琐，但并不难，一劳永逸。安装方式如下：
-R。去R的服务器CRAN，点击Download R for Windows（其他操作系统的用户请自便），在打开的新网页最上方点击base，就找到下载链接了。下载完毕后安装，一路“下一步”的傻瓜式安装即可。RStudio。去官网下载安装文件运行即可。if(!require(devtools)) install.packages(&amp;#39;devtools&amp;#39;)devtools::install_github(&amp;#39;rstudio/blogdown&amp;#39;)解释一下：由于 blogdown 目前只发布到了 GitHub 服务器上，尚未发布到CRAN，所以上面第一条代码先安装开发工具 devtools 包，第二行用这个包的install_github() 函数从 GitHub 安装。
-blogdown::install_hugo()安装完毕。</description>
-    </item>
-    
-  </channel>
-</rss>

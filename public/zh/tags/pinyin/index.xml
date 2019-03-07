@@ -1,74 +1,0 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Pinyin on Open R</title>
-    <link>https://openr.netlify.com/zh/tags/pinyin/</link>
-    <description>Recent content in Pinyin on Open R</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>zh-cn</language>
-    <lastBuildDate>Thu, 20 Dec 2018 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://openr.netlify.com/zh/tags/pinyin/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>pinyin 包升级：终于可以转换汉字向量了</title>
-      <link>https://openr.netlify.com/zh/blog/pinyin-v.1.1.5/</link>
-      <pubDate>Thu, 20 Dec 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://openr.netlify.com/zh/blog/pinyin-v.1.1.5/</guid>
-      <description>&lt;p&gt;在&amp;lt;&lt;a href=&#34;http://www.pzhao.org/zh/post/pinyin-one-year/&#34;&gt;外行 R 包开发手记：pinyin&lt;/a&gt;&amp;gt;里我写道：R pinyin 这么个小包，连五笔字型和四角号码都能转换了，“这回应该算是一劳永逸了吧。”然而仍然错估了形势。这不，在用户提问和提需求的压力下，pinyin 包又双叒叕升级了一次。&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>外行 R 包开发手记：pinyin</title>
-      <link>https://openr.netlify.com/zh/blog/pinyin-one-year/</link>
-      <pubDate>Fri, 19 Oct 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://openr.netlify.com/zh/blog/pinyin-one-year/</guid>
-      <description>&lt;p&gt;玩 bookdown 直接催生了两个包的诞生。上一篇说了  bookdownplus， 这回说说 pinyin。&lt;/p&gt;
-
-&lt;p&gt;时隔一年多，我再回头去看 pinyin 这个包，就跟回顾 bookdownplus 是类似的：这玩意儿也算个包？&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>发布了 4 个 R 语言包：bookdownplus, pinyin, mindr, beginr</title>
-      <link>https://openr.netlify.com/archives/19377/</link>
-      <pubDate>Fri, 23 Jun 2017 18:29:38 +0000</pubDate>
-      
-      <guid>https://openr.netlify.com/archives/19377/</guid>
-      <description>&lt;p&gt;最近，一口气往 CRAN 提交了四个 R 扩展包，所幸都被发布了，这里简单介绍一下。详细情况请来&lt;a href=&#34;http://pzhao.org&#34;&gt;我的新网站&lt;/a&gt;围观。&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>R包发布记</title>
-      <link>https://openr.netlify.com/zh/blog/publish-r-packages/</link>
-      <pubDate>Mon, 19 Jun 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://openr.netlify.com/zh/blog/publish-r-packages/</guid>
-      <description>最近，我把mindr，pinyin 和 bookdownplus 三个包都提交到了 CRAN。这三个包都很简单，我就是想体验一下发布R包的流程，免得将来学R那本书出版了被问起来，答不上来就丢人了，另外也算是承接菜鸟致简速成那篇帖子，里面只谈了野包的发布分享，而只有提交到了 CRAN，野包才算转正。
-很快，这三个包都成功转正，可以正常安装了：
-install.packages(&amp;#39;mindr&amp;#39;)install.packages(&amp;#39;pinyin&amp;#39;)install.packages(&amp;#39;bookdownplus&amp;#39;)这里说说发布的过程和我遇到的一些问题。
-自查包发布之前，先自查有没有错误。只需用RStudio打开待发布的R包的.Rproj文件，然后点击右上方面板的 Build - Check 按钮，就可以看到自查结果。
-这里要注意：
-结果里尽量不要包含任何 Notes 和 Warnings。如果有，就去找到问题修改，不然在提交的时候会被退回。
-关于author &amp;lt;author&#39;s email&amp;gt;的那一条 Note 是可以忽略的，只是提醒你再次看看作者信息有没有填错。
-我最初的自查结果有些 Notes 我原以为可以无视。比如，DESCRIPTION 文件里 Title 字段有些词要求首字母大写，我心想，这也算错误？就没理。再比如，告诉我 “no example. no test. no vignette.” 我心想，好像很多包都没有这几样，不也都发布了么？所以我同样无视。结果就是……
-下面接着讲。
-提交把包的压缩文件在 CRAN 的网页上传即可。成功上传后会收到 email 通知，需要点击里面的链接进行确认。
-我两个宝贝儿 mindr 和 pinyin 的1.0.0版是六一那天上传并确认的，之后我就等，一直等到6月16号，我才想起来这事儿，就发信给 CRAN cran@r-project.org 催了一下，当天就得到了 Dr. Uwe Ligges 的回复，说：
-你那两个包在提交当天就被系统自动拒收了，因为系统自动检查时发现了两个 Notes。系统自动发信通知你了，如果没收到，请翻翻垃圾邮件。
-我一翻邮箱的 spam，果然，拒信早就在里面了。</description>
-    </item>
-    
-    <item>
-      <title>pinyin: 把汉字转换成拼音的R包</title>
-      <link>https://openr.netlify.com/zh/blog/pinyin/</link>
-      <pubDate>Fri, 26 May 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://openr.netlify.com/zh/blog/pinyin/</guid>
-      <description>&lt;p&gt;今天新写了个R包，粗暴地取名为 &lt;a href=&#34;https://github.com/pzhaonet/pinyin/&#34;&gt;pinyin&lt;/a&gt;，作用是把汉字转换成拼音。&lt;/p&gt;</description>
-    </item>
-    
-  </channel>
-</rss>

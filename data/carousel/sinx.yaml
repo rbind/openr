@@ -1,0 +1,10 @@
+weight: 80
+title: "The 'sinx' Package"
+description: >
+  <ul class="list-style-none">
+    <li>Fortunes in Chinese.</li>
+    <li>Learn what people say about R.</li>
+    <li>R 中文社区的幸运小饼。</li>
+    <li>为编程添加一点调料。</li>
+  </ul>
+image: "https://openr.netlify.com/img/banners/logo-sinx.png"
