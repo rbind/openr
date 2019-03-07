@@ -137,7 +137,7 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
     # - you're done. Happy mailing!
     #
     # Enable the contact form by entering your Formspree.io email
-    email = "baydap@gmail.com"
+  #  email = "baydap@gmail.com"
 
     about_us = "<p>We are one.</p>"
     copyright = "Copyright (c) 2019, OpenR Team; all rights reserved."
@@ -150,8 +150,8 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
     address = """<p><strong>OpenR Team</strong>
       </p>
       """
-    latitude = "-12.043333"
-    longitude = "-77.028333"
+ #   latitude = "-12.043333"
+  #  longitude = "-77.028333"
 
 [languages.zh.params]
     viewMorePostLink = "/zh/blog/"
@@ -178,7 +178,7 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
     # - you're done. Happy mailing!
     #
     # Enable the contact form by entering your Formspree.io email
-    email = "baydap@gmail.com"
+ #   email = "baydap@gmail.com"
 
     about_us = "<p>我们就是我们。</p>"
     copyright = "Copyright (c) 2019, OpenR Team; all rights reserved."
