@@ -46,9 +46,14 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
     weight = 4
 
 [[menu.main]]
+    name = "RSS"
+    url  = "/index.xml"
+    weight = 4
+	
+[[menu.main]]
     name = "中文"
     url  = "/zh/"
-    weight = 5
+    weight = 6
 
 [[languages.zh.menu.main]]
     name = "主页"
@@ -70,11 +75,16 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
     name = "联系我们"
     url  = "/zh/contact/"
     weight = 4
+	
+[[languages.zh.menu.main]]
+    name = "RSS"
+    url  = "/zh/index.xml"
+    weight = 5
 
 [[languages.zh.menu.main]]
     name = "EN"
     url  = "/"
-    weight = 5
+    weight = 6
 
 # Top bar social links menu
 
