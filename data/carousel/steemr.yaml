@@ -4,7 +4,7 @@ description: >
   <ul class="list-style-none">
     <li>Connect to the Steem Blockchain database.</li>
     <li>Analyze the social platform data.</li>
-    <li>链接区块链。</li>
+    <li>连接区块链。</li>
     <li>社交数据分析。</li>
   </ul>
 image: "https://openr.netlify.com/img/banners/logo-steemr.png"
