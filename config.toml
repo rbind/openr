@@ -44,11 +44,6 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
     name = "Contact"
     url  = "/contact/"
     weight = 4
-
-[[menu.main]]
-    name = "RSS"
-    url  = "/index.xml"
-    weight = 4
 	
 [[menu.main]]
     name = "中文"
@@ -77,11 +72,6 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
     weight = 4
 	
 [[languages.zh.menu.main]]
-    name = "RSS"
-    url  = "/zh/index.xml"
-    weight = 5
-
-[[languages.zh.menu.main]]
     name = "EN"
     url  = "/"
     weight = 6
@@ -89,25 +79,37 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 # Top bar social links menu
 
 [[menu.topbar]]
-    weight = 1
+    weight = 10
+    name = "RSS"
+    url = "/index.xml"
+    pre = "<i class='fa fa-2x fa-rss'></i>"
+
+[[languages.zh.menu.topbar]]
+    weight = 10
+    name = "RSS"
+    url = "/zh/index.xml"
+    pre = "<i class='fa fa-2x fa-rss'></i>"
+
+[[menu.topbar]]
+    weight = 20
     name = "GitHub"
-    url = "https://github.com/rind/openr"
+    url = "https://github.com/rbind/openr"
     pre = "<i class='fa fa-2x fa-github'></i>"
 
 [[languages.zh.menu.topbar]]
-    weight = 1
+    weight = 20
     name = "GitHub"
     url = "https://github.com/rbind/openr"
     pre = "<i class='fa fa-2x fa-github'></i>"
 
 [[menu.topbar]]
-    weight = 4
+    weight = 30
     name = "Email"
     url = "mailto:xuer@pzhao.net"
     pre = "<i class='fa fa-2x fa-envelope'></i>"
 
 [[languages.zh.menu.topbar]]
-    weight = 4
+    weight = 30
     name = "Email"
     url = "mailto:xuer@pzhao.net"
     pre = "<i class='fa fa-2x fa-envelope'></i>"
@@ -200,7 +202,7 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 # Enable or disable top bar with social icons
 [params.topbar]
     enable = true
-    text = """<p class="hidden-sm hidden-xs">Contact us on github or via email.</p>
+    text = """<p class="hidden-sm hidden-xs">Contact us by subscribing RSS, on github, or via email.</p>
       <p class="hidden-md hidden-lg"><a href="#" data-animate-hover="pulse"><i class="fa fa-phone"></i></a>
       <a href="#" data-animate-hover="pulse"><i class="fa fa-envelope"></i></a>
       </p>
@@ -293,7 +295,7 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 [languages.zh.params.recent_posts]
     enable = true
     title = "最新博客"
-    subtitle = "新闻，动向，教程。更多博客请点击右上角的“博客”。"
+    subtitle = "新闻，动向，教程。更多博客请点击[这里](/zh/blog/)或右上角的“博客”。"
 
 [blackfriday]
 smartypants = false
