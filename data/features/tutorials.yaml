@@ -1,4 +1,4 @@
 weight: 1
 name: "Tutorials\n\n教程"
 icon: "fa fa-book"
-description: "We write tutorials in either E-books or hard-copies for R beginners, users, and funs. \n\n我们为 R 初学者，用户，粉丝编写书籍。\n\n --- \n\n [学 R：零基础学习 R 语言](https://xuer.dapengde.com/) \n\n [bookdownplus: a shortcut to bookdown](https://bookdown.org/baydap/bookdownplus/)\n\n [学 R 一百问](https://www.pzhao.org/book/r100q/)"
+description: "We write tutorials in either E-books or hard-copies for R beginners, users, and funs. \n\n我们为 R 初学者、用户、粉丝编写书籍。\n\n --- \n\n [学 R：零基础学习 R 语言](https://xuer.dapengde.com/) \n\n [bookdownplus: a shortcut to bookdown](https://bookdown.org/baydap/bookdownplus/)\n\n [学 R 一百问](https://www.pzhao.org/book/r100q/)"
