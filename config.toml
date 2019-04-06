@@ -202,19 +202,21 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 
 # Enable or disable top bar with social icons
 [params.topbar]
-    enable = false
+    enable = true
     text = """<p class="hidden-sm hidden-xs">Contact us by subscribing RSS, on github, or via email.</p>
-      <p class="hidden-md hidden-lg"><a href="#" data-animate-hover="pulse"><i class="fa fa-phone"></i></a>
-      <a href="#" data-animate-hover="pulse"><i class="fa fa-envelope"></i></a>
-      </p>
+#      <p class="hidden-md hidden-lg">
+#	  <a href="#" data-animate-hover="pulse"><i class="fa fa-phone"></i></a>
+#      <a href="#" data-animate-hover="pulse"><i class="fa fa-envelope"></i></a>
+#      </p>
       """
 
 [languages.zh.params.topbar]
-    enable = false
+    enable = true
     text = """<p class="hidden-sm hidden-xs">通过 github 或电子邮件联系我们.</p>
-      <p class="hidden-md hidden-lg"><a href="#" data-animate-hover="pulse"><i class="fa fa-phone"></i></a>
-      <a href="#" data-animate-hover="pulse"><i class="fa fa-envelope"></i></a>
-      </p>
+#      <p class="hidden-md hidden-lg">
+#	  <a href="#" data-animate-hover="pulse"><i class="fa fa-phone"></i></a>
+#      <a href="#" data-animate-hover="pulse"><i class="fa fa-envelope"></i></a>
+#      </p>
       """
 
 # Enable and disable widgets for the right sidebar
