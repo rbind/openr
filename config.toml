@@ -45,7 +45,7 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
     name = "Contact"
     url  = "/contact/"
     weight = 4
-	
+
 [[menu.main]]
     name = "中文"
     url  = "/zh/"
@@ -71,7 +71,7 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
     name = "联系我们"
     url  = "/zh/contact/"
     weight = 4
-	
+
 [[languages.zh.menu.main]]
     name = "EN"
     url  = "/"
@@ -204,19 +204,19 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 [params.topbar]
     enable = true
     text = """<p class="hidden-sm hidden-xs">Contact us by subscribing RSS, on github, or via email.</p>
-#      <p class="hidden-md hidden-lg">
+      <p class="hidden-md hidden-lg">
 #	  <a href="#" data-animate-hover="pulse"><i class="fa fa-phone"></i></a>
 #      <a href="#" data-animate-hover="pulse"><i class="fa fa-envelope"></i></a>
-#      </p>
+      </p>
       """
 
 [languages.zh.params.topbar]
     enable = true
     text = """<p class="hidden-sm hidden-xs">通过 github 或电子邮件联系我们.</p>
-#      <p class="hidden-md hidden-lg">
+      <p class="hidden-md hidden-lg">
 #	  <a href="#" data-animate-hover="pulse"><i class="fa fa-phone"></i></a>
 #      <a href="#" data-animate-hover="pulse"><i class="fa fa-envelope"></i></a>
-#      </p>
+      </p>
       """
 
 # Enable and disable widgets for the right sidebar
