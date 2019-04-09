@@ -51,7 +51,7 @@ The R ‘pinyin’ package works basically as a free translator for Chinese char
 Set up the environment
 ----------------------
 
-Before using ‘pinyin’, the R language must be installed. R is a free, open-source, cross-platform programming language, which is very friendly to non-professional programmers. The installation of R can be found on the official website of the [Comprehensive R Archive Network (CRAN)](https://cran.r-project.org/) or in many textbooks such as *[Learning R: R for Rookies](https://steemit.com/cn/@dapeng/xuer-sale)*. For the tutorial’s integrity, here is a brief description for Windows users. Mac and Linux users can simply follow the official manual by CRAN.
+Before using ‘pinyin’, the R language must be installed. R is a free, open-source, cross-platform programming language, which is very friendly to non-professional programmers. The installation of R can be found on the official website of the [Comprehensive R Archive Network (CRAN)](https://cran.r-project.org/) or in many textbooks such as *[Learning R: R for Rookies](http://xuer.dapengde.com/)*. For the tutorial’s integrity, here is a brief description for Windows users. Mac and Linux users can simply follow the official manual by CRAN.
 
 1.  Go to [CRAN](https://cran.r-project.org/). Click the right link in the list of ‘Download and Install R’ according to your platform. Here we click ‘[Download R for Windows](https://cran.r-project.org/bin/windows/)’.
 2.  Click ‘[base](https://cran.r-project.org/bin/windows/base/)’.
