@@ -75,7 +75,7 @@ R 基础包多好啊，为什么那么多初学者会[纠结](https://d.cosx.org
 
 了解 tidyverse 的最好办法，就是去读官方综合教程：[R for Data Science](https://r4ds.had.co.nz/)。
 
-不知怎么，晴空里一道闪电，我突然开了窍，说服了自己：tidyverse 用法的奇葩之处，是有理由的。
+读着读着，不知怎么，晴空里一道闪电，我突然开了窍，说服了自己：tidyverse 用法的奇葩之处，是有理由的。
 
 tidyverse 的世界里，有一只指南针。有它在手，我此前关于 tidyverse 的困惑一扫而空。
 
