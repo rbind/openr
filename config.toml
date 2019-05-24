@@ -1,4 +1,4 @@
-baseurl = "https://openr.netlify.com/"
+baseurl = "https://openr.pzhao.org/"
 title = "Open R"
 theme = "hugo-universal-theme"
 # Enable comments by entering your Disqus shortname
