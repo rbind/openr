@@ -1,2 +1,2 @@
-http://openr.netlify.com/*  https://r.pzhao.org/:splat
-https://openr.netlify.com/*  https://r.pzhao.org/:splat
+http://openr.netlify.com/*  https://r.pzhao.org/:splat  301!
+https://openr.netlify.com/*  https://r.pzhao.org/:splat  301!
