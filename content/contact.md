@@ -9,6 +9,6 @@ Are you curious about something?
 
 Do you have some kind of problem with our products?
 
-Do you need a training course on R or reproducilbe research?
+Do you need a training course on R or reproducible research?
 
-Please feel free to contact us. our customer service center is working for you 24/7.
+Please feel free to contact us. Our customer service center is not working for you 24/7.

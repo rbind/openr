@@ -106,13 +106,13 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 [[menu.topbar]]
     weight = 30
     name = "Email"
-    url = "mailto:xuer@pzhao.net"
+    url = "mailto:openr@pzhao.net"
     pre = "<i class='fa fa-2x fa-envelope'></i>"
 
 [[languages.zh.menu.topbar]]
     weight = 30
     name = "Email"
-    url = "mailto:xuer@pzhao.net"
+    url = "mailto:openr@pzhao.net"
     pre = "<i class='fa fa-2x fa-envelope'></i>"
 
 [params]
@@ -150,9 +150,10 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 
     logo = "img/logo-small.png"
     logo_small = "img/logo-small.png"
-    address = """<p><strong>OpenR Team</strong>
+    address = """<p><strong><a href='mailto:xuer@pzhao.net'>OpenR Team</a></strong>
       </p>
       """
+	  
  #   latitude = "-12.043333"
   #  longitude = "-77.028333"
 
