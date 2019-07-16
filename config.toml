@@ -150,7 +150,7 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 
     logo = "img/logo-small.png"
     logo_small = "img/logo-small.png"
-    address = """<p><strong><a href='mailto:xuer@pzhao.net'>OpenR Team</a></strong>
+    address = """<p><strong><a href='mailto:openr@pzhao.net'>OpenR Team</a></strong>
       </p>
       """
 	  
