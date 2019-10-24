@@ -47,6 +47,11 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
     weight = 4
 
 [[menu.main]]
+    name = "Book"
+    url  = "https://pzhaonet.github.io/xuer/"
+    weight = 5
+
+[[menu.main]]
     name = "中文"
     url  = "/zh/"
     weight = 6
@@ -71,6 +76,11 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
     name = "联系我们"
     url  = "/zh/contact/"
     weight = 4
+
+[[languages.zh.menu.main]]
+    name = "学 R"
+    url  = "https://pzhaonet.github.io/xuer/"
+    weight = 5
 
 [[languages.zh.menu.main]]
     name = "EN"
@@ -153,7 +163,7 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
     address = """<p><strong><a href='mailto:openr@pzhao.net'>OpenR Team</a></strong>
       </p>
       """
-	  
+
  #   latitude = "-12.043333"
   #  longitude = "-77.028333"
 
@@ -260,7 +270,7 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
     icon = "fa fa-book"
     title = "Do you want to see more?"
     subtitle = "Please visit the homepage of the book Learning R."
-    link_url = "https://xuer.dapengde.com"
+    link_url = "https://pzhaonet.github.io/xuer/"
     link_text = "Learning R"
 
 [languages.zh.params.see_more]
@@ -268,7 +278,7 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
     icon = "fa fa-book"
     title = "您想了解更多吗？"
     subtitle = "请访问《学 R》一书的网站。"
-    link_url = "https://xuer.dapengde.com"
+    link_url = "https://pzhaonet.github.io/xuer/"
     link_text = "学 R"
 
 [params.clients]
