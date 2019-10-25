@@ -48,7 +48,7 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 
 [[menu.main]]
     name = "Book"
-    url  = "https://pzhaonet.github.io/xuer/"
+    url  = "/zh/tags/xuer/"
     weight = 5
 
 [[menu.main]]
@@ -79,7 +79,7 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 
 [[languages.zh.menu.main]]
     name = "学 R"
-    url  = "https://pzhaonet.github.io/xuer/"
+    url  = "/zh/tags/xuer/"
     weight = 5
 
 [[languages.zh.menu.main]]
