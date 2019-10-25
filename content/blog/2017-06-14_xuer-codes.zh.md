@@ -1,5 +1,5 @@
 ---
-title: 《学 R》书中代码'
+title: 《学 R》书中代码
 author: Peng Zhao
 date: '2017-06-14'
 slug: xuer-codes
@@ -10,6 +10,9 @@ banner: img/banners/logo-xuer.png
 ---
 
 这里列出《学 R》一书里的所有示例代码，以便读者使用。
+
+
+<!--more-->
 
 ## 第一章 初见
 

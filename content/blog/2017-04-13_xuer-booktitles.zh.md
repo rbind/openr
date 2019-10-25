@@ -7,6 +7,7 @@ tags:
   - R
   - xuer
 banner: img/banners/logo-xuer.png
+summary: "你个讲编程的书关金庸什么事。于是，你会看到两个字的标题里突然冒出了四个字。"
 ---
 
 

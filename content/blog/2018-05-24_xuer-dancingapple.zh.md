@@ -7,6 +7,8 @@ tags:
   - R
   - xuer
 banner: img/banners/logo-xuer.png
+summary: "凭什么我后来就只能是个文娱委员？到了高三的时候数学老师居然还用一副“你开心就好”的态度对待我！唉，不服，就是不服。"
+
 ---
 
 本文经作者 @dancingapple 授权转载（[原文链接](https://steemit.com/cn/@dancingapple/r)）。
