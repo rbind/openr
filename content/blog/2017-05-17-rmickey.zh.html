@@ -22,7 +22,7 @@ banner: img/banners/logo-openr.png
 <p>有了这3份很好的资料，那我还写本篇帖子做什么？</p>
 <p>这是因为，他们都是高手中的高手，只是我觉得他们写得，就好比教授写幼儿园教材，仍然不太合小朋友的胃口，不足以让我等菜鸟快速入门。比如读到roxygen2是多么美妙，我起初完全没体验，不知道“举头望文档，低头思函数”到底说的是什么（what the hell was Yihui talking about? 当然，一天之后我就体会到了静夜思的精妙），再一看Emacs就被吓得河水倒流，当年光一个vim就把我折腾个半死。而极简篇里，我觉得既然是极简，能减掉的步骤尽量减，所以还能继续剪。可能当年是极简，时过境迁，人类进步，现在可以比极简更简。</p>
 <p>下面，我试试写个减到不能再减的一剑封喉致简版，只需小改两个文本文件，不出十分钟就写出一个能用的R包。</p>
-<div id="section" class="section level2">
+<div id="准备" class="section level2">
 <h2>准备</h2>
 <p>跟前期准备和后期维护相比，写包本身其实是最简单的环节。假定你已经安装好了R和RStudio，那么，运行R，安装几个包：</p>
 <pre class="r"><code>install.packages(c(&quot;devtools&quot;, &quot;roxygen2&quot;, &quot;testthat&quot;, &quot;knitr&quot;))</code></pre>
@@ -33,7 +33,7 @@ banner: img/banners/logo-openr.png
 <li>OS X 用户，安装command-line-tools，Terminal 运行 git 或者 xcode-select.</li>
 </ul>
 </div>
-<div id="section-1" class="section level2">
+<div id="致简四部曲" class="section level2">
 <h2>致简四部曲</h2>
 <ol style="list-style-type: decimal">
 <li><p>参照益辉的<a href="https://github.com/yihui/rmini">rmini</a>，我做了个更简单的模板（Update：根据<a href="http://www.pzhao.org/zh/post/rmickey/#comment-3312847859">Dong的建议</a>，也可以RStudio - File - New project - New directory - R package），叫做rmickey。<a href="https://github.com/pzhaonet/rmickey/archive/master.zip">点击下载</a>并解压缩，得到个名叫rmickey文件夹。这个文件夹名字可以随便改。</p></li>
@@ -44,7 +44,7 @@ banner: img/banners/logo-openr.png
 <p>试着运行一下你刚才自定义的函数，记得用tab键补全功能和F1查看帮助信息，体会一下刚才你在foo.R文件里修改的内容是如何在tab和F1里体现出来的，然后就自然知道如何把foo.R写得更好。</p>
 <p><strong>下载模板–打开项目–修改模板–编译，这就是R包的9分钟致简开发四步曲。</strong></p>
 </div>
-<div id="section-2" class="section level2">
+<div id="发布和分享" class="section level2">
 <h2>发布和分享</h2>
 <p>史书分正史和野史，R包分正包和野包。正包是通过R官方认可并且发布在CRAN网站上的，等于领到了认证和许可，可以用<code>install.package()</code>直接安装；野包就是自己私下写的，随便放在自己喜欢的地方小范围使用的。很多包转正之前都是野包，经过反复测试和升级后才转的正，而有的野包会永远野下去，永不接受招安。我目前写的几个包都是野包，将来转不转正走着瞧，所以这里只介绍野包的发布和分享方法。</p>
 <ul>
@@ -68,12 +68,12 @@ foo()</code></pre>
 <p>你要做的，就是随便以任何方式，不管是email、qq、网盘，还是优盘、手机、移动硬盘，只要让用户能得到你这个压缩文件就行了。</p>
 <p>用户要做的，就是拿到文件后在他们的电脑上安装，方法是在RStudio菜单栏点<code>Tools</code> – <code>Install Packages</code> – <code>Install from Package Archive File</code>，选上你的包，就行了。</p>
 </div>
-<div id="section-3" class="section level2">
+<div id="进阶" class="section level2">
 <h2>进阶</h2>
 <p>欲穷千里目，更上一层楼。</p>
 <p>用9分钟致简四步法写出的R包，足够自用了。在这个高度，看到的风景已经够美。你可以在这个水平的观景台休整休整，再考虑是否继续往上攀登。孔子登东山而小鲁，登泰山而小天下。如果想看到更高处的风景，那么就继续读本帖前言部分的3份资料，以及他们介绍的更多资料，把你的包写得更好。</p>
 </div>
-<div id="section-4" class="section level2">
+<div id="心得" class="section level2">
 <h2>心得</h2>
 <p>现在，让我们回过头来谈一个问题：<strong>我们为什么要写R包？</strong></p>
 <p><strong>首先是方便自用。</strong></p>

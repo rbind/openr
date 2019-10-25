@@ -16,7 +16,7 @@ banner: img/banners/logo-openr.png
 <p>本文收录在《学 R 》一书的附录中。</p>
 <p>互联网时代有个自己的网站，就好像真实世界里有了自己的房子（服务器）和固定地址（域名）；自我介绍时附上自己的网站，就像生活里邀请朋友来访或者职场上递上名片，都甚为方便。然而，建立一个网站并不容易，涉及诸多领域的知识和技能，门槛比较高。好在，我们有万能的R语言，搭建网站只需几分钟，而并不需要多少网络知识。你甚至不用懂 R 语言是什么，照我下面说的做就行，包教包会，学不会免费再教。</p>
 <p>这里，我提供两个示范，演示如何使用 R 语言的 blogdown 扩展包<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a>，用来搭建一个<a href="http://dapengde.com/blogdown_demo_default/">个人博客</a>和一个<a href="http://dapengde.com/blogdown_demo_academic/">科研小组网站</a>。截至本文成稿之日，blogdown 含苞待放，尚未正式发布，但是已经能够正常安装使用了。我们来尝尝鲜，提前一睹她的芳容。</p>
-<div id="r-blogdown-" class="section level2">
+<div id="r-blogdown-简介和安装" class="section level2">
 <h2>R blogdown 简介和安装</h2>
 <p><strong>R blogdown 是什么</strong></p>
 <ul>
@@ -40,7 +40,7 @@ devtools::install_github(&#39;rstudio/blogdown&#39;)</code></pre>
 <pre class="r"><code>blogdown::install_hugo()</code></pre>
 <p>安装完毕。</p>
 </div>
-<div id="r-blogdown--1" class="section level2">
+<div id="用-r-blogdown-搭建个人博客" class="section level2">
 <h2>用 R blogdown 搭建个人博客</h2>
 <p><strong>创建示例网站</strong></p>
 <p>我在自己博客建立了个子站，作为 R blogdown <a href="http://dapengde.com/blogdown_demo_default/">个人博客的示例</a>。下面我们看看这个博客是如何创建的。</p>
@@ -79,7 +79,7 @@ blogdown::new_site()</code></pre>
 <li>以后每次更新并运行完建站函数后，在GitHub客户端同步一下即可。</li>
 </ol>
 </div>
-<div id="r-blogdown--2" class="section level2">
+<div id="用-r-blogdown-搭建科研网站" class="section level2">
 <h2>用 R blogdown 搭建科研网站</h2>
 <p>上文说到，我申请了一个Netlify免费账号，并且创建了<a href="http://zhao.netlify.com/">自己的科研主页</a>，是从blogdown 创建的科研网站示例修改而来的。这个示例的本来面貌可以来我博客上看：<a href="http://dapengde.com/blogdown_demo_academic/">科研网站的示例</a>。这个科研网站的构架比个人博客复杂，有简介、新闻、发表论文、科研项目等基本模块，还可以根据需要新增，非常适合作为科研小组的展示窗口。</p>
 <p>这个网站的搭建也很简单，跟个人博客类似。在你的电脑里新建文件夹，比如 <code>c:\blogdown_academic</code>，在RStudio里运行两行代码：</p>

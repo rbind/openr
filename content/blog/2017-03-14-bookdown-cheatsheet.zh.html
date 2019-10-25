@@ -15,9 +15,9 @@ banner: img/banners/logo-openr.png
 
 
 
-<div id="section" class="section level2">
+<div id="快速开始" class="section level2">
 <h2>快速开始</h2>
-<div id="r-bookdown-" class="section level3">
+<div id="r-bookdown-是什么" class="section level3">
 <h3>R bookdown 是什么</h3>
 <ul>
 <li>一个用来写书写文章的软件。</li>
@@ -28,7 +28,7 @@ banner: img/banners/logo-openr.png
 <li>撰写可重复性报告的不二之选。</li>
 </ul>
 </div>
-<div id="section-1" class="section level3">
+<div id="安装" class="section level3">
 <h3>安装</h3>
 <ol style="list-style-type: decimal">
 <li><a href="https://cran.r-project.org/bin/windows/base/">下载R</a>并安装。</li>
@@ -41,7 +41,7 @@ banner: img/banners/logo-openr.png
 install.packages(&#39;servr&#39;)</code></pre>
 <p>好了，安装完毕。</p>
 </div>
-<div id="section-2" class="section level3">
+<div id="从模板开始" class="section level3">
 <h3>从模板开始</h3>
 <ol style="list-style-type: decimal">
 <li>下载模板文档（到下载页面点击<code>Clone or download</code> - <code>Download ZIP</code>）：</li>
@@ -60,7 +60,7 @@ install.packages(&#39;servr&#39;)</code></pre>
 </ol>
 </div>
 </div>
-<div id="section-3" class="section level2">
+<div id="基本标记" class="section level2">
 <h2>基本标记</h2>
 <table>
 <thead>
@@ -129,7 +129,7 @@ install.packages(&#39;servr&#39;)</code></pre>
 </tbody>
 </table>
 </div>
-<div id="section-4" class="section level2">
+<div id="章节划分编号和交叉引用" class="section level2">
 <h2>章节划分、编号和交叉引用</h2>
 <pre><code># (PART) Part I {-} 
 # (APPENDIX) Appendix {-} 
@@ -140,7 +140,7 @@ install.packages(&#39;servr&#39;)</code></pre>
 
 \@ref(ID)</code></pre>
 </div>
-<div id="section-5" class="section level2">
+<div id="图表" class="section level2">
 <h2>图表</h2>
 <p>第一种插图：嵌入的R代码作图：</p>
 <pre><code>```{r, fig.cap=&#39;caption&#39;, out.width=&#39;80%&#39;, fig.align=&#39;center&#39;, echo=FALSE}
@@ -187,7 +187,7 @@ knitr::kable(
 ```</code></pre>
 <p><code>\@ref(tab:tab1)</code></p>
 </div>
-<div id="section-6" class="section level2">
+<div id="参考文献" class="section level2">
 <h2>参考文献</h2>
 <p>参考文献信息需要保存在.bib文件里。</p>
 <p>引用文献条目：<code>[@R-bookdown]</code></p>
@@ -195,7 +195,7 @@ knitr::kable(
 <p>生成R包参考文献库：</p>
 <pre class="r"><code>knitr::write_bib(c(&quot;knitr&quot;, &quot;stringr&quot;), &quot;&quot;, width = 60)</code></pre>
 </div>
-<div id="section-7" class="section level2">
+<div id="定义定理示例等环境" class="section level2">
 <h2>定义、定理、示例等环境</h2>
 <pre><code>环境全称：theorems   lemma   definition  corollary   proposition example
 引用简称：thm          lem   def         cor         prp         ex</code></pre>
@@ -204,13 +204,13 @@ knitr::kable(
 ```</code></pre>
 <p><code>\@ref(引用简称:label)</code></p>
 </div>
-<div id="word" class="section level2">
+<div id="输出word文档" class="section level2">
 <h2>输出word文档</h2>
 <p>在_output.yml里添加一行：</p>
 <pre><code>bookdown::word_document2: default </code></pre>
 <p>注意，<code>default</code>这个词是不能少的。</p>
 </div>
-<div id="section-8" class="section level2">
+<div id="公式编号和引用" class="section level2">
 <h2>公式编号和引用</h2>
 <p>word文档里的公式的编号和交叉引用，可以使用行内公式，公式前用圆括号里加公式标签。例如，输入：</p>
 <pre><code>(@eq-mc) $E = mc^2$

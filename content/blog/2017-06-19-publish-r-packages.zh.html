@@ -21,7 +21,7 @@ banner: img/banners/logo-openr.png
 install.packages(&#39;pinyin&#39;)
 install.packages(&#39;bookdownplus&#39;)</code></pre>
 <p>这里说说发布的过程和我遇到的一些问题。</p>
-<div id="section" class="section level2">
+<div id="自查" class="section level2">
 <h2>自查</h2>
 <p>包发布之前，先自查有没有错误。只需用RStudio打开待发布的R包的<code>.Rproj</code>文件，然后点击右上方面板的 Build - Check 按钮，就可以看到自查结果。</p>
 <p>这里要注意：</p>
@@ -32,7 +32,7 @@ install.packages(&#39;bookdownplus&#39;)</code></pre>
 <p>我最初的自查结果有些 Notes 我原以为可以无视。比如，<code>DESCRIPTION</code> 文件里 <code>Title</code> 字段有些词要求首字母大写，我心想，这也算错误？就没理。再比如，告诉我 “no example. no test. no vignette.” 我心想，好像很多包都没有这几样，不也都发布了么？所以我同样无视。结果就是……</p>
 <p>下面接着讲。</p>
 </div>
-<div id="section-1" class="section level2">
+<div id="提交" class="section level2">
 <h2>提交</h2>
 <p>把包的压缩文件在 <a href="https://cran.r-project.org/submit.html">CRAN 的网页</a>上传即可。成功上传后会收到 email 通知，需要点击里面的链接进行确认。</p>
 <p>我两个宝贝儿 mindr 和 pinyin 的1.0.0版是六一那天上传并确认的，之后我就等，一直等到6月16号，我才想起来这事儿，就发信给 CRAN <a href="mailto:cran@r-project.org" class="email">cran@r-project.org</a> 催了一下，当天就得到了 Dr. Uwe Ligges 的回复，说：</p>
@@ -41,7 +41,7 @@ install.packages(&#39;bookdownplus&#39;)</code></pre>
 </blockquote>
 <p>我一翻邮箱的 spam，果然，拒信早就在里面了。</p>
 </div>
-<div id="section-2" class="section level2">
+<div id="修改" class="section level2">
 <h2>修改</h2>
 <p>乖乖地修改大小写，添加 vignette 和 examples，把版本号修改成 1.0.1 后再次上传。这回通过系统自检了，但是先后收到好几封 Uwe Ligges 和 Kurt Hornik 发来的修改意见，要求修改<code>DESCRIPTION</code>文件，主要有：</p>
 <ol style="list-style-type: decimal">
@@ -58,7 +58,7 @@ install.packages(&#39;bookdownplus&#39;)</code></pre>
 <p>Thanks, on CRAN now.</p>
 </blockquote>
 </div>
-<div id="section-3" class="section level2">
+<div id="不难" class="section level2">
 <h2>不难</h2>
 <p>我觉得提交R包并不像Hadley Wickham 在 <a href="http://r-pkgs.had.co.nz/release.html">R packages</a>一书里写得那么可怕：</p>
 <blockquote>

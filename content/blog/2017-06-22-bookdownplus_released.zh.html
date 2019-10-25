@@ -19,41 +19,41 @@ banner: img/banners/logo-bookdownplus.png
 <p>很高兴地宣布，我的 R 语言扩展包 ‘bookdownplus v1.0.2’ <span class="citation">(Zhao 2017a)</span> 在 CRAN <a href="https://cran.r-project.org/web/packages/bookdownplus/">正式发布</a>了。本文是对’bookdownplus v1.0.2’的简要描述. 由于最近更新频繁, 最新版的’bookdownplus’更加强大和易用, 例如 ‘bookdownplus v1.2.0’ 可以一条指令生成19个模板文档的 pdf, word, html 和 epub 四种格式. 建议移步位于 GitHub 的 <a href="http://github.com/pzhaonet/bookdownplus">bookdownplus 项目主页</a>.</p>
 <p><img src="http://cranlogs.r-pkg.org/badges/grand-total/bookdownplus" /></p>
 <p><img src="/blog/2017-06-22-bookdownplus_released.zh_files/figure-html/unnamed-chunk-1-1.png" width="672" /></p>
-<div id="section" class="section level1">
+<div id="简介" class="section level1">
 <h1>简介</h1>
 <p>bookdownplus 是对 bookdown 包 <span class="citation">(Xie 2016)</span> 的增强和简化, 是快速使用 bookdown 的最简洁方法。bookdown 就好比 Microsoft Word 或 <span class="math inline">\(\LaTeX\)</span>，可以用来写文档，而 bookdownplus 提供了很多有用的模板，可以很方便地在 bookdown 平台写期刊论文、学位论文、学术海报、化学分子式、信件、日记、日历、诗集、吉他谱等各种常用文档和书籍。这是功能上的增强（+）。</p>
 <p>bookdownplus 使用时只需指定一个模板，给定作者和书名，就可以一键生成模板文件，用户在模板文件里照猫画虎写自己的文字就可以了，不必再花力气上网找模板、设置 YAML 和 LaTeX。这是操作上的简化（-）。</p>
 <p>bookdownplus 各个模板的使用方法详见 <a href="https://bookdown.org/baydap/bookdownplus">R bookdownplus Textbook</a>。这本电子书本身就是用 bookdownplus 生成的，尤其是它的 <a href="https://bookdown.org/baydap/bookdownplus/bookdownplus.pdf">pdf 版本</a>很美观。此书的源码开放，可以作为使用 bookdownplus写书的示例。</p>
 <p>下面是 bookdownplus 的简介和快速使用方法。</p>
 </div>
-<div id="section-1" class="section level1">
+<div id="快速入门" class="section level1">
 <h1>快速入门</h1>
-<div id="section-2" class="section level2">
+<div id="准备" class="section level2">
 <h2>准备</h2>
 <p>在开始前，需要安装 R, RStudio, bookdown，和其他依赖的软件和包(例如 <code>Pandoc</code>, <span class="math inline">\(\LaTeX\)</span>, <code>rmarkdown</code>, <code>rticle</code>, <code>knitr</code>等)，作为准备。详见 <a href="https://bookdown.org/yihui/bookdown/">bookdown 官方手册</a>。</p>
 </div>
-<div id="section-3" class="section level2">
+<div id="安装" class="section level2">
 <h2>安装</h2>
 <p>准备完毕后，就可以安装 bookdownplus 了。可以安装稳定版：</p>
 <pre class="r"><code>install.packages(&quot;bookdownplus&quot;)</code></pre>
 <p>或开发版：</p>
 <pre class="r"><code>devtools::install_github(&quot;pzhaonet/bookdownplus&quot;)</code></pre>
 </div>
-<div id="section-4" class="section level2">
+<div id="生成模板文件" class="section level2">
 <h2>生成模板文件</h2>
 <p>接着，在 R 中运行下面的代码：</p>
 <pre class="r"><code>bookdownplus::bookdownplus()</code></pre>
 <p>这时，在你的工作目录（<code>getwd()</code>），会得到一些模板文件（如 <code>index.Rmd</code>，<code>body.Rmd</code>， <code>bookdownplus.Rproj</code>） 和文件夹。</p>
 </div>
-<div id="section-5" class="section level2">
+<div id="编译成书" class="section level2">
 <h2>编译成书</h2>
 <p>用 RStudio 打开 <code>bookdownplus.Rproj</code>文件，然后按 <code>ctrl+shift+b</code>，Duang！你就得到模板书 <code>*.pdf</code>了！保存在 <code>_book/</code> 文件夹里。</p>
 </div>
-<div id="section-6" class="section level2">
+<div id="你的文字" class="section level2">
 <h2>你的文字</h2>
 <p>在 <code>index.Rmd</code> 和 <code>body.Rmd</code> 里写你自己的文字，享受写书的快乐吧！自古皆死，不朽者文。</p>
 </div>
-<div id="section-7" class="section level2">
+<div id="更多输出格式" class="section level2">
 <h2>更多输出格式</h2>
 <p>模板默认生成的书是pdf格式。‘bookdownplus’ 从 1.0.3 开始，可以很方便地输出更多格式，包括国内最常见的 ’word’格式，网页’html’格式和电子书’epub’格式，只需运行：</p>
 <pre class="r"><code>bookdownplus::bookdownplus(template = &#39;article&#39;, more_output = c(&#39;html&#39;, &#39;word&#39;, &#39;epub&#39;))</code></pre>
@@ -62,7 +62,7 @@ banner: img/banners/logo-bookdownplus.png
 <pre class="r"><code>bookdown::publish_book()</code></pre>
 <p>这里是 bookdown 书籍的大本营。截至 2017 年 6 月，我有三本书被放置在这个网站的首页。</p>
 </div>
-<div id="section-8" class="section level2">
+<div id="更多建议" class="section level2">
 <h2>更多建议</h2>
 <p>我开发的另外两个 R 包可以配合 ‘bookdown’ 使用：</p>
 <ul>
@@ -73,7 +73,7 @@ banner: img/banners/logo-bookdownplus.png
 <pre class="r"><code>install.packages(&#39;mindr&#39;)
 install.packages(&#39;pinyin&#39;)</code></pre>
 </div>
-<div id="section-9" class="section level2">
+<div id="更改模板" class="section level2">
 <h2>更改模板</h2>
 <p>上述快速入门得到的模板文档是默认的论文文档。只需在上述步骤里为 <code>bookdownplus()</code> 函数指定模板名称，就可以用类似的操作得到其他模板的示范文档，如：</p>
 <pre class="r"><code>bookdownplus::bookdownplus(template = &#39;poem&#39;)</code></pre>
@@ -142,7 +142,7 @@ install.packages(&#39;pinyin&#39;)</code></pre>
 <p><img src="https://raw.githubusercontent.com/pzhaonet/bookdown-plus/master/showcase/bookdown+poster_ocean.jpg" /></p>
 <p><img src="https://raw.githubusercontent.com/pzhaonet/bookdown-plus/master/showcase/bookdown+poster_eco.jpg" /></p>
 </div>
-<div id="section-10" class="section level2">
+<div id="更新记录" class="section level2">
 <h2>更新记录</h2>
 <ul>
 <li>2017-06-21. <a href="https://cran.r-project.org/web/packages/bookdownplus/index.html">Released on CRAN</a>!</li>

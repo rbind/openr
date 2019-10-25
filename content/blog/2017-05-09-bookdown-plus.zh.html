@@ -18,7 +18,7 @@ banner: img/banners/logo-bookdownplus.png
 <p><strong>注意：本文所述的<code>bookdown+</code>这个项目已经停止开发，继承者是我新开的R包项目<a href="https://github.com/pzhaonet/bookdownplus">bookdownplus</a> ，这是因为我学会了写R包。当然，说不定有些朋友不喜欢安装R包，喜欢下载个文件夹直接免安装用，那么本文所述的方法仍然可以继续使用，只是我不再更新了而已。</strong></p>
 <p>R bookdown 能做的事情很多，可是那些功能迟迟不来，我只好自己动手，写了个 <a href="https://github.com/pzhaonet/bookdown-plus">bookdown+</a>，目前大体实现了用 bookdown 写期刊论文、化学分子式、信件、日记、日历等功能。当然，有些还没完全实现，革命不够彻底，带着浓重的<span class="math inline">\(\LaTeX\)</span>旧社会的气息。革命尚未成功，同志仍需努力。</p>
 <p>下面是 <a href="https://github.com/pzhaonet/bookdown-plus">bookdown+</a> 的简介和快速使用方法。</p>
-<div id="section" class="section level1">
+<div id="背景" class="section level1">
 <h1>背景</h1>
 <p><a href="https://github.com/pzhaonet/bookdown-plus">R bookdown+</a>，听起来像是跟R<span class="citation">[@R-base]</span>的扩展包<code>bookdown</code><span class="citation">[@R-bookdown]</span>有关吧?</p>
 <p>一点没错！我们知道，<code>bookdown</code>天生是个用来写编程书籍的称手工具。只是，这仅仅是硬币的一面。<code>bookdown</code>的功能远远不止如此。它就像一个美味的蛋糕，我等啊等啊，等着谁把它切开，实在等不及了，就自己下手吧。所以，我弄了个<a href="https://github.com/pzhaonet/bookdown-plus">bookdown+</a>。</p>
@@ -34,21 +34,21 @@ banner: img/banners/logo-bookdownplus.png
 <p>功能扩展，操作简化，这就是<a href="https://github.com/pzhaonet/bookdown-plus">R bookdown+</a>。</p>
 <p>在不久的未来，肯定会出现很多官方的bookdown模板，但是我不想等了。你要是也等不及，就跟我来一起使用或开发[bookdown+]吧！</p>
 </div>
-<div id="section-1" class="section level1">
+<div id="快速入门" class="section level1">
 <h1>快速入门</h1>
-<div id="section-2" class="section level2">
+<div id="预备" class="section level2">
 <h2>预备</h2>
 <p>在开始前，你需要安装 R, RStudio, bookdown，和其他依赖的软件和包(例如 <code>Pandoc</code>, <span class="math inline">\(\LaTeX\)</span>, <code>rmarkdown</code>, <code>rticle</code>, <code>knitr</code>等)。详见<a href="https://bookdown.org/yihui/bookdown/">bookdown官方手册</a>.</p>
 <p>准备好后，从Github<a href="https://github.com/pzhaonet/bookdown-plus/archive/master.zip">下载<code>bookdown+</code></a>压缩文件。解压缩到你的电脑里，在得到的文件夹里找到 <code>_start.Rproj</code>文件，双击就会在RStudio里打开一个项目。</p>
 <p>文件夹里还有个<code>_runme.R</code>文件。你可以双击打开并运行。下面是对这个文件里代码的详细解释。</p>
 </div>
-<div id="section-3" class="section level2">
+<div id="第1步标题和作者" class="section level2">
 <h2>第1步：标题和作者</h2>
 <p>改成你自己书的标题和作者名。</p>
 <pre class="r"><code>title &lt;- &#39;bookdown+: Authoring Articles, Mails, Guitar books, Chemical Molecular Formulae and Equations with R bookdown&#39;
 author &lt;- &#39;Peng Zhao&#39;</code></pre>
 </div>
-<div id="section-4" class="section level2">
+<div id="第2步-模板" class="section level2">
 <h2>第2步: 模板</h2>
 <p>在给定的可用模板里选择你想要的。这里我们选第8个。</p>
 <pre class="r"><code>templates  &lt;- c(&#39;article&#39;,     #1, academic article
@@ -67,14 +67,14 @@ template &lt;- templates[8]</code></pre>
 <p>运行 <code>fun/build.R</code>。</p>
 <pre class="r"><code>source(&#39;fun/build.R&#39;)</code></pre>
 </div>
-<div id="section-5" class="section level2">
+<div id="第3步-成书" class="section level2">
 <h2>第3步: 成书</h2>
 <p>现在按下 <code>ctrl+shift+b</code> 快捷键，你就会在新生成的<code>book/</code>文件里找到一本示例书。打开看看吧！</p>
 <p>你自己的文字只需在<code>body.Rmd</code>修改，写完后重复本步即可。</p>
 <p>祝你玩得愉快！</p>
 </div>
 </div>
-<div id="section-6" class="section level1">
+<div id="模板效果展示" class="section level1">
 <h1>模板效果展示</h1>
 <ul>
 <li>article</li>
