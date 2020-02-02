@@ -94,7 +94,7 @@ geojsonMap(dat = ncov$area,
            legendTitle = "确诊人数")
 ```
 
-点击左上角的缩放键，就可以 zoom in/out 了。点击地图上任一位置，就会弹出对应信息（当然，如果你是在微信公众号读到了本文，是无法进行交互的。请点击文末左下角的“阅读原文”，移步网页版）。
+点击左上角的缩放键，就可以 zoom in/out 了。如果是触屏，可以用两个手指放大缩小。点击地图上任一位置，就会弹出对应信息（当然，如果你是在微信公众号读到了本文，是无法进行交互的。请点击文末左下角的“阅读原文”，移步网页版）。
 
 酷吧？！
 
@@ -102,7 +102,7 @@ geojsonMap(dat = ncov$area,
 
 酷是酷，这幅地图有两个问题：
 
-1. 代表确诊病例颜色的深浅是线性的。湖北省颜色最深，而其他省之间的差异不太明显。这是由于各省确证病例数差别很大而导致的。
+1. 代表确诊病例颜色的深浅是线性的。湖北省颜色最深，而其他省之间的差异不太明显。这是由于其他省跟湖北省差别很大而导致的。
 2. 点击各省，弹出的只有个省名称。要是能显示确诊病例数量就更好了。
 
 对于问题 1，我们用 `cut()` 函数对确诊病例数进行分组；对于问题 2，只需用 `geojsonMap()` 函数的 `popup` 参数来设定：
@@ -126,11 +126,11 @@ geojsonMap(dat = ncov$area,
            legendTitle = "确诊人数")
 ```
 
-行了，目标地图绘制完成！
+目标地图绘制完成！
 
 作业：仿照上面的方法，绘制全国治愈病例地图和死亡病例地图。
 
-## 超额完成目标
+## 超额完成
 
 目标光完成是不够的；让我们挑战一下自我，除了完成，还要超额。
 
@@ -170,6 +170,8 @@ geojsonMap_legendless(
     opacity = 1)
 ```
 
+对数坐标的缺点在于 0 值取对数后成为负无穷大，难以展示。这里把 0 用灰色表示，跟缺少数据（NA）的区域颜色相同。
+
 ```{r, echo=FALSE}
 # htmltools::includeHTML('../html/ncovr-map3.html')
 ```
@@ -192,7 +194,7 @@ geojsonMap_legendless(
 ```{r, eval=TRUE}
 # 城市地图
 ncov_city <- dplyr::bind_rows(ncov$area$cities) %>% dplyr::select(1:5)
-ncov_area <- ncov$area[, 3:7]
+ncov_area <- ncov$area[, 2:6]
 names(ncov_area) <- names(ncov_city)
 ncov_cities <- rbind(ncov_city, ncov_area)
 cities <- regionNames(mapName = 'city')
@@ -237,7 +239,7 @@ geojsonMap_legendless(
 
 ## 懒人福音
 
-本节里涉及的代码虽然结构简单，然而终究有点长，不适合懒人。要是想每天关注动态，可以用我打包封装在 "ncovr" 包里好的函数 `plot_map`。忘了上面的代码吧，因为用下面的代码更方便：
+本节里涉及的代码虽然结构简单，然而终究有点长，不适合懒人。要是想每天关注动态，可以用我打包封装在 "ncovr" 包里好的函数 `plot_map()`。忘了上面的代码吧，因为用下面的代码更方便：
 
 ```{r, eval=FALSE}
 Sys.setlocale('LC_CTYPE', 'Chinese')
@@ -263,6 +265,6 @@ plot_map(ncov$area, filter = '待明确地区',
 plot_map(ncov$area, filter = '待明确地区', color = "Greys")
 ```
 
-除了本文介绍的方法，绘制地图的方法还有很多，将来有机会咱们再逐个介绍。
+除了本文介绍的方法，绘制地图的方法还有很多，《学R》第十一章介绍了三种方法，其他方法将来有机会咱们再逐个介绍。
 
 地图展示的是空间差异。下一节，我们将聚焦在时间差异，看看疫情发展的时间序列。
