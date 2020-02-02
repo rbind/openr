@@ -37,12 +37,8 @@ ncov &lt;- get_ncov()</code></pre>
 <pre class="r"><code>require(dplyr)
 require(magrittr)</code></pre>
 <p>相信大家最近这些天，对下面这张地图都很熟悉了吧：</p>
-<pre class="r"><code>knitr::include_graphics(&#39;https://openr.pzhao.org/img/map-ncov-netease.png&#39;)</code></pre>
 <div class="figure"><span id="fig:unnamed-chunk-6"></span>
-<img src="https://openr.pzhao.org/img/map-ncov-netease.png" alt="&lt;U+7F51&gt;&lt;U+6613&gt;&lt;U+7684&gt;&lt;U+5168&gt;&lt;U+56FD&gt;&lt;U+65B0&gt;&lt;U+578B&gt;&lt;U+51A0&gt;&lt;U+72B6&gt;&lt;U+75C5&gt;&lt;U+6BD2&gt;&lt;U+75AB&gt;&lt;U+60C5&gt;&lt;U+5730&gt;&lt;U+56FE&gt;&lt;U+3002&gt;"  />
-<p class="caption">
-Figure 1: &lt;U+7F51&gt;&lt;U+6613&gt;&lt;U+7684&gt;&lt;U+5168&gt;&lt;U+56FD&gt;&lt;U+65B0&gt;&lt;U+578B&gt;&lt;U+51A0&gt;&lt;U+72B6&gt;&lt;U+75C5&gt;&lt;U+6BD2&gt;&lt;U+75AB&gt;&lt;U+60C5&gt;&lt;U+5730&gt;&lt;U+56FE&gt;&lt;U+3002&gt;
-</p>
+<img src="https://openr.pzhao.org/img/map-ncov-netease.png" alt="  />
 </div>
 <p>本节将以 <code>ncov$area</code> 数据集为基础，绘制这张地图。</p>
 </div>
@@ -138,7 +134,7 @@ geojsonMap_legendless(
 <div id="城市地图" class="section level2">
 <h2>城市地图</h2>
 <p>最后，我们来做个更难的实验：</p>
-<p>有个朋友前些天从国外回到了浙江省温州市，发现温州有了个新名字，叫“湖北省温州市：疫情按严重程度排名的话，温州是湖北之外疫情最严重的一个城市。然而在全国地图上看不出来这个信息。</p>
+<p>有个朋友前些天从国外回到了浙江省温州市，发现温州有了个新名字，叫"湖北省温州市"：疫情按严重程度排名的话，温州是湖北之外疫情最严重的一个城市。然而在全国地图上看不出来这个信息。</p>
 <p>我也想看看我的家乡河南省，各市之间有什么差别。这就需要绘制以市为单元的地图了。</p>
 <p>以 <code>ncov$area</code> 数据集为基础绘制城市地图，有 2 个难点：</p>
 <ol style="list-style-type: decimal">
@@ -184,7 +180,7 @@ geojsonMap_legendless(
 </div>
 <div id="懒人福音" class="section level2">
 <h2>懒人福音</h2>
-<p>本节里涉及的代码虽然结构简单，然而终究有点长，不适合懒人。要是想每天关注动态，可以用我打包封装在 “ncovr” 包里好的函数 <code>plo_map</code>。忘了上面的代码吧，因为用下面的代码更方便：</p>
+<p>本节里涉及的代码虽然结构简单，然而终究有点长，不适合懒人。要是想每天关注动态，可以用我打包封装在 “ncovr” 包里好的函数 <code>plot_map</code>。忘了上面的代码吧，因为用下面的代码更方便：</p>
 <pre class="r"><code>Sys.setlocale(&#39;LC_CTYPE&#39;, &#39;Chinese&#39;)
 require(ncovr)
 require(leafletCN)
