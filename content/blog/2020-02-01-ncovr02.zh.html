@@ -38,10 +38,11 @@ ncov &lt;- get_ncov()</code></pre>
 require(magrittr)</code></pre>
 <p>相信大家最近这些天，对下面这张地图都很熟悉了吧：</p>
 <div class="figure"><span id="fig:unnamed-chunk-6"></span>
-<img src="https://openr.pzhao.org/img/map-ncov-netease.png" alt="  />
+<img src="https://openr.pzhao.org/img/map-ncov-netease.png" alt=""  />
 </div>
+
 <p>本节将以 <code>ncov$area</code> 数据集为基础，绘制这张地图。</p>
-</div>
+
 <div id="准备工作" class="section level2">
 <h2>准备工作</h2>
 <p>绘制地图有很多种方法（详见《学 R》第十一章：“地图”）。这里，我们选择最酷的一种，那就是交互地图，支持缩放和弹出信息的那一种。绘图所用的包是 “leaflet” 和 “leafletCN”，在上面重装 “ncovr” 包时已经自动安装了，现在只需加载一下：</p>
