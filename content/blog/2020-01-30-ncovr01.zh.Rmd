@@ -1,8 +1,9 @@
 ---
-title: "R语言与新型冠状病毒 1"
+title: "R语言与新型冠状病毒(01)数据"
 author: "Peng Zhao"
 date: '2020-01-31'
 slug: ncovr-01
+summary: "R 语言处理疫情数据，学习和关注疫情两不误。"
 tags:
 - R
 - ncovr
@@ -15,26 +16,26 @@ knitr::opts_chunk$set(eval = TRUE, message = FALSE, warning = FALSE, error = FAL
 
 疫情肆虐，却逢春节假期，作为一个普通人，连续享受了几天葛优躺家里蹲之后，寂寞得想找点事情做。与其冒着风险转发谣言被举报，还不如做点稳妥并且对自己有好处的事情，比如说，学一样语言。可是，又放不下对疫情的关注，无法全心投入到语言学习里。怎么办？
 
-一个主意跳进了我的脑瓜：用 R 语言来处理疫情数据！学习和关注疫情两不误！
+一个主意跳进了我的脑瓜：用 R 语言来处理疫情数据！学习编程和关注疫情两不误！
 
 这个系列的文章，面向的是 R 语言初学者，从入门开始，以 2020 年新型冠状肺炎病毒的数据为例，一起学习如何用 R 语言进行数据处理、作图、生成可重复性报告。
 
 本文可以和 2018 年我出版的《学R：零基础学习 R 语言》一书配合，达到入门和提高的目的。为了节省篇幅，原谅我会在本文多次引用这本书。没办法，第一次印多了，库存很多本还没消化呢。当然，你可以无视，换其他适合自己的参考资料。
 
-可惜的是，我既不懂流行病学，又不懂病毒，目前只能做一点粗浅的领路工作。欢迎感兴趣的朋友加入这个话题的写作，共同学习，说不定最后能结集成一本书。
+动笔的时候，我不知道未来会写些什么，只是想转移一下对疫情过度的注意力。我既不懂流行病学，又不懂病毒，目前只能做一点粗浅的领路抛砖工作。欢迎感兴趣的朋友加入这个话题的写作，共同学习，说不定最后能结集成一本书。
 
 现在，让我们开始一段有意义的征程。
 
 ## 准备工作
 
-开始之前，需要有个前提条件：你得有一台电脑。操作系统可以是 Windows、macOs或者 Linux，都行，但不可以是安卓。
+开始之前，需要有个前提条件：你得有一台电脑。操作系统可以是 Windows、macOS或者 Linux，都行，但不可以是安卓。
 
 其次，这台电脑得能连上网。
 
 具备这两个条件的话，一切就简单了：
 
 1. 安装 R。这是必须的。在 [CRAN](http://cran.r-project.org) 上选择适合你操作系统的安装包来安装。
-2. 安装 RStudio。这不是必须的，然而我极力推荐。它让你在使用 R 语言的时候爽到爆。在 RStudio 的官网下载安装即可。
+2. 安装 RStudio。这不是必须的，然而我极力推荐。它让你在使用 R 语言的时候爽到爆。在 [RStudio 的官网](https://rstudio.com/products/rstudio/download/#download)下载安装即可。
 
 安装完毕后，启动 RStudio，就进入了 R 语言的环境。
 
@@ -77,14 +78,14 @@ require("jsonlite")
 
 外挂只需师父发一次就以后都有了，而使用时每次都要加载一下。
 
-你准备好上天入地了吗？
+你准备好上天入海了吗？
 
 作业：请自行安装和加载 "tidyverse" 包。
 
 ```{r, echo=FALSE}
 ncov <- ncovr::get_ncov()
-ncov_area <- ncov[[3]]
-ncov_overall<- ncov[[1]]
+ncov_area <- list(results = ncov$area, success = TRUE)
+ncov_overall<- list(results = ncov$overall, success = TRUE)
 ```
 
 ## 获取疫情地区数据
@@ -93,7 +94,7 @@ ncov_overall<- ncov[[1]]
 
 这个数据集里，最重要的是"地区"数据。我们这样来读取：
 
-```{r}
+```{r, eval=FALSE}
 base <- 'https://lab.isaaclin.cn/nCoV/api/' # api 网址
 port <- 'area' #接口
 get_raw <- GET(paste0(base, port)) # 获取链接
@@ -113,15 +114,13 @@ names(ncov_area) # 查看元素名称
 ncov_area$results # 查看表格内容
 ```
 
-拓展阅读：《学R》第二章。
-
 这样显示出来的模样不好看。可以用 `View()` 函数看起来更舒服：
 
 ```{r, eval=FALSE}
 View(ncov_area$results)
 ```
 
-下面，我们取出这个表格的前 7 列，把它保存到本地电脑上：
+下面，我们取出这个表格的前 7 列，把它保存到本地电脑上（见《学R》第二章）：
 
 ```{r, eval=FALSE}
 write.csv(ncov_area$results[, 1:7], 'd:/ncov_area.csv')
@@ -136,7 +135,7 @@ write.csv(ncov_area$results[, 1:7], 'd:/ncov_area.csv')
 
 与"地区"数据类似地，我们用下面的代码读取“概况数据”：
 
-```{r}
+```{r, eval=FALSE}
 port <- 'overall' #接口
 get_raw <- GET(paste0(base, port)) # 获取链接
 get_text <- content(get_raw, "text") # 获取数据
@@ -149,7 +148,7 @@ ncov_overall <- fromJSON(get_text) #提取数据
 
 ncov_overall 表格只有一行。你会看到各列名称和内容。顾名思义，第一列 `infectSource`是传染源，`passWay`是传播途径，`dailyPic` 是日图。可以把日图的链接拷贝粘贴到浏览器里看一看：
 
-```{r}
+```{r, echo=FALSE}
 knitr::include_graphics(ncov_overall$results$dailyPic)
 ```
 
@@ -161,7 +160,7 @@ knitr::include_graphics(ncov_overall$results$dailyPic)
 
 ## 获取全部数据
 
-上面获取几个不同数据表的代码是类似的，只需照猫画虎就行了。把这些代码摞在一起，显得很啰嗦。如果你阅读过《学 R》第x章的话，你会想到，可以用循环或者自定义函数的方法来简化代码。
+上面获取几个不同数据表的代码是类似的，只需照猫画虎就行了。把这些代码摞在一起，显得很啰嗦。如果你阅读过《学 R》第五章和第九章的话，你会想到，可以用循环或者自定义函数的方法来简化代码。
 
 你可以试试循环语句，而我用的是自定义函数，并把这个函数写进一个包里，名叫 ncovr。有了这个包，只需一句代码，就可以下载得到上述所有数据了。
 
@@ -191,4 +190,4 @@ ncov 是个列表。如果查看其中的子集，例如 provinceName，只需�
 ncov$provinceName
 ```
 
-本节我们完成了数据的读取和保存。下一节，我们将对数据进行可视化，也就是令人振奋的——作图。
+本节我们完成了数据的读取和保存。下一节，我们将对数据进行可视化，通俗来说就是——作图。

@@ -15,6 +15,7 @@ output: #md_document
 banner: img/banners/logo-beginr.png
 ---
 
+<script src="/rmarkdown-libs/header-attrs/header-attrs.js"></script>
 
 
 <p>又一次高兴地宣布, 我的 R 语言扩展包 ‘beginr’ <span class="citation">(Zhao 2017a)</span> 在 CRAN <a href="https://cran.r-project.org/web/packages/beginr/">正式发布</a>了.</p>
@@ -51,12 +52,12 @@ y &lt;- 1:10 + rnorm(10)
 beginr::plotlm(x, y)</code></pre>
 <p><img src="/blog/2017-06-23-beginr_released.zh_files/figure-html/unnamed-chunk-2-1.png" width="672" /></p>
 <pre><code>## [[1]]
-##              Estimate Std. Error   t value     Pr(&gt;|t|)
-## (Intercept) 0.2898995  0.6206587 0.4670837 6.528975e-01
-## x           0.9567792  0.1000282 9.5650937 1.181823e-05
+##               Estimate Std. Error    t value     Pr(&gt;|t|)
+## (Intercept) -0.2486321 0.58911440 -0.4220439 6.841062e-01
+## x            1.0931782 0.09494438 11.5138793 2.936220e-06
 ## 
 ## [[2]]
-## [1] 0.9195907</code></pre>
+## [1] 0.9430886</code></pre>
 <p>经常需要了解一组数据的分布, 看看是不是正态分布. beginr 里的 <code>plothist()</code> 函数不仅做出直方图和平滑曲线, 并且标出中值, 中位数, 四分位数, 标准偏差, 样本数, 以及用来判断是否正态分布的 skewness 值.</p>
 <pre class="r"><code>x &lt;- rnorm(10000)
 beginr::plothist(x)</code></pre>
@@ -90,20 +91,20 @@ beginr::errorbar(x, y, yupper = 0.1, ylower = 0.1)</code></pre>
 <p>beginr 提供了一些对数据框计算的函数, 例如计算多列数据两两的相关性和线性拟合结果, 可以用 <code>lmdf()</code> 函数.</p>
 <pre class="r"><code>df &lt;- data.frame(a = 1:10, b = 1:10 + rnorm(10), c = 1:10 + rnorm(10))
 beginr::lmdf(df)</code></pre>
-<pre><code>##   x y r.squared adj.r.squared    intercept     slope Std.Error.intercept
-## 1 a b 0.9446608     0.9377434 -0.997744231 1.0796318           0.5732439
-## 2 a c 0.9148445     0.9042000 -0.474654876 1.0711462           0.7169137
-## 3 b a 0.9446608     0.9377434  1.177376037 0.8749843           0.4403321
-## 4 b c 0.8445745     0.8251464  0.839409978 0.9265234           0.8264188
-## 5 c a 0.9148445     0.9042000  0.873748538 0.8540799           0.5803762
-## 6 c b 0.8445745     0.8251464  0.002671535 0.9115523           0.8709675
-##   Std.Error.slope  t.intercept   t.slope Pr.intercept     Pr.slope
-## 1      0.09238662 -1.740522979 11.686018   0.11994900 2.623230e-06
-## 2      0.11554110 -0.662080928  9.270694   0.52652762 1.489587e-05
-## 3      0.07487446  2.673836302 11.686018   0.02819407 2.623230e-06
-## 4      0.14052497  1.015719850  6.593301   0.33949377 1.705740e-04
-## 5      0.09212686  1.505486622  9.270694   0.17061722 1.489587e-05
-## 6      0.13825431  0.003067319  6.593301   0.99762775 1.705740e-04</code></pre>
+<pre><code>##   x y r.squared adj.r.squared  intercept     slope Std.Error.intercept
+## 1 a b 0.9187317     0.9085732 -0.6000999 1.1403512           0.7440296
+## 2 a c 0.9440620     0.9370698  0.6243887 0.9004581           0.4808415
+## 3 b a 0.9187317     0.9085732  0.9304503 0.8056568           0.5609720
+## 4 b c 0.8365856     0.8161588  1.5358278 0.7124824           0.7372062
+## 5 c a 0.9440620     0.9370698 -0.3469653 1.0484241           0.5575786
+## 6 c b 0.8365856     0.8161588 -0.8764856 1.1741841           1.1338150
+##   Std.Error.slope t.intercept   t.slope Pr.intercept     Pr.slope
+## 1      0.11991123  -0.8065538  9.509961   0.44323812 1.233596e-05
+## 2      0.07749463   1.2985331 11.619620   0.23028295 2.739310e-06
+## 3      0.08471715   1.6586395  9.509961   0.13577337 1.233596e-05
+## 4      0.11133179   2.0833083  6.399632   0.07075038 2.092148e-04
+## 5      0.09022878  -0.6222716 11.619620   0.55108272 2.739310e-06
+## 6      0.18347682  -0.7730411  6.399632   0.46172545 2.092148e-04</code></pre>
 <p>还有两个函数对<code>tapply()</code>进行了改善, 用来进行因子计算.</p>
 <pre class="r"><code>beginr::tapplydf()
 beginr::tapplydfv()</code></pre>
@@ -160,7 +161,7 @@ beginr::list2ascii(alist)</code></pre>
 ## }</code></pre>
 <div id="参考文献" class="section level2 unnumbered">
 <h2>参考文献</h2>
-<div id="refs" class="references">
+<div id="refs" class="references hanging-indent">
 <div id="ref-R-blogdown">
 <p>Xie, Yihui. 2017. <em>Blogdown: Create Blogs and Websites with R Markdown</em>. <a href="https://github.com/rstudio/blogdown">https://github.com/rstudio/blogdown</a>.</p>
 </div>

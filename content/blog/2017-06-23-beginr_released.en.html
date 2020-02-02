@@ -15,6 +15,7 @@ output: #md_document
     variant: markdown_github
 ---
 
+<script src="/rmarkdown-libs/header-attrs/header-attrs.js"></script>
 
 
 <p>I’m glad to announce that ‘beginr’ <span class="citation">(Zhao 2017)</span> is now on <a href="https://CRAN.R-project.org/package=beginr">CRAN</a>. This post is a brief documentation of ‘beginr 0.1.0’. Subsequent updates can be found on the <a href="http://github.com/pzhaonet/beginr">GitHub site of beginr</a>.</p>
@@ -54,12 +55,12 @@ y &lt;- 1:10 + rnorm(10)
 beginr::plotlm(x, y)</code></pre>
 <p><img src="/blog/2017-06-23-beginr_released.en_files/figure-html/unnamed-chunk-3-1.png" width="672" /></p>
 <pre><code>## [[1]]
-##              Estimate Std. Error   t value    Pr(&gt;|t|)
-## (Intercept) 0.5239158  0.8242357 0.6356383 0.542763110
-## x           0.8358485  0.1328376 6.2922579 0.000234738
+##              Estimate Std. Error  t value     Pr(&gt;|t|)
+## (Intercept) 0.2035561  0.8734666 0.233044 0.8215792649
+## x           1.0035306  0.1407719 7.128772 0.0000991401
 ## 
 ## [[2]]
-## [1] 0.8319063</code></pre>
+## [1] 0.8639904</code></pre>
 <p>If you want to display the distribution of a data-set, use <code>plothist()</code>, which gives you a histogram with markers of the median, mean, quantiles, standard deviation, sample number and the skewness.</p>
 <pre class="r"><code>x &lt;- rnorm(10000)
 beginr::plothist(x)</code></pre>
@@ -93,20 +94,20 @@ beginr::errorbar(x, y, yupper = 0.1, ylower = 0.1)</code></pre>
 <p><code>lmdf()</code> performs the linear regression between every two columns in a data frame.</p>
 <pre class="r"><code>df &lt;- data.frame(a = 1:10, b = 1:10 + rnorm(10), c = 1:10 + rnorm(10))
 beginr::lmdf(df)</code></pre>
-<pre><code>##   x y r.squared adj.r.squared   intercept     slope Std.Error.intercept
-## 1 a b 0.9177513     0.9074702  0.40183200 0.9197478           0.6040269
-## 2 a c 0.8624581     0.8452654 -0.07638722 0.9219186           0.8076560
-## 3 b a 0.9177513     0.9074702  0.05140836 0.9978293           0.6460564
-## 4 b c 0.6578331     0.6150623  0.41482184 0.8386393           1.3081223
-## 5 c a 0.8624581     0.8452654  0.82794077 0.9355035           0.7595884
-## 6 c b 0.6578331     0.6150623  1.54299486 0.7844053           1.1502338
-##   Std.Error.slope t.intercept  t.slope Pr.intercept     Pr.slope
-## 1      0.09734774  0.66525517 9.448064    0.5245988 1.294757e-05
-## 2      0.13016555 -0.09457891 7.082663    0.9269753 1.037558e-04
-## 3      0.10561203  0.07957256 9.448064    0.9385317 1.294757e-05
-## 4      0.21384118  0.31711243 3.921786    0.7592761 4.407308e-03
-## 5      0.13208359  1.08998599 7.082663    0.3074590 1.037558e-04
-## 6      0.20001228  1.34146194 3.921786    0.2166028 4.407308e-03</code></pre>
+<pre><code>##   x y r.squared adj.r.squared  intercept     slope Std.Error.intercept
+## 1 a b 0.9126850     0.9017706  0.3115531 0.9603581           0.6516323
+## 2 a c 0.9394087     0.9318348  0.4850575 0.9124425           0.5083568
+## 3 b a 0.9126850     0.9017706  0.1841453 0.9503590           0.6541954
+## 4 b c 0.8034489     0.7788800  0.8081195 0.8394301           0.9240150
+## 5 c a 0.9394087     0.9318348 -0.1661408 1.0295539           0.5668598
+## 6 c b 0.8034489     0.7788800  0.3259330 0.9571361           1.0263161
+##   Std.Error.slope t.intercept   t.slope Pr.intercept     Pr.slope
+## 1      0.10502005   0.4781118  9.144522    0.6453624 1.648069e-05
+## 2      0.08192912   0.9541674 11.136974    0.3679368 3.778379e-06
+## 3      0.10392659   0.2814836  9.144522    0.7854833 1.648069e-05
+## 4      0.14679059   0.8745740  5.718555    0.4072939 4.447724e-04
+## 5      0.09244467  -0.2930897 11.136974    0.7769123 3.778379e-06
+## 6      0.16737375   0.3175756  5.718555    0.7589374 4.447724e-04</code></pre>
 <p>There are two functions as improvements of <code>tapply()</code> for factor calculation.</p>
 <pre class="r"><code>beginr::tapplydf()
 beginr::tapplydfv()</code></pre>
@@ -163,7 +164,7 @@ beginr::list2ascii(alist)</code></pre>
 </div>
 <div id="references" class="section level1 unnumbered">
 <h1>References</h1>
-<div id="refs" class="references">
+<div id="refs" class="references hanging-indent">
 <div id="ref-R-beginr">
 <p>Zhao, Peng. 2017. <em>Beginr: Functions for R Beginners</em>. <a href="https://github.com/pzhaonet/beginr">https://github.com/pzhaonet/beginr</a>.</p>
 </div>

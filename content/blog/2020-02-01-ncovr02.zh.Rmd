@@ -50,7 +50,7 @@ require(magrittr)
 相信大家最近这些天，对下面这张地图都很熟悉了吧：
 
 ```{r, fig.cap='网易的全国新型冠状病毒疫情地图。'}
-knitr::include_graphics('img/map-ncov-netease.png')
+knitr::include_graphics('https://openr.pzhao.org/img/map-ncov-netease.png')
 ```
 
 本节将以 `ncov$area` 数据集为基础，绘制这张地图。
@@ -146,6 +146,7 @@ geojsonMap(dat = ncov$area,
 ```{r, eval=TRUE}
 # 超额绘制地图
 ncov$area$confirmed_log <- log10(ncov$area$confirmedCount)
+ncov$area$confirmed_log[ncov$area$confirmedCount == 0] <- NA
 geojsonMap_legendless(
   dat = ncov$area, 
   mapName = "china",
@@ -197,6 +198,7 @@ ncov_cities <- rbind(ncov_city, ncov_area)
 cities <- regionNames(mapName = 'city')
 ncov_cities <- ncov_cities[ncov_cities$cityName %in% cities, ]
 ncov_cities$confirmed_log <- log10(ncov_cities$confirmedCount)
+ncov_cities$confirmed_log[ncov_cities$confirmedCount == 0] <- NA
 geojsonMap_legendless(
   dat = as.data.frame(ncov_cities), 
   mapName = "city",
@@ -258,7 +260,7 @@ plot_map(ncov$area, filter = '待明确地区',
 如果查看这个函数的帮助，会发现更多的功能，例如可以改变颜色：
 
 ```{r}
-plot_map(ncov$area, filter = '待明确地区', color = "YlGnBl")
+plot_map(ncov$area, filter = '待明确地区', color = "Greys")
 ```
 
 除了本文介绍的方法，绘制地图的方法还有很多，将来有机会咱们再逐个介绍。
