@@ -84,7 +84,7 @@ ncov_overall &lt;- fromJSON(get_text) #提取数据</code></pre>
 <p>这样，疫情概述的信息就下载并储存在 <code>ncov_overall</code> 里了。</p>
 <p>作业：仿照“地区”数据，查看“概况数据”的数据类型、数据长度、元素名称、表格内容，并用<code>View()</code>函数来浏览。把“地区”数据保存到名为“ncov_overall.csv”的本地文件里，并用其他软件打开浏览。</p>
 <p>ncov_overall 表格只有一行。你会看到各列名称和内容。顾名思义，第一列 <code>infectSource</code>是传染源，<code>passWay</code>是传播途径，<code>dailyPic</code> 是日图。可以把日图的链接拷贝粘贴到浏览器里看一看：</p>
-<p><img src="https://img1.dxycdn.com/2020/0201/693/3394145745204021706-135.png" /><!-- --></p>
+<p><img src="https://img1.dxycdn.com/2020/0202/725/3394327332126027029-135.png" /><!-- --></p>
 <p>其他列的含义你猜猜看。</p>
 <p>除了 <code>overall</code> 和 <code>area</code>，服务器还提供了 ‘provinceName’, ‘news’, ‘rumors’ 等接口，可以用来下载“省名称”、“新闻”和“谣言”数据表。</p>
 <p>作业：请自行下载、浏览和保存 ‘provinceName’, ‘news’, ‘rumors’ 等数据。</p>
@@ -107,16 +107,16 @@ require(&quot;ncovr&quot;)</code></pre>
 ##  [5] &quot;加拿大&quot;           &quot;北京市&quot;           &quot;印度&quot;             &quot;台湾&quot;            
 ##  [9] &quot;吉林省&quot;           &quot;四川省&quot;           &quot;天津市&quot;           &quot;宁夏回族自治区&quot;  
 ## [13] &quot;安徽省&quot;           &quot;尼泊尔&quot;           &quot;山东省&quot;           &quot;山西省&quot;          
-## [17] &quot;广东省&quot;           &quot;广西壮族自治区&quot;   &quot;德国&quot;             &quot;意大利&quot;          
-## [21] &quot;斯里兰卡&quot;         &quot;新加坡&quot;           &quot;新疆维吾尔自治区&quot; &quot;日本&quot;            
-## [25] &quot;柬埔寨&quot;           &quot;江苏省&quot;           &quot;江西省&quot;           &quot;河北省&quot;          
-## [29] &quot;河南省&quot;           &quot;法国&quot;             &quot;泰国&quot;             &quot;浙江省&quot;          
-## [33] &quot;海南省&quot;           &quot;湖北省&quot;           &quot;湖南省&quot;           &quot;澳大利亚&quot;        
-## [37] &quot;澳门&quot;             &quot;瑞典&quot;             &quot;甘肃省&quot;           &quot;福建省&quot;          
-## [41] &quot;美国&quot;             &quot;芬兰&quot;             &quot;英国&quot;             &quot;菲律宾&quot;          
-## [45] &quot;蒙古&quot;             &quot;西班牙&quot;           &quot;西藏自治区&quot;       &quot;贵州省&quot;          
-## [49] &quot;越南&quot;             &quot;辽宁省&quot;           &quot;重庆市&quot;           &quot;阿联酋&quot;          
-## [53] &quot;陕西省&quot;           &quot;青海省&quot;           &quot;韩国&quot;             &quot;香港&quot;            
-## [57] &quot;马来西亚&quot;         &quot;黑龙江省&quot;</code></pre>
+## [17] &quot;广东省&quot;           &quot;广西壮族自治区&quot;   &quot;待明确地区&quot;       &quot;德国&quot;            
+## [21] &quot;意大利&quot;           &quot;斯里兰卡&quot;         &quot;新加坡&quot;           &quot;新疆维吾尔自治区&quot;
+## [25] &quot;日本&quot;             &quot;柬埔寨&quot;           &quot;江苏省&quot;           &quot;江西省&quot;          
+## [29] &quot;河北省&quot;           &quot;河南省&quot;           &quot;法国&quot;             &quot;泰国&quot;            
+## [33] &quot;浙江省&quot;           &quot;海南省&quot;           &quot;湖北省&quot;           &quot;湖南省&quot;          
+## [37] &quot;澳大利亚&quot;         &quot;澳门&quot;             &quot;瑞典&quot;             &quot;甘肃省&quot;          
+## [41] &quot;福建省&quot;           &quot;美国&quot;             &quot;芬兰&quot;             &quot;英国&quot;            
+## [45] &quot;菲律宾&quot;           &quot;蒙古&quot;             &quot;西班牙&quot;           &quot;西藏自治区&quot;      
+## [49] &quot;贵州省&quot;           &quot;越南&quot;             &quot;辽宁省&quot;           &quot;重庆市&quot;          
+## [53] &quot;阿联酋&quot;           &quot;陕西省&quot;           &quot;青海省&quot;           &quot;韩国&quot;            
+## [57] &quot;香港&quot;             &quot;马来西亚&quot;         &quot;黑龙江省&quot;</code></pre>
 <p>本节我们完成了数据的读取和保存。下一节，我们将对数据进行可视化，通俗来说就是——作图。</p>
 </div>
