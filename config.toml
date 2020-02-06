@@ -14,7 +14,7 @@ disqusShortname = "pzhao"
 defaultContentLanguage = "zh"
 defaultContentLanguageInSubdir = true
 # Enable Google Analytics by entering your tracking code
-googleAnalytics = ""
+googleAnalytics = "UA-157880803-1"
 
 # Define the number of posts per page
 paginate = 10
