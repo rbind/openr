@@ -270,7 +270,7 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
     icon = "fa fa-book"
     title = "Do you want to see more?"
     subtitle = "Please visit the homepage of the book Learning R."
-    link_url = "https://pzhaonet.github.io/xuer/"
+    link_url = "https://xuer.pzhao.org/"
     link_text = "Learning R"
 
 [languages.zh.params.see_more]
@@ -278,7 +278,7 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
     icon = "fa fa-book"
     title = "您想了解更多吗？"
     subtitle = "请访问《学 R》一书的网站。"
-    link_url = "https://pzhaonet.github.io/xuer/"
+    link_url = "https://xuer.pzhao.org/"
     link_text = "学 R"
 
 [params.clients]
