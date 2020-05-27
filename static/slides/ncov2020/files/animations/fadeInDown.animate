@@ -1,0 +1,22 @@
+/* 
+  Name:			Fade In Down
+  Type:			Entrance
+  Description:	Fade In Down Effect
+  Version:		2.0	
+  locale:		{"zh-Hans":"顶部渐入", "en-US":"Fade In Down"}
+ */
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, -100%, 0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.fadeInDown {
+  animation-name: fadeInDown;
+}

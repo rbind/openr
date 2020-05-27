@@ -1,0 +1,22 @@
+/* 
+  Name:			Fade In Left
+  Type:			Entrance
+  Description:	Fade In Left Effect
+  Version:		2.0	
+  locale:		{"zh-Hans":"左边渐入", "en-US":"Fade In Left"}
+ */
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    transform: translate3d(-100%, 0, 0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.fadeInLeft {
+  animation-name: fadeInLeft;
+}

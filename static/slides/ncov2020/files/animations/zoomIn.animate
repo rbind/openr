@@ -1,0 +1,22 @@
+/* 
+  Name:			Zoom In
+  Type:			Entrance
+  Description:	Zoom In Effect
+  Version:		2.0	
+  locale:		{"zh-Hans":"放大", "en-US":"Zoom In"}
+ */
+ 
+@keyframes zoomIn {
+  0% {
+    opacity: 0;
+    transform: scale3d(.3, .3, .3);
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+.zoomIn {
+  animation-name: zoomIn;
+}

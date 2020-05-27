@@ -1,0 +1,22 @@
+/* 
+  Name:			Fade In Up
+  Type:			Entrance
+  Description:	Fade In Effect
+  Version:		2.0	
+  locale:		{"zh-Hans":"底部渐入", "en-US":"Fade In Up"}
+ */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.fadeInUp {
+  animation-name: fadeInUp;
+}
