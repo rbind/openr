@@ -28,7 +28,7 @@
 
 /* flyer title*/
 .title {
-	font-size: 4cm;
+	font-size: 3.5cm;
 	color: white;
 }
 
@@ -41,7 +41,7 @@
 html {
 	/* Note that rem is set proportionally to the html root font size: https://css-tricks.com/html-vs-body-in-css/ */
 	font-family: var(--base-font-family);
-	font-size: 2.3cm;
+	font-size: 2cm;
 	vertical-align: middle;
 	line-height: 1.375; /* Use proportional line spacing so everything is self-consistent */
 }
